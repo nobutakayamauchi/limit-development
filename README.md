@@ -28,7 +28,7 @@ Implementation, evidence, history, and detailed technical truth remain canonical
 - **note:** https://note.com/ultimatefire
 - **GitHub:** https://github.com/nobutakayamauchi
 - **YouTube:** https://www.youtube.com/@overlimitdevelopment
-- **Support / おひねり:** https://buy.stripe.com/8x25kFfm8bXD7a6fMn3Nm0e
+- **Support / おひねり（500円〜）:** https://buy.stripe.com/8x25kFfm8bXD7a6fMn3Nm0e
 
 ## Current lineage
 
