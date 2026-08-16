@@ -7,6 +7,7 @@
 This repository does **not** absorb every implementation into one monolith. It is the public index that explains:
 
 - what Limit Development is;
+- who the developer is right now;
 - what is being built now;
 - how the development method evolved;
 - what survived, what was destroyed, and what was retired;
@@ -17,8 +18,17 @@ Implementation, evidence, history, and detailed technical truth remain canonical
 ## Public pages
 
 - **Top / public index:** `index.html`
+- **Current developer / links:** `me.html`
 - **Developer public status:** `status.html`
 - **GitHub Pages:** https://nobutakayamauchi.github.io/limit-development/
+
+## Public links
+
+- **X:** https://x.com/ultimate28
+- **note:** https://note.com/ultimatefire
+- **GitHub:** https://github.com/nobutakayamauchi
+- **YouTube:** https://www.youtube.com/@overlimitdevelopment
+- **Support / おひねり:** https://buy.stripe.com/8x25kFfm8bXD7a6fMn3Nm0e
 
 ## Current lineage
 
