@@ -1,11 +1,13 @@
 {
   "mode": "CASH_NOW",
   "main_project": "Limit Development LIVE",
-  "focus": "商品 → LIVE黒板 → 日誌の公開導線を再構成中",
+  "focus": "公開工場を、見学・参加・製品化までつなぐ",
   "last_updated": "2026-08-18 11:00 JST",
   "metrics": {
     "active_projects": 4,
     "requests": "UNKNOWN",
+    "researching_requests": "UNKNOWN",
+    "productized_requests": "UNKNOWN",
     "shipped": "UNKNOWN",
     "approval_waiting": "UNKNOWN"
   },
@@ -42,7 +44,7 @@
   "feed": [
     "公開LIVE Boardの再構成に着手",
     "既存トップを開発紹介へ退避",
-    "商品導線をページ上部へ移動"
+    "REQUEST LABを追加し、困りごと→研究→製品化の参加導線を設計"
   ],
   "source_note": "Seed only. Hourly GitHub Actions rebuild replaces public telemetry on deployment. UNKNOWN is not treated as zero."
 }
