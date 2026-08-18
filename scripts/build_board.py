@@ -5,9 +5,16 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 API = "https://api.github.com"
 JST = dt.timezone(dt.timedelta(hours=9))
 
+# PUBLICATION RULE: allowlist only. New internal fields never become public by accident.
+PUBLIC_PROJECT_FIELDS = ("name", "repo", "stage", "speed", "now")
+PUBLIC_METRIC_FIELDS = ("requests", "shipped", "approval_waiting")
+PUBLIC_TOP_FIELDS = ("mode", "main_project", "focus")
+
+
 def load_json(path):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
 
 def api_json(path):
     req = urllib.request.Request(API + path)
@@ -19,11 +26,19 @@ def api_json(path):
     with urllib.request.urlopen(req, timeout=20) as r:
         return json.load(r)
 
+
 def safe_call(path):
     try:
         return api_json(path)
     except Exception:
         return None
+
+
+def public_subset(source, fields):
+    if not isinstance(source, dict):
+        return {field: "UNKNOWN" for field in fields}
+    return {field: source.get(field, "UNKNOWN") for field in fields}
+
 
 def repo_telemetry(repo):
     q = urllib.parse.quote(repo, safe="/")
@@ -33,35 +48,52 @@ def repo_telemetry(repo):
     latest = commits[0] if isinstance(commits, list) and commits else {}
     workflow_runs = runs.get("workflow_runs") if isinstance(runs, dict) else None
     run = workflow_runs[0] if workflow_runs else {}
+
+    # Do not republish arbitrary commit messages on the public homepage.
+    # Public telemetry exposes only low-risk operational facts.
     return {
-        "latest_commit": (latest.get("commit") or {}).get("message", "UNKNOWN").splitlines()[0],
         "latest_commit_at": ((latest.get("commit") or {}).get("committer") or {}).get("date", "UNKNOWN"),
         "open_prs": len(pulls) if isinstance(pulls, list) else "UNKNOWN",
-        "latest_action": run.get("conclusion") or run.get("status") or "UNKNOWN"
+        "latest_action": run.get("conclusion") or run.get("status") or "UNKNOWN",
     }
+
 
 def build_current(control):
     now = dt.datetime.now(JST)
     projects = []
     feed = []
-    for p in control.get("projects", []):
+
+    for raw_project in control.get("projects", []):
+        p = public_subset(raw_project, PUBLIC_PROJECT_FIELDS)
+        repo = p.get("repo")
+        tel = repo_telemetry(repo) if isinstance(repo, str) and repo != "UNKNOWN" else {
+            "latest_commit_at": "UNKNOWN",
+            "open_prs": "UNKNOWN",
+            "latest_action": "UNKNOWN",
+        }
         item = dict(p)
-        tel = repo_telemetry(p["repo"])
         item["telemetry"] = tel
         projects.append(item)
-        feed.append(f"{p['name']}: {tel['latest_commit']} / Actions {tel['latest_action']}")
-    metrics = dict(control.get("metrics", {}))
+        feed.append(
+            f"{p.get('name', 'UNKNOWN')}: GitHub activity observed / Actions {tel['latest_action']}"
+        )
+
+    metrics = public_subset(control.get("metrics", {}), PUBLIC_METRIC_FIELDS)
     metrics["active_projects"] = sum(1 for p in projects if p.get("speed") not in {"PAUSED"})
+
+    top = public_subset(control, PUBLIC_TOP_FIELDS)
     return {
-        "mode": control.get("mode", "UNKNOWN"),
-        "main_project": control.get("main_project", "UNKNOWN"),
-        "focus": control.get("focus", "UNKNOWN"),
+        **top,
         "last_updated": now.strftime("%Y-%m-%d %H:%M JST"),
         "metrics": metrics,
         "projects": projects,
         "feed": feed[:6],
-        "source_note": "Hourly public-safe reconstruction from control-state plus public GitHub repository telemetry. UNKNOWN is preserved."
+        "source_note": (
+            "Allowlist-only public reconstruction. Arbitrary internal fields and raw commit messages "
+            "are not published. UNKNOWN is preserved."
+        ),
     }
+
 
 def build_daily(control, day):
     start_jst = dt.datetime.combine(day, dt.time.min, JST)
@@ -71,43 +103,62 @@ def build_daily(control, day):
     activity = []
     known_total = 0
     incomplete = False
-    for p in control.get("projects", []):
-        q = urllib.parse.quote(p["repo"], safe="/")
-        commits = safe_call(f"/repos/{q}/commits?since={urllib.parse.quote(since)}&until={urllib.parse.quote(until)}&per_page=100")
-        if isinstance(commits, list):
-            n = len(commits)
-            known_total += n
-        else:
+
+    for raw_project in control.get("projects", []):
+        p = public_subset(raw_project, PUBLIC_PROJECT_FIELDS)
+        repo = p.get("repo")
+        if not isinstance(repo, str) or repo == "UNKNOWN":
             n = "UNKNOWN"
             incomplete = True
-        activity.append({"name": p["name"], "repo": p["repo"], "commits": n})
+        else:
+            q = urllib.parse.quote(repo, safe="/")
+            commits = safe_call(
+                f"/repos/{q}/commits?since={urllib.parse.quote(since)}&until={urllib.parse.quote(until)}&per_page=100"
+            )
+            if isinstance(commits, list):
+                n = len(commits)
+                known_total += n
+            else:
+                n = "UNKNOWN"
+                incomplete = True
+        activity.append({"name": p.get("name", "UNKNOWN"), "repo": repo, "commits": n})
+
     public_commit_count = f"PARTIAL:{known_total}" if incomplete else known_total
+    top = public_subset(control, PUBLIC_TOP_FIELDS)
+    metrics = public_subset(control.get("metrics", {}), PUBLIC_METRIC_FIELDS)
+
     return {
         "date": day.isoformat(),
-        "mode_at_close": control.get("mode", "UNKNOWN"),
-        "main_project_at_close": control.get("main_project", "UNKNOWN"),
-        "focus_at_close": control.get("focus", "UNKNOWN"),
+        "mode_at_close": top["mode"],
+        "main_project_at_close": top["main_project"],
+        "focus_at_close": top["focus"],
         "repo_activity": activity,
         "public_commit_count": public_commit_count,
-        "requests": (control.get("metrics") or {}).get("requests", "UNKNOWN"),
-        "shipped": (control.get("metrics") or {}).get("shipped", "UNKNOWN"),
-        "approval_waiting": (control.get("metrics") or {}).get("approval_waiting", "UNKNOWN"),
+        "requests": metrics["requests"],
+        "shipped": metrics["shipped"],
+        "approval_waiting": metrics["approval_waiting"],
         "mode_transitions": "UNKNOWN",
         "incidents": "UNKNOWN",
         "major_findings": [],
         "next_focus": "Re-evaluate from the next hourly control cycle",
-        "source_note": "One daily public-safe summary. Missing non-GitHub business data remains UNKNOWN."
+        "source_note": (
+            "One daily public-safe summary. Only allowlisted fields are durable. "
+            "Missing non-GitHub business data remains UNKNOWN."
+        ),
     }
+
 
 def write_json(path, data):
     path = pathlib.Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
+
 def rebuild_history_index(history_dir):
     history_dir = pathlib.Path(history_dir)
     files = sorted([p.name for p in history_dir.glob("20??-??-??.json")], reverse=True)
     write_json(history_dir / "index.json", {"days": files})
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -124,6 +175,7 @@ def main():
         rebuild_history_index(pathlib.Path(args.daily).parent)
     if not args.output and not args.daily:
         ap.error("--output or --daily is required")
+
 
 if __name__ == "__main__":
     main()
