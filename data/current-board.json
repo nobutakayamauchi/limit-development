@@ -1,0 +1,50 @@
+{
+  "mode": "CASH_NOW",
+  "main_project": "Limit Development LIVE",
+  "focus": "公開工場を、見学・参加・製品化までつなぐ",
+  "last_updated": "2026-08-18 11:00 JST",
+  "metrics": {
+    "active_projects": 4,
+    "requests": "UNKNOWN",
+    "researching_requests": "UNKNOWN",
+    "productized_requests": "UNKNOWN",
+    "shipped": "UNKNOWN",
+    "approval_waiting": "UNKNOWN"
+  },
+  "projects": [
+    {
+      "name": "WebAI-Bridge",
+      "repo": "nobutakayamauchi/WebAI-Bridge",
+      "stage": "ACTIVE",
+      "speed": "FAST",
+      "now": "Creator Studio direct publish後の安全化"
+    },
+    {
+      "name": "NAGI",
+      "repo": "nobutakayamauchi/NAGI",
+      "stage": "DOGFOOD",
+      "speed": "NORMAL",
+      "now": "実機評価"
+    },
+    {
+      "name": "Ultimate Loop / Furnace",
+      "repo": "nobutakayamauchi/Ultimate-Loop",
+      "stage": "REPAIR",
+      "speed": "FAST",
+      "now": "revision-bound retrieval"
+    },
+    {
+      "name": "TRACE",
+      "repo": "nobutakayamauchi/TRACE",
+      "stage": "WAITING",
+      "speed": "SLOW",
+      "now": "retrieval identity観測候補"
+    }
+  ],
+  "feed": [
+    "公開LIVE Boardの再構成に着手",
+    "既存トップを開発紹介へ退避",
+    "REQUEST LABを追加し、困りごと→研究→製品化の参加導線を設計"
+  ],
+  "source_note": "Seed only. Hourly GitHub Actions rebuild replaces public telemetry on deployment. UNKNOWN is not treated as zero."
+}
