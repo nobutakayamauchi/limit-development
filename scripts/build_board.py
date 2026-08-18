@@ -19,19 +19,20 @@ def api_json(path):
     with urllib.request.urlopen(req, timeout=20) as r:
         return json.load(r)
 
-def safe_call(path, fallback):
+def safe_call(path):
     try:
         return api_json(path)
     except Exception:
-        return fallback
+        return None
 
 def repo_telemetry(repo):
     q = urllib.parse.quote(repo, safe="/")
-    commits = safe_call(f"/repos/{q}/commits?per_page=1", [])
-    pulls = safe_call(f"/repos/{q}/pulls?state=open&per_page=10", [])
-    runs = safe_call(f"/repos/{q}/actions/runs?per_page=1", {"workflow_runs": []})
-    latest = commits[0] if commits else {}
-    run = (runs.get("workflow_runs") or [{}])[0]
+    commits = safe_call(f"/repos/{q}/commits?per_page=1")
+    pulls = safe_call(f"/repos/{q}/pulls?state=open&per_page=10")
+    runs = safe_call(f"/repos/{q}/actions/runs?per_page=1")
+    latest = commits[0] if isinstance(commits, list) and commits else {}
+    workflow_runs = runs.get("workflow_runs") if isinstance(runs, dict) else None
+    run = workflow_runs[0] if workflow_runs else {}
     return {
         "latest_commit": (latest.get("commit") or {}).get("message", "UNKNOWN").splitlines()[0],
         "latest_commit_at": ((latest.get("commit") or {}).get("committer") or {}).get("date", "UNKNOWN"),
@@ -68,20 +69,26 @@ def build_daily(control, day):
     since = start_jst.astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z")
     until = end_jst.astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z")
     activity = []
-    total = 0
+    known_total = 0
+    incomplete = False
     for p in control.get("projects", []):
         q = urllib.parse.quote(p["repo"], safe="/")
-        commits = safe_call(f"/repos/{q}/commits?since={urllib.parse.quote(since)}&until={urllib.parse.quote(until)}&per_page=100", [])
-        n = len(commits) if isinstance(commits, list) else 0
-        total += n
+        commits = safe_call(f"/repos/{q}/commits?since={urllib.parse.quote(since)}&until={urllib.parse.quote(until)}&per_page=100")
+        if isinstance(commits, list):
+            n = len(commits)
+            known_total += n
+        else:
+            n = "UNKNOWN"
+            incomplete = True
         activity.append({"name": p["name"], "repo": p["repo"], "commits": n})
+    public_commit_count = f"PARTIAL:{known_total}" if incomplete else known_total
     return {
         "date": day.isoformat(),
         "mode_at_close": control.get("mode", "UNKNOWN"),
         "main_project_at_close": control.get("main_project", "UNKNOWN"),
         "focus_at_close": control.get("focus", "UNKNOWN"),
         "repo_activity": activity,
-        "public_commit_count": total,
+        "public_commit_count": public_commit_count,
         "requests": (control.get("metrics") or {}).get("requests", "UNKNOWN"),
         "shipped": (control.get("metrics") or {}).get("shipped", "UNKNOWN"),
         "approval_waiting": (control.get("metrics") or {}).get("approval_waiting", "UNKNOWN"),
