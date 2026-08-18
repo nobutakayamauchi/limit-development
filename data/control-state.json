@@ -1,0 +1,16 @@
+{
+  "mode": "CASH_NOW",
+  "main_project": "Limit Development LIVE",
+  "focus": "商品 → LIVE黒板 → 日誌の公開導線を再構成中",
+  "metrics": {
+    "requests": "UNKNOWN",
+    "shipped": "UNKNOWN",
+    "approval_waiting": "UNKNOWN"
+  },
+  "projects": [
+    {"name":"WebAI-Bridge","repo":"nobutakayamauchi/WebAI-Bridge","stage":"ACTIVE","speed":"FAST","now":"Creator Studio direct publish後の安全化"},
+    {"name":"NAGI","repo":"nobutakayamauchi/NAGI","stage":"DOGFOOD","speed":"NORMAL","now":"実機評価"},
+    {"name":"Ultimate Loop / Furnace","repo":"nobutakayamauchi/Ultimate-Loop","stage":"REPAIR","speed":"FAST","now":"revision-bound retrieval"},
+    {"name":"TRACE","repo":"nobutakayamauchi/TRACE","stage":"WAITING","speed":"SLOW","now":"retrieval identity観測候補"}
+  ]
+}
