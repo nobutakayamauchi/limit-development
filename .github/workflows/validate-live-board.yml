@@ -1,0 +1,57 @@
+name: Validate Limit Development Live Board
+
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'development.html'
+      - 'product-*.html'
+      - 'history.html'
+      - 'data/**'
+      - 'scripts/**'
+      - '.github/workflows/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile board builder
+        run: python -m py_compile scripts/build_board.py
+
+      - name: Validate source JSON
+        run: |
+          python -m json.tool data/control-state.json >/dev/null
+          python -m json.tool data/current-board.json >/dev/null
+          python -m json.tool data/history/index.json >/dev/null
+
+      - name: Build board from live public GitHub telemetry
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/build_board.py --output /tmp/current-board.json
+          python -m json.tool /tmp/current-board.json >/dev/null
+
+      - name: Prove UNKNOWN is preserved when GitHub API is unavailable
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          sys.path.insert(0, 'scripts')
+          import build_board
+          build_board.safe_call = lambda path: None
+          control = json.loads(pathlib.Path('data/control-state.json').read_text())
+          out = build_board.build_current(control)
+          assert out['projects'][0]['telemetry']['open_prs'] == 'UNKNOWN'
+          assert out['projects'][0]['telemetry']['latest_action'] == 'UNKNOWN'
+          print('fail-closed telemetry: PASS')
+          PY
