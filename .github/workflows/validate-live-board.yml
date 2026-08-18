@@ -5,8 +5,10 @@ on:
     paths:
       - 'index.html'
       - 'development.html'
+      - 'request-lab.html'
       - 'product-*.html'
       - 'history.html'
+      - 'PUBLICATION_SAFETY.md'
       - 'data/**'
       - 'scripts/**'
       - '.github/workflows/**'
@@ -54,4 +56,56 @@ jobs:
           assert out['projects'][0]['telemetry']['open_prs'] == 'UNKNOWN'
           assert out['projects'][0]['telemetry']['latest_action'] == 'UNKNOWN'
           print('fail-closed telemetry: PASS')
+          PY
+
+      - name: Prove unapproved fields cannot leak into public board
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          sys.path.insert(0, 'scripts')
+          import build_board
+          build_board.safe_call = lambda path: None
+          control = json.loads(pathlib.Path('data/control-state.json').read_text())
+          control['internal_strategy'] = 'DO_NOT_PUBLISH'
+          control['customer_email'] = 'private@example.invalid'
+          control['projects'][0]['secret_token'] = 'super-secret'
+          control['projects'][0]['vulnerability_detail'] = 'private exploit detail'
+          control['metrics']['cash_balance'] = 123456
+          out = build_board.build_current(control)
+          encoded = json.dumps(out, ensure_ascii=False)
+          for forbidden in [
+              'DO_NOT_PUBLISH',
+              'private@example.invalid',
+              'super-secret',
+              'private exploit detail',
+              'cash_balance',
+              '123456',
+          ]:
+              assert forbidden not in encoded, forbidden
+          assert 'internal_strategy' not in out
+          assert 'secret_token' not in out['projects'][0]
+          assert 'vulnerability_detail' not in out['projects'][0]
+          print('public allowlist leak test: PASS')
+          PY
+
+      - name: Prove raw commit messages are not republished
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          sys.path.insert(0, 'scripts')
+          import build_board
+          def fake(path):
+              if '/commits?' in path:
+                  return [{'commit': {'message': 'SECRET VULNERABILITY DETAILS', 'committer': {'date': '2026-08-18T00:00:00Z'}}}]
+              if '/pulls?' in path:
+                  return []
+              if '/actions/runs?' in path:
+                  return {'workflow_runs': [{'conclusion': 'success'}]}
+              return None
+          build_board.safe_call = fake
+          control = json.loads(pathlib.Path('data/control-state.json').read_text())
+          out = build_board.build_current(control)
+          encoded = json.dumps(out, ensure_ascii=False)
+          assert 'SECRET VULNERABILITY DETAILS' not in encoded
+          print('raw commit message suppression: PASS')
           PY
