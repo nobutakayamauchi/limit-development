@@ -1,11 +1,18 @@
 {
   "mode": "CASH_NOW",
   "main_project": "Limit Development LIVE",
-  "focus": "商品 → LIVE黒板 → 日誌の公開導線を再構成中",
+  "focus": "公開工場を、見学・参加・製品化までつなぐ",
   "metrics": {
     "requests": "UNKNOWN",
+    "researching_requests": "UNKNOWN",
+    "productized_requests": "UNKNOWN",
     "shipped": "UNKNOWN",
     "approval_waiting": "UNKNOWN"
+  },
+  "request_lab": {
+    "states": ["RECEIVED", "RESEARCHING", "PROTOTYPING", "DOGFOOD", "PRODUCTIZED", "NOT_SELECTED"],
+    "public_rule": "Only anonymized, generalized, explicitly public-safe request themes may be shown. No customer identity or private request body is published by default.",
+    "intake": "mailto:yamauchi.rts.office@gmail.com"
   },
   "projects": [
     {"name":"WebAI-Bridge","repo":"nobutakayamauchi/WebAI-Bridge","stage":"ACTIVE","speed":"FAST","now":"Creator Studio direct publish後の安全化"},
