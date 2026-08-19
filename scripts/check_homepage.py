@@ -57,6 +57,7 @@ def main() -> None:
         assert path.exists(), f"missing required homepage asset: {rel}"
 
     index = (ROOT / "index.html").read_text(encoding="utf-8")
+    js = (ROOT / "assets/home.js").read_text(encoding="utf-8")
     for text in [
         "仕事してください。",
         "一からの新造、やめてください。",
@@ -70,7 +71,27 @@ def main() -> None:
         "COMING SOON",
         "こんな状況でも、スマホ1台でここまで作れます。",
     ]:
-        assert text in index or text in (ROOT / "assets/home.js").read_text(encoding="utf-8"), f"missing adopted copy: {text}"
+        assert text in index or text in js, f"missing adopted copy: {text}"
+
+    # FGE live boards are progressive enhancement: static fallback must remain usable
+    # before the first reviewed publish creates /data, /updates, /journal and /archive.
+    for marker in ('id="updateFeed"', 'id="journalFeed"', 'id="updateAllLink"', 'id="journalIndexLink"'):
+        assert marker in index, f"missing FGE homepage hook: {marker}"
+    assert 'href="status.html"' in index, "UPDATE fallback link must remain valid before FGE publish"
+    assert 'href="development.html">INDEX' in index, "JOURNAL fallback link must remain valid before FGE publish"
+    for literal in (
+        "data/updates.json",
+        "data/journals.json",
+        "Array.isArray(updates)&&updates.length",
+        "Array.isArray(journals)&&journals.length",
+        "updateFeed.replaceChildren",
+        "journalFeed.replaceChildren",
+        "catch(_){/* reviewed FGE bundle not published yet: keep static fallback */}",
+        "catch(_){/* keep static fallback */}",
+    ):
+        assert literal in js, f"missing safe FGE live-feed behavior: {literal}"
+    assert "a.textContent=String(u.title" in js, "FGE update title must be inserted with textContent"
+    assert "a.textContent=String(j.title" in js, "FGE journal title must be inserted with textContent"
 
     css = (ROOT / "assets/home.css").read_text(encoding="utf-8")
     for bp in ("max-width:820px", "max-width:520px", "max-width:390px"):
@@ -79,11 +100,9 @@ def main() -> None:
 
     html_files = [ROOT / "index.html", ROOT / "foundry-spec.html", *sorted((ROOT / "products").glob("*.html"))]
     for html in html_files:
-        parser = LinkParser()
-        parser.feed(html.read_text(encoding="utf-8"))
         assert_local_links(html)
 
-    print(f"homepage checks passed: {len(html_files)} html files")
+    print(f"homepage checks passed: {len(html_files)} html files; FGE fallback/live hooks verified")
 
 if __name__ == "__main__":
     main()
