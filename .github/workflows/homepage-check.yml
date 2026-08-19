@@ -1,0 +1,30 @@
+name: Homepage contract check
+
+on:
+  pull_request:
+    paths:
+      - "index.html"
+      - "foundry-spec.html"
+      - "assets/**"
+      - "products/**"
+      - "scripts/check_homepage.py"
+      - ".github/workflows/homepage-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate homepage and local links
+        run: python scripts/check_homepage.py
+      - name: Validate carousel JavaScript syntax
+        run: node --check assets/home.js
+      - name: Confirm approved hero stays referenced
+        run: grep -F '33D84490-07CF-4D02-8492-7CB91EC9B585.png' index.html
