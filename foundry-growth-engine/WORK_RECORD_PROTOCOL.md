@@ -1,6 +1,6 @@
 # FGE Work Record Protocol v0
 
-Status: `FROZEN_CANDIDATE / DA_PASS / COUNTER_DA_PASS`
+Status: `FROZEN / EXECUTABLE_V1.1 / DA_PASS / COUNTER_DA_PASS`
 
 This protocol is the provider-neutral intake boundary for **FOUNDRY GROWTH ENGINE（仕事してください。）**.
 
@@ -169,14 +169,18 @@ If required media exists only inside an AI chat, the session is not safely seale
 
 ## 6. Save Receipt
 
-A Save Receipt is returned by the Intake Adapter after durable persistence. It is not embedded as a self-referential commit SHA in the record itself.
+A Save Receipt is returned by the Intake Adapter/executor after durable persistence. It is not embedded as a self-referential commit SHA in the record itself.
 
 Example:
 
 ```json
 {
+  "status": "COMMITTED",
   "record_id": "wr_...",
   "record_path": ".fge/records/...json",
+  "session_id": "day_...",
+  "session_sequence": 1,
+  "session_state": "OPEN",
   "commit_sha": "abcdef...",
   "media_state": "PERSISTED",
   "saved_at": "2026-08-19T12:31:00+09:00"
@@ -191,6 +195,15 @@ REFERENCED
 PERSISTED
 INCOMPLETE
 ```
+
+`status`
+
+```text
+COMMITTED
+LOCAL_ONLY
+```
+
+Only `COMMITTED` with a non-empty `commit_sha` is a durable Git Save Receipt. `LOCAL_ONLY` explicitly means the record exists in the local working tree but durable Git persistence has not completed.
 
 No `保存しました` claim without a durable receipt.
 
@@ -293,7 +306,7 @@ MANUAL_EXPORT_BRIDGE
 
 A read-only chat must not pretend it wrote Git. It must hand off to a write-capable bridge or report that persistence is incomplete.
 
-Codex/Claude Code-like Git-capable environments may satisfy the write path directly when authorized.
+Git-capable environments may satisfy the write path directly when authorized.
 
 ## 8. FGE publication intent
 
@@ -303,7 +316,55 @@ It must not become a public UPDATE, ARTICLE or JOURNAL candidate merely because 
 
 `FORCE_ARTICLE` means article candidate despite low input volume. It still does not authorize publication.
 
-## 9. v0 anti-SimCity boundary
+## 9. Executable reference implementation v1.1
+
+Canonical executor:
+
+```text
+foundry-growth-engine/scripts/day_session.py
+```
+
+The executor is provider-neutral. An AI/agent maps operator intent onto one of three subcommands:
+
+```text
+checkpoint  → CHECKPOINT
+article     → ARTICLE_CHECKPOINT / FORCE_ARTICLE
+end-day     → END_DAY / SEALED
+```
+
+Reference invocation:
+
+```bash
+python foundry-growth-engine/scripts/day_session.py checkpoint \
+  --repo <work-ledger> \
+  --project "<project>" \
+  --summary "<delta>" \
+  --source-adapter <adapter> \
+  --commit
+```
+
+The executor MUST:
+
+1. auto-increment `session_sequence` inside a session;
+2. fail closed if an existing ledger has duplicate sequence numbers;
+3. reject any attempt to reopen a SEALED session;
+4. reject `END_DAY` when required media is `INCOMPLETE`;
+5. validate the resulting ledger through the existing `WorkRecordFileAdapter`;
+6. when `--commit` is used, commit only the newly created Work Record path;
+7. leave unrelated staged changes untouched;
+8. return `COMMITTED` only after a successful Git commit and verified commit boundary;
+9. roll back the newly created Work Record if the commit fails;
+10. never perform public publication.
+
+Repo-local agent instructions may wrap this executor, but provider-specific behavior must stay outside FGE Core.
+
+Current repo-local skill:
+
+```text
+.agents/skills/fge-work-session/SKILL.md
+```
+
+## 10. v0 anti-SimCity boundary
 
 This protocol does **not** authorize:
 
@@ -317,17 +378,19 @@ This protocol does **not** authorize:
 
 Those responsibilities must independently survive a later Raison d'être / DA / Counter-DA.
 
-## 10. Current reuse map
+## 11. Current reuse map
 
 ```text
 Existing FGE Core           REUSE
 Existing Review Gate        REUSE
 Existing hourly compaction  REUSE
-Work Record file contract   BUILD (small contract)
-Work Record Input Adapter   BUILD / ADAPT
+Work Record file contract   REUSE / FROZEN
+Work Record Input Adapter   REUSE
+DAY SESSION executor        BUILD / MINIMAL
+Repo-local agent skill      ADAPT / MINIMAL
 NAGI checkpoint semantics   EXTRACT
-NAGI whole planner          KILL for v1
-Vlog camera/audio capture   EXTRACT later
+NAGI whole planner          KILL for standard route
+Vlog camera/audio capture   OPTIONAL EXTRACT later
 Vlog edit/render stack      KILL
 Event-driven Git detection  NOT_REQUIRED v1 / WATCH
 Media store                 EXTERNAL / adapter-selected

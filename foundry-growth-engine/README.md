@@ -86,6 +86,73 @@ SOURCE SEALED != PUBLICATION APPROVED
 
 機密性のある生Work Recordはpublic repoへ強制しない。private work ledgerからレビュー済み公開物だけをpublic outputへ出せる構成を標準とする。
 
+## Executable DAY SESSION v1.1
+
+標準経路は専用アプリを要求しない。Gitへ書けるAI/Agentは、同じprovider-neutralなCLIを呼び出す。
+
+```text
+human command
+  ↓
+write-capable AI / agent
+  ↓
+foundry-growth-engine/scripts/day_session.py
+  ↓
+fge.work-record/v0
+  ↓
+existing WorkRecord Input Adapter
+  ↓
+existing FGE Core
+```
+
+Repo-local Codex skill:
+
+```text
+.agents/skills/fge-work-session/SKILL.md
+```
+
+CLI examples:
+
+```bash
+# ここまで保存
+python foundry-growth-engine/scripts/day_session.py checkpoint \
+  --repo . \
+  --project "FOUNDRY GROWTH ENGINE" \
+  --summary "ここまでの作業差分" \
+  --source-adapter codex \
+  --commit
+
+# これ一本
+python foundry-growth-engine/scripts/day_session.py article \
+  --repo . \
+  --project "FOUNDRY GROWTH ENGINE" \
+  --summary "記事候補として残す作業差分" \
+  --source-adapter codex \
+  --commit
+
+# 今日は終わり
+python foundry-growth-engine/scripts/day_session.py end-day \
+  --repo . \
+  --project "FOUNDRY GROWTH ENGINE" \
+  --summary "最後の作業差分" \
+  --source-adapter codex \
+  --commit
+```
+
+成功時はSave Receipt JSONを返す。
+
+```text
+status = COMMITTED
+commit_sha = non-empty
+```
+
+この2条件を満たさない限り `保存しました` と扱わない。`LOCAL_ONLY` はローカルファイルが存在するだけで、durable Git saveの完了ではない。
+
+CLIは新しいWork RecordだけをGit commit対象にし、既にstageされている無関係ファイルを巻き込まない。commit失敗時は作成したrecordをrollbackし、偽のSave Receiptを返さない。
+
+`END_DAY` は必要なmediaが `INCOMPLETE` のままではSEALEDを拒否する。SEALED後のsession再開も拒否する。
+
+この実行経路はWork Recordを保存するだけで、公開権限を持たない。公開は従来どおり Review Gate の **投稿 / 修正 / 記録だけ** で決める。
+
 ## Core invariants
 
 1. **Core is plain.** User/company-specific knowledge is external.
