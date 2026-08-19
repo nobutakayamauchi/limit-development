@@ -6,6 +6,7 @@ on:
     paths:
       - "foundry-growth-engine/**"
       - ".github/workflows/fge-hourly.yml"
+      - ".github/workflows/fge-publish.yml"
   schedule:
     - cron: "17 * * * *"
 
@@ -19,6 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
@@ -56,7 +58,7 @@ jobs:
             echo
             echo "Artifact: fge-review-${{ github.run_id }}"
             echo
-            echo "- 投稿: reviewed files are promoted through a PR"
+            echo "- 投稿: run FGE reviewed publish with this run ID"
             echo "- 修正: edit/regenerate the candidate first"
-            echo "- 記録だけ: do not promote public files"
+            echo "- 記録だけ: run FGE reviewed publish with record_only"
           } >> "$GITHUB_STEP_SUMMARY"
