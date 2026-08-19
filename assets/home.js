@@ -14,4 +14,22 @@ function render(){const idx=visible[pos%visible.length],x=ITEMS[idx];els.name.te
 function move(n){pos=(pos+n+visible.length)%visible.length;render()}
 $('#prev').onclick=()=>move(-1);$('#next').onclick=()=>move(1);document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;rebuild()});$('#allIndex').onclick=()=>{filter='all';document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x.dataset.filter==='all'));rebuild();$('#carousel').scrollIntoView({behavior:'smooth',block:'center'})};
 let sx=0;$('#carousel').addEventListener('touchstart',e=>sx=e.changedTouches[0].clientX,{passive:true});$('#carousel').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>45)move(dx<0?1:-1)},{passive:true});$('#carousel').addEventListener('keydown',e=>{if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1)});$('#carousel').tabIndex=0;
-const menu=$('#menu'),mobile=$('#mobileNav');menu.onclick=()=>{const open=mobile.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'};mobile.querySelectorAll('a').forEach(a=>a.onclick=()=>{mobile.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'});render();
+const menu=$('#menu'),mobile=$('#mobileNav');menu.onclick=()=>{const open=mobile.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'};mobile.querySelectorAll('a').forEach(a=>a.onclick=()=>{mobile.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'});
+
+function updateRow(u){
+ const li=document.createElement('li'),time=document.createElement('time'),tag=document.createElement('span'),a=document.createElement('a'),arr=document.createElement('span');
+ const day=typeof u.captured_at==='string'?u.captured_at.slice(0,10):'';
+ time.textContent=day.replaceAll('-','.');tag.className='tag';tag.textContent=String(u.type||'UPDATE');a.textContent=String(u.title||'更新');a.href=`updates/#u-${encodeURIComponent(String(u.id||''))}`;arr.className='arr';arr.textContent='›';
+ li.append(time,tag,a,arr);return li;
+}
+function journalRow(j){
+ const li=document.createElement('li'),time=document.createElement('time'),a=document.createElement('a'),arr=document.createElement('span');
+ const day=typeof j.date==='string'?j.date:'';time.textContent=day.length>=10?`${day.slice(5,7)}.${day.slice(8,10)}`:day;a.textContent=String(j.title||'開発日誌');a.href=`journal/${encodeURIComponent(day)}.html`;arr.className='arr';arr.textContent='›';li.append(time,a,arr);return li;
+}
+async function loadJson(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error(`${path}: ${r.status}`);return r.json()}
+async function loadLiveBoards(){
+ const updateFeed=$('#updateFeed'),journalFeed=$('#journalFeed');
+ try{const updates=await loadJson('data/updates.json');if(Array.isArray(updates)&&updates.length&&updateFeed){updateFeed.replaceChildren(...updates.slice(0,5).map(updateRow));const all=$('#updateAllLink');if(all)all.href='updates/'}}catch(_){/* reviewed FGE bundle not published yet: keep static fallback */}
+ try{const journals=await loadJson('data/journals.json');if(Array.isArray(journals)&&journals.length&&journalFeed){journalFeed.replaceChildren(...journals.slice(0,5).map(journalRow));const idx=$('#journalIndexLink');if(idx)idx.href='archive/'}}catch(_){/* keep static fallback */}
+}
+render();loadLiveBoards();
