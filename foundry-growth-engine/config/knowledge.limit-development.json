@@ -2,6 +2,7 @@
   "organization": {
     "name": "LIMIT OVER DEVELOPMENT",
     "default_project": "LIMIT OVER DEVELOPMENT",
+    "timezone": "Asia/Tokyo",
     "public_tagline": "仕事してください。公開直前まで、こっちでやっときます。"
   },
   "operator": {"article_threshold": 0.72, "baseline_chars": 180},
@@ -20,29 +21,8 @@
       "article_score": 0.98,
       "article_detail": "仕事中に残る作業記録を、そのまま広報資産へ変える仕組みです。GitHub上の変更を一般向けの更新情報へ言い換え、必要なら個別記事・開発日誌・SNS投稿まで再編します。公開前には必ず人間へレビューを返し、投稿・修正・記録だけを選べるようにしています。"
     },
-    {
-      "pattern": "revert broken mobile layout",
-      "type": "機能変更",
-      "title": "スマホ表示を安定版へ復元",
-      "summary": "スマホ表示で崩れていたレイアウトを以前の安定した構成へ戻しました。",
-      "tags": ["mobile", "UI"],
-      "article_score": 0.25
-    },
-    {
-      "pattern": "polish mobile-first one phone foundry top",
-      "type": "機能変更",
-      "title": "スマホ向けトップ画面を調整",
-      "summary": "ONE PHONE FOUNDRYのトップ画面をスマホ中心の構成へ調整しました。",
-      "tags": ["mobile", "UI"],
-      "article_score": 0.35
-    },
-    {
-      "pattern": "build one phone foundry homepage",
-      "type": "新プロジェクト",
-      "title": "ONE PHONE FOUNDRYのホームページを公開",
-      "summary": "スマホ1台を開発拠点として使うONE PHONE FOUNDRYのホームページを新しく構築しました。",
-      "tags": ["homepage", "ONE PHONE FOUNDRY"],
-      "article_score": 0.85
-    }
+    {"pattern": "revert broken mobile layout", "type": "機能変更", "title": "スマホ表示を安定版へ復元", "summary": "スマホ表示で崩れていたレイアウトを以前の安定した構成へ戻しました。", "tags": ["mobile", "UI"], "article_score": 0.25},
+    {"pattern": "polish mobile-first one phone foundry top", "type": "機能変更", "title": "スマホ向けトップ画面を調整", "summary": "ONE PHONE FOUNDRYのトップ画面をスマホ中心の構成へ調整しました。", "tags": ["mobile", "UI"], "article_score": 0.35},
+    {"pattern": "build one phone foundry homepage", "type": "新プロジェクト", "title": "ONE PHONE FOUNDRYのホームページを公開", "summary": "スマホ1台を開発拠点として使うONE PHONE FOUNDRYのホームページを新しく構築しました。", "tags": ["homepage", "ONE PHONE FOUNDRY"], "article_score": 0.85}
   ]
 }
