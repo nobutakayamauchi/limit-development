@@ -42,7 +42,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           FGE_REPO_INTAKE_TOKEN: ${{ secrets.FGE_REPO_INTAKE_TOKEN }}
 
-      - name: Rebuild review candidate
+      - name: Build KNOWLEDGE review candidate
         run: |
           python foundry-growth-engine/scripts/run_hourly.py \
             --repo . \
@@ -50,12 +50,29 @@ jobs:
             --output foundry-growth-engine/site \
             --lookback-days 30
 
-      - name: Package review candidate
+      - name: Build PLAIN regression baseline
+        run: |
+          python foundry-growth-engine/scripts/run_hourly.py \
+            --repo . \
+            --plain \
+            --output foundry-growth-engine/site-plain \
+            --lookback-days 30
+
+      - name: Compare PLAIN and KNOWLEDGE output
+        run: |
+          python foundry-growth-engine/scripts/compare_modes.py \
+            --plain foundry-growth-engine/site-plain/data/updates.json \
+            --knowledge foundry-growth-engine/site/data/updates.json \
+            --output foundry-growth-engine/PLAIN_VS_KNOWLEDGE.md
+
+      - name: Package review candidate and baseline
         uses: actions/upload-artifact@v4
         with:
           name: fge-review-${{ github.run_id }}
           path: |
             foundry-growth-engine/site
+            foundry-growth-engine/site-plain
+            foundry-growth-engine/PLAIN_VS_KNOWLEDGE.md
             foundry-growth-engine/config
           if-no-files-found: error
 
@@ -66,9 +83,13 @@ jobs:
             echo
             echo "仕事してください。公開直前まで、こっちでやっときます。"
             echo
+            echo "Primary: KNOWLEDGE mode"
+            echo "Baseline: PLAIN mode (not published)"
+            echo "Comparison: PLAIN_VS_KNOWLEDGE.md"
+            echo
             echo "Artifact: fge-review-${{ github.run_id }}"
             echo
-            echo "- 投稿: run FGE reviewed publish with this run ID"
-            echo "- 修正: edit/regenerate the candidate first"
+            echo "- 投稿: publish KNOWLEDGE candidate with this run ID"
+            echo "- 修正: edit Knowledge / regenerate the candidate first"
             echo "- 記録だけ: run FGE reviewed publish with record_only"
           } >> "$GITHUB_STEP_SUMMARY"

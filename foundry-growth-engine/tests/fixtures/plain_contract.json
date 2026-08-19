@@ -1,0 +1,20 @@
+[
+  {
+    "text": "fix parser",
+    "project_hint": "",
+    "title": "FOUNDRYを改善",
+    "summary": "FOUNDRYの使い勝手や安定性に関わる変更を行いました。"
+  },
+  {
+    "text": "add feature",
+    "project_hint": "",
+    "title": "FOUNDRYに機能を追加",
+    "summary": "FOUNDRYで新しい機能を使えるようにしました。"
+  },
+  {
+    "text": "Scaffold Foundry Growth Engine core architecture",
+    "project_hint": "",
+    "title": "FOUNDRYを開始",
+    "summary": "FOUNDRYの新しい取り組みを開始しました。"
+  }
+]

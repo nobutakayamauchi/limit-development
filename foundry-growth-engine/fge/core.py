@@ -117,13 +117,17 @@ def article_intent_score(evidence, category, rule, knowledge):
     specificity = min(1.0, (.35 if re.search(r"\d", evidence.text) else 0) + (.25 if "/" in evidence.text or "#" in evidence.text else 0) + (.4 if len(evidence.text.split()) >= 8 else .15))
     return round(max(0.0, min(1.0, .22*volume + .18*deviation + .34*novelty + .26*specificity)), 3)
 
+def _knowledge_writer_enabled(knowledge):
+    return bool(knowledge) and knowledge.get("mode") == "KNOWLEDGE" and bool(knowledge.get("project_profiles"))
+
 def build_update(evidence, knowledge=None):
     knowledge = knowledge or {}
     rule = _match_rule(evidence.text, knowledge)
     category = classify(evidence.text, rule)
     project = detect_project(evidence.text, evidence.project_hint, knowledge)
-    from .engines import RuleBasedPublicWriter
-    title, summary = RuleBasedPublicWriter().rewrite(evidence.text, project, category, rule)
+    from .engines import KnowledgeAwarePublicWriter, RuleBasedPublicWriter
+    writer = KnowledgeAwarePublicWriter(knowledge) if _knowledge_writer_enabled(knowledge) else RuleBasedPublicWriter()
+    title, summary = writer.rewrite(evidence.text, project, category, rule)
     score = article_intent_score(evidence, category, rule, knowledge)
     threshold = float(knowledge.get("operator", {}).get("article_threshold", .72))
     tags = sorted(set([project, category] + (rule.get("tags", []) if rule else [])))
@@ -133,6 +137,12 @@ def build_article(update, evidence, knowledge=None):
     knowledge = knowledge or {}
     rule = _match_rule(evidence.text, knowledge)
     detail = rule.get("article_detail") if rule else None
+    if not detail and _knowledge_writer_enabled(knowledge):
+        profile = knowledge.get("project_profiles", {}).get(update.project, {})
+        description = str(profile.get("public_description") or "").strip()
+        why = str(profile.get("why_it_matters") or "").strip()
+        pieces = [update.summary, description, why]
+        detail = "\n\n".join(x for x in pieces if x)
     if not detail:
         detail = f"{update.summary}\n\n今回の変更は『{update.type}』として記録されています。元の作業記録は公開物とは分離して保持し、必要なら技術的な根拠まで追跡できます。"
     return ArticleDraft(_stable_id("art", update.id), update.id, update.captured_at, update.project, update.title, update.summary, detail, update.tags)

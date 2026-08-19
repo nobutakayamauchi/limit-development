@@ -1,17 +1,142 @@
 {
+  "schema_version": "fge.knowledge/v2",
+  "pack_id": "limit-development-public",
+  "mode": "KNOWLEDGE",
   "organization": {
     "name": "LIMIT OVER DEVELOPMENT",
     "default_project": "LIMIT OVER DEVELOPMENT",
     "timezone": "Asia/Tokyo",
     "public_tagline": "仕事してください。公開直前まで、こっちでやっときます。"
   },
-  "operator": {"article_threshold": 0.72, "baseline_chars": 180},
+  "safety": {
+    "public_only": true,
+    "evidence_rule": "Knowledge may explain stable context, vocabulary, purpose, and voice. It must never invent event facts that are absent from Evidence.",
+    "never_infer": [
+      "private health details",
+      "legal dispute details",
+      "family details",
+      "credentials or secrets",
+      "non-public customer information"
+    ]
+  },
+  "operator": {
+    "article_threshold": 0.72,
+    "baseline_chars": 180,
+    "public_context": [
+      "AIは目的ではなく、現場の面倒を減らすための手段として扱う。",
+      "新造は最後。既存資産、外部サービス、過去に作った部品を先に探す。",
+      "完成品だけでなく、失敗、修正、判断の変化も開発記録として残す。",
+      "技術の説明より先に、非エンジニアが『結局なにが良くなったのか』を理解できる言葉を置く。"
+    ]
+  },
+  "public_voice": {
+    "audience": "non-engineers-first",
+    "tone": ["direct", "light", "plain", "evidence-backed"],
+    "preferred_structure": [
+      "何が起きたか",
+      "何が困っていたか",
+      "どう直したか",
+      "それで何が良くなったか",
+      "必要ならGitHubを証拠として示す"
+    ],
+    "rules": [
+      "最初の一文で意味を伝える。",
+      "専門用語だけで説明を終えない。",
+      "失敗を隠さないが、失敗自慢にも不幸自慢にもしない。",
+      "大げさな成功表現や根拠のない最上級を使わない。",
+      "GitHub上の事実と、Knowledgeによる意味づけを混同しない。",
+      "作者らしさはKnowledge側で足し、Coreには焼き込まない。"
+    ],
+    "avoid": [
+      "革命的",
+      "世界初",
+      "圧倒的",
+      "完全自動",
+      "絶対",
+      "技術用語の羅列だけで終わる文章"
+    ],
+    "term_replacements": {
+      "homepage": "トップページ",
+      "journal": "開発日誌",
+      "navigation": "導線",
+      "fallback": "予備表示",
+      "review gate": "公開前レビュー",
+      "review": "レビュー",
+      "knowledge pack": "ナレッジ",
+      "plain": "プレーン版",
+      "repo intake": "新レポ受付",
+      "repository": "レポジトリ",
+      "bundle": "公開用データ一式",
+      "publish": "公開",
+      "mobile": "スマホ表示"
+    }
+  },
   "project_aliases": [
     {"pattern": "foundry growth engine|仕事してください|fge", "project": "FOUNDRY GROWTH ENGINE"},
     {"pattern": "one phone foundry|homepage|mobile layout|limit-development", "project": "ONE PHONE FOUNDRY"},
-    {"pattern": "ultimate loop|ultimate roop|meteor|darwin", "project": "Ultimate Loop"}
+    {"pattern": "ultimate loop|ultimate roop|meteor|darwin", "project": "Ultimate Loop"},
+    {"pattern": "webai bridge|web ai bridge", "project": "WebAI Bridge"},
+    {"pattern": "bridgepatch|bridge patch", "project": "BridgePatch"},
+    {"pattern": "\baxis\b", "project": "AXIS"},
+    {"pattern": "\bnagi\b", "project": "NAGI"},
+    {"pattern": "\btrace\b", "project": "TRACE"}
   ],
+  "project_profiles": {
+    "FOUNDRY GROWTH ENGINE": {
+      "killer_copy": "仕事してください。",
+      "public_description": "仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+      "why_it_matters": "仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。"
+    },
+    "ONE PHONE FOUNDRY": {
+      "killer_copy": "職場？ ポッケの中。",
+      "public_description": "スマホを司令塔にして、AI・GitHub・クラウドをつなぎ、場所を選ばず仕事と開発を進めるための公開開発環境です。",
+      "why_it_matters": "スマホで全部を処理するのではなく、スマホから必要な場所へ指示を飛ばせることを重視しています。"
+    },
+    "Ultimate Loop": {
+      "killer_copy": "一からの新造、やめてください。",
+      "public_description": "作る前に既存資産や外部サービスを探し、それでも足りない部分だけを作る開発手法です。",
+      "why_it_matters": "作ること自体を目的にせず、無駄な新造と作りすぎを減らすために使います。"
+    },
+    "WebAI Bridge": {
+      "killer_copy": "AIを、自分の場所で使えるようにします。",
+      "public_description": "AI機能を、自分のサイトや仕組みへつなぎやすくするための接続基盤です。",
+      "why_it_matters": "使うAIが変わっても、利用者が使う場所まで一緒に捨てなくて済む形を目指します。"
+    },
+    "BridgePatch": {
+      "killer_copy": "ここ直せば、大体直ります。",
+      "public_description": "問題の中心になっている一部分を見つけ、全部を作り直さず、効く場所だけを小さく直す改善ツールです。",
+      "why_it_matters": "大工事を避け、いちばん効く一手から仕事を楽にするために使います。"
+    },
+    "AXIS": {
+      "killer_copy": "たくさんあっても、今やるのはこれだけです。",
+      "public_description": "増えすぎた仕事や課題を整理し、今やることをひとつに絞るための整理ツールです。",
+      "why_it_matters": "選択肢を増やすより、次の一手を決めることを優先します。"
+    },
+    "NAGI": {
+      "killer_copy": "中断した場所？ここからです。",
+      "public_description": "どこまで進んだか、次に何をするかを残し、仕事が止まっても途中から戻れるようにする作業補助です。",
+      "why_it_matters": "中断のたびに頭の中まで最初から作り直さないために使います。"
+    },
+    "TRACE": {
+      "killer_copy": "『何が起きた？』慌てずこれ見てください。",
+      "public_description": "変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。",
+      "why_it_matters": "壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。"
+    },
+    "LIMIT OVER DEVELOPMENT": {
+      "public_description": "現場の面倒や詰まりを見つけ、AIと既存資産を使って最小の仕組みにし、実際に使いながら残す価値があるものだけを育てる公開開発です。",
+      "why_it_matters": "AIそのものではなく、現実の面倒が減ったかどうかを基準にします。"
+    }
+  },
   "rewrite_rules": [
+    {
+      "pattern": "knowledge pack|knowledge.*plain|plain.*knowledge|dual.*knowledge|dual.*plain",
+      "type": "機能追加",
+      "title": "ナレッジ版とプレーン版を分けて出せるようにした",
+      "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。",
+      "tags": ["Knowledge Pack", "Plain Core", "比較"],
+      "article_score": 0.82,
+      "article_detail": "FGEのCoreは作者の癖を持たないまま残し、外付けのKnowledge Packで文脈・用語・説明の仕方を足します。今回、通常運用で使うKnowledge版と、Knowledgeを外したPlain版を同じEvidenceから同時に生成できるようにしました。これにより、文章が良くなった理由がCoreの肥大化なのかKnowledgeの効果なのかを比較できます。"
+    },
     {
       "pattern": "foundry growth engine|仕事してください",
       "type": "新製品",
@@ -20,6 +145,22 @@
       "tags": ["仕事してください", "自動広報", "Dogfood"],
       "article_score": 0.98,
       "article_detail": "仕事中に残る作業記録を、そのまま広報資産へ変える仕組みです。GitHub上の変更を一般向けの更新情報へ言い換え、必要なら個別記事・開発日誌・SNS投稿まで再編します。公開前には必ず人間へレビューを返し、投稿・修正・記録だけを選べるようにしています。"
+    },
+    {
+      "pattern": "journal navigation|journal.*article|journal.*content",
+      "type": "機能変更",
+      "title": "開発日誌を、一覧だけでなく本文まで読めるようにした",
+      "summary": "開発日誌のタイトルを押しても一覧や古い開発ページへ戻るだけだったため、日付ごとの本文へ直接入れるように導線を修正しました。リンクが動くことではなく、読者が読みたい記録へ着けることを基準にしています。",
+      "tags": ["JOURNAL", "導線", "mobile"],
+      "article_score": 0.45
+    },
+    {
+      "pattern": "live development record|development.*live|auto-updating record",
+      "type": "機能変更",
+      "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
+      "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。",
+      "tags": ["DEVELOPMENT RECORD", "GitHub", "自動更新"],
+      "article_score": 0.7
     },
     {"pattern": "revert broken mobile layout", "type": "機能変更", "title": "スマホ表示を安定版へ復元", "summary": "スマホ表示で崩れていたレイアウトを以前の安定した構成へ戻しました。", "tags": ["mobile", "UI"], "article_score": 0.25},
     {"pattern": "polish mobile-first one phone foundry top", "type": "機能変更", "title": "スマホ向けトップ画面を調整", "summary": "ONE PHONE FOUNDRYのトップ画面をスマホ中心の構成へ調整しました。", "tags": ["mobile", "UI"], "article_score": 0.35},

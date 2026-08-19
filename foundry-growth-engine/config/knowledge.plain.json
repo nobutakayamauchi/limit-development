@@ -1,4 +1,7 @@
 {
+  "schema_version": "fge.knowledge/plain-v0",
+  "pack_id": "plain",
+  "mode": "PLAIN",
   "organization": {"name": "PLAIN", "default_project": "FOUNDRY"},
   "operator": {"article_threshold": 0.72, "baseline_chars": 180},
   "project_aliases": [],
