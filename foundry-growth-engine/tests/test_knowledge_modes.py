@@ -39,7 +39,7 @@ class KnowledgeModeTest(unittest.TestCase):
         self.assertEqual(plain.source_id, enriched.source_id)
         self.assertEqual(plain.raw_evidence_ref, enriched.raw_evidence_ref)
         self.assertNotEqual(plain.summary, enriched.summary)
-        self.assertIn("仕事のあと", enriched.summary)
+        self.assertIn("投稿支援ツール", enriched.summary)
 
     def test_reviewed_rewrite_rule_beats_generic_humanization(self):
         u = build_update(self.ev("Fix journal navigation", "FOUNDRY GROWTH ENGINE"), KNOWLEDGE)
