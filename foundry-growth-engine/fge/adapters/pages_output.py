@@ -26,7 +26,7 @@ def render_site(output_dir, updates, articles, journals, checked_at):
     for u in updates[:12]:
         t=u.captured_at[11:16] if len(u.captured_at)>=16 else ''
         art=next((a for a in articles if a.update_id==u.id),None)
-        link=f'<a class="cta" href="../articles/{escape(art.id)}.html">記事候補を見る</a>' if art else ''
+        link=f'<a class="cta" href="../articles/{escape(art.id)}.html">詳しく見る</a>' if art else ''
         rows.append(f'<article class="update" id="u-{escape(u.id)}"><div class="meta"><span>{escape(t)}</span><span class="badge">{escape(u.type)}</span><span>{escape(u.project)}</span></div><h3>{escape(u.title)}</h3><p>{escape(u.summary)}</p>{link}</article>')
     jrows=''.join(f'<a class="journal" href="../journal/{escape(j.date)}.html"><small>{escape(j.date)}</small><b>{escape(j.title)}</b></a>' for j in journals[:5])
     checked=checked_at.replace('T',' ')[:16]
@@ -34,10 +34,15 @@ def render_site(output_dir, updates, articles, journals, checked_at):
     _write(out/'updates/index.html',_page('更新情報 | LIMIT OVER DEVELOPMENT',body))
 
     update_map={u.id:u for u in updates}
+    review_rows=[]
     for a in articles:
         sns=build_sns_drafts(update_map[a.update_id])
-        body=f'<main class="shell"><section class="board article"><div class="brand">ARTICLE DRAFT / REVIEW REQUIRED</div><h1>{escape(a.title)}</h1><p><strong>{escape(a.dek)}</strong></p><p>{escape(a.body)}</p><div class="review"><strong>レビューこれです。投稿しますか？</strong><div class="sub">v0はGitHub PRがセーフティガードです。Merge=投稿 / PRを編集=修正 / Close=記録だけ。</div><div class="actions"><span>投稿</span><span>修正</span><span>記録だけ</span></div></div><h2>SNS draft</h2><p>{escape(sns["x"])}</p><a class="cta" href="../../updates/">更新情報へ戻る</a></section></main>'
-        _write(out/f'articles/{a.id}.html',_page(a.title,body))
+        public_body=f'<main class="shell"><section class="board article"><div class="brand">LIMIT OVER DEVELOPMENT / ARTICLE</div><h1>{escape(a.title)}</h1><p><strong>{escape(a.dek)}</strong></p><p>{escape(a.body)}</p><a class="cta" href="../../updates/">更新情報へ戻る</a></section></main>'
+        _write(out/f'articles/{a.id}.html',_page(a.title,public_body))
+        review_rows.append(f'<article class="update"><div class="meta"><span class="badge">記事候補</span><span>{escape(a.project)}</span></div><h3><a href="../articles/{escape(a.id)}.html">{escape(a.title)}</a></h3><p>{escape(a.dek)}</p><div class="review"><strong>SNS draft</strong><div class="sub">{escape(sns["x"])}</div></div></article>')
+
+    review_body=f'<main class="shell"><section class="board"><header class="top"><div><div class="brand">HUMAN REVIEW GATE</div><h1>レビューこれです。投稿しますか？</h1><div class="sub">生成は自動。公開だけは人間が決めます。</div></div></header><section class="panel">{"".join(review_rows) or "<p class=sub>今回、記事候補はありません。</p>"}<div class="review"><strong>最終判断</strong><div class="actions"><span>投稿</span><span>修正</span><span>記録だけ</span></div><div class="sub">GitHub v0: 投稿=reviewed publish / 修正=再生成 / 記録だけ=公開しない</div></div></section></section></main>'
+    _write(out/'review/index.html',_page('FGE Review Gate',review_body))
 
     for j in journals:
         items=[update_map[i] for i in j.update_ids if i in update_map]
