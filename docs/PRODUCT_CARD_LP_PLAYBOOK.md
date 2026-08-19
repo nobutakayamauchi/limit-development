@@ -5,7 +5,19 @@ Purpose: ship and sell new work without rebuilding the marketing structure every
 ## Trigger
 
 When a new GitHub repository appears, do not immediately invent a product page.
-Run a short wall-ball interview first.
+FOUNDRY GROWTH ENGINE detects the new repo and opens a short human wall-ball intake first.
+
+```text
+NEW REPO
+→ FGE REPO INTAKE
+→ HUMAN WALL-BALL
+→ CARD
+→ VISUAL
+→ LP
+→ CTA
+→ REVIEW
+→ PUBLISH
+```
 
 Ask:
 
@@ -17,10 +29,11 @@ Ask:
 6. What comes out?
 7. What does the human still decide / do at the end?
 8. What single visual would explain it fastest?
-9. Is it a production, research item, or paid product/service?
+9. Is it a production, research item, paid product/service, hold, or record-only item?
 10. What is the next action: use it yourself, read details, ask for setup, or buy?
 
 Do not skip the wall-ball step. The short copy is the source for everything below.
+Do not generate or publish a product card merely because a repository exists.
 
 ---
 
@@ -94,6 +107,7 @@ Rules:
 
 ```text
 NEW REPO
+→ FGE INTAKE
 → INTERVIEW
 → CARD COPY
 → VISUAL
@@ -107,3 +121,5 @@ NEW REPO
 
 Do not build a full marketing system before the first sale.
 The first goal is to learn what real visitors ask, misunderstand, and pay for.
+
+Repository intake implementation: `foundry-growth-engine/REPO_INTAKE.md`.
