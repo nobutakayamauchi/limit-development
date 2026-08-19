@@ -72,10 +72,24 @@ class KnowledgeAwarePublicWriter:
                 return self._replace_terms(subject), action
         return self._replace_terms(raw), ""
 
+    def _subject_is_public_japanese(self, subject):
+        """Do not publish awkward half-English commit subjects as human copy.
+
+        A few product acronyms are fine, but if most of the subject is still an
+        English engineering sentence we fall back to a stable project headline.
+        """
+        jp = re.findall(r"[ぁ-んァ-ヶ一-龥]", subject)
+        ascii_words = re.findall(r"[A-Za-z]{2,}", subject)
+        return len(jp) >= 4 and len(ascii_words) <= 2
+
     def _headline(self, text, project, category):
         subject, action = self._subject_and_action(text)
-        # Raw commit text is only useful when it stays short enough to read as a headline.
-        if action and 2 <= len(subject) <= 72 and not re.search(r"\b[0-9a-f]{12,}\b", subject, flags=re.I):
+        if (
+            action
+            and 2 <= len(subject) <= 72
+            and self._subject_is_public_japanese(subject)
+            and not re.search(r"\b[0-9a-f]{12,}\b", subject, flags=re.I)
+        ):
             suffix = {
                 "修正": "を修正",
                 "追加": "を追加",
