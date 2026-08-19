@@ -31,5 +31,10 @@ class GitHubGitAdapter:
             if subject.startswith('[FGE] Publish reviewed bundle'):
                 continue
             paths = self._paths(sha)
+            # A commit whose only purpose is to persist Work Record files is a
+            # transport event, not a second public work event. The Work Record
+            # adapter owns the semantic evidence for these commits.
+            if paths and all(p.startswith('.fge/records/') for p in paths):
+                continue
             items.append(Evidence(source_id=sha,captured_at=captured_at,actor=actor,text=subject,source_type='github_commit',project_hint=self._project_hint(paths),raw_evidence_ref=f'commit:{sha}'))
         return items
