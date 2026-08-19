@@ -103,14 +103,33 @@ class KnowledgeAwarePublicWriter:
             return str(by_type[category]).strip()
         purpose = str(profile.get("public_description") or "").strip()
         why = str(profile.get("why_it_matters") or "").strip()
-        # Changes/research benefit from a reminder of what the project actually is.
         if category in {"機能変更", "方針変更", "研究・検証", "機能削除"}:
             return purpose or why
         return why or purpose
 
+    def _learned_context(self, text, project):
+        matches = []
+        for item in self.knowledge.get("learned_context_rules", []):
+            pattern = str(item.get("pattern", "")).strip()
+            context = str(item.get("public_context", "")).strip()
+            projects = item.get("projects", [])
+            if not pattern or not context:
+                continue
+            if projects and project not in projects:
+                continue
+            if re.search(pattern, text, flags=re.I):
+                matches.append((float(item.get("confidence", 0)), int(item.get("observation_count", 0)), context))
+        if not matches:
+            return ""
+        return max(matches, key=lambda x: (x[0], x[1]))[2]
+
     def rewrite(self, text, project, category, rule=None):
+        learned = self._learned_context(text, project)
         if rule:
-            return self.plain.rewrite(text, project, category, rule)
+            title, summary = self.plain.rewrite(text, project, category, rule)
+            if learned and learned not in summary:
+                summary = f"{summary}{learned}"
+            return title, summary
 
         profile = self._profile(project)
         if not profile:
@@ -118,7 +137,7 @@ class KnowledgeAwarePublicWriter:
 
         title = self._headline(text, project, category)
         first = f"{title}しました。" if title.endswith(("修正", "追加", "整理", "復元", "改善", "検証")) else self.plain.rewrite(text, project, category, None)[1]
-        context = self._context(profile, category)
+        context = learned or self._context(profile, category)
         if context and context not in first:
             return title, f"{first}{context}"
         return title, first
