@@ -7,6 +7,9 @@ on:
       - "foundry-spec.html"
       - "assets/**"
       - "products/**"
+      - "works/**"
+      - "journal/**"
+      - "foundry-growth-engine/templates/journal-index.html"
       - "scripts/check_homepage.py"
       - ".github/workflows/homepage-check.yml"
   workflow_dispatch:
