@@ -43,8 +43,8 @@ def distill(entries, base_knowledge, rules_config):
     """Build a derived public Knowledge pack from allowlisted chat observations.
 
     Raw chat text is never copied into the derived pack. It only contributes to
-    deterministic observation counts. The resulting pack stores source IDs,
-    confidence, scope and reviewed public context templates.
+    deterministic observation counts. Observed projects are provenance only;
+    a rule becomes project-scoped only when the rule config explicitly says so.
     """
     unique = {}
     for item in entries:
@@ -62,18 +62,19 @@ def distill(entries, base_knowledge, rules_config):
         pattern = str(rule.get("chat_pattern", "")).strip()
         context = str(rule.get("public_context", "")).strip()
         applies_to = str(rule.get("applies_to", "")).strip()
+        scope_projects = [str(x) for x in rule.get("scope_projects", []) if str(x).strip()]
         if not rid or not pattern or not context or not applies_to:
             raise ValueError("each distiller rule needs id, chat_pattern, applies_to and public_context")
 
         matches = []
-        projects = set()
+        observed_projects = set()
         for sid, item in unique.items():
             text = str(item.get("text", ""))
             if re.search(pattern, text, flags=re.I):
                 matches.append(sid)
                 project = str(item.get("project", "")).strip()
                 if project:
-                    projects.add(project)
+                    observed_projects.add(project)
 
         minimum = int(rule.get("min_observations", 2))
         confidence = _confidence(rule, len(matches)) if matches else 0.0
@@ -82,7 +83,8 @@ def distill(entries, base_knowledge, rules_config):
             "observation_count": len(matches),
             "confidence": confidence,
             "source_refs": sorted(matches),
-            "projects": sorted(projects),
+            "observed_projects": sorted(observed_projects),
+            "scope_projects": scope_projects,
             "promoted": len(matches) >= minimum,
         }
         candidates.append(record)
@@ -95,7 +97,8 @@ def distill(entries, base_knowledge, rules_config):
             "confidence": confidence,
             "observation_count": len(matches),
             "source_refs": sorted(matches),
-            "projects": sorted(projects),
+            "observed_projects": sorted(observed_projects),
+            "scope_projects": scope_projects,
         })
 
     learned = deepcopy(base_knowledge)
