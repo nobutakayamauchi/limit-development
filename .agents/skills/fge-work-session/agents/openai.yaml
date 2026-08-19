@@ -1,0 +1,6 @@
+interface:
+  display_name: "FOUNDRY GROWTH ENGINE"
+  short_description: "仕事してください。DAY SESSIONをWork Recordへ保存"
+  default_prompt: "現在の仕事をFOUNDRY GROWTH ENGINEのWork Recordへ安全に保存してください。"
+policy:
+  allow_implicit_invocation: true
