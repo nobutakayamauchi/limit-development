@@ -1,0 +1,10 @@
+{
+  "owner": "nobutakayamauchi",
+  "target_repo": "nobutakayamauchi/limit-development",
+  "created_after": "2026-08-19T07:29:00Z",
+  "ignore": [
+    "nobutakayamauchi/limit-development"
+  ],
+  "skip_forks": true,
+  "skip_archived": true
+}
