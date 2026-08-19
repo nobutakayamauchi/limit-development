@@ -112,16 +112,24 @@ class KnowledgeAwarePublicWriter:
         for item in self.knowledge.get("learned_context_rules", []):
             pattern = str(item.get("pattern", "")).strip()
             context = str(item.get("public_context", "")).strip()
-            projects = item.get("projects", [])
+            scope_projects = item.get("scope_projects", [])
             if not pattern or not context:
                 continue
-            if projects and project not in projects:
+            if scope_projects and project not in scope_projects:
                 continue
             if re.search(pattern, text, flags=re.I):
                 matches.append((float(item.get("confidence", 0)), int(item.get("observation_count", 0)), context))
         if not matches:
             return ""
         return max(matches, key=lambda x: (x[0], x[1]))[2]
+
+    def _join_context(self, base_context, learned_context):
+        parts = []
+        for value in (base_context, learned_context):
+            value = str(value or "").strip()
+            if value and value not in parts:
+                parts.append(value)
+        return "".join(parts)
 
     def rewrite(self, text, project, category, rule=None):
         learned = self._learned_context(text, project)
@@ -137,7 +145,7 @@ class KnowledgeAwarePublicWriter:
 
         title = self._headline(text, project, category)
         first = f"{title}しました。" if title.endswith(("修正", "追加", "整理", "復元", "改善", "検証")) else self.plain.rewrite(text, project, category, None)[1]
-        context = learned or self._context(profile, category)
+        context = self._join_context(self._context(profile, category), learned)
         if context and context not in first:
             return title, f"{first}{context}"
         return title, first
