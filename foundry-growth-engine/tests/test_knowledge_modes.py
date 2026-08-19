@@ -51,7 +51,9 @@ class KnowledgeModeTest(unittest.TestCase):
         safety = KNOWLEDGE.get("safety", {})
         self.assertTrue(safety.get("public_only"))
         self.assertIn("legal dispute details", safety.get("never_infer", []))
-        self.assertNotIn("rewrite_rules", PLAIN) if False else None
+        self.assertNotEqual(PLAIN.get("mode"), "KNOWLEDGE")
+        self.assertEqual(PLAIN.get("project_aliases"), [])
+        self.assertEqual(PLAIN.get("rewrite_rules"), [])
 
     def test_writer_slots_remain_separate(self):
         self.assertEqual(RuleBasedPublicWriter.name, "rule-based-v0")
