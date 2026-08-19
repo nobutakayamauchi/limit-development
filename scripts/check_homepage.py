@@ -8,8 +8,11 @@ ROOT = Path(__file__).resolve().parents[1]
 JOURNAL_DAYS = ("2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15")
 REQUIRED = [
     "index.html",
+    "development.html",
     "assets/home.css",
     "assets/home.js",
+    "assets/development.css",
+    "assets/development.js",
     "assets/product.css",
     "assets/journal.css",
     "33D84490-07CF-4D02-8492-7CB91EC9B585.png",
@@ -99,7 +102,7 @@ def main() -> None:
     assert "a.textContent=String(j.title" in js, "FGE journal title must be inserted with textContent"
 
     # JOURNAL is a first-class readable destination. The homepage fallback opens
-    # the dated article directly; the index is still available for browsing.
+    # the dated article directly; the index remains linked to the live dev record.
     for literal in (
         "function wireJournalNavigation()",
         "a.href='journal/'",
@@ -116,11 +119,33 @@ def main() -> None:
         assert '<section class="card">' in article, f"journal article has no readable body sections: {day}"
         assert 'JOURNAL一覧へ' in article, f"journal article lacks return navigation: {day}"
         assert '../assets/journal.css' in article, f"journal article missing shared style: {day}"
+    assert 'id="developmentLink" href="../development.html"' in journal, "journal index must keep the live development record link"
     assert "../data/journals.json" in journal, "journal index must upgrade from reviewed FGE data"
     template = (ROOT / "foundry-growth-engine/templates/journal-index.html").read_text(encoding="utf-8")
     assert template == journal, "published journal template must match the current journal index"
     publish = (ROOT / ".github/workflows/fge-publish.yml").read_text(encoding="utf-8")
     assert "cp foundry-growth-engine/templates/journal-index.html ./journal/index.html" in publish, "FGE publish must preserve journal index"
+
+    # Development is live, not a stale handwritten NOW page. Reviewed FGE text is
+    # shown only after publish; raw public GitHub facts can update directly in-browser.
+    development = (ROOT / "development.html").read_text(encoding="utf-8")
+    devjs = (ROOT / "assets/development.js").read_text(encoding="utf-8")
+    for marker in ('id="reviewedFeed"', 'id="activityFeed"', 'id="repoGrid"', 'id="dateFilter"', 'id="projectFilter"'):
+        assert marker in development, f"missing live development hook: {marker}"
+    for literal in (
+        "data/updates.json",
+        "data/journals.json",
+        f"https://api.github.com/users/${{OWNER}}/events/public?per_page=100",
+        f"https://api.github.com/users/${{OWNER}}/repos?type=owner&sort=updated&direction=desc&per_page=100",
+        "params.get('date')",
+        "history.replaceState",
+        "textContent",
+    ):
+        assert literal in devjs, f"missing live development behavior: {literal}"
+    assert "いま戦っていること。" not in development, "stale handwritten NOW section must not return"
+    for day in ("2026-08-19", "2026-08-18", "2026-08-17", "2026-08-15"):
+        article = (ROOT / f"journal/{day}.html").read_text(encoding="utf-8")
+        assert f"../development.html?date={day}" in article, f"journal must link to dated dev record: {day}"
 
     # The rail's ALL INDEX is a real shelf, not a fake reset button.
     assert "window.location.href='works/'" in js, "ALL INDEX must open works/"
@@ -135,6 +160,7 @@ def main() -> None:
 
     html_files = [
         ROOT / "index.html",
+        ROOT / "development.html",
         ROOT / "foundry-spec.html",
         ROOT / "works/index.html",
         *sorted((ROOT / "journal").glob("*.html")),
@@ -143,7 +169,7 @@ def main() -> None:
     for html in html_files:
         assert_local_links(html)
 
-    print(f"homepage checks passed: {len(html_files)} html files; readable JOURNAL fallback verified")
+    print(f"homepage checks passed: {len(html_files)} html files; live DEVELOPMENT + JOURNAL linkage verified")
 
 if __name__ == "__main__":
     main()

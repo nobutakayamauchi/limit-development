@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - "index.html"
+      - "development.html"
       - "foundry-spec.html"
       - "assets/**"
       - "products/**"
@@ -27,7 +28,9 @@ jobs:
           python-version: "3.12"
       - name: Validate homepage and local links
         run: python scripts/check_homepage.py
-      - name: Validate carousel JavaScript syntax
-        run: node --check assets/home.js
+      - name: Validate browser JavaScript syntax
+        run: |
+          node --check assets/home.js
+          node --check assets/development.js
       - name: Confirm approved hero stays referenced
         run: grep -F '33D84490-07CF-4D02-8492-7CB91EC9B585.png' index.html

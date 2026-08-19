@@ -22,13 +22,13 @@
 <article class="item" id="j-2026-08-16"><div class="meta">2026.08.16</div><h2>Ultimate Loopをもっと壊す</h2><p>開発方法そのものも例外にせず、観測と外部比較を入れて自分自身を壊し続ける方向を詰めた。</p><a class="open" href="2026-08-16.html">この日の日誌を読む →</a></article>
 <article class="item" id="j-2026-08-15"><div class="meta">2026.08.15</div><h2>売る前に、作りすぎない</h2><p>コードを囲い込むより、設置・設定・接続・保守という「面倒なところ」を有償にする方針を整理した。</p><a class="open" href="2026-08-15.html">この日の日誌を読む →</a></article>
 </div><div class="note">レビュー済みFGE日誌が公開された場合は、この一覧を自動で差し替えます。生成しただけでは公開しません。</div></section>
-<div class="actions"><a class="btn primary" href="../">トップへ戻る</a><a class="btn" id="archiveLink" href="../development.html">開発記録を見る</a></div>
+<div class="actions"><a class="btn primary" href="../">トップへ戻る</a><a class="btn" id="developmentLink" href="../development.html">最新の開発記録を見る</a><a class="btn" id="archiveSearch" href="../development.html" hidden>過去の記録を検索</a></div>
 </main>
 <footer class="footer"><div class="wrap">© 2026 ONE PHONE FOUNDRY / LIMIT OVER DEVELOPMENT.</div></footer>
 <script>
-const list=document.querySelector('#journalList'),status=document.querySelector('#status'),archive=document.querySelector('#archiveLink');
+const list=document.querySelector('#journalList'),status=document.querySelector('#status'),archiveSearch=document.querySelector('#archiveSearch');
 function row(j){const a=document.createElement('article');a.className='item';a.id=`j-${String(j.date||'')}`;const meta=document.createElement('div');meta.className='meta';meta.textContent=String(j.date||'');const h=document.createElement('h2');h.textContent=String(j.title||'開発日誌');const p=document.createElement('p');p.textContent=String(j.summary||'その日の開発記録です。');const link=document.createElement('a');link.className='open';link.textContent='この日の日誌を読む →';link.href=`${encodeURIComponent(String(j.date||''))}.html`;a.append(meta,h,p,link);return a}
-fetch('../data/journals.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(String(r.status));return r.json()}).then(xs=>{if(!Array.isArray(xs)||!xs.length)return;list.replaceChildren(...xs.map(row));status.textContent=`${xs.length} DAYS`;archive.href='../archive/';archive.textContent='過去の記録を検索 →'}).catch(()=>{});
+fetch('../data/journals.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(String(r.status));return r.json()}).then(xs=>{if(!Array.isArray(xs)||!xs.length)return;list.replaceChildren(...xs.map(row));status.textContent=`${xs.length} DAYS`;archiveSearch.href='../archive/';archiveSearch.hidden=false}).catch(()=>{});
 </script>
 </body>
 </html>
