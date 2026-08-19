@@ -1,0 +1,72 @@
+<!--
+FOUNDRY GROWTH ENGINE / 「仕事してください。」
+Drop-in homepage section.
+Intended placement: immediately below the approved top hero image.
+This file is intentionally self-contained so the section can be reviewed before touching index.html.
+-->
+<style>
+.fge-home{--fge-ink:#0c1220;--fge-muted:#667085;--fge-line:#dce3ee;--fge-blue:#1463ff;--fge-navy:#07152f;--fge-soft:#edf4ff;--fge-paper:#fff;--fge-shadow:0 18px 60px rgba(18,55,112,.09);padding:64px 0 70px;border-bottom:1px solid var(--fge-line);background:linear-gradient(180deg,#fff 0%,#f7f9fc 100%);color:var(--fge-ink)}
+.fge-home *{box-sizing:border-box}.fge-home-wrap{width:min(1180px,calc(100% - 32px));margin:auto}.fge-home-kicker{font:800 11px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.16em;color:var(--fge-blue);text-transform:uppercase}.fge-home-head{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(260px,.88fr);gap:34px;align-items:end;margin-top:8px}.fge-home h2{font-size:clamp(36px,5.6vw,68px);line-height:1.02;letter-spacing:-.055em;margin:10px 0 0}.fge-home h2 span{color:var(--fge-blue)}.fge-home-lead{margin:0;color:var(--fge-muted);font-size:15px;line-height:1.85}.fge-home-board{margin-top:32px;padding:20px;border-radius:26px;border:1px solid var(--fge-line);background:var(--fge-paper);box-shadow:var(--fge-shadow)}.fge-home-flow{display:grid;grid-template-columns:1fr 42px 1fr 42px 1fr 42px 1fr;align-items:stretch}.fge-home-step{min-width:0;padding:20px 18px;border-radius:18px;background:#fff;border:1px solid var(--fge-line)}.fge-home-step strong{display:block;font-size:16px;letter-spacing:-.02em;margin:8px 0 5px}.fge-home-step p{margin:0;color:var(--fge-muted);font-size:12.5px;line-height:1.7}.fge-home-step .num{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:10px;background:var(--fge-soft);color:var(--fge-blue);font:900 11px ui-monospace,SFMono-Regular,Menlo,monospace}.fge-home-step.final{background:var(--fge-navy);border-color:var(--fge-navy);color:#fff}.fge-home-step.final p{color:#c9d6ea}.fge-home-step.final .num{background:#17345f;color:#8fc2ff}.fge-home-arrow{display:grid;place-items:center;color:var(--fge-blue);font-size:24px;font-weight:900}.fge-home-output{display:flex;gap:6px;flex-wrap:wrap;margin-top:11px}.fge-home-pill{padding:5px 8px;border-radius:999px;background:var(--fge-soft);color:#25405f;font:800 9px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.04em}.fge-home-final-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:11px}.fge-home-action{padding:6px 9px;border-radius:9px;border:1px solid #31527d;color:#d9e9ff;font-size:10px;font-weight:850}.fge-home-lower{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:14px}.fge-home-rule,.fge-home-option{border-radius:18px;padding:18px 20px;border:1px solid var(--fge-line)}.fge-home-rule{background:var(--fge-soft)}.fge-home-rule b,.fge-home-option b{display:block;font-size:14px;margin-bottom:4px}.fge-home-rule p,.fge-home-option p{margin:0;color:#40516a;font-size:12.5px;line-height:1.7}.fge-home-option{background:#fff}.fge-home-option code{font:800 10px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--fge-blue)}.fge-home-cta{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:24px}.fge-home-quote{font-size:clamp(18px,2.6vw,28px);font-weight:950;letter-spacing:-.035em}.fge-home-link{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;text-decoration:none;padding:11px 15px;border-radius:12px;background:var(--fge-blue);color:#fff;font-size:13px;font-weight:900}
+@media(max-width:760px){.fge-home{padding:48px 0 54px}.fge-home-head{grid-template-columns:1fr;gap:16px}.fge-home-board{padding:14px}.fge-home-flow{grid-template-columns:1fr}.fge-home-arrow{height:34px;transform:rotate(90deg)}.fge-home-step{padding:18px 16px}.fge-home-lower{grid-template-columns:1fr}.fge-home-cta{align-items:flex-start;flex-direction:column}.fge-home-link{width:100%}}
+@media(max-width:430px){.fge-home-wrap{width:min(100% - 24px,1180px)}.fge-home h2{font-size:clamp(34px,11vw,48px)}.fge-home-lead{font-size:14px}.fge-home-board{border-radius:20px}.fge-home-step{border-radius:15px}.fge-home-quote{font-size:21px}}
+@media(max-width:390px){.fge-home{padding-top:42px}.fge-home-wrap{width:min(100% - 20px,1180px)}.fge-home-board{padding:10px}.fge-home-step{padding:16px 14px}.fge-home-pill{font-size:8.5px}}
+@media(max-width:375px){.fge-home h2{font-size:37px}.fge-home-step strong{font-size:15px}.fge-home-link{font-size:12px}}
+</style>
+
+<section class="fge-home" id="work-please" aria-labelledby="fge-home-title">
+  <div class="fge-home-wrap">
+    <div class="fge-home-kicker">FOUNDRY GROWTH ENGINE / 仕事してください。</div>
+    <div class="fge-home-head">
+      <div>
+        <h2 id="fge-home-title">仕事してください。<br><span>公開直前まで、こっちでやっときます。</span></h2>
+      </div>
+      <p class="fge-home-lead">普段どおりAIに話す。写真を入れる。Gitで仕事する。そこから「何をしたか」を拾い、ホームページ更新・記事・日誌・SNS用の下書きまで再編します。世間に出す最後の判断だけは、人間に返します。</p>
+    </div>
+
+    <div class="fge-home-board" aria-label="仕事してください。の流れ">
+      <div class="fge-home-flow">
+        <div class="fge-home-step">
+          <span class="num">01</span>
+          <strong>普通に仕事する</strong>
+          <p>ChatGPT / Codex / Claude / Gitなど、今使っている道具をそのまま入口にする。</p>
+        </div>
+        <div class="fge-home-arrow" aria-hidden="true">→</div>
+        <div class="fge-home-step">
+          <span class="num">02</span>
+          <strong>仕事の記録を残す</strong>
+          <p>必要な作業だけWork Recordへまとめ、AIチャットではなく耐久保存できる記録へ渡す。</p>
+        </div>
+        <div class="fge-home-arrow" aria-hidden="true">→</div>
+        <div class="fge-home-step">
+          <span class="num">03</span>
+          <strong>広報資産に変える</strong>
+          <p>同じ一次記録から、用途ごとの公開候補へ組み替える。</p>
+          <div class="fge-home-output"><span class="fge-home-pill">UPDATE</span><span class="fge-home-pill">ARTICLE</span><span class="fge-home-pill">JOURNAL</span><span class="fge-home-pill">SNS</span></div>
+        </div>
+        <div class="fge-home-arrow" aria-hidden="true">→</div>
+        <div class="fge-home-step final">
+          <span class="num">04</span>
+          <strong>最後だけ決める</strong>
+          <p>自動生成はする。でも自動公開はしない。</p>
+          <div class="fge-home-final-actions"><span class="fge-home-action">投稿</span><span class="fge-home-action">修正</span><span class="fge-home-action">記録だけ</span></div>
+        </div>
+      </div>
+
+      <div class="fge-home-lower">
+        <div class="fge-home-rule">
+          <b>標準は、専用アプリなし。</b>
+          <p>既存AIとGitだけで成立するなら、それが完成形。新しい入力アプリは増やしません。</p>
+        </div>
+        <div class="fge-home-option">
+          <b>現場入力が必要な人だけ、オプション。</b>
+          <p><code>NAGI + Vlog media parts → Media Capture Adapter</code><br>写真・録音・連続入力が本当に必要な環境だけ増設します。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fge-home-cta">
+      <div class="fge-home-quote">プログラムは無料。面倒くさいところをやらせると有料です。</div>
+      <a class="fge-home-link" href="https://github.com/nobutakayamauchi/limit-development/tree/main/foundry-growth-engine">GitHubで仕組みを見る →</a>
+    </div>
+  </div>
+</section>
