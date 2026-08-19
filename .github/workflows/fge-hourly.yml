@@ -28,7 +28,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Test plain core and adapters
+      - name: Test plain core, knowledge and adapters
         run: python -m unittest discover -s foundry-growth-engine/tests -v
         env:
           PYTHONPATH: foundry-growth-engine
@@ -42,7 +42,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           FGE_REPO_INTAKE_TOKEN: ${{ secrets.FGE_REPO_INTAKE_TOKEN }}
 
-      - name: Build KNOWLEDGE review candidate
+      - name: Build CURRENT KNOWLEDGE review candidate
         run: |
           python foundry-growth-engine/scripts/run_hourly.py \
             --repo . \
@@ -58,21 +58,44 @@ jobs:
             --output foundry-growth-engine/site-plain \
             --lookback-days 30
 
-      - name: Compare PLAIN and KNOWLEDGE output
+      - name: Distill allowlisted chat into derived Knowledge
         run: |
-          python foundry-growth-engine/scripts/compare_modes.py \
-            --plain foundry-growth-engine/site-plain/data/updates.json \
-            --knowledge foundry-growth-engine/site/data/updates.json \
-            --output foundry-growth-engine/PLAIN_VS_KNOWLEDGE.md
+          mkdir -p foundry-growth-engine/.generated
+          python foundry-growth-engine/scripts/distill_knowledge.py \
+            --input foundry-growth-engine/tests/fixtures/chat-sample.safe.jsonl \
+            --base foundry-growth-engine/config/knowledge.limit-development.json \
+            --rules foundry-growth-engine/config/distiller.rules.json \
+            --output foundry-growth-engine/.generated/knowledge.chat-learned.json \
+            --report foundry-growth-engine/.generated/DISTILL_REPORT.json
 
-      - name: Package review candidate and baseline
+      - name: Build CHAT-LEARNED experimental candidate
+        run: |
+          python foundry-growth-engine/scripts/run_hourly.py \
+            --repo . \
+            --knowledge foundry-growth-engine/.generated/knowledge.chat-learned.json \
+            --output foundry-growth-engine/site-chat-learned \
+            --lookback-days 30
+
+      - name: Compare three presentation modes
+        run: |
+          python foundry-growth-engine/scripts/compare_three_modes.py \
+            --plain foundry-growth-engine/site-plain/data/updates.json \
+            --current foundry-growth-engine/site/data/updates.json \
+            --learned foundry-growth-engine/site-chat-learned/data/updates.json \
+            --distill-report foundry-growth-engine/.generated/DISTILL_REPORT.json \
+            --output foundry-growth-engine/THREE_MODE_COMPARISON.md
+
+      - name: Package review candidates and baselines
         uses: actions/upload-artifact@v4
         with:
           name: fge-review-${{ github.run_id }}
           path: |
             foundry-growth-engine/site
             foundry-growth-engine/site-plain
-            foundry-growth-engine/PLAIN_VS_KNOWLEDGE.md
+            foundry-growth-engine/site-chat-learned
+            foundry-growth-engine/THREE_MODE_COMPARISON.md
+            foundry-growth-engine/.generated/knowledge.chat-learned.json
+            foundry-growth-engine/.generated/DISTILL_REPORT.json
             foundry-growth-engine/config
           if-no-files-found: error
 
@@ -83,13 +106,15 @@ jobs:
             echo
             echo "仕事してください。公開直前まで、こっちでやっときます。"
             echo
-            echo "Primary: KNOWLEDGE mode"
+            echo "Primary: CURRENT KNOWLEDGE mode"
             echo "Baseline: PLAIN mode (not published)"
-            echo "Comparison: PLAIN_VS_KNOWLEDGE.md"
+            echo "Experiment: CHAT-LEARNED mode (not published until promoted)"
+            echo "Comparison: THREE_MODE_COMPARISON.md"
             echo
             echo "Artifact: fge-review-${{ github.run_id }}"
             echo
-            echo "- 投稿: publish KNOWLEDGE candidate with this run ID"
-            echo "- 修正: edit Knowledge / regenerate the candidate first"
+            echo "- 投稿: publish CURRENT KNOWLEDGE candidate with this run ID"
+            echo "- Chat学習採用: review Distiller report first, then promote learned rules"
+            echo "- 修正: edit Knowledge / rules / regenerate the candidate first"
             echo "- 記録だけ: run FGE reviewed publish with record_only"
           } >> "$GITHUB_STEP_SUMMARY"
