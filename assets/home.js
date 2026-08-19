@@ -26,10 +26,17 @@ function journalRow(j){
  const li=document.createElement('li'),time=document.createElement('time'),a=document.createElement('a'),arr=document.createElement('span');
  const day=typeof j.date==='string'?j.date:'';time.textContent=day.length>=10?`${day.slice(5,7)}.${day.slice(8,10)}`:day;a.textContent=String(j.title||'開発日誌');a.href=`journal/${encodeURIComponent(day)}.html`;arr.className='arr';arr.textContent='›';li.append(time,a,arr);return li;
 }
+function wireJournalNavigation(){
+ document.querySelectorAll('.nav a,.mobile-nav a').forEach(a=>{if(a.textContent.trim()==='JOURNAL')a.href='journal/'});
+ const footerJournal=[...document.querySelectorAll('.footcol')].find(col=>col.querySelector('b')?.textContent.trim()==='JOURNAL');
+ if(footerJournal){const links=footerJournal.querySelectorAll('a');if(links[0])links[0].href='journal/';if(links[1])links[1].href='journal/';if(links[2])links[2].href='journal/'}
+ const index=$('#journalIndexLink');if(index)index.href='journal/';
+ const feed=$('#journalFeed');if(feed){feed.querySelectorAll('li').forEach(li=>{const t=li.querySelector('time'),a=li.querySelector('a');if(!t||!a)return;const bits=t.textContent.trim().split('.');if(bits.length===2)a.href=`journal/#j-2026-${bits[0]}-${bits[1]}`})}
+}
 async function loadJson(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error(`${path}: ${r.status}`);return r.json()}
 async function loadLiveBoards(){
  const updateFeed=$('#updateFeed'),journalFeed=$('#journalFeed');
  try{const updates=await loadJson('data/updates.json');if(Array.isArray(updates)&&updates.length&&updateFeed){updateFeed.replaceChildren(...updates.slice(0,5).map(updateRow));const all=$('#updateAllLink');if(all)all.href='updates/'}}catch(_){/* reviewed FGE bundle not published yet: keep static fallback */}
- try{const journals=await loadJson('data/journals.json');if(Array.isArray(journals)&&journals.length&&journalFeed){journalFeed.replaceChildren(...journals.slice(0,5).map(journalRow));const idx=$('#journalIndexLink');if(idx)idx.href='archive/'}}catch(_){/* keep static fallback */}
+ try{const journals=await loadJson('data/journals.json');if(Array.isArray(journals)&&journals.length&&journalFeed){journalFeed.replaceChildren(...journals.slice(0,5).map(journalRow));const idx=$('#journalIndexLink');if(idx)idx.href='journal/'}}catch(_){/* keep static fallback */}
 }
-render();loadLiveBoards();
+render();wireJournalNavigation();loadLiveBoards();
