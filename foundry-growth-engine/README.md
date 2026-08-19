@@ -16,14 +16,19 @@
 - GitHubのコミット文や技術用語をそのまま一般向け更新情報として出さない。
 - 個人の書き癖をCoreに焼き込まない。
 - 特定CMS・SNS依存の処理をCoreに焼き込まない。
+- AIチャット履歴を永続正本にしない。
+- 専用入力アプリを標準経路として要求しない。
 
 ## Architecture
 
 ```text
 INPUT
-  text / voice / photo / work log / GitHub events
+  GitHub changes
+  or existing AI / field input
         ↓
 [ Input Adapter ]
+        ↓
+[ fge.work-record/v0 when needed ]
         ↓
 ┌──────────────────────────┐
 │ FOUNDRY GROWTH CORE      │
@@ -44,6 +49,43 @@ INPUT
               GitHub Pages / CMS / SNS
 ```
 
+## Work Record / DAY SESSION v1 boundary
+
+GitHubに自然に残る開発作業は、既存のGit inputでそのまま拾う。
+
+Gitに自然には残らない現場作業・写真・音声・AI会話上の作業は、provider-neutralな **Work Record** として耐久保存してからFGEへ渡す。
+
+```text
+ChatGPT / Codex / Claude / future AI
+          or field capture
+                ↓
+        fge.work-record/v0
+                ↓
+      durable Git work ledger
+                ↓
+               FGE
+```
+
+標準のDAY SESSION操作は3つだけ。
+
+```text
+「ここまで保存」 → CHECKPOINT / session continues
+「これ一本」     → ARTICLE_CHECKPOINT / session continues
+「今日は終わり」 → END_DAY / source session sealed
+```
+
+詳細: [WORK_RECORD_PROTOCOL.md](WORK_RECORD_PROTOCOL.md)
+
+重要な境界:
+
+```text
+AI CHAT != DURABLE MEMORY
+SAVE CLAIM != SAVE RECEIPT
+SOURCE SEALED != PUBLICATION APPROVED
+```
+
+機密性のある生Work Recordはpublic repoへ強制しない。private work ledgerからレビュー済み公開物だけをpublic outputへ出せる構成を標準とする。
+
 ## Core invariants
 
 1. **Core is plain.** User/company-specific knowledge is external.
@@ -53,13 +95,15 @@ INPUT
 5. **No-change hours do not create noise.** 変更がなければ最終確認時刻のみ更新する。
 6. **Raw evidence survives.** UPDATEや日誌を作っても元記録は消さない。
 7. **Core changes last.** 新SNS等はまずAdapter/Engine差し替えで吸収し、それでも足りない時のみCoreを変更する。
+8. **Chat is temporary.** 永続化できたと言うにはdurable Save Receiptが必要。
+9. **Sensitive raw work is not forced public.** source ledgerとpublic outputは分離可能でなければならない。
 
 ## Four operator intents
 
 入力時またはレビュー時の人間の意図は最小4系統で扱う。
 
 - **AUTO** — 入力量・密度・新規性・具体性からシステムが判断。
-- **RECORD_ONLY** — 記録だけ。記事化しない。
+- **RECORD_ONLY** — 記録だけ。公開UPDATE / ARTICLE / JOURNAL候補へ昇格しない。
 - **FORCE_ARTICLE** — 情報量が少なくても記事候補へ昇格。
 - **REVIEW_DECISION** — 投稿 / 修正 / 記録だけ。
 
@@ -227,6 +271,8 @@ explicit_intent
 raw_evidence_ref
 ```
 
+Work Record Input Adapterはこの既存Evidence boundaryへ `fge.work-record/v0` を変換するだけで、provider固有ロジックをCoreへ入れない。
+
 ## v0 success criteria
 
 1. GitHub上の実変更を1時間単位で取り込める。
@@ -239,6 +285,17 @@ raw_evidence_ref
 8. Knowledge Packを外してPlain Coreへ戻せる。
 9. GitHub Pages AdapterをCoreから分離できている。
 10. 元記録から公開物まで追跡可能である。
+
+## v1 intake success criteria
+
+1. `fge.work-record/v0` をprovider-neutralに読める。
+2. `session_sequence` / `content_scope` が曖昧な記録をfail closedできる。
+3. `ARTICLE_CHECKPOINT` はDAY SESSIONを閉じずに記事候補へ昇格できる。
+4. `END_DAY` 以外がsessionをSEALEDにできない。
+5. `RECORD_ONLY` は公開候補へ出ない。
+6. Work Recordだけを保存したtransport commitを二重UPDATEとして数えない。
+7. media参照はGit外のdurable storeを許容する。
+8. 既存FGE Core / hourly cadence / Review Gateを壊さない。
 
 ## Product explanation
 
