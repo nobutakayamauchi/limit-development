@@ -13,6 +13,8 @@ REQUIRED = [
     "33D84490-07CF-4D02-8492-7CB91EC9B585.png",
     "foundry-spec.html",
     "works/index.html",
+    "journal/index.html",
+    "foundry-growth-engine/templates/journal-index.html",
     "products/foundry-growth-engine.html",
     "products/ultimate-loop.html",
     "products/webai-bridge.html",
@@ -74,12 +76,11 @@ def main() -> None:
     ]:
         assert text in index or text in js, f"missing adopted copy: {text}"
 
-    # FGE live boards are progressive enhancement: static fallback must remain usable
-    # before the first reviewed publish creates /data, /updates, /journal and /archive.
+    # FGE live boards are progressive enhancement: static fallback remains usable
+    # before the first reviewed publish creates /data, /updates and daily journal pages.
     for marker in ('id="updateFeed"', 'id="journalFeed"', 'id="updateAllLink"', 'id="journalIndexLink"'):
         assert marker in index, f"missing FGE homepage hook: {marker}"
     assert 'href="status.html"' in index, "UPDATE fallback link must remain valid before FGE publish"
-    assert 'href="development.html">INDEX' in index, "JOURNAL fallback link must remain valid before FGE publish"
     for literal in (
         "data/updates.json",
         "data/journals.json",
@@ -94,6 +95,25 @@ def main() -> None:
     assert "a.textContent=String(u.title" in js, "FGE update title must be inserted with textContent"
     assert "a.textContent=String(j.title" in js, "FGE journal title must be inserted with textContent"
 
+    # JOURNAL is a first-class destination. Static cards land on the matching
+    # journal entry; reviewed FGE data upgrades them to daily journal pages.
+    for literal in (
+        "function wireJournalNavigation()",
+        "a.href='journal/'",
+        "index.href='journal/'",
+        "journal/#j-2026-",
+        "idx.href='journal/'",
+    ):
+        assert literal in js, f"missing journal navigation behavior: {literal}"
+    journal = (ROOT / "journal/index.html").read_text(encoding="utf-8")
+    for day in ("2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16", "2026-08-15"):
+        assert f'id="j-{day}"' in journal, f"journal fallback missing landing anchor: {day}"
+    assert "../data/journals.json" in journal, "journal index must upgrade from reviewed FGE data"
+    template = (ROOT / "foundry-growth-engine/templates/journal-index.html").read_text(encoding="utf-8")
+    assert template == journal, "published journal template must match the current journal index"
+    publish = (ROOT / ".github/workflows/fge-publish.yml").read_text(encoding="utf-8")
+    assert "cp foundry-growth-engine/templates/journal-index.html ./journal/index.html" in publish, "FGE publish must preserve journal index"
+
     # The rail's ALL INDEX is a real shelf, not a fake reset button.
     assert "window.location.href='works/'" in js, "ALL INDEX must open works/"
     works = (ROOT / "works/index.html").read_text(encoding="utf-8")
@@ -105,11 +125,11 @@ def main() -> None:
         assert bp in css, f"missing responsive breakpoint: {bp}"
     assert "width:100%" in css, "homepage should include fluid-width rules"
 
-    html_files = [ROOT / "index.html", ROOT / "foundry-spec.html", ROOT / "works/index.html", *sorted((ROOT / "products").glob("*.html"))]
+    html_files = [ROOT / "index.html", ROOT / "foundry-spec.html", ROOT / "works/index.html", ROOT / "journal/index.html", *sorted((ROOT / "products").glob("*.html"))]
     for html in html_files:
         assert_local_links(html)
 
-    print(f"homepage checks passed: {len(html_files)} html files; FGE live hooks + works index verified")
+    print(f"homepage checks passed: {len(html_files)} html files; FGE live hooks + works/journal indexes verified")
 
 if __name__ == "__main__":
     main()

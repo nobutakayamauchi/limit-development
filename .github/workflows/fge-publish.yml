@@ -56,6 +56,7 @@ jobs:
           gh run download "$RUN_ID" --repo "$GITHUB_REPOSITORY" --name "fge-review-$RUN_ID" --dir /tmp/fge-review
           test -f /tmp/fge-review/site/data/updates.json
           test -f /tmp/fge-review/site/review/index.html
+          test -f foundry-growth-engine/templates/journal-index.html
 
       - name: Publish reviewed bundle
         if: ${{ inputs.decision == 'post' }}
@@ -66,6 +67,7 @@ jobs:
           cp -R /tmp/fge-review/site/updates ./updates
           cp -R /tmp/fge-review/site/articles ./articles
           cp -R /tmp/fge-review/site/journal ./journal
+          cp foundry-growth-engine/templates/journal-index.html ./journal/index.html
           cp -R /tmp/fge-review/site/archive ./archive
           cp -R /tmp/fge-review/site/data ./data
           git config user.name "github-actions[bot]"
