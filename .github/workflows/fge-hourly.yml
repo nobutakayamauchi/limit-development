@@ -1,0 +1,62 @@
+name: FGE hourly review build
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "foundry-growth-engine/**"
+      - ".github/workflows/fge-hourly.yml"
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  build-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Test plain core and adapters
+        run: python -m unittest discover -s foundry-growth-engine/tests -v
+        env:
+          PYTHONPATH: foundry-growth-engine
+
+      - name: Rebuild review candidate
+        run: |
+          python foundry-growth-engine/scripts/run_hourly.py \
+            --repo . \
+            --knowledge foundry-growth-engine/config/knowledge.limit-development.json \
+            --output foundry-growth-engine/site \
+            --lookback-days 30
+
+      - name: Package review candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: fge-review-${{ github.run_id }}
+          path: |
+            foundry-growth-engine/site
+            foundry-growth-engine/config
+          if-no-files-found: error
+
+      - name: Review gate summary
+        run: |
+          {
+            echo "### FOUNDRY GROWTH ENGINE review candidate"
+            echo
+            echo "仕事してください。公開直前まで、こっちでやっときます。"
+            echo
+            echo "Artifact: fge-review-${{ github.run_id }}"
+            echo
+            echo "- 投稿: reviewed files are promoted through a PR"
+            echo "- 修正: edit/regenerate the candidate first"
+            echo "- 記録だけ: do not promote public files"
+          } >> "$GITHUB_STEP_SUMMARY"
