@@ -24,12 +24,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--repo', default='.')
     ap.add_argument('--knowledge', default=str(PACKAGE_ROOT/'config/knowledge.limit-development.json'))
+    ap.add_argument('--plain', action='store_true', help='Ignore operator knowledge and use the pinned PLAIN pack.')
     ap.add_argument('--output', default=str(PACKAGE_ROOT/'site'))
     ap.add_argument('--lookback-days', type=int, default=30)
     ap.add_argument('--work-record-dir', default='.fge/records')
     args = ap.parse_args()
 
-    knowledge = load_knowledge(args.knowledge) if args.knowledge else {}
+    knowledge_path = PACKAGE_ROOT/'config/knowledge.plain.json' if args.plain else Path(args.knowledge) if args.knowledge else None
+    knowledge = load_knowledge(str(knowledge_path)) if knowledge_path else {}
     git_evidence = GitHubGitAdapter(args.repo, args.lookback_days).collect()
     work_record_evidence = WorkRecordFileAdapter(args.repo, args.work_record_dir).collect()
     evidence = git_evidence + work_record_evidence
@@ -51,6 +53,21 @@ def main():
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
     checked = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec='minutes')
     render_site(args.output, updates, articles, journals, checked)
+
+    generation_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
+    metadata = {
+        'mode': generation_mode,
+        'knowledge_pack': Path(knowledge_path).name if knowledge_path else 'NONE',
+        'knowledge_schema': knowledge.get('schema_version', 'plain-v0'),
+        'checked_at': checked,
+        'evidence_count': len(evidence),
+        'public_update_count': len(updates),
+        'article_candidates': len(articles),
+        'journal_days': len(journals),
+    }
+    meta_path = Path(args.output)/'data/generation.json'
+    meta_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
+
     print(json.dumps({
         'checked_at': checked,
         'evidence_count': len(evidence),
@@ -61,7 +78,8 @@ def main():
         'public_update_count': len(updates),
         'article_candidates': len(articles),
         'journal_days': len(journals),
-        'knowledge_pack': Path(args.knowledge).name if args.knowledge else 'PLAIN'
+        'generation_mode': generation_mode,
+        'knowledge_pack': metadata['knowledge_pack']
     }, ensure_ascii=False, indent=2))
     return 0
 
