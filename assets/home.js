@@ -1,11 +1,11 @@
 const ITEMS=[
  {name:'FOUNDRY GROWTH ENGINE',short:'FGE',kind:'PRODUCT',cats:['production','product'],killer:'仕事してください。',desc:'仕事の簡単な報告から、更新情報・記事・SNS投稿用の文章まで整えます。',definition:'発信作業を、もう一仕事にしないための投稿支援ツールです。',url:'products/foundry-growth-engine.html'},
- {name:'ULTIMATE LOOP',short:'∞',kind:'METHOD / RESEARCH',cats:['research'],killer:'一からの新造、やめてください。',desc:'今ある道具や過去の部品を先に探し、組み合わせても足りない部分だけを新しく作ります。',definition:'無駄な開発を減らすための開発手法です。',url:'https://github.com/nobutakayamauchi/Ultimate-Loop'},
- {name:'WEB AI BRIDGE',short:'W',kind:'PRODUCTION',cats:['production','product'],killer:'AIを、自分の場所で使えるようにします。',desc:'AI機能を、自分のサイトや仕組みへつなぎやすくするための橋を作ります。',definition:'AIとWebをつなぐための接続基盤です。',url:'https://github.com/nobutakayamauchi/WebAI-Bridge'},
- {name:'BRIDGE PATCH',short:'B',kind:'PRODUCTION',cats:['production','product'],killer:'ここ直せば、大体直ります。',desc:'問題の中心になっている一部分を見つけて、そこだけ小さく直したり、つなぎ直したりします。',definition:'全部作り直さず、効く場所へ手を入れる改善ツールです。',url:'development.html'},
- {name:'AXIS',short:'X',kind:'RESEARCH',cats:['research'],killer:'たくさんあっても、今やるのはこれだけです。',desc:'仕事や課題が増えても、優先順位を整理して「今やること」をひとつに絞ります。',definition:'迷わず次の一手を決めるための整理ツールです。',url:'development.html'},
- {name:'NAGI',short:'N',kind:'PRODUCTION',cats:['production'],killer:'中断した場所？ここからです。',desc:'どこまで進んだか、次に何をするかを残して、途中から再開しやすくします。',definition:'中断と再開を楽にするツールです。',url:'https://github.com/nobutakayamauchi/NAGI'},
- {name:'TRACE',short:'T',kind:'RESEARCH / EVIDENCE',cats:['research'],killer:'「何が起きた？」慌てずこれ見てください。',desc:'変更・失敗・修正の流れを記録して、あとから何が起きたかを追えるようにします。',definition:'トラブル時に状況をたどるための記録ツールです。',url:'https://github.com/nobutakayamauchi/TRACE'}
+ {name:'ULTIMATE LOOP',short:'∞',kind:'METHOD / RESEARCH',cats:['research'],killer:'一からの新造、やめてください。',desc:'今ある道具や過去の部品を先に探し、組み合わせても足りない部分だけを新しく作ります。',definition:'無駄な開発を減らすための開発手法です。',url:'products/ultimate-loop.html'},
+ {name:'WEB AI BRIDGE',short:'W',kind:'PRODUCTION',cats:['production','product'],killer:'AIを、自分の場所で使えるようにします。',desc:'AI機能を、自分のサイトや仕組みへつなぎやすくするための橋を作ります。',definition:'AIとWebをつなぐための接続基盤です。',url:'products/webai-bridge.html'},
+ {name:'BRIDGE PATCH',short:'B',kind:'PRODUCTION',cats:['production','product'],killer:'ここ直せば、大体直ります。',desc:'問題の中心になっている一部分を見つけて、そこだけ小さく直したり、つなぎ直したりします。',definition:'全部作り直さず、効く場所へ手を入れる改善ツールです。',url:'products/bridgepatch.html'},
+ {name:'AXIS',short:'X',kind:'RESEARCH',cats:['research'],killer:'たくさんあっても、今やるのはこれだけです。',desc:'仕事や課題が増えても、優先順位を整理して「今やること」をひとつに絞ります。',definition:'迷わず次の一手を決めるための整理ツールです。',url:'products/axis.html'},
+ {name:'NAGI',short:'N',kind:'PRODUCTION',cats:['production'],killer:'中断した場所？ここからです。',desc:'どこまで進んだか、次に何をするかを残して、途中から再開しやすくします。',definition:'中断と再開を楽にするツールです。',url:'products/nagi.html'},
+ {name:'TRACE',short:'T',kind:'RESEARCH / EVIDENCE',cats:['research'],killer:'「何が起きた？」慌てずこれ見てください。',desc:'変更・失敗・修正の流れを記録して、あとから何が起きたかを追えるようにします。',definition:'トラブル時に状況をたどるための記録ツールです。',url:'products/trace.html'}
 ];
 let filter='all',visible=[...ITEMS.keys()],pos=0;const $=s=>document.querySelector(s);
 const els={name:$('#name'),kind:$('#kind'),killer:$('#killer'),desc:$('#desc'),definition:$('#definition'),detail:$('#detail'),visualName:$('#visualName'),visualCode:$('#visualCode'),dots:$('#dots'),thumbs:$('#thumbs')};
