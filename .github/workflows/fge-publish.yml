@@ -1,0 +1,66 @@
+name: FGE reviewed publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      review_run_id:
+        description: "Review build run ID"
+        required: true
+        type: string
+      decision:
+        description: "Human decision"
+        required: true
+        type: choice
+        options:
+          - post
+          - record_only
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  apply-decision:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Record-only decision
+        if: ${{ inputs.decision == 'record_only' }}
+        run: |
+          echo "レビュー結果: 記録だけ。公開物は変更しません。" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Download reviewed candidate
+        if: ${{ inputs.decision == 'post' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.review_run_id }}
+        run: |
+          mkdir -p /tmp/fge-review
+          gh run download "$RUN_ID" --repo "$GITHUB_REPOSITORY" --name "fge-review-$RUN_ID" --dir /tmp/fge-review
+          test -f /tmp/fge-review/site/data/updates.json
+
+      - name: Publish reviewed bundle
+        if: ${{ inputs.decision == 'post' }}
+        env:
+          RUN_ID: ${{ inputs.review_run_id }}
+        run: |
+          rm -rf updates articles journal archive data
+          cp -R /tmp/fge-review/site/updates ./updates
+          cp -R /tmp/fge-review/site/articles ./articles
+          cp -R /tmp/fge-review/site/journal ./journal
+          cp -R /tmp/fge-review/site/archive ./archive
+          cp -R /tmp/fge-review/site/data ./data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add updates articles journal archive data
+          if git diff --cached --quiet; then
+            echo "公開内容に差分はありません。" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git commit -m "[FGE] Publish reviewed bundle from run $RUN_ID"
+          git push origin main
+          echo "レビュー済みbundleを公開しました。" >> "$GITHUB_STEP_SUMMARY"
