@@ -1,0 +1,35 @@
+{
+  "schema_version": "fge.knowledge-distiller-rules/v0",
+  "rules": [
+    {
+      "id": "friction_to_automation",
+      "chat_pattern": "面倒|めんど|古い情報|自動.*更新",
+      "applies_to": "publish|update|journal|hourly|refresh|stale|auto|automation|record|homepage|fge",
+      "public_context": "繰り返し手で面倒を見る作業を増やさず、自動化できる部分は自動化することを重視しています。",
+      "min_observations": 2,
+      "base_confidence": 0.62,
+      "confidence_step": 0.09,
+      "max_confidence": 0.95
+    },
+    {
+      "id": "destination_over_link_success",
+      "chat_pattern": "一覧.*中身がない|飛べない|目的.*着けない|対応する.*飛べない",
+      "applies_to": "journal|navigation|link|route|content|article|index|homepage",
+      "public_context": "リンクが動くことより、読者が実際に目的の中身まで着けることを重視しています。",
+      "min_observations": 2,
+      "base_confidence": 0.66,
+      "confidence_step": 0.1,
+      "max_confidence": 0.96
+    },
+    {
+      "id": "replaceable_personalization",
+      "chat_pattern": "ナレッジ.*なし|プレーン.*キープ|ナレッジ.*回|plain|knowledge",
+      "applies_to": "knowledge|plain|writer|profile|mode|personal|distill",
+      "public_context": "作者向けの文脈は外付けにし、ナレッジを外せばプレーン版へ戻れることを重視しています。",
+      "min_observations": 2,
+      "base_confidence": 0.68,
+      "confidence_step": 0.09,
+      "max_confidence": 0.97
+    }
+  ]
+}
