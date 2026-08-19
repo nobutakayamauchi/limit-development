@@ -12,6 +12,7 @@ REQUIRED = [
     "assets/product.css",
     "33D84490-07CF-4D02-8492-7CB91EC9B585.png",
     "foundry-spec.html",
+    "works/index.html",
     "products/foundry-growth-engine.html",
     "products/ultimate-loop.html",
     "products/webai-bridge.html",
@@ -93,16 +94,22 @@ def main() -> None:
     assert "a.textContent=String(u.title" in js, "FGE update title must be inserted with textContent"
     assert "a.textContent=String(j.title" in js, "FGE journal title must be inserted with textContent"
 
+    # The rail's ALL INDEX is a real shelf, not a fake reset button.
+    assert "window.location.href='works/'" in js, "ALL INDEX must open works/"
+    works = (ROOT / "works/index.html").read_text(encoding="utf-8")
+    for name in ("FOUNDRY GROWTH ENGINE", "Ultimate Loop", "WebAI Bridge", "BridgePatch", "AXIS", "NAGI", "TRACE"):
+        assert name in works, f"works index missing: {name}"
+
     css = (ROOT / "assets/home.css").read_text(encoding="utf-8")
     for bp in ("max-width:820px", "max-width:520px", "max-width:390px"):
         assert bp in css, f"missing responsive breakpoint: {bp}"
     assert "width:100%" in css, "homepage should include fluid-width rules"
 
-    html_files = [ROOT / "index.html", ROOT / "foundry-spec.html", *sorted((ROOT / "products").glob("*.html"))]
+    html_files = [ROOT / "index.html", ROOT / "foundry-spec.html", ROOT / "works/index.html", *sorted((ROOT / "products").glob("*.html"))]
     for html in html_files:
         assert_local_links(html)
 
-    print(f"homepage checks passed: {len(html_files)} html files; FGE fallback/live hooks verified")
+    print(f"homepage checks passed: {len(html_files)} html files; FGE live hooks + works index verified")
 
 if __name__ == "__main__":
     main()
