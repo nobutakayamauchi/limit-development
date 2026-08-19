@@ -9,11 +9,12 @@ COUNT_TITLES = {
     '方針変更': '{project}の方針を{count}件更新',
 }
 
-def compact_hourly(updates):
+def compact_hourly(updates, contextual=False):
     """Collapse commit-level noise into public hourly units.
 
-    Group by local commit hour + project + public change type. Article-worthy
-    entries survive as the representative. Raw commit refs are preserved.
+    PLAIN keeps the original count-oriented behavior. KNOWLEDGE mode may set
+    contextual=True so a useful human explanation is not overwritten by a
+    generic "N changes" sentence during compaction.
     """
     groups = {}
     for u in updates:
@@ -30,8 +31,11 @@ def compact_hourly(updates):
         title = base.title
         summary = base.summary
         if not base.article_candidate:
-            title = COUNT_TITLES.get(base.type, '{project}で{count}件の更新').format(project=base.project, count=len(items))
-            summary = f'{base.project}で同じ1時間内に行った{len(items)}件の変更を、ひとつの更新情報としてまとめました。'
+            if contextual:
+                summary = f'{base.summary} 同じ1時間内の関連変更{len(items)-1}件も、この更新にまとめています。'
+            else:
+                title = COUNT_TITLES.get(base.type, '{project}で{count}件の更新').format(project=base.project, count=len(items))
+                summary = f'{base.project}で同じ1時間内に行った{len(items)}件の変更を、ひとつの更新情報としてまとめました。'
         else:
             summary = f'{base.summary} 同じ1時間内の関連変更{len(items)-1}件もまとめています。'
         tags = sorted({tag for item in items for tag in item.tags})
