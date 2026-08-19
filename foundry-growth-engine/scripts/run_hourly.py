@@ -32,6 +32,7 @@ def main():
 
     knowledge_path = PACKAGE_ROOT/'config/knowledge.plain.json' if args.plain else Path(args.knowledge) if args.knowledge else None
     knowledge = load_knowledge(str(knowledge_path)) if knowledge_path else {}
+    generation_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
     git_evidence = GitHubGitAdapter(args.repo, args.lookback_days).collect()
     work_record_evidence = WorkRecordFileAdapter(args.repo, args.work_record_dir).collect()
     evidence = git_evidence + work_record_evidence
@@ -47,14 +48,13 @@ def main():
             continue
         raw_updates.append(build_update(ev, knowledge))
 
-    updates = compact_hourly(raw_updates)
+    updates = compact_hourly(raw_updates, contextual=(generation_mode == 'KNOWLEDGE'))
     articles = [build_article(u, by_source[u.source_id], knowledge) for u in updates if u.article_candidate]
     journals = build_journals(updates)
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
     checked = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec='minutes')
     render_site(args.output, updates, articles, journals, checked)
 
-    generation_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
     metadata = {
         'mode': generation_mode,
         'knowledge_pack': Path(knowledge_path).name if knowledge_path else 'NONE',
