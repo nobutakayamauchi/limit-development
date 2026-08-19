@@ -9,9 +9,16 @@ PACKAGE_ROOT = HERE.parents[1]
 sys.path.insert(0, str(PACKAGE_ROOT))
 
 from fge.adapters.github_input import GitHubGitAdapter
+from fge.adapters.work_record_input import WorkRecordFileAdapter
 from fge.adapters.pages_output import render_site
 from fge.compact import compact_hourly
-from fge.core import build_update, build_article, build_journals, load_knowledge
+from fge.core import (
+    INTENT_RECORD_ONLY,
+    build_update,
+    build_article,
+    build_journals,
+    load_knowledge,
+)
 
 def main():
     ap = argparse.ArgumentParser()
@@ -19,14 +26,23 @@ def main():
     ap.add_argument('--knowledge', default=str(PACKAGE_ROOT/'config/knowledge.limit-development.json'))
     ap.add_argument('--output', default=str(PACKAGE_ROOT/'site'))
     ap.add_argument('--lookback-days', type=int, default=30)
+    ap.add_argument('--work-record-dir', default='.fge/records')
     args = ap.parse_args()
 
     knowledge = load_knowledge(args.knowledge) if args.knowledge else {}
-    evidence = GitHubGitAdapter(args.repo, args.lookback_days).collect()
-    seen = set(); raw_updates = []; by_source = {}
+    git_evidence = GitHubGitAdapter(args.repo, args.lookback_days).collect()
+    work_record_evidence = WorkRecordFileAdapter(args.repo, args.work_record_dir).collect()
+    evidence = git_evidence + work_record_evidence
+
+    seen = set(); raw_updates = []; by_source = {}; record_only = 0
     for ev in evidence:
         if ev.source_id in seen: continue
         seen.add(ev.source_id); by_source[ev.source_id] = ev
+        # RECORD_ONLY means durable source history only. It must not be
+        # promoted into UPDATE / ARTICLE / JOURNAL candidates.
+        if ev.explicit_intent == INTENT_RECORD_ONLY:
+            record_only += 1
+            continue
         raw_updates.append(build_update(ev, knowledge))
 
     updates = compact_hourly(raw_updates)
@@ -38,6 +54,9 @@ def main():
     print(json.dumps({
         'checked_at': checked,
         'evidence_count': len(evidence),
+        'git_evidence_count': len(git_evidence),
+        'work_record_count': len(work_record_evidence),
+        'record_only_count': record_only,
         'raw_update_count': len(raw_updates),
         'public_update_count': len(updates),
         'article_candidates': len(articles),
