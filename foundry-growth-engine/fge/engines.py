@@ -73,11 +73,7 @@ class KnowledgeAwarePublicWriter:
         return self._replace_terms(raw), ""
 
     def _subject_is_public_japanese(self, subject):
-        """Do not publish awkward half-English commit subjects as human copy.
-
-        A few product acronyms are fine, but if most of the subject is still an
-        English engineering sentence we fall back to a stable project headline.
-        """
+        """Do not publish awkward half-English commit subjects as human copy."""
         jp = re.findall(r"[ぁ-んァ-ヶ一-龥]", subject)
         ascii_words = re.findall(r"[A-Za-z]{2,}", subject)
         return len(jp) >= 4 and len(ascii_words) <= 2
@@ -101,9 +97,18 @@ class KnowledgeAwarePublicWriter:
             return f"{subject}{suffix}"
         return self.plain.rewrite(text, project, category, None)[0]
 
+    def _context(self, profile, category):
+        by_type = profile.get("context_by_type", {})
+        if isinstance(by_type, dict) and by_type.get(category):
+            return str(by_type[category]).strip()
+        purpose = str(profile.get("public_description") or "").strip()
+        why = str(profile.get("why_it_matters") or "").strip()
+        # Changes/research benefit from a reminder of what the project actually is.
+        if category in {"機能変更", "方針変更", "研究・検証", "機能削除"}:
+            return purpose or why
+        return why or purpose
+
     def rewrite(self, text, project, category, rule=None):
-        # Surgical rules stay highest priority because they are reviewed knowledge,
-        # not guesses made from a commit subject.
         if rule:
             return self.plain.rewrite(text, project, category, rule)
 
@@ -112,13 +117,8 @@ class KnowledgeAwarePublicWriter:
             return self.plain.rewrite(text, project, category, None)
 
         title = self._headline(text, project, category)
-        purpose = str(profile.get("public_description") or "").strip()
-        why = str(profile.get("why_it_matters") or "").strip()
-
-        # Keep the event statement conservative. Knowledge may add stable context,
-        # but it must not fabricate implementation details that Evidence did not contain.
         first = f"{title}しました。" if title.endswith(("修正", "追加", "整理", "復元", "改善", "検証")) else self.plain.rewrite(text, project, category, None)[1]
-        context = why or purpose
+        context = self._context(profile, category)
         if context and context not in first:
             return title, f"{first}{context}"
         return title, first
