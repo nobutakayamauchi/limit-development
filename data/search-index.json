@@ -1,6 +1,48 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-d15161f46e5c",
+    "date": "2026-08-20",
+    "title": "limit-developmentを公開",
+    "summary": "limit-developmentを新しく公開しました。",
+    "project": "limit-development",
+    "type": "新製品",
+    "tags": [
+      "limit-development",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-d15161f46e5c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4621400f55e4",
+    "date": "2026-08-20",
+    "title": "RTS-Skills-の方針を更新",
+    "summary": "RTS-Skills-の説明や運用方針を更新しました。",
+    "project": "RTS-Skills-",
+    "type": "方針変更",
+    "tags": [
+      "RTS-Skills-",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-4621400f55e4"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-22edc740036c",
+    "date": "2026-08-20",
+    "title": "WebAI-Bridgeの方針を更新",
+    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。",
+    "project": "WebAI-Bridge",
+    "type": "方針変更",
+    "tags": [
+      "WebAI-Bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-22edc740036c"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-62588113eb65",
     "date": "2026-08-20",
     "title": "FOUNDRY GROWTH ENGINEに機能を追加",
@@ -1547,20 +1589,6 @@
       "研究・検証"
     ],
     "href": "../updates/#u-upd-5c73c00d9b6e"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-935cb0047a7a",
-    "date": "2026-08-17",
-    "title": "WebAI-Bridgeの機能を整理",
-    "summary": "WebAI-Bridgeで不要になった機能を削除しました。",
-    "project": "WebAI-Bridge",
-    "type": "機能削除",
-    "tags": [
-      "WebAI-Bridge",
-      "機能削除"
-    ],
-    "href": "../updates/#u-upd-935cb0047a7a"
   },
   {
     "kind": "UPDATE",
@@ -3638,15 +3666,18 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-20",
     "date": "2026-08-20",
-    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか7件",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを改善』、『limit-developmentの機能を整理』、『limit-developmentを改善』もまとめています。",
-    "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
+    "title": "limit-developmentを公開、ほか10件",
+    "summary": "limit-developmentを新しく公開しました。 同じ日の開発記録として、『RTS-Skills-の方針を更新』、『WebAI-Bridgeの方針を更新』、『FOUNDRY GROWTH ENGINEに機能を追加』もまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE, RTS-Skills-, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
+      "RTS-Skills-",
       "Ultimate-Loop",
       "WebAI-Bridge",
       "limit-development",
+      "新製品",
+      "方針変更",
       "機能削除",
       "機能変更",
       "機能追加"
@@ -3717,7 +3748,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-17",
     "date": "2026-08-17",
-    "title": "WebAI-Bridgeを改善、ほか8件",
+    "title": "WebAI-Bridgeを改善、ほか7件",
     "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『WebAI-Bridgeの方針を更新』、『Ultimate-Loopを改善』、『Ultimate-Loopを検証』もまとめています。",
     "project": "Ultimate-Loop, WebAI-Bridge",
     "type": "開発日誌",
@@ -3725,7 +3756,6 @@
       "Ultimate-Loop",
       "WebAI-Bridge",
       "方針変更",
-      "機能削除",
       "機能変更",
       "機能追加",
       "研究・検証"

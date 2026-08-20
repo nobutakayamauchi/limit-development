@@ -1,5 +1,56 @@
 [
   {
+    "id": "upd-d15161f46e5c",
+    "source_id": "nobutakayamauchi/limit-development@a65930124b2f18cc655ebea261d25e85e4cb59e3",
+    "captured_at": "2026-08-20T20:43:11+09:00",
+    "type": "新製品",
+    "project": "limit-development",
+    "title": "limit-developmentを公開",
+    "summary": "limit-developmentを新しく公開しました。",
+    "tags": [
+      "limit-development",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/a65930124b2f18cc655ebea261d25e85e4cb59e3",
+    "article_score": 0.465,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-4621400f55e4",
+    "source_id": "nobutakayamauchi/RTS-Skills-@c1aed775fd82981805348e109583770b724342fd",
+    "captured_at": "2026-08-20T20:29:25+09:00",
+    "type": "方針変更",
+    "project": "RTS-Skills-",
+    "title": "RTS-Skills-の方針を更新",
+    "summary": "RTS-Skills-の説明や運用方針を更新しました。",
+    "tags": [
+      "RTS-Skills-",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Skills-/commit/c1aed775fd82981805348e109583770b724342fd",
+    "article_score": 0.317,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-22edc740036c",
+    "source_id": "nobutakayamauchi/WebAI-Bridge@b7339984937c17e13a317a4b67bacefbb84796bb",
+    "captured_at": "2026-08-20T20:29:13+09:00",
+    "type": "方針変更",
+    "project": "WebAI-Bridge",
+    "title": "WebAI-Bridgeの方針を更新",
+    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。",
+    "tags": [
+      "WebAI-Bridge",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/b7339984937c17e13a317a4b67bacefbb84796bb",
+    "article_score": 0.317,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-62588113eb65",
     "source_id": "nobutakayamauchi/limit-development@324a5a46b38a239197784f6bef76bbdc07cf0b75",
     "captured_at": "2026-08-20T19:23:53+09:00",
@@ -1869,23 +1920,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/300bd55aed0714b9976081f5968ddcd1325d9836,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/55e7535ead13462e0038f61285057fa9ec745697,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/13422797d240426168bc9ba9a7038566eb05ccd2",
     "article_score": 0.295,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-935cb0047a7a",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@e7b8ae4678d203d0cc33876e5af34c4246d2c79a",
-    "captured_at": "2026-08-17T06:19:43+09:00",
-    "type": "機能削除",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeの機能を整理",
-    "summary": "WebAI-Bridgeで不要になった機能を削除しました。",
-    "tags": [
-      "WebAI-Bridge",
-      "機能削除"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/e7b8ae4678d203d0cc33876e5af34c4246d2c79a",
-    "article_score": 0.224,
     "article_candidate": false,
     "review_status": "pending"
   },
