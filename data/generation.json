@@ -3,7 +3,7 @@
   "knowledge_pack": "knowledge.limit-development.json",
   "knowledge_schema": "fge.knowledge/v2",
   "human_editor": "human-editor-v0",
-  "checked_at": "2026-08-20T22:12+09:00",
+  "checked_at": "2026-08-20T23:00+09:00",
   "repositories": [
     ".",
     "/tmp/fge-sources/NAGI",
