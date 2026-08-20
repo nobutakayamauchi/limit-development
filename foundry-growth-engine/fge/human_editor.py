@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections import OrderedDict
 from dataclasses import replace
 import re
 
@@ -78,6 +79,19 @@ class HumanEditorV0:
             return text[:-2] + "直した日"
         return text + "日"
 
+    def _lead_project(self, items):
+        """Match the reader body's dominant-project selection.
+
+        A late one-off update in another project must not change only the
+        JOURNAL headline while the body still treats the day's dominant project
+        as the center.
+        """
+        groups = OrderedDict()
+        for item in sorted(items, key=lambda u: u.captured_at):
+            groups.setdefault(item.project, []).append(item)
+        ranked = sorted(groups.items(), key=lambda kv: (-len(kv[1]), kv[1][0].captured_at, kv[0]))
+        return ranked[0][0] if ranked else ""
+
     def edit_update(self, update, evidence_text=""):
         title = self._clean(update.title).rstrip("。")
         summary = self._human_summary(update, evidence_text)
@@ -100,11 +114,14 @@ class HumanEditorV0:
             if not items:
                 out.append(journal)
                 continue
+
             lead = items[0]
-            intent = resolve_daily_intent(intents, journal.date, lead.project, knowledge=self.knowledge)
+            lead_project = self._lead_project(items)
+            intent = resolve_daily_intent(intents, journal.date, lead_project, knowledge=self.knowledge)
             meaning_title = self._meaning_title(intent.get("intent")) if intent else ""
-            profile = self._profile(lead.project)
+            profile = self._profile(lead_project)
             why = self._clean(profile.get("why_it_matters"))
+
             if len(items) == 1:
                 title = meaning_title or lead.title
                 summary = (why or lead.summary) if meaning_title else lead.summary
