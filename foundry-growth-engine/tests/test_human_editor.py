@@ -4,7 +4,7 @@ from pathlib import Path
 import unittest
 
 from fge.core import Evidence, build_update, build_journals, load_knowledge
-from fge.human_editor import HumanEditorV0, humanize_updates
+from fge.human_editor import HumanEditorV0, humanize_updates, humanize_journals
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
@@ -13,10 +13,10 @@ PLAIN = load_knowledge(str(ROOT / 'config/knowledge.plain.json'))
 
 
 class HumanEditorTest(unittest.TestCase):
-    def ev(self, sid='e1', text='Fix journal navigation'):
+    def ev(self, sid='e1', text='Fix journal navigation', captured='2026-08-20T18:00:00+09:00'):
         return Evidence(
             source_id=sid,
-            captured_at='2026-08-20T18:00:00+09:00',
+            captured_at=captured,
             actor='tester',
             text=text,
             source_type='test',
@@ -40,13 +40,25 @@ class HumanEditorTest(unittest.TestCase):
         edited = HumanEditorV0(KNOWLEDGE).edit_update(original, ev.text)
         self.assertNotRegex(edited.summary, r'\d+[%件倍人円]')
 
-    def test_humanized_update_flows_into_journal(self):
+    def test_humanized_update_flows_into_single_item_journal(self):
         ev = self.ev()
         original = build_update(ev, KNOWLEDGE)
         edited = humanize_updates([original], {ev.source_id: ev}, KNOWLEDGE)[0]
         journal = build_journals([edited])[0]
+        journal = humanize_journals([journal], [edited], KNOWLEDGE)[0]
         self.assertEqual(journal.title, edited.title)
-        self.assertIn(edited.title, journal.summary)
+        self.assertEqual(journal.summary, edited.summary)
+
+    def test_multi_item_journal_gets_readable_lead_without_losing_ids(self):
+        aev = self.ev('a', 'Fix journal navigation', '2026-08-20T18:00:00+09:00')
+        bev = self.ev('b', 'Improve publishing flow', '2026-08-20T19:00:00+09:00')
+        updates = [build_update(aev, KNOWLEDGE), build_update(bev, KNOWLEDGE)]
+        edited = humanize_updates(updates, {'a': aev, 'b': bev}, KNOWLEDGE)
+        original_journal = build_journals(edited)[0]
+        human_journal = humanize_journals([original_journal], edited, KNOWLEDGE)[0]
+        self.assertEqual(human_journal.update_ids, original_journal.update_ids)
+        self.assertIn('ほか1件', human_journal.title)
+        self.assertIn('同じ日の開発記録として', human_journal.summary)
 
     def test_plain_output_is_unchanged_without_human(self):
         ev = self.ev(text='Fix retry queue ordering')
