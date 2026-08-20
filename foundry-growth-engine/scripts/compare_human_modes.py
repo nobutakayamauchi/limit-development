@@ -24,7 +24,9 @@ def main():
     ap.add_argument('--learned', required=True)
     ap.add_argument('--current-human', required=True)
     ap.add_argument('--learned-human', required=True)
+    ap.add_argument('--preference-human')
     ap.add_argument('--distill-report', required=True)
+    ap.add_argument('--preference-report')
     ap.add_argument('--output', required=True)
     args = ap.parse_args()
 
@@ -35,14 +37,26 @@ def main():
         'CURRENT + /human': {key(x): x for x in load(args.current_human)},
         'CHAT-LEARNED + /human': {key(x): x for x in load(args.learned_human)},
     }
+    if args.preference_human:
+        modes['PREFERENCE + /human'] = {key(x): x for x in load(args.preference_human)}
+
     report = load(args.distill_report)
+    preference = load(args.preference_report) if args.preference_report else {}
     keys = sorted(set().union(*(set(m) for m in modes.values())), reverse=True)
     lines = [
-        '# FGE presentation comparison: PLAIN / KNOWLEDGE / CHAT / /human',
+        '# FGE presentation comparison: PLAIN / KNOWLEDGE / CHAT / PREFERENCE / /human',
         '',
         f"Knowledge Distiller: `{report.get('engine')}` / promoted rules: **{report.get('promoted_rule_count', 0)}** / safe inputs: **{report.get('unique_input_count', 0)}**",
         '',
-        '`/human` is an editing pass only. It may shorten, reorder and connect existing public-safe facts/context; it is not allowed to invent event facts.',
+    ]
+    if preference:
+        counts = preference.get('stage_counts', {})
+        lines += [
+            f"Preference Loop: `{preference.get('engine')}` / feedback: **{preference.get('feedback_count', 0)}** / ACTIVE: **{counts.get('ACTIVE', 0)}** / SHADOW: **{counts.get('SHADOW', 0)}** / DORMANT: **{counts.get('DORMANT', 0)}**",
+            '',
+        ]
+    lines += [
+        '`/human` is an editing pass only. Preference Loop changes only whether chat-learned context stays SHADOW, becomes ACTIVE-eligible, or is suppressed as DORMANT.',
         '',
     ]
 
@@ -71,7 +85,7 @@ def main():
     if shown == 0:
         lines += ['No aligned output differences were found in this run.', '']
     Path(args.output).write_text('\n'.join(lines), encoding='utf-8')
-    print(json.dumps({'compared_groups': len(keys), 'shown_differences': shown, 'output': args.output}, ensure_ascii=False))
+    print(json.dumps({'compared_groups': len(keys), 'shown_differences': shown, 'modes': list(modes), 'output': args.output}, ensure_ascii=False))
     return 0
 
 
