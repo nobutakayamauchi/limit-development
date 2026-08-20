@@ -86,6 +86,7 @@ jobs:
           python foundry-growth-engine/scripts/run_hourly.py \
             "${args[@]}" \
             --git-only \
+            --human \
             --knowledge foundry-growth-engine/config/knowledge.limit-development.json \
             --output /tmp/fge-public \
             --lookback-days 30
@@ -112,7 +113,7 @@ jobs:
           else
             git commit -m "[FGE] Hourly public board ${{ github.run_id }}"
             git push origin HEAD:main
-            echo "UPDATE/JOURNAL board published from public Git evidence." >> "$GITHUB_STEP_SUMMARY"
+            echo "UPDATE/JOURNAL board published from public Git evidence through CURRENT KNOWLEDGE + /human." >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Build PLAIN regression baseline
@@ -199,16 +200,15 @@ jobs:
           {
             echo "### FOUNDRY GROWTH ENGINE"
             echo
-            echo "Hourly UPDATE/JOURNAL: public Git evidence only, auto-published."
+            echo "Hourly UPDATE/JOURNAL: public Git evidence -> CURRENT KNOWLEDGE -> /human, auto-published."
+            echo "CHAT-LEARNED + /human: experiment only until learned context is promoted."
             echo "ARTICLE / SNS / Work Record: still Human Gate only."
             echo
             echo "Baseline: PLAIN"
             echo "Current: CURRENT KNOWLEDGE"
             echo "Experiment: CHAT-LEARNED"
-            echo "Editor experiment: CURRENT + /human"
+            echo "Editor: CURRENT + /human"
             echo "Full experiment: CHAT-LEARNED + /human"
             echo "Comparison: HUMAN_MODE_COMPARISON.md"
             echo "Artifact: fge-review-${{ github.run_id }}"
-            echo
-            echo "/human is review-only in v0; unattended hourly publication does not use it."
           } >> "$GITHUB_STEP_SUMMARY"
