@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import replace
 import re
 
+from .daily_intent import resolve_daily_intent
+
 
 class HumanEditorV0:
     """Conservative public-copy editor.
@@ -12,7 +14,7 @@ class HumanEditorV0:
     invent implementation details, outcomes, numbers or motives.
     """
 
-    name = "human-editor-v0"
+    name = "human-editor-v0.1"
 
     def __init__(self, knowledge=None):
         self.knowledge = knowledge or {}
@@ -50,9 +52,6 @@ class HumanEditorV0:
         if not sentences:
             sentences = [f"{update.title}。"]
 
-        # Keep every distinct sentence already present. These may contain
-        # chat-learned context or hourly aggregation counts, both of which are
-        # public-safe information already produced upstream and must not vanish.
         if len(sentences) == 1:
             for candidate in (why, purpose):
                 candidate = self._clean(candidate)
@@ -67,6 +66,22 @@ class HumanEditorV0:
         ordered = [sentences[0], *context, *aggregation]
         return self._clean(" ".join(ordered))
 
+    def _meaning_title(self, intent):
+        """Turn an approved same-day intent into a reader-facing journal title.
+
+        This is deliberately grammatical only: it does not add a new claim.
+        """
+        text = self._clean(intent).rstrip("。！？!?")
+        if not text:
+            return ""
+        if text.endswith("にする"):
+            return text[:-3] + "にした日"
+        if text.endswith("する"):
+            return text[:-2] + "した日"
+        if text.endswith("直す"):
+            return text[:-2] + "直した日"
+        return text + "日"
+
     def edit_update(self, update, evidence_text=""):
         title = self._clean(update.title).rstrip("。")
         summary = self._human_summary(update, evidence_text)
@@ -80,13 +95,15 @@ class HumanEditorV0:
             out.append(self.edit_update(update, getattr(ev, "text", "")))
         return out
 
-    def edit_journals(self, journals, updates):
-        """Turn the mechanical daily list into a readable daily lead.
+    def edit_journals(self, journals, updates, daily_intents=None):
+        """Create a readable daily lead while keeping source facts intact.
 
-        It only uses already-edited Update title/summary text. No new event fact
-        is introduced here.
+        If an approved same-day intent exists for the lead project, it becomes
+        the journal headline. Counts stay in the summary as supporting context,
+        rather than defining the meaning of the day.
         """
         by_id = {u.id: u for u in updates}
+        intents = daily_intents or []
         out = []
         for journal in journals:
             items = [by_id[i] for i in journal.update_ids if i in by_id]
@@ -94,15 +111,20 @@ class HumanEditorV0:
                 out.append(journal)
                 continue
             lead = items[0]
+            intent = resolve_daily_intent(intents, journal.date, lead.project, knowledge=self.knowledge)
+            meaning_title = self._meaning_title(intent.get("intent")) if intent else ""
             if len(items) == 1:
-                title = lead.title
+                title = meaning_title or lead.title
                 summary = lead.summary
             else:
-                title = f"{lead.title}、ほか{len(items)-1}件"
-                quoted = "、".join(f"『{u.title}』" for u in items[1:4])
+                title = meaning_title or lead.title
                 summary = lead.summary
-                if quoted:
-                    summary = self._clean(f"{summary} 同じ日の開発記録として、{quoted}もまとめています。")
+                if meaning_title:
+                    summary = self._clean(f"{summary} この日は{len(items)}件の公開開発記録があります。")
+                else:
+                    quoted = "、".join(f"『{u.title}』" for u in items[1:4])
+                    if quoted:
+                        summary = self._clean(f"{summary} 同じ日の開発記録として、{quoted}もまとめています。")
             out.append(replace(journal, title=title, summary=summary))
         return out
 
@@ -111,5 +133,5 @@ def humanize_updates(updates, evidence_by_source=None, knowledge=None):
     return HumanEditorV0(knowledge).edit_updates(updates, evidence_by_source)
 
 
-def humanize_journals(journals, updates, knowledge=None):
-    return HumanEditorV0(knowledge).edit_journals(journals, updates)
+def humanize_journals(journals, updates, knowledge=None, daily_intents=None):
+    return HumanEditorV0(knowledge).edit_journals(journals, updates, daily_intents=daily_intents)
