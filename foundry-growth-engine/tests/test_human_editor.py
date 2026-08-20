@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 import unittest
 
-from fge.core import Evidence, build_update, build_journals, load_knowledge
+from fge.core import Evidence, Update, build_update, build_journals, load_knowledge
 from fge.human_editor import HumanEditorV0, humanize_updates, humanize_journals
 
 HERE = Path(__file__).resolve()
@@ -39,6 +39,18 @@ class HumanEditorTest(unittest.TestCase):
         original = build_update(ev, KNOWLEDGE)
         edited = HumanEditorV0(KNOWLEDGE).edit_update(original, ev.text)
         self.assertNotRegex(edited.summary, r'\d+[%件倍人円]')
+
+    def test_human_preserves_learned_and_hourly_context(self):
+        original = Update(
+            id='u', source_id='s', captured_at='2026-08-20T18:00:00+09:00',
+            type='機能変更', project='FOUNDRY GROWTH ENGINE',
+            title='FOUNDRY GROWTH ENGINEを改善',
+            summary='FOUNDRY GROWTH ENGINEを改善しました。リンクが動くことより、読者が実際に目的の中身まで着けることを重視しています。 同じ1時間内の関連変更3件も、この更新にまとめています。',
+            raw_evidence_ref='commit:s'
+        )
+        edited = HumanEditorV0(KNOWLEDGE).edit_update(original)
+        self.assertIn('読者が実際に目的の中身まで着ける', edited.summary)
+        self.assertIn('関連変更3件', edited.summary)
 
     def test_humanized_update_flows_into_single_item_journal(self):
         ev = self.ev()
