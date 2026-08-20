@@ -16,17 +16,6 @@ def _sentence(text: str) -> str:
     return text if text.endswith(("。", "！", "？", "!", "?")) else text + "。"
 
 
-def _unique(items):
-    out = []
-    seen = set()
-    for item in items:
-        key = _clean(item)
-        if key and key not in seen:
-            seen.add(key)
-            out.append(key)
-    return out
-
-
 def _project_groups(items):
     groups = OrderedDict()
     for item in items:
@@ -49,12 +38,7 @@ def _project_description(knowledge, project):
 
 
 def _project_goal(knowledge, project):
-    """Return only an explicitly public, stable project purpose.
-
-    The journal may say what a project is trying to achieve only when that purpose
-    already exists in the replaceable public Knowledge pack. It must not infer a
-    daily motive from commit order or from a convenient sequence of changes.
-    """
+    """Return only an explicitly public, stable project purpose."""
     return _clean(_project_profile(knowledge, project).get("why_it_matters") or "")
 
 
@@ -77,14 +61,12 @@ def _representatives(items, limit=3):
 
 
 def generate_journal_body(journal, updates, knowledge=None) -> str:
-    """Build a readable daily journal body from already-public Update facts.
+    """Build a readable daily journal from public Update facts + public Knowledge.
 
-    v0.2 answers two questions explicitly: what the development is trying to
-    achieve, and what was actually done today. Stable goals come only from the
-    public Knowledge pack (`why_it_matters`). Daily progress comes only from
-    already-public Update titles/summaries. The generator does not infer private
-    motives, outcomes, causality, implementation details, or a success that the
-    evidence did not state. Full UPDATE cards remain below this narrative.
+    Stable project aims may come only from `project_profiles.*.why_it_matters`.
+    Today's work and progress may come only from already-public Update records.
+    The generator does not infer hidden motives, outcomes, causality, private
+    context, implementation details, or success that the evidence did not state.
     """
     items = sorted(updates, key=lambda u: u.captured_at)
     if not items:
