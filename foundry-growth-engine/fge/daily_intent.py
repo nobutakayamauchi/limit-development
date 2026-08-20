@@ -68,10 +68,11 @@ def load_daily_intents(path: str | Path):
 def resolve_daily_intent(intents, date, project, knowledge=None):
     """Resolve a same-day approved intent for the project.
 
-    Exact project names win. Then the same replaceable project aliases used by
-    Knowledge may bridge repository-shaped names (e.g. WebAI-Bridge) to the
-    public project name. No cross-date fallback exists: old intent must never be
-    recycled into a new day's JOURNAL.
+    Exact project names win. Alias fallback is intentionally identity-safe: it
+    may bridge punctuation/spacing variants such as `WebAI-Bridge` ->
+    `WebAI Bridge`, but it must not reuse broad semantic aliases (for example a
+    repository name that merely appears in a product-classification pattern).
+    No cross-date fallback exists.
     """
     date = _clean(date)
     project = _clean(project)
@@ -82,6 +83,8 @@ def resolve_daily_intent(intents, date, project, knowledge=None):
 
     aliases = (knowledge or {}).get("project_aliases", []) if isinstance(knowledge, dict) else []
     candidates = {project}
+    project_norm = _norm_project(project)
+    normalized_project = re.sub(r"[^0-9A-Za-z一-龥ぁ-んァ-ンー]+", " ", project)
     for alias in aliases:
         if not isinstance(alias, dict):
             continue
@@ -89,8 +92,12 @@ def resolve_daily_intent(intents, date, project, knowledge=None):
         target = _clean(alias.get("project"))
         if not pattern or not target:
             continue
+        # Classification aliases can be broad. Daily intent needs entity
+        # identity, so only punctuation/spacing-equivalent target names qualify.
+        if _norm_project(target) != project_norm:
+            continue
         try:
-            if re.search(pattern, project, flags=re.I) or re.search(pattern, re.sub(r"[^0-9A-Za-z一-龥ぁ-んァ-ンー]+", " ", project), flags=re.I):
+            if re.search(pattern, project, flags=re.I) or re.search(pattern, normalized_project, flags=re.I):
                 candidates.add(target)
         except re.error:
             continue
