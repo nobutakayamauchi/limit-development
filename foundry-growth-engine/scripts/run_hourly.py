@@ -23,21 +23,30 @@ from fge.core import (
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--repo', default='.')
+    ap.add_argument('--repo', action='append', dest='repos', help='Repository path. Repeat to aggregate multiple repositories.')
     ap.add_argument('--knowledge', default=str(PACKAGE_ROOT/'config/knowledge.limit-development.json'))
     ap.add_argument('--plain', action='store_true', help='Ignore operator knowledge and use the pinned PLAIN pack.')
     ap.add_argument('--human', action='store_true', help='Run the conservative /human editing pass before ARTICLE/JOURNAL/SNS generation.')
     ap.add_argument('--output', default=str(PACKAGE_ROOT/'site'))
     ap.add_argument('--lookback-days', type=int, default=30)
     ap.add_argument('--work-record-dir', default='.fge/records')
+    ap.add_argument('--git-only', action='store_true', help='Use only Git evidence and suppress ARTICLE generation. Intended for safe automatic publication from already-public repositories.')
     args = ap.parse_args()
 
+    if args.git_only and args.human:
+        ap.error('--human is review-only in v0 and cannot be combined with --git-only unattended publication')
+
+    repos = args.repos or ['.']
     knowledge_path = PACKAGE_ROOT/'config/knowledge.plain.json' if args.plain else Path(args.knowledge) if args.knowledge else None
     knowledge = load_knowledge(str(knowledge_path)) if knowledge_path else {}
     base_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
     generation_mode = f'{base_mode}+HUMAN' if args.human else base_mode
-    git_evidence = GitHubGitAdapter(args.repo, args.lookback_days).collect()
-    work_record_evidence = WorkRecordFileAdapter(args.repo, args.work_record_dir).collect()
+
+    git_evidence = []
+    for repo in repos:
+        git_evidence.extend(GitHubGitAdapter(repo, args.lookback_days).collect())
+
+    work_record_evidence = [] if args.git_only else WorkRecordFileAdapter(repos[0], args.work_record_dir).collect()
     evidence = git_evidence + work_record_evidence
 
     seen = set(); raw_updates = []; by_source = {}; record_only = 0
@@ -53,7 +62,7 @@ def main():
     if args.human:
         updates = humanize_updates(updates, by_source, knowledge)
 
-    articles = [build_article(u, by_source[u.source_id], knowledge) for u in updates if u.article_candidate]
+    articles = [] if args.git_only else [build_article(u, by_source[u.source_id], knowledge) for u in updates if u.article_candidate]
     journals = build_journals(updates)
     if args.human:
         journals = humanize_journals(journals, updates, knowledge)
@@ -68,6 +77,8 @@ def main():
         'knowledge_schema': knowledge.get('schema_version', 'plain-v0'),
         'human_editor': 'human-editor-v0' if args.human else 'OFF',
         'checked_at': checked,
+        'repositories': [str(Path(r)) for r in repos],
+        'git_only': args.git_only,
         'evidence_count': len(evidence),
         'public_update_count': len(updates),
         'article_candidates': len(articles),
@@ -78,6 +89,7 @@ def main():
 
     print(json.dumps({
         'checked_at': checked,
+        'repository_count': len(repos),
         'evidence_count': len(evidence),
         'git_evidence_count': len(git_evidence),
         'work_record_count': len(work_record_evidence),
