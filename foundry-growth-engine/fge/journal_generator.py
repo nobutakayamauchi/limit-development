@@ -34,16 +34,28 @@ def _project_groups(items):
     return groups
 
 
-def _project_context(knowledge, project):
+def _project_profile(knowledge, project):
     if not isinstance(knowledge, dict):
-        return ""
+        return {}
     profiles = knowledge.get("project_profiles", {})
     if not isinstance(profiles, dict):
-        return ""
+        return {}
     profile = profiles.get(project) or {}
-    if not isinstance(profile, dict):
-        return ""
-    return _clean(profile.get("public_description") or profile.get("why_it_matters") or "")
+    return profile if isinstance(profile, dict) else {}
+
+
+def _project_description(knowledge, project):
+    return _clean(_project_profile(knowledge, project).get("public_description") or "")
+
+
+def _project_goal(knowledge, project):
+    """Return only an explicitly public, stable project purpose.
+
+    The journal may say what a project is trying to achieve only when that purpose
+    already exists in the replaceable public Knowledge pack. It must not infer a
+    daily motive from commit order or from a convenient sequence of changes.
+    """
+    return _clean(_project_profile(knowledge, project).get("why_it_matters") or "")
 
 
 def _representatives(items, limit=3):
@@ -67,11 +79,12 @@ def _representatives(items, limit=3):
 def generate_journal_body(journal, updates, knowledge=None) -> str:
     """Build a readable daily journal body from already-public Update facts.
 
-    v0.1 groups a busy day into project-sized chapters instead of copying a long
-    chronological log. It may use an already-public project description from the
-    replaceable Knowledge pack, but it does not infer motives, outcomes, private
-    context, causality, or implementation details. The underlying UPDATE cards
-    remain the detailed source beneath the generated narrative.
+    v0.2 answers two questions explicitly: what the development is trying to
+    achieve, and what was actually done today. Stable goals come only from the
+    public Knowledge pack (`why_it_matters`). Daily progress comes only from
+    already-public Update titles/summaries. The generator does not infer private
+    motives, outcomes, causality, implementation details, or a success that the
+    evidence did not state. Full UPDATE cards remain below this narrative.
     """
     items = sorted(updates, key=lambda u: u.captured_at)
     if not items:
@@ -80,28 +93,38 @@ def generate_journal_body(journal, updates, knowledge=None) -> str:
     groups = _project_groups(items)
     ranked = sorted(groups.items(), key=lambda kv: (-len(kv[1]), kv[1][0].captured_at, kv[0]))
     types = Counter(u.type for u in items)
+    lead_project, lead_items = ranked[0]
 
     lines = ["## 今日の中心"]
     if len(items) == 1:
         lines.append(_sentence(items[0].summary or items[0].title))
     else:
-        lead_project, lead_items = ranked[0]
         lines.append(_sentence(f"この日は合計{len(items)}件の開発記録があり、最も多かったのは{lead_project}の{len(lead_items)}件でした"))
-        context = _project_context(knowledge, lead_project)
-        if context:
-            lines.append(_sentence(context))
+        description = _project_description(knowledge, lead_project)
+        if description:
+            lines.append(_sentence(description))
+
+    lead_goal = _project_goal(knowledge, lead_project)
+    if lead_goal:
+        lines += ["", "## この開発で狙っていること"]
+        lines.append(_sentence(lead_goal))
+        if len(ranked) > 1:
+            lines.append(_sentence(f"今日はその{lead_project}を中心に、ほか{len(ranked) - 1}プロジェクトの変更・検証も並行して記録されています"))
 
     lines += ["", "## まとまりごとの記録"]
     max_groups = 5
     for project, project_items in ranked[:max_groups]:
         lines.append(f"### {project} — {len(project_items)}件")
-        context = _project_context(knowledge, project)
-        if context and not (ranked and project == ranked[0][0] and len(items) > 1):
-            lines.append(_sentence(context))
+        description = _project_description(knowledge, project)
+        goal = _project_goal(knowledge, project)
+        if description and not (project == lead_project and len(items) > 1):
+            lines.append(_sentence(description))
+        if goal:
+            lines.append(_sentence("狙い: " + goal))
         project_types = Counter(u.type for u in project_items)
         if len(project_types) > 1:
             breakdown = "、".join(f"{name}{count}件" for name, count in sorted(project_types.items()))
-            lines.append(_sentence("内訳: " + breakdown))
+            lines.append(_sentence("今日やったことの内訳: " + breakdown))
         representatives = _representatives(project_items)
         for u in representatives:
             time = u.captured_at[11:16] if len(u.captured_at) >= 16 else ""
@@ -123,17 +146,19 @@ def generate_journal_body(journal, updates, knowledge=None) -> str:
     type_text = "、".join(f"{name}{count}件" for name, count in sorted(types.items()))
     lines.append(_sentence("内容: " + type_text))
 
-    lines += ["", "## 今日の結論"]
-    if len(ranked) == 1:
-        project, rows = ranked[0]
-        lines.append(_sentence(f"この日の記録は{project}に集中し、{len(rows)}件の変更・検証としてまとまりました"))
-    else:
-        lead_project, lead_items = ranked[0]
+    lines += ["", "## 今日どこまで進んだか"]
+    lead_last = lead_items[-1]
+    lines.append(_sentence(f"{lead_project}では、記録上いちばん新しい変更は「{lead_last.title}」です"))
+    if lead_last.summary and _clean(lead_last.summary) != _clean(lead_last.title):
+        lines.append(_sentence(lead_last.summary))
+    if len(ranked) > 1:
         others = "、".join(project for project, _ in ranked[1:4])
-        conclusion = f"この日は{lead_project}の{len(lead_items)}件を中心に、{others}にも開発が広がりました"
+        tail = f"同じ日に{others}にも変更・検証の記録があります"
         if len(ranked) > 4:
-            conclusion += f"。そのほか{len(ranked) - 4}プロジェクトにも記録があります"
-        lines.append(_sentence(conclusion))
+            tail += f"。そのほか{len(ranked) - 4}プロジェクトにも記録があります"
+        lines.append(_sentence(tail))
+    if lead_goal:
+        lines.append(_sentence("ここでいう『進んだ』は公開Git上で確認できる変更の到達点であり、狙いそのものを達成したという意味ではありません"))
 
     return "\n".join(lines).strip()
 
