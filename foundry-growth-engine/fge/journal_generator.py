@@ -5,6 +5,8 @@ from html import escape
 from pathlib import Path
 import re
 
+from .daily_intent import resolve_daily_intent
+
 
 def _clean(text: str) -> str:
     return " ".join(str(text or "").split()).strip()
@@ -25,14 +27,6 @@ def _project_groups(items):
 
 
 def _project_profile(knowledge, project):
-    """Resolve a public project profile without mutating the Update project name.
-
-    Git evidence can carry repository-shaped names such as `WebAI-Bridge` while
-    the replaceable Knowledge pack uses a public name such as `WebAI Bridge`.
-    Exact profiles win. Otherwise the existing public `project_aliases` table is
-    reused, including a punctuation-normalized candidate, so Journal does not
-    need its own second alias system.
-    """
     if not isinstance(knowledge, dict):
         return {}
     profiles = knowledge.get("project_profiles", {})
@@ -65,12 +59,10 @@ def _project_description(knowledge, project):
 
 
 def _project_goal(knowledge, project):
-    """Return only an explicitly public, stable project purpose."""
     return _clean(_project_profile(knowledge, project).get("why_it_matters") or "")
 
 
 def _representatives(items, limit=3):
-    """Choose distinct chronological checkpoints without pretending they are causes."""
     if not items:
         return []
     unique = []
@@ -87,13 +79,16 @@ def _representatives(items, limit=3):
     return [unique[i] for i in indexes[:limit]]
 
 
-def generate_journal_body(journal, updates, knowledge=None) -> str:
-    """Journal Generator v0.2: explain the public goal and the work done today.
+def generate_journal_body(journal, updates, knowledge=None, daily_intents=None) -> str:
+    """Journal Generator v0.3: separate today's intent, facts and stable purpose.
 
-    Stable project aims may come only from `project_profiles.*.why_it_matters`.
-    Today's work and progress may come only from already-public Update records.
-    The generator does not infer hidden motives, outcomes, causality, private
-    context, implementation details, or success that the evidence did not state.
+    TODAY'S INTENT = explicitly approved /goal or Chat Observation for this date.
+    ACTUAL WORK = already-public Git-derived Update records.
+    PROJECT PURPOSE = replaceable public Knowledge (`why_it_matters`).
+
+    These sources are deliberately kept separate. The generator never infers a
+    daily goal from commits and never treats a stable project purpose as proof of
+    what the operator intended on a particular day.
     """
     items = sorted(updates, key=lambda u: u.captured_at)
     if not items:
@@ -103,6 +98,9 @@ def generate_journal_body(journal, updates, knowledge=None) -> str:
     ranked = sorted(groups.items(), key=lambda kv: (-len(kv[1]), kv[1][0].captured_at, kv[0]))
     types = Counter(u.type for u in items)
     lead_project, lead_items = ranked[0]
+    intents = daily_intents or []
+    lead_intent = resolve_daily_intent(intents, journal.date, lead_project, knowledge=knowledge)
+    lead_goal = _project_goal(knowledge, lead_project)
 
     lines = ["## 今日の中心"]
     if len(items) == 1:
@@ -113,27 +111,34 @@ def generate_journal_body(journal, updates, knowledge=None) -> str:
         if description:
             lines.append(_sentence(description))
 
-    lead_goal = _project_goal(knowledge, lead_project)
-    if lead_goal:
-        lines += ["", "## この開発で狙っていること"]
-        lines.append(_sentence(lead_goal))
-        if len(ranked) > 1:
-            lines.append(_sentence(f"今日はその{lead_project}を中心に、ほか{len(ranked) - 1}プロジェクトの変更・検証も並行して記録されています"))
+    if lead_intent:
+        lines += ["", "## 今日の狙い"]
+        lines.append(_sentence(lead_intent["intent"]))
+        source_label = "/goal" if lead_intent.get("source_type") == "goal" else "承認済みChat Observation"
+        lines.append(_sentence(f"この狙いは{source_label}として公開利用を承認した記録から入れています"))
 
-    lines += ["", "## まとまりごとの記録"]
+    if lead_goal:
+        lines += ["", "## この開発の目的"]
+        lines.append(_sentence(lead_goal))
+        lines.append(_sentence("これはその日の推測ではなく、公開ナレッジに置いた継続的なプロジェクト目的です"))
+
+    lines += ["", "## 今日やったこと"]
     max_groups = 5
     for project, project_items in ranked[:max_groups]:
         lines.append(f"### {project} — {len(project_items)}件")
         description = _project_description(knowledge, project)
+        project_intent = resolve_daily_intent(intents, journal.date, project, knowledge=knowledge)
         goal = _project_goal(knowledge, project)
         if description and not (project == lead_project and len(items) > 1):
             lines.append(_sentence(description))
+        if project_intent:
+            lines.append(_sentence("今日の狙い: " + project_intent["intent"]))
         if goal:
-            lines.append(_sentence("狙い: " + goal))
+            lines.append(_sentence("継続的な目的: " + goal))
         project_types = Counter(u.type for u in project_items)
         if len(project_types) > 1:
             breakdown = "、".join(f"{name}{count}件" for name, count in sorted(project_types.items()))
-            lines.append(_sentence("今日やったことの内訳: " + breakdown))
+            lines.append(_sentence("実際の変更内訳: " + breakdown))
         representatives = _representatives(project_items)
         for u in representatives:
             time = u.captured_at[11:16] if len(u.captured_at) >= 16 else ""
@@ -141,7 +146,7 @@ def generate_journal_body(journal, updates, knowledge=None) -> str:
             lines.append(f"- {prefix}{u.title} — {_sentence(u.summary or u.title)}")
         hidden = len(project_items) - len(representatives)
         if hidden > 0:
-            lines.append(f"- このまとまりには、ほか{hidden}件の更新があります。")
+            lines.append(f"- このまとまりには、ほか{hidden}件の公開Git由来の更新があります。")
 
     if len(ranked) > max_groups:
         other_count = sum(len(rows) for _, rows in ranked[max_groups:])
@@ -153,27 +158,28 @@ def generate_journal_body(journal, updates, knowledge=None) -> str:
     project_names = [project for project, _ in ranked]
     lines.append(_sentence("対象: " + "、".join(project_names)))
     type_text = "、".join(f"{name}{count}件" for name, count in sorted(types.items()))
-    lines.append(_sentence("内容: " + type_text))
+    lines.append(_sentence("公開Gitで確認できた内容: " + type_text))
 
     lines += ["", "## 今日どこまで進んだか"]
     lead_last = lead_items[-1]
-    lines.append(_sentence(f"{lead_project}では、記録上いちばん新しい変更は「{lead_last.title}」です"))
+    lines.append(_sentence(f"{lead_project}では、公開Git上でいちばん新しい到達点は「{lead_last.title}」です"))
     if lead_last.summary and _clean(lead_last.summary) != _clean(lead_last.title):
         lines.append(_sentence(lead_last.summary))
+    if lead_intent:
+        lines.append(_sentence("今日の狙いに対して、ここまでが現時点でGitから確認できる実作業です。狙いを完全に達成したという判定はしていません"))
+    elif lead_goal:
+        lines.append(_sentence("ここでいう到達点は公開Git上の観測結果であり、プロジェクト目的そのものを達成したという意味ではありません"))
     if len(ranked) > 1:
         others = "、".join(project for project, _ in ranked[1:4])
         tail = f"同じ日に{others}にも変更・検証の記録があります"
         if len(ranked) > 4:
             tail += f"。そのほか{len(ranked) - 4}プロジェクトにも記録があります"
         lines.append(_sentence(tail))
-    if lead_goal:
-        lines.append(_sentence("ここでいう『進んだ』は公開Git上で確認できる変更の到達点であり、狙いそのものを達成したという意味ではありません"))
 
     return "\n".join(lines).strip()
 
 
 def journal_body_html(body: str) -> str:
-    """Render the restricted journal-body format without allowing raw HTML."""
     chunks = []
     in_list = False
     for raw in str(body or "").splitlines():
@@ -208,8 +214,7 @@ def journal_body_html(body: str) -> str:
     return "".join(chunks)
 
 
-def expand_rendered_journals(output_dir, journals, updates, knowledge=None) -> int:
-    """Inject expanded bodies into journal pages rendered by the Pages adapter."""
+def expand_rendered_journals(output_dir, journals, updates, knowledge=None, daily_intents=None) -> int:
     out = Path(output_dir)
     update_map = {u.id: u for u in updates}
     changed = 0
@@ -218,7 +223,7 @@ def expand_rendered_journals(output_dir, journals, updates, knowledge=None) -> i
         if not path.exists():
             continue
         items = [update_map[i] for i in journal.update_ids if i in update_map]
-        body = generate_journal_body(journal, items, knowledge=knowledge)
+        body = generate_journal_body(journal, items, knowledge=knowledge, daily_intents=daily_intents)
         lead = f"<p>{escape(journal.summary)}</p>"
         replacement = lead + '<section class="journal-generated">' + journal_body_html(body) + "</section>"
         html = path.read_text(encoding="utf-8")
