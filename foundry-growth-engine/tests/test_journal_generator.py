@@ -49,6 +49,17 @@ class JournalGeneratorTest(unittest.TestCase):
         self.assertIn('狙いそのものを達成したという意味ではありません', body)
         self.assertGreater(len(body), len(j.summary) * 10)
 
+    def test_repo_shaped_project_name_reuses_existing_alias_table(self):
+        item = update(1, '09', 'Bridge接続を修正', '接続まわりを修正しました。', project='WebAI-Bridge')
+        j = Journal('2026-08-20', '1件', 'lead', [item.id], [item.project], [item.type], [])
+        knowledge = {
+            'project_aliases': [{'pattern': 'webai bridge|web ai bridge', 'project': 'WebAI Bridge'}],
+            'project_profiles': {'WebAI Bridge': {'why_it_matters': '使うAIが変わっても利用場所まで捨てないためです。'}},
+        }
+        body = generate_journal_body(j, [item], knowledge=knowledge)
+        self.assertIn('## この開発で狙っていること', body)
+        self.assertIn('使うAIが変わっても利用場所まで捨てないためです。', body)
+
     def test_goal_is_not_invented_when_knowledge_has_only_description(self):
         item = update(1, '09', '導線を修正', '本文へ直接着けるようにしました。')
         j = Journal('2026-08-20', '1件', 'lead', [item.id], [item.project], [item.type], [])
