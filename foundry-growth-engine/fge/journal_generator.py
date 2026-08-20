@@ -3,6 +3,7 @@ from __future__ import annotations
 from collections import Counter, OrderedDict
 from html import escape
 from pathlib import Path
+import re
 
 
 def _clean(text: str) -> str:
@@ -24,13 +25,39 @@ def _project_groups(items):
 
 
 def _project_profile(knowledge, project):
+    """Resolve a public project profile without mutating the Update project name.
+
+    Git evidence can carry repository-shaped names such as `WebAI-Bridge` while
+    the replaceable Knowledge pack uses a public name such as `WebAI Bridge`.
+    Exact profiles win. Otherwise the existing public `project_aliases` table is
+    reused, including a punctuation-normalized candidate, so Journal does not
+    need its own second alias system.
+    """
     if not isinstance(knowledge, dict):
         return {}
     profiles = knowledge.get("project_profiles", {})
     if not isinstance(profiles, dict):
         return {}
-    profile = profiles.get(project) or {}
-    return profile if isinstance(profile, dict) else {}
+    profile = profiles.get(project)
+    if isinstance(profile, dict):
+        return profile
+
+    raw = str(project or "")
+    normalized = re.sub(r"[^0-9A-Za-z一-龥ぁ-んァ-ンー]+", " ", raw).strip()
+    for alias in knowledge.get("project_aliases", []):
+        if not isinstance(alias, dict):
+            continue
+        pattern = str(alias.get("pattern") or "")
+        target = str(alias.get("project") or "")
+        if not pattern or target not in profiles:
+            continue
+        try:
+            matched = re.search(pattern, raw, flags=re.I) or re.search(pattern, normalized, flags=re.I)
+        except re.error:
+            matched = None
+        if matched and isinstance(profiles.get(target), dict):
+            return profiles[target]
+    return {}
 
 
 def _project_description(knowledge, project):
