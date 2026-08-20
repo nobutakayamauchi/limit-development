@@ -30,11 +30,13 @@ def learned_pack():
 class PreferenceLoopTest(unittest.TestCase):
     def test_dogfood_has_active_shadow_and_dormant(self):
         derived, report = apply_preference_feedback(learned_pack(), load_feedback(FEEDBACK))
-        states = {x['id']: x['preference']['stage'] for x in derived['learned_context_rules']}
+        states = {x['id']: x['preference']['stage'] for x in derived['preference_rule_catalog']}
         self.assertEqual(states['friction_to_automation'], STAGE_ACTIVE)
         self.assertEqual(states['destination_over_link_success'], STAGE_SHADOW)
         self.assertEqual(states['replaceable_personalization'], STAGE_DORMANT)
         self.assertEqual(report['stage_counts'], {'SHADOW': 1, 'ACTIVE': 1, 'DORMANT': 1})
+        usable = {x['id'] for x in derived['learned_context_rules']}
+        self.assertNotIn('replaceable_personalization', usable)
 
     def test_no_feedback_stays_shadow(self):
         derived, _ = apply_preference_feedback(learned_pack(), [])
@@ -82,18 +84,19 @@ class PreferenceLoopTest(unittest.TestCase):
 
     def test_surface_scores_are_kept_separately(self):
         derived, _ = apply_preference_feedback(learned_pack(), load_feedback(FEEDBACK))
-        rule = next(x for x in derived['learned_context_rules'] if x['id'] == 'friction_to_automation')
+        rule = next(x for x in derived['preference_rule_catalog'] if x['id'] == 'friction_to_automation')
         self.assertEqual(set(rule['preference']['surface_scores']), {'journal', 'update', 'sns'})
 
     def test_dormant_rule_is_not_used_by_writer(self):
         derived, _ = apply_preference_feedback(learned_pack(), load_feedback(FEEDBACK))
+        dormant_context = next(x['public_context'] for x in derived['preference_rule_catalog'] if x['id'] == 'replaceable_personalization')
+        self.assertNotIn('replaceable_personalization', {x['id'] for x in derived['learned_context_rules']})
         ev = Evidence(
             source_id='pref-e1', captured_at='2026-08-20T20:00:00+09:00', actor='tester',
             text='Improve knowledge writer mode', source_type='test',
             project_hint='FOUNDRY GROWTH ENGINE', raw_evidence_ref='commit:pref-e1',
         )
         update = build_update(ev, derived)
-        dormant_context = next(x['public_context'] for x in derived['learned_context_rules'] if x['id'] == 'replaceable_personalization')
         self.assertNotIn(dormant_context, update.summary)
 
 
