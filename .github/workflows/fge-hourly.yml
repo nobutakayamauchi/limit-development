@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Test plain core, knowledge, /human and adapters
+      - name: Test plain core, knowledge, preference, /human and adapters
         run: python -m unittest discover -s foundry-growth-engine/tests -v
         env:
           PYTHONPATH: foundry-growth-engine
@@ -135,6 +135,14 @@ jobs:
             --output foundry-growth-engine/.generated/knowledge.chat-learned.json \
             --report foundry-growth-engine/.generated/DISTILL_REPORT.json
 
+      - name: Apply structured Preference Loop feedback
+        run: |
+          python foundry-growth-engine/scripts/apply_preference_feedback.py \
+            --knowledge foundry-growth-engine/.generated/knowledge.chat-learned.json \
+            --feedback foundry-growth-engine/config/preference-feedback.limit-development.jsonl \
+            --output foundry-growth-engine/.generated/knowledge.preference.json \
+            --report foundry-growth-engine/.generated/PREFERENCE_REPORT.json
+
       - name: Build CHAT-LEARNED experimental candidate
         run: |
           args=()
@@ -167,7 +175,18 @@ jobs:
             --output foundry-growth-engine/site-chat-learned-human \
             --lookback-days 30
 
-      - name: Compare PLAIN, Knowledge, Chat and /human modes
+      - name: Build PREFERENCE plus /human candidate
+        run: |
+          args=()
+          while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/fge-repos.txt
+          python foundry-growth-engine/scripts/run_hourly.py \
+            "${args[@]}" \
+            --knowledge foundry-growth-engine/.generated/knowledge.preference.json \
+            --human \
+            --output foundry-growth-engine/site-preference-human \
+            --lookback-days 30
+
+      - name: Compare PLAIN, Knowledge, Chat, Preference and /human modes
         run: |
           python foundry-growth-engine/scripts/compare_human_modes.py \
             --plain foundry-growth-engine/site-plain/data/updates.json \
@@ -175,7 +194,9 @@ jobs:
             --learned foundry-growth-engine/site-chat-learned/data/updates.json \
             --current-human foundry-growth-engine/site-human/data/updates.json \
             --learned-human foundry-growth-engine/site-chat-learned-human/data/updates.json \
+            --preference-human foundry-growth-engine/site-preference-human/data/updates.json \
             --distill-report foundry-growth-engine/.generated/DISTILL_REPORT.json \
+            --preference-report foundry-growth-engine/.generated/PREFERENCE_REPORT.json \
             --output foundry-growth-engine/HUMAN_MODE_COMPARISON.md
 
       - name: Package review candidates and baselines
@@ -188,9 +209,12 @@ jobs:
             foundry-growth-engine/site-chat-learned
             foundry-growth-engine/site-human
             foundry-growth-engine/site-chat-learned-human
+            foundry-growth-engine/site-preference-human
             foundry-growth-engine/HUMAN_MODE_COMPARISON.md
             foundry-growth-engine/.generated/knowledge.chat-learned.json
+            foundry-growth-engine/.generated/knowledge.preference.json
             foundry-growth-engine/.generated/DISTILL_REPORT.json
+            foundry-growth-engine/.generated/PREFERENCE_REPORT.json
             foundry-growth-engine/config
           if-no-files-found: error
 
@@ -200,7 +224,8 @@ jobs:
             echo "### FOUNDRY GROWTH ENGINE"
             echo
             echo "Hourly UPDATE/JOURNAL: public Git evidence -> CURRENT KNOWLEDGE -> /human, auto-published."
-            echo "CHAT-LEARNED + /human: experiment only until learned context is promoted."
+            echo "CHAT-LEARNED + /human: experiment only."
+            echo "PREFERENCE + /human: feedback-scored experiment; ACTIVE is eligible for explicit promotion, not automatic publication."
             echo "ARTICLE / SNS / Work Record: still Human Gate only."
             echo
             echo "Baseline: PLAIN"
@@ -208,6 +233,8 @@ jobs:
             echo "Experiment: CHAT-LEARNED"
             echo "Editor: CURRENT + /human"
             echo "Full experiment: CHAT-LEARNED + /human"
+            echo "Preference experiment: PREFERENCE + /human"
             echo "Comparison: HUMAN_MODE_COMPARISON.md"
+            echo "Preference report: .generated/PREFERENCE_REPORT.json"
             echo "Artifact: fge-review-${{ github.run_id }}"
           } >> "$GITHUB_STEP_SUMMARY"
