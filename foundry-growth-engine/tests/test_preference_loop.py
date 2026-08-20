@@ -20,11 +20,23 @@ ROOT = HERE.parents[1]
 BASE = load_knowledge(str(ROOT / 'config/knowledge.limit-development.json'))
 RULES = load_rules(ROOT / 'config/distiller.rules.json')
 CHAT = ROOT / 'tests/fixtures/chat-sample.safe.jsonl'
-FEEDBACK = ROOT / 'tests/fixtures/preference-feedback.safe.jsonl'
+FEEDBACK = ROOT / 'config/preference-feedback.limit-development.jsonl'
 
 
 def learned_pack():
     return distill(load_jsonl(CHAT), BASE, RULES)[0]
+
+
+def row(fid='x', rid='friction_to_automation', output='out-1', surface='journal', allow=True):
+    return {
+        'feedback_id': fid,
+        'rule_id': rid,
+        'surface': surface,
+        'output_id': output,
+        'ratings': {'voice_fit': 2, 'readability': 2, 'factual_fidelity': 2, 'task_fit': 2},
+        'verdict': 'accept',
+        'allow_preference_learning': allow,
+    }
 
 
 class PreferenceLoopTest(unittest.TestCase):
@@ -43,32 +55,39 @@ class PreferenceLoopTest(unittest.TestCase):
         self.assertTrue(all(x['preference']['stage'] == STAGE_SHADOW for x in derived['learned_context_rules']))
 
     def test_duplicate_feedback_id_counts_once(self):
-        row = {
-            'feedback_id': 'dup', 'rule_id': 'friction_to_automation', 'surface': 'journal',
-            'ratings': {'voice_fit': 2, 'readability': 2, 'factual_fidelity': 2, 'task_fit': 2},
-            'allow_preference_learning': True,
-        }
-        derived, report = apply_preference_feedback(learned_pack(), [row, dict(row)])
-        rule = next(x for x in derived['learned_context_rules'] if x['id'] == 'friction_to_automation')
+        first = row('dup', output='same-output')
+        derived, report = apply_preference_feedback(learned_pack(), [first, dict(first)])
+        rule_state = next(x for x in derived['learned_context_rules'] if x['id'] == 'friction_to_automation')
         self.assertEqual(report['feedback_count'], 1)
-        self.assertEqual(rule['preference']['feedback_count'], 1)
-        self.assertEqual(rule['preference']['stage'], STAGE_SHADOW)
+        self.assertEqual(rule_state['preference']['feedback_count'], 1)
+        self.assertEqual(rule_state['preference']['stage'], STAGE_SHADOW)
+
+    def test_same_output_cannot_be_rated_repeatedly_to_force_promotion(self):
+        rows = [row('a', output='same'), row('b', output='same'), row('c', output='same')]
+        derived, report = apply_preference_feedback(learned_pack(), rows)
+        state = next(x for x in derived['learned_context_rules'] if x['id'] == 'friction_to_automation')
+        self.assertEqual(report['feedback_count'], 1)
+        self.assertEqual(state['preference']['stage'], STAGE_SHADOW)
+        self.assertEqual([x['reason'] for x in report['ignored']].count('duplicate_output'), 2)
 
     def test_unknown_and_non_allowlisted_feedback_are_ignored(self):
-        rows = [
-            {'feedback_id':'a','rule_id':'missing','ratings':{a:2 for a in ('voice_fit','readability','factual_fidelity','task_fit')},'allow_preference_learning':True},
-            {'feedback_id':'b','rule_id':'friction_to_automation','ratings':{a:2 for a in ('voice_fit','readability','factual_fidelity','task_fit')},'allow_preference_learning':False},
-        ]
+        rows = [row('a', rid='missing'), row('b', allow=False, output='out-2')]
         _, report = apply_preference_feedback(learned_pack(), rows)
         self.assertEqual(report['feedback_count'], 0)
         self.assertEqual({x['reason'] for x in report['ignored']}, {'unknown_rule', 'not_allowlisted'})
 
     def test_free_text_feedback_is_rejected(self):
-        data = {
-            'feedback_id':'unsafe', 'rule_id':'friction_to_automation', 'surface':'journal',
-            'ratings': {'voice_fit':2,'readability':2,'factual_fidelity':2,'task_fit':2},
-            'allow_preference_learning': True, 'comment':'この文章は俺っぽい',
-        }
+        data = row('unsafe')
+        data['comment'] = 'この文章は俺っぽい'
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td) / 'feedback.jsonl'
+            p.write_text(json.dumps(data, ensure_ascii=False) + '\n', encoding='utf-8')
+            with self.assertRaises(ValueError):
+                load_feedback(p)
+
+    def test_missing_output_identity_is_rejected(self):
+        data = row('missing-output')
+        data.pop('output_id')
         with tempfile.TemporaryDirectory() as td:
             p = Path(td) / 'feedback.jsonl'
             p.write_text(json.dumps(data, ensure_ascii=False) + '\n', encoding='utf-8')
@@ -84,8 +103,8 @@ class PreferenceLoopTest(unittest.TestCase):
 
     def test_surface_scores_are_kept_separately(self):
         derived, _ = apply_preference_feedback(learned_pack(), load_feedback(FEEDBACK))
-        rule = next(x for x in derived['preference_rule_catalog'] if x['id'] == 'friction_to_automation')
-        self.assertEqual(set(rule['preference']['surface_scores']), {'journal', 'update', 'sns'})
+        rule_state = next(x for x in derived['preference_rule_catalog'] if x['id'] == 'friction_to_automation')
+        self.assertEqual(set(rule_state['preference']['surface_scores']), {'journal', 'update', 'sns'})
 
     def test_dormant_rule_is_not_used_by_writer(self):
         derived, _ = apply_preference_feedback(learned_pack(), load_feedback(FEEDBACK))
