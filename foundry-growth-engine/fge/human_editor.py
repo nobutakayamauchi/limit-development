@@ -47,25 +47,25 @@ class HumanEditorV0:
         purpose = self._clean(profile.get("public_description"))
         why = self._clean(profile.get("why_it_matters"))
 
-        fact = sentences[0] if sentences else f"{update.title}。"
-        if not fact.endswith("。"):
-            fact += "。"
+        if not sentences:
+            sentences = [f"{update.title}。"]
 
-        context = ""
-        for candidate in sentences[1:] + [why, purpose]:
-            candidate = self._clean(candidate)
-            if not candidate:
-                continue
-            if candidate in fact or candidate == fact:
-                continue
-            context = candidate
-            break
+        # Keep every distinct sentence already present. These may contain
+        # chat-learned context or hourly aggregation counts, both of which are
+        # public-safe information already produced upstream and must not vanish.
+        if len(sentences) == 1:
+            for candidate in (why, purpose):
+                candidate = self._clean(candidate)
+                if candidate and candidate not in sentences[0]:
+                    if not candidate.endswith("。"):
+                        candidate += "。"
+                    sentences.append(candidate)
+                    break
 
-        if context:
-            if not context.endswith("。"):
-                context += "。"
-            return self._clean(f"{fact} {context}")
-        return self._clean(fact)
+        aggregation = [s for s in sentences[1:] if "同じ1時間" in s or "関連変更" in s]
+        context = [s for s in sentences[1:] if s not in aggregation]
+        ordered = [sentences[0], *context, *aggregation]
+        return self._clean(" ".join(ordered))
 
     def edit_update(self, update, evidence_text=""):
         title = self._clean(update.title).rstrip("。")
