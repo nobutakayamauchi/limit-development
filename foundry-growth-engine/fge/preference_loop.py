@@ -20,6 +20,12 @@ STAGE_ACTIVE = "ACTIVE"
 STAGE_DORMANT = "DORMANT"
 
 
+def _weighted_score(ratings):
+    numerator = sum(float(ratings[a]) * AXIS_WEIGHTS[a] for a in AXES)
+    denominator = sum(AXIS_WEIGHTS.values())
+    return round(numerator / denominator, 3)
+
+
 def load_feedback(path: str | Path):
     items = []
     with open(path, encoding="utf-8") as f:
@@ -46,26 +52,34 @@ def load_feedback(path: str | Path):
                 value = ratings[axis]
                 if not isinstance(value, (int, float)) or isinstance(value, bool) or value < -2 or value > 2:
                     raise ValueError(f"feedback at line {lineno} rating {axis} must be a number between -2 and 2")
+            score = _weighted_score(ratings)
+            if verdict == "accept" and score <= 0:
+                raise ValueError(f"feedback at line {lineno} accept verdict conflicts with non-positive ratings")
+            if verdict == "reject" and score >= 0:
+                raise ValueError(f"feedback at line {lineno} reject verdict conflicts with non-negative ratings")
+            item["surface"] = str(item["surface"]).strip().casefold()
+            item["output_id"] = str(item["output_id"]).strip()
+            item["rule_id"] = str(item["rule_id"]).strip()
+            item["feedback_id"] = str(item["feedback_id"]).strip()
             items.append(item)
     return items
 
 
-def _weighted_score(ratings):
-    numerator = sum(float(ratings[a]) * AXIS_WEIGHTS[a] for a in AXES)
-    denominator = sum(AXIS_WEIGHTS.values())
-    return round(numerator / denominator, 3)
-
-
 def _stage(feedback_count, averages, weighted_mean, config):
-    minimum = int(config.get("min_feedback_for_active", 3))
+    active_minimum = int(config.get("min_feedback_for_active", 3))
+    dormant_minimum = int(config.get("min_feedback_for_dormant", 2))
+    catastrophic_factual = float(config.get("catastrophic_factual_threshold", -1.5))
     if feedback_count == 0:
         return STAGE_SHADOW
-    if averages["factual_fidelity"] < float(config.get("dormant_factual_threshold", 0.0)):
+    if averages["factual_fidelity"] <= catastrophic_factual:
         return STAGE_DORMANT
-    if weighted_mean <= float(config.get("dormant_score_threshold", -0.75)):
-        return STAGE_DORMANT
+    if feedback_count >= dormant_minimum:
+        if averages["factual_fidelity"] < float(config.get("dormant_factual_threshold", 0.0)):
+            return STAGE_DORMANT
+        if weighted_mean <= float(config.get("dormant_score_threshold", -0.75)):
+            return STAGE_DORMANT
     if (
-        feedback_count >= minimum
+        feedback_count >= active_minimum
         and weighted_mean >= float(config.get("active_score_threshold", 1.0))
         and averages["factual_fidelity"] >= float(config.get("active_factual_threshold", 1.0))
         and averages["task_fit"] >= float(config.get("active_task_threshold", 0.5))
@@ -100,12 +114,19 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
         if rid not in rules:
             ignored.append({"feedback_id": fid, "reason": "unknown_rule", "rule_id": rid})
             continue
-        output_key = (rid, str(item.get("surface", "")).strip(), str(item.get("output_id", "")).strip())
+        surface = str(item.get("surface", "")).strip().casefold()
+        output_id = str(item.get("output_id", "")).strip()
+        output_key = (rid, surface, output_id)
         if output_key in seen_outputs:
             ignored.append({"feedback_id": fid, "reason": "duplicate_output", "rule_id": rid})
             continue
         seen_outputs.add(output_key)
-        unique[fid] = item
+        normalized = dict(item)
+        normalized["surface"] = surface
+        normalized["output_id"] = output_id
+        normalized["rule_id"] = rid
+        normalized["feedback_id"] = fid
+        unique[fid] = normalized
 
     by_rule = {rid: [] for rid in rules}
     for item in unique.values():
@@ -133,7 +154,7 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
 
         surface = {}
         for row in rows:
-            name = str(row.get("surface") or "unspecified")
+            name = str(row.get("surface") or "unspecified").strip().casefold()
             surface.setdefault(name, []).append(_weighted_score(row["ratings"]))
         surface_scores = {k: round(sum(v) / len(v), 3) for k, v in sorted(surface.items())}
 
@@ -173,6 +194,7 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
         "shadow_is_experimental": True,
         "dormant_is_suppressed": True,
         "duplicate_output_counts": False,
+        "single_negative_auto_dormant": False,
     }
     report = {
         "engine": "preference-loop-v0",
