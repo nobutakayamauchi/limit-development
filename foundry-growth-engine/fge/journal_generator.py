@@ -47,18 +47,21 @@ def _project_context(knowledge, project):
 
 
 def _representatives(items, limit=3):
-    """Choose a few chronological checkpoints without pretending they are causes."""
-    if len(items) <= limit:
-        return list(items)
-    indexes = [0, len(items) // 2, len(items) - 1]
-    out = []
+    """Choose distinct chronological checkpoints without pretending they are causes."""
+    if not items:
+        return []
+    unique = []
     seen = set()
-    for idx in indexes:
-        item = items[idx]
-        if item.id not in seen:
-            seen.add(item.id)
-            out.append(item)
-    return out[:limit]
+    for item in items:
+        key = (_clean(item.title), _clean(item.summary))
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(item)
+    if len(unique) <= limit:
+        return unique
+    indexes = [0, len(unique) // 2, len(unique) - 1]
+    return [unique[i] for i in indexes[:limit]]
 
 
 def generate_journal_body(journal, updates, knowledge=None) -> str:
@@ -99,11 +102,12 @@ def generate_journal_body(journal, updates, knowledge=None) -> str:
         if len(project_types) > 1:
             breakdown = "、".join(f"{name}{count}件" for name, count in sorted(project_types.items()))
             lines.append(_sentence("内訳: " + breakdown))
-        for u in _representatives(project_items):
+        representatives = _representatives(project_items)
+        for u in representatives:
             time = u.captured_at[11:16] if len(u.captured_at) >= 16 else ""
             prefix = f"{time} " if time else ""
             lines.append(f"- {prefix}{u.title} — {_sentence(u.summary or u.title)}")
-        hidden = len(project_items) - len(_representatives(project_items))
+        hidden = len(project_items) - len(representatives)
         if hidden > 0:
             lines.append(f"- このまとまりには、ほか{hidden}件の更新があります。")
 
@@ -171,13 +175,7 @@ def journal_body_html(body: str) -> str:
 
 
 def expand_rendered_journals(output_dir, journals, updates, knowledge=None) -> int:
-    """Inject expanded bodies into journal pages rendered by the Pages adapter.
-
-    The adapter remains the sole owner of page layout. This post-render layer only
-    replaces the short journal lead with the lead plus a generated daily body.
-    If the expected lead is absent, the page is left untouched rather than using
-    a broad HTML rewrite.
-    """
+    """Inject expanded bodies into journal pages rendered by the Pages adapter."""
     out = Path(output_dir)
     update_map = {u.id: u for u in updates}
     changed = 0
