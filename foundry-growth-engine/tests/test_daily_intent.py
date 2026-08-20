@@ -61,12 +61,18 @@ class DailyIntentTest(unittest.TestCase):
         intents = [self.base()]
         self.assertIsNone(resolve_daily_intent(intents, '2026-08-21', 'FOUNDRY GROWTH ENGINE'))
 
-    def test_repo_alias_can_match_public_project_intent(self):
+    def test_identity_safe_repo_alias_can_match_public_project_intent(self):
         intents = [self.base(project='WebAI Bridge')]
         knowledge = {'project_aliases':[{'pattern':'webai bridge|web ai bridge','project':'WebAI Bridge'}]}
         found = resolve_daily_intent(intents, '2026-08-20', 'WebAI-Bridge', knowledge=knowledge)
         self.assertIsNotNone(found)
         self.assertEqual(found['project'], 'WebAI Bridge')
+
+    def test_broad_semantic_alias_cannot_relabel_daily_intent_identity(self):
+        intents = [self.base(project='ONE PHONE FOUNDRY')]
+        knowledge = {'project_aliases':[{'pattern':'one phone foundry|homepage|mobile layout|limit-development','project':'ONE PHONE FOUNDRY'}]}
+        found = resolve_daily_intent(intents, '2026-08-20', 'limit-development', knowledge=knowledge)
+        self.assertIsNone(found)
 
 
 if __name__ == '__main__':
