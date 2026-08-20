@@ -43,8 +43,8 @@ function showHourlyStatus(status){
 }
 async function loadLiveBoards(){
  const updateFeed=$('#updateFeed'),journalFeed=$('#journalFeed');
- try{const updates=await loadJson('data/updates.json');if(Array.isArray(updates)&&updates.length&&updateFeed){updateFeed.replaceChildren(...updates.slice(0,5).map(updateRow));const all=$('#updateAllLink');if(all)all.href='updates/'}}catch(_){/* keep static fallback */}
- try{const journals=await loadJson('data/journals.json');if(Array.isArray(journals)&&journals.length&&journalFeed){journalFeed.replaceChildren(...journals.slice(0,5).map(journalRow));const idx=$('#journalIndexLink');if(idx)idx.href='journal/'}}catch(_){/* keep static fallback */}
+ try{const updates=await loadJson('data/updates.json');if(Array.isArray(updates)&&updates.length&&updateFeed){updateFeed.replaceChildren(...updates.slice(0,5).map(updateRow));const all=$('#updateAllLink');if(all)all.href='updates/'}}catch(_){/* reviewed FGE bundle not published yet: keep static fallback */}
+ try{const journals=await loadJson('data/journals.json');if(Array.isArray(journals)&&journals.length&&journalFeed){journalFeed.replaceChildren(...journals.slice(0,5).map(journalRow));const idx=$('#journalIndexLink');if(idx)idx.href='journal/'}}catch(_){/* reviewed FGE bundle not published yet: keep static fallback */}
  try{showHourlyStatus(await loadJson('data/status.json'))}catch(_){showHourlyStatus(null)}
 }
 render();wireJournalNavigation();loadLiveBoards();
