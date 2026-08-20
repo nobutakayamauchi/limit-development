@@ -78,6 +78,20 @@ class PreferenceLoopTest(unittest.TestCase):
         self.assertEqual(state['preference']['stage'], STAGE_SHADOW)
         self.assertEqual([x['reason'] for x in report['ignored']].count('duplicate_output'), 2)
 
+    def test_surface_case_does_not_bypass_duplicate_output_guard(self):
+        rows = [row('a', output='same', surface='Journal'), row('b', output='same', surface='journal')]
+        _, report = apply_preference_feedback(learned_pack(), rows)
+        self.assertEqual(report['feedback_count'], 1)
+        self.assertEqual([x['reason'] for x in report['ignored']], ['duplicate_output'])
+
+    def test_single_normal_negative_stays_shadow(self):
+        negative = row('neg', rid='replaceable_personalization', output='negative-1', surface='technical')
+        negative['ratings'] = {'voice_fit': -1, 'readability': 0, 'factual_fidelity': -1, 'task_fit': -1}
+        negative['verdict'] = 'reject'
+        derived, _ = apply_preference_feedback(learned_pack(), [negative])
+        state = next(x for x in derived['preference_rule_catalog'] if x['id'] == 'replaceable_personalization')
+        self.assertEqual(state['preference']['stage'], STAGE_SHADOW)
+
     def test_unknown_and_non_allowlisted_feedback_are_ignored(self):
         rows = [row('a', rid='missing'), row('b', allow=False, output='out-2')]
         _, report = apply_preference_feedback(learned_pack(), rows)
@@ -96,6 +110,15 @@ class PreferenceLoopTest(unittest.TestCase):
     def test_missing_output_identity_is_rejected(self):
         data = row('missing-output')
         data.pop('output_id')
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td) / 'feedback.jsonl'
+            p.write_text(json.dumps(data, ensure_ascii=False) + '\n', encoding='utf-8')
+            with self.assertRaises(ValueError):
+                load_feedback(p)
+
+    def test_verdict_rating_conflict_is_rejected(self):
+        data = row('conflict')
+        data['verdict'] = 'reject'
         with tempfile.TemporaryDirectory() as td:
             p = Path(td) / 'feedback.jsonl'
             p.write_text(json.dumps(data, ensure_ascii=False) + '\n', encoding='utf-8')
