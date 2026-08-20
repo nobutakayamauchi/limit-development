@@ -72,6 +72,22 @@ class HumanEditorTest(unittest.TestCase):
         self.assertIn('ほか1件', human_journal.title)
         self.assertIn('同じ日の開発記録として', human_journal.summary)
 
+    def test_daily_intent_uses_dominant_project_not_latest_one_off_project(self):
+        fge1 = Update('u1','s1','2026-08-20T09:00:00+09:00','機能追加','FOUNDRY GROWTH ENGINE','FGE変更1','FGE変更1を反映しました。',[], 'commit:1')
+        fge2 = Update('u2','s2','2026-08-20T10:00:00+09:00','機能変更','FOUNDRY GROWTH ENGINE','FGE変更2','FGE変更2を反映しました。',[], 'commit:2')
+        late = Update('u3','s3','2026-08-20T23:00:00+09:00','機能変更','WebAI Bridge','Bridge変更','Bridge変更を反映しました。',[], 'commit:3')
+        updates = [fge1, fge2, late]
+        journal = build_journals(updates)[0]
+        intents = [{
+            'observation_id':'g1','date':'2026-08-20','project':'FOUNDRY GROWTH ENGINE',
+            'intent':'開発日誌を読みやすい形にする。','source_type':'goal',
+            'approval_status':'approved','public_safe':True,'allow_journal':True,
+            'source_ref':'approved-chat-goal:test'
+        }]
+        edited = humanize_journals([journal], updates, KNOWLEDGE, daily_intents=intents)[0]
+        self.assertEqual(edited.title, '開発日誌を読みやすい形にした日')
+        self.assertIn('この日は3件の公開開発記録があります。', edited.summary)
+
     def test_plain_output_is_unchanged_without_human(self):
         ev = self.ev(text='Fix retry queue ordering')
         a = build_update(ev, PLAIN)
