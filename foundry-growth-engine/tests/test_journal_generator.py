@@ -17,7 +17,7 @@ def update(i, hour, title, summary, project='FOUNDRY GROWTH ENGINE', kind='機�
 
 
 class JournalGeneratorTest(unittest.TestCase):
-    def test_busy_day_is_grouped_into_project_chapters(self):
+    def test_busy_day_explains_goal_then_groups_actual_work(self):
         items = [
             update(1, '09', '導線を修正', '一覧ではなく本文へ直接着けるようにしました。'),
             update(2, '12', '開発記録を自動化', '公開Gitの活動から開発記録を更新するようにしました。'),
@@ -26,18 +26,37 @@ class JournalGeneratorTest(unittest.TestCase):
             update(5, '20', 'Loopを検証', '開発ループを検証しました。', project='Ultimate Loop', kind='研究・検証'),
         ]
         j = Journal('2026-08-20', '5件の更新', '短いリード', [x.id for x in items], ['FOUNDRY GROWTH ENGINE','WebAI Bridge','Ultimate Loop'], ['機能変更','機能追加','研究・検証'], [])
-        knowledge = {'project_profiles': {'FOUNDRY GROWTH ENGINE': {'public_description': '仕事の記録から公開直前まで整える仕組みです。'}}}
+        knowledge = {'project_profiles': {
+            'FOUNDRY GROWTH ENGINE': {
+                'public_description': '仕事の記録から公開直前まで整える仕組みです。',
+                'why_it_matters': '投稿を考える別の仕事を増やさないために使います。',
+            },
+            'WebAI Bridge': {'why_it_matters': '使うAIが変わっても利用場所まで捨てないためです。'},
+        }}
         body = generate_journal_body(j, items, knowledge=knowledge)
         self.assertIn('## 今日の中心', body)
+        self.assertIn('## この開発で狙っていること', body)
+        self.assertIn('投稿を考える別の仕事を増やさないために使います。', body)
         self.assertIn('## まとまりごとの記録', body)
         self.assertIn('### FOUNDRY GROWTH ENGINE — 3件', body)
+        self.assertIn('狙い: 投稿を考える別の仕事を増やさないために使います。', body)
         self.assertIn('### WebAI Bridge — 1件', body)
+        self.assertIn('狙い: 使うAIが変わっても利用場所まで捨てないためです。', body)
         self.assertIn('### Ultimate Loop — 1件', body)
         self.assertIn('最も多かったのはFOUNDRY GROWTH ENGINEの3件', body)
-        self.assertIn('仕事の記録から公開直前まで整える仕組みです。', body)
-        self.assertIn('## 今日の結論', body)
-        self.assertIn('FOUNDRY GROWTH ENGINEの3件を中心に', body)
-        self.assertGreater(len(body), len(j.summary) * 8)
+        self.assertIn('## 今日どこまで進んだか', body)
+        self.assertIn('記録上いちばん新しい変更は「ナレッジを追加」', body)
+        self.assertIn('狙いそのものを達成したという意味ではありません', body)
+        self.assertGreater(len(body), len(j.summary) * 10)
+
+    def test_goal_is_not_invented_when_knowledge_has_only_description(self):
+        item = update(1, '09', '導線を修正', '本文へ直接着けるようにしました。')
+        j = Journal('2026-08-20', '1件', 'lead', [item.id], [item.project], [item.type], [])
+        knowledge = {'project_profiles': {item.project: {'public_description': '公開支援ツールです。'}}}
+        body = generate_journal_body(j, [item], knowledge=knowledge)
+        self.assertNotIn('## この開発で狙っていること', body)
+        self.assertNotIn('狙い:', body)
+        self.assertIn('## 今日どこまで進んだか', body)
 
     def test_large_single_project_uses_checkpoints_not_full_log(self):
         items = [update(i, f'{8+i:02d}', f'変更{i}', f'変更{i}を反映しました。') for i in range(1, 8)]
