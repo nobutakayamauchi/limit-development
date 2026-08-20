@@ -1,8 +1,26 @@
 [
   {
+    "date": "2026-08-21",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+    "update_ids": [
+      "upd-a37bf3c627fd"
+    ],
+    "projects": [
+      "FOUNDRY GROWTH ENGINE"
+    ],
+    "types": [
+      "機能変更"
+    ],
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ]
+  },
+  {
     "date": "2026-08-20",
-    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか13件",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEに機能を追加』、『limit-developmentを改善』、『limit-developmentを公開』もまとめています。",
+    "title": "開発日誌を、何を狙って何をやり、今日どこまで進んだかが読めば分かる開発記録にした日",
+    "summary": "仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 この日は14件の公開開発記録があります。",
     "update_ids": [
       "upd-ac7c71d73149",
       "upd-2eab97b465a8",

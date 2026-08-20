@@ -2,12 +2,12 @@
   "mode": "KNOWLEDGE+HUMAN",
   "knowledge_pack": "knowledge.limit-development.json",
   "knowledge_schema": "fge.knowledge/v2",
-  "human_editor": "human-editor-v0",
-  "journal_generator": "journal-generator-v0.3",
+  "human_editor": "human-editor-v0.1",
+  "journal_generator": "journal-generator-v0.4-reader",
   "daily_intent_input": "daily-intents.limit-development.jsonl",
   "approved_daily_intents": 1,
-  "expanded_journal_pages": 21,
-  "checked_at": "2026-08-21T00:50+09:00",
+  "expanded_journal_pages": 22,
+  "checked_at": "2026-08-21T02:46+09:00",
   "repositories": [
     ".",
     "/tmp/fge-sources/NAGI",
@@ -34,8 +34,8 @@
     "/tmp/fge-sources/seminar-compass"
   ],
   "git_only": true,
-  "evidence_count": 730,
-  "public_update_count": 262,
+  "evidence_count": 731,
+  "public_update_count": 263,
   "article_candidates": 0,
-  "journal_days": 21
+  "journal_days": 22
 }
