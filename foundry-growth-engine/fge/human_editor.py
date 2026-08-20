@@ -103,15 +103,17 @@ class HumanEditorV0:
             lead = items[0]
             intent = resolve_daily_intent(intents, journal.date, lead.project, knowledge=self.knowledge)
             meaning_title = self._meaning_title(intent.get("intent")) if intent else ""
+            profile = self._profile(lead.project)
+            why = self._clean(profile.get("why_it_matters"))
             if len(items) == 1:
                 title = meaning_title or lead.title
-                summary = lead.summary
+                summary = (why or lead.summary) if meaning_title else lead.summary
             else:
                 title = meaning_title or f"{lead.title}、ほか{len(items)-1}件"
-                summary = lead.summary
                 if meaning_title:
-                    summary = self._clean(f"{summary} この日は{len(items)}件の公開開発記録があります。")
+                    summary = self._clean(f"{why or lead.summary} この日は{len(items)}件の公開開発記録があります。")
                 else:
+                    summary = lead.summary
                     quoted = "、".join(f"『{u.title}』" for u in items[1:4])
                     if quoted:
                         summary = self._clean(f"{summary} 同じ日の開発記録として、{quoted}もまとめています。")
