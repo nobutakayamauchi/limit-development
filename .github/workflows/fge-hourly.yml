@@ -5,15 +5,19 @@ on:
   pull_request:
     paths:
       - "foundry-growth-engine/**"
+      - "assets/home.js"
       - ".github/workflows/fge-hourly.yml"
       - ".github/workflows/fge-publish.yml"
   schedule:
     - cron: "17 * * * *"
 
 permissions:
-  contents: read
+  contents: write
   pull-requests: read
   issues: write
+
+env:
+  FGE_OWNER: nobutakayamauchi
 
 jobs:
   build-review:
@@ -42,18 +46,81 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           FGE_REPO_INTAKE_TOKEN: ${{ secrets.FGE_REPO_INTAKE_TOKEN }}
 
+      - name: Collect public development repositories
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/fge-sources
+          printf '.\n' > /tmp/fge-repos.txt
+          gh api --paginate "users/$FGE_OWNER/repos?per_page=100&type=owner&sort=updated" \
+            --jq '.[] | select(.private == false and .fork == false and .archived == false) | .name' \
+            | sort -u > /tmp/fge-public-names.txt
+          while IFS= read -r name; do
+            [ -z "$name" ] && continue
+            [ "$name" = "limit-development" ] && continue
+            dest="/tmp/fge-sources/$name"
+            if git clone --quiet --filter=blob:none --no-tags "https://github.com/$FGE_OWNER/$name.git" "$dest"; then
+              printf '%s\n' "$dest" >> /tmp/fge-repos.txt
+            else
+              echo "Skipping clone failure: $name" >&2
+            fi
+          done < /tmp/fge-public-names.txt
+          echo "Collected $(wc -l < /tmp/fge-repos.txt) repositories."
+
       - name: Build CURRENT KNOWLEDGE review candidate
         run: |
+          args=()
+          while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/fge-repos.txt
           python foundry-growth-engine/scripts/run_hourly.py \
-            --repo . \
+            "${args[@]}" \
             --knowledge foundry-growth-engine/config/knowledge.limit-development.json \
             --output foundry-growth-engine/site \
             --lookback-days 30
 
+      - name: Build unattended public Git board
+        if: github.event_name != 'pull_request'
+        run: |
+          args=()
+          while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/fge-repos.txt
+          python foundry-growth-engine/scripts/run_hourly.py \
+            "${args[@]}" \
+            --git-only \
+            --knowledge foundry-growth-engine/config/knowledge.limit-development.json \
+            --output /tmp/fge-public \
+            --lookback-days 30
+
+      - name: Publish hourly UPDATE + JOURNAL board
+        if: github.event_name != 'pull_request'
+        run: |
+          set -euo pipefail
+          rm -rf updates journal archive
+          mkdir -p data
+          cp -R /tmp/fge-public/updates ./updates
+          cp -R /tmp/fge-public/journal ./journal
+          cp -R /tmp/fge-public/archive ./archive
+          cp /tmp/fge-public/data/updates.json ./data/updates.json
+          cp /tmp/fge-public/data/journals.json ./data/journals.json
+          cp /tmp/fge-public/data/status.json ./data/status.json
+          cp /tmp/fge-public/data/generation.json ./data/generation.json
+          cp /tmp/fge-public/data/search-index.json ./data/search-index.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add updates journal archive data/updates.json data/journals.json data/status.json data/generation.json data/search-index.json
+          if git diff --cached --quiet; then
+            echo "Hourly board already current." >> "$GITHUB_STEP_SUMMARY"
+          else
+            git commit -m "[FGE] Hourly public board ${{ github.run_id }}"
+            git push origin HEAD:main
+            echo "UPDATE/JOURNAL board published from public Git evidence." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Build PLAIN regression baseline
         run: |
+          args=()
+          while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/fge-repos.txt
           python foundry-growth-engine/scripts/run_hourly.py \
-            --repo . \
+            "${args[@]}" \
             --plain \
             --output foundry-growth-engine/site-plain \
             --lookback-days 30
@@ -70,8 +137,10 @@ jobs:
 
       - name: Build CHAT-LEARNED experimental candidate
         run: |
+          args=()
+          while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/fge-repos.txt
           python foundry-growth-engine/scripts/run_hourly.py \
-            --repo . \
+            "${args[@]}" \
             --knowledge foundry-growth-engine/.generated/knowledge.chat-learned.json \
             --output foundry-growth-engine/site-chat-learned \
             --lookback-days 30
@@ -102,19 +171,13 @@ jobs:
       - name: Review gate summary
         run: |
           {
-            echo "### FOUNDRY GROWTH ENGINE review candidate"
+            echo "### FOUNDRY GROWTH ENGINE"
             echo
-            echo "仕事してください。公開直前まで、こっちでやっときます。"
+            echo "Hourly UPDATE/JOURNAL: public Git evidence only, auto-published."
+            echo "ARTICLE / SNS / Work Record: still Human Gate only."
             echo
-            echo "Primary: CURRENT KNOWLEDGE mode"
-            echo "Baseline: PLAIN mode (not published)"
-            echo "Experiment: CHAT-LEARNED mode (not published until promoted)"
-            echo "Comparison: THREE_MODE_COMPARISON.md"
-            echo
+            echo "Primary review candidate: CURRENT KNOWLEDGE mode"
+            echo "Baseline: PLAIN mode"
+            echo "Experiment: CHAT-LEARNED mode"
             echo "Artifact: fge-review-${{ github.run_id }}"
-            echo
-            echo "- 投稿: publish CURRENT KNOWLEDGE candidate with this run ID"
-            echo "- Chat学習採用: review Distiller report first, then promote learned rules"
-            echo "- 修正: edit Knowledge / rules / regenerate the candidate first"
-            echo "- 記録だけ: run FGE reviewed publish with record_only"
           } >> "$GITHUB_STEP_SUMMARY"
