@@ -5,6 +5,7 @@ from dataclasses import replace
 import re
 
 from .daily_intent import resolve_daily_intent
+from .journal_generator import _project_goal
 
 
 class HumanEditorV0:
@@ -80,12 +81,7 @@ class HumanEditorV0:
         return text + "日"
 
     def _lead_project(self, items):
-        """Match the reader body's dominant-project selection.
-
-        A late one-off update in another project must not change only the
-        JOURNAL headline while the body still treats the day's dominant project
-        as the center.
-        """
+        """Match the reader body's dominant-project selection."""
         groups = OrderedDict()
         for item in sorted(items, key=lambda u: u.captured_at):
             groups.setdefault(item.project, []).append(item)
@@ -119,8 +115,7 @@ class HumanEditorV0:
             lead_project = self._lead_project(items)
             intent = resolve_daily_intent(intents, journal.date, lead_project, knowledge=self.knowledge)
             meaning_title = self._meaning_title(intent.get("intent")) if intent else ""
-            profile = self._profile(lead_project)
-            why = self._clean(profile.get("why_it_matters"))
+            why = self._clean(_project_goal(self.knowledge, lead_project))
 
             if len(items) == 1:
                 title = meaning_title or lead.title
