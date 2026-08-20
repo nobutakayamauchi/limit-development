@@ -88,6 +88,19 @@ class HumanEditorTest(unittest.TestCase):
         self.assertEqual(edited.title, '開発日誌を読みやすい形にした日')
         self.assertIn('この日は3件の公開開発記録があります。', edited.summary)
 
+    def test_repo_shaped_project_uses_identity_safe_alias_for_header_purpose(self):
+        item = Update('u1','s1','2026-08-20T09:00:00+09:00','機能変更','WebAI-Bridge','Bridge変更','Bridge変更を反映しました。',[], 'commit:1')
+        journal = build_journals([item])[0]
+        intents = [{
+            'observation_id':'g2','date':'2026-08-20','project':'WebAI Bridge',
+            'intent':'接続の説明を読みやすくする。','source_type':'goal',
+            'approval_status':'approved','public_safe':True,'allow_journal':True,
+            'source_ref':'approved-chat-goal:bridge'
+        }]
+        edited = humanize_journals([journal], [item], KNOWLEDGE, daily_intents=intents)[0]
+        self.assertEqual(edited.title, '接続の説明を読みやすくした日')
+        self.assertIn('使うAIが変わっても', edited.summary)
+
     def test_plain_output_is_unchanged_without_human(self):
         ev = self.ev(text='Fix retry queue ordering')
         a = build_update(ev, PLAIN)
