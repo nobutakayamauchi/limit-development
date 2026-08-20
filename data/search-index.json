@@ -1,0 +1,4014 @@
+[
+  {
+    "kind": "UPDATE",
+    "id": "upd-62588113eb65",
+    "date": "2026-08-20",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能追加",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-62588113eb65"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-6b4e4797f526",
+    "date": "2026-08-20",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-6b4e4797f526"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3b09f8406796",
+    "date": "2026-08-20",
+    "title": "limit-developmentの機能を整理",
+    "summary": "limit-developmentで不要になった機能を削除しました。",
+    "project": "limit-development",
+    "type": "機能削除",
+    "tags": [
+      "limit-development",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-3b09f8406796"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7ef1e0539567",
+    "date": "2026-08-20",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-7ef1e0539567"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-87dbf1373e29",
+    "date": "2026-08-20",
+    "title": "Ultimate-Loopに機能を追加",
+    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "Ultimate-Loop",
+    "type": "機能追加",
+    "tags": [
+      "Ultimate-Loop",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-87dbf1373e29"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ca06f248420b",
+    "date": "2026-08-20",
+    "title": "Ultimate-Loopを改善",
+    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "Ultimate-Loop",
+    "type": "機能変更",
+    "tags": [
+      "Ultimate-Loop",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-ca06f248420b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-dac951b5da77",
+    "date": "2026-08-20",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-dac951b5da77"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0acd65006230",
+    "date": "2026-08-20",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能追加",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0acd65006230"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-89dcec3f8e91",
+    "date": "2026-08-19",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-89dcec3f8e91"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f217f8817f2a",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを検証",
+    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "研究・検証",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-f217f8817f2a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1c6e4adacaa3",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-1c6e4adacaa3"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3cfdf0a7be46",
+    "date": "2026-08-19",
+    "title": "ナレッジ版とプレーン版を分けて出せるようにした",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更9件もまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能追加",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "Knowledge Pack",
+      "Plain Core",
+      "機能追加",
+      "比較"
+    ],
+    "href": "../updates/#u-upd-3cfdf0a7be46"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ca2fad264eeb",
+    "date": "2026-08-19",
+    "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
+    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更27件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "DEVELOPMENT RECORD",
+      "GitHub",
+      "JOURNAL",
+      "limit-development",
+      "mobile",
+      "導線",
+      "機能変更",
+      "自動更新"
+    ],
+    "href": "../updates/#u-upd-ca2fad264eeb"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-42af6bd12622",
+    "date": "2026-08-19",
+    "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
+    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能変更",
+    "tags": [
+      "DEVELOPMENT RECORD",
+      "FOUNDRY GROWTH ENGINE",
+      "GitHub",
+      "JOURNAL",
+      "mobile",
+      "導線",
+      "機能変更",
+      "自動更新"
+    ],
+    "href": "../updates/#u-upd-42af6bd12622"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-6c844427d9dc",
+    "date": "2026-08-19",
+    "title": "limit-developmentの機能を整理",
+    "summary": "limit-developmentで不要になった機能を削除しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能削除",
+    "tags": [
+      "limit-development",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-6c844427d9dc"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-5d79ae636c2a",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-5d79ae636c2a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4d8bbd0acfea",
+    "date": "2026-08-19",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-4d8bbd0acfea"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f09a21409430",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeを開始",
+    "summary": "WebAI-Bridgeの新しい取り組みを開始しました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "新プロジェクト",
+    "tags": [
+      "WebAI-Bridge",
+      "新プロジェクト"
+    ],
+    "href": "../updates/#u-upd-f09a21409430"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-8065bbc64d5d",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-8065bbc64d5d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c41775f20667",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-c41775f20667"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-12d038ec5bf1",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeの方針を更新",
+    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。",
+    "project": "WebAI-Bridge",
+    "type": "方針変更",
+    "tags": [
+      "WebAI-Bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-12d038ec5bf1"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-d8bea3e998e7",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-d8bea3e998e7"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a4f4543c2cc0",
+    "date": "2026-08-19",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-a4f4543c2cc0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-6f90a2d8b0ae",
+    "date": "2026-08-19",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-6f90a2d8b0ae"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-98f10f164a25",
+    "date": "2026-08-19",
+    "title": "limit-developmentを公開",
+    "summary": "limit-developmentを新しく公開しました。",
+    "project": "limit-development",
+    "type": "新製品",
+    "tags": [
+      "limit-development",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-98f10f164a25"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-db74b0cf3be5",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-db74b0cf3be5"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9547721295c7",
+    "date": "2026-08-19",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-9547721295c7"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-972077b9c428",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEの方針を更新",
+    "summary": "FOUNDRY GROWTH ENGINEの説明や運用方針を更新しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "方針変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-972077b9c428"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-840f1a8aa08b",
+    "date": "2026-08-19",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-840f1a8aa08b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-8a5cfc0650ca",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能追加",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-8a5cfc0650ca"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f07639e458c2",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-f07639e458c2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-27f0695d7648",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを開発",
+    "summary": "仕事の記録から更新情報・記事・開発日誌・SNS投稿を作り、公開直前のレビューまで準備する仕組みを追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "新製品",
+    "tags": [
+      "Dogfood",
+      "FOUNDRY GROWTH ENGINE",
+      "仕事してください",
+      "新製品",
+      "自動広報"
+    ],
+    "href": "../updates/#u-upd-27f0695d7648"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a299a4849f94",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを開発",
+    "summary": "仕事の記録から更新情報・記事・開発日誌・SNS投稿を作り、公開直前のレビューまで準備する仕組みを追加しました。",
+    "project": "limit-development",
+    "type": "新製品",
+    "tags": [
+      "Dogfood",
+      "limit-development",
+      "仕事してください",
+      "新製品",
+      "自動広報"
+    ],
+    "href": "../updates/#u-upd-a299a4849f94"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7362363464fe",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEの機能を整理",
+    "summary": "FOUNDRY GROWTH ENGINEの機能を整理しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能削除",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-7362363464fe"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3f77207ec436",
+    "date": "2026-08-19",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-3f77207ec436"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3724969d2349",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEの方針を更新",
+    "summary": "FOUNDRY GROWTH ENGINEの説明や運用方針を更新しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "方針変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-3724969d2349"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-5517a5ca446d",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更10件も、この更新にまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-5517a5ca446d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e2b902378ed9",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを検証",
+    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "研究・検証",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-e2b902378ed9"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-8c9417ef1696",
+    "date": "2026-08-19",
+    "title": "Ultimate-Loopに機能を追加",
+    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。",
+    "project": "Ultimate-Loop",
+    "type": "機能追加",
+    "tags": [
+      "Ultimate-Loop",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-8c9417ef1696"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-eac099e145ad",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを開発",
+    "summary": "仕事の記録から更新情報・記事・開発日誌・SNS投稿を作り、公開直前のレビューまで準備する仕組みを追加しました。",
+    "project": "limit-development",
+    "type": "新製品",
+    "tags": [
+      "Dogfood",
+      "limit-development",
+      "仕事してください",
+      "新製品",
+      "自動広報"
+    ],
+    "href": "../updates/#u-upd-eac099e145ad"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7f5ee919e44f",
+    "date": "2026-08-19",
+    "title": "ナレッジ版とプレーン版を分けて出せるようにした",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更4件もまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能追加",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "Knowledge Pack",
+      "Plain Core",
+      "機能追加",
+      "比較"
+    ],
+    "href": "../updates/#u-upd-7f5ee919e44f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-af80bd9cbff4",
+    "date": "2026-08-19",
+    "title": "ナレッジ版とプレーン版を分けて出せるようにした",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更5件もまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能追加",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "Knowledge Pack",
+      "Plain Core",
+      "機能追加",
+      "比較"
+    ],
+    "href": "../updates/#u-upd-af80bd9cbff4"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c847fa6924d3",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-c847fa6924d3"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3bb5029d4c82",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを開発",
+    "summary": "仕事の記録から更新情報・記事・開発日誌・SNS投稿を作り、公開直前のレビューまで準備する仕組みを追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "新製品",
+    "tags": [
+      "Dogfood",
+      "FOUNDRY GROWTH ENGINE",
+      "仕事してください",
+      "新製品",
+      "自動広報"
+    ],
+    "href": "../updates/#u-upd-3bb5029d4c82"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e6cdd8fc0573",
+    "date": "2026-08-19",
+    "title": "スマホ向けトップ画面を調整",
+    "summary": "ONE PHONE FOUNDRYのトップ画面をスマホ中心の構成へ調整しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "UI",
+      "limit-development",
+      "mobile",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-e6cdd8fc0573"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-135be8bb08fb",
+    "date": "2026-08-19",
+    "title": "ONE PHONE FOUNDRYのホームページを公開",
+    "summary": "スマホ1台を開発拠点として使うONE PHONE FOUNDRYのホームページを新しく構築しました。",
+    "project": "limit-development",
+    "type": "新プロジェクト",
+    "tags": [
+      "ONE PHONE FOUNDRY",
+      "homepage",
+      "limit-development",
+      "新プロジェクト"
+    ],
+    "href": "../updates/#u-upd-135be8bb08fb"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f04ed560d4ee",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-f04ed560d4ee"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-063b5867c668",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeを開始",
+    "summary": "WebAI-Bridgeの新しい取り組みを開始しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "新プロジェクト",
+    "tags": [
+      "WebAI-Bridge",
+      "新プロジェクト"
+    ],
+    "href": "../updates/#u-upd-063b5867c668"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2234b1ef0fc2",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-2234b1ef0fc2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1d9f02f5f10d",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-1d9f02f5f10d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-05affecaaf95",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-05affecaaf95"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-d4909a6fdde0",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeの方針を更新",
+    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "方針変更",
+    "tags": [
+      "WebAI-Bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-d4909a6fdde0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-54f56c9f86f1",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-54f56c9f86f1"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-301350cef0bf",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-301350cef0bf"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b6e9d3ba3654",
+    "date": "2026-08-19",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-b6e9d3ba3654"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-87eb264491b8",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-87eb264491b8"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c257f582f63f",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeの方針を更新",
+    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。",
+    "project": "WebAI-Bridge",
+    "type": "方針変更",
+    "tags": [
+      "WebAI-Bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-c257f582f63f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-446dc3af2c66",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを公開",
+    "summary": "WebAI-Bridgeを新しく公開しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "新製品",
+    "tags": [
+      "WebAI-Bridge",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-446dc3af2c66"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-58e4bbdf6d1e",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-58e4bbdf6d1e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-42f01e690f75",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-42f01e690f75"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a2fabdc3bce2",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-a2fabdc3bce2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-744b33913fbf",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-744b33913fbf"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a78e24aa65a3",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-a78e24aa65a3"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-de27134cf483",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-de27134cf483"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-75adcbd66cd0",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeの方針を更新",
+    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。",
+    "project": "WebAI-Bridge",
+    "type": "方針変更",
+    "tags": [
+      "WebAI-Bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-75adcbd66cd0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-dec2b147f077",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-dec2b147f077"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9459e47be8ed",
+    "date": "2026-08-18",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-9459e47be8ed"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a09f88abcc2d",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを公開",
+    "summary": "WebAI-Bridgeを新しく公開しました。",
+    "project": "WebAI-Bridge",
+    "type": "新製品",
+    "tags": [
+      "WebAI-Bridge",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-a09f88abcc2d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-68adf7613f64",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeの方針を更新",
+    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "方針変更",
+    "tags": [
+      "WebAI-Bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-68adf7613f64"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-cf9f902f17df",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更25件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-cf9f902f17df"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a37a32d2c932",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更7件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-a37a32d2c932"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f55d5b19acd2",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeの機能を整理",
+    "summary": "WebAI-Bridgeで不要になった機能を削除しました。",
+    "project": "WebAI-Bridge",
+    "type": "機能削除",
+    "tags": [
+      "WebAI-Bridge",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-f55d5b19acd2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ddffb11445c8",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-ddffb11445c8"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-05b26bbc1895",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-05b26bbc1895"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e41bda684b17",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-e41bda684b17"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ce5ef7af2a9a",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更6件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-ce5ef7af2a9a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2c2475ee097d",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを公開",
+    "summary": "WebAI-Bridgeを新しく公開しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "新製品",
+    "tags": [
+      "WebAI-Bridge",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-2c2475ee097d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a509f090ad51",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-a509f090ad51"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-36ecf9086f71",
+    "date": "2026-08-18",
+    "title": "NAGIに機能を追加",
+    "summary": "NAGIに機能を追加しました。 中断のたびに頭の中まで最初から作り直さないために使います。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "NAGI",
+    "type": "機能追加",
+    "tags": [
+      "NAGI",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-36ecf9086f71"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-fb0921237de4",
+    "date": "2026-08-18",
+    "title": "NAGIを改善",
+    "summary": "NAGIを改善しました。 どこまで進んだか、次に何をするかを残し、仕事が止まっても途中から戻れるようにする作業補助です。 同じ1時間内の関連変更6件も、この更新にまとめています。",
+    "project": "NAGI",
+    "type": "機能変更",
+    "tags": [
+      "NAGI",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-fb0921237de4"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-14ec8f92eab1",
+    "date": "2026-08-18",
+    "title": "NAGIを改善",
+    "summary": "NAGIを改善しました。 どこまで進んだか、次に何をするかを残し、仕事が止まっても途中から戻れるようにする作業補助です。 同じ1時間内の関連変更9件も、この更新にまとめています。",
+    "project": "NAGI",
+    "type": "機能変更",
+    "tags": [
+      "NAGI",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-14ec8f92eab1"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-6e1aa567c286",
+    "date": "2026-08-18",
+    "title": "NAGIに機能を追加",
+    "summary": "NAGIに機能を追加しました。 中断のたびに頭の中まで最初から作り直さないために使います。",
+    "project": "NAGI",
+    "type": "機能追加",
+    "tags": [
+      "NAGI",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-6e1aa567c286"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-22f250bb7fc4",
+    "date": "2026-08-18",
+    "title": "NAGIの方針を更新",
+    "summary": "NAGIの説明や運用方針を更新しました。 どこまで進んだか、次に何をするかを残し、仕事が止まっても途中から戻れるようにする作業補助です。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "NAGI",
+    "type": "方針変更",
+    "tags": [
+      "NAGI",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-22f250bb7fc4"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-03ec7775e9a7",
+    "date": "2026-08-18",
+    "title": "NAGIを検証",
+    "summary": "NAGIを検証しました。 どこまで進んだか、次に何をするかを残し、仕事が止まっても途中から戻れるようにする作業補助です。",
+    "project": "NAGI",
+    "type": "研究・検証",
+    "tags": [
+      "NAGI",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-03ec7775e9a7"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-81fe2d452f8f",
+    "date": "2026-08-18",
+    "title": "NAGIの機能を整理",
+    "summary": "NAGIの機能を整理しました。 どこまで進んだか、次に何をするかを残し、仕事が止まっても途中から戻れるようにする作業補助です。",
+    "project": "NAGI",
+    "type": "機能削除",
+    "tags": [
+      "NAGI",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-81fe2d452f8f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1221f7e81d57",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-1221f7e81d57"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-07670d5edf4b",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-07670d5edf4b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9ecb79c4e806",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-9ecb79c4e806"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-bb3b78390796",
+    "date": "2026-08-18",
+    "title": "NAGIを改善",
+    "summary": "NAGIを改善しました。 どこまで進んだか、次に何をするかを残し、仕事が止まっても途中から戻れるようにする作業補助です。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "NAGI",
+    "type": "機能変更",
+    "tags": [
+      "NAGI",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-bb3b78390796"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-02d30bfd7fe2",
+    "date": "2026-08-18",
+    "title": "NAGIに機能を追加",
+    "summary": "NAGIに機能を追加しました。 中断のたびに頭の中まで最初から作り直さないために使います。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "NAGI",
+    "type": "機能追加",
+    "tags": [
+      "NAGI",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-02d30bfd7fe2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-11861d100650",
+    "date": "2026-08-18",
+    "title": "NAGIを開始",
+    "summary": "NAGIの新しい取り組みを開始しました。 中断のたびに頭の中まで最初から作り直さないために使います。",
+    "project": "NAGI",
+    "type": "新プロジェクト",
+    "tags": [
+      "NAGI",
+      "新プロジェクト"
+    ],
+    "href": "../updates/#u-upd-11861d100650"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-fa1ddc7f55f3",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更10件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-fa1ddc7f55f3"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1a15d6dc552a",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを公開",
+    "summary": "WebAI-Bridgeを新しく公開しました。",
+    "project": "WebAI-Bridge",
+    "type": "新製品",
+    "tags": [
+      "WebAI-Bridge",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-1a15d6dc552a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0948a2d7ecd0",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeの方針を更新",
+    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。",
+    "project": "WebAI-Bridge",
+    "type": "方針変更",
+    "tags": [
+      "WebAI-Bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-0948a2d7ecd0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-64c4effdc39d",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-64c4effdc39d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-30f427c60ad2",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-30f427c60ad2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-58714d35789f",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更6件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-58714d35789f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a4a96caadd77",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-a4a96caadd77"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-816d0b41738c",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeの方針を更新",
+    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "方針変更",
+    "tags": [
+      "WebAI-Bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-816d0b41738c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ed49f6d7ca87",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-ed49f6d7ca87"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-aea876dc4390",
+    "date": "2026-08-17",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-aea876dc4390"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-d673cc6b9972",
+    "date": "2026-08-17",
+    "title": "WebAI-Bridgeの方針を更新",
+    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "方針変更",
+    "tags": [
+      "WebAI-Bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-d673cc6b9972"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-73c097c9088b",
+    "date": "2026-08-17",
+    "title": "Ultimate-Loopを改善",
+    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "Ultimate-Loop",
+    "type": "機能変更",
+    "tags": [
+      "Ultimate-Loop",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-73c097c9088b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e8552d22786f",
+    "date": "2026-08-17",
+    "title": "Ultimate-Loopを検証",
+    "summary": "Ultimate-Loopが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "Ultimate-Loop",
+    "type": "研究・検証",
+    "tags": [
+      "Ultimate-Loop",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-e8552d22786f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-988beb8d067b",
+    "date": "2026-08-17",
+    "title": "Ultimate-Loopに機能を追加",
+    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。",
+    "project": "Ultimate-Loop",
+    "type": "機能追加",
+    "tags": [
+      "Ultimate-Loop",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-988beb8d067b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1ea952d21a96",
+    "date": "2026-08-17",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-1ea952d21a96"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0168ce758aa3",
+    "date": "2026-08-17",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0168ce758aa3"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-5c73c00d9b6e",
+    "date": "2026-08-17",
+    "title": "WebAI-Bridgeを検証",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "WebAI-Bridge",
+    "type": "研究・検証",
+    "tags": [
+      "WebAI-Bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-5c73c00d9b6e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-935cb0047a7a",
+    "date": "2026-08-17",
+    "title": "WebAI-Bridgeの機能を整理",
+    "summary": "WebAI-Bridgeで不要になった機能を削除しました。",
+    "project": "WebAI-Bridge",
+    "type": "機能削除",
+    "tags": [
+      "WebAI-Bridge",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-935cb0047a7a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f1926527c5a2",
+    "date": "2026-08-16",
+    "title": "TRACEを改善",
+    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "TRACE",
+    "type": "機能変更",
+    "tags": [
+      "TRACE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-f1926527c5a2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-93c0c0d3ae42",
+    "date": "2026-08-16",
+    "title": "Ultimate-Loopを改善",
+    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。",
+    "project": "Ultimate-Loop",
+    "type": "機能変更",
+    "tags": [
+      "Ultimate-Loop",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-93c0c0d3ae42"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-74ad121838c6",
+    "date": "2026-08-16",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-74ad121838c6"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f492ba89369a",
+    "date": "2026-08-16",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-f492ba89369a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0a388626abfb",
+    "date": "2026-08-16",
+    "title": "limit-developmentの方針を更新",
+    "summary": "limit-developmentの説明や運用方針を更新しました。",
+    "project": "limit-development",
+    "type": "方針変更",
+    "tags": [
+      "limit-development",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-0a388626abfb"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-190f17561492",
+    "date": "2026-08-16",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-190f17561492"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b70d8fd1021f",
+    "date": "2026-08-16",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-b70d8fd1021f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-d24182b0e391",
+    "date": "2026-08-16",
+    "title": "Ultimate-Loopを改善",
+    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。",
+    "project": "Ultimate-Loop",
+    "type": "機能変更",
+    "tags": [
+      "Ultimate-Loop",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-d24182b0e391"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ca36bc6dcfaf",
+    "date": "2026-08-16",
+    "title": "Ultimate-Loopに機能を追加",
+    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。",
+    "project": "Ultimate-Loop",
+    "type": "機能追加",
+    "tags": [
+      "Ultimate-Loop",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-ca36bc6dcfaf"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-6e6cf98ef7ec",
+    "date": "2026-08-16",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-6e6cf98ef7ec"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1914c85346b9",
+    "date": "2026-08-16",
+    "title": "Ultimate-Loopに機能を追加",
+    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "Ultimate-Loop",
+    "type": "機能追加",
+    "tags": [
+      "Ultimate-Loop",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-1914c85346b9"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7320d1c68ffb",
+    "date": "2026-08-16",
+    "title": "Ultimate-Loopの方針を更新",
+    "summary": "Ultimate-Loopの説明や運用方針を更新しました。",
+    "project": "Ultimate-Loop",
+    "type": "方針変更",
+    "tags": [
+      "Ultimate-Loop",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-7320d1c68ffb"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e6ae034a4a9f",
+    "date": "2026-08-16",
+    "title": "Ultimate-Loopを改善",
+    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "Ultimate-Loop",
+    "type": "機能変更",
+    "tags": [
+      "Ultimate-Loop",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-e6ae034a4a9f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a780de1d9a46",
+    "date": "2026-08-16",
+    "title": "RTS-Evolutionを改善",
+    "summary": "RTS-Evolutionの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS-Evolution",
+    "type": "機能変更",
+    "tags": [
+      "RTS-Evolution",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-a780de1d9a46"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-70af9f29dfbc",
+    "date": "2026-08-16",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-70af9f29dfbc"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-512e4269c41e",
+    "date": "2026-08-16",
+    "title": "RTSを検証",
+    "summary": "RTSが実際の利用条件で成立するか検証しました。",
+    "project": "RTS",
+    "type": "研究・検証",
+    "tags": [
+      "RTS",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-512e4269c41e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f83de585e033",
+    "date": "2026-08-16",
+    "title": "RTSを検証",
+    "summary": "RTSが実際の利用条件で成立するか検証しました。",
+    "project": "RTS",
+    "type": "研究・検証",
+    "tags": [
+      "RTS",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-f83de585e033"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-230a08352257",
+    "date": "2026-08-16",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-230a08352257"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-31f5aadb663c",
+    "date": "2026-08-16",
+    "title": "RTSを検証",
+    "summary": "RTSが実際の利用条件で成立するか検証しました。",
+    "project": "RTS",
+    "type": "研究・検証",
+    "tags": [
+      "RTS",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-31f5aadb663c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f76531d2d96b",
+    "date": "2026-08-16",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-f76531d2d96b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-5e36cd8420d0",
+    "date": "2026-08-16",
+    "title": "RTSを検証",
+    "summary": "RTSが実際の利用条件で成立するか検証しました。",
+    "project": "RTS",
+    "type": "研究・検証",
+    "tags": [
+      "RTS",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-5e36cd8420d0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-fe1f5b57a1df",
+    "date": "2026-08-16",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-fe1f5b57a1df"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-6a32ac3e5431",
+    "date": "2026-08-15",
+    "title": "RTSを公開",
+    "summary": "RTSを新しく公開しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "新製品",
+    "tags": [
+      "RTS",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-6a32ac3e5431"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-89e2dc334675",
+    "date": "2026-08-15",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-89e2dc334675"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0bcd61290f8d",
+    "date": "2026-08-15",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0bcd61290f8d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9865c2cff85b",
+    "date": "2026-08-15",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-9865c2cff85b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e9d59ec40edb",
+    "date": "2026-08-15",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-e9d59ec40edb"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-aafc5675d176",
+    "date": "2026-08-15",
+    "title": "RTSを公開",
+    "summary": "RTSを新しく公開しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "新製品",
+    "tags": [
+      "RTS",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-aafc5675d176"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c277cc7be7d3",
+    "date": "2026-08-14",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-c277cc7be7d3"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-02ea962eb0c9",
+    "date": "2026-08-14",
+    "title": "RTSの方針を更新",
+    "summary": "RTSの説明や運用方針を更新しました。",
+    "project": "RTS",
+    "type": "方針変更",
+    "tags": [
+      "RTS",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-02ea962eb0c9"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e1e4fc380f8d",
+    "date": "2026-08-14",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-e1e4fc380f8d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-16381922a2d6",
+    "date": "2026-08-14",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-16381922a2d6"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-61e50b62ef30",
+    "date": "2026-08-14",
+    "title": "RTS-Signal-Feedsを改善",
+    "summary": "RTS-Signal-Feedsの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS-Signal-Feeds",
+    "type": "機能変更",
+    "tags": [
+      "RTS-Signal-Feeds",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-61e50b62ef30"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-51b8ec030997",
+    "date": "2026-08-14",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-51b8ec030997"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9f841739127a",
+    "date": "2026-08-14",
+    "title": "RTS-Signal-Feedsを改善",
+    "summary": "RTS-Signal-Feedsの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS-Signal-Feeds",
+    "type": "機能変更",
+    "tags": [
+      "RTS-Signal-Feeds",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-9f841739127a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-8ed3cb72d949",
+    "date": "2026-08-14",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-8ed3cb72d949"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1fbf2f59e8ca",
+    "date": "2026-08-14",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-1fbf2f59e8ca"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-56ab1e0220c1",
+    "date": "2026-08-14",
+    "title": "rts-video-flowに機能を追加",
+    "summary": "rts-video-flowで新しい機能を使えるようにしました。",
+    "project": "rts-video-flow",
+    "type": "機能追加",
+    "tags": [
+      "rts-video-flow",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-56ab1e0220c1"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f82ea5853b83",
+    "date": "2026-08-14",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
+    "project": "rts-video-flow",
+    "type": "機能変更",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-f82ea5853b83"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-cf71ca44fce2",
+    "date": "2026-08-14",
+    "title": "rts-video-flowの方針を更新",
+    "summary": "rts-video-flowの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "方針変更",
+    "tags": [
+      "rts-video-flow",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-cf71ca44fce2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-80fd9e291c39",
+    "date": "2026-08-14",
+    "title": "rts-video-flowを検証",
+    "summary": "rts-video-flowが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "研究・検証",
+    "tags": [
+      "rts-video-flow",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-80fd9e291c39"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2eceb43e7da0",
+    "date": "2026-08-14",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-2eceb43e7da0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ef56785cdfbb",
+    "date": "2026-08-13",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更15件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-ef56785cdfbb"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0bd4ebbbb177",
+    "date": "2026-08-13",
+    "title": "RTSの方針を更新",
+    "summary": "RTSの説明や運用方針を更新しました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "方針変更",
+    "tags": [
+      "RTS",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-0bd4ebbbb177"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-8eda5305a3af",
+    "date": "2026-08-13",
+    "title": "RTSを検証",
+    "summary": "RTSが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更43件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "研究・検証",
+    "tags": [
+      "RTS",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-8eda5305a3af"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0ea6ec90b855",
+    "date": "2026-08-13",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。 同じ1時間内の関連変更7件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0ea6ec90b855"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b504729f140c",
+    "date": "2026-08-11",
+    "title": "TRACEを改善",
+    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "TRACE",
+    "type": "機能変更",
+    "tags": [
+      "TRACE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-b504729f140c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a36d2d92decc",
+    "date": "2026-08-11",
+    "title": "TRACEを開始",
+    "summary": "TRACEの新しい取り組みを開始しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。",
+    "project": "TRACE",
+    "type": "新プロジェクト",
+    "tags": [
+      "TRACE",
+      "新プロジェクト"
+    ],
+    "href": "../updates/#u-upd-a36d2d92decc"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-94498915ae30",
+    "date": "2026-08-11",
+    "title": "TRACEを改善",
+    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。",
+    "project": "TRACE",
+    "type": "機能変更",
+    "tags": [
+      "TRACE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-94498915ae30"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-eb65c00e1fa6",
+    "date": "2026-08-11",
+    "title": "TRACEに機能を追加",
+    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "TRACE",
+    "type": "機能追加",
+    "tags": [
+      "TRACE",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-eb65c00e1fa6"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c3a9b5e55233",
+    "date": "2026-08-11",
+    "title": "TRACEを改善",
+    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "TRACE",
+    "type": "機能変更",
+    "tags": [
+      "TRACE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-c3a9b5e55233"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-6813faff4f64",
+    "date": "2026-08-11",
+    "title": "TRACEを開始",
+    "summary": "TRACEの新しい取り組みを開始しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。",
+    "project": "TRACE",
+    "type": "新プロジェクト",
+    "tags": [
+      "TRACE",
+      "新プロジェクト"
+    ],
+    "href": "../updates/#u-upd-6813faff4f64"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2dd684b80f0f",
+    "date": "2026-08-11",
+    "title": "TRACEを改善",
+    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。",
+    "project": "TRACE",
+    "type": "機能変更",
+    "tags": [
+      "TRACE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-2dd684b80f0f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-5b2834b90d8d",
+    "date": "2026-08-11",
+    "title": "TRACEを検証",
+    "summary": "TRACEを検証しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。",
+    "project": "TRACE",
+    "type": "研究・検証",
+    "tags": [
+      "TRACE",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-5b2834b90d8d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-dbdb1c564d50",
+    "date": "2026-08-09",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更16件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-dbdb1c564d50"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2184455f6e92",
+    "date": "2026-08-09",
+    "title": "RTSを検証",
+    "summary": "RTSが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "研究・検証",
+    "tags": [
+      "RTS",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-2184455f6e92"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-5e2f5cc125e3",
+    "date": "2026-08-09",
+    "title": "RTSの方針を更新",
+    "summary": "RTSの説明や運用方針を更新しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "方針変更",
+    "tags": [
+      "RTS",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-5e2f5cc125e3"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-770d00ad7210",
+    "date": "2026-08-09",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。 同じ1時間内の関連変更12件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-770d00ad7210"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7da8e5407382",
+    "date": "2026-08-09",
+    "title": "RTSを検証",
+    "summary": "RTSが実際の利用条件で成立するか検証しました。",
+    "project": "RTS",
+    "type": "研究・検証",
+    "tags": [
+      "RTS",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-7da8e5407382"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-fb37e851e69b",
+    "date": "2026-08-09",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-fb37e851e69b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2b938de249fa",
+    "date": "2026-08-09",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-2b938de249fa"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-bb67bdef49a8",
+    "date": "2026-08-09",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-bb67bdef49a8"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-52a2573f5fe2",
+    "date": "2026-08-09",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-52a2573f5fe2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-00e33d04f0ce",
+    "date": "2026-08-07",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-00e33d04f0ce"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-eb2310d6ee61",
+    "date": "2026-08-06",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-eb2310d6ee61"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2055397270b5",
+    "date": "2026-08-06",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "機能変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-2055397270b5"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-8d6211f72f4c",
+    "date": "2026-08-06",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能追加",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-8d6211f72f4c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-63b7161b7afa",
+    "date": "2026-08-04",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
+    "project": "rts-video-flow",
+    "type": "機能変更",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-63b7161b7afa"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4b1c5bd9bfaa",
+    "date": "2026-08-03",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能変更",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-4b1c5bd9bfaa"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-50ffb3901a6e",
+    "date": "2026-08-03",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能変更",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-50ffb3901a6e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-323f78f14e17",
+    "date": "2026-08-03",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更9件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能変更",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-323f78f14e17"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-832b132fcdaa",
+    "date": "2026-08-03",
+    "title": "rts-video-flowを開始",
+    "summary": "rts-video-flowの新しい取り組みを開始しました。",
+    "project": "rts-video-flow",
+    "type": "新プロジェクト",
+    "tags": [
+      "rts-video-flow",
+      "新プロジェクト"
+    ],
+    "href": "../updates/#u-upd-832b132fcdaa"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-38fcbdf7626e",
+    "date": "2026-08-03",
+    "title": "rts-video-flowに機能を追加",
+    "summary": "rts-video-flowで新しい機能を使えるようにしました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能追加",
+    "tags": [
+      "rts-video-flow",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-38fcbdf7626e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-99d3d3ee94ca",
+    "date": "2026-08-03",
+    "title": "rts-video-flowに機能を追加",
+    "summary": "rts-video-flowで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能追加",
+    "tags": [
+      "rts-video-flow",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-99d3d3ee94ca"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9dabb6e5ab8f",
+    "date": "2026-08-03",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能変更",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-9dabb6e5ab8f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0bfea21a1f29",
+    "date": "2026-08-02",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
+    "project": "rts-video-flow",
+    "type": "機能変更",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-0bfea21a1f29"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-945521d400e6",
+    "date": "2026-08-02",
+    "title": "rts-video-flowを検証",
+    "summary": "rts-video-flowが実際の利用条件で成立するか検証しました。",
+    "project": "rts-video-flow",
+    "type": "研究・検証",
+    "tags": [
+      "rts-video-flow",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-945521d400e6"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ae4ac35f7fde",
+    "date": "2026-08-02",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能変更",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-ae4ac35f7fde"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-83ea33fedc54",
+    "date": "2026-08-02",
+    "title": "rts-video-flowの機能を整理",
+    "summary": "rts-video-flowで不要になった機能を削除しました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能削除",
+    "tags": [
+      "rts-video-flow",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-83ea33fedc54"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0e3d546f9ffb",
+    "date": "2026-08-02",
+    "title": "rts-video-flowに機能を追加",
+    "summary": "rts-video-flowで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能追加",
+    "tags": [
+      "rts-video-flow",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0e3d546f9ffb"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-95f1954dc45c",
+    "date": "2026-08-02",
+    "title": "rts-video-flowに機能を追加",
+    "summary": "rts-video-flowで新しい機能を使えるようにしました。",
+    "project": "rts-video-flow",
+    "type": "機能追加",
+    "tags": [
+      "rts-video-flow",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-95f1954dc45c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b76caa1bea3d",
+    "date": "2026-08-02",
+    "title": "rts-video-flowに機能を追加",
+    "summary": "rts-video-flowで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能追加",
+    "tags": [
+      "rts-video-flow",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-b76caa1bea3d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-da5fdc5f8037",
+    "date": "2026-08-02",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能変更",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-da5fdc5f8037"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3d8b8523402d",
+    "date": "2026-08-02",
+    "title": "rts-video-flowの方針を更新",
+    "summary": "rts-video-flowの説明や運用方針を更新しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "方針変更",
+    "tags": [
+      "rts-video-flow",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-3d8b8523402d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-57394361db66",
+    "date": "2026-08-02",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能変更",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-57394361db66"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-65e850b23531",
+    "date": "2026-08-02",
+    "title": "rts-video-flowに機能を追加",
+    "summary": "rts-video-flowで新しい機能を使えるようにしました。 同じ1時間内の関連変更10件も、この更新にまとめています。",
+    "project": "rts-video-flow",
+    "type": "機能追加",
+    "tags": [
+      "rts-video-flow",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-65e850b23531"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c6e99f81c4f7",
+    "date": "2026-08-02",
+    "title": "RS-AI-limit-developmentの機能を整理",
+    "summary": "RS-AI-limit-developmentで不要になった機能を削除しました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能削除",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-c6e99f81c4f7"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-230169b33616",
+    "date": "2026-08-02",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-230169b33616"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f9776d5335dc",
+    "date": "2026-08-02",
+    "title": "RS-AI-limit-developmentの方針を更新",
+    "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "方針変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-f9776d5335dc"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-908ad56b2a01",
+    "date": "2026-08-02",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "機能追加",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-908ad56b2a01"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-169d31aeb2f6",
+    "date": "2026-08-02",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "機能変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-169d31aeb2f6"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-820ee902c894",
+    "date": "2026-08-02",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "機能追加",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-820ee902c894"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-8188a1caa13d",
+    "date": "2026-08-02",
+    "title": "RS-AI-limit-developmentの方針を更新",
+    "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。",
+    "project": "RS-AI-limit-development",
+    "type": "方針変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-8188a1caa13d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1b4bc999f5fc",
+    "date": "2026-08-02",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能追加",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-1b4bc999f5fc"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e222514ae3d8",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentの方針を更新",
+    "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。",
+    "project": "RS-AI-limit-development",
+    "type": "方針変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-e222514ae3d8"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-55362743633c",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-55362743633c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e7e9bd059cab",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "機能追加",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-e7e9bd059cab"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-03d2326ee703",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentを検証",
+    "summary": "RS-AI-limit-developmentが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "研究・検証",
+    "tags": [
+      "RS-AI-limit-development",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-03d2326ee703"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-d82571fd8dcf",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-d82571fd8dcf"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0f96ed5b5276",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能追加",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0f96ed5b5276"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a752c392dc99",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentを開始",
+    "summary": "RS-AI-limit-developmentの新しい取り組みを開始しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "新プロジェクト",
+    "tags": [
+      "RS-AI-limit-development",
+      "新プロジェクト"
+    ],
+    "href": "../updates/#u-upd-a752c392dc99"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e6c76a9a862c",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更6件も、この更新にまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "機能追加",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-e6c76a9a862c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1e49e7b87698",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "機能変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-1e49e7b87698"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-8bcb6518b62e",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentを検証",
+    "summary": "RS-AI-limit-developmentが実際の利用条件で成立するか検証しました。",
+    "project": "RS-AI-limit-development",
+    "type": "研究・検証",
+    "tags": [
+      "RS-AI-limit-development",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-8bcb6518b62e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-19a60f528bb0",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentの方針を更新",
+    "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。",
+    "project": "RS-AI-limit-development",
+    "type": "方針変更",
+    "tags": [
+      "RS-AI-limit-development",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-19a60f528bb0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-d79ffa4f8e5f",
+    "date": "2026-07-30",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-d79ffa4f8e5f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-d948a1b8e0e1",
+    "date": "2026-07-30",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-d948a1b8e0e1"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e8a680a3b9dd",
+    "date": "2026-07-29",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-e8a680a3b9dd"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-53942e73ac2c",
+    "date": "2026-07-29",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-53942e73ac2c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b73d42f50158",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-b73d42f50158"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ca01407b96e0",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-ca01407b96e0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-6a4f75e06010",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-6a4f75e06010"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-34b0955bc19d",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-34b0955bc19d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-55195504fee0",
+    "date": "2026-07-27",
+    "title": "RTSを公開",
+    "summary": "RTSを新しく公開しました。",
+    "project": "RTS",
+    "type": "新製品",
+    "tags": [
+      "RTS",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-55195504fee0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-dc576c6e92cf",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-dc576c6e92cf"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-bf686d211e94",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-bf686d211e94"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e606bfcacc20",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-e606bfcacc20"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b76e78fd7116",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-b76e78fd7116"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-47602b891ba2",
+    "date": "2026-07-27",
+    "title": "RTSを公開",
+    "summary": "RTSを新しく公開しました。",
+    "project": "RTS",
+    "type": "新製品",
+    "tags": [
+      "RTS",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-47602b891ba2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ad7e0f593db8",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-ad7e0f593db8"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2f20b2b6afbb",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-2f20b2b6afbb"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-655d548b6841",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-655d548b6841"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-30ac64a70538",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-30ac64a70538"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-40d013f139c2",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-40d013f139c2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c1add60a690e",
+    "date": "2026-07-27",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-c1add60a690e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4b4ab5059231",
+    "date": "2026-07-27",
+    "title": "RTSの方針を更新",
+    "summary": "RTSの説明や運用方針を更新しました。",
+    "project": "RTS",
+    "type": "方針変更",
+    "tags": [
+      "RTS",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-4b4ab5059231"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-bcd48db034fc",
+    "date": "2026-07-27",
+    "title": "RTSを公開",
+    "summary": "RTSを新しく公開しました。",
+    "project": "RTS",
+    "type": "新製品",
+    "tags": [
+      "RTS",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-bcd48db034fc"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-94ff82f79072",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-94ff82f79072"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-d659a1506ac5",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-d659a1506ac5"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-916397fb2f76",
+    "date": "2026-07-27",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-916397fb2f76"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-cd97b4c2b375",
+    "date": "2026-07-27",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-cd97b4c2b375"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7b7f0228391f",
+    "date": "2026-07-26",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-7b7f0228391f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3c1072ca623b",
+    "date": "2026-07-26",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-3c1072ca623b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-5e4c7577f83b",
+    "date": "2026-07-26",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-5e4c7577f83b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-6e91e0058d56",
+    "date": "2026-07-26",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-6e91e0058d56"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-bc36efff1eab",
+    "date": "2026-07-26",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-bc36efff1eab"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a761c63460eb",
+    "date": "2026-07-26",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-a761c63460eb"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-d9cdd5a884a0",
+    "date": "2026-07-26",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-d9cdd5a884a0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f8c2c85c8101",
+    "date": "2026-07-26",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-f8c2c85c8101"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9e6a7d05453f",
+    "date": "2026-07-26",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-9e6a7d05453f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1bc969a5571e",
+    "date": "2026-07-26",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-1bc969a5571e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7562de272880",
+    "date": "2026-07-26",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-7562de272880"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9f8cb70c5171",
+    "date": "2026-07-26",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-9f8cb70c5171"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b5b9a68b2ba4",
+    "date": "2026-07-26",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-b5b9a68b2ba4"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-00a3f49c2796",
+    "date": "2026-07-26",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-00a3f49c2796"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-d852cab47ffe",
+    "date": "2026-07-25",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-d852cab47ffe"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-fef059e50e48",
+    "date": "2026-07-25",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
+    "project": "RTS",
+    "type": "機能追加",
+    "tags": [
+      "RTS",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-fef059e50e48"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4a9302e27e4e",
+    "date": "2026-07-25",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RTS",
+    "type": "機能変更",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-4a9302e27e4e"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-20",
+    "date": "2026-08-20",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか7件",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを改善』、『limit-developmentの機能を整理』、『limit-developmentを改善』もまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
+    "type": "開発日誌",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "Ultimate-Loop",
+      "WebAI-Bridge",
+      "limit-development",
+      "機能削除",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-08-20.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-19",
+    "date": "2026-08-19",
+    "title": "limit-developmentを改善、ほか46件",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
+    "type": "開発日誌",
+    "tags": [
+      "DEVELOPMENT RECORD",
+      "Dogfood",
+      "FOUNDRY GROWTH ENGINE",
+      "GitHub",
+      "JOURNAL",
+      "Knowledge Pack",
+      "ONE PHONE FOUNDRY",
+      "Plain Core",
+      "UI",
+      "Ultimate-Loop",
+      "WebAI-Bridge",
+      "homepage",
+      "limit-development",
+      "mobile",
+      "仕事してください",
+      "導線",
+      "新プロジェクト",
+      "新製品",
+      "方針変更",
+      "機能削除",
+      "機能変更",
+      "機能追加",
+      "比較",
+      "研究・検証",
+      "自動広報",
+      "自動更新"
+    ],
+    "href": "../journal/2026-08-19.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-18",
+    "date": "2026-08-18",
+    "title": "WebAI-Bridgeを改善、ほか44件",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。 同じ日の開発記録として、『WebAI-Bridgeの方針を更新』、『WebAI-Bridgeを公開』、『WebAI-Bridgeを検証』もまとめています。",
+    "project": "NAGI, RTS, WebAI-Bridge",
+    "type": "開発日誌",
+    "tags": [
+      "NAGI",
+      "RTS",
+      "WebAI-Bridge",
+      "新プロジェクト",
+      "新製品",
+      "方針変更",
+      "機能削除",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-08-18.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-17",
+    "date": "2026-08-17",
+    "title": "WebAI-Bridgeを改善、ほか8件",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『WebAI-Bridgeの方針を更新』、『Ultimate-Loopを改善』、『Ultimate-Loopを検証』もまとめています。",
+    "project": "Ultimate-Loop, WebAI-Bridge",
+    "type": "開発日誌",
+    "tags": [
+      "Ultimate-Loop",
+      "WebAI-Bridge",
+      "方針変更",
+      "機能削除",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-08-17.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-16",
+    "date": "2026-08-16",
+    "title": "TRACEを改善、ほか21件",
+    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『Ultimate-Loopを改善』、『limit-developmentを改善』、『limit-developmentに機能を追加』もまとめています。",
+    "project": "RTS, RTS-Evolution, TRACE, Ultimate-Loop, limit-development",
+    "type": "開発日誌",
+    "tags": [
+      "RTS",
+      "RTS-Evolution",
+      "TRACE",
+      "Ultimate-Loop",
+      "limit-development",
+      "方針変更",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-08-16.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-15",
+    "date": "2026-08-15",
+    "title": "RTSを公開、ほか5件",
+    "summary": "RTSを新しく公開しました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』、『RTSに機能を追加』、『RTSに機能を追加』もまとめています。",
+    "project": "RTS",
+    "type": "開発日誌",
+    "tags": [
+      "RTS",
+      "新製品",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-08-15.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-14",
+    "date": "2026-08-14",
+    "title": "RTSに機能を追加、ほか13件",
+    "summary": "RTSで新しい機能を使えるようにしました。 同じ日の開発記録として、『RTSの方針を更新』、『RTSに機能を追加』、『RTSを改善』もまとめています。",
+    "project": "RTS, RTS-Signal-Feeds, rts-video-flow",
+    "type": "開発日誌",
+    "tags": [
+      "RTS",
+      "RTS-Signal-Feeds",
+      "rts-video-flow",
+      "方針変更",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-08-14.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-13",
+    "date": "2026-08-13",
+    "title": "RTSを改善、ほか3件",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更15件も、この更新にまとめています。 同じ日の開発記録として、『RTSの方針を更新』、『RTSを検証』、『RTSに機能を追加』もまとめています。",
+    "project": "RTS",
+    "type": "開発日誌",
+    "tags": [
+      "RTS",
+      "方針変更",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-08-13.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-11",
+    "date": "2026-08-11",
+    "title": "TRACEを改善、ほか7件",
+    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更2件も、この更新にまとめています。 同じ日の開発記録として、『TRACEを開始』、『TRACEを改善』、『TRACEに機能を追加』もまとめています。",
+    "project": "TRACE",
+    "type": "開発日誌",
+    "tags": [
+      "TRACE",
+      "新プロジェクト",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-08-11.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-09",
+    "date": "2026-08-09",
+    "title": "RTSを改善、ほか8件",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更16件も、この更新にまとめています。 同じ日の開発記録として、『RTSを検証』、『RTSの方針を更新』、『RTSに機能を追加』もまとめています。",
+    "project": "RTS",
+    "type": "開発日誌",
+    "tags": [
+      "RTS",
+      "方針変更",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-08-09.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-07",
+    "date": "2026-08-07",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "RS-AI-limit-development",
+    "type": "開発日誌",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能変更"
+    ],
+    "href": "../journal/2026-08-07.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-06",
+    "date": "2026-08-06",
+    "title": "RS-AI-limit-developmentを改善、ほか2件",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RS-AI-limit-developmentを改善』、『RS-AI-limit-developmentに機能を追加』もまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "開発日誌",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-08-06.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-04",
+    "date": "2026-08-04",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
+    "project": "rts-video-flow",
+    "type": "開発日誌",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "href": "../journal/2026-08-04.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-03",
+    "date": "2026-08-03",
+    "title": "rts-video-flowを改善、ほか6件",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『rts-video-flowを改善』、『rts-video-flowを改善』、『rts-video-flowを開始』もまとめています。",
+    "project": "rts-video-flow",
+    "type": "開発日誌",
+    "tags": [
+      "rts-video-flow",
+      "新プロジェクト",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-08-03.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-02",
+    "date": "2026-08-02",
+    "title": "rts-video-flowを改善、ほか18件",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『rts-video-flowを検証』、『rts-video-flowを改善』、『rts-video-flowの機能を整理』もまとめています。",
+    "project": "RS-AI-limit-development, rts-video-flow",
+    "type": "開発日誌",
+    "tags": [
+      "RS-AI-limit-development",
+      "rts-video-flow",
+      "方針変更",
+      "機能削除",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-08-02.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-07-31",
+    "date": "2026-07-31",
+    "title": "RS-AI-limit-developmentの方針を更新、ほか10件",
+    "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。 同じ日の開発記録として、『RS-AI-limit-developmentを改善』、『RS-AI-limit-developmentに機能を追加』、『RS-AI-limit-developmentを検証』もまとめています。",
+    "project": "RS-AI-limit-development",
+    "type": "開発日誌",
+    "tags": [
+      "RS-AI-limit-development",
+      "新プロジェクト",
+      "方針変更",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-07-31.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-07-30",
+    "date": "2026-07-30",
+    "title": "RTSを改善、ほか1件",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSに機能を追加』もまとめています。",
+    "project": "RTS",
+    "type": "開発日誌",
+    "tags": [
+      "RTS",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-07-30.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-07-29",
+    "date": "2026-07-29",
+    "title": "RTSを改善、ほか1件",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSを改善』もまとめています。",
+    "project": "RTS",
+    "type": "開発日誌",
+    "tags": [
+      "RTS",
+      "機能変更"
+    ],
+    "href": "../journal/2026-07-29.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-07-27",
+    "date": "2026-07-27",
+    "title": "RTSを改善、ほか21件",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』、『RTSを改善』、『RTSを改善』もまとめています。",
+    "project": "RTS",
+    "type": "開発日誌",
+    "tags": [
+      "RTS",
+      "新製品",
+      "方針変更",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-07-27.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-07-26",
+    "date": "2026-07-26",
+    "title": "RTSに機能を追加、ほか13件",
+    "summary": "RTSで新しい機能を使えるようにしました。 同じ日の開発記録として、『RTSを改善』、『RTSを改善』、『RTSに機能を追加』もまとめています。",
+    "project": "RTS",
+    "type": "開発日誌",
+    "tags": [
+      "RTS",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-07-26.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-07-25",
+    "date": "2026-07-25",
+    "title": "RTSを改善、ほか2件",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSに機能を追加』、『RTSを改善』もまとめています。",
+    "project": "RTS",
+    "type": "開発日誌",
+    "tags": [
+      "RTS",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-07-25.html"
+  }
+]
