@@ -20,7 +20,8 @@ ROOT = HERE.parents[1]
 BASE = load_knowledge(str(ROOT / 'config/knowledge.limit-development.json'))
 RULES = load_rules(ROOT / 'config/distiller.rules.json')
 CHAT = ROOT / 'tests/fixtures/chat-sample.safe.jsonl'
-FEEDBACK = ROOT / 'config/preference-feedback.limit-development.jsonl'
+SYNTHETIC_FEEDBACK = ROOT / 'tests/fixtures/preference-feedback.synthetic.jsonl'
+PRODUCTION_FEEDBACK = ROOT / 'config/preference-feedback.limit-development.jsonl'
 
 
 def learned_pack():
@@ -40,8 +41,8 @@ def row(fid='x', rid='friction_to_automation', output='out-1', surface='journal'
 
 
 class PreferenceLoopTest(unittest.TestCase):
-    def test_dogfood_has_active_shadow_and_dormant(self):
-        derived, report = apply_preference_feedback(learned_pack(), load_feedback(FEEDBACK))
+    def test_synthetic_fixture_exercises_active_shadow_and_dormant(self):
+        derived, report = apply_preference_feedback(learned_pack(), load_feedback(SYNTHETIC_FEEDBACK))
         states = {x['id']: x['preference']['stage'] for x in derived['preference_rule_catalog']}
         self.assertEqual(states['friction_to_automation'], STAGE_ACTIVE)
         self.assertEqual(states['destination_over_link_success'], STAGE_SHADOW)
@@ -49,6 +50,13 @@ class PreferenceLoopTest(unittest.TestCase):
         self.assertEqual(report['stage_counts'], {'SHADOW': 1, 'ACTIVE': 1, 'DORMANT': 1})
         usable = {x['id'] for x in derived['learned_context_rules']}
         self.assertNotIn('replaceable_personalization', usable)
+
+    def test_production_ledger_starts_without_invented_preferences(self):
+        feedback = load_feedback(PRODUCTION_FEEDBACK)
+        self.assertEqual(feedback, [])
+        derived, report = apply_preference_feedback(learned_pack(), feedback)
+        self.assertEqual(report['stage_counts'], {'SHADOW': 3, 'ACTIVE': 0, 'DORMANT': 0})
+        self.assertTrue(all(x['preference']['stage'] == STAGE_SHADOW for x in derived['learned_context_rules']))
 
     def test_no_feedback_stays_shadow(self):
         derived, _ = apply_preference_feedback(learned_pack(), [])
@@ -97,17 +105,17 @@ class PreferenceLoopTest(unittest.TestCase):
     def test_preference_pack_does_not_mutate_current_knowledge(self):
         learned = learned_pack()
         current_before = json.dumps(BASE, ensure_ascii=False, sort_keys=True)
-        derived, _ = apply_preference_feedback(learned, load_feedback(FEEDBACK))
+        derived, _ = apply_preference_feedback(learned, load_feedback(SYNTHETIC_FEEDBACK))
         self.assertEqual(current_before, json.dumps(BASE, ensure_ascii=False, sort_keys=True))
         self.assertFalse(derived['preference_loop']['active_is_auto_published'])
 
     def test_surface_scores_are_kept_separately(self):
-        derived, _ = apply_preference_feedback(learned_pack(), load_feedback(FEEDBACK))
+        derived, _ = apply_preference_feedback(learned_pack(), load_feedback(SYNTHETIC_FEEDBACK))
         rule_state = next(x for x in derived['preference_rule_catalog'] if x['id'] == 'friction_to_automation')
         self.assertEqual(set(rule_state['preference']['surface_scores']), {'journal', 'update', 'sns'})
 
     def test_dormant_rule_is_not_used_by_writer(self):
-        derived, _ = apply_preference_feedback(learned_pack(), load_feedback(FEEDBACK))
+        derived, _ = apply_preference_feedback(learned_pack(), load_feedback(SYNTHETIC_FEEDBACK))
         dormant_context = next(x['public_context'] for x in derived['preference_rule_catalog'] if x['id'] == 'replaceable_personalization')
         self.assertNotIn('replaceable_personalization', {x['id'] for x in derived['learned_context_rules']})
         ev = Evidence(
