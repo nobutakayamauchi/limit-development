@@ -78,8 +78,7 @@ jobs:
             --output foundry-growth-engine/site \
             --lookback-days 30
 
-      - name: Build unattended public Git board
-        if: github.event_name != 'pull_request'
+      - name: Build unattended public Git board (dry-run on PR)
         run: |
           args=()
           while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/fge-repos.txt
