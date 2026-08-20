@@ -44,13 +44,14 @@ def generate_reader_body(journal, updates, knowledge=None, daily_intents=None):
     intent = resolve_daily_intent(daily_intents or [], journal.date, lead_project, knowledge=knowledge)
     goal = _project_goal(knowledge, lead_project)
 
-    lines = ["## 今日の中心"]
-    lines.append(_sentence(intent["intent"] if intent else (_project_description(knowledge, lead_project) or lead_items[-1].summary)))
+    lines = []
+    if intent:
+        lines += ["## 今日の狙い", _sentence(intent["intent"])]
+    else:
+        lines += ["## 今日の中心", _sentence(_project_description(knowledge, lead_project) or lead_items[-1].summary)]
     if len(items) > 1:
         lines.append(_sentence(f"記録は{len(items)}件。{lead_project}を中心に進みました"))
 
-    if intent:
-        lines += ["", "## 今日の狙い", _sentence(intent["intent"])]
     if goal:
         lines += ["", "## この開発の目的", _sentence(goal)]
 
