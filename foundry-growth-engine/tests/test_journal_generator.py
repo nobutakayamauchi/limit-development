@@ -17,15 +17,14 @@ def update(i, hour, title, summary, project='FOUNDRY GROWTH ENGINE', kind='機�
 
 
 class JournalGeneratorTest(unittest.TestCase):
-    def test_busy_day_explains_goal_then_groups_actual_work(self):
+    def test_busy_day_separates_daily_intent_git_facts_and_stable_goal(self):
         items = [
             update(1, '09', '導線を修正', '一覧ではなく本文へ直接着けるようにしました。'),
             update(2, '12', '開発記録を自動化', '公開Gitの活動から開発記録を更新するようにしました。'),
             update(3, '18', 'ナレッジを追加', '意味を補うKnowledge層を追加しました。', kind='機能追加'),
             update(4, '19', 'Bridge接続を修正', '接続まわりを修正しました。', project='WebAI Bridge'),
-            update(5, '20', 'Loopを検証', '開発ループを検証しました。', project='Ultimate Loop', kind='研究・検証'),
         ]
-        j = Journal('2026-08-20', '5件の更新', '短いリード', [x.id for x in items], ['FOUNDRY GROWTH ENGINE','WebAI Bridge','Ultimate Loop'], ['機能変更','機能追加','研究・検証'], [])
+        j = Journal('2026-08-20', '4件の更新', '短いリード', [x.id for x in items], ['FOUNDRY GROWTH ENGINE','WebAI Bridge'], ['機能変更','機能追加'], [])
         knowledge = {'project_profiles': {
             'FOUNDRY GROWTH ENGINE': {
                 'public_description': '仕事の記録から公開直前まで整える仕組みです。',
@@ -33,48 +32,53 @@ class JournalGeneratorTest(unittest.TestCase):
             },
             'WebAI Bridge': {'why_it_matters': '使うAIが変わっても利用場所まで捨てないためです。'},
         }}
-        body = generate_journal_body(j, items, knowledge=knowledge)
-        self.assertIn('## 今日の中心', body)
-        self.assertIn('## この開発で狙っていること', body)
+        intents = [{
+            'observation_id':'g1','date':'2026-08-20','project':'FOUNDRY GROWTH ENGINE',
+            'intent':'何を狙って何をやり、どこまで進んだかが分かる日誌にする。',
+            'source_type':'goal','approval_status':'approved','public_safe':True,'allow_journal':True,
+        }]
+        body = generate_journal_body(j, items, knowledge=knowledge, daily_intents=intents)
+        self.assertIn('## 今日の狙い', body)
+        self.assertIn('何を狙って何をやり、どこまで進んだかが分かる日誌にする。', body)
+        self.assertIn('/goalとして公開利用を承認した記録', body)
+        self.assertIn('## この開発の目的', body)
         self.assertIn('投稿を考える別の仕事を増やさないために使います。', body)
-        self.assertIn('## まとまりごとの記録', body)
+        self.assertIn('## 今日やったこと', body)
         self.assertIn('### FOUNDRY GROWTH ENGINE — 3件', body)
-        self.assertIn('狙い: 投稿を考える別の仕事を増やさないために使います。', body)
-        self.assertIn('### WebAI Bridge — 1件', body)
-        self.assertIn('狙い: 使うAIが変わっても利用場所まで捨てないためです。', body)
-        self.assertIn('### Ultimate Loop — 1件', body)
-        self.assertIn('最も多かったのはFOUNDRY GROWTH ENGINEの3件', body)
+        self.assertIn('実際の変更内訳:', body)
         self.assertIn('## 今日どこまで進んだか', body)
-        self.assertIn('記録上いちばん新しい変更は「ナレッジを追加」', body)
-        self.assertIn('狙いそのものを達成したという意味ではありません', body)
-        self.assertGreater(len(body), len(j.summary) * 10)
+        self.assertIn('公開Git上でいちばん新しい到達点は「ナレッジを追加」', body)
+        self.assertIn('狙いを完全に達成したという判定はしていません', body)
 
-    def test_repo_shaped_project_name_reuses_existing_alias_table(self):
+    def test_daily_goal_is_not_inferred_from_git_or_stable_knowledge(self):
+        item = update(1, '09', '導線を修正', '本文へ直接着けるようにしました。')
+        j = Journal('2026-08-20', '1件', 'lead', [item.id], [item.project], [item.type], [])
+        knowledge = {'project_profiles': {item.project: {'why_it_matters': '投稿作業を減らすためです。'}}}
+        body = generate_journal_body(j, [item], knowledge=knowledge, daily_intents=[])
+        self.assertNotIn('## 今日の狙い', body)
+        self.assertIn('## この開発の目的', body)
+        self.assertIn('投稿作業を減らすためです。', body)
+
+    def test_repo_shaped_project_name_resolves_goal_and_daily_intent_alias(self):
         item = update(1, '09', 'Bridge接続を修正', '接続まわりを修正しました。', project='WebAI-Bridge')
         j = Journal('2026-08-20', '1件', 'lead', [item.id], [item.project], [item.type], [])
         knowledge = {
             'project_aliases': [{'pattern': 'webai bridge|web ai bridge', 'project': 'WebAI Bridge'}],
-            'project_profiles': {'WebAI Bridge': {'why_it_matters': '使うAIが変わっても利用場所まで捨てないためです。'}},
+            'project_profiles': {'WebAI Bridge': {'why_it_matters': '利用場所まで捨てないためです。'}},
         }
-        body = generate_journal_body(j, [item], knowledge=knowledge)
-        self.assertIn('## この開発で狙っていること', body)
-        self.assertIn('使うAIが変わっても利用場所まで捨てないためです。', body)
-
-    def test_goal_is_not_invented_when_knowledge_has_only_description(self):
-        item = update(1, '09', '導線を修正', '本文へ直接着けるようにしました。')
-        j = Journal('2026-08-20', '1件', 'lead', [item.id], [item.project], [item.type], [])
-        knowledge = {'project_profiles': {item.project: {'public_description': '公開支援ツールです。'}}}
-        body = generate_journal_body(j, [item], knowledge=knowledge)
-        self.assertNotIn('## この開発で狙っていること', body)
-        self.assertNotIn('狙い:', body)
-        self.assertIn('## 今日どこまで進んだか', body)
+        intents = [{'observation_id':'c1','date':'2026-08-20','project':'WebAI Bridge','intent':'接続を安定させる。','source_type':'chat_observation','approval_status':'approved','public_safe':True,'allow_journal':True}]
+        body = generate_journal_body(j, [item], knowledge=knowledge, daily_intents=intents)
+        self.assertIn('## 今日の狙い', body)
+        self.assertIn('接続を安定させる。', body)
+        self.assertIn('承認済みChat Observation', body)
+        self.assertIn('利用場所まで捨てないためです。', body)
 
     def test_large_single_project_uses_checkpoints_not_full_log(self):
         items = [update(i, f'{8+i:02d}', f'変更{i}', f'変更{i}を反映しました。') for i in range(1, 8)]
         j = Journal('2026-08-20', '7件', 'lead', [x.id for x in items], [items[0].project], [items[0].type], [])
         body = generate_journal_body(j, items)
         self.assertIn('### FOUNDRY GROWTH ENGINE — 7件', body)
-        self.assertIn('ほか4件の更新', body)
+        self.assertIn('ほか4件の公開Git由来の更新', body)
         self.assertLess(body.count(' — 変更'), 7)
 
     def test_html_escapes_content_and_supports_cluster_heading(self):
@@ -92,7 +96,7 @@ class JournalGeneratorTest(unittest.TestCase):
             page = root / 'journal' / '2026-08-20.html'
             page.parent.mkdir(parents=True)
             page.write_text('<html><p>短いリード</p><article>existing</article></html>', encoding='utf-8')
-            count = expand_rendered_journals(root, [j], [item], knowledge={})
+            count = expand_rendered_journals(root, [j], [item], knowledge={}, daily_intents=[])
             text = page.read_text(encoding='utf-8')
             self.assertEqual(count, 1)
             self.assertIn('journal-generated', text)
@@ -102,7 +106,7 @@ class JournalGeneratorTest(unittest.TestCase):
     def test_missing_page_is_safe(self):
         j = Journal('2026-08-20', '日誌', 'lead', [], [], [], [])
         with tempfile.TemporaryDirectory() as td:
-            self.assertEqual(expand_rendered_journals(td, [j], [], knowledge={}), 0)
+            self.assertEqual(expand_rendered_journals(td, [j], [], knowledge={}, daily_intents=[]), 0)
 
 
 if __name__ == '__main__':
