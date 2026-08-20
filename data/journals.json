@@ -1,9 +1,11 @@
 [
   {
     "date": "2026-08-20",
-    "title": "limit-developmentを公開、ほか10件",
-    "summary": "limit-developmentを新しく公開しました。 同じ日の開発記録として、『RTS-Skills-の方針を更新』、『WebAI-Bridgeの方針を更新』、『FOUNDRY GROWTH ENGINEに機能を追加』もまとめています。",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか12件",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『limit-developmentを改善』、『limit-developmentを公開』、『RTS-Skills-の方針を更新』もまとめています。",
     "update_ids": [
+      "upd-2eab97b465a8",
+      "upd-4432f0ed851d",
       "upd-d15161f46e5c",
       "upd-4621400f55e4",
       "upd-22edc740036c",

@@ -1,5 +1,39 @@
 [
   {
+    "id": "upd-2eab97b465a8",
+    "source_id": "nobutakayamauchi/limit-development@0c12ba3f36cff53c14418dd29936475ba817fc0b",
+    "captured_at": "2026-08-20T20:58:52+09:00",
+    "type": "機能追加",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/0c12ba3f36cff53c14418dd29936475ba817fc0b",
+    "article_score": 0.372,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-4432f0ed851d",
+    "source_id": "nobutakayamauchi/limit-development@fb7e0002d4cdd05113d50e16e07f5da0dfa55347",
+    "captured_at": "2026-08-20T20:50:48+09:00",
+    "type": "機能変更",
+    "project": "limit-development",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b6a9658e88188b64face36289c20aaf6e5ad36e3,https://github.com/nobutakayamauchi/limit-development/commit/fb7e0002d4cdd05113d50e16e07f5da0dfa55347,https://github.com/nobutakayamauchi/limit-development/commit/b2afb7e16242d21dea8374a2d678f28c06469778",
+    "article_score": 0.254,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-d15161f46e5c",
     "source_id": "nobutakayamauchi/limit-development@a65930124b2f18cc655ebea261d25e85e4cb59e3",
     "captured_at": "2026-08-20T20:43:11+09:00",
