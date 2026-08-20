@@ -33,9 +33,6 @@ def main():
     ap.add_argument('--git-only', action='store_true', help='Use only Git evidence and suppress ARTICLE generation. Intended for safe automatic publication from already-public repositories.')
     args = ap.parse_args()
 
-    if args.git_only and args.human:
-        ap.error('--human is review-only in v0 and cannot be combined with --git-only unattended publication')
-
     repos = args.repos or ['.']
     knowledge_path = PACKAGE_ROOT/'config/knowledge.plain.json' if args.plain else Path(args.knowledge) if args.knowledge else None
     knowledge = load_knowledge(str(knowledge_path)) if knowledge_path else {}
@@ -46,6 +43,10 @@ def main():
     for repo in repos:
         git_evidence.extend(GitHubGitAdapter(repo, args.lookback_days).collect())
 
+    # In git-only mode the inputs are already-public repository facts. Work
+    # Records remain excluded. /human may edit this public-safe text, but it
+    # still cannot create ARTICLE output or bypass the existing publication
+    # boundaries for private/session material.
     work_record_evidence = [] if args.git_only else WorkRecordFileAdapter(repos[0], args.work_record_dir).collect()
     evidence = git_evidence + work_record_evidence
 
