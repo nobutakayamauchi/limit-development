@@ -13,7 +13,7 @@ from fge.adapters.work_record_input import WorkRecordFileAdapter
 from fge.adapters.pages_output import render_site
 from fge.compact import compact_hourly
 from fge.human_editor import humanize_updates, humanize_journals
-from fge.journal_generator import expand_rendered_journals
+from fge.journal_reader_v04 import expand_reader_journals
 from fge.daily_intent import load_daily_intents
 from fge.core import (
     INTENT_RECORD_ONLY,
@@ -71,14 +71,14 @@ def main():
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
     checked = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec='minutes')
     render_site(args.output, updates, articles, journals, checked)
-    expanded_journals = expand_rendered_journals(args.output, journals, updates, knowledge=knowledge, daily_intents=daily_intents)
+    expanded_journals = expand_reader_journals(args.output, journals, updates, knowledge=knowledge, daily_intents=daily_intents)
 
     metadata = {
         'mode': generation_mode,
         'knowledge_pack': Path(knowledge_path).name if knowledge_path else 'NONE',
         'knowledge_schema': knowledge.get('schema_version', 'plain-v0'),
         'human_editor': 'human-editor-v0.1' if args.human else 'OFF',
-        'journal_generator': 'journal-generator-v0.4',
+        'journal_generator': 'journal-generator-v0.4-reader',
         'daily_intent_input': 'OFF (PLAIN)' if args.plain else (Path(args.daily_intents).name if args.daily_intents else 'OFF'),
         'approved_daily_intents': len(daily_intents),
         'expanded_journal_pages': expanded_journals,
