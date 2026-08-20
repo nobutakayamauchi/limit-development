@@ -67,10 +67,6 @@ class HumanEditorV0:
         return self._clean(" ".join(ordered))
 
     def _meaning_title(self, intent):
-        """Turn an approved same-day intent into a reader-facing journal title.
-
-        This is deliberately grammatical only: it does not add a new claim.
-        """
         text = self._clean(intent).rstrip("。！？!?")
         if not text:
             return ""
@@ -96,12 +92,6 @@ class HumanEditorV0:
         return out
 
     def edit_journals(self, journals, updates, daily_intents=None):
-        """Create a readable daily lead while keeping source facts intact.
-
-        If an approved same-day intent exists for the lead project, it becomes
-        the journal headline. Counts stay in the summary as supporting context,
-        rather than defining the meaning of the day.
-        """
         by_id = {u.id: u for u in updates}
         intents = daily_intents or []
         out = []
@@ -117,7 +107,7 @@ class HumanEditorV0:
                 title = meaning_title or lead.title
                 summary = lead.summary
             else:
-                title = meaning_title or lead.title
+                title = meaning_title or f"{lead.title}、ほか{len(items)-1}件"
                 summary = lead.summary
                 if meaning_title:
                     summary = self._clean(f"{summary} この日は{len(items)}件の公開開発記録があります。")
