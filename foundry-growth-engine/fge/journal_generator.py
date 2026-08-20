@@ -12,6 +12,10 @@ def _clean(text: str) -> str:
     return " ".join(str(text or "").split()).strip()
 
 
+def _norm_project(text: str) -> str:
+    return re.sub(r"[^0-9A-Za-z一-龥ぁ-んァ-ンー]+", " ", _clean(text)).casefold()
+
+
 def _sentence(text: str) -> str:
     text = _clean(text)
     if not text:
@@ -27,6 +31,14 @@ def _project_groups(items):
 
 
 def _project_profile(knowledge, project):
+    """Resolve only identity-safe project profiles for JOURNAL purpose text.
+
+    The general Knowledge alias table is also used to classify commit text and
+    can contain broad semantic patterns. JOURNAL purpose/intent needs stricter
+    entity identity, so alias fallback is limited to punctuation/spacing variants
+    such as `WebAI-Bridge` -> `WebAI Bridge`. If identity is uncertain, omit the
+    purpose rather than attaching the wrong product story.
+    """
     if not isinstance(knowledge, dict):
         return {}
     profiles = knowledge.get("project_profiles", {})
@@ -38,12 +50,15 @@ def _project_profile(knowledge, project):
 
     raw = str(project or "")
     normalized = re.sub(r"[^0-9A-Za-z一-龥ぁ-んァ-ンー]+", " ", raw).strip()
+    raw_norm = _norm_project(raw)
     for alias in knowledge.get("project_aliases", []):
         if not isinstance(alias, dict):
             continue
         pattern = str(alias.get("pattern") or "")
         target = str(alias.get("project") or "")
         if not pattern or target not in profiles:
+            continue
+        if _norm_project(target) != raw_norm:
             continue
         try:
             matched = re.search(pattern, raw, flags=re.I) or re.search(pattern, normalized, flags=re.I)
@@ -131,8 +146,6 @@ def generate_journal_body(journal, updates, knowledge=None, daily_intents=None) 
         goal = _project_goal(knowledge, project)
         if description and not (project == lead_project and len(items) > 1):
             lines.append(_sentence(description))
-        # Lead intent/purpose are already explained in dedicated sections above.
-        # Only secondary projects repeat their own approved intent/purpose here.
         if project != lead_project and project_intent:
             lines.append(_sentence("今日の狙い: " + project_intent["intent"]))
         if project != lead_project and goal:
