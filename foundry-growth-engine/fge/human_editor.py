@@ -99,10 +99,10 @@ class HumanEditorV0:
                 summary = lead.summary
             else:
                 title = f"{lead.title}、ほか{len(items)-1}件"
-                others = " / ".join(u.title for u in items[1:4])
+                quoted = "、".join(f"『{u.title}』" for u in items[1:4])
                 summary = lead.summary
-                if others:
-                    summary = self._clean(f"{summary} 同じ日の開発記録として、{others}もまとめています。")
+                if quoted:
+                    summary = self._clean(f"{summary} 同じ日の開発記録として、{quoted}もまとめています。")
             out.append(replace(journal, title=title, summary=summary))
         return out
 
