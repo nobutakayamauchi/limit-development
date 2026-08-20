@@ -12,6 +12,7 @@ from fge.adapters.github_input import GitHubGitAdapter
 from fge.adapters.work_record_input import WorkRecordFileAdapter
 from fge.adapters.pages_output import render_site
 from fge.compact import compact_hourly
+from fge.human_editor import humanize_updates, humanize_journals
 from fge.core import (
     INTENT_RECORD_ONLY,
     build_update,
@@ -25,6 +26,7 @@ def main():
     ap.add_argument('--repo', action='append', dest='repos', help='Repository path. Repeat to aggregate multiple repositories.')
     ap.add_argument('--knowledge', default=str(PACKAGE_ROOT/'config/knowledge.limit-development.json'))
     ap.add_argument('--plain', action='store_true', help='Ignore operator knowledge and use the pinned PLAIN pack.')
+    ap.add_argument('--human', action='store_true', help='Run the conservative /human editing pass before ARTICLE/JOURNAL/SNS generation.')
     ap.add_argument('--output', default=str(PACKAGE_ROOT/'site'))
     ap.add_argument('--lookback-days', type=int, default=30)
     ap.add_argument('--work-record-dir', default='.fge/records')
@@ -34,15 +36,17 @@ def main():
     repos = args.repos or ['.']
     knowledge_path = PACKAGE_ROOT/'config/knowledge.plain.json' if args.plain else Path(args.knowledge) if args.knowledge else None
     knowledge = load_knowledge(str(knowledge_path)) if knowledge_path else {}
-    generation_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
+    base_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
+    generation_mode = f'{base_mode}+HUMAN' if args.human else base_mode
 
     git_evidence = []
     for repo in repos:
         git_evidence.extend(GitHubGitAdapter(repo, args.lookback_days).collect())
 
-    # Work Records are intentionally only read from the primary repository and
-    # are excluded from the unattended public board. They remain behind the
-    # reviewed publish path.
+    # In git-only mode the inputs are already-public repository facts. Work
+    # Records remain excluded. /human may edit this public-safe text, but it
+    # still cannot create ARTICLE output or bypass the existing publication
+    # boundaries for private/session material.
     work_record_evidence = [] if args.git_only else WorkRecordFileAdapter(repos[0], args.work_record_dir).collect()
     evidence = git_evidence + work_record_evidence
 
@@ -55,9 +59,15 @@ def main():
             continue
         raw_updates.append(build_update(ev, knowledge))
 
-    updates = compact_hourly(raw_updates, contextual=(generation_mode == 'KNOWLEDGE'))
+    updates = compact_hourly(raw_updates, contextual=(base_mode == 'KNOWLEDGE'))
+    if args.human:
+        updates = humanize_updates(updates, by_source, knowledge)
+
     articles = [] if args.git_only else [build_article(u, by_source[u.source_id], knowledge) for u in updates if u.article_candidate]
     journals = build_journals(updates)
+    if args.human:
+        journals = humanize_journals(journals, updates, knowledge)
+
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
     checked = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec='minutes')
     render_site(args.output, updates, articles, journals, checked)
@@ -66,6 +76,7 @@ def main():
         'mode': generation_mode,
         'knowledge_pack': Path(knowledge_path).name if knowledge_path else 'NONE',
         'knowledge_schema': knowledge.get('schema_version', 'plain-v0'),
+        'human_editor': 'human-editor-v0' if args.human else 'OFF',
         'checked_at': checked,
         'repositories': [str(Path(r)) for r in repos],
         'git_only': args.git_only,
@@ -89,6 +100,7 @@ def main():
         'article_candidates': len(articles),
         'journal_days': len(journals),
         'generation_mode': generation_mode,
+        'human_editor': metadata['human_editor'],
         'knowledge_pack': metadata['knowledge_pack']
     }, ensure_ascii=False, indent=2))
     return 0

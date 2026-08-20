@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Test plain core, knowledge and adapters
+      - name: Test plain core, knowledge, /human and adapters
         run: python -m unittest discover -s foundry-growth-engine/tests -v
         env:
           PYTHONPATH: foundry-growth-engine
@@ -78,14 +78,14 @@ jobs:
             --output foundry-growth-engine/site \
             --lookback-days 30
 
-      - name: Build unattended public Git board
-        if: github.event_name != 'pull_request'
+      - name: Build unattended public Git board (dry-run on PR)
         run: |
           args=()
           while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/fge-repos.txt
           python foundry-growth-engine/scripts/run_hourly.py \
             "${args[@]}" \
             --git-only \
+            --human \
             --knowledge foundry-growth-engine/config/knowledge.limit-development.json \
             --output /tmp/fge-public \
             --lookback-days 30
@@ -112,7 +112,7 @@ jobs:
           else
             git commit -m "[FGE] Hourly public board ${{ github.run_id }}"
             git push origin HEAD:main
-            echo "UPDATE/JOURNAL board published from public Git evidence." >> "$GITHUB_STEP_SUMMARY"
+            echo "UPDATE/JOURNAL board published from public Git evidence through CURRENT KNOWLEDGE + /human." >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Build PLAIN regression baseline
@@ -145,14 +145,38 @@ jobs:
             --output foundry-growth-engine/site-chat-learned \
             --lookback-days 30
 
-      - name: Compare three presentation modes
+      - name: Build CURRENT KNOWLEDGE plus /human candidate
         run: |
-          python foundry-growth-engine/scripts/compare_three_modes.py \
+          args=()
+          while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/fge-repos.txt
+          python foundry-growth-engine/scripts/run_hourly.py \
+            "${args[@]}" \
+            --knowledge foundry-growth-engine/config/knowledge.limit-development.json \
+            --human \
+            --output foundry-growth-engine/site-human \
+            --lookback-days 30
+
+      - name: Build CHAT-LEARNED plus /human candidate
+        run: |
+          args=()
+          while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/fge-repos.txt
+          python foundry-growth-engine/scripts/run_hourly.py \
+            "${args[@]}" \
+            --knowledge foundry-growth-engine/.generated/knowledge.chat-learned.json \
+            --human \
+            --output foundry-growth-engine/site-chat-learned-human \
+            --lookback-days 30
+
+      - name: Compare PLAIN, Knowledge, Chat and /human modes
+        run: |
+          python foundry-growth-engine/scripts/compare_human_modes.py \
             --plain foundry-growth-engine/site-plain/data/updates.json \
             --current foundry-growth-engine/site/data/updates.json \
             --learned foundry-growth-engine/site-chat-learned/data/updates.json \
+            --current-human foundry-growth-engine/site-human/data/updates.json \
+            --learned-human foundry-growth-engine/site-chat-learned-human/data/updates.json \
             --distill-report foundry-growth-engine/.generated/DISTILL_REPORT.json \
-            --output foundry-growth-engine/THREE_MODE_COMPARISON.md
+            --output foundry-growth-engine/HUMAN_MODE_COMPARISON.md
 
       - name: Package review candidates and baselines
         uses: actions/upload-artifact@v4
@@ -162,7 +186,9 @@ jobs:
             foundry-growth-engine/site
             foundry-growth-engine/site-plain
             foundry-growth-engine/site-chat-learned
-            foundry-growth-engine/THREE_MODE_COMPARISON.md
+            foundry-growth-engine/site-human
+            foundry-growth-engine/site-chat-learned-human
+            foundry-growth-engine/HUMAN_MODE_COMPARISON.md
             foundry-growth-engine/.generated/knowledge.chat-learned.json
             foundry-growth-engine/.generated/DISTILL_REPORT.json
             foundry-growth-engine/config
@@ -173,11 +199,15 @@ jobs:
           {
             echo "### FOUNDRY GROWTH ENGINE"
             echo
-            echo "Hourly UPDATE/JOURNAL: public Git evidence only, auto-published."
+            echo "Hourly UPDATE/JOURNAL: public Git evidence -> CURRENT KNOWLEDGE -> /human, auto-published."
+            echo "CHAT-LEARNED + /human: experiment only until learned context is promoted."
             echo "ARTICLE / SNS / Work Record: still Human Gate only."
             echo
-            echo "Primary review candidate: CURRENT KNOWLEDGE mode"
-            echo "Baseline: PLAIN mode"
-            echo "Experiment: CHAT-LEARNED mode"
+            echo "Baseline: PLAIN"
+            echo "Current: CURRENT KNOWLEDGE"
+            echo "Experiment: CHAT-LEARNED"
+            echo "Editor: CURRENT + /human"
+            echo "Full experiment: CHAT-LEARNED + /human"
+            echo "Comparison: HUMAN_MODE_COMPARISON.md"
             echo "Artifact: fge-review-${{ github.run_id }}"
           } >> "$GITHUB_STEP_SUMMARY"
