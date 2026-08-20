@@ -34,9 +34,17 @@ function wireJournalNavigation(){
  const feed=$('#journalFeed');if(feed){feed.querySelectorAll('li').forEach(li=>{const t=li.querySelector('time'),a=li.querySelector('a');if(!t||!a)return;const bits=t.textContent.trim().split('.');if(bits.length===2)a.href=`journal/2026-${bits[0]}-${bits[1]}.html`})}
 }
 async function loadJson(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error(`${path}: ${r.status}`);return r.json()}
+function showHourlyStatus(status){
+ const small=document.querySelector('#journal .paneltitle small');if(!small)return;
+ const raw=typeof status?.checked_at==='string'?status.checked_at:'';
+ if(!raw){small.textContent='LIVE BOARD';return}
+ const d=new Date(raw);const hh=Number.isNaN(d.getTime())?raw.slice(11,16):new Intl.DateTimeFormat('ja-JP',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Tokyo'}).format(d);
+ small.textContent=`LIVE BOARD · 最終確認 ${hh} · 監視継続中`;
+}
 async function loadLiveBoards(){
  const updateFeed=$('#updateFeed'),journalFeed=$('#journalFeed');
- try{const updates=await loadJson('data/updates.json');if(Array.isArray(updates)&&updates.length&&updateFeed){updateFeed.replaceChildren(...updates.slice(0,5).map(updateRow));const all=$('#updateAllLink');if(all)all.href='updates/'}}catch(_){/* reviewed FGE bundle not published yet: keep static fallback */}
+ try{const updates=await loadJson('data/updates.json');if(Array.isArray(updates)&&updates.length&&updateFeed){updateFeed.replaceChildren(...updates.slice(0,5).map(updateRow));const all=$('#updateAllLink');if(all)all.href='updates/'}}catch(_){/* keep static fallback */}
  try{const journals=await loadJson('data/journals.json');if(Array.isArray(journals)&&journals.length&&journalFeed){journalFeed.replaceChildren(...journals.slice(0,5).map(journalRow));const idx=$('#journalIndexLink');if(idx)idx.href='journal/'}}catch(_){/* keep static fallback */}
+ try{showHourlyStatus(await loadJson('data/status.json'))}catch(_){showHourlyStatus(null)}
 }
 render();wireJournalNavigation();loadLiveBoards();
