@@ -68,14 +68,14 @@ def main():
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
     checked = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec='minutes')
     render_site(args.output, updates, articles, journals, checked)
-    expanded_journals = expand_rendered_journals(args.output, journals, updates)
+    expanded_journals = expand_rendered_journals(args.output, journals, updates, knowledge=knowledge)
 
     metadata = {
         'mode': generation_mode,
         'knowledge_pack': Path(knowledge_path).name if knowledge_path else 'NONE',
         'knowledge_schema': knowledge.get('schema_version', 'plain-v0'),
         'human_editor': 'human-editor-v0' if args.human else 'OFF',
-        'journal_generator': 'journal-generator-v0',
+        'journal_generator': 'journal-generator-v0.1',
         'expanded_journal_pages': expanded_journals,
         'checked_at': checked,
         'repositories': [str(Path(r)) for r in repos],
