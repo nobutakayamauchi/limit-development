@@ -13,7 +13,7 @@ from fge.adapters.work_record_input import WorkRecordFileAdapter
 from fge.adapters.pages_output import render_site
 from fge.compact import compact_hourly
 from fge.human_editor import humanize_updates, humanize_journals
-from fge.journal_generator import expand_rendered_journals
+from fge.journal_reader_v04 import expand_reader_journals
 from fge.daily_intent import load_daily_intents
 from fge.core import (
     INTENT_RECORD_ONLY,
@@ -39,9 +39,6 @@ def main():
     repos = args.repos or ['.']
     knowledge_path = PACKAGE_ROOT/'config/knowledge.plain.json' if args.plain else Path(args.knowledge) if args.knowledge else None
     knowledge = load_knowledge(str(knowledge_path)) if knowledge_path else {}
-    # PLAIN is a regression baseline for the neutral Core. Operator-specific
-    # daily intent is external personalization just like Knowledge, so it must
-    # stay out of PLAIN even when a default intent file exists on disk.
     daily_intents = [] if args.plain else (load_daily_intents(args.daily_intents) if args.daily_intents else [])
     base_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
     generation_mode = f'{base_mode}+HUMAN' if args.human else base_mode
@@ -69,19 +66,19 @@ def main():
     articles = [] if args.git_only else [build_article(u, by_source[u.source_id], knowledge) for u in updates if u.article_candidate]
     journals = build_journals(updates)
     if args.human:
-        journals = humanize_journals(journals, updates, knowledge)
+        journals = humanize_journals(journals, updates, knowledge, daily_intents=daily_intents)
 
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
     checked = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec='minutes')
     render_site(args.output, updates, articles, journals, checked)
-    expanded_journals = expand_rendered_journals(args.output, journals, updates, knowledge=knowledge, daily_intents=daily_intents)
+    expanded_journals = expand_reader_journals(args.output, journals, updates, knowledge=knowledge, daily_intents=daily_intents)
 
     metadata = {
         'mode': generation_mode,
         'knowledge_pack': Path(knowledge_path).name if knowledge_path else 'NONE',
         'knowledge_schema': knowledge.get('schema_version', 'plain-v0'),
-        'human_editor': 'human-editor-v0' if args.human else 'OFF',
-        'journal_generator': 'journal-generator-v0.3',
+        'human_editor': 'human-editor-v0.1' if args.human else 'OFF',
+        'journal_generator': 'journal-generator-v0.4-reader',
         'daily_intent_input': 'OFF (PLAIN)' if args.plain else (Path(args.daily_intents).name if args.daily_intents else 'OFF'),
         'approved_daily_intents': len(daily_intents),
         'expanded_journal_pages': expanded_journals,

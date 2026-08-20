@@ -1,7 +1,11 @@
 from __future__ import annotations
 
+from collections import OrderedDict
 from dataclasses import replace
 import re
+
+from .daily_intent import resolve_daily_intent
+from .journal_generator import _project_goal
 
 
 class HumanEditorV0:
@@ -12,7 +16,7 @@ class HumanEditorV0:
     invent implementation details, outcomes, numbers or motives.
     """
 
-    name = "human-editor-v0"
+    name = "human-editor-v0.1"
 
     def __init__(self, knowledge=None):
         self.knowledge = knowledge or {}
@@ -50,9 +54,6 @@ class HumanEditorV0:
         if not sentences:
             sentences = [f"{update.title}。"]
 
-        # Keep every distinct sentence already present. These may contain
-        # chat-learned context or hourly aggregation counts, both of which are
-        # public-safe information already produced upstream and must not vanish.
         if len(sentences) == 1:
             for candidate in (why, purpose):
                 candidate = self._clean(candidate)
@@ -67,6 +68,26 @@ class HumanEditorV0:
         ordered = [sentences[0], *context, *aggregation]
         return self._clean(" ".join(ordered))
 
+    def _meaning_title(self, intent):
+        text = self._clean(intent).rstrip("。！？!?")
+        if not text:
+            return ""
+        if text.endswith("にする"):
+            return text[:-3] + "にした日"
+        if text.endswith("する"):
+            return text[:-2] + "した日"
+        if text.endswith("直す"):
+            return text[:-2] + "直した日"
+        return text + "日"
+
+    def _lead_project(self, items):
+        """Match the reader body's dominant-project selection."""
+        groups = OrderedDict()
+        for item in sorted(items, key=lambda u: u.captured_at):
+            groups.setdefault(item.project, []).append(item)
+        ranked = sorted(groups.items(), key=lambda kv: (-len(kv[1]), kv[1][0].captured_at, kv[0]))
+        return ranked[0][0] if ranked else ""
+
     def edit_update(self, update, evidence_text=""):
         title = self._clean(update.title).rstrip("。")
         summary = self._human_summary(update, evidence_text)
@@ -80,29 +101,34 @@ class HumanEditorV0:
             out.append(self.edit_update(update, getattr(ev, "text", "")))
         return out
 
-    def edit_journals(self, journals, updates):
-        """Turn the mechanical daily list into a readable daily lead.
-
-        It only uses already-edited Update title/summary text. No new event fact
-        is introduced here.
-        """
+    def edit_journals(self, journals, updates, daily_intents=None):
         by_id = {u.id: u for u in updates}
+        intents = daily_intents or []
         out = []
         for journal in journals:
             items = [by_id[i] for i in journal.update_ids if i in by_id]
             if not items:
                 out.append(journal)
                 continue
+
             lead = items[0]
+            lead_project = self._lead_project(items)
+            intent = resolve_daily_intent(intents, journal.date, lead_project, knowledge=self.knowledge)
+            meaning_title = self._meaning_title(intent.get("intent")) if intent else ""
+            why = self._clean(_project_goal(self.knowledge, lead_project))
+
             if len(items) == 1:
-                title = lead.title
-                summary = lead.summary
+                title = meaning_title or lead.title
+                summary = (why or lead.summary) if meaning_title else lead.summary
             else:
-                title = f"{lead.title}、ほか{len(items)-1}件"
-                quoted = "、".join(f"『{u.title}』" for u in items[1:4])
-                summary = lead.summary
-                if quoted:
-                    summary = self._clean(f"{summary} 同じ日の開発記録として、{quoted}もまとめています。")
+                title = meaning_title or f"{lead.title}、ほか{len(items)-1}件"
+                if meaning_title:
+                    summary = self._clean(f"{why or lead.summary} この日は{len(items)}件の公開開発記録があります。")
+                else:
+                    summary = lead.summary
+                    quoted = "、".join(f"『{u.title}』" for u in items[1:4])
+                    if quoted:
+                        summary = self._clean(f"{summary} 同じ日の開発記録として、{quoted}もまとめています。")
             out.append(replace(journal, title=title, summary=summary))
         return out
 
@@ -111,5 +137,5 @@ def humanize_updates(updates, evidence_by_source=None, knowledge=None):
     return HumanEditorV0(knowledge).edit_updates(updates, evidence_by_source)
 
 
-def humanize_journals(journals, updates, knowledge=None):
-    return HumanEditorV0(knowledge).edit_journals(journals, updates)
+def humanize_journals(journals, updates, knowledge=None, daily_intents=None):
+    return HumanEditorV0(knowledge).edit_journals(journals, updates, daily_intents=daily_intents)
