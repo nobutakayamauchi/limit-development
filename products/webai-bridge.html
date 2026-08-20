@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
-<title>WebAI Bridge | AIをWebへ逃がして、配って、売る。</title>
-<meta name="description" content="GPTsの新規公開が難しくなった。Skillsをそのまま配るのも重い。ならAIの中身はWeb側に置いて、買った人には入口を渡す。WebAI Bridge。">
+<title>WebAI Bridge | GPTs・Skills・Web配布、その次へ。</title>
+<meta name="description" content="GPTs、Skills、普通のWeb実装、WebAI Bridge。AIを商品として配る4つの方法を比較し、なぜWebAI Bridgeなのかを整理します。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="WebAI Bridge | AIをWebへ逃がして、配って、売る。">
-<meta property="og:description" content="GPTsの新規公開が難しくなった。Skillsをそのまま配るのも重い。AIの中身はWeb側へ。購入者には入口だけを渡す。">
+<meta property="og:title" content="WebAI Bridge | GPTs・Skills・Web配布、その次へ。">
+<meta property="og:description" content="AIを作ったあと、どう配る？ GPTs、Skills、普通のWeb、WebAI Bridgeを比較。">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-:root{--bg:#f7f9fc;--paper:#fff;--ink:#0c1220;--muted:#667085;--line:#dce3ee;--blue:#1463ff;--navy:#07152f;--navy2:#0c2d66;--soft:#edf4ff;--warn:#fff7ef;--warnline:#f0d3b5;--green:#0c8b61;--max:1040px;--r:24px;--shadow:0 18px 60px rgba(18,55,112,.09)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI","Noto Sans JP",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 32px));margin:auto}.nav{position:sticky;top:0;z-index:30;background:rgba(247,249,252,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{text-decoration:none;font-weight:950;font-size:13px;letter-spacing:.05em}.brand span{color:var(--blue)}.navlinks{display:flex;align-items:center;gap:10px}.navlinks a{text-decoration:none;font-size:12px;font-weight:900;padding:9px 13px;border-radius:999px}.navlinks .primary{background:var(--blue);color:#fff}.hero{padding:92px 0 72px;background:radial-gradient(circle at 80% 12%,rgba(20,99,255,.14),transparent 30%),linear-gradient(180deg,#fff,var(--bg));border-bottom:1px solid var(--line)}.eyebrow{font:900 11px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.16em;color:var(--blue)}h1{font-size:clamp(44px,8vw,84px);line-height:.95;letter-spacing:-.065em;margin:14px 0 22px}.lead{font-size:clamp(23px,4vw,39px);font-weight:950;line-height:1.28;letter-spacing:-.04em;max-width:900px;margin:0 0 18px}.sub{max-width:760px;color:var(--muted);font-size:16px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:12px 17px;border-radius:12px;border:1px solid var(--line);background:#fff;font-weight:900;font-size:14px}.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}.btn.dark{background:var(--navy);border-color:var(--navy);color:#fff}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}.chip{font:850 10px ui-monospace,SFMono-Regular,Menlo,monospace;border:1px solid #cddfff;background:#fff;color:#24589f;border-radius:999px;padding:7px 10px}section{padding:72px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(30px,5vw,52px);line-height:1.05;letter-spacing:-.05em;margin:0 0 18px}.intro{max-width:800px;color:var(--muted)}.alert{margin-top:24px;background:var(--warn);border:1px solid var(--warnline);border-radius:var(--r);padding:28px;box-shadow:var(--shadow)}.alert strong{display:block;font-size:clamp(22px,4vw,34px);line-height:1.3;letter-spacing:-.03em;margin-bottom:12px}.alert p{margin:7px 0;color:#66523e}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}.card .code{font:900 10px ui-monospace,monospace;color:var(--blue);letter-spacing:.13em}.card h3{margin:9px 0 10px;font-size:22px;line-height:1.3}.card p{margin:0;color:var(--muted);font-size:14px}.card.bad{background:#fffaf7}.card.good{background:var(--soft);border-color:#cddfff}.bridgevisual{margin-top:28px;background:linear-gradient(140deg,#07152f,#0c2d66);color:#fff;border-radius:var(--r);padding:30px;overflow:hidden}.bridgevisual .label{font-size:13px;font-weight:900;color:#8bb7ff;margin-bottom:18px}.rail{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:center}.node{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:20px;min-height:118px}.node b{display:block;margin-bottom:7px;font-size:18px}.node span{font-size:12px;color:#c7d7ef}.arrow{font-weight:950;color:#63a0ff;font-size:24px}.comparewrap{margin-top:28px;overflow-x:auto;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:var(--shadow)}table{border-collapse:collapse;width:100%;min-width:800px}th,td{padding:16px 18px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:13px}th{background:#f4f7fb;font-size:12px;letter-spacing:.02em}th:first-child,td:first-child{font-weight:900;width:22%}th:last-child{background:#eaf2ff;color:#123e84}td:last-child{background:#f7fbff}tr:last-child td{border-bottom:none}.yes{color:var(--green);font-weight:950}.mid{color:#8c6300;font-weight:900}.no{color:#9a3f4e;font-weight:900}.note{font-size:12px;color:var(--muted);margin-top:12px}.why{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}.whybox{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}.whybox h3{margin:0 0 12px;font-size:22px}.whybox p{color:var(--muted);margin:8px 0}.whybox strong{color:var(--ink)}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;min-height:170px}.step small{font:900 10px ui-monospace,monospace;color:var(--blue);letter-spacing:.12em}.step b{display:block;font-size:20px;margin:12px 0 6px}.step p{margin:0;color:var(--muted);font-size:13px}.proof{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:24px}.proofcard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}.proofcard b{font-size:20px}.proofcard p{color:var(--muted);font-size:14px}.chain{margin-top:15px;font:800 12px/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;color:#174f9d;background:#f4f8ff;border:1px solid #d8e5fa;border-radius:14px;padding:16px}.status{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:900;color:var(--green);background:#edf9f4;border:1px solid #c7eadc;border-radius:999px;padding:7px 10px}.dot{width:7px;height:7px;background:var(--green);border-radius:50%}.offer{background:linear-gradient(140deg,#07152f,#0d2b5e);color:#fff;border-radius:var(--r);padding:34px}.offer h2{margin-bottom:12px}.offer p{color:#c8d6ea}.offer .btn{border-color:#29466e;background:#102b59;color:#fff}.offer .btn.primary{background:#fff;color:#0b2348;border-color:#fff}.fine{font-size:12px;color:#9fb1cb;margin-top:15px}.footer{padding:42px 0 80px;color:var(--muted);font-size:12px}.footer a{font-weight:800}
-@media(max-width:820px){.three{grid-template-columns:1fr}.rail{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}.why,.proof{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}section{padding:56px 0}.alert,.offer,.bridgevisual{padding:22px}.navin{min-height:58px}}
-@media(max-width:460px){.wrap{width:min(100% - 24px,var(--max))}.flow{grid-template-columns:1fr}.actions{display:grid}.btn{width:100%}h1{font-size:48px}.navlinks a:first-child{display:none}.lead{font-size:27px}}
+:root{--bg:#f7f9fc;--paper:#fff;--ink:#0c1220;--muted:#667085;--line:#dce3ee;--blue:#1463ff;--navy:#07152f;--soft:#edf4ff;--warn:#fff7ef;--warnline:#f0d3b5;--green:#0c8b61;--red:#a63e50;--amber:#8a6200;--max:1080px;--r:24px;--shadow:0 18px 60px rgba(18,55,112,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI","Noto Sans JP",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 32px));margin:auto}.nav{position:sticky;top:0;z-index:30;background:rgba(247,249,252,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{text-decoration:none;font-weight:950;font-size:13px;letter-spacing:.05em}.brand span{color:var(--blue)}.navlinks{display:flex;align-items:center;gap:10px}.navlinks a{text-decoration:none;font-size:12px;font-weight:900;padding:9px 13px;border-radius:999px}.navlinks .primary{background:var(--blue);color:#fff}.hero{padding:90px 0 70px;background:radial-gradient(circle at 80% 12%,rgba(20,99,255,.14),transparent 30%),linear-gradient(180deg,#fff,var(--bg));border-bottom:1px solid var(--line)}.eyebrow{font:900 11px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.16em;color:var(--blue)}h1{font-size:clamp(44px,8vw,84px);line-height:.95;letter-spacing:-.065em;margin:14px 0 22px}.lead{font-size:clamp(23px,4vw,39px);font-weight:950;line-height:1.28;letter-spacing:-.04em;max-width:900px;margin:0 0 18px}.sub{max-width:820px;color:var(--muted);font-size:16px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:12px 17px;border-radius:12px;border:1px solid var(--line);background:#fff;font-weight:900;font-size:14px}.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}.btn.dark{background:var(--navy);border-color:var(--navy);color:#fff}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}.chip{font:850 10px ui-monospace,SFMono-Regular,Menlo,monospace;border:1px solid #cddfff;background:#fff;color:#24589f;border-radius:999px;padding:7px 10px}section{padding:72px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(30px,5vw,52px);line-height:1.05;letter-spacing:-.05em;margin:0 0 18px}.intro{max-width:820px;color:var(--muted)}.alert{margin-top:24px;background:var(--warn);border:1px solid var(--warnline);border-radius:var(--r);padding:28px;box-shadow:var(--shadow)}.alert strong{display:block;font-size:clamp(22px,4vw,34px);line-height:1.3;letter-spacing:-.03em;margin-bottom:12px}.alert p{margin:7px 0;color:#66523e}.cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}.card .code{font:900 10px ui-monospace,monospace;color:var(--blue);letter-spacing:.13em}.card h3{margin:9px 0 10px;font-size:21px;line-height:1.3}.card p{margin:0;color:var(--muted);font-size:13px}.card.highlight{background:var(--soft);border-color:#bfd5ff}.card.warn{background:#fffaf7}.comparewrap{margin-top:28px;overflow-x:auto;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:var(--shadow)}table{border-collapse:collapse;width:100%;min-width:980px}th,td{padding:15px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:12px;line-height:1.55}th{background:#f4f7fb;font-size:12px}th:first-child,td:first-child{font-weight:900;width:17%}th:last-child{background:#eaf2ff;color:#123e84}td:last-child{background:#f7fbff}tr:last-child td{border-bottom:none}.yes{color:var(--green);font-weight:950}.mid{color:var(--amber);font-weight:900}.no{color:var(--red);font-weight:900}.note{font-size:12px;color:var(--muted);margin-top:12px}.bridgevisual{margin-top:28px;background:linear-gradient(140deg,#07152f,#0c2d66);color:#fff;border-radius:var(--r);padding:30px;overflow:hidden}.bridgevisual .label{font-size:13px;font-weight:900;color:#8bb7ff;margin-bottom:18px}.rail{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:center}.node{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:20px;min-height:118px}.node b{display:block;margin-bottom:7px;font-size:18px}.node span{font-size:12px;color:#c7d7ef}.arrow{font-weight:950;color:#63a0ff;font-size:24px}.why{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}.whybox{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}.whybox h3{margin:0 0 12px;font-size:22px}.whybox p{color:var(--muted);margin:8px 0}.whybox strong{color:var(--ink)}.proof{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:24px}.proofcard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}.proofcard b{font-size:20px}.proofcard p{color:var(--muted);font-size:14px}.chain{margin-top:15px;font:800 12px/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;color:#174f9d;background:#f4f8ff;border:1px solid #d8e5fa;border-radius:14px;padding:16px}.sourcebox{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.sourcebox b{display:block;margin-bottom:8px}.sourcebox a{color:var(--blue);font-weight:850;font-size:13px}.offer{background:linear-gradient(140deg,#07152f,#0d2b5e);color:#fff;border-radius:var(--r);padding:34px}.offer h2{margin-bottom:12px}.offer p{color:#c8d6ea}.offer .btn{border-color:#29466e;background:#102b59;color:#fff}.offer .btn.primary{background:#fff;color:#0b2348;border-color:#fff}.fine{font-size:12px;color:#9fb1cb;margin-top:15px}.footer{padding:42px 0 80px;color:var(--muted);font-size:12px}.footer a{font-weight:800}
+@media(max-width:900px){.cards4{grid-template-columns:1fr 1fr}.rail{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}.why,.proof{grid-template-columns:1fr}section{padding:56px 0}.alert,.offer,.bridgevisual{padding:22px}.navin{min-height:58px}}
+@media(max-width:520px){.wrap{width:min(100% - 24px,var(--max))}.cards4{grid-template-columns:1fr}.actions{display:grid}.btn{width:100%}h1{font-size:48px}.navlinks a:first-child{display:none}.lead{font-size:27px}}
 </style>
 </head>
 <body>
@@ -23,83 +23,95 @@
 <header class="hero"><div class="wrap">
 <div class="eyebrow">WEB AI BRIDGE / PRODUCT</div>
 <h1>WebAI Bridge</h1>
-<p class="lead">GPTsが配れないなら、<br>AIをWebへ逃がせばいい。</p>
-<p class="sub">AIのInstructionsやKnowledgeを購入者へ丸ごと渡すのではなく、Web側に置いたまま使ってもらう。決済、利用権、BYOK、Hosted URLまでつないで、「AIを作る」から「商品として渡す」までを短くするための配布基盤です。</p>
-<div class="actions"><a class="btn primary" href="https://x.com/ultimate28" target="_blank" rel="noopener">導入・先行利用を相談する</a><a class="btn" href="https://github.com/nobutakayamauchi/WebAI-Bridge" target="_blank" rel="noopener">実装をGitHubで見る</a></div>
-<div class="chips"><span class="chip">HOSTED</span><span class="chip">STRIPE</span><span class="chip">BYOK</span><span class="chip">KNOWLEDGE</span><span class="chip">ENTITLEMENT</span><span class="chip">SMARTPHONE CREATOR</span></div>
+<p class="lead">AIを作った。<br>次に困るのは「どう売って、どう渡すか」です。</p>
+<p class="sub">GPTs、Skills、普通のWeb実装。どれも使えます。でも「AIを商品として売る」ところまで考えると、それぞれ別の弱点が残ります。WebAI Bridgeは、その残った面倒をまとめて持つための配布・販売基盤です。</p>
+<div class="actions"><a class="btn primary" href="#compare">4方式を比較する</a><a class="btn" href="https://github.com/nobutakayamauchi/WebAI-Bridge" target="_blank" rel="noopener">実装をGitHubで見る</a></div>
+<div class="chips"><span class="chip">GPTs</span><span class="chip">SKILLS</span><span class="chip">PLAIN WEB</span><span class="chip">WEB AI BRIDGE</span></div>
 </div></header>
 
 <main>
 <section><div class="wrap">
-<div class="eyebrow">WHAT CHANGED</div>
-<h2>GPTsを作って、<br>リンクを渡す。が難しくなった。</h2>
-<p class="intro">以前なら、用途別GPTを作ってリンクを配るだけで「誰でも使えるAIツール」を渡しやすい構造でした。でも現在、個人向けChatGPTの Free / Go / Plus / Pro では、新しいGPTの作成・公開が利用できません。既存GPTは残りますが、新しい商品をこの配布方法だけに依存するのは難しくなっています。</p>
-<div class="alert"><strong>問題は、AIが作れなくなったことじゃない。<br>「どう渡すか」が変わったことです。</strong><p>AIの中身は作れる。APIもある。Knowledgeもある。</p><p>でも購入者へどう渡すか、誰が使えるか、どう止めるか、推論代を誰が払うか。この部分を別に作る必要が出てきました。</p></div>
+<div class="eyebrow">FIRST / GPTs</div>
+<h2>まずGPTs。<br>便利。でも、Web商品そのものではありません。</h2>
+<p class="intro">GPTsは今も作成・共有できます。ただし、OpenAI自身が「GPTsはChatGPTの中で使うもの」で、外部サイトへ埋め込む用途ではないと案内しています。購入者はChatGPTへ入り、そこで使う形です。</p>
+<div class="alert"><strong>GPTsが悪いわけではありません。<br>「販売するWeb商品」にしたい時、境界がChatGPT側にある。</strong><p>リンク共有はできる。でも自分のサイトそのものとして届けるわけではない。</p><p>決済、利用権、失効、推論代の設計まで自分の商品側で握りたいなら、別の仕組みが必要になります。</p></div>
 </div></section>
 
 <section><div class="wrap">
-<div class="eyebrow">WHY NOT JUST SKILLS?</div>
-<h2>じゃあSkillsを配ればいい？<br>商品にすると、少し話が違います。</h2>
-<p class="intro">Skillsは強力です。指示、例、コードを含む再利用可能なワークフローとしてChatGPTに組み込めます。ただ、現在のPersonal Skillsは主にBusiness / Enterprise / Healthcare / Edu向けで、Web・デスクトップ・モバイル間でも別々に追加する必要があり、自動同期されません。</p>
-<div class="three">
-<div class="card bad"><div class="code">01 / BUYER ENVIRONMENT</div><h3>買う人の環境に左右される</h3><p>利用プラン、ワークスペース設定、インストール面など、販売者以外の条件が増えます。「URLを開けば使える」とは違います。</p></div>
-<div class="card bad"><div class="code">02 / PACKAGE DELIVERY</div><h3>中身を配る設計になりやすい</h3><p>SkillはInstructions、例、コードなどを含むパッケージです。販売商品として使うほど、ノウハウそのものを購入者側へ配る構造になりやすくなります。</p></div>
-<div class="card bad"><div class="code">03 / COMMERCE</div><h3>販売機構は別に要る</h3><p>「買った人だけ使える」「返金・失効したら止める」「推論代は誰が払う」をSkillそのものが販売基盤として解決してくれるわけではありません。</p></div>
+<div class="eyebrow">SECOND / SKILLS</div>
+<h2>じゃあSkillsを配る？<br>強い。でも「配る商品」としては癖があります。</h2>
+<p class="intro">Skillsは指示、例、コード、補助ファイルを含められる再利用ワークフローです。OpenAIのAgent Skills標準に沿って持ち運べるのは強みです。一方で、Personal Skillsは主にBusiness / Enterprise / Healthcare / Edu向けで、Web・デスクトップ・モバイル間も自動同期ではありません。</p>
+<div class="cards4">
+<div class="card warn"><div class="code">ENVIRONMENT</div><h3>購入者環境に依存</h3><p>プラン、ワークスペース設定、対応面、インストール可否などの条件が入ります。</p></div>
+<div class="card warn"><div class="code">INSTALL</div><h3>「URLだけ」ではない</h3><p>Skillを追加・インストールして使う前提。Webを開くだけ、とは違います。</p></div>
+<div class="card warn"><div class="code">PACKAGE</div><h3>中身を渡す方向</h3><p>Instructionsやコードを含むSkill自体を配るため、販売ノウハウをサーバ側だけに置く設計とは別物です。</p></div>
+<div class="card warn"><div class="code">COMMERCE</div><h3>販売機構は別</h3><p>決済、購入者限定、失効、推論代の回収は別途設計が必要です。</p></div>
 </div>
 </div></section>
 
 <section><div class="wrap">
-<div class="eyebrow">THE ESCAPE</div>
-<h2>だから、中身を配らない。<br>Webに置いて、入口を渡す。</h2>
-<p class="intro">WebAI Bridgeが選んだのは、AIの中身を購入者のChatGPTへ直接配る方法ではなく、販売者側のWeb環境へ置いたまま利用させる方法です。購入者が受け取るのは「使う場所」。InstructionsやKnowledge、利用権の判定はサーバ側に残します。</p>
-<div class="bridgevisual"><div class="label">配るのはAIの中身ではなく、「使える入口」</div><div class="rail"><div class="node"><b>あなたの商品</b><span>Instructions / Knowledge / Model policy</span></div><div class="arrow">→</div><div class="node"><b>WebAI Bridge</b><span>決済 / 利用権 / BYOK / Package / Hosted</span></div><div class="arrow">→</div><div class="node"><b>購入者</b><span>URLを開く → 自分のAPIキーで使う</span></div></div></div>
-<div class="why"><div class="whybox"><h3>販売者側</h3><p><strong>Knowledgeをサーバ側に残せる。</strong></p><p>価格変更、利用停止、商品差し替えを購入者へ再配布せず管理できます。</p></div><div class="whybox"><h3>購入者側</h3><p><strong>専用環境を覚えなくていい。</strong></p><p>基本はWebを開く。BYOKなら自分のAPIキーを一時接続して、その商品を使うだけです。</p></div></div>
+<div class="eyebrow">THIRD / PLAIN WEB</div>
+<h2>じゃあ全部Webへ逃がす。<br>自由。でも、今度はWebサービスを1個作ることになります。</h2>
+<p class="intro">ここまで来ると自由度は一気に上がります。購入者はURLを開けばいい。ChatGPTの特定プランにも依存しにくい。中身もサーバ側に置けます。ただし、その瞬間からAIではなく「商用Webサービス」の仕事が始まります。</p>
+<div class="cards4">
+<div class="card"><div class="code">AUTH</div><h3>認証</h3><p>誰が購入者なのか。別端末ではどうするか。セッションはどう守るか。</p></div>
+<div class="card"><div class="code">PAYMENT</div><h3>決済</h3><p>Stripe等の決済、Webhook、購入状態との紐付け。</p></div>
+<div class="card"><div class="code">ENTITLEMENT</div><h3>利用権</h3><p>買った人だけ開く。返金・失効したら止める。URLをコピーされても守る。</p></div>
+<div class="card"><div class="code">INFERENCE</div><h3>推論代</h3><p>販売者負担かBYOKか。APIキーをどう扱い、予算超過をどう止めるか。</p></div>
+</div>
+<div class="bridgevisual"><div class="label">PLAIN WEB ESCAPE</div><div class="rail"><div class="node"><b>AIの中身</b><span>Instructions / Knowledge / Model</span></div><div class="arrow">→</div><div class="node"><b>自作する巨大な部分</b><span>Auth / Payment / Entitlement / BYOK / Security / Revoke / Deploy</span></div><div class="arrow">→</div><div class="node"><b>購入者</b><span>URLで利用</span></div></div></div>
 </div></section>
 
-<section><div class="wrap">
+<section id="compare"><div class="wrap">
 <div class="eyebrow">COMPARE</div>
-<h2>「配る」だけなら似ている。<br>商品にすると差が出る。</h2>
+<h2>結局、何ができて、<br>何が残るのか。</h2>
+<p class="intro">「AIとして使えるか」ではなく、「商品として売って渡せるか」で比較します。</p>
 <div class="comparewrap"><table>
-<thead><tr><th>比較</th><th>GPTs</th><th>Skills</th><th>WebAI Bridge</th></tr></thead>
+<thead><tr><th>比較項目</th><th>GPTs</th><th>Skills</th><th>普通のWeb</th><th>WebAI Bridge</th></tr></thead>
 <tbody>
-<tr><td>個人開発者が今から新規作成</td><td><span class="no">難しい</span><br>個人向けFree / Go / Plus / Proでは新規作成・公開不可</td><td><span class="mid">条件あり</span><br>主にBusiness / Enterprise / Healthcare / Edu</td><td><span class="yes">可能</span><br>Web + APIとして自分で管理</td></tr>
-<tr><td>購入者への渡し方</td><td>ChatGPT内の共有・Store</td><td>Skillを環境へ追加</td><td><strong>URLを渡す</strong></td></tr>
-<tr><td>購入者のChatGPT環境依存</td><td><span class="mid">あり</span></td><td><span class="mid">大きめ</span></td><td><span class="yes">小さくできる</span></td></tr>
-<tr><td>Instructions / Knowledgeを販売者側に保持</td><td><span class="mid">OpenAI側で管理</span></td><td><span class="mid">購入者側へ配る構成になりやすい</span></td><td><span class="yes">サーバ側に保持</span></td></tr>
-<tr><td>決済</td><td>別途設計が必要</td><td>別途設計が必要</td><td><span class="yes">Stripe連携</span></td></tr>
-<tr><td>買った人だけ利用</td><td>共有条件に依存</td><td>別途設計</td><td><span class="yes">Entitlementで制御</span></td></tr>
-<tr><td>失効・停止</td><td>共有設定側</td><td>配布後の制御が重い</td><td><span class="yes">サーバ側で即時拒否</span></td></tr>
-<tr><td>推論代</td><td>ChatGPT契約側</td><td>利用環境側</td><td><span class="yes">BYOK等を分離して設計</span></td></tr>
-<tr><td>販売者が商品仕様を更新</td><td>GPTを更新</td><td>再配布・再同期が発生しやすい</td><td><span class="yes">サーバ側更新で反映</span></td></tr>
+<tr><td>購入者の入口</td><td><span class="mid">ChatGPT内</span><br>サインインして利用</td><td><span class="mid">対応環境へ追加</span><br>Skillをインストール</td><td><span class="yes">URL</span><br>自由に設計</td><td><span class="yes">URL</span><br>Hosted buyer surface</td></tr>
+<tr><td>外部サイトの商品化</td><td><span class="no">その用途ではない</span><br>GPTはChatGPT内で利用</td><td><span class="mid">別途必要</span><br>Skill自体はWeb商品ではない</td><td><span class="yes">可能</span></td><td><span class="yes">前提</span></td></tr>
+<tr><td>購入者側の導入</td><td><span class="mid">ChatGPTアカウント</span></td><td><span class="mid">プラン・設定・インストール</span></td><td><span class="yes">基本はブラウザだけ</span></td><td><span class="yes">基本はブラウザだけ</span></td></tr>
+<tr><td>AIの中身をサーバ側に保持</td><td><span class="mid">OpenAI側管理</span></td><td><span class="no">Skillを配る構成</span></td><td><span class="yes">自分で可能</span></td><td><span class="yes">Package / Knowledgeをサーバ側で保持</span></td></tr>
+<tr><td>決済</td><td><span class="no">商品決済は別</span></td><td><span class="no">別</span></td><td><span class="mid">自作</span></td><td><span class="yes">Stripe連携を内包</span></td></tr>
+<tr><td>買った人だけ使わせる</td><td><span class="mid">共有設定依存</span></td><td><span class="mid">共有・Workspace依存</span></td><td><span class="mid">認証＋利用権を自作</span></td><td><span class="yes">Entitlementを内包</span></td></tr>
+<tr><td>返金・失効後に止める</td><td><span class="mid">共有管理側</span></td><td><span class="mid">共有管理側</span></td><td><span class="mid">自作</span></td><td><span class="yes">Revoke → 即時拒否を設計</span></td></tr>
+<tr><td>推論代を誰が払うか</td><td><span class="mid">ChatGPT利用条件側</span></td><td><span class="mid">利用環境側</span></td><td><span class="mid">自作</span></td><td><span class="yes">BYOK等を独立レイヤー化</span></td></tr>
+<tr><td>販売者の実装量</td><td><span class="yes">小さい</span><br>ただし商品境界はChatGPT側</td><td><span class="yes">小〜中</span><br>ただし購入者環境に依存</td><td><span class="no">大きい</span><br>商用Web基盤を全部作る</td><td><span class="yes">小さくするのが目的</span></td></tr>
+<tr><td>向いている用途</td><td>ChatGPT内で配るAI</td><td>組織・利用者へ渡す再利用ワークフロー</td><td>完全自由な独自サービス</td><td><strong>AIをWeb商品として早く売りたい時</strong></td></tr>
 </tbody></table></div>
-<p class="note">※ GPTs / Skillsの利用可否や共有条件はOpenAI側の仕様変更の影響を受けます。WebAI Bridgeはその依存をゼロにするものではなく、商品配布の中心を自分のWeb側へ移すための設計です。</p>
+<p class="note">※ 2026-08-20時点のOpenAI公式仕様と、WebAI Bridge現行実装をもとに整理。プランや公開条件は変更される可能性があります。</p>
 </div></section>
 
 <section><div class="wrap">
-<div class="eyebrow">HOW IT WORKS</div>
-<h2>作る。売る。渡す。<br>あとはWebで使ってもらう。</h2>
-<div class="flow">
-<div class="step"><small>01 / CREATE</small><b>AIをまとめる</b><p>Instructions、Knowledge、モデル方針をAI Packageとしてまとめます。</p></div>
-<div class="step"><small>02 / PUBLISH</small><b>公開する</b><p>Creator StudioからHosted商品として配置し、購入者用URLを作ります。</p></div>
-<div class="step"><small>03 / SELL</small><b>売る</b><p>Stripe決済を利用権へつなぎ、買った人だけにアクセスを開きます。</p></div>
-<div class="step"><small>04 / USE</small><b>使ってもらう</b><p>購入者はWebから利用。BYOKなら自分のAPIキーで推論代を負担できます。</p></div>
+<div class="eyebrow">WHY BRIDGE</div>
+<h2>Bridgeの違いは、<br>「Webに逃がす」だけじゃない。</h2>
+<div class="why">
+<div class="whybox"><h3>普通のWeb</h3><p><strong>自由になる代わりに、全部自分で作る。</strong></p><p>AI画面を作っただけでは商品になりません。決済、購入者判定、利用権、失効、BYOK、Knowledge、Webhook、秘密情報、デプロイまで残ります。</p></div>
+<div class="whybox"><h3>WebAI Bridge</h3><p><strong>その「残り」を最初から共通基盤にする。</strong></p><p>AI Package、Access、Inference Payer、Deliveryを分離し、商品ごとに毎回同じ商用基盤を作り直さないためのBridgeです。</p></div>
 </div>
+<div class="bridgevisual"><div class="label">WEB AI BRIDGE</div><div class="rail"><div class="node"><b>あなたのAI</b><span>Instructions / Knowledge / Package</span></div><div class="arrow">→</div><div class="node"><b>WebAI Bridge</b><span>Publish / Stripe / Entitlement / BYOK / Hosted / Revoke</span></div><div class="arrow">→</div><div class="node"><b>購入者</b><span>買う → 開く → 使う</span></div></div></div>
 </div></section>
 
 <section><div class="wrap">
 <div class="eyebrow">PROOF</div>
-<h2>机上の販売フローではなく、<br>実際に一度通しています。</h2>
-<div class="proof"><div class="proofcard"><span class="status"><span class="dot"></span>REAL COMMERCIAL CHAIN PROVEN</span><div class="chain">固定ドメイン HTTPS<br>→ スマホ Creator Studio<br>→ 有料商品を公開<br>→ Stripe実決済<br>→ webhookで利用権発行<br>→ iPhone購入者へhandoff<br>→ BYOK接続<br>→ サーバ側Knowledge<br>→ AI応答<br>→ 利用権を失効<br>→ 同じ購入者を即時拒否</div></div><div class="proofcard"><b>最新版は再検証中です。</b><p>実商用チェーンは旧revisionで成立済みです。その後に本番で見つかった問題を修正しているため、現在の最新headについては同じ固定ドメイン条件で再検証する境界を残しています。</p><a class="btn" href="https://github.com/nobutakayamauchi/WebAI-Bridge" target="_blank" rel="noopener">現在の実装を見る</a></div></div>
+<h2>「できるはず」ではなく、<br>商用チェーンを実機で殴っています。</h2>
+<div class="proof">
+<div class="proofcard"><b>固定ドメイン + iPhone + Stripeで実証</b><p>Creator Studioから商品を公開し、実決済、購入者への利用権付与、BYOK、サーバ側Knowledge、モデル応答、失効後の即時拒否まで、一連のチェーンを実機で通しています。</p><div class="chain">Creator Studio → Publish → Stripe Payment → Entitlement → iPhone Buyer → BYOK → Knowledge → Model → Revoke → Denied</div></div>
+<div class="proofcard"><b>まだ「万能完成品」とは言いません。</b><p>現行リポジトリはHosted v1候補です。最新版headの固定ドメイン再検証など、リリース前の確認項目も明示しています。</p><a class="btn" href="https://github.com/nobutakayamauchi/WebAI-Bridge" target="_blank" rel="noopener">GitHubで現在地を見る</a></div>
+</div>
+<div class="sourcebox"><b>OpenAI公式仕様の確認先</b><a href="https://help.openai.com/en/articles/8554407" target="_blank" rel="noopener">GPTs in ChatGPT →</a><br><a href="https://help.openai.com/en/articles/8798878" target="_blank" rel="noopener">Sharing and publishing GPTs →</a><br><a href="https://help.openai.com/en/articles/20001066" target="_blank" rel="noopener">Skills in ChatGPT →</a></div>
 </div></section>
 
 <section><div class="wrap"><div class="offer">
-<div class="eyebrow" style="color:#83b3ff">WEB AI BRIDGE</div>
-<h2>AIを売るために、<br>毎回販売システムまで作りますか？</h2>
-<p>GPTsの代替を一個作るのが目的ではありません。AIの配布先が変わっても、「商品として渡す部分」を毎回作り直さないための橋を作っています。</p>
+<div class="eyebrow" style="color:#83b3ff">THE SHORT VERSION</div>
+<h2>GPTsで足りるなら、GPTsでいい。<br>Skillsで足りるなら、Skillsでいい。</h2>
+<p>でも「購入者はURLを開くだけ」「AIの中身は手元に残す」「決済と利用権をつなぐ」「推論代の支払者も分ける」「止めたい時は止める」まで欲しくなったら、普通のWeb開発が一気に重くなります。</p>
+<p><strong>その重いところを、毎回作らなくていいようにするのが WebAI Bridge です。</strong></p>
 <div class="actions"><a class="btn primary" href="https://x.com/ultimate28" target="_blank" rel="noopener">導入・先行利用を相談する</a><a class="btn" href="https://github.com/nobutakayamauchi/WebAI-Bridge" target="_blank" rel="noopener">GitHubを見る</a></div>
-<p class="fine">現在はHosted / BUY_ONCE / BYOK / PACKAGE_TEXT Knowledgeを中心に検証中です。Portable、共有推論費、サブスク完全自動化などは別スコープです。</p>
+<p class="fine">ONE PHONE FOUNDRY / LIMIT OVER DEVELOPMENT</p>
 </div></div></section>
 </main>
-<footer class="footer"><div class="wrap">© 2026 ONE PHONE FOUNDRY / LIMIT OVER DEVELOPMENT · <a href="../index.html">トップへ戻る</a></div></footer>
+<footer class="footer"><div class="wrap"><a href="../index.html">← ONE PHONE FOUNDRYへ戻る</a><br>WebAI Bridge / LIMIT OVER DEVELOPMENT</div></footer>
 </body>
 </html>
