@@ -23,7 +23,8 @@ def load_daily_intents(path: str | Path):
     """Load only explicitly approved, public-safe daily intent observations.
 
     Raw chat is intentionally not accepted here. A record must already be a
-    distilled observation approved for public JOURNAL use.
+    distilled observation approved for public JOURNAL use and retain a source
+    reference so the published intent can be traced back to its approval gate.
     """
     p = Path(path)
     if not p.exists():
@@ -41,7 +42,7 @@ def load_daily_intents(path: str | Path):
             unknown = set(item) - ALLOWED_KEYS
             if unknown:
                 raise ValueError(f"daily intent at line {lineno} has unsupported fields: {sorted(unknown)}")
-            required = ("observation_id", "date", "project", "intent", "source_type")
+            required = ("observation_id", "date", "project", "intent", "source_type", "source_ref")
             if any(not _clean(item.get(k)) for k in required):
                 raise ValueError(f"daily intent at line {lineno} is missing required fields")
             if item["source_type"] not in ALLOWED_SOURCE_TYPES:
@@ -59,6 +60,7 @@ def load_daily_intents(path: str | Path):
             normalized["date"] = _clean(item["date"])
             normalized["project"] = _clean(item["project"])
             normalized["intent"] = _clean(item["intent"])
+            normalized["source_ref"] = _clean(item["source_ref"])
             out.append(normalized)
     return out
 
