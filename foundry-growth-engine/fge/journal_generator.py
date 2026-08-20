@@ -131,9 +131,11 @@ def generate_journal_body(journal, updates, knowledge=None, daily_intents=None) 
         goal = _project_goal(knowledge, project)
         if description and not (project == lead_project and len(items) > 1):
             lines.append(_sentence(description))
-        if project_intent:
+        # Lead intent/purpose are already explained in dedicated sections above.
+        # Only secondary projects repeat their own approved intent/purpose here.
+        if project != lead_project and project_intent:
             lines.append(_sentence("今日の狙い: " + project_intent["intent"]))
-        if goal:
+        if project != lead_project and goal:
             lines.append(_sentence("継続的な目的: " + goal))
         project_types = Counter(u.type for u in project_items)
         if len(project_types) > 1:
