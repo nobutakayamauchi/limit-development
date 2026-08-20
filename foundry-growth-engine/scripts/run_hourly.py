@@ -13,6 +13,8 @@ from fge.adapters.work_record_input import WorkRecordFileAdapter
 from fge.adapters.pages_output import render_site
 from fge.compact import compact_hourly
 from fge.human_editor import humanize_updates, humanize_journals
+from fge.journal_generator import expand_rendered_journals
+from fge.daily_intent import load_daily_intents
 from fge.core import (
     INTENT_RECORD_ONLY,
     build_update,
@@ -30,12 +32,17 @@ def main():
     ap.add_argument('--output', default=str(PACKAGE_ROOT/'site'))
     ap.add_argument('--lookback-days', type=int, default=30)
     ap.add_argument('--work-record-dir', default='.fge/records')
+    ap.add_argument('--daily-intents', default=str(PACKAGE_ROOT/'config/daily-intents.limit-development.jsonl'), help='Approved public /goal or Chat Observation records for JOURNAL daily intent.')
     ap.add_argument('--git-only', action='store_true', help='Use only Git evidence and suppress ARTICLE generation. Intended for safe automatic publication from already-public repositories.')
     args = ap.parse_args()
 
     repos = args.repos or ['.']
     knowledge_path = PACKAGE_ROOT/'config/knowledge.plain.json' if args.plain else Path(args.knowledge) if args.knowledge else None
     knowledge = load_knowledge(str(knowledge_path)) if knowledge_path else {}
+    # PLAIN is a regression baseline for the neutral Core. Operator-specific
+    # daily intent is external personalization just like Knowledge, so it must
+    # stay out of PLAIN even when a default intent file exists on disk.
+    daily_intents = [] if args.plain else (load_daily_intents(args.daily_intents) if args.daily_intents else [])
     base_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
     generation_mode = f'{base_mode}+HUMAN' if args.human else base_mode
 
@@ -43,10 +50,6 @@ def main():
     for repo in repos:
         git_evidence.extend(GitHubGitAdapter(repo, args.lookback_days).collect())
 
-    # In git-only mode the inputs are already-public repository facts. Work
-    # Records remain excluded. /human may edit this public-safe text, but it
-    # still cannot create ARTICLE output or bypass the existing publication
-    # boundaries for private/session material.
     work_record_evidence = [] if args.git_only else WorkRecordFileAdapter(repos[0], args.work_record_dir).collect()
     evidence = git_evidence + work_record_evidence
 
@@ -71,12 +74,17 @@ def main():
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
     checked = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec='minutes')
     render_site(args.output, updates, articles, journals, checked)
+    expanded_journals = expand_rendered_journals(args.output, journals, updates, knowledge=knowledge, daily_intents=daily_intents)
 
     metadata = {
         'mode': generation_mode,
         'knowledge_pack': Path(knowledge_path).name if knowledge_path else 'NONE',
         'knowledge_schema': knowledge.get('schema_version', 'plain-v0'),
         'human_editor': 'human-editor-v0' if args.human else 'OFF',
+        'journal_generator': 'journal-generator-v0.3',
+        'daily_intent_input': 'OFF (PLAIN)' if args.plain else (Path(args.daily_intents).name if args.daily_intents else 'OFF'),
+        'approved_daily_intents': len(daily_intents),
+        'expanded_journal_pages': expanded_journals,
         'checked_at': checked,
         'repositories': [str(Path(r)) for r in repos],
         'git_only': args.git_only,
@@ -99,8 +107,11 @@ def main():
         'public_update_count': len(updates),
         'article_candidates': len(articles),
         'journal_days': len(journals),
+        'approved_daily_intents': len(daily_intents),
+        'expanded_journal_pages': expanded_journals,
         'generation_mode': generation_mode,
         'human_editor': metadata['human_editor'],
+        'journal_generator': metadata['journal_generator'],
         'knowledge_pack': metadata['knowledge_pack']
     }, ensure_ascii=False, indent=2))
     return 0
