@@ -61,7 +61,7 @@ def _representatives(items, limit=3):
 
 
 def generate_journal_body(journal, updates, knowledge=None) -> str:
-    """Build a readable daily journal from public Update facts + public Knowledge.
+    """Journal Generator v0.2: explain the public goal and the work done today.
 
     Stable project aims may come only from `project_profiles.*.why_it_matters`.
     Today's work and progress may come only from already-public Update records.
