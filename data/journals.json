@@ -1,9 +1,10 @@
 [
   {
     "date": "2026-08-20",
-    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか12件",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『limit-developmentを改善』、『limit-developmentを公開』、『RTS-Skills-の方針を更新』もまとめています。",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか13件",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEに機能を追加』、『limit-developmentを改善』、『limit-developmentを公開』もまとめています。",
     "update_ids": [
+      "upd-ac7c71d73149",
       "upd-2eab97b465a8",
       "upd-4432f0ed851d",
       "upd-d15161f46e5c",
