@@ -47,7 +47,6 @@ class HumanEditorV0:
         purpose = self._clean(profile.get("public_description"))
         why = self._clean(profile.get("why_it_matters"))
 
-        # Keep explicit event wording first. The stable project context comes second.
         fact = sentences[0] if sentences else f"{update.title}。"
         if not fact.endswith("。"):
             fact += "。"
@@ -61,13 +60,6 @@ class HumanEditorV0:
                 continue
             context = candidate
             break
-
-        # A human editor should not repeat the title as a robotic sentence if the
-        # existing summary already explains the same change more naturally.
-        title_key = re.sub(r"[\s。、]", "", update.title)
-        fact_key = re.sub(r"[\s。、]", "", fact)
-        if title_key and fact_key.startswith(title_key) and len(sentences) > 1:
-            fact = sentences[0]
 
         if context:
             if not context.endswith("。"):
@@ -88,6 +80,36 @@ class HumanEditorV0:
             out.append(self.edit_update(update, getattr(ev, "text", "")))
         return out
 
+    def edit_journals(self, journals, updates):
+        """Turn the mechanical daily list into a readable daily lead.
+
+        It only uses already-edited Update title/summary text. No new event fact
+        is introduced here.
+        """
+        by_id = {u.id: u for u in updates}
+        out = []
+        for journal in journals:
+            items = [by_id[i] for i in journal.update_ids if i in by_id]
+            if not items:
+                out.append(journal)
+                continue
+            lead = items[0]
+            if len(items) == 1:
+                title = lead.title
+                summary = lead.summary
+            else:
+                title = f"{lead.title}、ほか{len(items)-1}件"
+                others = " / ".join(u.title for u in items[1:4])
+                summary = lead.summary
+                if others:
+                    summary = self._clean(f"{summary} 同じ日の開発記録として、{others}もまとめています。")
+            out.append(replace(journal, title=title, summary=summary))
+        return out
+
 
 def humanize_updates(updates, evidence_by_source=None, knowledge=None):
     return HumanEditorV0(knowledge).edit_updates(updates, evidence_by_source)
+
+
+def humanize_journals(journals, updates, knowledge=None):
+    return HumanEditorV0(knowledge).edit_journals(journals, updates)
