@@ -59,7 +59,7 @@ class JournalGeneratorTest(unittest.TestCase):
         self.assertIn('## この開発の目的', body)
         self.assertIn('投稿作業を減らすためです。', body)
 
-    def test_repo_shaped_project_name_resolves_goal_and_daily_intent_alias(self):
+    def test_repo_shaped_project_name_resolves_identity_safe_goal_and_daily_intent_alias(self):
         item = update(1, '09', 'Bridge接続を修正', '接続まわりを修正しました。', project='WebAI-Bridge')
         j = Journal('2026-08-20', '1件', 'lead', [item.id], [item.project], [item.type], [])
         knowledge = {
@@ -72,6 +72,19 @@ class JournalGeneratorTest(unittest.TestCase):
         self.assertIn('接続を安定させる。', body)
         self.assertIn('承認済みChat Observation', body)
         self.assertIn('利用場所まで捨てないためです。', body)
+
+    def test_broad_semantic_alias_does_not_attach_wrong_product_purpose(self):
+        item = update(1, '09', 'サイトを更新', '公開ページを更新しました。', project='limit-development')
+        j = Journal('2026-08-20', '1件', 'lead', [item.id], [item.project], [item.type], [])
+        knowledge = {
+            'project_aliases': [{'pattern': 'one phone foundry|homepage|mobile layout|limit-development', 'project': 'ONE PHONE FOUNDRY'}],
+            'project_profiles': {'ONE PHONE FOUNDRY': {'public_description':'スマホを司令塔にする環境です。','why_it_matters':'スマホから指示を飛ばすためです。'}},
+        }
+        intents = [{'observation_id':'x','date':'2026-08-20','project':'ONE PHONE FOUNDRY','intent':'スマホ画面を磨く。','source_type':'goal'}]
+        body = generate_journal_body(j, [item], knowledge=knowledge, daily_intents=intents)
+        self.assertNotIn('スマホを司令塔にする環境です。', body)
+        self.assertNotIn('スマホから指示を飛ばすためです。', body)
+        self.assertNotIn('スマホ画面を磨く。', body)
 
     def test_large_single_project_uses_checkpoints_not_full_log(self):
         items = [update(i, f'{8+i:02d}', f'変更{i}', f'変更{i}を反映しました。') for i in range(1, 8)]
