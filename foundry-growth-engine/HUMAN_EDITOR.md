@@ -1,64 +1,77 @@
 # /human editor v0
 
-`/human` is the final **editing** pass between structured FGE updates and downstream public drafts.
+`/human` is the final **editing** pass between structured FGE updates and downstream public forms.
 
 ```text
-Git / Work Record Evidence
-        ↓
+Evidence
+  ↓
 FGE Core
-        ↓
-Knowledge / Chat-learned Knowledge
-        ↓
+  ↓
+Knowledge
+  ↓
 compact hourly public units
-        ↓
+  ↓
 [/human editor v0]
-        ↓
+  ↓
 UPDATE
- ├─ ARTICLE
- ├─ JOURNAL
- └─ SNS draft
-        ↓
-Human Review Gate
+  ├─ JOURNAL
+  ├─ ARTICLE
+  └─ SNS draft
 ```
 
 ## Goal
 
 Make mechanically correct FGE copy easier to read without turning the editor into another source of truth.
 
-The editor may:
-
-- remove duplicated sentences;
-- repair awkward sentence joins;
-- shorten or reorder already-known public context;
-- keep the event statement before stable project context;
-- feed the same edited UPDATE into ARTICLE / JOURNAL / SNS so public forms do not drift apart.
-
-The editor may **not**:
-
-- invent a motive, implementation detail, result, number or actor;
-- change project/type/source identity;
-- remove the raw evidence reference;
-- convert private chat into public facts;
-- bypass the existing `投稿 / 修正 / 記録だけ` Review Gate.
+The editor may remove duplication, repair awkward sentence joins, reorder already-known public context, and turn a mechanical daily list into a readable JOURNAL lead. It may not invent a motive, implementation detail, result, number, actor, or private fact.
 
 ## Invariants
 
 ```text
 /HUMAN != FACT GENERATOR
 /HUMAN != KNOWLEDGE STORE
-/HUMAN != PUBLISHER
+/HUMAN != AUTHORITY TO DISCLOSE PRIVATE DATA
 
 FACTS = Evidence
 MEANING = Knowledge
 EDITING = /human
-PUBLICATION = Human Review Gate
 ```
 
 `Update.id`, `source_id`, `raw_evidence_ref`, `project`, and `type` remain unchanged by the pass.
 
-## Modes kept for regression
+## Publication boundary
 
-The hourly review artifact compares the same Git evidence in five surfaces:
+There are two different publication paths and they intentionally remain different.
+
+### Hourly public UPDATE / JOURNAL
+
+```text
+already-public Git evidence only
+  ↓
+CURRENT KNOWLEDGE
+  ↓
+/human
+  ↓
+UPDATE / JOURNAL
+  ↓
+automatic hourly public board
+```
+
+This path may use `/human` automatically because `--git-only` excludes Work Records and ARTICLE generation. The source facts are already public repository activity; `/human` only edits that public-safe text.
+
+### ARTICLE / SNS / Work Record
+
+These still end at the existing Human Review Gate:
+
+```text
+[ 投稿 ] [ 修正 ] [ 記録だけ ]
+```
+
+Private/session material does not become automatically public merely because `/human` exists.
+
+## Chat-learned boundary
+
+The review artifact compares five surfaces from the same Git evidence:
 
 1. PLAIN
 2. CURRENT KNOWLEDGE
@@ -66,8 +79,10 @@ The hourly review artifact compares the same Git evidence in five surfaces:
 4. CURRENT KNOWLEDGE + `/human`
 5. CHAT-LEARNED + `/human`
 
-The two `/human` surfaces are experimental review candidates in v0. They are not silently promoted to the production publish path.
+`CURRENT KNOWLEDGE + /human` is the intended hourly UPDATE/JOURNAL presentation path.
+
+`CHAT-LEARNED + /human` remains experimental until its distilled context is reviewed and promoted into the normal Knowledge pack. Raw chat is not copied into public Knowledge by `/human`.
 
 ## Why the pass occurs before JOURNAL
 
-A previous FGE shape could improve an UPDATE while JOURNAL/SNS continued to use different wording. v0 deliberately edits the UPDATE first, then derives ARTICLE/JOURNAL/SNS from that same edited unit. This keeps one public wording lineage while preserving the original Evidence separately.
+The edited UPDATE is the common public wording lineage. JOURNAL, ARTICLE and SNS drafts are then derived from that same edited unit instead of each inventing their own explanation. Raw Evidence remains separate and traceable.
