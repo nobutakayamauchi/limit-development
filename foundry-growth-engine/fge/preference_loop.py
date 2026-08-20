@@ -11,6 +11,10 @@ AXIS_WEIGHTS = {
     "factual_fidelity": 1.5,
     "task_fit": 1.5,
 }
+ALLOWED_FEEDBACK_KEYS = {
+    "feedback_id", "rule_id", "surface", "output_id", "ratings", "verdict", "allow_preference_learning"
+}
+ALLOWED_VERDICTS = {"accept", "revise", "reject"}
 STAGE_SHADOW = "SHADOW"
 STAGE_ACTIVE = "ACTIVE"
 STAGE_DORMANT = "DORMANT"
@@ -26,18 +30,22 @@ def load_feedback(path: str | Path):
             item = json.loads(line)
             if not isinstance(item, dict):
                 raise ValueError(f"feedback at line {lineno} must be an object")
-            forbidden = {"text", "comment", "correction", "raw_chat"} & set(item)
-            if forbidden:
-                raise ValueError(f"feedback at line {lineno} contains free-text fields not allowed in v0: {sorted(forbidden)}")
-            if not item.get("feedback_id") or not item.get("rule_id"):
-                raise ValueError(f"feedback at line {lineno} needs feedback_id and rule_id")
+            unknown = set(item) - ALLOWED_FEEDBACK_KEYS
+            if unknown:
+                raise ValueError(f"feedback at line {lineno} has unsupported fields: {sorted(unknown)}")
+            required = ("feedback_id", "rule_id", "surface", "output_id")
+            if any(not str(item.get(k, "")).strip() for k in required):
+                raise ValueError(f"feedback at line {lineno} needs feedback_id, rule_id, surface and output_id")
+            verdict = item.get("verdict")
+            if verdict is not None and verdict not in ALLOWED_VERDICTS:
+                raise ValueError(f"feedback at line {lineno} verdict must be accept, revise or reject")
             ratings = item.get("ratings")
-            if not isinstance(ratings, dict) or any(axis not in ratings for axis in AXES):
-                raise ValueError(f"feedback at line {lineno} needs ratings for all axes")
+            if not isinstance(ratings, dict) or set(ratings) != set(AXES):
+                raise ValueError(f"feedback at line {lineno} needs exactly the four rating axes")
             for axis in AXES:
                 value = ratings[axis]
-                if not isinstance(value, (int, float)) or value < -2 or value > 2:
-                    raise ValueError(f"feedback at line {lineno} rating {axis} must be between -2 and 2")
+                if not isinstance(value, (int, float)) or isinstance(value, bool) or value < -2 or value > 2:
+                    raise ValueError(f"feedback at line {lineno} rating {axis} must be a number between -2 and 2")
             items.append(item)
     return items
 
@@ -79,6 +87,7 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
     config = config or {}
     rules = {str(x.get("id")): x for x in learned_knowledge.get("learned_context_rules", []) if x.get("id")}
     unique = {}
+    seen_outputs = set()
     ignored = []
     for item in feedback_items:
         fid = str(item.get("feedback_id", "")).strip()
@@ -91,6 +100,11 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
         if rid not in rules:
             ignored.append({"feedback_id": fid, "reason": "unknown_rule", "rule_id": rid})
             continue
+        output_key = (rid, str(item.get("surface", "")).strip(), str(item.get("output_id", "")).strip())
+        if output_key in seen_outputs:
+            ignored.append({"feedback_id": fid, "reason": "duplicate_output", "rule_id": rid})
+            continue
+        seen_outputs.add(output_key)
         unique[fid] = item
 
     by_rule = {rid: [] for rid in rules}
@@ -151,13 +165,14 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
     derived["preference_rule_catalog"] = catalog
     derived["preference_loop"] = {
         "engine": "preference-loop-v0",
-        "feedback_policy": "structured allow_preference_learning=true only",
+        "feedback_policy": "strict structured schema; allow_preference_learning=true only",
         "free_text_persisted": False,
         "feedback_count": len(unique),
         "stage_counts": stage_counts,
         "active_is_auto_published": False,
         "shadow_is_experimental": True,
         "dormant_is_suppressed": True,
+        "duplicate_output_counts": False,
     }
     report = {
         "engine": "preference-loop-v0",
