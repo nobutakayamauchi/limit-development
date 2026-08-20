@@ -13,6 +13,7 @@ from fge.adapters.work_record_input import WorkRecordFileAdapter
 from fge.adapters.pages_output import render_site
 from fge.compact import compact_hourly
 from fge.human_editor import humanize_updates, humanize_journals
+from fge.journal_generator import expand_rendered_journals
 from fge.core import (
     INTENT_RECORD_ONLY,
     build_update,
@@ -43,10 +44,6 @@ def main():
     for repo in repos:
         git_evidence.extend(GitHubGitAdapter(repo, args.lookback_days).collect())
 
-    # In git-only mode the inputs are already-public repository facts. Work
-    # Records remain excluded. /human may edit this public-safe text, but it
-    # still cannot create ARTICLE output or bypass the existing publication
-    # boundaries for private/session material.
     work_record_evidence = [] if args.git_only else WorkRecordFileAdapter(repos[0], args.work_record_dir).collect()
     evidence = git_evidence + work_record_evidence
 
@@ -71,12 +68,15 @@ def main():
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
     checked = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec='minutes')
     render_site(args.output, updates, articles, journals, checked)
+    expanded_journals = expand_rendered_journals(args.output, journals, updates)
 
     metadata = {
         'mode': generation_mode,
         'knowledge_pack': Path(knowledge_path).name if knowledge_path else 'NONE',
         'knowledge_schema': knowledge.get('schema_version', 'plain-v0'),
         'human_editor': 'human-editor-v0' if args.human else 'OFF',
+        'journal_generator': 'journal-generator-v0',
+        'expanded_journal_pages': expanded_journals,
         'checked_at': checked,
         'repositories': [str(Path(r)) for r in repos],
         'git_only': args.git_only,
@@ -99,8 +99,10 @@ def main():
         'public_update_count': len(updates),
         'article_candidates': len(articles),
         'journal_days': len(journals),
+        'expanded_journal_pages': expanded_journals,
         'generation_mode': generation_mode,
         'human_editor': metadata['human_editor'],
+        'journal_generator': metadata['journal_generator'],
         'knowledge_pack': metadata['knowledge_pack']
     }, ensure_ascii=False, indent=2))
     return 0
