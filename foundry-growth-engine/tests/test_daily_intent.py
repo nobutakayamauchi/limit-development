@@ -47,6 +47,16 @@ class DailyIntentTest(unittest.TestCase):
         finally:
             td.cleanup()
 
+    def test_source_ref_is_required_for_provenance(self):
+        row = self.base()
+        row.pop('source_ref')
+        td, p = self.write([row])
+        try:
+            with self.assertRaises(ValueError):
+                load_daily_intents(p)
+        finally:
+            td.cleanup()
+
     def test_old_intent_never_leaks_into_new_day(self):
         intents = [self.base()]
         self.assertIsNone(resolve_daily_intent(intents, '2026-08-21', 'FOUNDRY GROWTH ENGINE'))
