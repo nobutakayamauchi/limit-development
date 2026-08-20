@@ -28,7 +28,7 @@ def main():
     ap.add_argument('--output', default=str(PACKAGE_ROOT/'site'))
     ap.add_argument('--lookback-days', type=int, default=30)
     ap.add_argument('--work-record-dir', default='.fge/records')
-    ap.add_argument('--git-only', action='store_true', help='Use only Git evidence. Intended for safe automatic publication from already-public repositories.')
+    ap.add_argument('--git-only', action='store_true', help='Use only Git evidence and suppress ARTICLE generation. Intended for safe automatic publication from already-public repositories.')
     args = ap.parse_args()
 
     repos = args.repos or ['.']
@@ -56,7 +56,7 @@ def main():
         raw_updates.append(build_update(ev, knowledge))
 
     updates = compact_hourly(raw_updates, contextual=(generation_mode == 'KNOWLEDGE'))
-    articles = [build_article(u, by_source[u.source_id], knowledge) for u in updates if u.article_candidate]
+    articles = [] if args.git_only else [build_article(u, by_source[u.source_id], knowledge) for u in updates if u.article_candidate]
     journals = build_journals(updates)
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
     checked = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec='minutes')
