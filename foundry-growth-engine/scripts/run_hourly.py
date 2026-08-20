@@ -12,7 +12,7 @@ from fge.adapters.github_input import GitHubGitAdapter
 from fge.adapters.work_record_input import WorkRecordFileAdapter
 from fge.adapters.pages_output import render_site
 from fge.compact import compact_hourly
-from fge.human_editor import humanize_updates
+from fge.human_editor import humanize_updates, humanize_journals
 from fge.core import (
     INTENT_RECORD_ONLY,
     build_update,
@@ -53,10 +53,11 @@ def main():
     if args.human:
         updates = humanize_updates(updates, by_source, knowledge)
 
-    # /human runs before all downstream public forms. This means ARTICLE,
-    # JOURNAL and SNS drafts see the same edited UPDATE instead of diverging.
     articles = [build_article(u, by_source[u.source_id], knowledge) for u in updates if u.article_candidate]
     journals = build_journals(updates)
+    if args.human:
+        journals = humanize_journals(journals, updates, knowledge)
+
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
     checked = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec='minutes')
     render_site(args.output, updates, articles, journals, checked)
