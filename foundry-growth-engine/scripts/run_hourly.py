@@ -12,6 +12,7 @@ from fge.adapters.github_input import GitHubGitAdapter
 from fge.adapters.work_record_input import WorkRecordFileAdapter
 from fge.adapters.pages_output import render_site
 from fge.compact import compact_hourly
+from fge.human_editor import humanize_updates
 from fge.core import (
     INTENT_RECORD_ONLY,
     build_update,
@@ -25,6 +26,7 @@ def main():
     ap.add_argument('--repo', default='.')
     ap.add_argument('--knowledge', default=str(PACKAGE_ROOT/'config/knowledge.limit-development.json'))
     ap.add_argument('--plain', action='store_true', help='Ignore operator knowledge and use the pinned PLAIN pack.')
+    ap.add_argument('--human', action='store_true', help='Run the conservative /human editing pass before ARTICLE/JOURNAL/SNS generation.')
     ap.add_argument('--output', default=str(PACKAGE_ROOT/'site'))
     ap.add_argument('--lookback-days', type=int, default=30)
     ap.add_argument('--work-record-dir', default='.fge/records')
@@ -32,7 +34,8 @@ def main():
 
     knowledge_path = PACKAGE_ROOT/'config/knowledge.plain.json' if args.plain else Path(args.knowledge) if args.knowledge else None
     knowledge = load_knowledge(str(knowledge_path)) if knowledge_path else {}
-    generation_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
+    base_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
+    generation_mode = f'{base_mode}+HUMAN' if args.human else base_mode
     git_evidence = GitHubGitAdapter(args.repo, args.lookback_days).collect()
     work_record_evidence = WorkRecordFileAdapter(args.repo, args.work_record_dir).collect()
     evidence = git_evidence + work_record_evidence
@@ -41,14 +44,17 @@ def main():
     for ev in evidence:
         if ev.source_id in seen: continue
         seen.add(ev.source_id); by_source[ev.source_id] = ev
-        # RECORD_ONLY means durable source history only. It must not be
-        # promoted into UPDATE / ARTICLE / JOURNAL candidates.
         if ev.explicit_intent == INTENT_RECORD_ONLY:
             record_only += 1
             continue
         raw_updates.append(build_update(ev, knowledge))
 
-    updates = compact_hourly(raw_updates, contextual=(generation_mode == 'KNOWLEDGE'))
+    updates = compact_hourly(raw_updates, contextual=(base_mode == 'KNOWLEDGE'))
+    if args.human:
+        updates = humanize_updates(updates, by_source, knowledge)
+
+    # /human runs before all downstream public forms. This means ARTICLE,
+    # JOURNAL and SNS drafts see the same edited UPDATE instead of diverging.
     articles = [build_article(u, by_source[u.source_id], knowledge) for u in updates if u.article_candidate]
     journals = build_journals(updates)
     timezone_name = knowledge.get('organization', {}).get('timezone', 'UTC')
@@ -59,6 +65,7 @@ def main():
         'mode': generation_mode,
         'knowledge_pack': Path(knowledge_path).name if knowledge_path else 'NONE',
         'knowledge_schema': knowledge.get('schema_version', 'plain-v0'),
+        'human_editor': 'human-editor-v0' if args.human else 'OFF',
         'checked_at': checked,
         'evidence_count': len(evidence),
         'public_update_count': len(updates),
@@ -79,6 +86,7 @@ def main():
         'article_candidates': len(articles),
         'journal_days': len(journals),
         'generation_mode': generation_mode,
+        'human_editor': metadata['human_editor'],
         'knowledge_pack': metadata['knowledge_pack']
     }, ensure_ascii=False, indent=2))
     return 0
