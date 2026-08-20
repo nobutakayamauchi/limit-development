@@ -39,7 +39,10 @@ def main():
     repos = args.repos or ['.']
     knowledge_path = PACKAGE_ROOT/'config/knowledge.plain.json' if args.plain else Path(args.knowledge) if args.knowledge else None
     knowledge = load_knowledge(str(knowledge_path)) if knowledge_path else {}
-    daily_intents = load_daily_intents(args.daily_intents) if args.daily_intents else []
+    # PLAIN is a regression baseline for the neutral Core. Operator-specific
+    # daily intent is external personalization just like Knowledge, so it must
+    # stay out of PLAIN even when a default intent file exists on disk.
+    daily_intents = [] if args.plain else (load_daily_intents(args.daily_intents) if args.daily_intents else [])
     base_mode = 'PLAIN' if args.plain or knowledge.get('mode') != 'KNOWLEDGE' else 'KNOWLEDGE'
     generation_mode = f'{base_mode}+HUMAN' if args.human else base_mode
 
@@ -79,7 +82,7 @@ def main():
         'knowledge_schema': knowledge.get('schema_version', 'plain-v0'),
         'human_editor': 'human-editor-v0' if args.human else 'OFF',
         'journal_generator': 'journal-generator-v0.3',
-        'daily_intent_input': Path(args.daily_intents).name if args.daily_intents else 'OFF',
+        'daily_intent_input': 'OFF (PLAIN)' if args.plain else (Path(args.daily_intents).name if args.daily_intents else 'OFF'),
         'approved_daily_intents': len(daily_intents),
         'expanded_journal_pages': expanded_journals,
         'checked_at': checked,
