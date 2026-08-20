@@ -33,6 +33,12 @@ Each evaluation scores four axes from `-2` to `+2`:
 
 Factual fidelity and task fit are weighted more heavily than personality. A sentence that sounds right but bends the facts must not win.
 
+## Feedback identity
+
+A v0 feedback record must identify the exact `rule_id`, `surface`, and `output_id` being evaluated. One rule/surface/output combination may count only once, even if several feedback IDs are submitted. This prevents repeatedly rating the same output from forcing a promotion.
+
+The production ledger is `config/preference-feedback.limit-development.jsonl`. It starts empty and only accumulates actual operator evaluations. Synthetic ratings used to exercise ACTIVE / SHADOW / DORMANT transitions live under `tests/fixtures/` and are never treated as real preference evidence.
+
 ## Stages
 
 ### SHADOW
@@ -53,7 +59,7 @@ Feedback records keep scores by surface, for example `journal`, `sns`, `lp`, `te
 
 ## Privacy / safety boundary
 
-Preference feedback in v0 is structured metadata only. Free-text fields such as comments, corrections, or raw chat are rejected by the loader. This prevents a preference store from becoming a second private-text database.
+Preference feedback in v0 uses a strict structured schema. Unsupported top-level fields are rejected, so comments, corrections, raw chat, or arbitrary memo text cannot silently turn the preference ledger into a second private-text database.
 
 ```text
 FACTS = Evidence
