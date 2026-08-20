@@ -72,7 +72,9 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
     Preference Loop v0 never changes event facts and never copies free-form user
     feedback into Knowledge. It only scores existing learned_context_rules.
     ACTIVE means eligible for explicit promotion; it does not modify CURRENT
-    KNOWLEDGE or unattended publication by itself.
+    KNOWLEDGE or unattended publication by itself. SHADOW remains visible in the
+    experimental candidate so it can earn feedback. DORMANT is retained only in
+    the preference catalog/report and is suppressed from generated copy.
     """
     config = config or {}
     rules = {str(x.get("id")): x for x in learned_knowledge.get("learned_context_rules", []) if x.get("id")}
@@ -96,7 +98,8 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
         by_rule[str(item["rule_id"])].append(item)
 
     derived = deepcopy(learned_knowledge)
-    output_rules = []
+    usable_rules = []
+    catalog = []
     report_rules = []
     stage_counts = {STAGE_SHADOW: 0, STAGE_ACTIVE: 0, STAGE_DORMANT: 0}
 
@@ -129,7 +132,9 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
             "axis_averages": axis_avg,
             "surface_scores": surface_scores,
         }
-        output_rules.append(enriched)
+        catalog.append(enriched)
+        if stage != STAGE_DORMANT:
+            usable_rules.append(enriched)
         report_rules.append({
             "id": rid,
             "stage": stage,
@@ -142,7 +147,8 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
         })
 
     derived["pack_id"] = f"{learned_knowledge.get('pack_id', 'knowledge')}+preference-v0"
-    derived["learned_context_rules"] = output_rules
+    derived["learned_context_rules"] = usable_rules
+    derived["preference_rule_catalog"] = catalog
     derived["preference_loop"] = {
         "engine": "preference-loop-v0",
         "feedback_policy": "structured allow_preference_learning=true only",
@@ -150,6 +156,8 @@ def apply_preference_feedback(learned_knowledge, feedback_items, config=None):
         "feedback_count": len(unique),
         "stage_counts": stage_counts,
         "active_is_auto_published": False,
+        "shadow_is_experimental": True,
+        "dormant_is_suppressed": True,
     }
     report = {
         "engine": "preference-loop-v0",
