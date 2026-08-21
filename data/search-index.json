@@ -1,6 +1,20 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-38453b15eb3e",
+    "date": "2026-08-21",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-38453b15eb3e"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-c3bb8cf75130",
     "date": "2026-08-21",
     "title": "RTSを改善",
@@ -1623,7 +1637,7 @@
     "id": "upd-1ea952d21a96",
     "date": "2026-08-17",
     "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更7件も、この更新にまとめています。",
     "project": "WebAI-Bridge",
     "type": "機能変更",
     "tags": [
@@ -3722,13 +3736,14 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-21",
     "date": "2026-08-21",
-    "title": "RTSを改善、ほか1件",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを改善』もまとめています。",
-    "project": "FOUNDRY GROWTH ENGINE, RTS",
+    "title": "WebAI-Bridgeを改善、ほか2件",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSを改善』、『FOUNDRY GROWTH ENGINEを改善』もまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE, RTS, WebAI-Bridge",
     "type": "開発日誌",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "RTS",
+      "WebAI-Bridge",
       "機能変更"
     ],
     "href": "../journal/2026-08-21.html"

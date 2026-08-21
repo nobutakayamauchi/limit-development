@@ -1,5 +1,22 @@
 [
   {
+    "id": "upd-38453b15eb3e",
+    "source_id": "nobutakayamauchi/WebAI-Bridge@5021eed39d9a3d4a2a749ee7b29396a1fdbbde93",
+    "captured_at": "2026-08-21T17:47:12+09:00",
+    "type": "機能変更",
+    "project": "WebAI-Bridge",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/5021eed39d9a3d4a2a749ee7b29396a1fdbbde93",
+    "article_score": 0.173,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-c3bb8cf75130",
     "source_id": "nobutakayamauchi/RTS@96763c65746834abda08b4abe7b3a8f8bf4a9262",
     "captured_at": "2026-08-21T11:01:44+09:00",
@@ -1964,12 +1981,12 @@
     "type": "機能変更",
     "project": "WebAI-Bridge",
     "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更7件も、この更新にまとめています。",
     "tags": [
       "WebAI-Bridge",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/cb4e830783377bad0be6cc16edc6f18416fdcb62,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/8c4878bbb19c9bebb6949f2e3b66cb3fe17e21ee,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/21765d86bc524e43e27bc81b02ef8d172183ae8d,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/bbc81a87d05fed85eb3a9ccb63980d71c72740d8,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/c3d484a45d067b8d71763ed6287f59acd224f97f,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/a4210b4cefa32b8a3d9163fdaa150d05fd5425a0,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/43e21916c7b7c99473f39ae4a507c59c06725812,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/5fa05bb285d24e0cfc59f69ee030acf0ab063bc1,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/980c310d1930af9e9a917f1a7b6fc23de0718d34",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/cb4e830783377bad0be6cc16edc6f18416fdcb62,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/8c4878bbb19c9bebb6949f2e3b66cb3fe17e21ee,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/21765d86bc524e43e27bc81b02ef8d172183ae8d,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/bbc81a87d05fed85eb3a9ccb63980d71c72740d8,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/c3d484a45d067b8d71763ed6287f59acd224f97f,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/a4210b4cefa32b8a3d9163fdaa150d05fd5425a0,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/43e21916c7b7c99473f39ae4a507c59c06725812,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/5fa05bb285d24e0cfc59f69ee030acf0ab063bc1",
     "article_score": 0.346,
     "article_candidate": false,
     "review_status": "pending"

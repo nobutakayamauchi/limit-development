@@ -1,15 +1,17 @@
 [
   {
     "date": "2026-08-21",
-    "title": "RTSを改善、ほか1件",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを改善』もまとめています。",
+    "title": "WebAI-Bridgeを改善、ほか2件",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSを改善』、『FOUNDRY GROWTH ENGINEを改善』もまとめています。",
     "update_ids": [
+      "upd-38453b15eb3e",
       "upd-c3bb8cf75130",
       "upd-a37bf3c627fd"
     ],
     "projects": [
       "FOUNDRY GROWTH ENGINE",
-      "RTS"
+      "RTS",
+      "WebAI-Bridge"
     ],
     "types": [
       "機能変更"
@@ -17,6 +19,7 @@
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "RTS",
+      "WebAI-Bridge",
       "機能変更"
     ]
   },
