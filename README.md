@@ -21,6 +21,7 @@ Implementation, evidence, history, and detailed technical truth remain canonical
 - **Current developer / links:** `me.html`
 - **Developer public status:** `status.html`
 - **GitHub Pages:** https://nobutakayamauchi.github.io/limit-development/
+- **Sales Catalog / 販売中の商品:** https://nobutakayamauchi.github.io/sales-catalog/
 
 ## Public links
 
@@ -57,6 +58,7 @@ The repeating pattern is:
 
 ## Current practical work
 
+- [Sales Catalog](https://nobutakayamauchi.github.io/sales-catalog/) — public shelf for products explicitly marked for sale; product implementation remains canonical in each product repository
 - [BridgePatch](https://nobutakayamauchi.github.io/RTS/bridgepatch/) — cut one painful repeated manual step instead of rebuilding the whole business system
 - [X Article Engine](https://github.com/nobutakayamauchi/RTS/tree/main/x_article_engine) — convert development records into X-oriented articles with evidence checks and human publication authority
 - [rts-video-flow](https://github.com/nobutakayamauchi/rts-video-flow) — smartphone-centered Vlog pipeline development history
