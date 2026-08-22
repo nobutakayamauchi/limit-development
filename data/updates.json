@@ -1,5 +1,22 @@
 [
   {
+    "id": "upd-3d3988d8afd3",
+    "source_id": "nobutakayamauchi/rts01-offer@f2d80f055d21f46d1a801ae8b69e27cee5745127",
+    "captured_at": "2026-08-22T14:51:16+09:00",
+    "type": "新製品",
+    "project": "rts01-offer",
+    "title": "rts01-offerを公開",
+    "summary": "rts01-offerを新しく公開しました。",
+    "tags": [
+      "rts01-offer",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts01-offer/commit/f2d80f055d21f46d1a801ae8b69e27cee5745127",
+    "article_score": 0.465,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-38453b15eb3e",
     "source_id": "nobutakayamauchi/WebAI-Bridge@5021eed39d9a3d4a2a749ee7b29396a1fdbbde93",
     "captured_at": "2026-08-21T17:47:12+09:00",

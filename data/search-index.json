@@ -1,6 +1,20 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-3d3988d8afd3",
+    "date": "2026-08-22",
+    "title": "rts01-offerを公開",
+    "summary": "rts01-offerを新しく公開しました。",
+    "project": "rts01-offer",
+    "type": "新製品",
+    "tags": [
+      "rts01-offer",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-3d3988d8afd3"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-38453b15eb3e",
     "date": "2026-08-21",
     "title": "WebAI-Bridgeを改善",
@@ -3731,6 +3745,20 @@
       "機能追加"
     ],
     "href": "../updates/#u-upd-fef059e50e48"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-22",
+    "date": "2026-08-22",
+    "title": "rts01-offerを公開",
+    "summary": "rts01-offerを新しく公開しました。",
+    "project": "rts01-offer",
+    "type": "開発日誌",
+    "tags": [
+      "rts01-offer",
+      "新製品"
+    ],
+    "href": "../journal/2026-08-22.html"
   },
   {
     "kind": "JOURNAL",

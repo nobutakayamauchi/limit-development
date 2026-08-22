@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-08-22",
+    "title": "rts01-offerを公開",
+    "summary": "rts01-offerを新しく公開しました。",
+    "update_ids": [
+      "upd-3d3988d8afd3"
+    ],
+    "projects": [
+      "rts01-offer"
+    ],
+    "types": [
+      "新製品"
+    ],
+    "tags": [
+      "rts01-offer",
+      "新製品"
+    ]
+  },
+  {
     "date": "2026-08-21",
     "title": "WebAI-Bridgeを改善、ほか2件",
     "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSを改善』、『FOUNDRY GROWTH ENGINEを改善』もまとめています。",
