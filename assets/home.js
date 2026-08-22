@@ -1,7 +1,8 @@
+const SALES_CATALOG='https://nobutakayamauchi.github.io/sales-catalog/';
 const ITEMS=[
  {name:'FOUNDRY GROWTH ENGINE',short:'FGE',kind:'PRODUCT',cats:['production','product'],killer:'仕事してください。',desc:'仕事の簡単な報告から、更新情報・記事・SNS投稿用の文章まで整えます。',definition:'発信作業を、もう一仕事にしないための投稿支援ツールです。',url:'products/foundry-growth-engine.html'},
  {name:'ULTIMATE LOOP',short:'∞',kind:'METHOD / RESEARCH',cats:['research'],killer:'一からの新造、やめてください。',desc:'今ある道具や過去の部品を先に探し、組み合わせても足りない部分だけを新しく作ります。',definition:'無駄な開発を減らすための開発手法です。',url:'products/ultimate-loop.html'},
- {name:'WEB AI BRIDGE',short:'W',kind:'PRODUCTION',cats:['production','product'],killer:'AIを、自分の場所で使えるようにします。',desc:'AI機能を、自分のサイトや仕組みへつなぎやすくするための橋を作ります。',definition:'AIとWebをつなぐための接続基盤です。',url:'products/webai-bridge.html'},
+ {name:'WEB AI BRIDGE',short:'W',kind:'PRODUCTION',cats:['production','product'],killer:'AIを、自分の場所で使えるようにします。',desc:'AI機能を、自分のサイトや仕組みへつなぎやすくするための橋を作ります。',definition:'AIとWebをつなぐための接続基盤です。',url:'products/webai-bridge.html',salesUrl:`${SALES_CATALOG}products/webai-bridge/`},
  {name:'BRIDGE PATCH',short:'B',kind:'PRODUCTION',cats:['production','product'],killer:'ここ直せば、大体直ります。',desc:'問題の中心になっている一部分を見つけて、そこだけ小さく直したり、つなぎ直したりします。',definition:'全部作り直さず、効く場所へ手を入れる改善ツールです。',url:'products/bridgepatch.html'},
  {name:'AXIS',short:'X',kind:'RESEARCH',cats:['research'],killer:'たくさんあっても、今やるのはこれだけです。',desc:'仕事や課題が増えても、優先順位を整理して「今やること」をひとつに絞ります。',definition:'迷わず次の一手を決めるための整理ツールです。',url:'products/axis.html'},
  {name:'NAGI',short:'N',kind:'PRODUCTION',cats:['production'],killer:'中断した場所？ここからです。',desc:'どこまで進んだか、次に何をするかを残して、途中から再開しやすくします。',definition:'中断と再開を楽にするツールです。',url:'products/nagi.html'},
@@ -9,8 +10,12 @@ const ITEMS=[
 ];
 let filter='all',visible=[...ITEMS.keys()],pos=0;const $=s=>document.querySelector(s);
 const els={name:$('#name'),kind:$('#kind'),killer:$('#killer'),desc:$('#desc'),definition:$('#definition'),detail:$('#detail'),visualName:$('#visualName'),visualCode:$('#visualCode'),dots:$('#dots'),thumbs:$('#thumbs')};
+function ensureSalesLinks(){
+ const detail=els.detail;if(detail&&!$('#salesDetail')){const a=document.createElement('a');a.id='salesDetail';a.className='detail';a.hidden=true;a.style.marginLeft='14px';a.textContent='販売中の商品を見る →';detail.insertAdjacentElement('afterend',a)}
+ const rail=document.querySelector('.rail');if(rail&&!$('#salesCatalog')){const a=document.createElement('a');a.id='salesCatalog';a.className='allindex';a.href=SALES_CATALOG;a.style.cssText='display:grid;place-items:center;text-align:center;text-decoration:none;padding:8px';a.innerHTML='SALES CATALOG<br><small>販売中の商品を見る →</small>';rail.appendChild(a)}
+}
 function rebuild(){visible=ITEMS.map((x,i)=>({x,i})).filter(o=>filter==='all'||o.x.cats.includes(filter)).map(o=>o.i);if(!visible.length)visible=[0];pos=0;render()}
-function render(){const idx=visible[pos%visible.length],x=ITEMS[idx];els.name.textContent=x.name;els.kind.textContent=`${x.name} · ${x.kind}`;els.killer.textContent=x.killer;els.desc.textContent=x.desc;els.definition.textContent=x.definition;els.detail.href=x.url;els.visualName.innerHTML=x.name.replaceAll(' ','<br>');els.visualCode.textContent=x.short;els.dots.innerHTML='';visible.forEach((v,i)=>{const b=document.createElement('button');b.className='dot'+(i===pos?' active':'');b.setAttribute('aria-label',`${i+1}番目へ`);b.onclick=()=>{pos=i;render()};els.dots.appendChild(b)});els.thumbs.innerHTML='';visible.forEach((v,i)=>{const x=ITEMS[v],b=document.createElement('button');b.className='thumb'+(i===pos?' active':'');b.innerHTML=`<span class="thumbmark">${x.short}</span><span>${x.name}</span>`;b.onclick=()=>{pos=i;render()};els.thumbs.appendChild(b)})}
+function render(){const idx=visible[pos%visible.length],x=ITEMS[idx];els.name.textContent=x.name;els.kind.textContent=`${x.name} · ${x.kind}`;els.killer.textContent=x.killer;els.desc.textContent=x.desc;els.definition.textContent=x.definition;els.detail.href=x.url;const sales=$('#salesDetail');if(sales){sales.hidden=!x.salesUrl;if(x.salesUrl)sales.href=x.salesUrl}els.visualName.innerHTML=x.name.replaceAll(' ','<br>');els.visualCode.textContent=x.short;els.dots.innerHTML='';visible.forEach((v,i)=>{const b=document.createElement('button');b.className='dot'+(i===pos?' active':'');b.setAttribute('aria-label',`${i+1}番目へ`);b.onclick=()=>{pos=i;render()};els.dots.appendChild(b)});els.thumbs.innerHTML='';visible.forEach((v,i)=>{const x=ITEMS[v],b=document.createElement('button');b.className='thumb'+(i===pos?' active':'');b.innerHTML=`<span class="thumbmark">${x.short}</span><span>${x.name}</span>`;b.onclick=()=>{pos=i;render()};els.thumbs.appendChild(b)})}
 function move(n){pos=(pos+n+visible.length)%visible.length;render()}
 $('#prev').onclick=()=>move(-1);$('#next').onclick=()=>move(1);document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;rebuild()});$('#allIndex').onclick=()=>{window.location.href='works/'};
 let sx=0;$('#carousel').addEventListener('touchstart',e=>sx=e.changedTouches[0].clientX,{passive:true});$('#carousel').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>45)move(dx<0?1:-1)},{passive:true});$('#carousel').addEventListener('keydown',e=>{if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1)});$('#carousel').tabIndex=0;
@@ -47,4 +52,4 @@ async function loadLiveBoards(){
  try{const journals=await loadJson('data/journals.json');if(Array.isArray(journals)&&journals.length&&journalFeed){journalFeed.replaceChildren(...journals.slice(0,5).map(journalRow));const idx=$('#journalIndexLink');if(idx)idx.href='journal/'}}catch(_){/* keep static fallback */}
  try{showHourlyStatus(await loadJson('data/status.json'))}catch(_){showHourlyStatus(null)}
 }
-render();wireJournalNavigation();loadLiveBoards();
+ensureSalesLinks();render();wireJournalNavigation();loadLiveBoards();
