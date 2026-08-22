@@ -1,5 +1,39 @@
 [
   {
+    "id": "upd-ed31e2671a87",
+    "source_id": "nobutakayamauchi/sales-catalog@6cc82f0e7c025878988693e19db199dbd64c453c",
+    "captured_at": "2026-08-22T18:23:22+09:00",
+    "type": "方針変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogの方針を更新",
+    "summary": "sales-catalogの説明や運用方針を更新しました。",
+    "tags": [
+      "sales-catalog",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/6cc82f0e7c025878988693e19db199dbd64c453c",
+    "article_score": 0.312,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-a07e17079ea2",
+    "source_id": "nobutakayamauchi/limit-development@56fadbfcac1718bc5e79468c961e9027e76359d6",
+    "captured_at": "2026-08-22T18:11:27+09:00",
+    "type": "機能追加",
+    "project": "limit-development",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/56fadbfcac1718bc5e79468c961e9027e76359d6",
+    "article_score": 0.501,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-89e5d3224f78",
     "source_id": "nobutakayamauchi/sales-catalog@3dc63e77c89bb6f551fe074ea005ca0e7ab3d952",
     "captured_at": "2026-08-22T17:47:34+09:00",

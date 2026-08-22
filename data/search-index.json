@@ -1,6 +1,34 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-ed31e2671a87",
+    "date": "2026-08-22",
+    "title": "sales-catalogの方針を更新",
+    "summary": "sales-catalogの説明や運用方針を更新しました。",
+    "project": "sales-catalog",
+    "type": "方針変更",
+    "tags": [
+      "sales-catalog",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-ed31e2671a87"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a07e17079ea2",
+    "date": "2026-08-22",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-a07e17079ea2"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-89e5d3224f78",
     "date": "2026-08-22",
     "title": "sales-catalogを公開",
@@ -3792,8 +3820,8 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-22",
     "date": "2026-08-22",
-    "title": "sales-catalogを公開、ほか3件",
-    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『limit-developmentの方針を更新』、『sales-catalogを改善』、『rts01-offerを公開』もまとめています。",
+    "title": "sales-catalogの方針を更新、ほか5件",
+    "summary": "sales-catalogの説明や運用方針を更新しました。 同じ日の開発記録として、『limit-developmentに機能を追加』、『sales-catalogを公開』、『limit-developmentの方針を更新』もまとめています。",
     "project": "limit-development, rts01-offer, sales-catalog",
     "type": "開発日誌",
     "tags": [
@@ -3802,7 +3830,8 @@
       "sales-catalog",
       "新製品",
       "方針変更",
-      "機能変更"
+      "機能変更",
+      "機能追加"
     ],
     "href": "../journal/2026-08-22.html"
   },
