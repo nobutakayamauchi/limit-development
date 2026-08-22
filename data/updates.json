@@ -1,5 +1,56 @@
 [
   {
+    "id": "upd-89e5d3224f78",
+    "source_id": "nobutakayamauchi/sales-catalog@3dc63e77c89bb6f551fe074ea005ca0e7ab3d952",
+    "captured_at": "2026-08-22T17:47:34+09:00",
+    "type": "新製品",
+    "project": "sales-catalog",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/3dc63e77c89bb6f551fe074ea005ca0e7ab3d952",
+    "article_score": 0.624,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-63dc62882400",
+    "source_id": "nobutakayamauchi/limit-development@f680884be4eca9b5f834b2a3a1a2b50d3e9ed18c",
+    "captured_at": "2026-08-22T17:33:45+09:00",
+    "type": "方針変更",
+    "project": "limit-development",
+    "title": "limit-developmentの方針を更新",
+    "summary": "limit-developmentの説明や運用方針を更新しました。",
+    "tags": [
+      "limit-development",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/f680884be4eca9b5f834b2a3a1a2b50d3e9ed18c",
+    "article_score": 0.239,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-cd4e05614347",
+    "source_id": "nobutakayamauchi/sales-catalog@fa7fe735c7db04ed7fd14532d02ae1c7c97d5306",
+    "captured_at": "2026-08-22T17:32:54+09:00",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/fa7fe735c7db04ed7fd14532d02ae1c7c97d5306,https://github.com/nobutakayamauchi/sales-catalog/commit/692de6f875144b5ab2cc66582baf8b687878ed21,https://github.com/nobutakayamauchi/sales-catalog/commit/98cf1c38bde194f6c95eb42337a462b252d7e5f3",
+    "article_score": 0.334,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-3d3988d8afd3",
     "source_id": "nobutakayamauchi/rts01-offer@f2d80f055d21f46d1a801ae8b69e27cee5745127",
     "captured_at": "2026-08-22T14:51:16+09:00",

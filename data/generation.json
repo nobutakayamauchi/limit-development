@@ -7,7 +7,7 @@
   "daily_intent_input": "daily-intents.limit-development.jsonl",
   "approved_daily_intents": 1,
   "expanded_journal_pages": 23,
-  "checked_at": "2026-08-22T16:47+09:00",
+  "checked_at": "2026-08-22T17:49+09:00",
   "repositories": [
     ".",
     "/tmp/fge-sources/NAGI",
@@ -31,11 +31,12 @@
     "/tmp/fge-sources/rts-lite",
     "/tmp/fge-sources/rts-video-flow",
     "/tmp/fge-sources/rts01-offer",
+    "/tmp/fge-sources/sales-catalog",
     "/tmp/fge-sources/seminar-compass"
   ],
   "git_only": true,
-  "evidence_count": 732,
-  "public_update_count": 265,
+  "evidence_count": 737,
+  "public_update_count": 268,
   "article_candidates": 0,
   "journal_days": 23
 }
