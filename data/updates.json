@@ -2519,23 +2519,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-6e6cf98ef7ec",
-    "source_id": "nobutakayamauchi/limit-development@6a17c5e64e673f870e0c6075e13bf8d7864fbade",
-    "captured_at": "2026-08-16T13:10:26+09:00",
-    "type": "機能追加",
-    "project": "limit-development",
-    "title": "limit-developmentに機能を追加",
-    "summary": "limit-developmentで新しい機能を使えるようにしました。",
-    "tags": [
-      "limit-development",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/6a17c5e64e673f870e0c6075e13bf8d7864fbade",
-    "article_score": 0.268,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-1914c85346b9",
     "source_id": "nobutakayamauchi/Ultimate-Loop@444cf688b993711956b11ed7dc0d227b2c7b9e1e",
     "captured_at": "2026-08-16T13:07:40+09:00",
