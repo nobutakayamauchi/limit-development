@@ -2610,12 +2610,12 @@
     "type": "機能変更",
     "project": "limit-development",
     "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
     "tags": [
       "limit-development",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/345133f3bd0d353fa0fb3a80e1afb22d6948ec57,https://github.com/nobutakayamauchi/limit-development/commit/62e7ad31adcf6b8f89207b5eea000464f196f5cc",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/345133f3bd0d353fa0fb3a80e1afb22d6948ec57",
     "article_score": 0.174,
     "article_candidate": false,
     "review_status": "pending"
