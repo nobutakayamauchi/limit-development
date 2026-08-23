@@ -2043,7 +2043,7 @@
     "id": "upd-b70d8fd1021f",
     "date": "2026-08-16",
     "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
     "project": "limit-development",
     "type": "機能変更",
     "tags": [
