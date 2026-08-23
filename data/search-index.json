@@ -1,6 +1,34 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-a02a8096afa5",
+    "date": "2026-08-23",
+    "title": "Ultimate-Loopを改善",
+    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。",
+    "project": "Ultimate-Loop",
+    "type": "機能変更",
+    "tags": [
+      "Ultimate-Loop",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-a02a8096afa5"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2b34d1e34e61",
+    "date": "2026-08-23",
+    "title": "Ultimate-Loopに機能を追加",
+    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "Ultimate-Loop",
+    "type": "機能追加",
+    "tags": [
+      "Ultimate-Loop",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-2b34d1e34e61"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-a11bda1de52f",
     "date": "2026-08-23",
     "title": "Audience-Minerを改善",
@@ -3862,15 +3890,17 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-23",
     "date": "2026-08-23",
-    "title": "Audience-Minerを改善、ほか2件",
-    "summary": "Audience-Minerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。 同じ日の開発記録として、『Audience-Minerを改善』、『Developer-Cardを公開』もまとめています。",
-    "project": "Audience-Miner, Developer-Card",
+    "title": "Ultimate-Loopを改善、ほか4件",
+    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『Ultimate-Loopに機能を追加』、『Audience-Minerを改善』、『Audience-Minerを改善』もまとめています。",
+    "project": "Audience-Miner, Developer-Card, Ultimate-Loop",
     "type": "開発日誌",
     "tags": [
       "Audience-Miner",
       "Developer-Card",
+      "Ultimate-Loop",
       "新製品",
-      "機能変更"
+      "機能変更",
+      "機能追加"
     ],
     "href": "../journal/2026-08-23.html"
   },

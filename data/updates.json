@@ -1,5 +1,39 @@
 [
   {
+    "id": "upd-a02a8096afa5",
+    "source_id": "nobutakayamauchi/Ultimate-Loop@27622b5511abae82832db2e51c82e5827226c617",
+    "captured_at": "2026-08-23T22:27:22+09:00",
+    "type": "機能変更",
+    "project": "Ultimate-Loop",
+    "title": "Ultimate-Loopを改善",
+    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "Ultimate-Loop",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Ultimate-Loop/commit/27622b5511abae82832db2e51c82e5827226c617",
+    "article_score": 0.176,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-2b34d1e34e61",
+    "source_id": "nobutakayamauchi/Ultimate-Loop@44ba2a851f2196440f49481dcf946b91c6740c77",
+    "captured_at": "2026-08-23T22:21:13+09:00",
+    "type": "機能追加",
+    "project": "Ultimate-Loop",
+    "title": "Ultimate-Loopに機能を追加",
+    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "Ultimate-Loop",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Ultimate-Loop/commit/fcb61818c5768f514368abb475d5983cc131fa99,https://github.com/nobutakayamauchi/Ultimate-Loop/commit/44ba2a851f2196440f49481dcf946b91c6740c77",
+    "article_score": 0.368,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-a11bda1de52f",
     "source_id": "nobutakayamauchi/Audience-Miner@0e5c7613e63f03de73a1465e65e93a34625ed10a",
     "captured_at": "2026-08-23T15:04:00+09:00",

@@ -1,26 +1,32 @@
 [
   {
     "date": "2026-08-23",
-    "title": "Audience-Minerを改善、ほか2件",
-    "summary": "Audience-Minerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。 同じ日の開発記録として、『Audience-Minerを改善』、『Developer-Cardを公開』もまとめています。",
+    "title": "Ultimate-Loopを改善、ほか4件",
+    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『Ultimate-Loopに機能を追加』、『Audience-Minerを改善』、『Audience-Minerを改善』もまとめています。",
     "update_ids": [
+      "upd-a02a8096afa5",
+      "upd-2b34d1e34e61",
       "upd-a11bda1de52f",
       "upd-723090eca594",
       "upd-87f4bc43c62c"
     ],
     "projects": [
       "Audience-Miner",
-      "Developer-Card"
+      "Developer-Card",
+      "Ultimate-Loop"
     ],
     "types": [
       "新製品",
-      "機能変更"
+      "機能変更",
+      "機能追加"
     ],
     "tags": [
       "Audience-Miner",
       "Developer-Card",
+      "Ultimate-Loop",
       "新製品",
-      "機能変更"
+      "機能変更",
+      "機能追加"
     ]
   },
   {
