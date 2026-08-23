@@ -1,5 +1,73 @@
 [
   {
+    "id": "upd-47d0e40c7f6e",
+    "source_id": "nobutakayamauchi/sales-catalog@50ade5f9dcfd9a4ef9cea2994c2a225ebaf15347",
+    "captured_at": "2026-08-23T23:12:25+09:00",
+    "type": "方針変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogの方針を更新",
+    "summary": "sales-catalogの説明や運用方針を更新しました。",
+    "tags": [
+      "sales-catalog",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/50ade5f9dcfd9a4ef9cea2994c2a225ebaf15347",
+    "article_score": 0.25,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-9e583485f8fa",
+    "source_id": "nobutakayamauchi/sales-catalog@0bc099d7ec0c06e45a3d3e580f27e337da85dcac",
+    "captured_at": "2026-08-23T23:12:11+09:00",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/0bc099d7ec0c06e45a3d3e580f27e337da85dcac,https://github.com/nobutakayamauchi/sales-catalog/commit/f0bafcb60b2ad8abf31114e3e274812ee9aeaf60",
+    "article_score": 0.247,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-08d8e47b75d3",
+    "source_id": "nobutakayamauchi/sales-catalog@0b3bb0f725eb7d9751e77a9d5de553ecb5f00760",
+    "captured_at": "2026-08-23T23:11:59+09:00",
+    "type": "機能追加",
+    "project": "sales-catalog",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/0b3bb0f725eb7d9751e77a9d5de553ecb5f00760,https://github.com/nobutakayamauchi/sales-catalog/commit/b0d83e38f18ffe67250f245c2c8fb0b42252b636,https://github.com/nobutakayamauchi/sales-catalog/commit/23750c3e242c8baf0a6e563036d4ea9d8288c4e9",
+    "article_score": 0.278,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-c80dd5f06ddd",
+    "source_id": "nobutakayamauchi/sales-catalog@9313d8d8fc32e28d150e54f18dee34847d2c8d6c",
+    "captured_at": "2026-08-23T23:11:15+09:00",
+    "type": "新製品",
+    "project": "sales-catalog",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/9313d8d8fc32e28d150e54f18dee34847d2c8d6c,https://github.com/nobutakayamauchi/sales-catalog/commit/e5456465ffe5a31cc757a20c087ffc00e5ffc11e",
+    "article_score": 0.398,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-a02a8096afa5",
     "source_id": "nobutakayamauchi/Ultimate-Loop@27622b5511abae82832db2e51c82e5827226c617",
     "captured_at": "2026-08-23T22:27:22+09:00",
@@ -23,12 +91,12 @@
     "type": "機能追加",
     "project": "Ultimate-Loop",
     "title": "Ultimate-Loopに機能を追加",
-    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
     "tags": [
       "Ultimate-Loop",
       "機能追加"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Ultimate-Loop/commit/fcb61818c5768f514368abb475d5983cc131fa99,https://github.com/nobutakayamauchi/Ultimate-Loop/commit/44ba2a851f2196440f49481dcf946b91c6740c77",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Ultimate-Loop/commit/d5431c43763f7ecd5bbbe4e728af3398e084507f,https://github.com/nobutakayamauchi/Ultimate-Loop/commit/fcb61818c5768f514368abb475d5983cc131fa99,https://github.com/nobutakayamauchi/Ultimate-Loop/commit/44ba2a851f2196440f49481dcf946b91c6740c77",
     "article_score": 0.368,
     "article_candidate": false,
     "review_status": "pending"
