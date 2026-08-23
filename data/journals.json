@@ -381,7 +381,7 @@
   },
   {
     "date": "2026-08-16",
-    "title": "TRACEを改善、ほか21件",
+    "title": "TRACEを改善、ほか20件",
     "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『Ultimate-Loopを改善』、『limit-developmentを改善』、『limit-developmentに機能を追加』もまとめています。",
     "update_ids": [
       "upd-f1926527c5a2",
@@ -398,7 +398,6 @@
       "upd-7320d1c68ffb",
       "upd-e6ae034a4a9f",
       "upd-a780de1d9a46",
-      "upd-70af9f29dfbc",
       "upd-512e4269c41e",
       "upd-f83de585e033",
       "upd-230a08352257",
