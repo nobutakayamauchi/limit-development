@@ -1,5 +1,73 @@
 [
   {
+    "id": "upd-743c2816327a",
+    "source_id": "nobutakayamauchi/sales-catalog@f97bd7105760199f3b6e560195ed14895b41d087",
+    "captured_at": "2026-08-24T00:15:37+09:00",
+    "type": "方針変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogの方針を更新",
+    "summary": "sales-catalogの説明や運用方針を更新しました。",
+    "tags": [
+      "sales-catalog",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/f97bd7105760199f3b6e560195ed14895b41d087",
+    "article_score": 0.246,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-0cafb8bc3e27",
+    "source_id": "nobutakayamauchi/sales-catalog@91f7e94994f0ef3b213757a9ddda3a89e86f2f48",
+    "captured_at": "2026-08-24T00:15:16+09:00",
+    "type": "新製品",
+    "project": "sales-catalog",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/91f7e94994f0ef3b213757a9ddda3a89e86f2f48,https://github.com/nobutakayamauchi/sales-catalog/commit/c6af3237492fcd8b229d384eecff8f08c0eb5d0f",
+    "article_score": 0.401,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-1dd7b8f29c06",
+    "source_id": "nobutakayamauchi/sales-catalog@83ebe9ba87ef4a33c139222c62eeb8c7a670fbf4",
+    "captured_at": "2026-08-24T00:14:40+09:00",
+    "type": "機能追加",
+    "project": "sales-catalog",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/83ebe9ba87ef4a33c139222c62eeb8c7a670fbf4,https://github.com/nobutakayamauchi/sales-catalog/commit/8805c1bd19e1f699323b6ac0989a4f63b372c743",
+    "article_score": 0.439,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-46699a441f7c",
+    "source_id": "nobutakayamauchi/sales-catalog@2041619edfc200be7d18e2c05b5464fd86b79e0f",
+    "captured_at": "2026-08-24T00:13:32+09:00",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/addf6fb576db3a2573749d0555ed3b7153ac2e1b,https://github.com/nobutakayamauchi/sales-catalog/commit/2041619edfc200be7d18e2c05b5464fd86b79e0f",
+    "article_score": 0.334,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-47d0e40c7f6e",
     "source_id": "nobutakayamauchi/sales-catalog@50ade5f9dcfd9a4ef9cea2994c2a225ebaf15347",
     "captured_at": "2026-08-23T23:12:25+09:00",

@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-08-24",
+    "title": "sales-catalogの方針を更新、ほか3件",
+    "summary": "sales-catalogの説明や運用方針を更新しました。 同じ日の開発記録として、『sales-catalogを公開』、『sales-catalogに機能を追加』、『sales-catalogを改善』もまとめています。",
+    "update_ids": [
+      "upd-743c2816327a",
+      "upd-0cafb8bc3e27",
+      "upd-1dd7b8f29c06",
+      "upd-46699a441f7c"
+    ],
+    "projects": [
+      "sales-catalog"
+    ],
+    "types": [
+      "新製品",
+      "方針変更",
+      "機能変更",
+      "機能追加"
+    ],
+    "tags": [
+      "sales-catalog",
+      "新製品",
+      "方針変更",
+      "機能変更",
+      "機能追加"
+    ]
+  },
+  {
     "date": "2026-08-23",
     "title": "sales-catalogの方針を更新、ほか8件",
     "summary": "sales-catalogの説明や運用方針を更新しました。 同じ日の開発記録として、『sales-catalogを改善』、『sales-catalogに機能を追加』、『sales-catalogを公開』もまとめています。",
