@@ -1,6 +1,20 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-393f655da4c6",
+    "date": "2026-08-24",
+    "title": "LLM-Cost-Routerを改善",
+    "summary": "LLM-Cost-Routerの使い勝手や安定性に関わる変更を行いました。",
+    "project": "LLM-Cost-Router",
+    "type": "機能変更",
+    "tags": [
+      "LLM-Cost-Router",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-393f655da4c6"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-743c2816327a",
     "date": "2026-08-24",
     "title": "sales-catalogの方針を更新",
@@ -4002,11 +4016,12 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-24",
     "date": "2026-08-24",
-    "title": "sales-catalogの方針を更新、ほか3件",
-    "summary": "sales-catalogの説明や運用方針を更新しました。 同じ日の開発記録として、『sales-catalogを公開』、『sales-catalogに機能を追加』、『sales-catalogを改善』もまとめています。",
-    "project": "sales-catalog",
+    "title": "LLM-Cost-Routerを改善、ほか4件",
+    "summary": "LLM-Cost-Routerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『sales-catalogの方針を更新』、『sales-catalogを公開』、『sales-catalogに機能を追加』もまとめています。",
+    "project": "LLM-Cost-Router, sales-catalog",
     "type": "開発日誌",
     "tags": [
+      "LLM-Cost-Router",
       "sales-catalog",
       "新製品",
       "方針変更",

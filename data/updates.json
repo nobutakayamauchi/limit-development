@@ -1,5 +1,22 @@
 [
   {
+    "id": "upd-393f655da4c6",
+    "source_id": "nobutakayamauchi/LLM-Cost-Router@e98fc462a393287f778004c452bcda6b07cf0a13",
+    "captured_at": "2026-08-24T00:59:10+09:00",
+    "type": "機能変更",
+    "project": "LLM-Cost-Router",
+    "title": "LLM-Cost-Routerを改善",
+    "summary": "LLM-Cost-Routerの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "LLM-Cost-Router",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/LLM-Cost-Router/commit/e98fc462a393287f778004c452bcda6b07cf0a13",
+    "article_score": 0.164,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-743c2816327a",
     "source_id": "nobutakayamauchi/sales-catalog@f97bd7105760199f3b6e560195ed14895b41d087",
     "captured_at": "2026-08-24T00:15:37+09:00",

@@ -1,15 +1,17 @@
 [
   {
     "date": "2026-08-24",
-    "title": "sales-catalogの方針を更新、ほか3件",
-    "summary": "sales-catalogの説明や運用方針を更新しました。 同じ日の開発記録として、『sales-catalogを公開』、『sales-catalogに機能を追加』、『sales-catalogを改善』もまとめています。",
+    "title": "LLM-Cost-Routerを改善、ほか4件",
+    "summary": "LLM-Cost-Routerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『sales-catalogの方針を更新』、『sales-catalogを公開』、『sales-catalogに機能を追加』もまとめています。",
     "update_ids": [
+      "upd-393f655da4c6",
       "upd-743c2816327a",
       "upd-0cafb8bc3e27",
       "upd-1dd7b8f29c06",
       "upd-46699a441f7c"
     ],
     "projects": [
+      "LLM-Cost-Router",
       "sales-catalog"
     ],
     "types": [
@@ -19,6 +21,7 @@
       "機能追加"
     ],
     "tags": [
+      "LLM-Cost-Router",
       "sales-catalog",
       "新製品",
       "方針変更",
