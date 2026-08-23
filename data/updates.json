@@ -1,5 +1,56 @@
 [
   {
+    "id": "upd-a11bda1de52f",
+    "source_id": "nobutakayamauchi/Audience-Miner@0e5c7613e63f03de73a1465e65e93a34625ed10a",
+    "captured_at": "2026-08-23T15:04:00+09:00",
+    "type": "機能変更",
+    "project": "Audience-Miner",
+    "title": "Audience-Minerを改善",
+    "summary": "Audience-Minerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "Audience-Miner",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Audience-Miner/commit/bc4f3b641889244be36f6b1d13edfd07bb6da783,https://github.com/nobutakayamauchi/Audience-Miner/commit/bb33d369b3dfda700b8c727400a9bfded3bcfe7a,https://github.com/nobutakayamauchi/Audience-Miner/commit/0e5c7613e63f03de73a1465e65e93a34625ed10a",
+    "article_score": 0.339,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-723090eca594",
+    "source_id": "nobutakayamauchi/Audience-Miner@16f962da41d1d0e2f98a85d46add35bab8966f2b",
+    "captured_at": "2026-08-23T14:23:07+09:00",
+    "type": "機能変更",
+    "project": "Audience-Miner",
+    "title": "Audience-Minerを改善",
+    "summary": "Audience-Minerの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "Audience-Miner",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Audience-Miner/commit/16f962da41d1d0e2f98a85d46add35bab8966f2b",
+    "article_score": 0.263,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-87f4bc43c62c",
+    "source_id": "nobutakayamauchi/Developer-Card@622f5e6e82dc555462a8db3cca978e9e2a2fd876",
+    "captured_at": "2026-08-23T13:11:59+09:00",
+    "type": "新製品",
+    "project": "Developer-Card",
+    "title": "Developer-Cardを公開",
+    "summary": "Developer-Cardを新しく公開しました。",
+    "tags": [
+      "Developer-Card",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Developer-Card/commit/622f5e6e82dc555462a8db3cca978e9e2a2fd876",
+    "article_score": 0.401,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-ed31e2671a87",
     "source_id": "nobutakayamauchi/sales-catalog@6cc82f0e7c025878988693e19db199dbd64c453c",
     "captured_at": "2026-08-22T18:23:22+09:00",

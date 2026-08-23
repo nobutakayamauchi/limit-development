@@ -1,6 +1,48 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-a11bda1de52f",
+    "date": "2026-08-23",
+    "title": "Audience-Minerを改善",
+    "summary": "Audience-Minerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "Audience-Miner",
+    "type": "機能変更",
+    "tags": [
+      "Audience-Miner",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-a11bda1de52f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-723090eca594",
+    "date": "2026-08-23",
+    "title": "Audience-Minerを改善",
+    "summary": "Audience-Minerの使い勝手や安定性に関わる変更を行いました。",
+    "project": "Audience-Miner",
+    "type": "機能変更",
+    "tags": [
+      "Audience-Miner",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-723090eca594"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-87f4bc43c62c",
+    "date": "2026-08-23",
+    "title": "Developer-Cardを公開",
+    "summary": "Developer-Cardを新しく公開しました。",
+    "project": "Developer-Card",
+    "type": "新製品",
+    "tags": [
+      "Developer-Card",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-87f4bc43c62c"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-ed31e2671a87",
     "date": "2026-08-22",
     "title": "sales-catalogの方針を更新",
@@ -3815,6 +3857,22 @@
       "機能追加"
     ],
     "href": "../updates/#u-upd-fef059e50e48"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-23",
+    "date": "2026-08-23",
+    "title": "Audience-Minerを改善、ほか2件",
+    "summary": "Audience-Minerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。 同じ日の開発記録として、『Audience-Minerを改善』、『Developer-Cardを公開』もまとめています。",
+    "project": "Audience-Miner, Developer-Card",
+    "type": "開発日誌",
+    "tags": [
+      "Audience-Miner",
+      "Developer-Card",
+      "新製品",
+      "機能変更"
+    ],
+    "href": "../journal/2026-08-23.html"
   },
   {
     "kind": "JOURNAL",

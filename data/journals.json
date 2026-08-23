@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-08-23",
+    "title": "Audience-Minerを改善、ほか2件",
+    "summary": "Audience-Minerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。 同じ日の開発記録として、『Audience-Minerを改善』、『Developer-Cardを公開』もまとめています。",
+    "update_ids": [
+      "upd-a11bda1de52f",
+      "upd-723090eca594",
+      "upd-87f4bc43c62c"
+    ],
+    "projects": [
+      "Audience-Miner",
+      "Developer-Card"
+    ],
+    "types": [
+      "新製品",
+      "機能変更"
+    ],
+    "tags": [
+      "Audience-Miner",
+      "Developer-Card",
+      "新製品",
+      "機能変更"
+    ]
+  },
+  {
     "date": "2026-08-22",
     "title": "sales-catalogの方針を更新、ほか5件",
     "summary": "sales-catalogの説明や運用方針を更新しました。 同じ日の開発記録として、『limit-developmentに機能を追加』、『sales-catalogを公開』、『limit-developmentの方針を更新』もまとめています。",
