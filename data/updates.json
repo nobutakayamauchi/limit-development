@@ -1149,12 +1149,12 @@
     "type": "方針変更",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "FOUNDRY GROWTH ENGINEの方針を更新",
-    "summary": "FOUNDRY GROWTH ENGINEの説明や運用方針を更新しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEの説明や運用方針を更新しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "方針変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/ffc467e0c6933ede3c097423784b02106845a08e,https://github.com/nobutakayamauchi/limit-development/commit/9749e7c10f08ca715b2e849154b85e17857729c3",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/ffc467e0c6933ede3c097423784b02106845a08e",
     "article_score": 0.401,
     "article_candidate": false,
     "review_status": "pending"
