@@ -1084,10 +1084,10 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-e6cdd8fc0573",
+    "id": "upd-55c68412e4c5",
     "date": "2026-08-19",
-    "title": "スマホ向けトップ画面を調整",
-    "summary": "ONE PHONE FOUNDRYのトップ画面をスマホ中心の構成へ調整しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "title": "スマホ表示を安定版へ復元",
+    "summary": "スマホ表示で崩れていたレイアウトを以前の安定した構成へ戻しました。",
     "project": "limit-development",
     "type": "機能変更",
     "tags": [
@@ -1096,7 +1096,7 @@
       "mobile",
       "機能変更"
     ],
-    "href": "../updates/#u-upd-e6cdd8fc0573"
+    "href": "../updates/#u-upd-55c68412e4c5"
   },
   {
     "kind": "UPDATE",

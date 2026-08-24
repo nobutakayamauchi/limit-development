@@ -1308,21 +1308,21 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-e6cdd8fc0573",
-    "source_id": "nobutakayamauchi/limit-development@e6ed5039215ba228d2b3274e22a4923478627a70",
-    "captured_at": "2026-08-19T10:10:44+09:00",
+    "id": "upd-55c68412e4c5",
+    "source_id": "nobutakayamauchi/limit-development@1839c0ce2ca359876aad1122228247578d1f1d12",
+    "captured_at": "2026-08-19T10:15:43+09:00",
     "type": "機能変更",
     "project": "limit-development",
-    "title": "スマホ向けトップ画面を調整",
-    "summary": "ONE PHONE FOUNDRYのトップ画面をスマホ中心の構成へ調整しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "title": "スマホ表示を安定版へ復元",
+    "summary": "スマホ表示で崩れていたレイアウトを以前の安定した構成へ戻しました。",
     "tags": [
       "UI",
       "limit-development",
       "mobile",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/1839c0ce2ca359876aad1122228247578d1f1d12,https://github.com/nobutakayamauchi/limit-development/commit/e6ed5039215ba228d2b3274e22a4923478627a70",
-    "article_score": 0.35,
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/1839c0ce2ca359876aad1122228247578d1f1d12",
+    "article_score": 0.25,
     "article_candidate": false,
     "review_status": "pending"
   },
