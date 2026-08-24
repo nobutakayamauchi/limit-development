@@ -1277,12 +1277,12 @@
     "type": "機能変更",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/c1716277ec466b8f2d22916b505411bb553bf724,https://github.com/nobutakayamauchi/limit-development/commit/0f9c940a497cdddadaf365fb83c7142c4adbdaf8",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/c1716277ec466b8f2d22916b505411bb553bf724",
     "article_score": 0.171,
     "article_candidate": false,
     "review_status": "pending"
@@ -4684,23 +4684,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/b75e3cc55c7c9754e3c0c914ee53c06e1f91cf86",
     "article_score": 0.329,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-d852cab47ffe",
-    "source_id": "nobutakayamauchi/RTS@a1db70ee4190e1afca21c410323e6c31fe9e147e",
-    "captured_at": "2026-07-25T22:16:52+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/a1db70ee4190e1afca21c410323e6c31fe9e147e",
-    "article_score": 0.336,
     "article_candidate": false,
     "review_status": "pending"
   }
