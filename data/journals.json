@@ -1,9 +1,11 @@
 [
   {
     "date": "2026-08-24",
-    "title": "LLM-Cost-Routerを改善、ほか4件",
-    "summary": "LLM-Cost-Routerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『sales-catalogの方針を更新』、『sales-catalogを公開』、『sales-catalogに機能を追加』もまとめています。",
+    "title": "sales-catalogの機能を整理、ほか6件",
+    "summary": "sales-catalogで不要になった機能を削除しました。 同じ日の開発記録として、『sales-catalogを改善』、『LLM-Cost-Routerを改善』、『sales-catalogの方針を更新』もまとめています。",
     "update_ids": [
+      "upd-fb39eef19d89",
+      "upd-a53fd44e9563",
       "upd-393f655da4c6",
       "upd-743c2816327a",
       "upd-0cafb8bc3e27",
@@ -17,6 +19,7 @@
     "types": [
       "新製品",
       "方針変更",
+      "機能削除",
       "機能変更",
       "機能追加"
     ],
@@ -25,6 +28,7 @@
       "sales-catalog",
       "新製品",
       "方針変更",
+      "機能削除",
       "機能変更",
       "機能追加"
     ]
@@ -381,14 +385,13 @@
   },
   {
     "date": "2026-08-16",
-    "title": "TRACEを改善、ほか17件",
+    "title": "TRACEを改善、ほか16件",
     "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『Ultimate-Loopを改善』、『limit-developmentを改善』、『limit-developmentに機能を追加』もまとめています。",
     "update_ids": [
       "upd-f1926527c5a2",
       "upd-93c0c0d3ae42",
       "upd-74ad121838c6",
       "upd-f492ba89369a",
-      "upd-0a388626abfb",
       "upd-d24182b0e391",
       "upd-ca36bc6dcfaf",
       "upd-1914c85346b9",

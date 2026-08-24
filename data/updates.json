@@ -1,5 +1,39 @@
 [
   {
+    "id": "upd-fb39eef19d89",
+    "source_id": "nobutakayamauchi/sales-catalog@0934749246056e8297370ca088816e0b5eeabc64",
+    "captured_at": "2026-08-24T10:50:56+09:00",
+    "type": "機能削除",
+    "project": "sales-catalog",
+    "title": "sales-catalogの機能を整理",
+    "summary": "sales-catalogで不要になった機能を削除しました。",
+    "tags": [
+      "sales-catalog",
+      "機能削除"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/0934749246056e8297370ca088816e0b5eeabc64",
+    "article_score": 0.222,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-a53fd44e9563",
+    "source_id": "nobutakayamauchi/sales-catalog@4c5c6ea19f79a0d1db2766a67be53365f7cb1199",
+    "captured_at": "2026-08-24T10:50:42+09:00",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/4c5c6ea19f79a0d1db2766a67be53365f7cb1199",
+    "article_score": 0.16,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-393f655da4c6",
     "source_id": "nobutakayamauchi/LLM-Cost-Router@e98fc462a393287f778004c452bcda6b07cf0a13",
     "captured_at": "2026-08-24T00:59:10+09:00",
@@ -2430,23 +2464,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/a17cde4900b367aff0336d0022a373d04142ae7f,https://github.com/nobutakayamauchi/limit-development/commit/72c234085b75b80ed85769ee088b08691763d48e",
     "article_score": 0.432,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-0a388626abfb",
-    "source_id": "nobutakayamauchi/limit-development@83f740dbb2810b6c9d353965334d6f0ff03a953e",
-    "captured_at": "2026-08-16T15:35:09+09:00",
-    "type": "方針変更",
-    "project": "limit-development",
-    "title": "limit-developmentの方針を更新",
-    "summary": "limit-developmentの説明や運用方針を更新しました。",
-    "tags": [
-      "limit-development",
-      "方針変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/83f740dbb2810b6c9d353965334d6f0ff03a953e",
-    "article_score": 0.242,
     "article_candidate": false,
     "review_status": "pending"
   },
