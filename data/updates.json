@@ -1327,25 +1327,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-135be8bb08fb",
-    "source_id": "nobutakayamauchi/limit-development@c2d43005eb6645917f6c0adbcbfee5bceb39f15b",
-    "captured_at": "2026-08-19T09:33:09+09:00",
-    "type": "新プロジェクト",
-    "project": "limit-development",
-    "title": "ONE PHONE FOUNDRYのホームページを公開",
-    "summary": "スマホ1台を開発拠点として使うONE PHONE FOUNDRYのホームページを新しく構築しました。",
-    "tags": [
-      "ONE PHONE FOUNDRY",
-      "homepage",
-      "limit-development",
-      "新プロジェクト"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/c2d43005eb6645917f6c0adbcbfee5bceb39f15b",
-    "article_score": 0.85,
-    "article_candidate": true,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-f04ed560d4ee",
     "source_id": "nobutakayamauchi/WebAI-Bridge@4bd0172b6401fcac12deb0a70eea2022db6167f9",
     "captured_at": "2026-08-19T07:23:38+09:00",
