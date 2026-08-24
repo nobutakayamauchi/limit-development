@@ -1308,25 +1308,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-55c68412e4c5",
-    "source_id": "nobutakayamauchi/limit-development@1839c0ce2ca359876aad1122228247578d1f1d12",
-    "captured_at": "2026-08-19T10:15:43+09:00",
-    "type": "機能変更",
-    "project": "limit-development",
-    "title": "スマホ表示を安定版へ復元",
-    "summary": "スマホ表示で崩れていたレイアウトを以前の安定した構成へ戻しました。",
-    "tags": [
-      "UI",
-      "limit-development",
-      "mobile",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/1839c0ce2ca359876aad1122228247578d1f1d12",
-    "article_score": 0.25,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-f04ed560d4ee",
     "source_id": "nobutakayamauchi/WebAI-Bridge@4bd0172b6401fcac12deb0a70eea2022db6167f9",
     "captured_at": "2026-08-19T07:23:38+09:00",
