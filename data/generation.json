@@ -7,7 +7,7 @@
   "daily_intent_input": "daily-intents.limit-development.jsonl",
   "approved_daily_intents": 1,
   "expanded_journal_pages": 24,
-  "checked_at": "2026-08-25T00:01+09:00",
+  "checked_at": "2026-08-25T00:57+09:00",
   "repositories": [
     ".",
     "/tmp/fge-sources/Audience-Miner",
@@ -38,7 +38,7 @@
     "/tmp/fge-sources/seminar-compass"
   ],
   "git_only": true,
-  "evidence_count": 745,
+  "evidence_count": 744,
   "public_update_count": 273,
   "article_candidates": 0,
   "journal_days": 24
