@@ -1194,6 +1194,23 @@
     "review_status": "pending"
   },
   {
+    "id": "upd-26f1212b060e",
+    "source_id": "nobutakayamauchi/limit-development@59bdee09b1c35bf2b590f40155952ed3141bb2a3",
+    "captured_at": "2026-08-19T12:51:48+09:00",
+    "type": "機能追加",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/59bdee09b1c35bf2b590f40155952ed3141bb2a3,https://github.com/nobutakayamauchi/limit-development/commit/03434fab8b4726861f459279558c24b3a6f042cb,https://github.com/nobutakayamauchi/limit-development/commit/daeda74b975e6191c3fd9ab6dcb8686473313b97,https://github.com/nobutakayamauchi/limit-development/commit/9aef6c0f628fade8336110dfb4d4db56b592d714",
+    "article_score": 0.28,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-8c9417ef1696",
     "source_id": "nobutakayamauchi/Ultimate-Loop@eed18f1e5211d1e3ba4385b86fa4593006a94ea4",
     "captured_at": "2026-08-19T12:42:50+09:00",
@@ -1227,26 +1244,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/dd3cbd216af2b04eb22ea5f2d7adbe11bbe509c7",
     "article_score": 0.98,
-    "article_candidate": true,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-7f5ee919e44f",
-    "source_id": "nobutakayamauchi/limit-development@24a85464314e22c65a0ec03f4d8f4a13f875bd06",
-    "captured_at": "2026-08-19T12:00:03+09:00",
-    "type": "機能追加",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更4件もまとめています。",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "Knowledge Pack",
-      "Plain Core",
-      "機能追加",
-      "比較"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/59bdee09b1c35bf2b590f40155952ed3141bb2a3,https://github.com/nobutakayamauchi/limit-development/commit/03434fab8b4726861f459279558c24b3a6f042cb,https://github.com/nobutakayamauchi/limit-development/commit/daeda74b975e6191c3fd9ab6dcb8686473313b97,https://github.com/nobutakayamauchi/limit-development/commit/9aef6c0f628fade8336110dfb4d4db56b592d714,https://github.com/nobutakayamauchi/limit-development/commit/24a85464314e22c65a0ec03f4d8f4a13f875bd06",
-    "article_score": 0.82,
     "article_candidate": true,
     "review_status": "pending"
   },
