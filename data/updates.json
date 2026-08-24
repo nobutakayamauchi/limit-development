@@ -1288,26 +1288,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-3bb5029d4c82",
-    "source_id": "nobutakayamauchi/limit-development@c426794743d9934d3d21b8377c17eae7beae07ba",
-    "captured_at": "2026-08-19T11:47:31+09:00",
-    "type": "新製品",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "title": "FOUNDRY GROWTH ENGINEを開発",
-    "summary": "仕事の記録から更新情報・記事・開発日誌・SNS投稿を作り、公開直前のレビューまで準備する仕組みを追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
-    "tags": [
-      "Dogfood",
-      "FOUNDRY GROWTH ENGINE",
-      "仕事してください",
-      "新製品",
-      "自動広報"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/c426794743d9934d3d21b8377c17eae7beae07ba",
-    "article_score": 0.98,
-    "article_candidate": true,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-f04ed560d4ee",
     "source_id": "nobutakayamauchi/WebAI-Bridge@4bd0172b6401fcac12deb0a70eea2022db6167f9",
     "captured_at": "2026-08-19T07:23:38+09:00",
@@ -4721,23 +4701,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/a1db70ee4190e1afca21c410323e6c31fe9e147e",
     "article_score": 0.336,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-fef059e50e48",
-    "source_id": "nobutakayamauchi/RTS@42d74999f6ecc59fb61d7670c5bffd6a35b1c22c",
-    "captured_at": "2026-07-25T19:08:58+09:00",
-    "type": "機能追加",
-    "project": "RTS",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/42d74999f6ecc59fb61d7670c5bffd6a35b1c22c",
-    "article_score": 0.439,
     "article_candidate": false,
     "review_status": "pending"
   }
