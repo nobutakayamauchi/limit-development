@@ -2029,7 +2029,7 @@
     "id": "upd-f492ba89369a",
     "date": "2026-08-16",
     "title": "limit-developmentに機能を追加",
-    "summary": "limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
     "project": "limit-development",
     "type": "機能追加",
     "tags": [

@@ -2457,12 +2457,12 @@
     "type": "機能追加",
     "project": "limit-development",
     "title": "limit-developmentに機能を追加",
-    "summary": "limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
     "tags": [
       "limit-development",
       "機能追加"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/a17cde4900b367aff0336d0022a373d04142ae7f,https://github.com/nobutakayamauchi/limit-development/commit/72c234085b75b80ed85769ee088b08691763d48e",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/a17cde4900b367aff0336d0022a373d04142ae7f",
     "article_score": 0.432,
     "article_candidate": false,
     "review_status": "pending"
