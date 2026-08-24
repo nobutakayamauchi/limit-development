@@ -1257,7 +1257,7 @@
     "type": "機能追加",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更4件もまとめています。",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更3件もまとめています。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "Knowledge Pack",
@@ -1265,7 +1265,7 @@
       "機能追加",
       "比較"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/773ac101c43fd33a7434901319aab06fb4e76fc4,https://github.com/nobutakayamauchi/limit-development/commit/e36d38899faedfdead8ee272b8e432a697e67e29,https://github.com/nobutakayamauchi/limit-development/commit/7fc207e4733f64a2e3ef2fe4fdb93b58d8ded297,https://github.com/nobutakayamauchi/limit-development/commit/dbaefc6b04a8a228f961339a4d7ecb319d77390d,https://github.com/nobutakayamauchi/limit-development/commit/a10a47a7ede7231d32054deaf703399b5fde9248",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/773ac101c43fd33a7434901319aab06fb4e76fc4,https://github.com/nobutakayamauchi/limit-development/commit/e36d38899faedfdead8ee272b8e432a697e67e29,https://github.com/nobutakayamauchi/limit-development/commit/7fc207e4733f64a2e3ef2fe4fdb93b58d8ded297,https://github.com/nobutakayamauchi/limit-development/commit/dbaefc6b04a8a228f961339a4d7ecb319d77390d",
     "article_score": 0.82,
     "article_candidate": true,
     "review_status": "pending"
