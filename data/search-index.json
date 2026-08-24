@@ -1036,23 +1036,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-af80bd9cbff4",
-    "date": "2026-08-19",
-    "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "機能追加",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "Knowledge Pack",
-      "Plain Core",
-      "機能追加",
-      "比較"
-    ],
-    "href": "../updates/#u-upd-af80bd9cbff4"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-f04ed560d4ee",
     "date": "2026-08-19",
     "title": "WebAI-Bridgeを改善",
@@ -3951,7 +3934,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか42件",
+    "title": "limit-developmentを改善、ほか41件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",

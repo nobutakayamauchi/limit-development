@@ -1251,26 +1251,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-af80bd9cbff4",
-    "source_id": "nobutakayamauchi/limit-development@773ac101c43fd33a7434901319aab06fb4e76fc4",
-    "captured_at": "2026-08-19T11:59:52+09:00",
-    "type": "機能追加",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "Knowledge Pack",
-      "Plain Core",
-      "機能追加",
-      "比較"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/773ac101c43fd33a7434901319aab06fb4e76fc4",
-    "article_score": 0.82,
-    "article_candidate": true,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-f04ed560d4ee",
     "source_id": "nobutakayamauchi/WebAI-Bridge@4bd0172b6401fcac12deb0a70eea2022db6167f9",
     "captured_at": "2026-08-19T07:23:38+09:00",
