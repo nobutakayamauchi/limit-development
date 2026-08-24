@@ -1200,12 +1200,12 @@
     "type": "機能追加",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "FOUNDRY GROWTH ENGINEに機能を追加",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "機能追加"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/59bdee09b1c35bf2b590f40155952ed3141bb2a3,https://github.com/nobutakayamauchi/limit-development/commit/03434fab8b4726861f459279558c24b3a6f042cb,https://github.com/nobutakayamauchi/limit-development/commit/daeda74b975e6191c3fd9ab6dcb8686473313b97",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/59bdee09b1c35bf2b590f40155952ed3141bb2a3,https://github.com/nobutakayamauchi/limit-development/commit/03434fab8b4726861f459279558c24b3a6f042cb",
     "article_score": 0.28,
     "article_candidate": false,
     "review_status": "pending"
