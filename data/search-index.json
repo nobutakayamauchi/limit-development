@@ -2012,20 +2012,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-74ad121838c6",
-    "date": "2026-08-16",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "limit-development",
-    "type": "機能変更",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-74ad121838c6"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-d24182b0e391",
     "date": "2026-08-16",
     "title": "Ultimate-Loopを改善",
@@ -4134,16 +4120,15 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-16",
     "date": "2026-08-16",
-    "title": "TRACEを改善、ほか15件",
-    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『Ultimate-Loopを改善』、『limit-developmentを改善』、『Ultimate-Loopを改善』もまとめています。",
-    "project": "RTS, RTS-Evolution, TRACE, Ultimate-Loop, limit-development",
+    "title": "TRACEを改善、ほか14件",
+    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『Ultimate-Loopを改善』、『Ultimate-Loopを改善』、『Ultimate-Loopに機能を追加』もまとめています。",
+    "project": "RTS, RTS-Evolution, TRACE, Ultimate-Loop",
     "type": "開発日誌",
     "tags": [
       "RTS",
       "RTS-Evolution",
       "TRACE",
       "Ultimate-Loop",
-      "limit-development",
       "方針変更",
       "機能変更",
       "機能追加",
