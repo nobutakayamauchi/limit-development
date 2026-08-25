@@ -1166,12 +1166,12 @@
     "type": "機能変更",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更2件も、この更新にまとめています。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/723759df249edeae10c1bed71edac0e8ef8e74f5,https://github.com/nobutakayamauchi/limit-development/commit/0f17065d04042be233f3af704a7b96a6b24a1ebf,https://github.com/nobutakayamauchi/limit-development/commit/4f5ef6f01ad68353ce02a20d1adb2277f49f071d,https://github.com/nobutakayamauchi/limit-development/commit/017c70a115a2715176e1d3c0078e4492ea1801a5",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/723759df249edeae10c1bed71edac0e8ef8e74f5,https://github.com/nobutakayamauchi/limit-development/commit/0f17065d04042be233f3af704a7b96a6b24a1ebf,https://github.com/nobutakayamauchi/limit-development/commit/4f5ef6f01ad68353ce02a20d1adb2277f49f071d",
     "article_score": 0.333,
     "article_candidate": false,
     "review_status": "pending"
