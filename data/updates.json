@@ -1177,12 +1177,12 @@
     "type": "機能追加",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "FOUNDRY GROWTH ENGINEに機能を追加",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "機能追加"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/83e9055dfe6f2b79a3b37e271853e2d5ddb019c5,https://github.com/nobutakayamauchi/limit-development/commit/27969a9bec5caf2b30635e8440e3a0ba7f22ec56",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/83e9055dfe6f2b79a3b37e271853e2d5ddb019c5",
     "article_score": 0.347,
     "article_candidate": false,
     "review_status": "pending"
@@ -4210,23 +4210,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/0b0acf95433620110cfa8c881b036aa09f09158c,https://github.com/nobutakayamauchi/RTS/commit/c860c20c8740c480afae2179fb44e0650492d30b",
     "article_score": 0.341,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-30ac64a70538",
-    "source_id": "nobutakayamauchi/RTS@ff534440c8f561cd98dcc0b3026d061ea1d8c759",
-    "captured_at": "2026-07-27T08:18:59+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/ff534440c8f561cd98dcc0b3026d061ea1d8c759",
-    "article_score": 0.339,
     "article_candidate": false,
     "review_status": "pending"
   }
