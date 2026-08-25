@@ -982,23 +982,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-27f0695d7648",
-    "date": "2026-08-19",
-    "title": "FOUNDRY GROWTH ENGINEを開発",
-    "summary": "仕事の記録から更新情報・記事・開発日誌・SNS投稿を作り、公開直前のレビューまで準備する仕組みを追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "新製品",
-    "tags": [
-      "Dogfood",
-      "FOUNDRY GROWTH ENGINE",
-      "仕事してください",
-      "新製品",
-      "自動広報"
-    ],
-    "href": "../updates/#u-upd-27f0695d7648"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-8c9417ef1696",
     "date": "2026-08-19",
     "title": "Ultimate-Loopに機能を追加",
@@ -3518,20 +3501,6 @@
     "href": "../updates/#u-upd-40d013f139c2"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-c1add60a690e",
-    "date": "2026-07-27",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "project": "RTS",
-    "type": "機能追加",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-c1add60a690e"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-08-26",
     "date": "2026-08-26",
@@ -3661,13 +3630,12 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか33件",
+    "title": "limit-developmentを改善、ほか32件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
     "tags": [
       "DEVELOPMENT RECORD",
-      "Dogfood",
       "FOUNDRY GROWTH ENGINE",
       "GitHub",
       "JOURNAL",
@@ -3677,7 +3645,6 @@
       "WebAI-Bridge",
       "limit-development",
       "mobile",
-      "仕事してください",
       "導線",
       "新プロジェクト",
       "新製品",
@@ -3687,7 +3654,6 @@
       "機能追加",
       "比較",
       "研究・検証",
-      "自動広報",
       "自動更新"
     ],
     "href": "../journal/2026-08-19.html"
@@ -3967,15 +3933,14 @@
     "kind": "JOURNAL",
     "id": "journal-2026-07-27",
     "date": "2026-07-27",
-    "title": "RTSを改善、ほか15件",
+    "title": "RTSを改善、ほか14件",
     "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』、『RTSを改善』、『RTSを改善』もまとめています。",
     "project": "RTS",
     "type": "開発日誌",
     "tags": [
       "RTS",
       "新製品",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ],
     "href": "../journal/2026-07-27.html"
   }
