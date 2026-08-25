@@ -1166,12 +1166,12 @@
     "type": "機能変更",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更3件も、この更新にまとめています。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/723759df249edeae10c1bed71edac0e8ef8e74f5,https://github.com/nobutakayamauchi/limit-development/commit/0f17065d04042be233f3af704a7b96a6b24a1ebf,https://github.com/nobutakayamauchi/limit-development/commit/4f5ef6f01ad68353ce02a20d1adb2277f49f071d,https://github.com/nobutakayamauchi/limit-development/commit/017c70a115a2715176e1d3c0078e4492ea1801a5,https://github.com/nobutakayamauchi/limit-development/commit/af68b493f643a7a60175b8fd3a372716af6c6a0d",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/723759df249edeae10c1bed71edac0e8ef8e74f5,https://github.com/nobutakayamauchi/limit-development/commit/0f17065d04042be233f3af704a7b96a6b24a1ebf,https://github.com/nobutakayamauchi/limit-development/commit/4f5ef6f01ad68353ce02a20d1adb2277f49f071d,https://github.com/nobutakayamauchi/limit-development/commit/017c70a115a2715176e1d3c0078e4492ea1801a5",
     "article_score": 0.333,
     "article_candidate": false,
     "review_status": "pending"
@@ -4457,40 +4457,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/59ef50b7a6be6381e11ddea3fcd49b6ec41e3281",
     "article_score": 0.335,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-6e91e0058d56",
-    "source_id": "nobutakayamauchi/RTS@1ac95ee60e56210e5bf8f490901b45183f79f3ca",
-    "captured_at": "2026-07-26T17:54:01+09:00",
-    "type": "機能追加",
-    "project": "RTS",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/1ac95ee60e56210e5bf8f490901b45183f79f3ca",
-    "article_score": 0.365,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-bc36efff1eab",
-    "source_id": "nobutakayamauchi/RTS@884bd46e3e082e0a7661a61b28bc13af4415766e",
-    "captured_at": "2026-07-26T17:28:29+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/884bd46e3e082e0a7661a61b28bc13af4415766e",
-    "article_score": 0.264,
     "article_candidate": false,
     "review_status": "pending"
   }
