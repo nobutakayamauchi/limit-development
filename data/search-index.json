@@ -1,6 +1,34 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-fb6d2ec7e2c8",
+    "date": "2026-08-26",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "sales-catalog",
+    "type": "機能変更",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-fb6d2ec7e2c8"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0140b4e92c20",
+    "date": "2026-08-26",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。",
+    "project": "sales-catalog",
+    "type": "機能追加",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0140b4e92c20"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-914bb1ae3393",
     "date": "2026-08-25",
     "title": "sales-catalogを改善",
@@ -985,20 +1013,6 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-3f77207ec436"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-3724969d2349",
-    "date": "2026-08-19",
-    "title": "FOUNDRY GROWTH ENGINEの方針を更新",
-    "summary": "FOUNDRY GROWTH ENGINEの説明や運用方針を更新しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "方針変更",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "方針変更"
-    ],
-    "href": "../updates/#u-upd-3724969d2349"
   },
   {
     "kind": "UPDATE",
@@ -3591,18 +3605,19 @@
     "href": "../updates/#u-upd-d659a1506ac5"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-916397fb2f76",
-    "date": "2026-07-27",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "project": "RTS",
-    "type": "機能追加",
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-26",
+    "date": "2026-08-26",
+    "title": "sales-catalogを改善、ほか1件",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『sales-catalogに機能を追加』もまとめています。",
+    "project": "sales-catalog",
+    "type": "開発日誌",
     "tags": [
-      "RTS",
+      "sales-catalog",
+      "機能変更",
       "機能追加"
     ],
-    "href": "../updates/#u-upd-916397fb2f76"
+    "href": "../journal/2026-08-26.html"
   },
   {
     "kind": "JOURNAL",
@@ -3719,7 +3734,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか37件",
+    "title": "limit-developmentを改善、ほか36件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
@@ -4025,7 +4040,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-07-27",
     "date": "2026-07-27",
-    "title": "RTSを改善、ほか20件",
+    "title": "RTSを改善、ほか19件",
     "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』、『RTSを改善』、『RTSを改善』もまとめています。",
     "project": "RTS",
     "type": "開発日誌",

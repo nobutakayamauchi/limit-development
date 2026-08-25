@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-26",
+    "title": "sales-catalogを改善、ほか1件",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『sales-catalogに機能を追加』もまとめています。",
+    "update_ids": [
+      "upd-fb6d2ec7e2c8",
+      "upd-0140b4e92c20"
+    ],
+    "projects": [
+      "sales-catalog"
+    ],
+    "types": [
+      "機能変更",
+      "機能追加"
+    ],
+    "tags": [
+      "sales-catalog",
+      "機能変更",
+      "機能追加"
+    ]
+  },
+  {
     "date": "2026-08-25",
     "title": "sales-catalogを改善、ほか2件",
     "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『sales-catalogに機能を追加』、『sales-catalogを改善』もまとめています。",
@@ -199,7 +220,7 @@
   },
   {
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか37件",
+    "title": "limit-developmentを改善、ほか36件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "update_ids": [
       "upd-89dcec3f8e91",
@@ -229,7 +250,6 @@
       "upd-a299a4849f94",
       "upd-7362363464fe",
       "upd-3f77207ec436",
-      "upd-3724969d2349",
       "upd-8c9417ef1696",
       "upd-f04ed560d4ee",
       "upd-063b5867c668",
@@ -805,7 +825,7 @@
   },
   {
     "date": "2026-07-27",
-    "title": "RTSを改善、ほか20件",
+    "title": "RTSを改善、ほか19件",
     "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』、『RTSを改善』、『RTSを改善』もまとめています。",
     "update_ids": [
       "upd-b73d42f50158",
@@ -827,8 +847,7 @@
       "upd-4b4ab5059231",
       "upd-bcd48db034fc",
       "upd-94ff82f79072",
-      "upd-d659a1506ac5",
-      "upd-916397fb2f76"
+      "upd-d659a1506ac5"
     ],
     "projects": [
       "RTS"
