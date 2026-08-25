@@ -1200,12 +1200,12 @@
     "type": "機能追加",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "FOUNDRY GROWTH ENGINEに機能を追加",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "機能追加"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/59bdee09b1c35bf2b590f40155952ed3141bb2a3,https://github.com/nobutakayamauchi/limit-development/commit/03434fab8b4726861f459279558c24b3a6f042cb",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/59bdee09b1c35bf2b590f40155952ed3141bb2a3",
     "article_score": 0.28,
     "article_candidate": false,
     "review_status": "pending"
@@ -4576,40 +4576,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/8850649649101ac8857f7edf8c5932743d85353d",
     "article_score": 0.364,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-7562de272880",
-    "source_id": "nobutakayamauchi/RTS@7747815d196360266ec13ed4dfeacfa8540ab42e",
-    "captured_at": "2026-07-26T13:31:44+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/7747815d196360266ec13ed4dfeacfa8540ab42e",
-    "article_score": 0.265,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-9f8cb70c5171",
-    "source_id": "nobutakayamauchi/RTS@0ed4d7530c8657db005452e855fccd65948b922e",
-    "captured_at": "2026-07-26T13:21:21+09:00",
-    "type": "機能追加",
-    "project": "RTS",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/0ed4d7530c8657db005452e855fccd65948b922e",
-    "article_score": 0.434,
     "article_candidate": false,
     "review_status": "pending"
   }
