@@ -977,7 +977,7 @@
     "id": "upd-e2b902378ed9",
     "date": "2026-08-19",
     "title": "FOUNDRY GROWTH ENGINEを検証",
-    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "研究・検証",
     "tags": [
@@ -3748,34 +3748,6 @@
     "href": "../updates/#u-upd-f8c2c85c8101"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-9e6a7d05453f",
-    "date": "2026-07-26",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-9e6a7d05453f"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-1bc969a5571e",
-    "date": "2026-07-26",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "project": "RTS",
-    "type": "機能追加",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-1bc969a5571e"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-08-24",
     "date": "2026-08-24",
@@ -4198,7 +4170,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-07-26",
     "date": "2026-07-26",
-    "title": "RTSに機能を追加、ほか9件",
+    "title": "RTSに機能を追加、ほか7件",
     "summary": "RTSで新しい機能を使えるようにしました。 同じ日の開発記録として、『RTSを改善』、『RTSを改善』、『RTSに機能を追加』もまとめています。",
     "project": "RTS",
     "type": "開発日誌",

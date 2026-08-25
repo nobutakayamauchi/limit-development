@@ -1183,12 +1183,12 @@
     "type": "研究・検証",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "FOUNDRY GROWTH ENGINEを検証",
-    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "研究・検証"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/ae621f360b699cb8ecdb9e5f194c099a75da586d,https://github.com/nobutakayamauchi/limit-development/commit/a2ea8bb32f7d8bcf3aab9603651efb8d861ac47b",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/ae621f360b699cb8ecdb9e5f194c099a75da586d",
     "article_score": 0.228,
     "article_candidate": false,
     "review_status": "pending"
@@ -4542,40 +4542,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/c6c2d0cf747edbdb16773a9992c64077b05beed3",
     "article_score": 0.334,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-9e6a7d05453f",
-    "source_id": "nobutakayamauchi/RTS@09e672c8b3fb813a28f2277217c195b002ea7ea3",
-    "captured_at": "2026-07-26T14:16:54+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/09e672c8b3fb813a28f2277217c195b002ea7ea3",
-    "article_score": 0.262,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-1bc969a5571e",
-    "source_id": "nobutakayamauchi/RTS@8850649649101ac8857f7edf8c5932743d85353d",
-    "captured_at": "2026-07-26T14:06:09+09:00",
-    "type": "機能追加",
-    "project": "RTS",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/8850649649101ac8857f7edf8c5932743d85353d",
-    "article_score": 0.364,
     "article_candidate": false,
     "review_status": "pending"
   }
