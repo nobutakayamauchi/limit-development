@@ -1,6 +1,34 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-de6de80c8a4c",
+    "date": "2026-08-26",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "project": "sales-catalog",
+    "type": "機能変更",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-de6de80c8a4c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-111368803b2f",
+    "date": "2026-08-26",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "sales-catalog",
+    "type": "機能追加",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-111368803b2f"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-fb6d2ec7e2c8",
     "date": "2026-08-26",
     "title": "sales-catalogを改善",
@@ -999,20 +1027,6 @@
       "機能削除"
     ],
     "href": "../updates/#u-upd-7362363464fe"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-3f77207ec436",
-    "date": "2026-08-19",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "limit-development",
-    "type": "機能変更",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-3f77207ec436"
   },
   {
     "kind": "UPDATE",
@@ -3591,25 +3605,11 @@
     "href": "../updates/#u-upd-94ff82f79072"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-d659a1506ac5",
-    "date": "2026-07-27",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-d659a1506ac5"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-08-26",
     "date": "2026-08-26",
-    "title": "sales-catalogを改善、ほか1件",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『sales-catalogに機能を追加』もまとめています。",
+    "title": "sales-catalogを改善、ほか3件",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『sales-catalogに機能を追加』、『sales-catalogを改善』、『sales-catalogに機能を追加』もまとめています。",
     "project": "sales-catalog",
     "type": "開発日誌",
     "tags": [
@@ -3734,7 +3734,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか36件",
+    "title": "limit-developmentを改善、ほか35件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
@@ -4040,7 +4040,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-07-27",
     "date": "2026-07-27",
-    "title": "RTSを改善、ほか19件",
+    "title": "RTSを改善、ほか18件",
     "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』、『RTSを改善』、『RTSを改善』もまとめています。",
     "project": "RTS",
     "type": "開発日誌",
