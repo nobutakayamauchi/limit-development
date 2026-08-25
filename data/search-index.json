@@ -1016,20 +1016,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-7362363464fe",
-    "date": "2026-08-19",
-    "title": "FOUNDRY GROWTH ENGINEの機能を整理",
-    "summary": "FOUNDRY GROWTH ENGINEの機能を整理しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "機能削除",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能削除"
-    ],
-    "href": "../updates/#u-upd-7362363464fe"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-8c9417ef1696",
     "date": "2026-08-19",
     "title": "Ultimate-Loopに機能を追加",
@@ -3577,34 +3563,6 @@
     "href": "../updates/#u-upd-4b4ab5059231"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-bcd48db034fc",
-    "date": "2026-07-27",
-    "title": "RTSを公開",
-    "summary": "RTSを新しく公開しました。",
-    "project": "RTS",
-    "type": "新製品",
-    "tags": [
-      "RTS",
-      "新製品"
-    ],
-    "href": "../updates/#u-upd-bcd48db034fc"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-94ff82f79072",
-    "date": "2026-07-27",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-94ff82f79072"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-08-26",
     "date": "2026-08-26",
@@ -3734,7 +3692,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか35件",
+    "title": "limit-developmentを改善、ほか34件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
@@ -4040,7 +3998,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-07-27",
     "date": "2026-07-27",
-    "title": "RTSを改善、ほか18件",
+    "title": "RTSを改善、ほか16件",
     "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』、『RTSを改善』、『RTSを改善』もまとめています。",
     "project": "RTS",
     "type": "開発日誌",
