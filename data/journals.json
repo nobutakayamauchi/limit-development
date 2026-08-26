@@ -224,7 +224,7 @@
   },
   {
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか31件",
+    "title": "limit-developmentを改善、ほか30件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "update_ids": [
       "upd-89dcec3f8e91",
@@ -248,7 +248,6 @@
       "upd-9547721295c7",
       "upd-2d63b5764407",
       "upd-972077b9c428",
-      "upd-264c1bd7aa2f",
       "upd-8c9417ef1696",
       "upd-f04ed560d4ee",
       "upd-063b5867c668",
@@ -821,7 +820,7 @@
   },
   {
     "date": "2026-07-27",
-    "title": "RTSを改善、ほか11件",
+    "title": "RTSを改善、ほか8件",
     "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』、『RTSを改善』、『RTSを改善』もまとめています。",
     "update_ids": [
       "upd-b73d42f50158",
@@ -832,10 +831,7 @@
       "upd-dc576c6e92cf",
       "upd-bf686d211e94",
       "upd-e606bfcacc20",
-      "upd-b76e78fd7116",
-      "upd-47602b891ba2",
-      "upd-ad7e0f593db8",
-      "upd-2f20b2b6afbb"
+      "upd-b76e78fd7116"
     ],
     "projects": [
       "RTS"
