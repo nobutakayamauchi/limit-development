@@ -839,7 +839,7 @@
     "id": "upd-42af6bd12622",
     "date": "2026-08-19",
     "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "機能変更",
     "tags": [
@@ -3263,20 +3263,6 @@
     "href": "../updates/#u-upd-53942e73ac2c"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-1fa4cd71fc3d",
-    "date": "2026-07-27",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-1fa4cd71fc3d"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-08-26",
     "date": "2026-08-26",
@@ -3706,19 +3692,5 @@
       "機能変更"
     ],
     "href": "../journal/2026-07-29.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-07-27",
-    "date": "2026-07-27",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "開発日誌",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../journal/2026-07-27.html"
   }
 ]

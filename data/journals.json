@@ -819,23 +819,5 @@
       "RTS",
       "機能変更"
     ]
-  },
-  {
-    "date": "2026-07-27",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "update_ids": [
-      "upd-1fa4cd71fc3d"
-    ],
-    "projects": [
-      "RTS"
-    ],
-    "types": [
-      "機能変更"
-    ],
-    "tags": [
-      "RTS",
-      "機能変更"
-    ]
   }
 ]
