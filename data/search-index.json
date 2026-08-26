@@ -884,20 +884,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-4d8bbd0acfea",
-    "date": "2026-08-19",
-    "title": "limit-developmentに機能を追加",
-    "summary": "limit-developmentで新しい機能を使えるようにしました。",
-    "project": "limit-development",
-    "type": "機能追加",
-    "tags": [
-      "limit-development",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-4d8bbd0acfea"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-f09a21409430",
     "date": "2026-08-19",
     "title": "WebAI-Bridgeを開始",
@@ -3278,21 +3264,7 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-b73d42f50158",
-    "date": "2026-07-27",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-b73d42f50158"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-d4da05906461",
+    "id": "upd-1fa4cd71fc3d",
     "date": "2026-07-27",
     "title": "RTSを改善",
     "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
@@ -3302,7 +3274,7 @@
       "RTS",
       "機能変更"
     ],
-    "href": "../updates/#u-upd-d4da05906461"
+    "href": "../updates/#u-upd-1fa4cd71fc3d"
   },
   {
     "kind": "JOURNAL",
@@ -3437,7 +3409,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか23件",
+    "title": "limit-developmentを改善、ほか22件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
@@ -3739,8 +3711,8 @@
     "kind": "JOURNAL",
     "id": "journal-2026-07-27",
     "date": "2026-07-27",
-    "title": "RTSを改善、ほか1件",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』もまとめています。",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
     "project": "RTS",
     "type": "開発日誌",
     "tags": [

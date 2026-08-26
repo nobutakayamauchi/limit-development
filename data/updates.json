@@ -1069,23 +1069,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-4d8bbd0acfea",
-    "source_id": "nobutakayamauchi/limit-development@f647824473b18166d6cbc6cdcc77f818752f1f33",
-    "captured_at": "2026-08-19T18:08:35+09:00",
-    "type": "機能追加",
-    "project": "limit-development",
-    "title": "limit-developmentに機能を追加",
-    "summary": "limit-developmentで新しい機能を使えるようにしました。",
-    "tags": [
-      "limit-development",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/f647824473b18166d6cbc6cdcc77f818752f1f33",
-    "article_score": 0.276,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-f09a21409430",
     "source_id": "nobutakayamauchi/WebAI-Bridge@b463f002ff687f54c1bed51b4ec7d8a821812fd8",
     "captured_at": "2026-08-19T17:54:00+09:00",
@@ -3976,26 +3959,9 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-b73d42f50158",
-    "source_id": "nobutakayamauchi/RTS@845d9618b4eb3accc8653855053b08f42283985a",
-    "captured_at": "2026-07-27T22:00:05+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/71ed213997d720a47a14c9cdf701971b8cc80bb6,https://github.com/nobutakayamauchi/RTS/commit/845d9618b4eb3accc8653855053b08f42283985a",
-    "article_score": 0.18,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-d4da05906461",
-    "source_id": "nobutakayamauchi/RTS@f86a5644d353fdd2ad54c8205667510a29807393",
-    "captured_at": "2026-07-27T20:47:24+09:00",
+    "id": "upd-1fa4cd71fc3d",
+    "source_id": "nobutakayamauchi/RTS@71ed213997d720a47a14c9cdf701971b8cc80bb6",
+    "captured_at": "2026-07-27T22:46:43+09:00",
     "type": "機能変更",
     "project": "RTS",
     "title": "RTSを改善",
@@ -4004,8 +3970,8 @@
       "RTS",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/f86a5644d353fdd2ad54c8205667510a29807393",
-    "article_score": 0.177,
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/71ed213997d720a47a14c9cdf701971b8cc80bb6",
+    "article_score": 0.178,
     "article_candidate": false,
     "review_status": "pending"
   }
