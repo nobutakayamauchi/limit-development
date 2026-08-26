@@ -1018,7 +1018,7 @@
     "type": "機能変更",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
     "tags": [
       "DEVELOPMENT RECORD",
       "FOUNDRY GROWTH ENGINE",
@@ -1029,7 +1029,7 @@
       "機能変更",
       "自動更新"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/41c128a9e8a5d67ed159d81247c15b08aecc5fa4,https://github.com/nobutakayamauchi/limit-development/commit/3cf8779e22a932cbcc70bad70ae61d812c9bf79e,https://github.com/nobutakayamauchi/limit-development/commit/027914cfbff953a205e07275b148ef2661583c92,https://github.com/nobutakayamauchi/limit-development/commit/f6e395b1a308fecebcd43f87a60a2167a5edb042",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/41c128a9e8a5d67ed159d81247c15b08aecc5fa4,https://github.com/nobutakayamauchi/limit-development/commit/3cf8779e22a932cbcc70bad70ae61d812c9bf79e,https://github.com/nobutakayamauchi/limit-development/commit/027914cfbff953a205e07275b148ef2661583c92",
     "article_score": 0.7,
     "article_candidate": false,
     "review_status": "pending"
