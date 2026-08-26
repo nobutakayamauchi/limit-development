@@ -1,5 +1,22 @@
 [
   {
+    "id": "upd-645b5abbda18",
+    "source_id": "nobutakayamauchi/sales-catalog@d1a017a2c963d3de52f96a441ed753a8123987b9",
+    "captured_at": "2026-08-26T10:40:15+09:00",
+    "type": "機能追加",
+    "project": "sales-catalog",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/d1a017a2c963d3de52f96a441ed753a8123987b9",
+    "article_score": 0.348,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-de6de80c8a4c",
     "source_id": "nobutakayamauchi/sales-catalog@8fb10d5a342200310ead2e5a600fe60ee2858565",
     "captured_at": "2026-08-26T02:06:00+09:00",
@@ -1167,23 +1184,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/4253e6b7d32bafe03e729844be6ee5b4f30c650a,https://github.com/nobutakayamauchi/limit-development/commit/2eac6387818255b118fcb6aa4c076f501ea0d8c6",
     "article_score": 0.275,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-8a5cfc0650ca",
-    "source_id": "nobutakayamauchi/limit-development@83e9055dfe6f2b79a3b37e271853e2d5ddb019c5",
-    "captured_at": "2026-08-19T14:35:14+09:00",
-    "type": "機能追加",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/83e9055dfe6f2b79a3b37e271853e2d5ddb019c5",
-    "article_score": 0.347,
     "article_candidate": false,
     "review_status": "pending"
   },
@@ -4193,23 +4193,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/690a5746f137e1683e8903523410f82c70819991",
     "article_score": 0.18,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-655d548b6841",
-    "source_id": "nobutakayamauchi/RTS@c860c20c8740c480afae2179fb44e0650492d30b",
-    "captured_at": "2026-07-27T09:31:33+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/0b0acf95433620110cfa8c881b036aa09f09158c,https://github.com/nobutakayamauchi/RTS/commit/c860c20c8740c480afae2179fb44e0650492d30b",
-    "article_score": 0.341,
     "article_candidate": false,
     "review_status": "pending"
   }
