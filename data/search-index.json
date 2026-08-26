@@ -1,6 +1,20 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-8f2fb7b6f3ac",
+    "date": "2026-08-26",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "project": "sales-catalog",
+    "type": "機能変更",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-8f2fb7b6f3ac"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-645b5abbda18",
     "date": "2026-08-26",
     "title": "sales-catalogに機能を追加",
@@ -968,17 +982,17 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-840f1a8aa08b",
+    "id": "upd-264c1bd7aa2f",
     "date": "2026-08-19",
     "title": "limit-developmentに機能を追加",
-    "summary": "limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
     "project": "limit-development",
     "type": "機能追加",
     "tags": [
       "limit-development",
       "機能追加"
     ],
-    "href": "../updates/#u-upd-840f1a8aa08b"
+    "href": "../updates/#u-upd-264c1bd7aa2f"
   },
   {
     "kind": "UPDATE",
@@ -3462,8 +3476,8 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-26",
     "date": "2026-08-26",
-    "title": "sales-catalogに機能を追加、ほか4件",
-    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ日の開発記録として、『sales-catalogを改善』、『sales-catalogに機能を追加』、『sales-catalogを改善』もまとめています。",
+    "title": "sales-catalogを改善、ほか5件",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『sales-catalogに機能を追加』、『sales-catalogを改善』、『sales-catalogに機能を追加』もまとめています。",
     "project": "sales-catalog",
     "type": "開発日誌",
     "tags": [

@@ -1,5 +1,22 @@
 [
   {
+    "id": "upd-8f2fb7b6f3ac",
+    "source_id": "nobutakayamauchi/sales-catalog@ddf858449ebe8cb8c7c21337cacc656f292f7e82",
+    "captured_at": "2026-08-26T11:55:41+09:00",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/ddf858449ebe8cb8c7c21337cacc656f292f7e82",
+    "article_score": 0.246,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-645b5abbda18",
     "source_id": "nobutakayamauchi/sales-catalog@d1a017a2c963d3de52f96a441ed753a8123987b9",
     "captured_at": "2026-08-26T10:40:15+09:00",
@@ -1171,19 +1188,19 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-840f1a8aa08b",
-    "source_id": "nobutakayamauchi/limit-development@2eac6387818255b118fcb6aa4c076f501ea0d8c6",
-    "captured_at": "2026-08-19T14:35:37+09:00",
+    "id": "upd-264c1bd7aa2f",
+    "source_id": "nobutakayamauchi/limit-development@4253e6b7d32bafe03e729844be6ee5b4f30c650a",
+    "captured_at": "2026-08-19T14:35:45+09:00",
     "type": "機能追加",
     "project": "limit-development",
     "title": "limit-developmentに機能を追加",
-    "summary": "limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
     "tags": [
       "limit-development",
       "機能追加"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/4253e6b7d32bafe03e729844be6ee5b4f30c650a,https://github.com/nobutakayamauchi/limit-development/commit/2eac6387818255b118fcb6aa4c076f501ea0d8c6",
-    "article_score": 0.275,
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/4253e6b7d32bafe03e729844be6ee5b4f30c650a",
+    "article_score": 0.272,
     "article_candidate": false,
     "review_status": "pending"
   },
