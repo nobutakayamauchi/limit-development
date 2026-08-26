@@ -1,5 +1,39 @@
 [
   {
+    "id": "upd-8cbcfbe48ff7",
+    "source_id": "nobutakayamauchi/sales-catalog@5e58b10d770b3c51009a10fc0cfa796f9448bbbb",
+    "captured_at": "2026-08-26T16:06:16+09:00",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/5e58b10d770b3c51009a10fc0cfa796f9448bbbb",
+    "article_score": 0.241,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-be1de9a13819",
+    "source_id": "nobutakayamauchi/sales-catalog@cb53872ed8a7c5630ac2adf4afe8e7e32724470b",
+    "captured_at": "2026-08-26T15:43:13+09:00",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/cb53872ed8a7c5630ac2adf4afe8e7e32724470b",
+    "article_score": 0.247,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-8f2fb7b6f3ac",
     "source_id": "nobutakayamauchi/sales-catalog@ddf858449ebe8cb8c7c21337cacc656f292f7e82",
     "captured_at": "2026-08-26T11:55:41+09:00",
@@ -1150,23 +1184,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/34e0e85b7b55c85da1e8f426b140cf2618252068",
     "article_score": 0.266,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-2d63b5764407",
-    "source_id": "nobutakayamauchi/limit-development@341c75168d629900b37d5be68e8ba573af2eb1e9",
-    "captured_at": "2026-08-19T14:38:50+09:00",
-    "type": "機能変更",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/341c75168d629900b37d5be68e8ba573af2eb1e9",
-    "article_score": 0.175,
     "article_candidate": false,
     "review_status": "pending"
   },
@@ -4090,23 +4107,6 @@
       "機能変更"
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/77a2efeccd2eb8f12633863b0daa6fb4c3d365f7",
-    "article_score": 0.18,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-e606bfcacc20",
-    "source_id": "nobutakayamauchi/RTS@4e2ab34035eb328524b5b8f893561072e7686046",
-    "captured_at": "2026-07-27T15:53:33+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/4e2ab34035eb328524b5b8f893561072e7686046",
     "article_score": 0.18,
     "article_candidate": false,
     "review_status": "pending"
