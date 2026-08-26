@@ -1171,23 +1171,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-98f10f164a25",
-    "source_id": "nobutakayamauchi/limit-development@e47469f5f4947c286988f03dd4a90283c030f7f5",
-    "captured_at": "2026-08-19T17:27:21+09:00",
-    "type": "新製品",
-    "project": "limit-development",
-    "title": "limit-developmentを公開",
-    "summary": "limit-developmentを新しく公開しました。",
-    "tags": [
-      "limit-development",
-      "新製品"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e47469f5f4947c286988f03dd4a90283c030f7f5",
-    "article_score": 0.471,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-8c9417ef1696",
     "source_id": "nobutakayamauchi/Ultimate-Loop@eed18f1e5211d1e3ba4385b86fa4593006a94ea4",
     "captured_at": "2026-08-19T12:42:50+09:00",
@@ -4040,23 +4023,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/ecbce530e609eb145e31dfea8fb52b999c8f62a6",
     "article_score": 0.181,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-34b0955bc19d",
-    "source_id": "nobutakayamauchi/RTS@0ea3c674ac9ebb1c5048507fec833467e4b8244c",
-    "captured_at": "2026-07-27T18:21:27+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/0ea3c674ac9ebb1c5048507fec833467e4b8244c",
-    "article_score": 0.175,
     "article_candidate": false,
     "review_status": "pending"
   }
