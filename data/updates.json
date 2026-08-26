@@ -1,5 +1,39 @@
 [
   {
+    "id": "upd-10ca8de132b2",
+    "source_id": "nobutakayamauchi/x-ads-bridge@9e4fad8fab663ce4dbd7032d3d7b4804e17e10b6",
+    "captured_at": "2026-08-26T19:58:30+09:00",
+    "type": "機能追加",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/9e4fad8fab663ce4dbd7032d3d7b4804e17e10b6,https://github.com/nobutakayamauchi/x-ads-bridge/commit/a07330c54a657df66f423296ecd30058db4e612c,https://github.com/nobutakayamauchi/x-ads-bridge/commit/03f6f928d4ff6cef086cb9144115e819052adb05",
+    "article_score": 0.275,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-bfead7f1b7f1",
+    "source_id": "nobutakayamauchi/x-ads-bridge@3da76333c044248f313608c96f5c250e356c2996",
+    "captured_at": "2026-08-26T19:57:50+09:00",
+    "type": "機能変更",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/3da76333c044248f313608c96f5c250e356c2996",
+    "article_score": 0.169,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-b4fb527ef741",
     "source_id": "nobutakayamauchi/sales-catalog@58bf655162cf18ddb5b8fdbf176b6ee490247783",
     "captured_at": "2026-08-26T16:16:33+09:00",
@@ -1133,23 +1167,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/5674052ec2449cfe3acfeaa0b439a99f02a852f0,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/e3ee9daf13c8831a960156ee4d19853c333add7f,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/a61bceee6a149838012d967bf9dfbbba4ba05fb3",
     "article_score": 0.182,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-a4f4543c2cc0",
-    "source_id": "nobutakayamauchi/limit-development@42a9d4196883b1773115cb01343446a2c70f4610",
-    "captured_at": "2026-08-19T17:36:11+09:00",
-    "type": "機能追加",
-    "project": "limit-development",
-    "title": "limit-developmentに機能を追加",
-    "summary": "limit-developmentで新しい機能を使えるようにしました。",
-    "tags": [
-      "limit-development",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/42a9d4196883b1773115cb01343446a2c70f4610",
-    "article_score": 0.274,
     "article_candidate": false,
     "review_status": "pending"
   },
@@ -3976,19 +3993,19 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-ca01407b96e0",
-    "source_id": "nobutakayamauchi/RTS@c36fdddfd269455451b0f8be9c0b5df18a31d627",
-    "captured_at": "2026-07-27T20:05:07+09:00",
+    "id": "upd-d4da05906461",
+    "source_id": "nobutakayamauchi/RTS@f86a5644d353fdd2ad54c8205667510a29807393",
+    "captured_at": "2026-07-27T20:47:24+09:00",
     "type": "機能変更",
     "project": "RTS",
     "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
     "tags": [
       "RTS",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/f86a5644d353fdd2ad54c8205667510a29807393,https://github.com/nobutakayamauchi/RTS/commit/c36fdddfd269455451b0f8be9c0b5df18a31d627",
-    "article_score": 0.182,
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/f86a5644d353fdd2ad54c8205667510a29807393",
+    "article_score": 0.177,
     "article_candidate": false,
     "review_status": "pending"
   }
