@@ -954,20 +954,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-6f90a2d8b0ae",
-    "date": "2026-08-19",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "limit-development",
-    "type": "機能変更",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-6f90a2d8b0ae"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-8c9417ef1696",
     "date": "2026-08-19",
     "title": "Ultimate-Loopに機能を追加",
@@ -3305,20 +3291,6 @@
     "href": "../updates/#u-upd-ca01407b96e0"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-6a4f75e06010",
-    "date": "2026-07-27",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-6a4f75e06010"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-08-26",
     "date": "2026-08-26",
@@ -3450,7 +3422,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか25件",
+    "title": "limit-developmentを改善、ほか24件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
@@ -3752,8 +3724,8 @@
     "kind": "JOURNAL",
     "id": "journal-2026-07-27",
     "date": "2026-07-27",
-    "title": "RTSを改善、ほか2件",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』、『RTSを改善』もまとめています。",
+    "title": "RTSを改善、ほか1件",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』もまとめています。",
     "project": "RTS",
     "type": "開発日誌",
     "tags": [
