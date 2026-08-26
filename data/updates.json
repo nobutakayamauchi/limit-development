@@ -1,17 +1,51 @@
 [
   {
+    "id": "upd-b4fb527ef741",
+    "source_id": "nobutakayamauchi/sales-catalog@58bf655162cf18ddb5b8fdbf176b6ee490247783",
+    "captured_at": "2026-08-26T16:16:33+09:00",
+    "type": "方針変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogの方針を更新",
+    "summary": "sales-catalogの説明や運用方針を更新しました。",
+    "tags": [
+      "sales-catalog",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/58bf655162cf18ddb5b8fdbf176b6ee490247783",
+    "article_score": 0.246,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-fb87e137b340",
+    "source_id": "nobutakayamauchi/sales-catalog@ddfdb9948840d97e33c4b60c61dc6ede59ae69f4",
+    "captured_at": "2026-08-26T16:14:40+09:00",
+    "type": "新製品",
+    "project": "sales-catalog",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/ddfdb9948840d97e33c4b60c61dc6ede59ae69f4",
+    "article_score": 0.397,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-8cbcfbe48ff7",
     "source_id": "nobutakayamauchi/sales-catalog@5e58b10d770b3c51009a10fc0cfa796f9448bbbb",
     "captured_at": "2026-08-26T16:06:16+09:00",
     "type": "機能変更",
     "project": "sales-catalog",
     "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "tags": [
       "sales-catalog",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/5e58b10d770b3c51009a10fc0cfa796f9448bbbb",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/92981af2a9d435425a1896c50bba83915e1b163f,https://github.com/nobutakayamauchi/sales-catalog/commit/5e58b10d770b3c51009a10fc0cfa796f9448bbbb",
     "article_score": 0.241,
     "article_candidate": false,
     "review_status": "pending"
@@ -1167,23 +1201,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/88c23655a279f94edf5af8a4dbe0107d9b724565",
     "article_score": 0.178,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-9547721295c7",
-    "source_id": "nobutakayamauchi/limit-development@34e0e85b7b55c85da1e8f426b140cf2618252068",
-    "captured_at": "2026-08-19T14:39:24+09:00",
-    "type": "機能変更",
-    "project": "limit-development",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/34e0e85b7b55c85da1e8f426b140cf2618252068",
-    "article_score": 0.266,
     "article_candidate": false,
     "review_status": "pending"
   },
@@ -4091,23 +4108,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/2d8c32c00b3d022084338d12edeca907818a6548,https://github.com/nobutakayamauchi/RTS/commit/1ced60518bce0a2bdc9142aa1a6310801ea0bc44",
     "article_score": 0.407,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-bf686d211e94",
-    "source_id": "nobutakayamauchi/RTS@77a2efeccd2eb8f12633863b0daa6fb4c3d365f7",
-    "captured_at": "2026-07-27T16:27:11+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/77a2efeccd2eb8f12633863b0daa6fb4c3d365f7",
-    "article_score": 0.18,
     "article_candidate": false,
     "review_status": "pending"
   }
