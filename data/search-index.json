@@ -1,6 +1,258 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-0f862e5a4bd8",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "project": "x-ads-bridge",
+    "type": "機能変更",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-0f862e5a4bd8"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c89677b7772a",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeを検証",
+    "summary": "x-ads-bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "研究・検証",
+    "tags": [
+      "x-ads-bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-c89677b7772a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b93e07ae7ae8",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "機能追加",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-b93e07ae7ae8"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4a71ac9260d4",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "project": "x-ads-bridge",
+    "type": "機能変更",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-4a71ac9260d4"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-61466bc9f4ee",
+    "date": "2026-08-27",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "project": "sales-catalog",
+    "type": "機能変更",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-61466bc9f4ee"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ccc70826fb90",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeの方針を更新",
+    "summary": "x-ads-bridgeの説明や運用方針を更新しました。",
+    "project": "x-ads-bridge",
+    "type": "方針変更",
+    "tags": [
+      "x-ads-bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-ccc70826fb90"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ec8344254ba6",
+    "date": "2026-08-27",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。",
+    "project": "sales-catalog",
+    "type": "機能追加",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-ec8344254ba6"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c17fd3e861d2",
+    "date": "2026-08-27",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "project": "sales-catalog",
+    "type": "機能変更",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-c17fd3e861d2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b0fb60c5c582",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeを検証",
+    "summary": "x-ads-bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "研究・検証",
+    "tags": [
+      "x-ads-bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-b0fb60c5c582"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a7f11edbc13e",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更6件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "機能追加",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-a7f11edbc13e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-dffdbb5e83f9",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "project": "x-ads-bridge",
+    "type": "機能変更",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-dffdbb5e83f9"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3c92333c2b77",
+    "date": "2026-08-27",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "sales-catalog",
+    "type": "機能追加",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-3c92333c2b77"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-5662979aae62",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeの方針を更新",
+    "summary": "x-ads-bridgeの説明や運用方針を更新しました。",
+    "project": "x-ads-bridge",
+    "type": "方針変更",
+    "tags": [
+      "x-ads-bridge",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-5662979aae62"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1a2815c573b6",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeを検証",
+    "summary": "x-ads-bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "研究・検証",
+    "tags": [
+      "x-ads-bridge",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-1a2815c573b6"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-420386c94052",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "機能追加",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-420386c94052"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9e6905dacbe7",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更6件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "機能変更",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-9e6905dacbe7"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-bc63126790b7",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeの機能を整理",
+    "summary": "x-ads-bridgeで不要になった機能を削除しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "機能削除",
+    "tags": [
+      "x-ads-bridge",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-bc63126790b7"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-093ab3f97984",
+    "date": "2026-08-27",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "project": "sales-catalog",
+    "type": "機能変更",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-093ab3f97984"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-10ca8de132b2",
     "date": "2026-08-26",
     "title": "x-ads-bridgeに機能を追加",
@@ -819,7 +1071,7 @@
     "id": "upd-ca2fad264eeb",
     "date": "2026-08-19",
     "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更25件も、この更新にまとめています。",
+    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更24件も、この更新にまとめています。",
     "project": "limit-development",
     "type": "機能変更",
     "tags": [
@@ -3261,6 +3513,25 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-53942e73ac2c"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-27",
+    "date": "2026-08-27",
+    "title": "x-ads-bridgeを改善、ほか17件",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『x-ads-bridgeを検証』、『x-ads-bridgeに機能を追加』、『x-ads-bridgeを改善』もまとめています。",
+    "project": "sales-catalog, x-ads-bridge",
+    "type": "開発日誌",
+    "tags": [
+      "sales-catalog",
+      "x-ads-bridge",
+      "方針変更",
+      "機能削除",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-08-27.html"
   },
   {
     "kind": "JOURNAL",
