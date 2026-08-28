@@ -1,9 +1,56 @@
 [
   {
-    "date": "2026-08-27",
-    "title": "x-ads-bridgeを改善、ほか17件",
-    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『x-ads-bridgeを検証』、『x-ads-bridgeに機能を追加』、『x-ads-bridgeを改善』もまとめています。",
+    "date": "2026-08-28",
+    "title": "x-ads-bridgeに機能を追加、ほか16件",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ日の開発記録として、『x-ads-bridgeを改善』、『x-ads-bridgeを改善』、『x-ads-bridgeを公開』もまとめています。",
     "update_ids": [
+      "upd-03d54cdf7fd6",
+      "upd-0516e1401646",
+      "upd-14d2a4fc3e58",
+      "upd-58f7c46017e5",
+      "upd-bc5c2c6693db",
+      "upd-7f2741dd7ae8",
+      "upd-5f1fca2c89ad",
+      "upd-de2602cb17aa",
+      "upd-5c4a7a066283",
+      "upd-0598e8a7e16a",
+      "upd-ccd7e5a4a4cb",
+      "upd-1e3973b06471",
+      "upd-6d5a51722493",
+      "upd-9897f82773ad",
+      "upd-a3829b2bed37",
+      "upd-fe6f75c7188d",
+      "upd-129706da6f70"
+    ],
+    "projects": [
+      "sales-catalog",
+      "x-ads-bridge"
+    ],
+    "types": [
+      "新製品",
+      "方針変更",
+      "機能削除",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "tags": [
+      "sales-catalog",
+      "x-ads-bridge",
+      "新製品",
+      "方針変更",
+      "機能削除",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ]
+  },
+  {
+    "date": "2026-08-27",
+    "title": "sales-catalogを改善、ほか18件",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『x-ads-bridgeを改善』、『x-ads-bridgeを検証』、『x-ads-bridgeに機能を追加』もまとめています。",
+    "update_ids": [
+      "upd-f7ea451d08b8",
       "upd-0f862e5a4bd8",
       "upd-c89677b7772a",
       "upd-b93e07ae7ae8",
@@ -848,11 +895,10 @@
   },
   {
     "date": "2026-07-29",
-    "title": "RTSを改善、ほか1件",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSを改善』もまとめています。",
+    "title": "RTSを改善",
+    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
     "update_ids": [
-      "upd-e8a680a3b9dd",
-      "upd-53942e73ac2c"
+      "upd-e8a680a3b9dd"
     ],
     "projects": [
       "RTS"

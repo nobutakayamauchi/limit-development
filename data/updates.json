@@ -1,5 +1,311 @@
 [
   {
+    "id": "upd-03d54cdf7fd6",
+    "source_id": "nobutakayamauchi/x-ads-bridge@6b97bd6fe48c28a9fd100e2a3c09034e62771d57",
+    "captured_at": "2026-08-28T12:05:33+09:00",
+    "type": "機能追加",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/6b97bd6fe48c28a9fd100e2a3c09034e62771d57",
+    "article_score": 0.502,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-0516e1401646",
+    "source_id": "nobutakayamauchi/x-ads-bridge@27f281315bdd58926992afc456e8153dd8f9d2a3",
+    "captured_at": "2026-08-28T12:01:08+09:00",
+    "type": "機能変更",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/9b9ab0e53e3e49140173254543124ab58421e269,https://github.com/nobutakayamauchi/x-ads-bridge/commit/317f47ef926f4334322ac28ce1d09ea1cf547a06,https://github.com/nobutakayamauchi/x-ads-bridge/commit/27f281315bdd58926992afc456e8153dd8f9d2a3",
+    "article_score": 0.401,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-14d2a4fc3e58",
+    "source_id": "nobutakayamauchi/x-ads-bridge@0f3c3edde79c280c16c1a7dd7602d22efd094bac",
+    "captured_at": "2026-08-28T11:52:33+09:00",
+    "type": "機能変更",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/0f3c3edde79c280c16c1a7dd7602d22efd094bac,https://github.com/nobutakayamauchi/x-ads-bridge/commit/ca0da582bd7b5548499b89b080caa70021e5b265,https://github.com/nobutakayamauchi/x-ads-bridge/commit/9bae61cf38087dca60803658122f007b6b413777,https://github.com/nobutakayamauchi/x-ads-bridge/commit/abe0bda0158ca82a97be637835cb046a3ab7e9f0",
+    "article_score": 0.243,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-58f7c46017e5",
+    "source_id": "nobutakayamauchi/x-ads-bridge@e3652cfbf058ed0441126a5e4ec057c8f04002a1",
+    "captured_at": "2026-08-28T11:52:24+09:00",
+    "type": "新製品",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeを公開",
+    "summary": "x-ads-bridgeを新しく公開しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/e3652cfbf058ed0441126a5e4ec057c8f04002a1,https://github.com/nobutakayamauchi/x-ads-bridge/commit/8866431bf59b8ee9c7b7e61262bdc91207040567,https://github.com/nobutakayamauchi/x-ads-bridge/commit/6bfe638fc903845f9fd7c2e035310b366ee85002",
+    "article_score": 0.466,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-bc5c2c6693db",
+    "source_id": "nobutakayamauchi/x-ads-bridge@55f488d200504a1de5e14ffab42bb20a4e9423fa",
+    "captured_at": "2026-08-28T11:51:38+09:00",
+    "type": "方針変更",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeの方針を更新",
+    "summary": "x-ads-bridgeの説明や運用方針を更新しました。",
+    "tags": [
+      "x-ads-bridge",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/55f488d200504a1de5e14ffab42bb20a4e9423fa",
+    "article_score": 0.242,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-7f2741dd7ae8",
+    "source_id": "nobutakayamauchi/x-ads-bridge@30a79dc6571633a142d63935fd1c65691d92a443",
+    "captured_at": "2026-08-28T11:49:56+09:00",
+    "type": "研究・検証",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeを検証",
+    "summary": "x-ads-bridgeが実際の利用条件で成立するか検証しました。",
+    "tags": [
+      "x-ads-bridge",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/30a79dc6571633a142d63935fd1c65691d92a443",
+    "article_score": 0.224,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-5f1fca2c89ad",
+    "source_id": "nobutakayamauchi/x-ads-bridge@e364ac5df37ee4d15b0de7cb2b12cc49aebd5d1a",
+    "captured_at": "2026-08-28T11:38:00+09:00",
+    "type": "機能追加",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/692780b08b10ee91a72dffe3f847e430b3602782,https://github.com/nobutakayamauchi/x-ads-bridge/commit/dd9e772aa2b7c6d88e24f229437ab0fc91a5ba34,https://github.com/nobutakayamauchi/x-ads-bridge/commit/d8ce9535c3495bdf0f2fa6820b49d520868c5a41,https://github.com/nobutakayamauchi/x-ads-bridge/commit/59cf8e231849cba444362b6bd311f89f56123326,https://github.com/nobutakayamauchi/x-ads-bridge/commit/003551ec2006f6ab3b23c970c48a1801cbdf11ca,https://github.com/nobutakayamauchi/x-ads-bridge/commit/c6ea8fd44b59cec0b5dfabb3ba8673ffffc93db5,https://github.com/nobutakayamauchi/x-ads-bridge/commit/fa05e016b9a20e547c25a50cfdaed04fca7e790b,https://github.com/nobutakayamauchi/x-ads-bridge/commit/13ec4ff7666dd954aeebe7d976a82091168bde89,https://github.com/nobutakayamauchi/x-ads-bridge/commit/e364ac5df37ee4d15b0de7cb2b12cc49aebd5d1a",
+    "article_score": 0.367,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-de2602cb17aa",
+    "source_id": "nobutakayamauchi/x-ads-bridge@7605974189ec777e5f849f1dc90ba2010c2ab363",
+    "captured_at": "2026-08-28T10:43:08+09:00",
+    "type": "機能追加",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/7605974189ec777e5f849f1dc90ba2010c2ab363",
+    "article_score": 0.432,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-5c4a7a066283",
+    "source_id": "nobutakayamauchi/x-ads-bridge@a7be67da5bd438fc980ad727b63cadfda5271809",
+    "captured_at": "2026-08-28T09:57:23+09:00",
+    "type": "機能変更",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/a7be67da5bd438fc980ad727b63cadfda5271809,https://github.com/nobutakayamauchi/x-ads-bridge/commit/74e9689118253b8ccf22f10b17a8bd2f2ecc2f10,https://github.com/nobutakayamauchi/x-ads-bridge/commit/197740ae15b1ee239b187a86576fdf72d5947418,https://github.com/nobutakayamauchi/x-ads-bridge/commit/b7665287d5dbeb94c4f6de784b6c4cf12a8be5b2,https://github.com/nobutakayamauchi/x-ads-bridge/commit/57add5447f670765893de815478f323fa2147322,https://github.com/nobutakayamauchi/x-ads-bridge/commit/df5c8bab8343e3f9661c6c204019c987aa89127c,https://github.com/nobutakayamauchi/x-ads-bridge/commit/5a1cf6b3855691e351727c877f9824423d77721e,https://github.com/nobutakayamauchi/x-ads-bridge/commit/dcce8be77c148c56b8379f8f8035ed42dd3e5882,https://github.com/nobutakayamauchi/x-ads-bridge/commit/5f00eb79aa51f34534a3182d3ddf1a53bf3f0a0f",
+    "article_score": 0.35,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-0598e8a7e16a",
+    "source_id": "nobutakayamauchi/x-ads-bridge@466a86846f2fbf108020ef9b0a5e23f38ee39984",
+    "captured_at": "2026-08-28T09:56:37+09:00",
+    "type": "研究・検証",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeを検証",
+    "summary": "x-ads-bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更7件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/466a86846f2fbf108020ef9b0a5e23f38ee39984,https://github.com/nobutakayamauchi/x-ads-bridge/commit/f2887f4b2b8715d745a9b8748c3f5303c0fd3f98,https://github.com/nobutakayamauchi/x-ads-bridge/commit/9ea0d56e270b3dd25d1effc1a30dc11a5d2cde8c,https://github.com/nobutakayamauchi/x-ads-bridge/commit/e1228a51b10092091b2a31b092622219fb070952,https://github.com/nobutakayamauchi/x-ads-bridge/commit/5d8f7ad9ba08c15b54c8698490c59066b1893795,https://github.com/nobutakayamauchi/x-ads-bridge/commit/344aefff1dc4b6a819addfb6229a3bcecdc00d99,https://github.com/nobutakayamauchi/x-ads-bridge/commit/a1bdd6af0dcea9e24285a8a761c1d320c4a93929,https://github.com/nobutakayamauchi/x-ads-bridge/commit/ca09e0a070b08937ca6ccc77f17e917dfa336c2c",
+    "article_score": 0.32,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-ccd7e5a4a4cb",
+    "source_id": "nobutakayamauchi/x-ads-bridge@a5c154246323d04c2196d75f5a72467abc92a82e",
+    "captured_at": "2026-08-28T09:49:44+09:00",
+    "type": "機能削除",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeの機能を整理",
+    "summary": "x-ads-bridgeで不要になった機能を削除しました。",
+    "tags": [
+      "x-ads-bridge",
+      "機能削除"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/a5c154246323d04c2196d75f5a72467abc92a82e",
+    "article_score": 0.221,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-1e3973b06471",
+    "source_id": "nobutakayamauchi/x-ads-bridge@06ba52fd887de447dda133bd2e97d6c970b5b4ae",
+    "captured_at": "2026-08-28T09:20:44+09:00",
+    "type": "機能追加",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/fcd7de51ec02718618836400bd34e0f73442443e,https://github.com/nobutakayamauchi/x-ads-bridge/commit/bf6771a6226db90c21b1aba555d90f24773d5eea,https://github.com/nobutakayamauchi/x-ads-bridge/commit/06ba52fd887de447dda133bd2e97d6c970b5b4ae,https://github.com/nobutakayamauchi/x-ads-bridge/commit/a09b1b923bb3a63cf624a234b344c33e7d925624,https://github.com/nobutakayamauchi/x-ads-bridge/commit/27ce5192fd93cd29c3b11b612d2f76a6fef40549",
+    "article_score": 0.364,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-6d5a51722493",
+    "source_id": "nobutakayamauchi/x-ads-bridge@4cfbe3995d128af3d5892fe1556d97dc8981caa1",
+    "captured_at": "2026-08-28T08:51:23+09:00",
+    "type": "機能変更",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/4cfbe3995d128af3d5892fe1556d97dc8981caa1",
+    "article_score": 0.245,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-9897f82773ad",
+    "source_id": "nobutakayamauchi/x-ads-bridge@1dfd724debaa89e3a4873b7628453ad5eade56e4",
+    "captured_at": "2026-08-28T08:23:37+09:00",
+    "type": "機能追加",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/1dfd724debaa89e3a4873b7628453ad5eade56e4",
+    "article_score": 0.431,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-a3829b2bed37",
+    "source_id": "nobutakayamauchi/x-ads-bridge@d3d925990f31fa4e546a86f0a9be96ac91721bef",
+    "captured_at": "2026-08-28T08:18:45+09:00",
+    "type": "研究・検証",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeを検証",
+    "summary": "x-ads-bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/33af22aee82d9719cc012439cb2c7e64fc2d3ec6,https://github.com/nobutakayamauchi/x-ads-bridge/commit/59b98cb7e7bb76f178a563dbef392b97dea5ca83,https://github.com/nobutakayamauchi/x-ads-bridge/commit/d3d925990f31fa4e546a86f0a9be96ac91721bef",
+    "article_score": 0.382,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-fe6f75c7188d",
+    "source_id": "nobutakayamauchi/sales-catalog@d8984d70a0acdb6561e612772478cb796e7de737",
+    "captured_at": "2026-08-28T07:01:22+09:00",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/d8984d70a0acdb6561e612772478cb796e7de737",
+    "article_score": 0.174,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-129706da6f70",
+    "source_id": "nobutakayamauchi/x-ads-bridge@f8c26da28746f5291071ed2a393e42b4a0022a34",
+    "captured_at": "2026-08-28T06:58:58+09:00",
+    "type": "機能追加",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/f8c26da28746f5291071ed2a393e42b4a0022a34",
+    "article_score": 0.345,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-f7ea451d08b8",
+    "source_id": "nobutakayamauchi/sales-catalog@4b766021f90b0cf998cf976819ff98929af6e30c",
+    "captured_at": "2026-08-27T22:01:30Z",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/4b766021f90b0cf998cf976819ff98929af6e30c",
+    "article_score": 0.243,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-0f862e5a4bd8",
     "source_id": "nobutakayamauchi/x-ads-bridge@bdd1ad25d936c3b9878c5aaa4996a994de5083e7",
     "captured_at": "2026-08-27T18:28:29+09:00",
@@ -1347,12 +1653,12 @@
     "type": "機能削除",
     "project": "limit-development",
     "title": "limit-developmentの機能を整理",
-    "summary": "limit-developmentで不要になった機能を削除しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "limit-developmentで不要になった機能を削除しました。",
     "tags": [
       "limit-development",
       "機能削除"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/563c7cc2e09e3ac42ab55d7b3943c5fb52bfa24d,https://github.com/nobutakayamauchi/limit-development/commit/57a95b64c1606c43ac36bf67c06b9ca62e04ce50",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/563c7cc2e09e3ac42ab55d7b3943c5fb52bfa24d",
     "article_score": 0.221,
     "article_candidate": false,
     "review_status": "pending"
@@ -4244,23 +4550,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/46c6d264d43e363e214f2611ac01cc77c39b05b0",
     "article_score": 0.178,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-53942e73ac2c",
-    "source_id": "nobutakayamauchi/RTS@8c48d6bcc44fe8e5e768d2b546fe75cc8eebb85c",
-    "captured_at": "2026-07-29T14:18:24+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/8c48d6bcc44fe8e5e768d2b546fe75cc8eebb85c",
-    "article_score": 0.18,
     "article_candidate": false,
     "review_status": "pending"
   }
