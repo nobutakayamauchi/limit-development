@@ -1,9 +1,12 @@
 [
   {
     "date": "2026-08-28",
-    "title": "x-ads-bridgeに機能を追加、ほか16件",
-    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ日の開発記録として、『x-ads-bridgeを改善』、『x-ads-bridgeを改善』、『x-ads-bridgeを公開』もまとめています。",
+    "title": "x-ads-bridgeを改善、ほか19件",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『x-ads-bridgeを改善』、『x-ads-bridgeに機能を追加』、『x-ads-bridgeに機能を追加』もまとめています。",
     "update_ids": [
+      "upd-2a94e3d680c8",
+      "upd-fc8b64c41ef2",
+      "upd-1987a0010f5e",
       "upd-03d54cdf7fd6",
       "upd-0516e1401646",
       "upd-14d2a4fc3e58",
@@ -891,24 +894,6 @@
       "RTS",
       "機能変更",
       "機能追加"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "update_ids": [
-      "upd-e8a680a3b9dd"
-    ],
-    "projects": [
-      "RTS"
-    ],
-    "types": [
-      "機能変更"
-    ],
-    "tags": [
-      "RTS",
-      "機能変更"
     ]
   }
 ]
