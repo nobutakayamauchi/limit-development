@@ -1,5 +1,56 @@
 [
   {
+    "id": "upd-5ab4b48be2d9",
+    "source_id": "nobutakayamauchi/sales-catalog@b95b61a9c9cf357a99c31dea303074f4739faea0",
+    "captured_at": "2026-08-29T08:40:10+09:00",
+    "type": "機能追加",
+    "project": "sales-catalog",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ1時間内の関連変更10件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/4e985568446e9b33234370591d053daa4aef7639,https://github.com/nobutakayamauchi/sales-catalog/commit/b95b61a9c9cf357a99c31dea303074f4739faea0,https://github.com/nobutakayamauchi/sales-catalog/commit/9aea82b9a35c36fbdb640c9dde2473b5830e9fbf,https://github.com/nobutakayamauchi/sales-catalog/commit/381de616962180de7ced302b0215739bc6165c72,https://github.com/nobutakayamauchi/sales-catalog/commit/356c2471390f4c51ddbac5c4f0c31b6d45da660b,https://github.com/nobutakayamauchi/sales-catalog/commit/8f4bc66d28c68b957b5fb2b784f7398a0865940b,https://github.com/nobutakayamauchi/sales-catalog/commit/858b1fe36f4347e0cf1bfeec32b99c6eeacf83a2,https://github.com/nobutakayamauchi/sales-catalog/commit/445b33de7003a46e66bed2e97f1a5499a6a5f162,https://github.com/nobutakayamauchi/sales-catalog/commit/e5b8b07de050baa8669bc7ac7891f593b2c85a62,https://github.com/nobutakayamauchi/sales-catalog/commit/ef228b736d7ea488853f8a08daf99c2ae2bb4237,https://github.com/nobutakayamauchi/sales-catalog/commit/173685acc0a4fa23acd4d1e7f105c826617f9112",
+    "article_score": 0.345,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-c106ae081b7c",
+    "source_id": "nobutakayamauchi/sales-catalog@2d4c57ff7c5ff283644e62c1bdb108929ff4c2ed",
+    "captured_at": "2026-08-29T08:36:54+09:00",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更10件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/08b51218883b1c894327769a5350a1fe61f557e5,https://github.com/nobutakayamauchi/sales-catalog/commit/112e743367cef9f4c0805bba633af760f4c5b237,https://github.com/nobutakayamauchi/sales-catalog/commit/aaebbccb3c9ab333d6eefdd9c625fd3a62994c6b,https://github.com/nobutakayamauchi/sales-catalog/commit/a64c7bcf079690895968667e7581475e92803131,https://github.com/nobutakayamauchi/sales-catalog/commit/48f21ad09cf7a28fa7779b7c3339f5296a72a192,https://github.com/nobutakayamauchi/sales-catalog/commit/649c81dd0b1ca7c5638f662ae49fab7e7bfdd85a,https://github.com/nobutakayamauchi/sales-catalog/commit/e5a5dfbe3fb61c4338fbf11469d310c7bea01300,https://github.com/nobutakayamauchi/sales-catalog/commit/621d134d9321fae41ca4dbb17517dd4a24ba3877,https://github.com/nobutakayamauchi/sales-catalog/commit/2d4c57ff7c5ff283644e62c1bdb108929ff4c2ed,https://github.com/nobutakayamauchi/sales-catalog/commit/45d429cd21c1404f5d0b717d78743aaa167c7e61,https://github.com/nobutakayamauchi/sales-catalog/commit/76fba8adae764223f79db7dc2b601a49f7c55e3f",
+    "article_score": 0.244,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-37fb054b7ab7",
+    "source_id": "nobutakayamauchi/sales-catalog@5d3132ba3c83e5c12eaa5a0aa623bdeebeb64898",
+    "captured_at": "2026-08-29T08:20:19+09:00",
+    "type": "方針変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogの方針を更新",
+    "summary": "sales-catalogの説明や運用方針を更新しました。",
+    "tags": [
+      "sales-catalog",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/5d3132ba3c83e5c12eaa5a0aa623bdeebeb64898",
+    "article_score": 0.237,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-2a94e3d680c8",
     "source_id": "nobutakayamauchi/x-ads-bridge@4ba4ba886b1e7138256a7feeca7b3ff2043188fa",
     "captured_at": "2026-08-28T21:08:39+09:00",
@@ -1694,23 +1745,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/41c128a9e8a5d67ed159d81247c15b08aecc5fa4,https://github.com/nobutakayamauchi/limit-development/commit/3cf8779e22a932cbcc70bad70ae61d812c9bf79e,https://github.com/nobutakayamauchi/limit-development/commit/027914cfbff953a205e07275b148ef2661583c92",
     "article_score": 0.7,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-6c844427d9dc",
-    "source_id": "nobutakayamauchi/limit-development@563c7cc2e09e3ac42ab55d7b3943c5fb52bfa24d",
-    "captured_at": "2026-08-19T18:14:47+09:00",
-    "type": "機能削除",
-    "project": "limit-development",
-    "title": "limit-developmentの機能を整理",
-    "summary": "limit-developmentで不要になった機能を削除しました。",
-    "tags": [
-      "limit-development",
-      "機能削除"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/563c7cc2e09e3ac42ab55d7b3943c5fb52bfa24d",
-    "article_score": 0.221,
     "article_candidate": false,
     "review_status": "pending"
   },

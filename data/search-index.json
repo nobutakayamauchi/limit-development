@@ -1,6 +1,48 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-5ab4b48be2d9",
+    "date": "2026-08-29",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ1時間内の関連変更10件も、この更新にまとめています。",
+    "project": "sales-catalog",
+    "type": "機能追加",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-5ab4b48be2d9"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c106ae081b7c",
+    "date": "2026-08-29",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更10件も、この更新にまとめています。",
+    "project": "sales-catalog",
+    "type": "機能変更",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-c106ae081b7c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-37fb054b7ab7",
+    "date": "2026-08-29",
+    "title": "sales-catalogの方針を更新",
+    "summary": "sales-catalogの説明や運用方針を更新しました。",
+    "project": "sales-catalog",
+    "type": "方針変更",
+    "tags": [
+      "sales-catalog",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-37fb054b7ab7"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-2a94e3d680c8",
     "date": "2026-08-28",
     "title": "x-ads-bridgeを改善",
@@ -1399,20 +1441,6 @@
       "自動更新"
     ],
     "href": "../updates/#u-upd-42af6bd12622"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-6c844427d9dc",
-    "date": "2026-08-19",
-    "title": "limit-developmentの機能を整理",
-    "summary": "limit-developmentで不要になった機能を削除しました。",
-    "project": "limit-development",
-    "type": "機能削除",
-    "tags": [
-      "limit-development",
-      "機能削除"
-    ],
-    "href": "../updates/#u-upd-6c844427d9dc"
   },
   {
     "kind": "UPDATE",
@@ -3782,6 +3810,22 @@
   },
   {
     "kind": "JOURNAL",
+    "id": "journal-2026-08-29",
+    "date": "2026-08-29",
+    "title": "sales-catalogに機能を追加、ほか2件",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ1時間内の関連変更10件も、この更新にまとめています。 同じ日の開発記録として、『sales-catalogを改善』、『sales-catalogの方針を更新』もまとめています。",
+    "project": "sales-catalog",
+    "type": "開発日誌",
+    "tags": [
+      "sales-catalog",
+      "方針変更",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-08-29.html"
+  },
+  {
+    "kind": "JOURNAL",
     "id": "journal-2026-08-28",
     "date": "2026-08-28",
     "title": "x-ads-bridgeを改善、ほか19件",
@@ -3952,7 +3996,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか22件",
+    "title": "limit-developmentを改善、ほか21件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
@@ -3970,7 +4014,6 @@
       "導線",
       "新プロジェクト",
       "方針変更",
-      "機能削除",
       "機能変更",
       "機能追加",
       "比較",
