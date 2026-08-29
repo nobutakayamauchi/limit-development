@@ -1407,7 +1407,7 @@
     "id": "upd-ca2fad264eeb",
     "date": "2026-08-19",
     "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更22件も、この更新にまとめています。",
+    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更21件も、この更新にまとめています。",
     "project": "limit-development",
     "type": "機能変更",
     "tags": [
@@ -3781,34 +3781,6 @@
     "href": "../updates/#u-upd-19a60f528bb0"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-d79ffa4f8e5f",
-    "date": "2026-07-30",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-d79ffa4f8e5f"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-d948a1b8e0e1",
-    "date": "2026-07-30",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "project": "RTS",
-    "type": "機能追加",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-d948a1b8e0e1"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-08-29",
     "date": "2026-08-29",
@@ -4263,20 +4235,5 @@
       "研究・検証"
     ],
     "href": "../journal/2026-07-31.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-07-30",
-    "date": "2026-07-30",
-    "title": "RTSを改善、ほか1件",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSに機能を追加』もまとめています。",
-    "project": "RTS",
-    "type": "開発日誌",
-    "tags": [
-      "RTS",
-      "機能変更",
-      "機能追加"
-    ],
-    "href": "../journal/2026-07-30.html"
   }
 ]
