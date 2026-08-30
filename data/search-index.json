@@ -1,6 +1,34 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-304a9d2e4299",
+    "date": "2026-08-30",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。",
+    "project": "render-worker",
+    "type": "機能追加",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-304a9d2e4299"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3d5dd191b01e",
+    "date": "2026-08-30",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。",
+    "project": "render-worker",
+    "type": "機能変更",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-3d5dd191b01e"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-5ab4b48be2d9",
     "date": "2026-08-29",
     "title": "sales-catalogに機能を追加",
@@ -1407,7 +1435,7 @@
     "id": "upd-ca2fad264eeb",
     "date": "2026-08-19",
     "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更17件も、この更新にまとめています。",
+    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更16件も、この更新にまとめています。",
     "project": "limit-development",
     "type": "機能変更",
     "tags": [
@@ -3779,6 +3807,21 @@
       "方針変更"
     ],
     "href": "../updates/#u-upd-19a60f528bb0"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-08-30",
+    "date": "2026-08-30",
+    "title": "render-workerに機能を追加、ほか1件",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ日の開発記録として、『render-workerを改善』もまとめています。",
+    "project": "render-worker",
+    "type": "開発日誌",
+    "tags": [
+      "render-worker",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-08-30.html"
   },
   {
     "kind": "JOURNAL",

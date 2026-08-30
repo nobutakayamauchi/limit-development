@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-30",
+    "title": "render-workerに機能を追加、ほか1件",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ日の開発記録として、『render-workerを改善』もまとめています。",
+    "update_ids": [
+      "upd-304a9d2e4299",
+      "upd-3d5dd191b01e"
+    ],
+    "projects": [
+      "render-worker"
+    ],
+    "types": [
+      "機能変更",
+      "機能追加"
+    ],
+    "tags": [
+      "render-worker",
+      "機能変更",
+      "機能追加"
+    ]
+  },
+  {
     "date": "2026-08-29",
     "title": "sales-catalogに機能を追加、ほか2件",
     "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ1時間内の関連変更10件も、この更新にまとめています。 同じ日の開発記録として、『sales-catalogを改善』、『sales-catalogの方針を更新』もまとめています。",

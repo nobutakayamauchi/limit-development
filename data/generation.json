@@ -6,8 +6,8 @@
   "journal_generator": "journal-generator-v0.4-reader",
   "daily_intent_input": "daily-intents.limit-development.jsonl",
   "approved_daily_intents": 1,
-  "expanded_journal_pages": 25,
-  "checked_at": "2026-08-30T09:21+09:00",
+  "expanded_journal_pages": 26,
+  "checked_at": "2026-08-30T15:41+09:00",
   "repositories": [
     ".",
     "/tmp/fge-sources/Audience-Miner",
@@ -30,6 +30,7 @@
     "/tmp/fge-sources/WebAI-Bridge",
     "/tmp/fge-sources/codex-connector-test",
     "/tmp/fge-sources/nobutakayamauchi",
+    "/tmp/fge-sources/render-worker",
     "/tmp/fge-sources/rts-dev-protocol",
     "/tmp/fge-sources/rts-lite",
     "/tmp/fge-sources/rts-video-flow",
@@ -39,8 +40,8 @@
     "/tmp/fge-sources/x-ads-bridge"
   ],
   "git_only": true,
-  "evidence_count": 795,
-  "public_update_count": 269,
+  "evidence_count": 796,
+  "public_update_count": 271,
   "article_candidates": 0,
-  "journal_days": 25
+  "journal_days": 26
 }
