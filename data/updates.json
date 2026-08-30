@@ -1794,7 +1794,7 @@
     "type": "機能変更",
     "project": "limit-development",
     "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更14件も、この更新にまとめています。",
+    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更13件も、この更新にまとめています。",
     "tags": [
       "DEVELOPMENT RECORD",
       "GitHub",
@@ -1805,7 +1805,7 @@
       "機能変更",
       "自動更新"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b67b65c11e84f068707c009e7f5b3f0aea05bbd8,https://github.com/nobutakayamauchi/limit-development/commit/315d74a80c0b95d12bf64f62db7472457725ef30,https://github.com/nobutakayamauchi/limit-development/commit/15a9f07c199499b55a638031d6f7917d69bcd67c,https://github.com/nobutakayamauchi/limit-development/commit/3479bfd567039fd9747ed2ee04cd619128165f16,https://github.com/nobutakayamauchi/limit-development/commit/b27c8e59e6d8d019a6e0db50cbffff3b7ce197fd,https://github.com/nobutakayamauchi/limit-development/commit/6d3f91703d9cfe0354fee1d88da78019eaae768e,https://github.com/nobutakayamauchi/limit-development/commit/d0fa292ff40a9478ce29f0b4044090a6411ae98e,https://github.com/nobutakayamauchi/limit-development/commit/226c47937490cc58ef1a0dddfc66351078f6aac2,https://github.com/nobutakayamauchi/limit-development/commit/27d3eac923a03d1eaa9b3aaef7488bb6ff45750a,https://github.com/nobutakayamauchi/limit-development/commit/8a7e7d7e98dfe27f441e0ea11c2534cd05982ee4,https://github.com/nobutakayamauchi/limit-development/commit/49ecabc65ec7f074795b585e419062e2b6fdf88c,https://github.com/nobutakayamauchi/limit-development/commit/4de2523efe6907f1ed130ccb1f453bed9825bba9,https://github.com/nobutakayamauchi/limit-development/commit/527148a3f52ddce2a9e9b8a9377e0863f2c9cec1,https://github.com/nobutakayamauchi/limit-development/commit/84903d5475410b11d42b3e975175e8ffb3de023e,https://github.com/nobutakayamauchi/limit-development/commit/68732960231f93f0e0123cc67a1e9895e530a3f3",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b67b65c11e84f068707c009e7f5b3f0aea05bbd8,https://github.com/nobutakayamauchi/limit-development/commit/315d74a80c0b95d12bf64f62db7472457725ef30,https://github.com/nobutakayamauchi/limit-development/commit/15a9f07c199499b55a638031d6f7917d69bcd67c,https://github.com/nobutakayamauchi/limit-development/commit/3479bfd567039fd9747ed2ee04cd619128165f16,https://github.com/nobutakayamauchi/limit-development/commit/b27c8e59e6d8d019a6e0db50cbffff3b7ce197fd,https://github.com/nobutakayamauchi/limit-development/commit/6d3f91703d9cfe0354fee1d88da78019eaae768e,https://github.com/nobutakayamauchi/limit-development/commit/d0fa292ff40a9478ce29f0b4044090a6411ae98e,https://github.com/nobutakayamauchi/limit-development/commit/226c47937490cc58ef1a0dddfc66351078f6aac2,https://github.com/nobutakayamauchi/limit-development/commit/27d3eac923a03d1eaa9b3aaef7488bb6ff45750a,https://github.com/nobutakayamauchi/limit-development/commit/8a7e7d7e98dfe27f441e0ea11c2534cd05982ee4,https://github.com/nobutakayamauchi/limit-development/commit/49ecabc65ec7f074795b585e419062e2b6fdf88c,https://github.com/nobutakayamauchi/limit-development/commit/4de2523efe6907f1ed130ccb1f453bed9825bba9,https://github.com/nobutakayamauchi/limit-development/commit/527148a3f52ddce2a9e9b8a9377e0863f2c9cec1,https://github.com/nobutakayamauchi/limit-development/commit/84903d5475410b11d42b3e975175e8ffb3de023e",
     "article_score": 0.7,
     "article_candidate": false,
     "review_status": "pending"
