@@ -1,6 +1,20 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-c0f8c674ff33",
+    "date": "2026-08-30",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。",
+    "project": "render-worker",
+    "type": "機能追加",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-c0f8c674ff33"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-304a9d2e4299",
     "date": "2026-08-30",
     "title": "render-workerに機能を追加",
@@ -12,6 +26,34 @@
       "機能追加"
     ],
     "href": "../updates/#u-upd-304a9d2e4299"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-db6362134c3d",
+    "date": "2026-08-30",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。",
+    "project": "render-worker",
+    "type": "機能変更",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-db6362134c3d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-81e2cebc85d0",
+    "date": "2026-08-30",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。",
+    "project": "render-worker",
+    "type": "機能追加",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-81e2cebc85d0"
   },
   {
     "kind": "UPDATE",
@@ -1435,7 +1477,7 @@
     "id": "upd-ca2fad264eeb",
     "date": "2026-08-19",
     "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更16件も、この更新にまとめています。",
+    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更15件も、この更新にまとめています。",
     "project": "limit-development",
     "type": "機能変更",
     "tags": [
@@ -3739,81 +3781,11 @@
     "href": "../updates/#u-upd-0f96ed5b5276"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-a752c392dc99",
-    "date": "2026-07-31",
-    "title": "RS-AI-limit-developmentを開始",
-    "summary": "RS-AI-limit-developmentの新しい取り組みを開始しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "RS-AI-limit-development",
-    "type": "新プロジェクト",
-    "tags": [
-      "RS-AI-limit-development",
-      "新プロジェクト"
-    ],
-    "href": "../updates/#u-upd-a752c392dc99"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-e6c76a9a862c",
-    "date": "2026-07-31",
-    "title": "RS-AI-limit-developmentに機能を追加",
-    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更6件も、この更新にまとめています。",
-    "project": "RS-AI-limit-development",
-    "type": "機能追加",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-e6c76a9a862c"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-1e49e7b87698",
-    "date": "2026-07-31",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "RS-AI-limit-development",
-    "type": "機能変更",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-1e49e7b87698"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-8bcb6518b62e",
-    "date": "2026-07-31",
-    "title": "RS-AI-limit-developmentを検証",
-    "summary": "RS-AI-limit-developmentが実際の利用条件で成立するか検証しました。",
-    "project": "RS-AI-limit-development",
-    "type": "研究・検証",
-    "tags": [
-      "RS-AI-limit-development",
-      "研究・検証"
-    ],
-    "href": "../updates/#u-upd-8bcb6518b62e"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-19a60f528bb0",
-    "date": "2026-07-31",
-    "title": "RS-AI-limit-developmentの方針を更新",
-    "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。",
-    "project": "RS-AI-limit-development",
-    "type": "方針変更",
-    "tags": [
-      "RS-AI-limit-development",
-      "方針変更"
-    ],
-    "href": "../updates/#u-upd-19a60f528bb0"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-08-30",
     "date": "2026-08-30",
-    "title": "render-workerに機能を追加、ほか1件",
-    "summary": "render-workerで新しい機能を使えるようにしました。 同じ日の開発記録として、『render-workerを改善』もまとめています。",
+    "title": "render-workerに機能を追加、ほか4件",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ日の開発記録として、『render-workerに機能を追加』、『render-workerを改善』、『render-workerに機能を追加』もまとめています。",
     "project": "render-worker",
     "type": "開発日誌",
     "tags": [
@@ -4265,13 +4237,12 @@
     "kind": "JOURNAL",
     "id": "journal-2026-07-31",
     "date": "2026-07-31",
-    "title": "RS-AI-limit-developmentの方針を更新、ほか10件",
+    "title": "RS-AI-limit-developmentの方針を更新、ほか5件",
     "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。 同じ日の開発記録として、『RS-AI-limit-developmentを改善』、『RS-AI-limit-developmentに機能を追加』、『RS-AI-limit-developmentを検証』もまとめています。",
     "project": "RS-AI-limit-development",
     "type": "開発日誌",
     "tags": [
       "RS-AI-limit-development",
-      "新プロジェクト",
       "方針変更",
       "機能変更",
       "機能追加",
