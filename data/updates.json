@@ -1817,18 +1817,15 @@
     "type": "機能変更",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "tags": [
       "DEVELOPMENT RECORD",
       "FOUNDRY GROWTH ENGINE",
       "GitHub",
-      "JOURNAL",
-      "mobile",
-      "導線",
       "機能変更",
       "自動更新"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/41c128a9e8a5d67ed159d81247c15b08aecc5fa4,https://github.com/nobutakayamauchi/limit-development/commit/3cf8779e22a932cbcc70bad70ae61d812c9bf79e,https://github.com/nobutakayamauchi/limit-development/commit/027914cfbff953a205e07275b148ef2661583c92",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/41c128a9e8a5d67ed159d81247c15b08aecc5fa4,https://github.com/nobutakayamauchi/limit-development/commit/3cf8779e22a932cbcc70bad70ae61d812c9bf79e",
     "article_score": 0.7,
     "article_candidate": false,
     "review_status": "pending"
@@ -4482,108 +4479,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/8f1c2ab49baf28f76f073963e08d67fc7832679a",
     "article_score": 0.274,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-e222514ae3d8",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@8a61a9106a15b9f583fec88ddbe2aa1beb23139d",
-    "captured_at": "2026-07-31T23:46:57+09:00",
-    "type": "方針変更",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentの方針を更新",
-    "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。",
-    "tags": [
-      "RS-AI-limit-development",
-      "方針変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/8a61a9106a15b9f583fec88ddbe2aa1beb23139d",
-    "article_score": 0.411,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-55362743633c",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@3e72603198fdaa2a2d60f4a9561323169807d99b",
-    "captured_at": "2026-07-31T23:41:07+09:00",
-    "type": "機能変更",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/3e72603198fdaa2a2d60f4a9561323169807d99b",
-    "article_score": 0.265,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-e7e9bd059cab",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@189754aa1e01206005a6f7c7e75437eaddfcc21a",
-    "captured_at": "2026-07-31T23:30:20+09:00",
-    "type": "機能追加",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentに機能を追加",
-    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/0f90a83ec3ad37d7218d549ff76ca29d7e31102c,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/189754aa1e01206005a6f7c7e75437eaddfcc21a,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/8aa7c1127266097062d074cd409ef6a3b43aed4e",
-    "article_score": 0.436,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-03d2326ee703",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@efd5b8bcaddc7e401f0bae0bcc8d75c3b1b31c4a",
-    "captured_at": "2026-07-31T22:54:21+09:00",
-    "type": "研究・検証",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentを検証",
-    "summary": "RS-AI-limit-developmentが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "tags": [
-      "RS-AI-limit-development",
-      "研究・検証"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/efd5b8bcaddc7e401f0bae0bcc8d75c3b1b31c4a,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/d4c5000414d6e224081088d4bc6a07d5576aaf55,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/e279c5ab8287f540dba322613f8e34ec16840cbd,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/e9aafdeeb8d0f4a3b7a185f86a103238e1c2e9c3",
-    "article_score": 0.397,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-d82571fd8dcf",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@256f05466052cb39462cce2eea04e5141cfd1e88",
-    "captured_at": "2026-07-31T22:14:05+09:00",
-    "type": "機能変更",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/256f05466052cb39462cce2eea04e5141cfd1e88",
-    "article_score": 0.344,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-0f96ed5b5276",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@1927d42d02d086ec5c45ed06dd23de5b6b61c305",
-    "captured_at": "2026-07-31T22:13:40+09:00",
-    "type": "機能追加",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentに機能を追加",
-    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/1927d42d02d086ec5c45ed06dd23de5b6b61c305",
-    "article_score": 0.277,
     "article_candidate": false,
     "review_status": "pending"
   }
