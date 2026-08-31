@@ -1,0 +1,77 @@
+name: Public catalog sync
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data/catalog-seed.json"
+      - "foundry-growth-engine/scripts/sync_public_catalog.py"
+      - ".github/workflows/public-catalog.yml"
+  schedule:
+    - cron: "23 * * * *"
+
+permissions:
+  contents: write
+
+env:
+  FGE_OWNER: nobutakayamauchi
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect public repositories
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/public-catalog-sources
+          : > /tmp/public-catalog-repos.txt
+          gh api --paginate "users/$FGE_OWNER/repos?per_page=100&type=owner&sort=updated" \
+            --jq '.[] | select(.private == false and .fork == false and .archived == false) | .name' \
+            | sort -u > /tmp/public-catalog-names.txt
+          while IFS= read -r name; do
+            [ -z "$name" ] && continue
+            [ "$name" = "limit-development" ] && continue
+            dest="/tmp/public-catalog-sources/$name"
+            if git clone --quiet --depth=1 "https://github.com/$FGE_OWNER/$name.git" "$dest"; then
+              printf '%s\n' "$dest" >> /tmp/public-catalog-repos.txt
+            fi
+          done < /tmp/public-catalog-names.txt
+
+      - name: Build catalog from GitHub evidence
+        run: |
+          set -euo pipefail
+          args=()
+          while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/public-catalog-repos.txt
+          sales="/tmp/public-catalog-sources/sales-catalog/data/products.json"
+          extra=()
+          if [ -f "$sales" ]; then extra+=(--sales-products "$sales"); fi
+          python foundry-growth-engine/scripts/sync_public_catalog.py \
+            --seed data/catalog-seed.json \
+            "${extra[@]}" \
+            "${args[@]}" \
+            --output data/catalog.json
+
+      - name: Publish catalog only when changed
+        if: github.event_name != 'pull_request'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog.json
+          if git diff --cached --quiet; then
+            echo "Public catalog already current." >> "$GITHUB_STEP_SUMMARY"
+          else
+            git commit -m "[CATALOG] Sync public products and research"
+            git push origin HEAD:main
+            echo "Public catalog refreshed from sales-catalog plus repository .foundry/public.json manifests." >> "$GITHUB_STEP_SUMMARY"
+          fi
