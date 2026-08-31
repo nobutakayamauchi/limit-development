@@ -141,5 +141,24 @@
     "priority": 80,
     "status": "public",
     "source": "seed"
+  },
+  {
+    "id": "ai-cm-render",
+    "name": "AI CM RENDER",
+    "short": "A",
+    "kind": "SERVICE / PRODUCTION",
+    "cats": [
+      "production",
+      "product"
+    ],
+    "killer": "静止画3〜5枚から15秒の縦型SNS広告動画を制作。構図に合わせたモーション・字幕・BGM・SE・最終MP4出力までを一気通貫で行うAI広告動画制作セット",
+    "desc": "静止画3〜5枚から15秒の縦型SNS広告動画を制作。構図に合わせたモーション・字幕・BGM・SE・最終MP4出力までを一気通貫で行うAI広告動画制作セット",
+    "definition": "静止画3〜5枚から15秒の縦型SNS広告動画を制作。構図に合わせたモーション・字幕・BGM・SE・最終MP4出力までを一気通貫で行うAI広告動画制作セット",
+    "url": "https://nobutakayamauchi.github.io/sales-catalog/products/ai-cm-render/",
+    "salesUrl": "https://nobutakayamauchi.github.io/sales-catalog/products/ai-cm-render/sales.html",
+    "repo": "nobutakayamauchi/render-worker",
+    "status": "for_sale",
+    "priority": 999,
+    "source": "sales-catalog"
   }
 ]
