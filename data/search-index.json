@@ -1,6 +1,160 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-1b6a2adf5a44",
+    "date": "2026-08-31",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。",
+    "project": "sales-catalog",
+    "type": "新製品",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-1b6a2adf5a44"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b34349ba0245",
+    "date": "2026-08-31",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-b34349ba0245"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9683d2932a1e",
+    "date": "2026-08-31",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-9683d2932a1e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9b06eb5511a2",
+    "date": "2026-08-31",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-9b06eb5511a2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e8f2e5e17db6",
+    "date": "2026-08-31",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-e8f2e5e17db6"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0e420302759c",
+    "date": "2026-08-31",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0e420302759c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e9c32d3fa0ef",
+    "date": "2026-08-31",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。",
+    "project": "sales-catalog",
+    "type": "機能追加",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-e9c32d3fa0ef"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a86bb1343613",
+    "date": "2026-08-31",
+    "title": "limit-developmentを公開",
+    "summary": "limit-developmentを新しく公開しました。",
+    "project": "limit-development",
+    "type": "新製品",
+    "tags": [
+      "limit-development",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-a86bb1343613"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b9484b7e605d",
+    "date": "2026-08-31",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。",
+    "project": "sales-catalog",
+    "type": "新製品",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-b9484b7e605d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4326c5ab4f7c",
+    "date": "2026-08-31",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-4326c5ab4f7c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-48b720a0f254",
+    "date": "2026-08-31",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-48b720a0f254"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-c0f8c674ff33",
     "date": "2026-08-30",
     "title": "render-workerに機能を追加",
@@ -1474,40 +1628,31 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-ca2fad264eeb",
+    "id": "upd-0cee96694280",
     "date": "2026-08-19",
-    "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更12件も、この更新にまとめています。",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
     "project": "limit-development",
     "type": "機能変更",
     "tags": [
-      "DEVELOPMENT RECORD",
-      "GitHub",
-      "JOURNAL",
       "limit-development",
-      "mobile",
-      "導線",
-      "機能変更",
-      "自動更新"
+      "機能変更"
     ],
-    "href": "../updates/#u-upd-ca2fad264eeb"
+    "href": "../updates/#u-upd-0cee96694280"
   },
   {
     "kind": "UPDATE",
-    "id": "upd-42af6bd12622",
+    "id": "upd-7017cac59a4c",
     "date": "2026-08-19",
-    "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "機能変更",
     "tags": [
-      "DEVELOPMENT RECORD",
       "FOUNDRY GROWTH ENGINE",
-      "GitHub",
-      "機能変更",
-      "自動更新"
+      "機能変更"
     ],
-    "href": "../updates/#u-upd-42af6bd12622"
+    "href": "../updates/#u-upd-7017cac59a4c"
   },
   {
     "kind": "UPDATE",
@@ -3695,6 +3840,24 @@
   },
   {
     "kind": "JOURNAL",
+    "id": "journal-2026-08-31",
+    "date": "2026-08-31",
+    "title": "sales-catalogを公開、ほか10件",
+    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『limit-developmentを改善』、『limit-developmentに機能を追加』、『limit-developmentを改善』もまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE, limit-development, sales-catalog",
+    "type": "開発日誌",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "limit-development",
+      "sales-catalog",
+      "新製品",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-08-31.html"
+  },
+  {
+    "kind": "JOURNAL",
     "id": "journal-2026-08-30",
     "date": "2026-08-30",
     "title": "render-workerに機能を追加、ほか4件",
@@ -3901,24 +4064,18 @@
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
     "tags": [
-      "DEVELOPMENT RECORD",
       "FOUNDRY GROWTH ENGINE",
-      "GitHub",
-      "JOURNAL",
       "Knowledge Pack",
       "Plain Core",
       "Ultimate-Loop",
       "WebAI-Bridge",
       "limit-development",
-      "mobile",
-      "導線",
       "新プロジェクト",
       "方針変更",
       "機能変更",
       "機能追加",
       "比較",
-      "研究・検証",
-      "自動更新"
+      "研究・検証"
     ],
     "href": "../journal/2026-08-19.html"
   },

@@ -1,5 +1,192 @@
 [
   {
+    "id": "upd-1b6a2adf5a44",
+    "source_id": "nobutakayamauchi/sales-catalog@aa1d47c3794574ba345f8ffdb0924a155842467a",
+    "captured_at": "2026-08-31T22:52:48+09:00",
+    "type": "新製品",
+    "project": "sales-catalog",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/aa1d47c3794574ba345f8ffdb0924a155842467a",
+    "article_score": 0.397,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-b34349ba0245",
+    "source_id": "nobutakayamauchi/limit-development@b4eb2336c5df1f1d8af9c00400bae75db4148ed4",
+    "captured_at": "2026-08-31T21:15:50+09:00",
+    "type": "機能変更",
+    "project": "limit-development",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b4eb2336c5df1f1d8af9c00400bae75db4148ed4",
+    "article_score": 0.178,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-9683d2932a1e",
+    "source_id": "nobutakayamauchi/limit-development@7792bbfef0bcb9b36a541a78471c5498f4c56ade",
+    "captured_at": "2026-08-31T21:15:30+09:00",
+    "type": "機能追加",
+    "project": "limit-development",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/7792bbfef0bcb9b36a541a78471c5498f4c56ade",
+    "article_score": 0.276,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-9b06eb5511a2",
+    "source_id": "nobutakayamauchi/limit-development@be14a14b14dfc0745ac9b53d51e9fdc849b16741",
+    "captured_at": "2026-08-31T20:06:43+09:00",
+    "type": "機能変更",
+    "project": "limit-development",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/4e14294a853cd5183ac05463f0c3cef36def4937,https://github.com/nobutakayamauchi/limit-development/commit/4d8fc68a0a03414dfffe720b43dd3f1ee7b61f05,https://github.com/nobutakayamauchi/limit-development/commit/be14a14b14dfc0745ac9b53d51e9fdc849b16741",
+    "article_score": 0.178,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-e8f2e5e17db6",
+    "source_id": "nobutakayamauchi/limit-development@441ca2f29ccfe9e4e16045ea18e4f550b987c63d",
+    "captured_at": "2026-08-31T20:06:03+09:00",
+    "type": "機能変更",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/441ca2f29ccfe9e4e16045ea18e4f550b987c63d",
+    "article_score": 0.178,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-0e420302759c",
+    "source_id": "nobutakayamauchi/limit-development@a4c9852675807606ac9d16eadfc2e6a10db6a650",
+    "captured_at": "2026-08-31T20:05:39+09:00",
+    "type": "機能追加",
+    "project": "limit-development",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/a4c9852675807606ac9d16eadfc2e6a10db6a650",
+    "article_score": 0.276,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-e9c32d3fa0ef",
+    "source_id": "nobutakayamauchi/sales-catalog@fef24467d5bebe45fc8f5d9bd1bdc3c002cb3c07",
+    "captured_at": "2026-08-31T20:03:04+09:00",
+    "type": "機能追加",
+    "project": "sales-catalog",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/fef24467d5bebe45fc8f5d9bd1bdc3c002cb3c07",
+    "article_score": 0.345,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-a86bb1343613",
+    "source_id": "nobutakayamauchi/limit-development@53868878cddde19e9c9973caadcb7744e73c4c95",
+    "captured_at": "2026-08-31T19:10:24+09:00",
+    "type": "新製品",
+    "project": "limit-development",
+    "title": "limit-developmentを公開",
+    "summary": "limit-developmentを新しく公開しました。",
+    "tags": [
+      "limit-development",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/53868878cddde19e9c9973caadcb7744e73c4c95",
+    "article_score": 0.398,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-b9484b7e605d",
+    "source_id": "nobutakayamauchi/sales-catalog@99af95cb6f1ffb48f8a8033d84b83c2bd1af5edb",
+    "captured_at": "2026-08-31T19:10:16+09:00",
+    "type": "新製品",
+    "project": "sales-catalog",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/99af95cb6f1ffb48f8a8033d84b83c2bd1af5edb",
+    "article_score": 0.397,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-4326c5ab4f7c",
+    "source_id": "nobutakayamauchi/limit-development@dd5954fcfbfe18a0f0cf4d77932227c503fc05ef",
+    "captured_at": "2026-08-31T12:16:07Z",
+    "type": "機能変更",
+    "project": "limit-development",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/dd5954fcfbfe18a0f0cf4d77932227c503fc05ef",
+    "article_score": 0.177,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-48b720a0f254",
+    "source_id": "nobutakayamauchi/limit-development@7bd2436ddb90528673e102c53eba6f6fa4f385e6",
+    "captured_at": "2026-08-31T11:07:35Z",
+    "type": "機能変更",
+    "project": "limit-development",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/7bd2436ddb90528673e102c53eba6f6fa4f385e6",
+    "article_score": 0.176,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-c0f8c674ff33",
     "source_id": "nobutakayamauchi/render-worker@b3fd6d6e105095ffb4fa03002788aad05b94cdc6",
     "captured_at": "2026-08-30T18:17:01+09:00",
@@ -1788,45 +1975,36 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-ca2fad264eeb",
-    "source_id": "nobutakayamauchi/limit-development@3479bfd567039fd9747ed2ee04cd619128165f16",
-    "captured_at": "2026-08-19T18:30:26+09:00",
+    "id": "upd-0cee96694280",
+    "source_id": "nobutakayamauchi/limit-development@b67b65c11e84f068707c009e7f5b3f0aea05bbd8",
+    "captured_at": "2026-08-19T18:33:12+09:00",
     "type": "機能変更",
     "project": "limit-development",
-    "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更12件も、この更新にまとめています。",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
     "tags": [
-      "DEVELOPMENT RECORD",
-      "GitHub",
-      "JOURNAL",
       "limit-development",
-      "mobile",
-      "導線",
-      "機能変更",
-      "自動更新"
+      "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b67b65c11e84f068707c009e7f5b3f0aea05bbd8,https://github.com/nobutakayamauchi/limit-development/commit/315d74a80c0b95d12bf64f62db7472457725ef30,https://github.com/nobutakayamauchi/limit-development/commit/15a9f07c199499b55a638031d6f7917d69bcd67c,https://github.com/nobutakayamauchi/limit-development/commit/3479bfd567039fd9747ed2ee04cd619128165f16,https://github.com/nobutakayamauchi/limit-development/commit/b27c8e59e6d8d019a6e0db50cbffff3b7ce197fd,https://github.com/nobutakayamauchi/limit-development/commit/6d3f91703d9cfe0354fee1d88da78019eaae768e,https://github.com/nobutakayamauchi/limit-development/commit/d0fa292ff40a9478ce29f0b4044090a6411ae98e,https://github.com/nobutakayamauchi/limit-development/commit/226c47937490cc58ef1a0dddfc66351078f6aac2,https://github.com/nobutakayamauchi/limit-development/commit/27d3eac923a03d1eaa9b3aaef7488bb6ff45750a,https://github.com/nobutakayamauchi/limit-development/commit/8a7e7d7e98dfe27f441e0ea11c2534cd05982ee4,https://github.com/nobutakayamauchi/limit-development/commit/49ecabc65ec7f074795b585e419062e2b6fdf88c,https://github.com/nobutakayamauchi/limit-development/commit/4de2523efe6907f1ed130ccb1f453bed9825bba9,https://github.com/nobutakayamauchi/limit-development/commit/527148a3f52ddce2a9e9b8a9377e0863f2c9cec1",
-    "article_score": 0.7,
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b67b65c11e84f068707c009e7f5b3f0aea05bbd8,https://github.com/nobutakayamauchi/limit-development/commit/315d74a80c0b95d12bf64f62db7472457725ef30,https://github.com/nobutakayamauchi/limit-development/commit/15a9f07c199499b55a638031d6f7917d69bcd67c",
+    "article_score": 0.345,
     "article_candidate": false,
     "review_status": "pending"
   },
   {
-    "id": "upd-42af6bd12622",
-    "source_id": "nobutakayamauchi/limit-development@3cf8779e22a932cbcc70bad70ae61d812c9bf79e",
-    "captured_at": "2026-08-19T18:29:46+09:00",
+    "id": "upd-7017cac59a4c",
+    "source_id": "nobutakayamauchi/limit-development@41c128a9e8a5d67ed159d81247c15b08aecc5fa4",
+    "captured_at": "2026-08-19T18:32:34+09:00",
     "type": "機能変更",
     "project": "FOUNDRY GROWTH ENGINE",
-    "title": "開発記録を手書きの現在地から自動更新へ切り替えた",
-    "summary": "古くなりやすい固定の『現在地』をやめ、公開GitHubの活動とFGEのレビュー済み記録から、その時点の開発状況を組み立てる形へ変更しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
     "tags": [
-      "DEVELOPMENT RECORD",
       "FOUNDRY GROWTH ENGINE",
-      "GitHub",
-      "機能変更",
-      "自動更新"
+      "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/41c128a9e8a5d67ed159d81247c15b08aecc5fa4,https://github.com/nobutakayamauchi/limit-development/commit/3cf8779e22a932cbcc70bad70ae61d812c9bf79e",
-    "article_score": 0.7,
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/41c128a9e8a5d67ed159d81247c15b08aecc5fa4",
+    "article_score": 0.176,
     "article_candidate": false,
     "review_status": "pending"
   },

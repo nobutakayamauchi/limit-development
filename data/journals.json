@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-08-31",
+    "title": "sales-catalogを公開、ほか10件",
+    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『limit-developmentを改善』、『limit-developmentに機能を追加』、『limit-developmentを改善』もまとめています。",
+    "update_ids": [
+      "upd-1b6a2adf5a44",
+      "upd-b34349ba0245",
+      "upd-9683d2932a1e",
+      "upd-9b06eb5511a2",
+      "upd-e8f2e5e17db6",
+      "upd-0e420302759c",
+      "upd-e9c32d3fa0ef",
+      "upd-a86bb1343613",
+      "upd-b9484b7e605d",
+      "upd-4326c5ab4f7c",
+      "upd-48b720a0f254"
+    ],
+    "projects": [
+      "FOUNDRY GROWTH ENGINE",
+      "limit-development",
+      "sales-catalog"
+    ],
+    "types": [
+      "新製品",
+      "機能変更",
+      "機能追加"
+    ],
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "limit-development",
+      "sales-catalog",
+      "新製品",
+      "機能変更",
+      "機能追加"
+    ]
+  },
+  {
     "date": "2026-08-30",
     "title": "render-workerに機能を追加、ほか4件",
     "summary": "render-workerで新しい機能を使えるようにしました。 同じ日の開発記録として、『render-workerに機能を追加』、『render-workerを改善』、『render-workerに機能を追加』もまとめています。",
@@ -386,8 +422,8 @@
       "upd-f217f8817f2a",
       "upd-1c6e4adacaa3",
       "upd-3cfdf0a7be46",
-      "upd-ca2fad264eeb",
-      "upd-42af6bd12622",
+      "upd-0cee96694280",
+      "upd-7017cac59a4c",
       "upd-5d79ae636c2a",
       "upd-f09a21409430",
       "upd-8065bbc64d5d",
@@ -419,24 +455,18 @@
       "研究・検証"
     ],
     "tags": [
-      "DEVELOPMENT RECORD",
       "FOUNDRY GROWTH ENGINE",
-      "GitHub",
-      "JOURNAL",
       "Knowledge Pack",
       "Plain Core",
       "Ultimate-Loop",
       "WebAI-Bridge",
       "limit-development",
-      "mobile",
-      "導線",
       "新プロジェクト",
       "方針変更",
       "機能変更",
       "機能追加",
       "比較",
-      "研究・検証",
-      "自動更新"
+      "研究・検証"
     ]
   },
   {
