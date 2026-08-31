@@ -1,5 +1,39 @@
 [
   {
+    "id": "upd-cfb3fd0a6850",
+    "source_id": "nobutakayamauchi/x-ads-bridge@ab897974e043c4eeaa6e7969a48ea47672e2464a",
+    "captured_at": "2026-09-01T01:40:48+09:00",
+    "type": "機能変更",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/ab897974e043c4eeaa6e7969a48ea47672e2464a,https://github.com/nobutakayamauchi/x-ads-bridge/commit/7878d0c3ddc9638f8ef9c99ebeafa24b37640974",
+    "article_score": 0.171,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-466e1b899e9d",
+    "source_id": "nobutakayamauchi/sales-catalog@6469187d07344647afcaaad4d9b2916d3119bade",
+    "captured_at": "2026-08-31T23:43:33+09:00",
+    "type": "新製品",
+    "project": "sales-catalog",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/6469187d07344647afcaaad4d9b2916d3119bade",
+    "article_score": 0.387,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-1b6a2adf5a44",
     "source_id": "nobutakayamauchi/sales-catalog@aa1d47c3794574ba345f8ffdb0924a155842467a",
     "captured_at": "2026-08-31T22:52:48+09:00",
@@ -149,6 +183,23 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/99af95cb6f1ffb48f8a8033d84b83c2bd1af5edb",
     "article_score": 0.397,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-655c23a8d3d0",
+    "source_id": "nobutakayamauchi/limit-development@9a117bcde06edeee6b240d878bc148f42c2f4f3b",
+    "captured_at": "2026-08-31T18:01:47Z",
+    "type": "機能変更",
+    "project": "limit-development",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/9a117bcde06edeee6b240d878bc148f42c2f4f3b",
+    "article_score": 0.177,
     "article_candidate": false,
     "review_status": "pending"
   },
@@ -1981,12 +2032,12 @@
     "type": "機能変更",
     "project": "limit-development",
     "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
     "tags": [
       "limit-development",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b67b65c11e84f068707c009e7f5b3f0aea05bbd8,https://github.com/nobutakayamauchi/limit-development/commit/315d74a80c0b95d12bf64f62db7472457725ef30,https://github.com/nobutakayamauchi/limit-development/commit/15a9f07c199499b55a638031d6f7917d69bcd67c",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b67b65c11e84f068707c009e7f5b3f0aea05bbd8",
     "article_score": 0.345,
     "article_candidate": false,
     "review_status": "pending"

@@ -1,6 +1,34 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-cfb3fd0a6850",
+    "date": "2026-09-01",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "機能変更",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-cfb3fd0a6850"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-466e1b899e9d",
+    "date": "2026-08-31",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。",
+    "project": "sales-catalog",
+    "type": "新製品",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-466e1b899e9d"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-1b6a2adf5a44",
     "date": "2026-08-31",
     "title": "sales-catalogを公開",
@@ -124,6 +152,20 @@
       "新製品"
     ],
     "href": "../updates/#u-upd-b9484b7e605d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-655c23a8d3d0",
+    "date": "2026-08-31",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-655c23a8d3d0"
   },
   {
     "kind": "UPDATE",
@@ -1631,7 +1673,7 @@
     "id": "upd-0cee96694280",
     "date": "2026-08-19",
     "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
     "project": "limit-development",
     "type": "機能変更",
     "tags": [
@@ -3840,10 +3882,24 @@
   },
   {
     "kind": "JOURNAL",
+    "id": "journal-2026-09-01",
+    "date": "2026-09-01",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "開発日誌",
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ],
+    "href": "../journal/2026-09-01.html"
+  },
+  {
+    "kind": "JOURNAL",
     "id": "journal-2026-08-31",
     "date": "2026-08-31",
-    "title": "sales-catalogを公開、ほか10件",
-    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『limit-developmentを改善』、『limit-developmentに機能を追加』、『limit-developmentを改善』もまとめています。",
+    "title": "sales-catalogを公開、ほか12件",
+    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『sales-catalogを公開』、『limit-developmentを改善』、『limit-developmentに機能を追加』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, limit-development, sales-catalog",
     "type": "開発日誌",
     "tags": [

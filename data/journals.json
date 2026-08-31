@@ -1,9 +1,28 @@
 [
   {
-    "date": "2026-08-31",
-    "title": "sales-catalogを公開、ほか10件",
-    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『limit-developmentを改善』、『limit-developmentに機能を追加』、『limit-developmentを改善』もまとめています。",
+    "date": "2026-09-01",
+    "title": "x-ads-bridgeを改善",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "update_ids": [
+      "upd-cfb3fd0a6850"
+    ],
+    "projects": [
+      "x-ads-bridge"
+    ],
+    "types": [
+      "機能変更"
+    ],
+    "tags": [
+      "x-ads-bridge",
+      "機能変更"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "title": "sales-catalogを公開、ほか12件",
+    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『sales-catalogを公開』、『limit-developmentを改善』、『limit-developmentに機能を追加』もまとめています。",
+    "update_ids": [
+      "upd-466e1b899e9d",
       "upd-1b6a2adf5a44",
       "upd-b34349ba0245",
       "upd-9683d2932a1e",
@@ -13,6 +32,7 @@
       "upd-e9c32d3fa0ef",
       "upd-a86bb1343613",
       "upd-b9484b7e605d",
+      "upd-655c23a8d3d0",
       "upd-4326c5ab4f7c",
       "upd-48b720a0f254"
     ],
