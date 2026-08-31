@@ -1,6 +1,76 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-3b4ee773c491",
+    "date": "2026-09-01",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "render-worker",
+    "type": "機能追加",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-3b4ee773c491"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-38a69bc2c81e",
+    "date": "2026-09-01",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "render-worker",
+    "type": "機能追加",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-38a69bc2c81e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-10369d3a251d",
+    "date": "2026-09-01",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "render-worker",
+    "type": "機能変更",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-10369d3a251d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-90ce8c4b9f8d",
+    "date": "2026-09-01",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "render-worker",
+    "type": "機能変更",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-90ce8c4b9f8d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-296a189a9377",
+    "date": "2026-09-01",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "render-worker",
+    "type": "機能追加",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-296a189a9377"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-cfb3fd0a6850",
     "date": "2026-09-01",
     "title": "x-ads-bridgeを改善",
@@ -1681,20 +1751,6 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-0cee96694280"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-7017cac59a4c",
-    "date": "2026-08-19",
-    "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "機能変更",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-7017cac59a4c"
   },
   {
     "kind": "UPDATE",
@@ -3884,13 +3940,15 @@
     "kind": "JOURNAL",
     "id": "journal-2026-09-01",
     "date": "2026-09-01",
-    "title": "x-ads-bridgeを改善",
-    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "x-ads-bridge",
+    "title": "render-workerに機能を追加、ほか5件",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。 同じ日の開発記録として、『render-workerに機能を追加』、『render-workerを改善』、『render-workerを改善』もまとめています。",
+    "project": "render-worker, x-ads-bridge",
     "type": "開発日誌",
     "tags": [
+      "render-worker",
       "x-ads-bridge",
-      "機能変更"
+      "機能変更",
+      "機能追加"
     ],
     "href": "../journal/2026-09-01.html"
   },
@@ -4115,7 +4173,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか21件",
+    "title": "limit-developmentを改善、ほか20件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",

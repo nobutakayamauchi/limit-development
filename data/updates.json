@@ -1,5 +1,90 @@
 [
   {
+    "id": "upd-3b4ee773c491",
+    "source_id": "nobutakayamauchi/render-worker@c4d51a86bec0a08b5053d640e8de1d1d4e61bf87",
+    "captured_at": "2026-09-01T08:30:48+09:00",
+    "type": "機能追加",
+    "project": "render-worker",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/e0838756ec06904622e92856b27fb1aeff379946,https://github.com/nobutakayamauchi/render-worker/commit/c4d51a86bec0a08b5053d640e8de1d1d4e61bf87,https://github.com/nobutakayamauchi/render-worker/commit/5b0b1546786a0f2669b6525cd08213664de0a0ef,https://github.com/nobutakayamauchi/render-worker/commit/12cf927d9cd84d01cd307ce61bd24e85589b137f",
+    "article_score": 0.275,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-38a69bc2c81e",
+    "source_id": "nobutakayamauchi/render-worker@70318aab359ca2a71ab2adea293649e0fb90860a",
+    "captured_at": "2026-09-01T07:24:48+09:00",
+    "type": "機能追加",
+    "project": "render-worker",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/392664a79863c3473157e2ca798749dfe3f23677,https://github.com/nobutakayamauchi/render-worker/commit/70318aab359ca2a71ab2adea293649e0fb90860a,https://github.com/nobutakayamauchi/render-worker/commit/e0ae88cd3df30e95808daae88392169ae080d05a,https://github.com/nobutakayamauchi/render-worker/commit/b51b4ae8ef67f0f7ac54eae3706e9b27c41428d8",
+    "article_score": 0.434,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-10369d3a251d",
+    "source_id": "nobutakayamauchi/render-worker@5b75b65b4b8c1ea61ea45f329fb4aea8d54629c8",
+    "captured_at": "2026-09-01T07:18:40+09:00",
+    "type": "機能変更",
+    "project": "render-worker",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/729da044d2cbeb7fb8c419688e94ee3c4c514c12,https://github.com/nobutakayamauchi/render-worker/commit/fbe0b8a1a428e8ebd38b872f8bf16a620d20b351,https://github.com/nobutakayamauchi/render-worker/commit/5b75b65b4b8c1ea61ea45f329fb4aea8d54629c8",
+    "article_score": 0.331,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-90ce8c4b9f8d",
+    "source_id": "nobutakayamauchi/render-worker@d9d3637021b2ae0c637faf95786f378016720e12",
+    "captured_at": "2026-09-01T06:55:24+09:00",
+    "type": "機能変更",
+    "project": "render-worker",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/85b30c08b1a72bb2095a7541a82d7c1510e6aebe,https://github.com/nobutakayamauchi/render-worker/commit/d9d3637021b2ae0c637faf95786f378016720e12,https://github.com/nobutakayamauchi/render-worker/commit/785d976e1026ddfbcfe13a97f7cbcc77f95f461c",
+    "article_score": 0.175,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-296a189a9377",
+    "source_id": "nobutakayamauchi/render-worker@54f32f081c3e810f9ca9d69c3d78b77ae6fa0ecd",
+    "captured_at": "2026-09-01T06:51:24+09:00",
+    "type": "機能追加",
+    "project": "render-worker",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/94032c7401c22fc816a483d464a0a8f2884b3633,https://github.com/nobutakayamauchi/render-worker/commit/f68c36eb234a869291256cdb5fef156f02faa64a,https://github.com/nobutakayamauchi/render-worker/commit/54f32f081c3e810f9ca9d69c3d78b77ae6fa0ecd",
+    "article_score": 0.432,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-cfb3fd0a6850",
     "source_id": "nobutakayamauchi/x-ads-bridge@ab897974e043c4eeaa6e7969a48ea47672e2464a",
     "captured_at": "2026-09-01T01:40:48+09:00",
@@ -2039,23 +2124,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b67b65c11e84f068707c009e7f5b3f0aea05bbd8",
     "article_score": 0.345,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-7017cac59a4c",
-    "source_id": "nobutakayamauchi/limit-development@41c128a9e8a5d67ed159d81247c15b08aecc5fa4",
-    "captured_at": "2026-08-19T18:32:34+09:00",
-    "type": "機能変更",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/41c128a9e8a5d67ed159d81247c15b08aecc5fa4",
-    "article_score": 0.176,
     "article_candidate": false,
     "review_status": "pending"
   },

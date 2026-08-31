@@ -1,20 +1,29 @@
 [
   {
     "date": "2026-09-01",
-    "title": "x-ads-bridgeを改善",
-    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "title": "render-workerに機能を追加、ほか5件",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。 同じ日の開発記録として、『render-workerに機能を追加』、『render-workerを改善』、『render-workerを改善』もまとめています。",
     "update_ids": [
+      "upd-3b4ee773c491",
+      "upd-38a69bc2c81e",
+      "upd-10369d3a251d",
+      "upd-90ce8c4b9f8d",
+      "upd-296a189a9377",
       "upd-cfb3fd0a6850"
     ],
     "projects": [
+      "render-worker",
       "x-ads-bridge"
     ],
     "types": [
-      "機能変更"
+      "機能変更",
+      "機能追加"
     ],
     "tags": [
+      "render-worker",
       "x-ads-bridge",
-      "機能変更"
+      "機能変更",
+      "機能追加"
     ]
   },
   {
@@ -435,7 +444,7 @@
   },
   {
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか21件",
+    "title": "limit-developmentを改善、ほか20件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "update_ids": [
       "upd-89dcec3f8e91",
@@ -443,7 +452,6 @@
       "upd-1c6e4adacaa3",
       "upd-3cfdf0a7be46",
       "upd-0cee96694280",
-      "upd-7017cac59a4c",
       "upd-5d79ae636c2a",
       "upd-f09a21409430",
       "upd-8065bbc64d5d",
