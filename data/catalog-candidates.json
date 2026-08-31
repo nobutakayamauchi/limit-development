@@ -1,0 +1,145 @@
+[
+  {
+    "id": "invoice-payment-ops",
+    "name": "INVOICE PAYMENT OPS",
+    "short": "¥",
+    "kind": "PRODUCT / PRODUCTION",
+    "cats": [
+      "production",
+      "product"
+    ],
+    "killer": "請求した後まで、終わらせます。",
+    "desc": "見積・納品・請求・入金確認・領収書までを取引IDでつなぎ、ChatGPT / Codexから扱う請求・入金管理セット",
+    "definition": "請求業務を最後まで閉じるための請求・入金管理セットです。",
+    "url": "https://nobutakayamauchi.github.io/sales-catalog/products/invoice-payment-ops/",
+    "salesUrl": "https://nobutakayamauchi.github.io/sales-catalog/products/invoice-payment-ops/sales.html",
+    "repo": "nobutakayamauchi/invoice-payment-ops",
+    "status": "for_sale",
+    "priority": 10,
+    "source": "sales-catalog"
+  },
+  {
+    "id": "webai-bridge",
+    "name": "WEBAI BRIDGE",
+    "short": "W",
+    "kind": "PRODUCT / PRODUCTION",
+    "cats": [
+      "production",
+      "product"
+    ],
+    "killer": "AIを、自分の場所で使えるようにします。",
+    "desc": "AIをWebで配布し、顧客接点へつなぐための基盤",
+    "definition": "AIとWebをつなぐための接続基盤です。",
+    "url": "https://nobutakayamauchi.github.io/sales-catalog/products/webai-bridge/",
+    "salesUrl": "https://nobutakayamauchi.github.io/sales-catalog/products/webai-bridge/sales.html",
+    "repo": "nobutakayamauchi/WebAI-Bridge",
+    "status": "for_sale",
+    "priority": 20,
+    "source": "sales-catalog"
+  },
+  {
+    "id": "bridgepatch",
+    "name": "BRIDGEPATCH",
+    "short": "B",
+    "kind": "SERVICE / PRODUCTION",
+    "cats": [
+      "production",
+      "product"
+    ],
+    "killer": "ここ直せば、大体直ります。",
+    "desc": "既存の業務やツールを見て、使えるものを組み合わせ、足りない部分だけ作る一点改善サービス",
+    "definition": "全部作り直さず、効く場所へ手を入れる一点改善サービスです。",
+    "url": "https://nobutakayamauchi.github.io/sales-catalog/products/bridgepatch/",
+    "salesUrl": "https://nobutakayamauchi.github.io/sales-catalog/products/bridgepatch/sales.html",
+    "repo": "nobutakayamauchi/limit-development",
+    "status": "for_sale",
+    "priority": 30,
+    "source": "sales-catalog"
+  },
+  {
+    "id": "axis",
+    "name": "AXIS",
+    "short": "X",
+    "kind": "SERVICE / RESEARCH",
+    "cats": [
+      "research",
+      "product"
+    ],
+    "killer": "たくさんあっても、今やるのはこれだけです。",
+    "desc": "困っている一点を整理し、最も効く解決策を実装可能な仕様書と見積書にする設計サービス",
+    "definition": "困っている一点を実装可能な仕様書と見積書へ落とす設計サービスです。",
+    "url": "https://nobutakayamauchi.github.io/sales-catalog/products/axis/",
+    "salesUrl": "https://nobutakayamauchi.github.io/sales-catalog/products/axis/sales.html",
+    "repo": "nobutakayamauchi/limit-development",
+    "status": "for_sale",
+    "priority": 40,
+    "source": "sales-catalog"
+  },
+  {
+    "id": "sdn",
+    "name": "Sales Distribution Network (SDN)",
+    "short": "S",
+    "kind": "PRODUCT / PRODUCTION",
+    "cats": [
+      "production",
+      "product"
+    ],
+    "killer": "紹介販売を、決済の後までつなぎます。",
+    "desc": "Stripe Checkoutを紹介販売ネットワークへつなぎ、紹介計測・コミッション・支払い・返金リバーサルまでを一つの流れで扱う販売基盤",
+    "definition": "紹介計測・コミッション・支払い・返金リバーサルまでを扱う販売基盤です。",
+    "url": "https://nobutakayamauchi.github.io/sales-catalog/products/sdn/",
+    "salesUrl": "https://nobutakayamauchi.github.io/sales-catalog/products/sdn/",
+    "repo": "nobutakayamauchi/Sales-Distribution-Network",
+    "status": "for_sale",
+    "priority": 50,
+    "source": "sales-catalog"
+  },
+  {
+    "id": "ultimate-loop",
+    "name": "ULTIMATE LOOP",
+    "short": "∞",
+    "kind": "METHOD / RESEARCH",
+    "cats": [
+      "research"
+    ],
+    "killer": "一からの新造、やめてください。",
+    "desc": "今ある道具や過去の部品を先に探し、組み合わせても足りない部分だけを新しく作ります。",
+    "definition": "無駄な開発を減らすための開発手法です。",
+    "url": "products/ultimate-loop.html",
+    "priority": 60,
+    "status": "public",
+    "source": "seed"
+  },
+  {
+    "id": "nagi",
+    "name": "NAGI",
+    "short": "N",
+    "kind": "PRODUCTION",
+    "cats": [
+      "production"
+    ],
+    "killer": "中断した場所？ここからです。",
+    "desc": "どこまで進んだか、次に何をするかを残して、途中から再開しやすくします。",
+    "definition": "中断と再開を楽にするツールです。",
+    "url": "products/nagi.html",
+    "priority": 70,
+    "status": "public",
+    "source": "seed"
+  },
+  {
+    "id": "trace",
+    "name": "TRACE",
+    "short": "T",
+    "kind": "RESEARCH / EVIDENCE",
+    "cats": [
+      "research"
+    ],
+    "killer": "「何が起きた？」慌てずこれ見てください。",
+    "desc": "変更・失敗・修正の流れを記録して、あとから何が起きたかを追えるようにします。",
+    "definition": "トラブル時に状況をたどるための記録ツールです。",
+    "url": "products/trace.html",
+    "priority": 80,
+    "status": "public",
+    "source": "seed"
+  }
+]
