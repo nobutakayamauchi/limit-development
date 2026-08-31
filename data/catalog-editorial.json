@@ -1,0 +1,34 @@
+{
+  "mode": "editorial",
+  "description": "GitHubは候補倉庫。ここが公開棚の編集部。候補を自動収集しても、ここで採用したカードだけをトップ/worksに表示する。",
+  "featured": [
+    "invoice-payment-ops",
+    "webai-bridge",
+    "bridgepatch",
+    "axis"
+  ],
+  "visible": [
+    "invoice-payment-ops",
+    "webai-bridge",
+    "bridgepatch",
+    "axis",
+    "sdn",
+    "ultimate-loop",
+    "nagi",
+    "trace"
+  ],
+  "hidden": [],
+  "overrides": {
+    "invoice-payment-ops": {
+      "priority": 10,
+      "killer": "請求した後まで、終わらせます。"
+    },
+    "webai-bridge": {"priority": 20},
+    "bridgepatch": {"priority": 30},
+    "axis": {"priority": 40},
+    "sdn": {"priority": 50},
+    "ultimate-loop": {"priority": 60},
+    "nagi": {"priority": 70},
+    "trace": {"priority": 80}
+  }
+}
