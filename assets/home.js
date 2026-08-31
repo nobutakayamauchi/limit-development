@@ -1,10 +1,10 @@
 const SALES_CATALOG='https://nobutakayamauchi.github.io/sales-catalog/';
 const ITEMS=[
- {name:'FOUNDRY GROWTH ENGINE',short:'FGE',kind:'PRODUCT',cats:['production','product'],killer:'仕事してください。',desc:'仕事の簡単な報告から、更新情報・記事・SNS投稿用の文章まで整えます。',definition:'発信作業を、もう一仕事にしないための投稿支援ツールです。',url:'products/foundry-growth-engine.html'},
+ {name:'INVOICE PAYMENT OPS',short:'¥',kind:'PRODUCT / PRODUCTION',cats:['production','product'],killer:'請求した後まで、終わらせます。',desc:'見積・納品・請求・入金確認・領収書までを、同じ取引IDでChatGPTから扱います。',definition:'請求業務を最後まで閉じるための請求・入金管理セットです。',url:`${SALES_CATALOG}products/invoice-payment-ops/`,salesUrl:`${SALES_CATALOG}products/invoice-payment-ops/sales.html`},
+ {name:'WEB AI BRIDGE',short:'W',kind:'PRODUCT / PRODUCTION',cats:['production','product'],killer:'AIを、自分の場所で使えるようにします。',desc:'AI機能を、自分のサイトや仕組みへつなぎやすくするための橋を作ります。',definition:'AIとWebをつなぐための接続基盤です。',url:'products/webai-bridge.html',salesUrl:`${SALES_CATALOG}products/webai-bridge/`},
+ {name:'BRIDGE PATCH',short:'B',kind:'SERVICE / PRODUCTION',cats:['production','product'],killer:'ここ直せば、大体直ります。',desc:'問題の中心になっている一部分を見つけて、そこだけ小さく直したり、つなぎ直したりします。',definition:'全部作り直さず、効く場所へ手を入れる一点改善サービスです。',url:'products/bridgepatch.html',salesUrl:`${SALES_CATALOG}products/bridgepatch/sales.html`},
+ {name:'AXIS',short:'X',kind:'SERVICE / RESEARCH',cats:['research','product'],killer:'たくさんあっても、今やるのはこれだけです。',desc:'仕事や課題が増えても、優先順位を整理して「今やること」をひとつに絞ります。',definition:'困っている一点を実装可能な仕様書と見積書へ落とす設計サービスです。',url:'products/axis.html',salesUrl:`${SALES_CATALOG}products/axis/sales.html`},
  {name:'ULTIMATE LOOP',short:'∞',kind:'METHOD / RESEARCH',cats:['research'],killer:'一からの新造、やめてください。',desc:'今ある道具や過去の部品を先に探し、組み合わせても足りない部分だけを新しく作ります。',definition:'無駄な開発を減らすための開発手法です。',url:'products/ultimate-loop.html'},
- {name:'WEB AI BRIDGE',short:'W',kind:'PRODUCTION',cats:['production','product'],killer:'AIを、自分の場所で使えるようにします。',desc:'AI機能を、自分のサイトや仕組みへつなぎやすくするための橋を作ります。',definition:'AIとWebをつなぐための接続基盤です。',url:'products/webai-bridge.html',salesUrl:`${SALES_CATALOG}products/webai-bridge/`},
- {name:'BRIDGE PATCH',short:'B',kind:'PRODUCTION',cats:['production','product'],killer:'ここ直せば、大体直ります。',desc:'問題の中心になっている一部分を見つけて、そこだけ小さく直したり、つなぎ直したりします。',definition:'全部作り直さず、効く場所へ手を入れる改善ツールです。',url:'products/bridgepatch.html'},
- {name:'AXIS',short:'X',kind:'RESEARCH',cats:['research'],killer:'たくさんあっても、今やるのはこれだけです。',desc:'仕事や課題が増えても、優先順位を整理して「今やること」をひとつに絞ります。',definition:'迷わず次の一手を決めるための整理ツールです。',url:'products/axis.html'},
  {name:'NAGI',short:'N',kind:'PRODUCTION',cats:['production'],killer:'中断した場所？ここからです。',desc:'どこまで進んだか、次に何をするかを残して、途中から再開しやすくします。',definition:'中断と再開を楽にするツールです。',url:'products/nagi.html'},
  {name:'TRACE',short:'T',kind:'RESEARCH / EVIDENCE',cats:['research'],killer:'「何が起きた？」慌てずこれ見てください。',desc:'変更・失敗・修正の流れを記録して、あとから何が起きたかを追えるようにします。',definition:'トラブル時に状況をたどるための記録ツールです。',url:'products/trace.html'}
 ];
@@ -29,7 +29,7 @@ function updateRow(u){
 }
 function journalRow(j){
  const li=document.createElement('li'),time=document.createElement('time'),a=document.createElement('a'),arr=document.createElement('span');
- const day=typeof j.date==='string'?j.date:'';time.textContent=day.length>=10?`${day.slice(5,7)}.${day.slice(8,10)}`:day;a.textContent=String(j.title||'開発日誌');a.href=`journal/${encodeURIComponent(day)}.html`;arr.className='arr';arr.textContent='›';li.append(time,a,arr);return li;
+ const day=typeof j.date==='string'?j.date:'';time.textContent=day.length>=10?`${day.slice(5,7)}.${day.slice(8,10)}`:day;a.textContent=String(j.title||'開発日誌');a.href=`journal/${encodeURIComponent(day)}.html`;li.append(time,a,arr);arr.className='arr';arr.textContent='›';return li;
 }
 function wireJournalNavigation(){
  document.querySelectorAll('.nav a,.mobile-nav a').forEach(a=>{if(a.textContent.trim()==='JOURNAL')a.href='journal/'});
