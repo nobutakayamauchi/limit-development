@@ -1,10 +1,11 @@
-name: Public catalog sync
+name: Public catalog candidate sync
 
 on:
   workflow_dispatch:
   push:
     paths:
       - "data/catalog-seed.json"
+      - "data/catalog-editorial.json"
       - "foundry-growth-engine/scripts/sync_public_catalog.py"
       - ".github/workflows/public-catalog.yml"
   schedule:
@@ -23,11 +24,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Collect public repositories
         env:
           GH_TOKEN: ${{ github.token }}
@@ -35,43 +34,40 @@ jobs:
           set -euo pipefail
           mkdir -p /tmp/public-catalog-sources
           : > /tmp/public-catalog-repos.txt
-          gh api --paginate "users/$FGE_OWNER/repos?per_page=100&type=owner&sort=updated" \
-            --jq '.[] | select(.private == false and .fork == false and .archived == false) | .name' \
-            | sort -u > /tmp/public-catalog-names.txt
+          gh api --paginate "users/$FGE_OWNER/repos?per_page=100&type=owner&sort=updated" --jq '.[] | select(.private == false and .fork == false and .archived == false) | .name' | sort -u > /tmp/public-catalog-names.txt
           while IFS= read -r name; do
             [ -z "$name" ] && continue
             [ "$name" = "limit-development" ] && continue
             dest="/tmp/public-catalog-sources/$name"
-            if git clone --quiet --depth=1 "https://github.com/$FGE_OWNER/$name.git" "$dest"; then
-              printf '%s\n' "$dest" >> /tmp/public-catalog-repos.txt
-            fi
+            if git clone --quiet --depth=1 "https://github.com/$FGE_OWNER/$name.git" "$dest"; then printf '%s\n' "$dest" >> /tmp/public-catalog-repos.txt; fi
           done < /tmp/public-catalog-names.txt
-
-      - name: Build catalog from GitHub evidence
+      - name: Build candidate inventory from GitHub evidence
         run: |
           set -euo pipefail
-          args=()
-          while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/public-catalog-repos.txt
-          sales="/tmp/public-catalog-sources/sales-catalog/data/products.json"
-          extra=()
-          if [ -f "$sales" ]; then extra+=(--sales-products "$sales"); fi
-          python foundry-growth-engine/scripts/sync_public_catalog.py \
-            --seed data/catalog-seed.json \
-            "${extra[@]}" \
-            "${args[@]}" \
-            --output data/catalog.json
-
-      - name: Publish catalog only when changed
-        if: github.event_name != 'pull_request'
+          args=(); while IFS= read -r repo; do args+=(--repo "$repo"); done < /tmp/public-catalog-repos.txt
+          sales="/tmp/public-catalog-sources/sales-catalog/data/products.json"; extra=(); if [ -f "$sales" ]; then extra+=(--sales-products "$sales"); fi
+          python foundry-growth-engine/scripts/sync_public_catalog.py --seed data/catalog-seed.json "${extra[@]}" "${args[@]}" --output data/catalog-candidates.json
+      - name: Apply human editorial shelf
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          candidates=json.loads(Path('data/catalog-candidates.json').read_text())
+          editorial=json.loads(Path('data/catalog-editorial.json').read_text())
+          by_id={x['id']:x for x in candidates if x.get('id')}
+          visible=editorial.get('visible',[]); hidden=set(editorial.get('hidden',[])); overrides=editorial.get('overrides',{})
+          out=[]
+          for item_id in visible:
+              if item_id in hidden or item_id not in by_id: continue
+              item=dict(by_id[item_id]); item.update(overrides.get(item_id,{})); out.append(item)
+          out.sort(key=lambda x:x.get('priority',9999))
+          Path('data/catalog.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          featured=[x for x in editorial.get('featured',[]) if x in {i['id'] for i in out}]
+          Path('data/catalog-featured.json').write_text(json.dumps(featured,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Publish candidate inventory and curated shelf only when changed
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/catalog.json
-          if git diff --cached --quiet; then
-            echo "Public catalog already current." >> "$GITHUB_STEP_SUMMARY"
-          else
-            git commit -m "[CATALOG] Sync public products and research"
-            git push origin HEAD:main
-            echo "Public catalog refreshed from sales-catalog plus repository .foundry/public.json manifests." >> "$GITHUB_STEP_SUMMARY"
-          fi
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog-candidates.json data/catalog.json data/catalog-featured.json
+          if git diff --cached --quiet; then echo "Catalog already current." >> "$GITHUB_STEP_SUMMARY"; else git commit -m "[CATALOG] Refresh candidates and curated shelf"; git push origin HEAD:main; fi
