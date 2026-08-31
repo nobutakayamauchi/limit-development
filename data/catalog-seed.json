@@ -1,0 +1,14 @@
+{
+  "editorial": {
+    "invoice-payment-ops": {"short":"¥","kind":"PRODUCT / PRODUCTION","cats":["production","product"],"killer":"請求した後まで、終わらせます。","definition":"請求業務を最後まで閉じるための請求・入金管理セットです。","priority":10},
+    "webai-bridge": {"short":"W","kind":"PRODUCT / PRODUCTION","cats":["production","product"],"killer":"AIを、自分の場所で使えるようにします。","definition":"AIとWebをつなぐための接続基盤です。","priority":20},
+    "bridgepatch": {"short":"B","kind":"SERVICE / PRODUCTION","cats":["production","product"],"killer":"ここ直せば、大体直ります。","definition":"全部作り直さず、効く場所へ手を入れる一点改善サービスです。","priority":30},
+    "axis": {"short":"X","kind":"SERVICE / RESEARCH","cats":["research","product"],"killer":"たくさんあっても、今やるのはこれだけです。","definition":"困っている一点を実装可能な仕様書と見積書へ落とす設計サービスです。","priority":40},
+    "sdn": {"short":"S","kind":"PRODUCT / PRODUCTION","cats":["production","product"],"killer":"紹介販売を、決済の後までつなぎます。","definition":"紹介計測・コミッション・支払い・返金リバーサルまでを扱う販売基盤です。","priority":50}
+  },
+  "static_items": [
+    {"id":"ultimate-loop","name":"ULTIMATE LOOP","short":"∞","kind":"METHOD / RESEARCH","cats":["research"],"killer":"一からの新造、やめてください。","desc":"今ある道具や過去の部品を先に探し、組み合わせても足りない部分だけを新しく作ります。","definition":"無駄な開発を減らすための開発手法です。","url":"products/ultimate-loop.html","priority":60,"status":"public"},
+    {"id":"nagi","name":"NAGI","short":"N","kind":"PRODUCTION","cats":["production"],"killer":"中断した場所？ここからです。","desc":"どこまで進んだか、次に何をするかを残して、途中から再開しやすくします。","definition":"中断と再開を楽にするツールです。","url":"products/nagi.html","priority":70,"status":"public"},
+    {"id":"trace","name":"TRACE","short":"T","kind":"RESEARCH / EVIDENCE","cats":["research"],"killer":"「何が起きた？」慌てずこれ見てください。","desc":"変更・失敗・修正の流れを記録して、あとから何が起きたかを追えるようにします。","definition":"トラブル時に状況をたどるための記録ツールです。","url":"products/trace.html","priority":80,"status":"public"}
+  ]
+}
