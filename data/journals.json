@@ -1,9 +1,15 @@
 [
   {
     "date": "2026-09-01",
-    "title": "render-workerに機能を追加、ほか5件",
-    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。 同じ日の開発記録として、『render-workerに機能を追加』、『render-workerを改善』、『render-workerを改善』もまとめています。",
+    "title": "render-workerを改善、ほか11件",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerの機能を整理』、『render-workerを検証』、『render-workerに機能を追加』もまとめています。",
     "update_ids": [
+      "upd-daf0b2f7243d",
+      "upd-e406263e0fa5",
+      "upd-fb0f720bce5d",
+      "upd-0b1ba46bcb03",
+      "upd-7dd926b93833",
+      "upd-9cf790fe33a2",
       "upd-3b4ee773c491",
       "upd-38a69bc2c81e",
       "upd-10369d3a251d",
@@ -16,14 +22,18 @@
       "x-ads-bridge"
     ],
     "types": [
+      "機能削除",
       "機能変更",
-      "機能追加"
+      "機能追加",
+      "研究・検証"
     ],
     "tags": [
       "render-worker",
       "x-ads-bridge",
+      "機能削除",
       "機能変更",
-      "機能追加"
+      "機能追加",
+      "研究・検証"
     ]
   },
   {
@@ -444,14 +454,13 @@
   },
   {
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか20件",
+    "title": "limit-developmentを改善、ほか19件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "update_ids": [
       "upd-89dcec3f8e91",
       "upd-f217f8817f2a",
       "upd-1c6e4adacaa3",
       "upd-3cfdf0a7be46",
-      "upd-0cee96694280",
       "upd-5d79ae636c2a",
       "upd-f09a21409430",
       "upd-8065bbc64d5d",
@@ -898,7 +907,7 @@
   },
   {
     "date": "2026-08-02",
-    "title": "rts-video-flowを改善、ほか18件",
+    "title": "rts-video-flowを改善、ほか14件",
     "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『rts-video-flowを検証』、『rts-video-flowを改善』、『rts-video-flowの機能を整理』もまとめています。",
     "update_ids": [
       "upd-0bfea21a1f29",
@@ -915,11 +924,7 @@
       "upd-c6e99f81c4f7",
       "upd-230169b33616",
       "upd-f9776d5335dc",
-      "upd-908ad56b2a01",
-      "upd-169d31aeb2f6",
-      "upd-820ee902c894",
-      "upd-8188a1caa13d",
-      "upd-1b4bc999f5fc"
+      "upd-908ad56b2a01"
     ],
     "projects": [
       "RS-AI-limit-development",

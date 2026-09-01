@@ -1,5 +1,107 @@
 [
   {
+    "id": "upd-daf0b2f7243d",
+    "source_id": "nobutakayamauchi/render-worker@cc5a8fb3701ee54ecd654523d9b84512f660d89e",
+    "captured_at": "2026-09-01T14:03:22+09:00",
+    "type": "機能変更",
+    "project": "render-worker",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/cc5a8fb3701ee54ecd654523d9b84512f660d89e",
+    "article_score": 0.172,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-e406263e0fa5",
+    "source_id": "nobutakayamauchi/render-worker@60dd1aec256c42e6210e13354dfb5d2878370fac",
+    "captured_at": "2026-09-01T14:02:54+09:00",
+    "type": "機能削除",
+    "project": "render-worker",
+    "title": "render-workerの機能を整理",
+    "summary": "render-workerで不要になった機能を削除しました。",
+    "tags": [
+      "render-worker",
+      "機能削除"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/60dd1aec256c42e6210e13354dfb5d2878370fac",
+    "article_score": 0.226,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-fb0f720bce5d",
+    "source_id": "nobutakayamauchi/render-worker@5b700c2ae490ecc2d07a69ac1e2f48e6ac79389e",
+    "captured_at": "2026-09-01T14:02:25+09:00",
+    "type": "研究・検証",
+    "project": "render-worker",
+    "title": "render-workerを検証",
+    "summary": "render-workerが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "render-worker",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/553b14f739166c24128b9208d429be5cf38c3282,https://github.com/nobutakayamauchi/render-worker/commit/5b700c2ae490ecc2d07a69ac1e2f48e6ac79389e",
+    "article_score": 0.227,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-0b1ba46bcb03",
+    "source_id": "nobutakayamauchi/render-worker@dca31999a0c86877eb4ac347eed437d3195103c4",
+    "captured_at": "2026-09-01T09:02:56+09:00",
+    "type": "機能追加",
+    "project": "render-worker",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/dca31999a0c86877eb4ac347eed437d3195103c4,https://github.com/nobutakayamauchi/render-worker/commit/72682d1e01ab80276d51e5ad1b4a1a9d8bde3a90,https://github.com/nobutakayamauchi/render-worker/commit/1ce4ab2a18d1573603dc5cce207e2185960983c9,https://github.com/nobutakayamauchi/render-worker/commit/49d977999ecbd9a66996d68414270c66944f3284",
+    "article_score": 0.371,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-7dd926b93833",
+    "source_id": "nobutakayamauchi/render-worker@840079afc05cb2917369b811791953e5e937f42e",
+    "captured_at": "2026-09-01T09:02:13+09:00",
+    "type": "研究・検証",
+    "project": "render-worker",
+    "title": "render-workerを検証",
+    "summary": "render-workerが実際の利用条件で成立するか検証しました。",
+    "tags": [
+      "render-worker",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/840079afc05cb2917369b811791953e5e937f42e",
+    "article_score": 0.224,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-9cf790fe33a2",
+    "source_id": "nobutakayamauchi/render-worker@f6ee14f5893151699c854ce90b193dc924b561a9",
+    "captured_at": "2026-09-01T09:01:55+09:00",
+    "type": "機能変更",
+    "project": "render-worker",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/e4abc37e677019fb91d4ec868c57fa3acb035b49,https://github.com/nobutakayamauchi/render-worker/commit/f6ee14f5893151699c854ce90b193dc924b561a9",
+    "article_score": 0.269,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-3b4ee773c491",
     "source_id": "nobutakayamauchi/render-worker@c4d51a86bec0a08b5053d640e8de1d1d4e61bf87",
     "captured_at": "2026-09-01T08:30:48+09:00",
@@ -2108,23 +2210,6 @@
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e17057d8b50506166ef91c8f8e958d792729caf3,https://github.com/nobutakayamauchi/limit-development/commit/98bbc6596aeea8aff3d3e5bcd2ff33b44b68c96f,https://github.com/nobutakayamauchi/limit-development/commit/00905c5c018e8ccc39e88a4458af0762f1b91a1b,https://github.com/nobutakayamauchi/limit-development/commit/5a7399a9bdd1b1909a6a56b99b99fce3ad1e16f7,https://github.com/nobutakayamauchi/limit-development/commit/cf52a994d5b34d99eb618f89b5760ef1dab8d8b7,https://github.com/nobutakayamauchi/limit-development/commit/747b4f4e8bfea79db95b52ac635b849062ae3222,https://github.com/nobutakayamauchi/limit-development/commit/67067013159d767b96a277a401e7dd1101e54110,https://github.com/nobutakayamauchi/limit-development/commit/05659bc9d746311021e38a9d72263c10db7d914c,https://github.com/nobutakayamauchi/limit-development/commit/a4e7ac7f3182481fad1cedf02a155b849a79fba8,https://github.com/nobutakayamauchi/limit-development/commit/e5f61b99dc19466b53c8f4d3a841f97080fdf7d1",
     "article_score": 0.82,
     "article_candidate": true,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-0cee96694280",
-    "source_id": "nobutakayamauchi/limit-development@b67b65c11e84f068707c009e7f5b3f0aea05bbd8",
-    "captured_at": "2026-08-19T18:33:12+09:00",
-    "type": "機能変更",
-    "project": "limit-development",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b67b65c11e84f068707c009e7f5b3f0aea05bbd8",
-    "article_score": 0.345,
-    "article_candidate": false,
     "review_status": "pending"
   },
   {
@@ -4708,74 +4793,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/c1796170d667805e733a656d34e5c051dac8ae81,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/91a0142d1babbe1d041dd91492452d964a2258b3,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/333d657b5a0cda08d9158322023f1388a69a16bf,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/9fa80330144274709d2dec6bbc46627845c74e38,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/5f5cdc2d188501fd959ef97e54236fcebe7cc5fa,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/70bade480c91b7c4439fc7a29259a04255b9e462",
     "article_score": 0.283,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-169d31aeb2f6",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@5c56d386f861a08a49b4ad7876cf4303410892fa",
-    "captured_at": "2026-08-02T12:57:43+09:00",
-    "type": "機能変更",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/5c56d386f861a08a49b4ad7876cf4303410892fa,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/0dccc60b161b8ba116fe20c861e022728625e93c,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/c17fa374922627f9a6fb2b11a5a1116c070d0625,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/e7ed168d642da2cef7fc64e1dd6bbeddbcfd83ca",
-    "article_score": 0.244,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-820ee902c894",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@fd48c5e39e7d6100613ae31c0a56a5d73c7455c8",
-    "captured_at": "2026-08-02T12:19:19+09:00",
-    "type": "機能追加",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentに機能を追加",
-    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/fd48c5e39e7d6100613ae31c0a56a5d73c7455c8,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/728882f2bf51daecff5f8fbd3ede7f89c4b920a2",
-    "article_score": 0.269,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-8188a1caa13d",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@d8b16aa32cfcacfd8cbf12e7e05c588de4ee7e1f",
-    "captured_at": "2026-08-02T11:54:15+09:00",
-    "type": "方針変更",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentの方針を更新",
-    "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。",
-    "tags": [
-      "RS-AI-limit-development",
-      "方針変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/d8b16aa32cfcacfd8cbf12e7e05c588de4ee7e1f",
-    "article_score": 0.245,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-1b4bc999f5fc",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@8f1c2ab49baf28f76f073963e08d67fc7832679a",
-    "captured_at": "2026-08-02T11:53:52+09:00",
-    "type": "機能追加",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentに機能を追加",
-    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/8f1c2ab49baf28f76f073963e08d67fc7832679a",
-    "article_score": 0.274,
     "article_candidate": false,
     "review_status": "pending"
   }

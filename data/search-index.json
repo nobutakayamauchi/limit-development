@@ -1,6 +1,90 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-daf0b2f7243d",
+    "date": "2026-09-01",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。",
+    "project": "render-worker",
+    "type": "機能変更",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-daf0b2f7243d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-e406263e0fa5",
+    "date": "2026-09-01",
+    "title": "render-workerの機能を整理",
+    "summary": "render-workerで不要になった機能を削除しました。",
+    "project": "render-worker",
+    "type": "機能削除",
+    "tags": [
+      "render-worker",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-e406263e0fa5"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-fb0f720bce5d",
+    "date": "2026-09-01",
+    "title": "render-workerを検証",
+    "summary": "render-workerが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "render-worker",
+    "type": "研究・検証",
+    "tags": [
+      "render-worker",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-fb0f720bce5d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0b1ba46bcb03",
+    "date": "2026-09-01",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "render-worker",
+    "type": "機能追加",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0b1ba46bcb03"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7dd926b93833",
+    "date": "2026-09-01",
+    "title": "render-workerを検証",
+    "summary": "render-workerが実際の利用条件で成立するか検証しました。",
+    "project": "render-worker",
+    "type": "研究・検証",
+    "tags": [
+      "render-worker",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-7dd926b93833"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9cf790fe33a2",
+    "date": "2026-09-01",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "render-worker",
+    "type": "機能変更",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-9cf790fe33a2"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-3b4ee773c491",
     "date": "2026-09-01",
     "title": "render-workerに機能を追加",
@@ -1737,20 +1821,6 @@
       "比較"
     ],
     "href": "../updates/#u-upd-3cfdf0a7be46"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-0cee96694280",
-    "date": "2026-08-19",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "limit-development",
-    "type": "機能変更",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-0cee96694280"
   },
   {
     "kind": "UPDATE",
@@ -3881,74 +3951,20 @@
     "href": "../updates/#u-upd-908ad56b2a01"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-169d31aeb2f6",
-    "date": "2026-08-02",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "RS-AI-limit-development",
-    "type": "機能変更",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-169d31aeb2f6"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-820ee902c894",
-    "date": "2026-08-02",
-    "title": "RS-AI-limit-developmentに機能を追加",
-    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "RS-AI-limit-development",
-    "type": "機能追加",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-820ee902c894"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-8188a1caa13d",
-    "date": "2026-08-02",
-    "title": "RS-AI-limit-developmentの方針を更新",
-    "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。",
-    "project": "RS-AI-limit-development",
-    "type": "方針変更",
-    "tags": [
-      "RS-AI-limit-development",
-      "方針変更"
-    ],
-    "href": "../updates/#u-upd-8188a1caa13d"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-1b4bc999f5fc",
-    "date": "2026-08-02",
-    "title": "RS-AI-limit-developmentに機能を追加",
-    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
-    "project": "RS-AI-limit-development",
-    "type": "機能追加",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-1b4bc999f5fc"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-01",
     "date": "2026-09-01",
-    "title": "render-workerに機能を追加、ほか5件",
-    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。 同じ日の開発記録として、『render-workerに機能を追加』、『render-workerを改善』、『render-workerを改善』もまとめています。",
+    "title": "render-workerを改善、ほか11件",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerの機能を整理』、『render-workerを検証』、『render-workerに機能を追加』もまとめています。",
     "project": "render-worker, x-ads-bridge",
     "type": "開発日誌",
     "tags": [
       "render-worker",
       "x-ads-bridge",
+      "機能削除",
       "機能変更",
-      "機能追加"
+      "機能追加",
+      "研究・検証"
     ],
     "href": "../journal/2026-09-01.html"
   },
@@ -4173,7 +4189,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか20件",
+    "title": "limit-developmentを改善、ほか19件",
     "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
@@ -4402,7 +4418,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-02",
     "date": "2026-08-02",
-    "title": "rts-video-flowを改善、ほか18件",
+    "title": "rts-video-flowを改善、ほか14件",
     "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『rts-video-flowを検証』、『rts-video-flowを改善』、『rts-video-flowの機能を整理』もまとめています。",
     "project": "RS-AI-limit-development, rts-video-flow",
     "type": "開発日誌",
