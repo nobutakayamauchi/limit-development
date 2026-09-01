@@ -1,9 +1,10 @@
 [
   {
     "date": "2026-09-01",
-    "title": "render-workerを改善、ほか14件",
-    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『render-workerの方針を更新』、『render-workerに機能を追加』、『render-workerを改善』もまとめています。",
+    "title": "render-workerを改善、ほか15件",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerを改善』、『render-workerの方針を更新』、『render-workerに機能を追加』もまとめています。",
     "update_ids": [
+      "upd-2478f41cc85c",
       "upd-88fbeb70d565",
       "upd-1ceeac66ee77",
       "upd-3eaec4b2dbb4",
@@ -908,35 +909,6 @@
       "新プロジェクト",
       "機能変更",
       "機能追加"
-    ]
-  },
-  {
-    "date": "2026-08-02",
-    "title": "rts-video-flowを改善、ほか5件",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『rts-video-flowを検証』、『rts-video-flowを改善』、『rts-video-flowの機能を整理』もまとめています。",
-    "update_ids": [
-      "upd-0bfea21a1f29",
-      "upd-945521d400e6",
-      "upd-ae4ac35f7fde",
-      "upd-83ea33fedc54",
-      "upd-0e3d546f9ffb",
-      "upd-95f1954dc45c"
-    ],
-    "projects": [
-      "rts-video-flow"
-    ],
-    "types": [
-      "機能削除",
-      "機能変更",
-      "機能追加",
-      "研究・検証"
-    ],
-    "tags": [
-      "rts-video-flow",
-      "機能削除",
-      "機能変更",
-      "機能追加",
-      "研究・検証"
     ]
   }
 ]

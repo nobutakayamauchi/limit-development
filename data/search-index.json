@@ -1,6 +1,20 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-2478f41cc85c",
+    "date": "2026-09-01",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。",
+    "project": "render-worker",
+    "type": "機能変更",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-2478f41cc85c"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-88fbeb70d565",
     "date": "2026-09-01",
     "title": "render-workerを改善",
@@ -1852,7 +1866,7 @@
     "id": "upd-3cfdf0a7be46",
     "date": "2026-08-19",
     "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更8件もまとめています。",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更7件もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "機能追加",
     "tags": [
@@ -3783,95 +3797,11 @@
     "href": "../updates/#u-upd-9dabb6e5ab8f"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-0bfea21a1f29",
-    "date": "2026-08-02",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
-    "project": "rts-video-flow",
-    "type": "機能変更",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-0bfea21a1f29"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-945521d400e6",
-    "date": "2026-08-02",
-    "title": "rts-video-flowを検証",
-    "summary": "rts-video-flowが実際の利用条件で成立するか検証しました。",
-    "project": "rts-video-flow",
-    "type": "研究・検証",
-    "tags": [
-      "rts-video-flow",
-      "研究・検証"
-    ],
-    "href": "../updates/#u-upd-945521d400e6"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-ae4ac35f7fde",
-    "date": "2026-08-02",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能変更",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-ae4ac35f7fde"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-83ea33fedc54",
-    "date": "2026-08-02",
-    "title": "rts-video-flowの機能を整理",
-    "summary": "rts-video-flowで不要になった機能を削除しました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能削除",
-    "tags": [
-      "rts-video-flow",
-      "機能削除"
-    ],
-    "href": "../updates/#u-upd-83ea33fedc54"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-0e3d546f9ffb",
-    "date": "2026-08-02",
-    "title": "rts-video-flowに機能を追加",
-    "summary": "rts-video-flowで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能追加",
-    "tags": [
-      "rts-video-flow",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-0e3d546f9ffb"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-95f1954dc45c",
-    "date": "2026-08-02",
-    "title": "rts-video-flowに機能を追加",
-    "summary": "rts-video-flowで新しい機能を使えるようにしました。",
-    "project": "rts-video-flow",
-    "type": "機能追加",
-    "tags": [
-      "rts-video-flow",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-95f1954dc45c"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-01",
     "date": "2026-09-01",
-    "title": "render-workerを改善、ほか14件",
-    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『render-workerの方針を更新』、『render-workerに機能を追加』、『render-workerを改善』もまとめています。",
+    "title": "render-workerを改善、ほか15件",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerを改善』、『render-workerの方針を更新』、『render-workerに機能を追加』もまとめています。",
     "project": "render-worker, x-ads-bridge",
     "type": "開発日誌",
     "tags": [
@@ -4330,22 +4260,5 @@
       "機能追加"
     ],
     "href": "../journal/2026-08-03.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-08-02",
-    "date": "2026-08-02",
-    "title": "rts-video-flowを改善、ほか5件",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『rts-video-flowを検証』、『rts-video-flowを改善』、『rts-video-flowの機能を整理』もまとめています。",
-    "project": "rts-video-flow",
-    "type": "開発日誌",
-    "tags": [
-      "rts-video-flow",
-      "機能削除",
-      "機能変更",
-      "機能追加",
-      "研究・検証"
-    ],
-    "href": "../journal/2026-08-02.html"
   }
 ]
