@@ -1,6 +1,48 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-88fbeb70d565",
+    "date": "2026-09-01",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "render-worker",
+    "type": "機能変更",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-88fbeb70d565"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1ceeac66ee77",
+    "date": "2026-09-01",
+    "title": "render-workerの方針を更新",
+    "summary": "render-workerの説明や運用方針を更新しました。",
+    "project": "render-worker",
+    "type": "方針変更",
+    "tags": [
+      "render-worker",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-1ceeac66ee77"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3eaec4b2dbb4",
+    "date": "2026-09-01",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "render-worker",
+    "type": "機能追加",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-3eaec4b2dbb4"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-daf0b2f7243d",
     "date": "2026-09-01",
     "title": "render-workerを改善",
@@ -1810,7 +1852,7 @@
     "id": "upd-3cfdf0a7be46",
     "date": "2026-08-19",
     "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更9件もまとめています。",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更8件もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "機能追加",
     "tags": [
@@ -3825,142 +3867,17 @@
     "href": "../updates/#u-upd-95f1954dc45c"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-b76caa1bea3d",
-    "date": "2026-08-02",
-    "title": "rts-video-flowに機能を追加",
-    "summary": "rts-video-flowで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能追加",
-    "tags": [
-      "rts-video-flow",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-b76caa1bea3d"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-da5fdc5f8037",
-    "date": "2026-08-02",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能変更",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-da5fdc5f8037"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-3d8b8523402d",
-    "date": "2026-08-02",
-    "title": "rts-video-flowの方針を更新",
-    "summary": "rts-video-flowの説明や運用方針を更新しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "方針変更",
-    "tags": [
-      "rts-video-flow",
-      "方針変更"
-    ],
-    "href": "../updates/#u-upd-3d8b8523402d"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-57394361db66",
-    "date": "2026-08-02",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能変更",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-57394361db66"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-65e850b23531",
-    "date": "2026-08-02",
-    "title": "rts-video-flowに機能を追加",
-    "summary": "rts-video-flowで新しい機能を使えるようにしました。 同じ1時間内の関連変更10件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能追加",
-    "tags": [
-      "rts-video-flow",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-65e850b23531"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-c6e99f81c4f7",
-    "date": "2026-08-02",
-    "title": "RS-AI-limit-developmentの機能を整理",
-    "summary": "RS-AI-limit-developmentで不要になった機能を削除しました。",
-    "project": "RS-AI-limit-development",
-    "type": "機能削除",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能削除"
-    ],
-    "href": "../updates/#u-upd-c6e99f81c4f7"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-230169b33616",
-    "date": "2026-08-02",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RS-AI-limit-development",
-    "type": "機能変更",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-230169b33616"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-f9776d5335dc",
-    "date": "2026-08-02",
-    "title": "RS-AI-limit-developmentの方針を更新",
-    "summary": "RS-AI-limit-developmentの説明や運用方針を更新しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "RS-AI-limit-development",
-    "type": "方針変更",
-    "tags": [
-      "RS-AI-limit-development",
-      "方針変更"
-    ],
-    "href": "../updates/#u-upd-f9776d5335dc"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-908ad56b2a01",
-    "date": "2026-08-02",
-    "title": "RS-AI-limit-developmentに機能を追加",
-    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
-    "project": "RS-AI-limit-development",
-    "type": "機能追加",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-908ad56b2a01"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-01",
     "date": "2026-09-01",
-    "title": "render-workerを改善、ほか11件",
-    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerの機能を整理』、『render-workerを検証』、『render-workerに機能を追加』もまとめています。",
+    "title": "render-workerを改善、ほか14件",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『render-workerの方針を更新』、『render-workerに機能を追加』、『render-workerを改善』もまとめています。",
     "project": "render-worker, x-ads-bridge",
     "type": "開発日誌",
     "tags": [
       "render-worker",
       "x-ads-bridge",
+      "方針変更",
       "機能削除",
       "機能変更",
       "機能追加",
@@ -4418,14 +4335,12 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-02",
     "date": "2026-08-02",
-    "title": "rts-video-flowを改善、ほか14件",
+    "title": "rts-video-flowを改善、ほか5件",
     "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『rts-video-flowを検証』、『rts-video-flowを改善』、『rts-video-flowの機能を整理』もまとめています。",
-    "project": "RS-AI-limit-development, rts-video-flow",
+    "project": "rts-video-flow",
     "type": "開発日誌",
     "tags": [
-      "RS-AI-limit-development",
       "rts-video-flow",
-      "方針変更",
       "機能削除",
       "機能変更",
       "機能追加",

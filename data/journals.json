@@ -1,9 +1,12 @@
 [
   {
     "date": "2026-09-01",
-    "title": "render-workerを改善、ほか11件",
-    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerの機能を整理』、『render-workerを検証』、『render-workerに機能を追加』もまとめています。",
+    "title": "render-workerを改善、ほか14件",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『render-workerの方針を更新』、『render-workerに機能を追加』、『render-workerを改善』もまとめています。",
     "update_ids": [
+      "upd-88fbeb70d565",
+      "upd-1ceeac66ee77",
+      "upd-3eaec4b2dbb4",
       "upd-daf0b2f7243d",
       "upd-e406263e0fa5",
       "upd-fb0f720bce5d",
@@ -22,6 +25,7 @@
       "x-ads-bridge"
     ],
     "types": [
+      "方針変更",
       "機能削除",
       "機能変更",
       "機能追加",
@@ -30,6 +34,7 @@
     "tags": [
       "render-worker",
       "x-ads-bridge",
+      "方針変更",
       "機能削除",
       "機能変更",
       "機能追加",
@@ -907,7 +912,7 @@
   },
   {
     "date": "2026-08-02",
-    "title": "rts-video-flowを改善、ほか14件",
+    "title": "rts-video-flowを改善、ほか5件",
     "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『rts-video-flowを検証』、『rts-video-flowを改善』、『rts-video-flowの機能を整理』もまとめています。",
     "update_ids": [
       "upd-0bfea21a1f29",
@@ -915,32 +920,19 @@
       "upd-ae4ac35f7fde",
       "upd-83ea33fedc54",
       "upd-0e3d546f9ffb",
-      "upd-95f1954dc45c",
-      "upd-b76caa1bea3d",
-      "upd-da5fdc5f8037",
-      "upd-3d8b8523402d",
-      "upd-57394361db66",
-      "upd-65e850b23531",
-      "upd-c6e99f81c4f7",
-      "upd-230169b33616",
-      "upd-f9776d5335dc",
-      "upd-908ad56b2a01"
+      "upd-95f1954dc45c"
     ],
     "projects": [
-      "RS-AI-limit-development",
       "rts-video-flow"
     ],
     "types": [
-      "方針変更",
       "機能削除",
       "機能変更",
       "機能追加",
       "研究・検証"
     ],
     "tags": [
-      "RS-AI-limit-development",
       "rts-video-flow",
-      "方針変更",
       "機能削除",
       "機能変更",
       "機能追加",
