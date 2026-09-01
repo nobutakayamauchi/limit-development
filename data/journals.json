@@ -885,30 +885,21 @@
   },
   {
     "date": "2026-08-03",
-    "title": "rts-video-flowを改善、ほか6件",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『rts-video-flowを改善』、『rts-video-flowを改善』、『rts-video-flowを開始』もまとめています。",
+    "title": "rts-video-flowを改善、ほか1件",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『rts-video-flowを改善』もまとめています。",
     "update_ids": [
       "upd-4b1c5bd9bfaa",
-      "upd-50ffb3901a6e",
-      "upd-323f78f14e17",
-      "upd-832b132fcdaa",
-      "upd-38fcbdf7626e",
-      "upd-99d3d3ee94ca",
-      "upd-9dabb6e5ab8f"
+      "upd-50ffb3901a6e"
     ],
     "projects": [
       "rts-video-flow"
     ],
     "types": [
-      "新プロジェクト",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ],
     "tags": [
       "rts-video-flow",
-      "新プロジェクト",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ]
   }
 ]

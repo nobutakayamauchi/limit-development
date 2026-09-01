@@ -1866,7 +1866,7 @@
     "id": "upd-3cfdf0a7be46",
     "date": "2026-08-19",
     "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更6件もまとめています。",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更5件もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "機能追加",
     "tags": [
@@ -3717,7 +3717,7 @@
     "id": "upd-50ffb3901a6e",
     "date": "2026-08-03",
     "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
     "project": "rts-video-flow",
     "type": "機能変更",
     "tags": [
@@ -3725,76 +3725,6 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-50ffb3901a6e"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-323f78f14e17",
-    "date": "2026-08-03",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更9件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能変更",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-323f78f14e17"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-832b132fcdaa",
-    "date": "2026-08-03",
-    "title": "rts-video-flowを開始",
-    "summary": "rts-video-flowの新しい取り組みを開始しました。",
-    "project": "rts-video-flow",
-    "type": "新プロジェクト",
-    "tags": [
-      "rts-video-flow",
-      "新プロジェクト"
-    ],
-    "href": "../updates/#u-upd-832b132fcdaa"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-38fcbdf7626e",
-    "date": "2026-08-03",
-    "title": "rts-video-flowに機能を追加",
-    "summary": "rts-video-flowで新しい機能を使えるようにしました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能追加",
-    "tags": [
-      "rts-video-flow",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-38fcbdf7626e"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-99d3d3ee94ca",
-    "date": "2026-08-03",
-    "title": "rts-video-flowに機能を追加",
-    "summary": "rts-video-flowで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能追加",
-    "tags": [
-      "rts-video-flow",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-99d3d3ee94ca"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-9dabb6e5ab8f",
-    "date": "2026-08-03",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "rts-video-flow",
-    "type": "機能変更",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-9dabb6e5ab8f"
   },
   {
     "kind": "JOURNAL",
@@ -4249,15 +4179,13 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-03",
     "date": "2026-08-03",
-    "title": "rts-video-flowを改善、ほか6件",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『rts-video-flowを改善』、『rts-video-flowを改善』、『rts-video-flowを開始』もまとめています。",
+    "title": "rts-video-flowを改善、ほか1件",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『rts-video-flowを改善』もまとめています。",
     "project": "rts-video-flow",
     "type": "開発日誌",
     "tags": [
       "rts-video-flow",
-      "新プロジェクト",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ],
     "href": "../journal/2026-08-03.html"
   }
