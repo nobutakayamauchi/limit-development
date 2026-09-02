@@ -1,21 +1,28 @@
 [
   {
     "date": "2026-09-02",
-    "title": "RTS-Design-Researchに機能を追加、ほか1件",
-    "summary": "RTS-Design-Researchで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。 同じ日の開発記録として、『RTS-Design-Researchを改善』もまとめています。",
+    "title": "sales-catalogに機能を追加、ほか4件",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ日の開発記録として、『sales-catalogを改善』、『sales-catalogの方針を更新』、『RTS-Design-Researchに機能を追加』もまとめています。",
     "update_ids": [
+      "upd-9742bf0caaca",
+      "upd-f6902575695a",
+      "upd-72127dc033ce",
       "upd-e59f4b6320ab",
       "upd-0a3af255ada3"
     ],
     "projects": [
-      "RTS-Design-Research"
+      "RTS-Design-Research",
+      "sales-catalog"
     ],
     "types": [
+      "方針変更",
       "機能変更",
       "機能追加"
     ],
     "tags": [
       "RTS-Design-Research",
+      "sales-catalog",
+      "方針変更",
       "機能変更",
       "機能追加"
     ]
@@ -892,24 +899,6 @@
     "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
     "update_ids": [
       "upd-63b7161b7afa"
-    ],
-    "projects": [
-      "rts-video-flow"
-    ],
-    "types": [
-      "機能変更"
-    ],
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ]
-  },
-  {
-    "date": "2026-08-03",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "update_ids": [
-      "upd-4b1c5bd9bfaa"
     ],
     "projects": [
       "rts-video-flow"

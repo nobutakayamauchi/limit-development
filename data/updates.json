@@ -1,5 +1,56 @@
 [
   {
+    "id": "upd-9742bf0caaca",
+    "source_id": "nobutakayamauchi/sales-catalog@b3c7143760c109710571a83246ea2f625fa70416",
+    "captured_at": "2026-09-02T22:26:08+09:00",
+    "type": "機能追加",
+    "project": "sales-catalog",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/b3c7143760c109710571a83246ea2f625fa70416",
+    "article_score": 0.274,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-f6902575695a",
+    "source_id": "nobutakayamauchi/sales-catalog@1298df561014d732d19162808db418278d212553",
+    "captured_at": "2026-09-02T22:24:51+09:00",
+    "type": "機能変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogを改善",
+    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/243f24d254862def4133a60ef0d746154fb16047,https://github.com/nobutakayamauchi/sales-catalog/commit/2c47ebc61523c29bf2b79408aba69f6dd676b8c8,https://github.com/nobutakayamauchi/sales-catalog/commit/1298df561014d732d19162808db418278d212553",
+    "article_score": 0.248,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-72127dc033ce",
+    "source_id": "nobutakayamauchi/sales-catalog@463e25839c7bfc222899f0fc48728bd6c340484b",
+    "captured_at": "2026-09-02T22:24:25+09:00",
+    "type": "方針変更",
+    "project": "sales-catalog",
+    "title": "sales-catalogの方針を更新",
+    "summary": "sales-catalogの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "sales-catalog",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/103a925909694854bcc53a93a3a6f89d89c6626c,https://github.com/nobutakayamauchi/sales-catalog/commit/463e25839c7bfc222899f0fc48728bd6c340484b",
+    "article_score": 0.319,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-e59f4b6320ab",
     "source_id": "nobutakayamauchi/RTS-Design-Research@3b9a70c81337457497bc7e7d8771cb4ffcf89e8f",
     "captured_at": "2026-09-02T16:46:14+09:00",
@@ -2301,7 +2352,7 @@
     "type": "機能追加",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更3件もまとめています。",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更2件もまとめています。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "Knowledge Pack",
@@ -2309,7 +2360,7 @@
       "機能追加",
       "比較"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e17057d8b50506166ef91c8f8e958d792729caf3,https://github.com/nobutakayamauchi/limit-development/commit/98bbc6596aeea8aff3d3e5bcd2ff33b44b68c96f,https://github.com/nobutakayamauchi/limit-development/commit/00905c5c018e8ccc39e88a4458af0762f1b91a1b,https://github.com/nobutakayamauchi/limit-development/commit/5a7399a9bdd1b1909a6a56b99b99fce3ad1e16f7",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e17057d8b50506166ef91c8f8e958d792729caf3,https://github.com/nobutakayamauchi/limit-development/commit/98bbc6596aeea8aff3d3e5bcd2ff33b44b68c96f,https://github.com/nobutakayamauchi/limit-development/commit/00905c5c018e8ccc39e88a4458af0762f1b91a1b",
     "article_score": 0.82,
     "article_candidate": true,
     "review_status": "pending"
@@ -4521,23 +4572,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-video-flow/commit/8e3ff9415af45f8301261ff81b67ce6257d876fd",
     "article_score": 0.403,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-4b1c5bd9bfaa",
-    "source_id": "nobutakayamauchi/rts-video-flow@8788ca2ac6d2f9205351c235a7916eb5195708c4",
-    "captured_at": "2026-08-03T20:50:56+09:00",
-    "type": "機能変更",
-    "project": "rts-video-flow",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-video-flow/commit/8788ca2ac6d2f9205351c235a7916eb5195708c4,https://github.com/nobutakayamauchi/rts-video-flow/commit/b900d3ddfed2e5e7e1bcff16949022af80726bb7",
-    "article_score": 0.181,
     "article_candidate": false,
     "review_status": "pending"
   }
