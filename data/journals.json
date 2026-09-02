@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-02",
+    "title": "RTS-Design-Researchに機能を追加、ほか1件",
+    "summary": "RTS-Design-Researchで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。 同じ日の開発記録として、『RTS-Design-Researchを改善』もまとめています。",
+    "update_ids": [
+      "upd-e59f4b6320ab",
+      "upd-0a3af255ada3"
+    ],
+    "projects": [
+      "RTS-Design-Research"
+    ],
+    "types": [
+      "機能変更",
+      "機能追加"
+    ],
+    "tags": [
+      "RTS-Design-Research",
+      "機能変更",
+      "機能追加"
+    ]
+  },
+  {
     "date": "2026-09-01",
     "title": "render-workerを改善、ほか15件",
     "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerを改善』、『render-workerの方針を更新』、『render-workerに機能を追加』もまとめています。",

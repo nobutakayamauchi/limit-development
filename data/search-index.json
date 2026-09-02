@@ -1,6 +1,34 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-e59f4b6320ab",
+    "date": "2026-09-02",
+    "title": "RTS-Design-Researchに機能を追加",
+    "summary": "RTS-Design-Researchで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "RTS-Design-Research",
+    "type": "機能追加",
+    "tags": [
+      "RTS-Design-Research",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-e59f4b6320ab"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0a3af255ada3",
+    "date": "2026-09-02",
+    "title": "RTS-Design-Researchを改善",
+    "summary": "RTS-Design-Researchの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS-Design-Research",
+    "type": "機能変更",
+    "tags": [
+      "RTS-Design-Research",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-0a3af255ada3"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-2478f41cc85c",
     "date": "2026-09-01",
     "title": "render-workerを改善",
@@ -1852,7 +1880,7 @@
     "id": "upd-1c6e4adacaa3",
     "date": "2026-08-19",
     "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更4件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更3件も、この更新にまとめています。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "機能変更",
     "tags": [
@@ -3711,6 +3739,21 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-4b1c5bd9bfaa"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-09-02",
+    "date": "2026-09-02",
+    "title": "RTS-Design-Researchに機能を追加、ほか1件",
+    "summary": "RTS-Design-Researchで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。 同じ日の開発記録として、『RTS-Design-Researchを改善』もまとめています。",
+    "project": "RTS-Design-Research",
+    "type": "開発日誌",
+    "tags": [
+      "RTS-Design-Research",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-09-02.html"
   },
   {
     "kind": "JOURNAL",
