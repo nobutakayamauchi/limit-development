@@ -492,12 +492,12 @@
   {
     "date": "2026-08-19",
     "title": "limit-developmentを改善、ほか19件",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEに機能を追加』、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』もまとめています。",
     "update_ids": [
       "upd-89dcec3f8e91",
+      "upd-51044935476c",
       "upd-f217f8817f2a",
       "upd-1c6e4adacaa3",
-      "upd-3cfdf0a7be46",
       "upd-5d79ae636c2a",
       "upd-f09a21409430",
       "upd-8065bbc64d5d",
@@ -530,8 +530,6 @@
     ],
     "tags": [
       "FOUNDRY GROWTH ENGINE",
-      "Knowledge Pack",
-      "Plain Core",
       "Ultimate-Loop",
       "WebAI-Bridge",
       "limit-development",
@@ -539,7 +537,6 @@
       "方針変更",
       "機能変更",
       "機能追加",
-      "比較",
       "研究・検証"
     ]
   },

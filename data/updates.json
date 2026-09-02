@@ -2329,6 +2329,23 @@
     "review_status": "pending"
   },
   {
+    "id": "upd-51044935476c",
+    "source_id": "nobutakayamauchi/limit-development@e17057d8b50506166ef91c8f8e958d792729caf3",
+    "captured_at": "2026-08-19T20:52:19+09:00",
+    "type": "機能追加",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e17057d8b50506166ef91c8f8e958d792729caf3",
+    "article_score": 0.277,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-f217f8817f2a",
     "source_id": "nobutakayamauchi/limit-development@e097c96af3d60885e803dd7ec33de39828e91052",
     "captured_at": "2026-08-19T20:50:36+09:00",
@@ -2360,26 +2377,6 @@
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/ddda8027a22bcffdc487ba705a1c0ac5841f5e62,https://github.com/nobutakayamauchi/limit-development/commit/96996711f5b839fcf01df6e2d34a591bd5acdd87,https://github.com/nobutakayamauchi/limit-development/commit/e713c9ec0b1603e1430a7410dedef9c1ed32a4dc,https://github.com/nobutakayamauchi/limit-development/commit/71d87e0deb03fa0f4789eec1636588df5ee9cd4c",
     "article_score": 0.179,
     "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-3cfdf0a7be46",
-    "source_id": "nobutakayamauchi/limit-development@98bbc6596aeea8aff3d3e5bcd2ff33b44b68c96f",
-    "captured_at": "2026-08-19T20:46:37+09:00",
-    "type": "機能追加",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更1件もまとめています。",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "Knowledge Pack",
-      "Plain Core",
-      "機能追加",
-      "比較"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e17057d8b50506166ef91c8f8e958d792729caf3,https://github.com/nobutakayamauchi/limit-development/commit/98bbc6596aeea8aff3d3e5bcd2ff33b44b68c96f",
-    "article_score": 0.82,
-    "article_candidate": true,
     "review_status": "pending"
   },
   {

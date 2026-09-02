@@ -1919,6 +1919,20 @@
   },
   {
     "kind": "UPDATE",
+    "id": "upd-51044935476c",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能追加",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-51044935476c"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-f217f8817f2a",
     "date": "2026-08-19",
     "title": "FOUNDRY GROWTH ENGINEを検証",
@@ -1944,23 +1958,6 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-1c6e4adacaa3"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-3cfdf0a7be46",
-    "date": "2026-08-19",
-    "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更1件もまとめています。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "機能追加",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "Knowledge Pack",
-      "Plain Core",
-      "機能追加",
-      "比較"
-    ],
-    "href": "../updates/#u-upd-3cfdf0a7be46"
   },
   {
     "kind": "UPDATE",
@@ -4041,13 +4038,11 @@
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
     "title": "limit-developmentを改善、ほか19件",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』、『ナレッジ版とプレーン版を分けて出せるようにした』もまとめています。",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEに機能を追加』、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
-      "Knowledge Pack",
-      "Plain Core",
       "Ultimate-Loop",
       "WebAI-Bridge",
       "limit-development",
@@ -4055,7 +4050,6 @@
       "方針変更",
       "機能変更",
       "機能追加",
-      "比較",
       "研究・検証"
     ],
     "href": "../journal/2026-08-19.html"
