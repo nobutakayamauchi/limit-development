@@ -1866,7 +1866,7 @@
     "id": "upd-3cfdf0a7be46",
     "date": "2026-08-19",
     "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更5件もまとめています。",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更4件もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "機能追加",
     "tags": [
@@ -3713,20 +3713,6 @@
     "href": "../updates/#u-upd-4b1c5bd9bfaa"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-50ffb3901a6e",
-    "date": "2026-08-03",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
-    "project": "rts-video-flow",
-    "type": "機能変更",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-50ffb3901a6e"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-01",
     "date": "2026-09-01",
@@ -4179,8 +4165,8 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-03",
     "date": "2026-08-03",
-    "title": "rts-video-flowを改善、ほか1件",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『rts-video-flowを改善』もまとめています。",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "project": "rts-video-flow",
     "type": "開発日誌",
     "tags": [

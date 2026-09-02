@@ -2267,7 +2267,7 @@
     "type": "機能追加",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更5件もまとめています。",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更4件もまとめています。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "Knowledge Pack",
@@ -2275,7 +2275,7 @@
       "機能追加",
       "比較"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e17057d8b50506166ef91c8f8e958d792729caf3,https://github.com/nobutakayamauchi/limit-development/commit/98bbc6596aeea8aff3d3e5bcd2ff33b44b68c96f,https://github.com/nobutakayamauchi/limit-development/commit/00905c5c018e8ccc39e88a4458af0762f1b91a1b,https://github.com/nobutakayamauchi/limit-development/commit/5a7399a9bdd1b1909a6a56b99b99fce3ad1e16f7,https://github.com/nobutakayamauchi/limit-development/commit/cf52a994d5b34d99eb618f89b5760ef1dab8d8b7,https://github.com/nobutakayamauchi/limit-development/commit/747b4f4e8bfea79db95b52ac635b849062ae3222",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e17057d8b50506166ef91c8f8e958d792729caf3,https://github.com/nobutakayamauchi/limit-development/commit/98bbc6596aeea8aff3d3e5bcd2ff33b44b68c96f,https://github.com/nobutakayamauchi/limit-development/commit/00905c5c018e8ccc39e88a4458af0762f1b91a1b,https://github.com/nobutakayamauchi/limit-development/commit/5a7399a9bdd1b1909a6a56b99b99fce3ad1e16f7,https://github.com/nobutakayamauchi/limit-development/commit/cf52a994d5b34d99eb618f89b5760ef1dab8d8b7",
     "article_score": 0.82,
     "article_candidate": true,
     "review_status": "pending"
@@ -4504,23 +4504,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-video-flow/commit/8788ca2ac6d2f9205351c235a7916eb5195708c4,https://github.com/nobutakayamauchi/rts-video-flow/commit/b900d3ddfed2e5e7e1bcff16949022af80726bb7",
     "article_score": 0.181,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-50ffb3901a6e",
-    "source_id": "nobutakayamauchi/rts-video-flow@9c5cbb885052c199016a720ce2b8b69de0566006",
-    "captured_at": "2026-08-03T06:50:12+09:00",
-    "type": "機能変更",
-    "project": "rts-video-flow",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-video-flow/commit/9c5cbb885052c199016a720ce2b8b69de0566006",
-    "article_score": 0.178,
     "article_candidate": false,
     "review_status": "pending"
   }
