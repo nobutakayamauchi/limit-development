@@ -28,7 +28,7 @@
       "product"
     ],
     "killer": "AIを、自分の場所で使えるようにします。",
-    "desc": "AIをWebで配布し、顧客接点へつなぐための基盤",
+    "desc": "配れるAIの箱をWeb側に持ち、Knowledge・利用権・BYOK・販売導線・顧客接点を自分側で扱うための基盤。現在はChatGPT / OpenAI対応版",
     "definition": "AIとWebをつなぐための接続基盤です。",
     "url": "https://nobutakayamauchi.github.io/sales-catalog/products/webai-bridge/",
     "salesUrl": "https://nobutakayamauchi.github.io/sales-catalog/products/webai-bridge/sales.html",
