@@ -71,6 +71,20 @@
   },
   {
     "kind": "UPDATE",
+    "id": "upd-e75edc5a6c36",
+    "date": "2026-09-02",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-e75edc5a6c36"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-2478f41cc85c",
     "date": "2026-09-01",
     "title": "render-workerを改善",
@@ -1908,7 +1922,7 @@
     "id": "upd-f217f8817f2a",
     "date": "2026-08-19",
     "title": "FOUNDRY GROWTH ENGINEを検証",
-    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "研究・検証",
     "tags": [
@@ -1936,7 +1950,7 @@
     "id": "upd-3cfdf0a7be46",
     "date": "2026-08-19",
     "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更2件もまとめています。",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更1件もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "機能追加",
     "tags": [
@@ -3772,12 +3786,13 @@
     "kind": "JOURNAL",
     "id": "journal-2026-09-02",
     "date": "2026-09-02",
-    "title": "sales-catalogに機能を追加、ほか4件",
+    "title": "sales-catalogに機能を追加、ほか5件",
     "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ日の開発記録として、『sales-catalogを改善』、『sales-catalogの方針を更新』、『RTS-Design-Researchに機能を追加』もまとめています。",
-    "project": "RTS-Design-Research, sales-catalog",
+    "project": "RTS-Design-Research, limit-development, sales-catalog",
     "type": "開発日誌",
     "tags": [
       "RTS-Design-Research",
+      "limit-development",
       "sales-catalog",
       "方針変更",
       "機能変更",

@@ -85,6 +85,23 @@
     "review_status": "pending"
   },
   {
+    "id": "upd-e75edc5a6c36",
+    "source_id": "nobutakayamauchi/limit-development@f2714d377838ec8af7d9f40e467ab98fc61abae8",
+    "captured_at": "2026-09-02T16:39:10Z",
+    "type": "機能変更",
+    "project": "limit-development",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/f2714d377838ec8af7d9f40e467ab98fc61abae8",
+    "article_score": 0.177,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-2478f41cc85c",
     "source_id": "nobutakayamauchi/render-worker@7356f23872bf368f3b6f7dfd51b49a7d64ca167b",
     "captured_at": "2026-09-01T19:53:20+09:00",
@@ -2318,12 +2335,12 @@
     "type": "研究・検証",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "FOUNDRY GROWTH ENGINEを検証",
-    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "研究・検証"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e097c96af3d60885e803dd7ec33de39828e91052,https://github.com/nobutakayamauchi/limit-development/commit/11f7519992b31fcfef4f3611dff5d50f37c63975",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e097c96af3d60885e803dd7ec33de39828e91052",
     "article_score": 0.229,
     "article_candidate": false,
     "review_status": "pending"
@@ -2352,7 +2369,7 @@
     "type": "機能追加",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "ナレッジ版とプレーン版を分けて出せるようにした",
-    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更2件もまとめています。",
+    "summary": "作者の文脈を入れた読みやすい開発記録と、ナレッジなしの基準出力を同時に作れるようにしました。 普段はナレッジ版を使いながら、Coreが作者専用になっていないかをプレーン版でいつでも比較できます。 同じ1時間内の関連変更1件もまとめています。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "Knowledge Pack",
@@ -2360,7 +2377,7 @@
       "機能追加",
       "比較"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e17057d8b50506166ef91c8f8e958d792729caf3,https://github.com/nobutakayamauchi/limit-development/commit/98bbc6596aeea8aff3d3e5bcd2ff33b44b68c96f,https://github.com/nobutakayamauchi/limit-development/commit/00905c5c018e8ccc39e88a4458af0762f1b91a1b",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e17057d8b50506166ef91c8f8e958d792729caf3,https://github.com/nobutakayamauchi/limit-development/commit/98bbc6596aeea8aff3d3e5bcd2ff33b44b68c96f",
     "article_score": 0.82,
     "article_candidate": true,
     "review_status": "pending"
