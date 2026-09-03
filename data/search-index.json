@@ -1933,20 +1933,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-51044935476c",
-    "date": "2026-08-19",
-    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "機能追加",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-51044935476c"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-5d79ae636c2a",
     "date": "2026-08-19",
     "title": "WebAI-Bridgeに機能を追加",
@@ -4009,8 +3995,8 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか18件",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを改善』、『FOUNDRY GROWTH ENGINEに機能を追加』、『WebAI-Bridgeに機能を追加』もまとめています。",
+    "title": "limit-developmentを改善、ほか17件",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを改善』、『WebAI-Bridgeに機能を追加』、『WebAI-Bridgeを開始』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
     "tags": [

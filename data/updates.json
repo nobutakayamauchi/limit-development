@@ -2346,23 +2346,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-51044935476c",
-    "source_id": "nobutakayamauchi/limit-development@e17057d8b50506166ef91c8f8e958d792729caf3",
-    "captured_at": "2026-08-19T20:52:19+09:00",
-    "type": "機能追加",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e17057d8b50506166ef91c8f8e958d792729caf3",
-    "article_score": 0.277,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-5d79ae636c2a",
     "source_id": "nobutakayamauchi/WebAI-Bridge@ae5e993e92f7ce9f89cbb0f6362ba84d7dc73af1",
     "captured_at": "2026-08-19T18:09:54+09:00",
