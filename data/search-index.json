@@ -1947,20 +1947,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-f217f8817f2a",
-    "date": "2026-08-19",
-    "title": "FOUNDRY GROWTH ENGINEを検証",
-    "summary": "FOUNDRY GROWTH ENGINEを検証しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "研究・検証",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "研究・検証"
-    ],
-    "href": "../updates/#u-upd-f217f8817f2a"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-5d79ae636c2a",
     "date": "2026-08-19",
     "title": "WebAI-Bridgeに機能を追加",
@@ -4023,8 +4009,8 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか19件",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを改善』、『FOUNDRY GROWTH ENGINEに機能を追加』、『FOUNDRY GROWTH ENGINEを検証』もまとめています。",
+    "title": "limit-developmentを改善、ほか18件",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを改善』、『FOUNDRY GROWTH ENGINEに機能を追加』、『WebAI-Bridgeに機能を追加』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
     "tags": [
