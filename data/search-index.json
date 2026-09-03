@@ -1919,6 +1919,20 @@
   },
   {
     "kind": "UPDATE",
+    "id": "upd-6d045db62e28",
+    "date": "2026-08-19",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-6d045db62e28"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-51044935476c",
     "date": "2026-08-19",
     "title": "FOUNDRY GROWTH ENGINEに機能を追加",
@@ -1944,20 +1958,6 @@
       "研究・検証"
     ],
     "href": "../updates/#u-upd-f217f8817f2a"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-1c6e4adacaa3",
-    "date": "2026-08-19",
-    "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "機能変更",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-1c6e4adacaa3"
   },
   {
     "kind": "UPDATE",
@@ -4024,7 +4024,7 @@
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
     "title": "limit-developmentを改善、ほか19件",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEに機能を追加』、『FOUNDRY GROWTH ENGINEを検証』、『FOUNDRY GROWTH ENGINEを改善』もまとめています。",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを改善』、『FOUNDRY GROWTH ENGINEに機能を追加』、『FOUNDRY GROWTH ENGINEを検証』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
     "tags": [
