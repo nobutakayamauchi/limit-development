@@ -2369,12 +2369,12 @@
     "type": "機能変更",
     "project": "FOUNDRY GROWTH ENGINE",
     "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "tags": [
       "FOUNDRY GROWTH ENGINE",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/ddda8027a22bcffdc487ba705a1c0ac5841f5e62,https://github.com/nobutakayamauchi/limit-development/commit/96996711f5b839fcf01df6e2d34a591bd5acdd87,https://github.com/nobutakayamauchi/limit-development/commit/e713c9ec0b1603e1430a7410dedef9c1ed32a4dc",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/ddda8027a22bcffdc487ba705a1c0ac5841f5e62,https://github.com/nobutakayamauchi/limit-development/commit/96996711f5b839fcf01df6e2d34a591bd5acdd87",
     "article_score": 0.179,
     "article_candidate": false,
     "review_status": "pending"
@@ -4569,23 +4569,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/5a6bc42d4e8a34a6fbadd21d2f8c57a45e840791",
     "article_score": 0.367,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-63b7161b7afa",
-    "source_id": "nobutakayamauchi/rts-video-flow@8e3ff9415af45f8301261ff81b67ce6257d876fd",
-    "captured_at": "2026-08-04T10:30:18+09:00",
-    "type": "機能変更",
-    "project": "rts-video-flow",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-video-flow/commit/8e3ff9415af45f8301261ff81b67ce6257d876fd",
-    "article_score": 0.403,
     "article_candidate": false,
     "review_status": "pending"
   }

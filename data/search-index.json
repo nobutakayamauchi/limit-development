@@ -1950,7 +1950,7 @@
     "id": "upd-1c6e4adacaa3",
     "date": "2026-08-19",
     "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "project": "FOUNDRY GROWTH ENGINE",
     "type": "機能変更",
     "tags": [
@@ -3766,20 +3766,6 @@
     "href": "../updates/#u-upd-8d6211f72f4c"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-63b7161b7afa",
-    "date": "2026-08-04",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
-    "project": "rts-video-flow",
-    "type": "機能変更",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-63b7161b7afa"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-02",
     "date": "2026-09-02",
@@ -4228,19 +4214,5 @@
       "機能追加"
     ],
     "href": "../journal/2026-08-06.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-08-04",
-    "date": "2026-08-04",
-    "title": "rts-video-flowを改善",
-    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。",
-    "project": "rts-video-flow",
-    "type": "開発日誌",
-    "tags": [
-      "rts-video-flow",
-      "機能変更"
-    ],
-    "href": "../journal/2026-08-04.html"
   }
 ]
