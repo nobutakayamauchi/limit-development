@@ -491,11 +491,10 @@
   },
   {
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか17件",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEを改善』、『WebAI-Bridgeに機能を追加』、『WebAI-Bridgeを開始』もまとめています。",
+    "title": "limit-developmentを改善、ほか16件",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『WebAI-Bridgeに機能を追加』、『WebAI-Bridgeを開始』、『WebAI-Bridgeを検証』もまとめています。",
     "update_ids": [
       "upd-89dcec3f8e91",
-      "upd-6d045db62e28",
       "upd-5d79ae636c2a",
       "upd-f09a21409430",
       "upd-8065bbc64d5d",
@@ -514,7 +513,6 @@
       "upd-b6e9d3ba3654"
     ],
     "projects": [
-      "FOUNDRY GROWTH ENGINE",
       "Ultimate-Loop",
       "WebAI-Bridge",
       "limit-development"
@@ -527,7 +525,6 @@
       "研究・検証"
     ],
     "tags": [
-      "FOUNDRY GROWTH ENGINE",
       "Ultimate-Loop",
       "WebAI-Bridge",
       "limit-development",

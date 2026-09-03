@@ -2329,23 +2329,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-6d045db62e28",
-    "source_id": "nobutakayamauchi/limit-development@ddda8027a22bcffdc487ba705a1c0ac5841f5e62",
-    "captured_at": "2026-08-19T20:52:42+09:00",
-    "type": "機能変更",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/ddda8027a22bcffdc487ba705a1c0ac5841f5e62",
-    "article_score": 0.172,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-5d79ae636c2a",
     "source_id": "nobutakayamauchi/WebAI-Bridge@ae5e993e92f7ce9f89cbb0f6362ba84d7dc73af1",
     "captured_at": "2026-08-19T18:09:54+09:00",
