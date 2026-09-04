@@ -1793,20 +1793,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-62588113eb65",
-    "date": "2026-08-20",
-    "title": "FOUNDRY GROWTH ENGINEに機能を追加",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "機能追加",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-62588113eb65"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-87dbf1373e29",
     "date": "2026-08-20",
     "title": "Ultimate-Loopに機能を追加",
@@ -3889,8 +3875,8 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-20",
     "date": "2026-08-20",
-    "title": "開発日誌を、何を狙って何をやり、今日どこまで進んだかが読めば分かる開発記録にした日",
-    "summary": "仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 この日は10件の公開開発記録があります。",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか8件",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEに機能を追加』、『limit-developmentを改善』、『limit-developmentを公開』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, RTS-Skills-, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
     "tags": [
