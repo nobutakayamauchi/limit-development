@@ -444,8 +444,8 @@
   },
   {
     "date": "2026-08-20",
-    "title": "開発日誌を、何を狙って何をやり、今日どこまで進んだかが読めば分かる開発記録にした日",
-    "summary": "仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 この日は14件の公開開発記録があります。",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか12件",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEに機能を追加』、『limit-developmentを改善』、『limit-developmentを公開』もまとめています。",
     "update_ids": [
       "upd-ac7c71d73149",
       "upd-2eab97b465a8",
@@ -459,8 +459,7 @@
       "upd-7ef1e0539567",
       "upd-87dbf1373e29",
       "upd-ca06f248420b",
-      "upd-dac951b5da77",
-      "upd-0acd65006230"
+      "upd-dac951b5da77"
     ],
     "projects": [
       "FOUNDRY GROWTH ENGINE",
