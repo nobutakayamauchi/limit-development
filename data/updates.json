@@ -2210,23 +2210,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-3b09f8406796",
-    "source_id": "nobutakayamauchi/limit-development@3a92d556f3c45f02f7cce8c618570e0fe0b70ca3",
-    "captured_at": "2026-08-20T18:55:18+09:00",
-    "type": "機能削除",
-    "project": "limit-development",
-    "title": "limit-developmentの機能を整理",
-    "summary": "limit-developmentで不要になった機能を削除しました。",
-    "tags": [
-      "limit-development",
-      "機能削除"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/3a92d556f3c45f02f7cce8c618570e0fe0b70ca3",
-    "article_score": 0.22,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-87dbf1373e29",
     "source_id": "nobutakayamauchi/Ultimate-Loop@bba55271144a7a1d3ae0ab0b89927e53455a2aef",
     "captured_at": "2026-08-20T18:39:43+09:00",

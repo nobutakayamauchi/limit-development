@@ -1821,20 +1821,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-3b09f8406796",
-    "date": "2026-08-20",
-    "title": "limit-developmentの機能を整理",
-    "summary": "limit-developmentで不要になった機能を削除しました。",
-    "project": "limit-development",
-    "type": "機能削除",
-    "tags": [
-      "limit-development",
-      "機能削除"
-    ],
-    "href": "../updates/#u-upd-3b09f8406796"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-87dbf1373e29",
     "date": "2026-08-20",
     "title": "Ultimate-Loopに機能を追加",
@@ -3918,7 +3904,7 @@
     "id": "journal-2026-08-20",
     "date": "2026-08-20",
     "title": "開発日誌を、何を狙って何をやり、今日どこまで進んだかが読めば分かる開発記録にした日",
-    "summary": "仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 この日は12件の公開開発記録があります。",
+    "summary": "仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 この日は11件の公開開発記録があります。",
     "project": "FOUNDRY GROWTH ENGINE, RTS-Skills-, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
     "tags": [
@@ -3929,7 +3915,6 @@
       "limit-development",
       "新製品",
       "方針変更",
-      "機能削除",
       "機能変更",
       "機能追加"
     ],
