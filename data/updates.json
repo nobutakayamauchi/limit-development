@@ -2227,23 +2227,6 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-7ef1e0539567",
-    "source_id": "nobutakayamauchi/limit-development@ea243d30d08f49a88094a5b7eb750719dd64839d",
-    "captured_at": "2026-08-20T18:54:22+09:00",
-    "type": "機能変更",
-    "project": "limit-development",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/ea243d30d08f49a88094a5b7eb750719dd64839d",
-    "article_score": 0.16,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
     "id": "upd-87dbf1373e29",
     "source_id": "nobutakayamauchi/Ultimate-Loop@bba55271144a7a1d3ae0ab0b89927e53455a2aef",
     "captured_at": "2026-08-20T18:39:43+09:00",
