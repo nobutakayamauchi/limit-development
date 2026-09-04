@@ -1905,20 +1905,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-89dcec3f8e91",
-    "date": "2026-08-19",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "limit-development",
-    "type": "機能変更",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-89dcec3f8e91"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-5d79ae636c2a",
     "date": "2026-08-19",
     "title": "WebAI-Bridgeに機能を追加",
@@ -3981,14 +3967,13 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "limit-developmentを改善、ほか16件",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『WebAI-Bridgeに機能を追加』、『WebAI-Bridgeを開始』、『WebAI-Bridgeを検証』もまとめています。",
-    "project": "Ultimate-Loop, WebAI-Bridge, limit-development",
+    "title": "WebAI-Bridgeに機能を追加、ほか15件",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ日の開発記録として、『WebAI-Bridgeを開始』、『WebAI-Bridgeを検証』、『WebAI-Bridgeに機能を追加』もまとめています。",
+    "project": "Ultimate-Loop, WebAI-Bridge",
     "type": "開発日誌",
     "tags": [
       "Ultimate-Loop",
       "WebAI-Bridge",
-      "limit-development",
       "新プロジェクト",
       "方針変更",
       "機能変更",
