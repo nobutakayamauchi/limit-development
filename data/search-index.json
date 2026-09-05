@@ -1,6 +1,20 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-ae548f089ad1",
+    "date": "2026-09-05",
+    "title": "TRACEに機能を追加",
+    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。",
+    "project": "TRACE",
+    "type": "機能追加",
+    "tags": [
+      "TRACE",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-ae548f089ad1"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-f17287b7e649",
     "date": "2026-09-05",
     "title": "RTS-Evolutionに機能を追加",
@@ -2031,17 +2045,17 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-4432f0ed851d",
+    "id": "upd-8deed19e74e0",
     "date": "2026-08-20",
     "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
     "project": "limit-development",
     "type": "機能変更",
     "tags": [
       "limit-development",
       "機能変更"
     ],
-    "href": "../updates/#u-upd-4432f0ed851d"
+    "href": "../updates/#u-upd-8deed19e74e0"
   },
   {
     "kind": "UPDATE",
@@ -3878,25 +3892,11 @@
     "href": "../updates/#u-upd-00e33d04f0ce"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-eb2310d6ee61",
-    "date": "2026-08-06",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RS-AI-limit-development",
-    "type": "機能変更",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-eb2310d6ee61"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-05",
     "date": "2026-09-05",
-    "title": "RTS-Evolutionに機能を追加、ほか20件",
-    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。 同じ日の開発記録として、『RTS-Talent-Registryの方針を更新』、『RTS-Signal-Feedsの方針を更新』、『rts-video-flowの方針を更新』もまとめています。",
+    "title": "TRACEに機能を追加、ほか21件",
+    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。 同じ日の開発記録として、『RTS-Evolutionに機能を追加』、『RTS-Talent-Registryの方針を更新』、『RTS-Signal-Feedsの方針を更新』もまとめています。",
     "project": "Audience-Miner, Developer-Card, LLM-Cost-Router, NAGI, RS-AI-limit-development, RTS-AGE, RTS-Evolution, RTS-Minimal-Runtime, RTS-Signal-Feeds, RTS-Skills-, RTS-Talent-Registry, TRACE, codex-connector-test, limit-development, nobutakayamauchi, rts-lite, rts-video-flow, sales-catalog, x-ads-bridge",
     "type": "開発日誌",
     "tags": [
@@ -4356,19 +4356,5 @@
       "機能変更"
     ],
     "href": "../journal/2026-08-07.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-08-06",
-    "date": "2026-08-06",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RS-AI-limit-development",
-    "type": "開発日誌",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "href": "../journal/2026-08-06.html"
   }
 ]

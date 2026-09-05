@@ -1,9 +1,10 @@
 [
   {
     "date": "2026-09-05",
-    "title": "RTS-Evolutionに機能を追加、ほか20件",
-    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。 同じ日の開発記録として、『RTS-Talent-Registryの方針を更新』、『RTS-Signal-Feedsの方針を更新』、『rts-video-flowの方針を更新』もまとめています。",
+    "title": "TRACEに機能を追加、ほか21件",
+    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。 同じ日の開発記録として、『RTS-Evolutionに機能を追加』、『RTS-Talent-Registryの方針を更新』、『RTS-Signal-Feedsの方針を更新』もまとめています。",
     "update_ids": [
+      "upd-ae548f089ad1",
       "upd-f17287b7e649",
       "upd-a43e2a24ea79",
       "upd-5c445396a34c",
@@ -529,7 +530,7 @@
     "update_ids": [
       "upd-ac7c71d73149",
       "upd-2eab97b465a8",
-      "upd-4432f0ed851d",
+      "upd-8deed19e74e0",
       "upd-4621400f55e4",
       "upd-22edc740036c",
       "upd-87dbf1373e29",
@@ -921,24 +922,6 @@
     "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
     "update_ids": [
       "upd-00e33d04f0ce"
-    ],
-    "projects": [
-      "RS-AI-limit-development"
-    ],
-    "types": [
-      "機能変更"
-    ],
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ]
-  },
-  {
-    "date": "2026-08-06",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "update_ids": [
-      "upd-eb2310d6ee61"
     ],
     "projects": [
       "RS-AI-limit-development"
