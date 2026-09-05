@@ -7,7 +7,7 @@
   "daily_intent_input": "daily-intents.limit-development.jsonl",
   "approved_daily_intents": 1,
   "expanded_journal_pages": 26,
-  "checked_at": "2026-09-05T13:31+09:00",
+  "checked_at": "2026-09-05T18:06+09:00",
   "repositories": [
     ".",
     "/tmp/fge-sources/Audience-Miner",
@@ -40,8 +40,8 @@
     "/tmp/fge-sources/x-ads-bridge"
   ],
   "git_only": true,
-  "evidence_count": 719,
-  "public_update_count": 276,
+  "evidence_count": 717,
+  "public_update_count": 278,
   "article_candidates": 0,
   "journal_days": 26
 }

@@ -1,6 +1,62 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-f17287b7e649",
+    "date": "2026-09-05",
+    "title": "RTS-Evolutionに機能を追加",
+    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。",
+    "project": "RTS-Evolution",
+    "type": "機能追加",
+    "tags": [
+      "RTS-Evolution",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-f17287b7e649"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a43e2a24ea79",
+    "date": "2026-09-05",
+    "title": "RTS-Talent-Registryの方針を更新",
+    "summary": "RTS-Talent-Registryの説明や運用方針を更新しました。",
+    "project": "RTS-Talent-Registry",
+    "type": "方針変更",
+    "tags": [
+      "RTS-Talent-Registry",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-a43e2a24ea79"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-5c445396a34c",
+    "date": "2026-09-05",
+    "title": "RTS-Signal-Feedsの方針を更新",
+    "summary": "RTS-Signal-Feedsの説明や運用方針を更新しました。",
+    "project": "RTS-Signal-Feeds",
+    "type": "方針変更",
+    "tags": [
+      "RTS-Signal-Feeds",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-5c445396a34c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-22fe4030727d",
+    "date": "2026-09-05",
+    "title": "rts-video-flowの方針を更新",
+    "summary": "rts-video-flowの説明や運用方針を更新しました。",
+    "project": "rts-video-flow",
+    "type": "方針変更",
+    "tags": [
+      "rts-video-flow",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-22fe4030727d"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-6d9f79c4f8f6",
     "date": "2026-09-05",
     "title": "RTS-Minimal-Runtimeの方針を更新",
@@ -1978,7 +2034,7 @@
     "id": "upd-4432f0ed851d",
     "date": "2026-08-20",
     "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "project": "limit-development",
     "type": "機能変更",
     "tags": [
@@ -3836,40 +3892,12 @@
     "href": "../updates/#u-upd-eb2310d6ee61"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-2055397270b5",
-    "date": "2026-08-06",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "RS-AI-limit-development",
-    "type": "機能変更",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-2055397270b5"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-8d6211f72f4c",
-    "date": "2026-08-06",
-    "title": "RS-AI-limit-developmentに機能を追加",
-    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
-    "project": "RS-AI-limit-development",
-    "type": "機能追加",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-8d6211f72f4c"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-05",
     "date": "2026-09-05",
-    "title": "RTS-Minimal-Runtimeの方針を更新、ほか16件",
-    "summary": "RTS-Minimal-Runtimeの説明や運用方針を更新しました。 同じ日の開発記録として、『rts-liteの方針を更新』、『codex-connector-testを検証』、『x-ads-bridgeに機能を追加』もまとめています。",
-    "project": "Audience-Miner, Developer-Card, LLM-Cost-Router, NAGI, RS-AI-limit-development, RTS-AGE, RTS-Evolution, RTS-Minimal-Runtime, RTS-Skills-, TRACE, codex-connector-test, limit-development, nobutakayamauchi, rts-lite, sales-catalog, x-ads-bridge",
+    "title": "RTS-Evolutionに機能を追加、ほか20件",
+    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。 同じ日の開発記録として、『RTS-Talent-Registryの方針を更新』、『RTS-Signal-Feedsの方針を更新』、『rts-video-flowの方針を更新』もまとめています。",
+    "project": "Audience-Miner, Developer-Card, LLM-Cost-Router, NAGI, RS-AI-limit-development, RTS-AGE, RTS-Evolution, RTS-Minimal-Runtime, RTS-Signal-Feeds, RTS-Skills-, RTS-Talent-Registry, TRACE, codex-connector-test, limit-development, nobutakayamauchi, rts-lite, rts-video-flow, sales-catalog, x-ads-bridge",
     "type": "開発日誌",
     "tags": [
       "Audience-Miner",
@@ -3880,12 +3908,15 @@
       "RTS-AGE",
       "RTS-Evolution",
       "RTS-Minimal-Runtime",
+      "RTS-Signal-Feeds",
       "RTS-Skills-",
+      "RTS-Talent-Registry",
       "TRACE",
       "codex-connector-test",
       "limit-development",
       "nobutakayamauchi",
       "rts-lite",
+      "rts-video-flow",
       "sales-catalog",
       "x-ads-bridge",
       "方針変更",
@@ -4330,14 +4361,13 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-06",
     "date": "2026-08-06",
-    "title": "RS-AI-limit-developmentを改善、ほか2件",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RS-AI-limit-developmentを改善』、『RS-AI-limit-developmentに機能を追加』もまとめています。",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
     "project": "RS-AI-limit-development",
     "type": "開発日誌",
     "tags": [
       "RS-AI-limit-development",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ],
     "href": "../journal/2026-08-06.html"
   }

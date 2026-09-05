@@ -1,5 +1,73 @@
 [
   {
+    "id": "upd-f17287b7e649",
+    "source_id": "nobutakayamauchi/RTS-Evolution@6d07257339ddea61664507b15b84c0aa04c6d7b7",
+    "captured_at": "2026-09-05T17:54:39+09:00",
+    "type": "機能追加",
+    "project": "RTS-Evolution",
+    "title": "RTS-Evolutionに機能を追加",
+    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-Evolution",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Evolution/commit/6d07257339ddea61664507b15b84c0aa04c6d7b7",
+    "article_score": 0.366,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-a43e2a24ea79",
+    "source_id": "nobutakayamauchi/RTS-Talent-Registry@f755f9db46be7fe9f98149998f45a785327e9758",
+    "captured_at": "2026-09-05T14:17:03+09:00",
+    "type": "方針変更",
+    "project": "RTS-Talent-Registry",
+    "title": "RTS-Talent-Registryの方針を更新",
+    "summary": "RTS-Talent-Registryの説明や運用方針を更新しました。",
+    "tags": [
+      "RTS-Talent-Registry",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Talent-Registry/commit/f755f9db46be7fe9f98149998f45a785327e9758",
+    "article_score": 0.251,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-5c445396a34c",
+    "source_id": "nobutakayamauchi/RTS-Signal-Feeds@2996cd916dd9ae3d5a32e209d7c92b6def672db4",
+    "captured_at": "2026-09-05T14:16:53+09:00",
+    "type": "方針変更",
+    "project": "RTS-Signal-Feeds",
+    "title": "RTS-Signal-Feedsの方針を更新",
+    "summary": "RTS-Signal-Feedsの説明や運用方針を更新しました。",
+    "tags": [
+      "RTS-Signal-Feeds",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Signal-Feeds/commit/2996cd916dd9ae3d5a32e209d7c92b6def672db4",
+    "article_score": 0.25,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-22fe4030727d",
+    "source_id": "nobutakayamauchi/rts-video-flow@eeaadb64b4213d5d8544b65353d0c3f24a9f190e",
+    "captured_at": "2026-09-05T14:16:34+09:00",
+    "type": "方針変更",
+    "project": "rts-video-flow",
+    "title": "rts-video-flowの方針を更新",
+    "summary": "rts-video-flowの説明や運用方針を更新しました。",
+    "tags": [
+      "rts-video-flow",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-video-flow/commit/eeaadb64b4213d5d8544b65353d0c3f24a9f190e",
+    "article_score": 0.25,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-6d9f79c4f8f6",
     "source_id": "nobutakayamauchi/RTS-Minimal-Runtime@3b5edea36a106b62c5604e3402f23788a2b25132",
     "captured_at": "2026-09-05T12:00:38+09:00",
@@ -2403,12 +2471,12 @@
     "type": "機能変更",
     "project": "limit-development",
     "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "tags": [
       "limit-development",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b6a9658e88188b64face36289c20aaf6e5ad36e3,https://github.com/nobutakayamauchi/limit-development/commit/fb7e0002d4cdd05113d50e16e07f5da0dfa55347,https://github.com/nobutakayamauchi/limit-development/commit/b2afb7e16242d21dea8374a2d678f28c06469778",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b6a9658e88188b64face36289c20aaf6e5ad36e3,https://github.com/nobutakayamauchi/limit-development/commit/fb7e0002d4cdd05113d50e16e07f5da0dfa55347",
     "article_score": 0.254,
     "article_candidate": false,
     "review_status": "pending"
@@ -4654,40 +4722,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/60f195e9e8ff58d1728f9052f050335cee8d41a8",
     "article_score": 0.325,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-2055397270b5",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@bf804b548c1257d86df96a162332f8fb8d398dc5",
-    "captured_at": "2026-08-06T17:53:37+09:00",
-    "type": "機能変更",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/5d8eb5caf4ed906389ac2717ef3d507e2068a99d,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/1ff41572757b7e305e7de905ea76d8cec03d2840,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/bf804b548c1257d86df96a162332f8fb8d398dc5,https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/243a62a4792c89f8dcbe145c004a88630987306e",
-    "article_score": 0.399,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-8d6211f72f4c",
-    "source_id": "nobutakayamauchi/RS-AI-limit-development@5a6bc42d4e8a34a6fbadd21d2f8c57a45e840791",
-    "captured_at": "2026-08-06T16:59:39+09:00",
-    "type": "機能追加",
-    "project": "RS-AI-limit-development",
-    "title": "RS-AI-limit-developmentに機能を追加",
-    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/5a6bc42d4e8a34a6fbadd21d2f8c57a45e840791",
-    "article_score": 0.367,
     "article_candidate": false,
     "review_status": "pending"
   }

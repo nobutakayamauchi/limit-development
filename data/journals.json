@@ -1,9 +1,13 @@
 [
   {
     "date": "2026-09-05",
-    "title": "RTS-Minimal-Runtimeの方針を更新、ほか16件",
-    "summary": "RTS-Minimal-Runtimeの説明や運用方針を更新しました。 同じ日の開発記録として、『rts-liteの方針を更新』、『codex-connector-testを検証』、『x-ads-bridgeに機能を追加』もまとめています。",
+    "title": "RTS-Evolutionに機能を追加、ほか20件",
+    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。 同じ日の開発記録として、『RTS-Talent-Registryの方針を更新』、『RTS-Signal-Feedsの方針を更新』、『rts-video-flowの方針を更新』もまとめています。",
     "update_ids": [
+      "upd-f17287b7e649",
+      "upd-a43e2a24ea79",
+      "upd-5c445396a34c",
+      "upd-22fe4030727d",
       "upd-6d9f79c4f8f6",
       "upd-b28fd7aaae5d",
       "upd-806d81411d2a",
@@ -31,12 +35,15 @@
       "RTS-AGE",
       "RTS-Evolution",
       "RTS-Minimal-Runtime",
+      "RTS-Signal-Feeds",
       "RTS-Skills-",
+      "RTS-Talent-Registry",
       "TRACE",
       "codex-connector-test",
       "limit-development",
       "nobutakayamauchi",
       "rts-lite",
+      "rts-video-flow",
       "sales-catalog",
       "x-ads-bridge"
     ],
@@ -55,12 +62,15 @@
       "RTS-AGE",
       "RTS-Evolution",
       "RTS-Minimal-Runtime",
+      "RTS-Signal-Feeds",
       "RTS-Skills-",
+      "RTS-Talent-Registry",
       "TRACE",
       "codex-connector-test",
       "limit-development",
       "nobutakayamauchi",
       "rts-lite",
+      "rts-video-flow",
       "sales-catalog",
       "x-ads-bridge",
       "方針変更",
@@ -925,24 +935,20 @@
   },
   {
     "date": "2026-08-06",
-    "title": "RS-AI-limit-developmentを改善、ほか2件",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RS-AI-limit-developmentを改善』、『RS-AI-limit-developmentに機能を追加』もまとめています。",
+    "title": "RS-AI-limit-developmentを改善",
+    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
     "update_ids": [
-      "upd-eb2310d6ee61",
-      "upd-2055397270b5",
-      "upd-8d6211f72f4c"
+      "upd-eb2310d6ee61"
     ],
     "projects": [
       "RS-AI-limit-development"
     ],
     "types": [
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ],
     "tags": [
       "RS-AI-limit-development",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ]
   }
 ]
