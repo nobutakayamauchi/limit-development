@@ -1,6 +1,244 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-6d9f79c4f8f6",
+    "date": "2026-09-05",
+    "title": "RTS-Minimal-Runtimeの方針を更新",
+    "summary": "RTS-Minimal-Runtimeの説明や運用方針を更新しました。",
+    "project": "RTS-Minimal-Runtime",
+    "type": "方針変更",
+    "tags": [
+      "RTS-Minimal-Runtime",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-6d9f79c4f8f6"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b28fd7aaae5d",
+    "date": "2026-09-05",
+    "title": "rts-liteの方針を更新",
+    "summary": "rts-liteの説明や運用方針を更新しました。",
+    "project": "rts-lite",
+    "type": "方針変更",
+    "tags": [
+      "rts-lite",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-b28fd7aaae5d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-806d81411d2a",
+    "date": "2026-09-05",
+    "title": "codex-connector-testを検証",
+    "summary": "codex-connector-testが実際の利用条件で成立するか検証しました。",
+    "project": "codex-connector-test",
+    "type": "研究・検証",
+    "tags": [
+      "codex-connector-test",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-806d81411d2a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-cfaaa5099a03",
+    "date": "2026-09-05",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "x-ads-bridge",
+    "type": "機能追加",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-cfaaa5099a03"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ac2f301ec4d0",
+    "date": "2026-09-05",
+    "title": "TRACEに機能を追加",
+    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "TRACE",
+    "type": "機能追加",
+    "tags": [
+      "TRACE",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-ac2f301ec4d0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4ce9f54834d1",
+    "date": "2026-09-05",
+    "title": "RTS-Skills-の方針を更新",
+    "summary": "RTS-Skills-の説明や運用方針を更新しました。",
+    "project": "RTS-Skills-",
+    "type": "方針変更",
+    "tags": [
+      "RTS-Skills-",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-4ce9f54834d1"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0747ddf5bb1d",
+    "date": "2026-09-05",
+    "title": "RTS-AGEの方針を更新",
+    "summary": "RTS-AGEの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "RTS-AGE",
+    "type": "方針変更",
+    "tags": [
+      "RTS-AGE",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-0747ddf5bb1d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-a36cba83d45c",
+    "date": "2026-09-05",
+    "title": "nobutakayamauchiを改善",
+    "summary": "nobutakayamauchiの使い勝手や安定性に関わる変更を行いました。",
+    "project": "nobutakayamauchi",
+    "type": "機能変更",
+    "tags": [
+      "nobutakayamauchi",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-a36cba83d45c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-be2ed8b091b9",
+    "date": "2026-09-05",
+    "title": "LLM-Cost-Routerの方針を更新",
+    "summary": "LLM-Cost-Routerの説明や運用方針を更新しました。",
+    "project": "LLM-Cost-Router",
+    "type": "方針変更",
+    "tags": [
+      "LLM-Cost-Router",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-be2ed8b091b9"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f158270e31ee",
+    "date": "2026-09-05",
+    "title": "LLM-Cost-Routerに機能を追加",
+    "summary": "LLM-Cost-Routerで新しい機能を使えるようにしました。",
+    "project": "LLM-Cost-Router",
+    "type": "機能追加",
+    "tags": [
+      "LLM-Cost-Router",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-f158270e31ee"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-6cef0439c2e0",
+    "date": "2026-09-05",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。",
+    "project": "sales-catalog",
+    "type": "機能追加",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-6cef0439c2e0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0ae3c177522f",
+    "date": "2026-09-05",
+    "title": "RTS-Evolutionに機能を追加",
+    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。",
+    "project": "RTS-Evolution",
+    "type": "機能追加",
+    "tags": [
+      "RTS-Evolution",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0ae3c177522f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-53950a217859",
+    "date": "2026-09-05",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能追加",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-53950a217859"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-0024e7ff2286",
+    "date": "2026-09-05",
+    "title": "NAGIに機能を追加",
+    "summary": "NAGIに機能を追加しました。 中断のたびに頭の中まで最初から作り直さないために使います。",
+    "project": "NAGI",
+    "type": "機能追加",
+    "tags": [
+      "NAGI",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-0024e7ff2286"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-38895cc43f25",
+    "date": "2026-09-05",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-38895cc43f25"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7a9d751c70c0",
+    "date": "2026-09-05",
+    "title": "Developer-Cardに機能を追加",
+    "summary": "Developer-Cardで新しい機能を使えるようにしました。",
+    "project": "Developer-Card",
+    "type": "機能追加",
+    "tags": [
+      "Developer-Card",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-7a9d751c70c0"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-680c314b181c",
+    "date": "2026-09-05",
+    "title": "Audience-Minerに機能を追加",
+    "summary": "Audience-Minerで新しい機能を使えるようにしました。",
+    "project": "Audience-Miner",
+    "type": "機能追加",
+    "tags": [
+      "Audience-Miner",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-680c314b181c"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-9742bf0caaca",
     "date": "2026-09-02",
     "title": "sales-catalogに機能を追加",
@@ -1748,20 +1986,6 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-4432f0ed851d"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-d15161f46e5c",
-    "date": "2026-08-20",
-    "title": "limit-developmentを公開",
-    "summary": "limit-developmentを新しく公開しました。",
-    "project": "limit-development",
-    "type": "新製品",
-    "tags": [
-      "limit-development",
-      "新製品"
-    ],
-    "href": "../updates/#u-upd-d15161f46e5c"
   },
   {
     "kind": "UPDATE",
@@ -3641,6 +3865,38 @@
   },
   {
     "kind": "JOURNAL",
+    "id": "journal-2026-09-05",
+    "date": "2026-09-05",
+    "title": "RTS-Minimal-Runtimeの方針を更新、ほか16件",
+    "summary": "RTS-Minimal-Runtimeの説明や運用方針を更新しました。 同じ日の開発記録として、『rts-liteの方針を更新』、『codex-connector-testを検証』、『x-ads-bridgeに機能を追加』もまとめています。",
+    "project": "Audience-Miner, Developer-Card, LLM-Cost-Router, NAGI, RS-AI-limit-development, RTS-AGE, RTS-Evolution, RTS-Minimal-Runtime, RTS-Skills-, TRACE, codex-connector-test, limit-development, nobutakayamauchi, rts-lite, sales-catalog, x-ads-bridge",
+    "type": "開発日誌",
+    "tags": [
+      "Audience-Miner",
+      "Developer-Card",
+      "LLM-Cost-Router",
+      "NAGI",
+      "RS-AI-limit-development",
+      "RTS-AGE",
+      "RTS-Evolution",
+      "RTS-Minimal-Runtime",
+      "RTS-Skills-",
+      "TRACE",
+      "codex-connector-test",
+      "limit-development",
+      "nobutakayamauchi",
+      "rts-lite",
+      "sales-catalog",
+      "x-ads-bridge",
+      "方針変更",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-09-05.html"
+  },
+  {
+    "kind": "JOURNAL",
     "id": "journal-2026-09-02",
     "date": "2026-09-02",
     "title": "sales-catalogに機能を追加、ほか5件",
@@ -3875,8 +4131,8 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-20",
     "date": "2026-08-20",
-    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか8件",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEに機能を追加』、『limit-developmentを改善』、『limit-developmentを公開』もまとめています。",
+    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか7件",
+    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『FOUNDRY GROWTH ENGINEに機能を追加』、『limit-developmentを改善』、『RTS-Skills-の方針を更新』もまとめています。",
     "project": "FOUNDRY GROWTH ENGINE, RTS-Skills-, Ultimate-Loop, WebAI-Bridge, limit-development",
     "type": "開発日誌",
     "tags": [
@@ -3885,7 +4141,6 @@
       "Ultimate-Loop",
       "WebAI-Bridge",
       "limit-development",
-      "新製品",
       "方針変更",
       "機能変更",
       "機能追加"

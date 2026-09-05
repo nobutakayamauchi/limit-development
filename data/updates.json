@@ -1,5 +1,294 @@
 [
   {
+    "id": "upd-6d9f79c4f8f6",
+    "source_id": "nobutakayamauchi/RTS-Minimal-Runtime@3b5edea36a106b62c5604e3402f23788a2b25132",
+    "captured_at": "2026-09-05T12:00:38+09:00",
+    "type": "方針変更",
+    "project": "RTS-Minimal-Runtime",
+    "title": "RTS-Minimal-Runtimeの方針を更新",
+    "summary": "RTS-Minimal-Runtimeの説明や運用方針を更新しました。",
+    "tags": [
+      "RTS-Minimal-Runtime",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Minimal-Runtime/commit/3b5edea36a106b62c5604e3402f23788a2b25132",
+    "article_score": 0.246,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-b28fd7aaae5d",
+    "source_id": "nobutakayamauchi/rts-lite@e1c718a64c97ea00c9ab9cac306ba5c32707c081",
+    "captured_at": "2026-09-05T12:00:28+09:00",
+    "type": "方針変更",
+    "project": "rts-lite",
+    "title": "rts-liteの方針を更新",
+    "summary": "rts-liteの説明や運用方針を更新しました。",
+    "tags": [
+      "rts-lite",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-lite/commit/e1c718a64c97ea00c9ab9cac306ba5c32707c081",
+    "article_score": 0.244,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-806d81411d2a",
+    "source_id": "nobutakayamauchi/codex-connector-test@85f1e03b9c9c5d511b22804b630ff0841cc64b78",
+    "captured_at": "2026-09-05T11:59:35+09:00",
+    "type": "研究・検証",
+    "project": "codex-connector-test",
+    "title": "codex-connector-testを検証",
+    "summary": "codex-connector-testが実際の利用条件で成立するか検証しました。",
+    "tags": [
+      "codex-connector-test",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/codex-connector-test/commit/85f1e03b9c9c5d511b22804b630ff0841cc64b78",
+    "article_score": 0.229,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-cfaaa5099a03",
+    "source_id": "nobutakayamauchi/x-ads-bridge@7832621b7fcc69788d959735417731737217ad48",
+    "captured_at": "2026-09-05T11:59:20+09:00",
+    "type": "機能追加",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/7832621b7fcc69788d959735417731737217ad48,https://github.com/nobutakayamauchi/x-ads-bridge/commit/31fb227e440290dc963c5492f215583ae3ea52cd",
+    "article_score": 0.34,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-ac2f301ec4d0",
+    "source_id": "nobutakayamauchi/TRACE@c748687da86064c8a7a762dc177a440d1de43baf",
+    "captured_at": "2026-09-05T11:59:00+09:00",
+    "type": "機能追加",
+    "project": "TRACE",
+    "title": "TRACEに機能を追加",
+    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "TRACE",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/TRACE/commit/c748687da86064c8a7a762dc177a440d1de43baf,https://github.com/nobutakayamauchi/TRACE/commit/653b5a6a6c2fa15be674aa15c8868bbbe3777949",
+    "article_score": 0.34,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-4ce9f54834d1",
+    "source_id": "nobutakayamauchi/RTS-Skills-@7279c68a18cf77d942e06c09aada6479f6ba84d0",
+    "captured_at": "2026-09-05T11:58:30+09:00",
+    "type": "方針変更",
+    "project": "RTS-Skills-",
+    "title": "RTS-Skills-の方針を更新",
+    "summary": "RTS-Skills-の説明や運用方針を更新しました。",
+    "tags": [
+      "RTS-Skills-",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Skills-/commit/7279c68a18cf77d942e06c09aada6479f6ba84d0",
+    "article_score": 0.242,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-0747ddf5bb1d",
+    "source_id": "nobutakayamauchi/RTS-AGE@47516589a86240a29fa8cfa81fe49d43ec000940",
+    "captured_at": "2026-09-05T11:58:19+09:00",
+    "type": "方針変更",
+    "project": "RTS-AGE",
+    "title": "RTS-AGEの方針を更新",
+    "summary": "RTS-AGEの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "RTS-AGE",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-AGE/commit/47516589a86240a29fa8cfa81fe49d43ec000940,https://github.com/nobutakayamauchi/RTS-AGE/commit/d59cd4149bd311395c01e31c585a0df4bc2ed38c",
+    "article_score": 0.312,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-a36cba83d45c",
+    "source_id": "nobutakayamauchi/nobutakayamauchi@a4fc047ef074190a983cc76f54ec8b202f0ad8b3",
+    "captured_at": "2026-09-05T11:57:23+09:00",
+    "type": "機能変更",
+    "project": "nobutakayamauchi",
+    "title": "nobutakayamauchiを改善",
+    "summary": "nobutakayamauchiの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "nobutakayamauchi",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/nobutakayamauchi/commit/a4fc047ef074190a983cc76f54ec8b202f0ad8b3",
+    "article_score": 0.246,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-be2ed8b091b9",
+    "source_id": "nobutakayamauchi/LLM-Cost-Router@af707282abc148d1e86391b74ca6180300642226",
+    "captured_at": "2026-09-05T11:56:45+09:00",
+    "type": "方針変更",
+    "project": "LLM-Cost-Router",
+    "title": "LLM-Cost-Routerの方針を更新",
+    "summary": "LLM-Cost-Routerの説明や運用方針を更新しました。",
+    "tags": [
+      "LLM-Cost-Router",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/LLM-Cost-Router/commit/af707282abc148d1e86391b74ca6180300642226",
+    "article_score": 0.244,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-f158270e31ee",
+    "source_id": "nobutakayamauchi/LLM-Cost-Router@90aab11aab9cd90999a8fb307d8c70ea90a35f3a",
+    "captured_at": "2026-09-05T11:56:37+09:00",
+    "type": "機能追加",
+    "project": "LLM-Cost-Router",
+    "title": "LLM-Cost-Routerに機能を追加",
+    "summary": "LLM-Cost-Routerで新しい機能を使えるようにしました。",
+    "tags": [
+      "LLM-Cost-Router",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/LLM-Cost-Router/commit/90aab11aab9cd90999a8fb307d8c70ea90a35f3a",
+    "article_score": 0.34,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-6cef0439c2e0",
+    "source_id": "nobutakayamauchi/sales-catalog@6c032908f98a8574060cd9a32ded5f6e520715ad",
+    "captured_at": "2026-09-05T11:56:03+09:00",
+    "type": "機能追加",
+    "project": "sales-catalog",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/6c032908f98a8574060cd9a32ded5f6e520715ad",
+    "article_score": 0.34,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-0ae3c177522f",
+    "source_id": "nobutakayamauchi/RTS-Evolution@9227fe31d99878f45399f8d767779757cb8fe438",
+    "captured_at": "2026-09-05T11:55:49+09:00",
+    "type": "機能追加",
+    "project": "RTS-Evolution",
+    "title": "RTS-Evolutionに機能を追加",
+    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-Evolution",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Evolution/commit/9227fe31d99878f45399f8d767779757cb8fe438",
+    "article_score": 0.34,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-53950a217859",
+    "source_id": "nobutakayamauchi/RS-AI-limit-development@086756525426cc71353433c1eaed060e31f57155",
+    "captured_at": "2026-09-05T11:55:39+09:00",
+    "type": "機能追加",
+    "project": "RS-AI-limit-development",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/086756525426cc71353433c1eaed060e31f57155",
+    "article_score": 0.34,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-0024e7ff2286",
+    "source_id": "nobutakayamauchi/NAGI@5c620928905c9bb14e6a4af0e621674d9c1a83a1",
+    "captured_at": "2026-09-05T11:54:53+09:00",
+    "type": "機能追加",
+    "project": "NAGI",
+    "title": "NAGIに機能を追加",
+    "summary": "NAGIに機能を追加しました。 中断のたびに頭の中まで最初から作り直さないために使います。",
+    "tags": [
+      "NAGI",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/NAGI/commit/5c620928905c9bb14e6a4af0e621674d9c1a83a1",
+    "article_score": 0.34,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-38895cc43f25",
+    "source_id": "nobutakayamauchi/limit-development@ce0d4e8f20b80c5fbbccd0d15e4eea6e52a7671c",
+    "captured_at": "2026-09-05T11:54:42+09:00",
+    "type": "機能追加",
+    "project": "limit-development",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/ce0d4e8f20b80c5fbbccd0d15e4eea6e52a7671c",
+    "article_score": 0.34,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-7a9d751c70c0",
+    "source_id": "nobutakayamauchi/Developer-Card@1ce14665d89d06f7ce3218e56d2343fa84801e1d",
+    "captured_at": "2026-09-05T11:54:14+09:00",
+    "type": "機能追加",
+    "project": "Developer-Card",
+    "title": "Developer-Cardに機能を追加",
+    "summary": "Developer-Cardで新しい機能を使えるようにしました。",
+    "tags": [
+      "Developer-Card",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Developer-Card/commit/1ce14665d89d06f7ce3218e56d2343fa84801e1d",
+    "article_score": 0.34,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-680c314b181c",
+    "source_id": "nobutakayamauchi/Audience-Miner@1c427e5d305f689cc6a7e3ec4998b3e01ccb91c0",
+    "captured_at": "2026-09-05T11:53:56+09:00",
+    "type": "機能追加",
+    "project": "Audience-Miner",
+    "title": "Audience-Minerに機能を追加",
+    "summary": "Audience-Minerで新しい機能を使えるようにしました。",
+    "tags": [
+      "Audience-Miner",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Audience-Miner/commit/1c427e5d305f689cc6a7e3ec4998b3e01ccb91c0",
+    "article_score": 0.34,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-9742bf0caaca",
     "source_id": "nobutakayamauchi/sales-catalog@b3c7143760c109710571a83246ea2f625fa70416",
     "captured_at": "2026-09-02T22:26:08+09:00",
@@ -2121,23 +2410,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/b6a9658e88188b64face36289c20aaf6e5ad36e3,https://github.com/nobutakayamauchi/limit-development/commit/fb7e0002d4cdd05113d50e16e07f5da0dfa55347,https://github.com/nobutakayamauchi/limit-development/commit/b2afb7e16242d21dea8374a2d678f28c06469778",
     "article_score": 0.254,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-d15161f46e5c",
-    "source_id": "nobutakayamauchi/limit-development@a65930124b2f18cc655ebea261d25e85e4cb59e3",
-    "captured_at": "2026-08-20T20:43:11+09:00",
-    "type": "新製品",
-    "project": "limit-development",
-    "title": "limit-developmentを公開",
-    "summary": "limit-developmentを新しく公開しました。",
-    "tags": [
-      "limit-development",
-      "新製品"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/a65930124b2f18cc655ebea261d25e85e4cb59e3",
-    "article_score": 0.465,
     "article_candidate": false,
     "review_status": "pending"
   },
