@@ -2087,20 +2087,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-a37bf3c627fd",
-    "date": "2026-08-21",
-    "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "機能変更",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-a37bf3c627fd"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-4621400f55e4",
     "date": "2026-08-20",
     "title": "RTS-Skills-の方針を更新",
@@ -3920,20 +3906,6 @@
     "href": "../updates/#u-upd-52a2573f5fe2"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-00e33d04f0ce",
-    "date": "2026-08-07",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RS-AI-limit-development",
-    "type": "機能変更",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-00e33d04f0ce"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-06",
     "date": "2026-09-06",
@@ -4205,12 +4177,11 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-21",
     "date": "2026-08-21",
-    "title": "WebAI-Bridgeを改善、ほか2件",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSを改善』、『FOUNDRY GROWTH ENGINEを改善』もまとめています。",
-    "project": "FOUNDRY GROWTH ENGINE, RTS, WebAI-Bridge",
+    "title": "WebAI-Bridgeを改善、ほか1件",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSを改善』もまとめています。",
+    "project": "RTS, WebAI-Bridge",
     "type": "開発日誌",
     "tags": [
-      "FOUNDRY GROWTH ENGINE",
       "RTS",
       "WebAI-Bridge",
       "機能変更"
@@ -4399,19 +4370,5 @@
       "研究・検証"
     ],
     "href": "../journal/2026-08-09.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-08-07",
-    "date": "2026-08-07",
-    "title": "RS-AI-limit-developmentを改善",
-    "summary": "RS-AI-limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RS-AI-limit-development",
-    "type": "開発日誌",
-    "tags": [
-      "RS-AI-limit-development",
-      "機能変更"
-    ],
-    "href": "../journal/2026-08-07.html"
   }
 ]
