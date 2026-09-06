@@ -1,6 +1,412 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-b420e032961a",
+    "date": "2026-09-07",
+    "title": "Developer-Cardに機能を追加",
+    "summary": "Developer-Cardで新しい機能を使えるようにしました。",
+    "project": "Developer-Card",
+    "type": "機能追加",
+    "tags": [
+      "Developer-Card",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-b420e032961a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-26747b16f0ca",
+    "date": "2026-09-07",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。",
+    "project": "sales-catalog",
+    "type": "機能追加",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-26747b16f0ca"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-bb0e1da74660",
+    "date": "2026-09-07",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。",
+    "project": "WebAI-Bridge",
+    "type": "機能追加",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-bb0e1da74660"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c7f107ebcb9a",
+    "date": "2026-09-07",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
+    "project": "RS-AI-limit-development",
+    "type": "機能追加",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-c7f107ebcb9a"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-3ed77fc6fc6f",
+    "date": "2026-09-07",
+    "title": "TRACEに機能を追加",
+    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。",
+    "project": "TRACE",
+    "type": "機能追加",
+    "tags": [
+      "TRACE",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-3ed77fc6fc6f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7febacf4845d",
+    "date": "2026-09-07",
+    "title": "Audience-Minerに機能を追加",
+    "summary": "Audience-Minerで新しい機能を使えるようにしました。",
+    "project": "Audience-Miner",
+    "type": "機能追加",
+    "tags": [
+      "Audience-Miner",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-7febacf4845d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4ae2a0a1ccd6",
+    "date": "2026-09-07",
+    "title": "vector-cannonに機能を追加",
+    "summary": "vector-cannonで新しい機能を使えるようにしました。",
+    "project": "vector-cannon",
+    "type": "機能追加",
+    "tags": [
+      "vector-cannon",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-4ae2a0a1ccd6"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-28a021457fef",
+    "date": "2026-09-07",
+    "title": "LLM-Cost-Routerに機能を追加",
+    "summary": "LLM-Cost-Routerで新しい機能を使えるようにしました。",
+    "project": "LLM-Cost-Router",
+    "type": "機能追加",
+    "tags": [
+      "LLM-Cost-Router",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-28a021457fef"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-87238045caca",
+    "date": "2026-09-07",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。",
+    "project": "render-worker",
+    "type": "機能追加",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-87238045caca"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-10b568ae17ab",
+    "date": "2026-09-07",
+    "title": "seminar-compassに機能を追加",
+    "summary": "seminar-compassで新しい機能を使えるようにしました。",
+    "project": "seminar-compass",
+    "type": "機能追加",
+    "tags": [
+      "seminar-compass",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-10b568ae17ab"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-59644f061f70",
+    "date": "2026-09-07",
+    "title": "RTS-Signal-Feedsに機能を追加",
+    "summary": "RTS-Signal-Feedsで新しい機能を使えるようにしました。",
+    "project": "RTS-Signal-Feeds",
+    "type": "機能追加",
+    "tags": [
+      "RTS-Signal-Feeds",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-59644f061f70"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b3efa31f8cd1",
+    "date": "2026-09-07",
+    "title": "RTS-Hermes-Driveに機能を追加",
+    "summary": "RTS-Hermes-Driveで新しい機能を使えるようにしました。",
+    "project": "RTS-Hermes-Drive",
+    "type": "機能追加",
+    "tags": [
+      "RTS-Hermes-Drive",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-b3efa31f8cd1"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ccbaffa4a79f",
+    "date": "2026-09-07",
+    "title": "NAGIに機能を追加",
+    "summary": "NAGIに機能を追加しました。 中断のたびに頭の中まで最初から作り直さないために使います。",
+    "project": "NAGI",
+    "type": "機能追加",
+    "tags": [
+      "NAGI",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-ccbaffa4a79f"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-694d275da770",
+    "date": "2026-09-07",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。",
+    "project": "x-ads-bridge",
+    "type": "機能追加",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-694d275da770"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-fa1f44a814c3",
+    "date": "2026-09-07",
+    "title": "RTS-Design-Researchに機能を追加",
+    "summary": "RTS-Design-Researchで新しい機能を使えるようにしました。",
+    "project": "RTS-Design-Research",
+    "type": "機能追加",
+    "tags": [
+      "RTS-Design-Research",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-fa1f44a814c3"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-9f5bc6a7413c",
+    "date": "2026-09-07",
+    "title": "nobutakayamauchiに機能を追加",
+    "summary": "nobutakayamauchiで新しい機能を使えるようにしました。",
+    "project": "nobutakayamauchi",
+    "type": "機能追加",
+    "tags": [
+      "nobutakayamauchi",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-9f5bc6a7413c"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b8b7ad9ab72e",
+    "date": "2026-09-07",
+    "title": "RTS-Evolutionに機能を追加",
+    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。",
+    "project": "RTS-Evolution",
+    "type": "機能追加",
+    "tags": [
+      "RTS-Evolution",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-b8b7ad9ab72e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f0176096c99b",
+    "date": "2026-09-07",
+    "title": "RTS-Talent-Registryに機能を追加",
+    "summary": "RTS-Talent-Registryで新しい機能を使えるようにしました。",
+    "project": "RTS-Talent-Registry",
+    "type": "機能追加",
+    "tags": [
+      "RTS-Talent-Registry",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-f0176096c99b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-1ed5c615832d",
+    "date": "2026-09-07",
+    "title": "RTS-AGEに機能を追加",
+    "summary": "RTS-AGEで新しい機能を使えるようにしました。",
+    "project": "RTS-AGE",
+    "type": "機能追加",
+    "tags": [
+      "RTS-AGE",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-1ed5c615832d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4a05d6dc08c3",
+    "date": "2026-09-07",
+    "title": "rts-video-flowに機能を追加",
+    "summary": "rts-video-flowで新しい機能を使えるようにしました。",
+    "project": "rts-video-flow",
+    "type": "機能追加",
+    "tags": [
+      "rts-video-flow",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-4a05d6dc08c3"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2ddd5aabb8a7",
+    "date": "2026-09-07",
+    "title": "RTS-Skills-に機能を追加",
+    "summary": "RTS-Skills-で新しい機能を使えるようにしました。",
+    "project": "RTS-Skills-",
+    "type": "機能追加",
+    "tags": [
+      "RTS-Skills-",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-2ddd5aabb8a7"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-8b3cc454dd1e",
+    "date": "2026-09-07",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "project": "limit-development",
+    "type": "機能追加",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-8b3cc454dd1e"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-4df830239289",
+    "date": "2026-09-07",
+    "title": "RTS-Minimal-Runtimeに機能を追加",
+    "summary": "RTS-Minimal-Runtimeで新しい機能を使えるようにしました。",
+    "project": "RTS-Minimal-Runtime",
+    "type": "機能追加",
+    "tags": [
+      "RTS-Minimal-Runtime",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-4df830239289"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-7d9e50df7774",
+    "date": "2026-09-07",
+    "title": "rts-liteに機能を追加",
+    "summary": "rts-liteで新しい機能を使えるようにしました。",
+    "project": "rts-lite",
+    "type": "機能追加",
+    "tags": [
+      "rts-lite",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-7d9e50df7774"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-c53bcc9078a7",
+    "date": "2026-09-07",
+    "title": "codex-connector-testに機能を追加",
+    "summary": "codex-connector-testで新しい機能を使えるようにしました。",
+    "project": "codex-connector-test",
+    "type": "機能追加",
+    "tags": [
+      "codex-connector-test",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-c53bcc9078a7"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-ec2a7ec194ec",
+    "date": "2026-09-07",
+    "title": "Ultimate-Loopに機能を追加",
+    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。",
+    "project": "Ultimate-Loop",
+    "type": "機能追加",
+    "tags": [
+      "Ultimate-Loop",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-ec2a7ec194ec"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-b52bff9916e2",
+    "date": "2026-09-07",
+    "title": "rts01-offerに機能を追加",
+    "summary": "rts01-offerで新しい機能を使えるようにしました。",
+    "project": "rts01-offer",
+    "type": "機能追加",
+    "tags": [
+      "rts01-offer",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-b52bff9916e2"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-cfc51b7bb471",
+    "date": "2026-09-07",
+    "title": "RTS-MCP-Packsに機能を追加",
+    "summary": "RTS-MCP-Packsで新しい機能を使えるようにしました。",
+    "project": "RTS-MCP-Packs",
+    "type": "機能追加",
+    "tags": [
+      "RTS-MCP-Packs",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-cfc51b7bb471"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2689a63393e6",
+    "date": "2026-09-07",
+    "title": "rts-dev-protocolに機能を追加",
+    "summary": "rts-dev-protocolで新しい機能を使えるようにしました。",
+    "project": "rts-dev-protocol",
+    "type": "機能追加",
+    "tags": [
+      "rts-dev-protocol",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-2689a63393e6"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-fd390a1cf73a",
     "date": "2026-09-06",
     "title": "vector-cannonに機能を追加",
@@ -3112,7 +3518,7 @@
     "id": "upd-5c73c00d9b6e",
     "date": "2026-08-17",
     "title": "WebAI-Bridgeを検証",
-    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "project": "WebAI-Bridge",
     "type": "研究・検証",
     "tags": [
@@ -3904,6 +4310,48 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-52a2573f5fe2"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-09-07",
+    "date": "2026-09-07",
+    "title": "Developer-Cardに機能を追加、ほか28件",
+    "summary": "Developer-Cardで新しい機能を使えるようにしました。 同じ日の開発記録として、『sales-catalogに機能を追加』、『WebAI-Bridgeに機能を追加』、『RS-AI-limit-developmentに機能を追加』もまとめています。",
+    "project": "Audience-Miner, Developer-Card, LLM-Cost-Router, NAGI, RS-AI-limit-development, RTS-AGE, RTS-Design-Research, RTS-Evolution, RTS-Hermes-Drive, RTS-MCP-Packs, RTS-Minimal-Runtime, RTS-Signal-Feeds, RTS-Skills-, RTS-Talent-Registry, TRACE, Ultimate-Loop, WebAI-Bridge, codex-connector-test, limit-development, nobutakayamauchi, render-worker, rts-dev-protocol, rts-lite, rts-video-flow, rts01-offer, sales-catalog, seminar-compass, vector-cannon, x-ads-bridge",
+    "type": "開発日誌",
+    "tags": [
+      "Audience-Miner",
+      "Developer-Card",
+      "LLM-Cost-Router",
+      "NAGI",
+      "RS-AI-limit-development",
+      "RTS-AGE",
+      "RTS-Design-Research",
+      "RTS-Evolution",
+      "RTS-Hermes-Drive",
+      "RTS-MCP-Packs",
+      "RTS-Minimal-Runtime",
+      "RTS-Signal-Feeds",
+      "RTS-Skills-",
+      "RTS-Talent-Registry",
+      "TRACE",
+      "Ultimate-Loop",
+      "WebAI-Bridge",
+      "codex-connector-test",
+      "limit-development",
+      "nobutakayamauchi",
+      "render-worker",
+      "rts-dev-protocol",
+      "rts-lite",
+      "rts-video-flow",
+      "rts01-offer",
+      "sales-catalog",
+      "seminar-compass",
+      "vector-cannon",
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "href": "../journal/2026-09-07.html"
   },
   {
     "kind": "JOURNAL",

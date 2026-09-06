@@ -1,5 +1,498 @@
 [
   {
+    "id": "upd-b420e032961a",
+    "source_id": "nobutakayamauchi/Developer-Card@e9dbbe4cf99f1896f38015ea989d7d110c9b397b",
+    "captured_at": "2026-09-07T00:10:48+09:00",
+    "type": "機能追加",
+    "project": "Developer-Card",
+    "title": "Developer-Cardに機能を追加",
+    "summary": "Developer-Cardで新しい機能を使えるようにしました。",
+    "tags": [
+      "Developer-Card",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Developer-Card/commit/e9dbbe4cf99f1896f38015ea989d7d110c9b397b",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-26747b16f0ca",
+    "source_id": "nobutakayamauchi/sales-catalog@fdadadd454edf4c83918df2a878b43a40f612a35",
+    "captured_at": "2026-09-07T00:10:39+09:00",
+    "type": "機能追加",
+    "project": "sales-catalog",
+    "title": "sales-catalogに機能を追加",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。",
+    "tags": [
+      "sales-catalog",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/fdadadd454edf4c83918df2a878b43a40f612a35",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-bb0e1da74660",
+    "source_id": "nobutakayamauchi/WebAI-Bridge@628f3e7e5ac483be60f7577927f22b3526da3842",
+    "captured_at": "2026-09-07T00:10:18+09:00",
+    "type": "機能追加",
+    "project": "WebAI-Bridge",
+    "title": "WebAI-Bridgeに機能を追加",
+    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。",
+    "tags": [
+      "WebAI-Bridge",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/628f3e7e5ac483be60f7577927f22b3526da3842",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-c7f107ebcb9a",
+    "source_id": "nobutakayamauchi/RS-AI-limit-development@b8fd097eeec97bf8d7cac60294e08661736493e7",
+    "captured_at": "2026-09-07T00:09:50+09:00",
+    "type": "機能追加",
+    "project": "RS-AI-limit-development",
+    "title": "RS-AI-limit-developmentに機能を追加",
+    "summary": "RS-AI-limit-developmentで新しい機能を使えるようにしました。",
+    "tags": [
+      "RS-AI-limit-development",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RS-AI-limit-development/commit/b8fd097eeec97bf8d7cac60294e08661736493e7",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-3ed77fc6fc6f",
+    "source_id": "nobutakayamauchi/TRACE@637b39f319a142ebcf204e759a59c70cc597ae9c",
+    "captured_at": "2026-09-07T00:09:21+09:00",
+    "type": "機能追加",
+    "project": "TRACE",
+    "title": "TRACEに機能を追加",
+    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。",
+    "tags": [
+      "TRACE",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/TRACE/commit/637b39f319a142ebcf204e759a59c70cc597ae9c",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-7febacf4845d",
+    "source_id": "nobutakayamauchi/Audience-Miner@476c8fd35f3a2fb0d29b54f4e0d180b81fa6dbfa",
+    "captured_at": "2026-09-07T00:08:53+09:00",
+    "type": "機能追加",
+    "project": "Audience-Miner",
+    "title": "Audience-Minerに機能を追加",
+    "summary": "Audience-Minerで新しい機能を使えるようにしました。",
+    "tags": [
+      "Audience-Miner",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Audience-Miner/commit/476c8fd35f3a2fb0d29b54f4e0d180b81fa6dbfa",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-4ae2a0a1ccd6",
+    "source_id": "nobutakayamauchi/vector-cannon@33112c7c389a0c73252fb0468c0a7b48b0bf9190",
+    "captured_at": "2026-09-07T00:08:45+09:00",
+    "type": "機能追加",
+    "project": "vector-cannon",
+    "title": "vector-cannonに機能を追加",
+    "summary": "vector-cannonで新しい機能を使えるようにしました。",
+    "tags": [
+      "vector-cannon",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/33112c7c389a0c73252fb0468c0a7b48b0bf9190",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-28a021457fef",
+    "source_id": "nobutakayamauchi/LLM-Cost-Router@71094e29ce935c6386ded91bc7b1ecc2dab2bff5",
+    "captured_at": "2026-09-07T00:07:40+09:00",
+    "type": "機能追加",
+    "project": "LLM-Cost-Router",
+    "title": "LLM-Cost-Routerに機能を追加",
+    "summary": "LLM-Cost-Routerで新しい機能を使えるようにしました。",
+    "tags": [
+      "LLM-Cost-Router",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/LLM-Cost-Router/commit/71094e29ce935c6386ded91bc7b1ecc2dab2bff5",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-87238045caca",
+    "source_id": "nobutakayamauchi/render-worker@a7afaa1f8e8969070a1cc1c0158a6a35c833c398",
+    "captured_at": "2026-09-07T00:07:23+09:00",
+    "type": "機能追加",
+    "project": "render-worker",
+    "title": "render-workerに機能を追加",
+    "summary": "render-workerで新しい機能を使えるようにしました。",
+    "tags": [
+      "render-worker",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/a7afaa1f8e8969070a1cc1c0158a6a35c833c398",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-10b568ae17ab",
+    "source_id": "nobutakayamauchi/seminar-compass@aa1178dace1158166b8360227e8f95c85eb92573",
+    "captured_at": "2026-09-07T00:07:04+09:00",
+    "type": "機能追加",
+    "project": "seminar-compass",
+    "title": "seminar-compassに機能を追加",
+    "summary": "seminar-compassで新しい機能を使えるようにしました。",
+    "tags": [
+      "seminar-compass",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/seminar-compass/commit/aa1178dace1158166b8360227e8f95c85eb92573",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-59644f061f70",
+    "source_id": "nobutakayamauchi/RTS-Signal-Feeds@fa4689e27af4771c6e5dff053f34cd1623329a84",
+    "captured_at": "2026-09-07T00:06:55+09:00",
+    "type": "機能追加",
+    "project": "RTS-Signal-Feeds",
+    "title": "RTS-Signal-Feedsに機能を追加",
+    "summary": "RTS-Signal-Feedsで新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-Signal-Feeds",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Signal-Feeds/commit/fa4689e27af4771c6e5dff053f34cd1623329a84",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-b3efa31f8cd1",
+    "source_id": "nobutakayamauchi/RTS-Hermes-Drive@a7887d72300f5e758e3d7201028e94d2bceb1cf0",
+    "captured_at": "2026-09-07T00:06:48+09:00",
+    "type": "機能追加",
+    "project": "RTS-Hermes-Drive",
+    "title": "RTS-Hermes-Driveに機能を追加",
+    "summary": "RTS-Hermes-Driveで新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-Hermes-Drive",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Hermes-Drive/commit/a7887d72300f5e758e3d7201028e94d2bceb1cf0",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-ccbaffa4a79f",
+    "source_id": "nobutakayamauchi/NAGI@979b47cf5a551e1ee932c3035298d0e054fd3bc8",
+    "captured_at": "2026-09-07T00:06:40+09:00",
+    "type": "機能追加",
+    "project": "NAGI",
+    "title": "NAGIに機能を追加",
+    "summary": "NAGIに機能を追加しました。 中断のたびに頭の中まで最初から作り直さないために使います。",
+    "tags": [
+      "NAGI",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/NAGI/commit/979b47cf5a551e1ee932c3035298d0e054fd3bc8",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-694d275da770",
+    "source_id": "nobutakayamauchi/x-ads-bridge@39e109d786c11c3183408a5c552c710eb6768775",
+    "captured_at": "2026-09-07T00:06:32+09:00",
+    "type": "機能追加",
+    "project": "x-ads-bridge",
+    "title": "x-ads-bridgeに機能を追加",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。",
+    "tags": [
+      "x-ads-bridge",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/39e109d786c11c3183408a5c552c710eb6768775",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-fa1f44a814c3",
+    "source_id": "nobutakayamauchi/RTS-Design-Research@f8c645a99e111ea1ec28d1b8d8e203c97c55f56e",
+    "captured_at": "2026-09-07T00:06:24+09:00",
+    "type": "機能追加",
+    "project": "RTS-Design-Research",
+    "title": "RTS-Design-Researchに機能を追加",
+    "summary": "RTS-Design-Researchで新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-Design-Research",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Design-Research/commit/f8c645a99e111ea1ec28d1b8d8e203c97c55f56e",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-9f5bc6a7413c",
+    "source_id": "nobutakayamauchi/nobutakayamauchi@7e13e7fe333d2caa742c560b5485b858e015de92",
+    "captured_at": "2026-09-07T00:06:07+09:00",
+    "type": "機能追加",
+    "project": "nobutakayamauchi",
+    "title": "nobutakayamauchiに機能を追加",
+    "summary": "nobutakayamauchiで新しい機能を使えるようにしました。",
+    "tags": [
+      "nobutakayamauchi",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/nobutakayamauchi/commit/7e13e7fe333d2caa742c560b5485b858e015de92",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-b8b7ad9ab72e",
+    "source_id": "nobutakayamauchi/RTS-Evolution@79b023ffe194659927fe5045bef7e881aaf62be5",
+    "captured_at": "2026-09-07T00:05:58+09:00",
+    "type": "機能追加",
+    "project": "RTS-Evolution",
+    "title": "RTS-Evolutionに機能を追加",
+    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-Evolution",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Evolution/commit/79b023ffe194659927fe5045bef7e881aaf62be5",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-f0176096c99b",
+    "source_id": "nobutakayamauchi/RTS-Talent-Registry@6a2baeabc8ae8ad52aca9fbef9e038d43147ca7f",
+    "captured_at": "2026-09-07T00:05:48+09:00",
+    "type": "機能追加",
+    "project": "RTS-Talent-Registry",
+    "title": "RTS-Talent-Registryに機能を追加",
+    "summary": "RTS-Talent-Registryで新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-Talent-Registry",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Talent-Registry/commit/6a2baeabc8ae8ad52aca9fbef9e038d43147ca7f",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-1ed5c615832d",
+    "source_id": "nobutakayamauchi/RTS-AGE@b8a54cc6738e3ccf98cb6beb4c3600828be34754",
+    "captured_at": "2026-09-07T00:05:37+09:00",
+    "type": "機能追加",
+    "project": "RTS-AGE",
+    "title": "RTS-AGEに機能を追加",
+    "summary": "RTS-AGEで新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-AGE",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-AGE/commit/b8a54cc6738e3ccf98cb6beb4c3600828be34754",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-4a05d6dc08c3",
+    "source_id": "nobutakayamauchi/rts-video-flow@184b7b9295445c1698d74cf2df0b66c2b5024982",
+    "captured_at": "2026-09-07T00:05:28+09:00",
+    "type": "機能追加",
+    "project": "rts-video-flow",
+    "title": "rts-video-flowに機能を追加",
+    "summary": "rts-video-flowで新しい機能を使えるようにしました。",
+    "tags": [
+      "rts-video-flow",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-video-flow/commit/184b7b9295445c1698d74cf2df0b66c2b5024982",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-2ddd5aabb8a7",
+    "source_id": "nobutakayamauchi/RTS-Skills-@3ff77d85806e7aa44a67526da7c82f67d5e89a98",
+    "captured_at": "2026-09-07T00:05:20+09:00",
+    "type": "機能追加",
+    "project": "RTS-Skills-",
+    "title": "RTS-Skills-に機能を追加",
+    "summary": "RTS-Skills-で新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-Skills-",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Skills-/commit/3ff77d85806e7aa44a67526da7c82f67d5e89a98",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-8b3cc454dd1e",
+    "source_id": "nobutakayamauchi/limit-development@dce1fea229881970c8ae940e13e7f8fef3d22007",
+    "captured_at": "2026-09-07T00:05:11+09:00",
+    "type": "機能追加",
+    "project": "limit-development",
+    "title": "limit-developmentに機能を追加",
+    "summary": "limit-developmentで新しい機能を使えるようにしました。",
+    "tags": [
+      "limit-development",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/dce1fea229881970c8ae940e13e7f8fef3d22007",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-4df830239289",
+    "source_id": "nobutakayamauchi/RTS-Minimal-Runtime@656cd3289623909fb33755f7346ef96f164f6b17",
+    "captured_at": "2026-09-07T00:05:03+09:00",
+    "type": "機能追加",
+    "project": "RTS-Minimal-Runtime",
+    "title": "RTS-Minimal-Runtimeに機能を追加",
+    "summary": "RTS-Minimal-Runtimeで新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-Minimal-Runtime",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Minimal-Runtime/commit/656cd3289623909fb33755f7346ef96f164f6b17",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-7d9e50df7774",
+    "source_id": "nobutakayamauchi/rts-lite@46ed8bcfeaf2f53bc56b347e4affd8166aa830cf",
+    "captured_at": "2026-09-07T00:04:55+09:00",
+    "type": "機能追加",
+    "project": "rts-lite",
+    "title": "rts-liteに機能を追加",
+    "summary": "rts-liteで新しい機能を使えるようにしました。",
+    "tags": [
+      "rts-lite",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-lite/commit/46ed8bcfeaf2f53bc56b347e4affd8166aa830cf",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-c53bcc9078a7",
+    "source_id": "nobutakayamauchi/codex-connector-test@84188333c65c93b9776a14698f5bc8b7a98e9a9a",
+    "captured_at": "2026-09-07T00:04:45+09:00",
+    "type": "機能追加",
+    "project": "codex-connector-test",
+    "title": "codex-connector-testに機能を追加",
+    "summary": "codex-connector-testで新しい機能を使えるようにしました。",
+    "tags": [
+      "codex-connector-test",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/codex-connector-test/commit/84188333c65c93b9776a14698f5bc8b7a98e9a9a",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-ec2a7ec194ec",
+    "source_id": "nobutakayamauchi/Ultimate-Loop@f39ccb2944162da73c554ef931c742feae4adc3c",
+    "captured_at": "2026-09-07T00:04:25+09:00",
+    "type": "機能追加",
+    "project": "Ultimate-Loop",
+    "title": "Ultimate-Loopに機能を追加",
+    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。",
+    "tags": [
+      "Ultimate-Loop",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Ultimate-Loop/commit/f39ccb2944162da73c554ef931c742feae4adc3c",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-b52bff9916e2",
+    "source_id": "nobutakayamauchi/rts01-offer@2b82957006c63ab54652cf9ad3281cdca3647399",
+    "captured_at": "2026-09-07T00:04:13+09:00",
+    "type": "機能追加",
+    "project": "rts01-offer",
+    "title": "rts01-offerに機能を追加",
+    "summary": "rts01-offerで新しい機能を使えるようにしました。",
+    "tags": [
+      "rts01-offer",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts01-offer/commit/2b82957006c63ab54652cf9ad3281cdca3647399",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-cfc51b7bb471",
+    "source_id": "nobutakayamauchi/RTS-MCP-Packs@14193e04a31a5cb7f0c0bab7ee96cd3d512f07a3",
+    "captured_at": "2026-09-07T00:04:04+09:00",
+    "type": "機能追加",
+    "project": "RTS-MCP-Packs",
+    "title": "RTS-MCP-Packsに機能を追加",
+    "summary": "RTS-MCP-Packsで新しい機能を使えるようにしました。",
+    "tags": [
+      "RTS-MCP-Packs",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-MCP-Packs/commit/14193e04a31a5cb7f0c0bab7ee96cd3d512f07a3",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-2689a63393e6",
+    "source_id": "nobutakayamauchi/rts-dev-protocol@06e6e699f756194c6132717b02580e75a645d605",
+    "captured_at": "2026-09-07T00:03:51+09:00",
+    "type": "機能追加",
+    "project": "rts-dev-protocol",
+    "title": "rts-dev-protocolに機能を追加",
+    "summary": "rts-dev-protocolで新しい機能を使えるようにしました。",
+    "tags": [
+      "rts-dev-protocol",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-dev-protocol/commit/06e6e699f756194c6132717b02580e75a645d605",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-fd390a1cf73a",
     "source_id": "nobutakayamauchi/vector-cannon@9f9f3c2b94dc8b8a645f6a87e0b4531a12a406c3",
     "captured_at": "2026-09-06T19:03:44+09:00",
@@ -3780,12 +4273,12 @@
     "type": "研究・検証",
     "project": "WebAI-Bridge",
     "title": "WebAI-Bridgeを検証",
-    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "tags": [
       "WebAI-Bridge",
       "研究・検証"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/300bd55aed0714b9976081f5968ddcd1325d9836,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/55e7535ead13462e0038f61285057fa9ec745697,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/13422797d240426168bc9ba9a7038566eb05ccd2",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/300bd55aed0714b9976081f5968ddcd1325d9836,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/55e7535ead13462e0038f61285057fa9ec745697",
     "article_score": 0.295,
     "article_candidate": false,
     "review_status": "pending"
