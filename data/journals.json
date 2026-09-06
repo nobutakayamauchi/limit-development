@@ -525,10 +525,9 @@
   },
   {
     "date": "2026-08-20",
-    "title": "FOUNDRY GROWTH ENGINEに機能を追加、ほか5件",
-    "summary": "FOUNDRY GROWTH ENGINEに機能を追加しました。 仕事のあとに『今日の投稿を考える』という別の仕事を増やさないための仕組みです。 同じ日の開発記録として、『RTS-Skills-の方針を更新』、『WebAI-Bridgeの方針を更新』、『Ultimate-Loopに機能を追加』もまとめています。",
+    "title": "RTS-Skills-の方針を更新、ほか4件",
+    "summary": "RTS-Skills-の説明や運用方針を更新しました。 同じ日の開発記録として、『WebAI-Bridgeの方針を更新』、『Ultimate-Loopに機能を追加』、『Ultimate-Loopを改善』もまとめています。",
     "update_ids": [
-      "upd-ac7c71d73149",
       "upd-4621400f55e4",
       "upd-22edc740036c",
       "upd-87dbf1373e29",
@@ -536,7 +535,6 @@
       "upd-dac951b5da77"
     ],
     "projects": [
-      "FOUNDRY GROWTH ENGINE",
       "RTS-Skills-",
       "Ultimate-Loop",
       "WebAI-Bridge"
@@ -547,7 +545,6 @@
       "機能追加"
     ],
     "tags": [
-      "FOUNDRY GROWTH ENGINE",
       "RTS-Skills-",
       "Ultimate-Loop",
       "WebAI-Bridge",
