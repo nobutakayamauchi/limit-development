@@ -4284,34 +4284,6 @@
     "href": "../updates/#u-upd-2b938de249fa"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-bb67bdef49a8",
-    "date": "2026-08-09",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "project": "RTS",
-    "type": "機能追加",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-bb67bdef49a8"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-52a2573f5fe2",
-    "date": "2026-08-09",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-52a2573f5fe2"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-07",
     "date": "2026-09-07",
@@ -4806,7 +4778,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-09",
     "date": "2026-08-09",
-    "title": "RTSを改善、ほか8件",
+    "title": "RTSを改善、ほか6件",
     "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更16件も、この更新にまとめています。 同じ日の開発記録として、『RTSを検証』、『RTSの方針を更新』、『RTSに機能を追加』もまとめています。",
     "project": "RTS",
     "type": "開発日誌",

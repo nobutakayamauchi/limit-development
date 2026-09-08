@@ -5200,39 +5200,5 @@
     "article_score": 0.337,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-bb67bdef49a8",
-    "source_id": "nobutakayamauchi/RTS@aac8f88accec6bafb0f294a7c89ce84fd866ff65",
-    "captured_at": "2026-08-09T18:37:24+09:00",
-    "type": "機能追加",
-    "project": "RTS",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/aac8f88accec6bafb0f294a7c89ce84fd866ff65",
-    "article_score": 0.368,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-52a2573f5fe2",
-    "source_id": "nobutakayamauchi/RTS@49802684ec39af65a3b7de94ea48736b2a6a515c",
-    "captured_at": "2026-08-09T16:42:11+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/49802684ec39af65a3b7de94ea48736b2a6a515c",
-    "article_score": 0.339,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
