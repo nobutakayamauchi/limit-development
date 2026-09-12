@@ -4673,39 +4673,5 @@
     "article_score": 0.436,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-16381922a2d6",
-    "source_id": "nobutakayamauchi/RTS@5f749d3accfbac319b49db13b15eff57e1d0adad",
-    "captured_at": "2026-08-14T03:46:27+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/5f749d3accfbac319b49db13b15eff57e1d0adad",
-    "article_score": 0.264,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-61e50b62ef30",
-    "source_id": "nobutakayamauchi/RTS-Signal-Feeds@6bba209b1b1ab6f99980fa3381d18f527088e224",
-    "captured_at": "2026-08-14T03:36:37+09:00",
-    "type": "機能変更",
-    "project": "RTS-Signal-Feeds",
-    "title": "RTS-Signal-Feedsを改善",
-    "summary": "RTS-Signal-Feedsの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS-Signal-Feeds",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Signal-Feeds/commit/6bba209b1b1ab6f99980fa3381d18f527088e224",
-    "article_score": 0.262,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
