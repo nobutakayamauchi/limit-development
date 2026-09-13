@@ -4605,22 +4605,5 @@
     "article_score": 0.62,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-c277cc7be7d3",
-    "source_id": "nobutakayamauchi/RTS@fc10594697d4aa3560cb6241ca8591ecf32d0236",
-    "captured_at": "2026-08-14T14:13:28+09:00",
-    "type": "機能追加",
-    "project": "RTS",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/fc10594697d4aa3560cb6241ca8591ecf32d0236",
-    "article_score": 0.344,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
