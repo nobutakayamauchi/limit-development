@@ -902,23 +902,19 @@
   },
   {
     "date": "2026-08-14",
-    "title": "RTSに機能を追加、ほか2件",
-    "summary": "RTSで新しい機能を使えるようにしました。 同じ日の開発記録として、『RTSの方針を更新』、『RTSに機能を追加』もまとめています。",
+    "title": "RTSに機能を追加",
+    "summary": "RTSで新しい機能を使えるようにしました。",
     "update_ids": [
-      "upd-c277cc7be7d3",
-      "upd-02ea962eb0c9",
-      "upd-e1e4fc380f8d"
+      "upd-c277cc7be7d3"
     ],
     "projects": [
       "RTS"
     ],
     "types": [
-      "方針変更",
       "機能追加"
     ],
     "tags": [
       "RTS",
-      "方針変更",
       "機能追加"
     ]
   }
