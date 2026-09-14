@@ -831,7 +831,7 @@
   },
   {
     "date": "2026-08-16",
-    "title": "TRACEを改善、ほか14件",
+    "title": "TRACEを改善、ほか12件",
     "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『Ultimate-Loopを改善』、『Ultimate-Loopを改善』、『Ultimate-Loopに機能を追加』もまとめています。",
     "update_ids": [
       "upd-f1926527c5a2",
@@ -846,9 +846,7 @@
       "upd-f83de585e033",
       "upd-230a08352257",
       "upd-31f5aadb663c",
-      "upd-f76531d2d96b",
-      "upd-5e36cd8420d0",
-      "upd-fe1f5b57a1df"
+      "upd-f76531d2d96b"
     ],
     "projects": [
       "RTS",

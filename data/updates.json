@@ -4469,39 +4469,5 @@
     "article_score": 0.404,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-5e36cd8420d0",
-    "source_id": "nobutakayamauchi/RTS@e2ead7b6bb45513e62552ebf2fc29a912dfda258",
-    "captured_at": "2026-08-16T07:04:23+09:00",
-    "type": "研究・検証",
-    "project": "RTS",
-    "title": "RTSを検証",
-    "summary": "RTSが実際の利用条件で成立するか検証しました。",
-    "tags": [
-      "RTS",
-      "研究・検証"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/e2ead7b6bb45513e62552ebf2fc29a912dfda258",
-    "article_score": 0.314,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-fe1f5b57a1df",
-    "source_id": "nobutakayamauchi/RTS@789c0972e42bbde8fb46f4f67eeac3b2fd13eae4",
-    "captured_at": "2026-08-16T06:51:56+09:00",
-    "type": "機能追加",
-    "project": "RTS",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/789c0972e42bbde8fb46f4f67eeac3b2fd13eae4",
-    "article_score": 0.366,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
