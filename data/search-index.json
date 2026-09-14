@@ -3710,90 +3710,6 @@
     "href": "../updates/#u-upd-fe1f5b57a1df"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-6a32ac3e5431",
-    "date": "2026-08-15",
-    "title": "RTSを公開",
-    "summary": "RTSを新しく公開しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "RTS",
-    "type": "新製品",
-    "tags": [
-      "RTS",
-      "新製品"
-    ],
-    "href": "../updates/#u-upd-6a32ac3e5431"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-89e2dc334675",
-    "date": "2026-08-15",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-89e2dc334675"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-0bcd61290f8d",
-    "date": "2026-08-15",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "project": "RTS",
-    "type": "機能追加",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-0bcd61290f8d"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-9865c2cff85b",
-    "date": "2026-08-15",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。",
-    "project": "RTS",
-    "type": "機能追加",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-9865c2cff85b"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-e9d59ec40edb",
-    "date": "2026-08-15",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-e9d59ec40edb"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-aafc5675d176",
-    "date": "2026-08-15",
-    "title": "RTSを公開",
-    "summary": "RTSを新しく公開しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "RTS",
-    "type": "新製品",
-    "tags": [
-      "RTS",
-      "新製品"
-    ],
-    "href": "../updates/#u-upd-aafc5675d176"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-07",
     "date": "2026-09-07",
@@ -4212,21 +4128,5 @@
       "研究・検証"
     ],
     "href": "../journal/2026-08-16.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-08-15",
-    "date": "2026-08-15",
-    "title": "RTSを公開、ほか5件",
-    "summary": "RTSを新しく公開しました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『RTSを改善』、『RTSに機能を追加』、『RTSに機能を追加』もまとめています。",
-    "project": "RTS",
-    "type": "開発日誌",
-    "tags": [
-      "RTS",
-      "新製品",
-      "機能変更",
-      "機能追加"
-    ],
-    "href": "../journal/2026-08-15.html"
   }
 ]
