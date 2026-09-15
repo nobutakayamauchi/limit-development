@@ -4248,39 +4248,5 @@
     "article_score": 0.295,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-f1926527c5a2",
-    "source_id": "nobutakayamauchi/TRACE@fa299018b012ac84e9f387094de2af8b226c5cb2",
-    "captured_at": "2026-08-16T20:34:28+09:00",
-    "type": "機能変更",
-    "project": "TRACE",
-    "title": "TRACEを改善",
-    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "TRACE",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/TRACE/commit/fa299018b012ac84e9f387094de2af8b226c5cb2,https://github.com/nobutakayamauchi/TRACE/commit/71cd3d75f115d066da00307e9440dce73a844e88",
-    "article_score": 0.335,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-93c0c0d3ae42",
-    "source_id": "nobutakayamauchi/Ultimate-Loop@7089f7b1e4566d0f93177b4cce5aac942eeb1e4b",
-    "captured_at": "2026-08-16T20:14:56+09:00",
-    "type": "機能変更",
-    "project": "Ultimate-Loop",
-    "title": "Ultimate-Loopを改善",
-    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "Ultimate-Loop",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Ultimate-Loop/commit/7089f7b1e4566d0f93177b4cce5aac942eeb1e4b",
-    "article_score": 0.175,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
