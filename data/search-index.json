@@ -3528,118 +3528,6 @@
     "href": "../updates/#u-upd-93c0c0d3ae42"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-d24182b0e391",
-    "date": "2026-08-16",
-    "title": "Ultimate-Loopを改善",
-    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。",
-    "project": "Ultimate-Loop",
-    "type": "機能変更",
-    "tags": [
-      "Ultimate-Loop",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-d24182b0e391"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-ca36bc6dcfaf",
-    "date": "2026-08-16",
-    "title": "Ultimate-Loopに機能を追加",
-    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。",
-    "project": "Ultimate-Loop",
-    "type": "機能追加",
-    "tags": [
-      "Ultimate-Loop",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-ca36bc6dcfaf"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-1914c85346b9",
-    "date": "2026-08-16",
-    "title": "Ultimate-Loopに機能を追加",
-    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "Ultimate-Loop",
-    "type": "機能追加",
-    "tags": [
-      "Ultimate-Loop",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-1914c85346b9"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-7320d1c68ffb",
-    "date": "2026-08-16",
-    "title": "Ultimate-Loopの方針を更新",
-    "summary": "Ultimate-Loopの説明や運用方針を更新しました。",
-    "project": "Ultimate-Loop",
-    "type": "方針変更",
-    "tags": [
-      "Ultimate-Loop",
-      "方針変更"
-    ],
-    "href": "../updates/#u-upd-7320d1c68ffb"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-e6ae034a4a9f",
-    "date": "2026-08-16",
-    "title": "Ultimate-Loopを改善",
-    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "Ultimate-Loop",
-    "type": "機能変更",
-    "tags": [
-      "Ultimate-Loop",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-e6ae034a4a9f"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-a780de1d9a46",
-    "date": "2026-08-16",
-    "title": "RTS-Evolutionを改善",
-    "summary": "RTS-Evolutionの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "RTS-Evolution",
-    "type": "機能変更",
-    "tags": [
-      "RTS-Evolution",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-a780de1d9a46"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-512e4269c41e",
-    "date": "2026-08-16",
-    "title": "RTSを検証",
-    "summary": "RTSが実際の利用条件で成立するか検証しました。",
-    "project": "RTS",
-    "type": "研究・検証",
-    "tags": [
-      "RTS",
-      "研究・検証"
-    ],
-    "href": "../updates/#u-upd-512e4269c41e"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-f83de585e033",
-    "date": "2026-08-16",
-    "title": "RTSを検証",
-    "summary": "RTSが実際の利用条件で成立するか検証しました。",
-    "project": "RTS",
-    "type": "研究・検証",
-    "tags": [
-      "RTS",
-      "研究・検証"
-    ],
-    "href": "../updates/#u-upd-f83de585e033"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-07",
     "date": "2026-09-07",
@@ -4043,19 +3931,14 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-16",
     "date": "2026-08-16",
-    "title": "TRACEを改善、ほか9件",
-    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『Ultimate-Loopを改善』、『Ultimate-Loopを改善』、『Ultimate-Loopに機能を追加』もまとめています。",
-    "project": "RTS, RTS-Evolution, TRACE, Ultimate-Loop",
+    "title": "TRACEを改善、ほか1件",
+    "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『Ultimate-Loopを改善』もまとめています。",
+    "project": "TRACE, Ultimate-Loop",
     "type": "開発日誌",
     "tags": [
-      "RTS",
-      "RTS-Evolution",
       "TRACE",
       "Ultimate-Loop",
-      "方針変更",
-      "機能変更",
-      "機能追加",
-      "研究・検証"
+      "機能変更"
     ],
     "href": "../journal/2026-08-16.html"
   }
