@@ -3640,48 +3640,6 @@
     "href": "../updates/#u-upd-f83de585e033"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-230a08352257",
-    "date": "2026-08-16",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "RTS",
-    "type": "機能追加",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-230a08352257"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-31f5aadb663c",
-    "date": "2026-08-16",
-    "title": "RTSを検証",
-    "summary": "RTSが実際の利用条件で成立するか検証しました。",
-    "project": "RTS",
-    "type": "研究・検証",
-    "tags": [
-      "RTS",
-      "研究・検証"
-    ],
-    "href": "../updates/#u-upd-31f5aadb663c"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-f76531d2d96b",
-    "date": "2026-08-16",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-f76531d2d96b"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-07",
     "date": "2026-09-07",
@@ -4085,7 +4043,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-16",
     "date": "2026-08-16",
-    "title": "TRACEを改善、ほか12件",
+    "title": "TRACEを改善、ほか9件",
     "summary": "TRACEを改善しました。 変更・失敗・修正の流れを残し、あとから何が起きたかを追えるようにする記録ツールです。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『Ultimate-Loopを改善』、『Ultimate-Loopを改善』、『Ultimate-Loopに機能を追加』もまとめています。",
     "project": "RTS, RTS-Evolution, TRACE, Ultimate-Loop",
     "type": "開発日誌",

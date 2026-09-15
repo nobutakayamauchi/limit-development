@@ -4418,56 +4418,5 @@
     "article_score": 0.387,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-230a08352257",
-    "source_id": "nobutakayamauchi/RTS@4c2b4a125c852613a6c10b268ee32921080e7e5a",
-    "captured_at": "2026-08-16T08:56:55+09:00",
-    "type": "機能追加",
-    "project": "RTS",
-    "title": "RTSに機能を追加",
-    "summary": "RTSで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "RTS",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/4c2b4a125c852613a6c10b268ee32921080e7e5a,https://github.com/nobutakayamauchi/RTS/commit/e65c2c84dcaeb1cc222b3bfbd2294f744b9c6c0a",
-    "article_score": 0.503,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-31f5aadb663c",
-    "source_id": "nobutakayamauchi/RTS@3b1654a5ad329751a7d2458b3a1f818ce05bb2c3",
-    "captured_at": "2026-08-16T08:44:14+09:00",
-    "type": "研究・検証",
-    "project": "RTS",
-    "title": "RTSを検証",
-    "summary": "RTSが実際の利用条件で成立するか検証しました。",
-    "tags": [
-      "RTS",
-      "研究・検証"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/3b1654a5ad329751a7d2458b3a1f818ce05bb2c3",
-    "article_score": 0.227,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-f76531d2d96b",
-    "source_id": "nobutakayamauchi/RTS@6d4b939f7eec67beedf5adec916f590290f1e633",
-    "captured_at": "2026-08-16T08:37:36+09:00",
-    "type": "機能変更",
-    "project": "RTS",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS/commit/6d4b939f7eec67beedf5adec916f590290f1e633,https://github.com/nobutakayamauchi/RTS/commit/b3e35e49b59cf3b1462716b358c78d97d550ae71,https://github.com/nobutakayamauchi/RTS/commit/55b176bc3d45912f73ab1f871b4e1266d2346153",
-    "article_score": 0.404,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
