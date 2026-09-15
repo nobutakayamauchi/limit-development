@@ -3462,7 +3462,7 @@
     "id": "upd-1ea952d21a96",
     "date": "2026-08-17",
     "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更7件も、この更新にまとめています。",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
     "project": "WebAI-Bridge",
     "type": "機能変更",
     "tags": [
@@ -3487,17 +3487,17 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-5c73c00d9b6e",
+    "id": "upd-7740f61fa21b",
     "date": "2026-08-17",
     "title": "WebAI-Bridgeを検証",
-    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。",
     "project": "WebAI-Bridge",
     "type": "研究・検証",
     "tags": [
       "WebAI-Bridge",
       "研究・検証"
     ],
-    "href": "../updates/#u-upd-5c73c00d9b6e"
+    "href": "../updates/#u-upd-7740f61fa21b"
   },
   {
     "kind": "JOURNAL",

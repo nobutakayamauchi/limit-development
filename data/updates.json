@@ -4205,12 +4205,12 @@
     "type": "機能変更",
     "project": "WebAI-Bridge",
     "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更7件も、この更新にまとめています。",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
     "tags": [
       "WebAI-Bridge",
       "機能変更"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/cb4e830783377bad0be6cc16edc6f18416fdcb62,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/8c4878bbb19c9bebb6949f2e3b66cb3fe17e21ee,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/21765d86bc524e43e27bc81b02ef8d172183ae8d,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/bbc81a87d05fed85eb3a9ccb63980d71c72740d8,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/c3d484a45d067b8d71763ed6287f59acd224f97f,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/a4210b4cefa32b8a3d9163fdaa150d05fd5425a0,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/43e21916c7b7c99473f39ae4a507c59c06725812,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/5fa05bb285d24e0cfc59f69ee030acf0ab063bc1",
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/cb4e830783377bad0be6cc16edc6f18416fdcb62,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/8c4878bbb19c9bebb6949f2e3b66cb3fe17e21ee,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/21765d86bc524e43e27bc81b02ef8d172183ae8d,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/bbc81a87d05fed85eb3a9ccb63980d71c72740d8,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/c3d484a45d067b8d71763ed6287f59acd224f97f,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/a4210b4cefa32b8a3d9163fdaa150d05fd5425a0",
     "article_score": 0.346,
     "article_candidate": false,
     "review_status": "pending"
@@ -4233,19 +4233,19 @@
     "review_status": "pending"
   },
   {
-    "id": "upd-5c73c00d9b6e",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@55e7535ead13462e0038f61285057fa9ec745697",
-    "captured_at": "2026-08-17T06:21:45+09:00",
+    "id": "upd-7740f61fa21b",
+    "source_id": "nobutakayamauchi/WebAI-Bridge@300bd55aed0714b9976081f5968ddcd1325d9836",
+    "captured_at": "2026-08-17T06:24:49+09:00",
     "type": "研究・検証",
     "project": "WebAI-Bridge",
     "title": "WebAI-Bridgeを検証",
-    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。",
     "tags": [
       "WebAI-Bridge",
       "研究・検証"
     ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/300bd55aed0714b9976081f5968ddcd1325d9836,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/55e7535ead13462e0038f61285057fa9ec745697",
-    "article_score": 0.295,
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/300bd55aed0714b9976081f5968ddcd1325d9836",
+    "article_score": 0.232,
     "article_candidate": false,
     "review_status": "pending"
   }
