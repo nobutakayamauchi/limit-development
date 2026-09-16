@@ -798,17 +798,14 @@
   },
   {
     "date": "2026-08-17",
-    "title": "WebAI-Bridgeを改善、ほか7件",
+    "title": "WebAI-Bridgeを改善、ほか4件",
     "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『WebAI-Bridgeの方針を更新』、『Ultimate-Loopを改善』、『Ultimate-Loopを検証』もまとめています。",
     "update_ids": [
       "upd-aea876dc4390",
       "upd-d673cc6b9972",
       "upd-73c097c9088b",
       "upd-e8552d22786f",
-      "upd-988beb8d067b",
-      "upd-1ea952d21a96",
-      "upd-0168ce758aa3",
-      "upd-7740f61fa21b"
+      "upd-988beb8d067b"
     ],
     "projects": [
       "Ultimate-Loop",
