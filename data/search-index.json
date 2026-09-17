@@ -3220,48 +3220,6 @@
     "href": "../updates/#u-upd-9ecb79c4e806"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-bb3b78390796",
-    "date": "2026-08-18",
-    "title": "NAGIを改善",
-    "summary": "NAGIを改善しました。 どこまで進んだか、次に何をするかを残し、仕事が止まっても途中から戻れるようにする作業補助です。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "NAGI",
-    "type": "機能変更",
-    "tags": [
-      "NAGI",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-bb3b78390796"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-02d30bfd7fe2",
-    "date": "2026-08-18",
-    "title": "NAGIに機能を追加",
-    "summary": "NAGIに機能を追加しました。 中断のたびに頭の中まで最初から作り直さないために使います。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "NAGI",
-    "type": "機能追加",
-    "tags": [
-      "NAGI",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-02d30bfd7fe2"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-11861d100650",
-    "date": "2026-08-18",
-    "title": "NAGIを開始",
-    "summary": "NAGIの新しい取り組みを開始しました。 中断のたびに頭の中まで最初から作り直さないために使います。",
-    "project": "NAGI",
-    "type": "新プロジェクト",
-    "tags": [
-      "NAGI",
-      "新プロジェクト"
-    ],
-    "href": "../updates/#u-upd-11861d100650"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-07",
     "date": "2026-09-07",
@@ -3625,7 +3583,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-18",
     "date": "2026-08-18",
-    "title": "WebAI-Bridgeを改善、ほか35件",
+    "title": "WebAI-Bridgeを改善、ほか32件",
     "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。 同じ日の開発記録として、『WebAI-Bridgeの方針を更新』、『WebAI-Bridgeを公開』、『WebAI-Bridgeを検証』もまとめています。",
     "project": "NAGI, RTS, WebAI-Bridge",
     "type": "開発日誌",
@@ -3633,7 +3591,6 @@
       "NAGI",
       "RTS",
       "WebAI-Bridge",
-      "新プロジェクト",
       "新製品",
       "方針変更",
       "機能削除",

@@ -720,7 +720,7 @@
   },
   {
     "date": "2026-08-18",
-    "title": "WebAI-Bridgeを改善、ほか35件",
+    "title": "WebAI-Bridgeを改善、ほか32件",
     "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。 同じ日の開発記録として、『WebAI-Bridgeの方針を更新』、『WebAI-Bridgeを公開』、『WebAI-Bridgeを検証』もまとめています。",
     "update_ids": [
       "upd-87eb264491b8",
@@ -755,10 +755,7 @@
       "upd-81fe2d452f8f",
       "upd-1221f7e81d57",
       "upd-07670d5edf4b",
-      "upd-9ecb79c4e806",
-      "upd-bb3b78390796",
-      "upd-02d30bfd7fe2",
-      "upd-11861d100650"
+      "upd-9ecb79c4e806"
     ],
     "projects": [
       "NAGI",
@@ -766,7 +763,6 @@
       "WebAI-Bridge"
     ],
     "types": [
-      "新プロジェクト",
       "新製品",
       "方針変更",
       "機能削除",
@@ -778,7 +774,6 @@
       "NAGI",
       "RTS",
       "WebAI-Bridge",
-      "新プロジェクト",
       "新製品",
       "方針変更",
       "機能削除",

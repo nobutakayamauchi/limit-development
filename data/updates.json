@@ -3908,56 +3908,5 @@
     "article_score": 0.348,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-bb3b78390796",
-    "source_id": "nobutakayamauchi/NAGI@b9ac4f87319861b3645ec646cd4f810679cff708",
-    "captured_at": "2026-08-18T09:44:43+09:00",
-    "type": "機能変更",
-    "project": "NAGI",
-    "title": "NAGIを改善",
-    "summary": "NAGIを改善しました。 どこまで進んだか、次に何をするかを残し、仕事が止まっても途中から戻れるようにする作業補助です。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "NAGI",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/NAGI/commit/d75dfbe787670755456f4f10ef4acf01eb7b1b3f,https://github.com/nobutakayamauchi/NAGI/commit/b9ac4f87319861b3645ec646cd4f810679cff708",
-    "article_score": 0.24,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-02d30bfd7fe2",
-    "source_id": "nobutakayamauchi/NAGI@a093c3807bdb0d4fdfcaeea134c402f16a426236",
-    "captured_at": "2026-08-18T09:42:54+09:00",
-    "type": "機能追加",
-    "project": "NAGI",
-    "title": "NAGIに機能を追加",
-    "summary": "NAGIに機能を追加しました。 中断のたびに頭の中まで最初から作り直さないために使います。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "NAGI",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/NAGI/commit/f3642da47390de75511228f29e82f531b288862d,https://github.com/nobutakayamauchi/NAGI/commit/a093c3807bdb0d4fdfcaeea134c402f16a426236",
-    "article_score": 0.448,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-11861d100650",
-    "source_id": "nobutakayamauchi/NAGI@1f85f3defa9b6a81c33a46cd3376a8f1f37be8bd",
-    "captured_at": "2026-08-18T09:39:41+09:00",
-    "type": "新プロジェクト",
-    "project": "NAGI",
-    "title": "NAGIを開始",
-    "summary": "NAGIの新しい取り組みを開始しました。 中断のたびに頭の中まで最初から作り直さないために使います。",
-    "tags": [
-      "NAGI",
-      "新プロジェクト"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/NAGI/commit/1f85f3defa9b6a81c33a46cd3376a8f1f37be8bd",
-    "article_score": 0.46,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
