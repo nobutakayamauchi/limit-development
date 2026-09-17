@@ -2856,160 +2856,6 @@
     "href": "../updates/#u-upd-744b33913fbf"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-a78e24aa65a3",
-    "date": "2026-08-18",
-    "title": "WebAI-Bridgeに機能を追加",
-    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "WebAI-Bridge",
-    "type": "機能追加",
-    "tags": [
-      "WebAI-Bridge",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-a78e24aa65a3"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-de27134cf483",
-    "date": "2026-08-18",
-    "title": "WebAI-Bridgeを検証",
-    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
-    "project": "WebAI-Bridge",
-    "type": "研究・検証",
-    "tags": [
-      "WebAI-Bridge",
-      "研究・検証"
-    ],
-    "href": "../updates/#u-upd-de27134cf483"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-75adcbd66cd0",
-    "date": "2026-08-18",
-    "title": "WebAI-Bridgeの方針を更新",
-    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。",
-    "project": "WebAI-Bridge",
-    "type": "方針変更",
-    "tags": [
-      "WebAI-Bridge",
-      "方針変更"
-    ],
-    "href": "../updates/#u-upd-75adcbd66cd0"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-dec2b147f077",
-    "date": "2026-08-18",
-    "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
-    "project": "WebAI-Bridge",
-    "type": "機能変更",
-    "tags": [
-      "WebAI-Bridge",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-dec2b147f077"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-9459e47be8ed",
-    "date": "2026-08-18",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-9459e47be8ed"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-a09f88abcc2d",
-    "date": "2026-08-18",
-    "title": "WebAI-Bridgeを公開",
-    "summary": "WebAI-Bridgeを新しく公開しました。",
-    "project": "WebAI-Bridge",
-    "type": "新製品",
-    "tags": [
-      "WebAI-Bridge",
-      "新製品"
-    ],
-    "href": "../updates/#u-upd-a09f88abcc2d"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-68adf7613f64",
-    "date": "2026-08-18",
-    "title": "WebAI-Bridgeの方針を更新",
-    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "WebAI-Bridge",
-    "type": "方針変更",
-    "tags": [
-      "WebAI-Bridge",
-      "方針変更"
-    ],
-    "href": "../updates/#u-upd-68adf7613f64"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-cf9f902f17df",
-    "date": "2026-08-18",
-    "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更25件も、この更新にまとめています。",
-    "project": "WebAI-Bridge",
-    "type": "機能変更",
-    "tags": [
-      "WebAI-Bridge",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-cf9f902f17df"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-a37a32d2c932",
-    "date": "2026-08-18",
-    "title": "WebAI-Bridgeを検証",
-    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更7件も、この更新にまとめています。",
-    "project": "WebAI-Bridge",
-    "type": "研究・検証",
-    "tags": [
-      "WebAI-Bridge",
-      "研究・検証"
-    ],
-    "href": "../updates/#u-upd-a37a32d2c932"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-f55d5b19acd2",
-    "date": "2026-08-18",
-    "title": "WebAI-Bridgeの機能を整理",
-    "summary": "WebAI-Bridgeで不要になった機能を削除しました。",
-    "project": "WebAI-Bridge",
-    "type": "機能削除",
-    "tags": [
-      "WebAI-Bridge",
-      "機能削除"
-    ],
-    "href": "../updates/#u-upd-f55d5b19acd2"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-ddffb11445c8",
-    "date": "2026-08-18",
-    "title": "WebAI-Bridgeに機能を追加",
-    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "WebAI-Bridge",
-    "type": "機能追加",
-    "tags": [
-      "WebAI-Bridge",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-ddffb11445c8"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-07",
     "date": "2026-09-07",
@@ -3373,16 +3219,14 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-18",
     "date": "2026-08-18",
-    "title": "WebAI-Bridgeを改善、ほか17件",
+    "title": "WebAI-Bridgeを改善、ほか6件",
     "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。 同じ日の開発記録として、『WebAI-Bridgeの方針を更新』、『WebAI-Bridgeを公開』、『WebAI-Bridgeを検証』もまとめています。",
-    "project": "RTS, WebAI-Bridge",
+    "project": "WebAI-Bridge",
     "type": "開発日誌",
     "tags": [
-      "RTS",
       "WebAI-Bridge",
       "新製品",
       "方針変更",
-      "機能削除",
       "機能変更",
       "機能追加",
       "研究・検証"
