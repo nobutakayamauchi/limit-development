@@ -1,9 +1,14 @@
 [
   {
     "date": "2026-09-18",
-    "title": "vector-cannonに機能を追加、ほか2件",
-    "summary": "vector-cannonで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonを改善』、『vector-cannonを改善』もまとめています。",
+    "title": "vector-cannonを改善、ほか7件",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更10件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonに機能を追加』、『vector-cannonを改善』、『vector-cannonを検証』もまとめています。",
     "update_ids": [
+      "upd-83e8e8ab3088",
+      "upd-acbfd96ab653",
+      "upd-26c69d40b327",
+      "upd-5e09eec10ce4",
+      "upd-0eb2d0f62dc5",
       "upd-65e66690dae2",
       "upd-fbd6d32f3e21",
       "upd-edef9778f66f"
@@ -13,12 +18,14 @@
     ],
     "types": [
       "機能変更",
-      "機能追加"
+      "機能追加",
+      "研究・検証"
     ],
     "tags": [
       "vector-cannon",
       "機能変更",
-      "機能追加"
+      "機能追加",
+      "研究・検証"
     ]
   },
   {
