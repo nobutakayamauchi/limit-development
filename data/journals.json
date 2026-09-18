@@ -1,5 +1,51 @@
 [
   {
+    "date": "2026-09-18",
+    "title": "vector-cannonに機能を追加、ほか2件",
+    "summary": "vector-cannonで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonを改善』、『vector-cannonを改善』もまとめています。",
+    "update_ids": [
+      "upd-65e66690dae2",
+      "upd-fbd6d32f3e21",
+      "upd-edef9778f66f"
+    ],
+    "projects": [
+      "vector-cannon"
+    ],
+    "types": [
+      "機能変更",
+      "機能追加"
+    ],
+    "tags": [
+      "vector-cannon",
+      "機能変更",
+      "機能追加"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "title": "vector-cannonを改善、ほか2件",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonを検証』、『vector-cannonに機能を追加』もまとめています。",
+    "update_ids": [
+      "upd-69e2205c3615",
+      "upd-9135bab8d17e",
+      "upd-c910bb0a625d"
+    ],
+    "projects": [
+      "vector-cannon"
+    ],
+    "types": [
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ],
+    "tags": [
+      "vector-cannon",
+      "機能変更",
+      "機能追加",
+      "研究・検証"
+    ]
+  },
+  {
     "date": "2026-09-07",
     "title": "Developer-Cardに機能を追加、ほか28件",
     "summary": "Developer-Cardで新しい機能を使えるようにしました。 同じ日の開発記録として、『sales-catalogに機能を追加』、『WebAI-Bridgeに機能を追加』、『RS-AI-limit-developmentに機能を追加』もまとめています。",
@@ -103,9 +149,13 @@
   },
   {
     "date": "2026-09-06",
-    "title": "vector-cannonに機能を追加、ほか5件",
-    "summary": "vector-cannonで新しい機能を使えるようにしました。 同じ日の開発記録として、『vector-cannonの機能を整理』、『vector-cannonを改善』、『vector-cannonを検証』もまとめています。",
+    "title": "vector-cannonを検証、ほか9件",
+    "summary": "vector-cannonが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonに機能を追加』、『vector-cannonを改善』、『vector-cannonの方針を更新』もまとめています。",
     "update_ids": [
+      "upd-20062e0c45a9",
+      "upd-0fae633ca201",
+      "upd-644620056799",
+      "upd-9b1c3c51c07a",
       "upd-fd390a1cf73a",
       "upd-bc74131d75af",
       "upd-d4a9a18efbd2",
@@ -117,6 +167,7 @@
       "vector-cannon"
     ],
     "types": [
+      "方針変更",
       "機能削除",
       "機能変更",
       "機能追加",
@@ -124,6 +175,7 @@
     ],
     "tags": [
       "vector-cannon",
+      "方針変更",
       "機能削除",
       "機能変更",
       "機能追加",
@@ -673,37 +725,6 @@
       "方針変更",
       "機能変更",
       "機能追加"
-    ]
-  },
-  {
-    "date": "2026-08-19",
-    "title": "WebAI-Bridgeに機能を追加、ほか5件",
-    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ日の開発記録として、『WebAI-Bridgeを開始』、『WebAI-Bridgeを検証』、『WebAI-Bridgeに機能を追加』もまとめています。",
-    "update_ids": [
-      "upd-5d79ae636c2a",
-      "upd-f09a21409430",
-      "upd-8065bbc64d5d",
-      "upd-c41775f20667",
-      "upd-12d038ec5bf1",
-      "upd-d8bea3e998e7"
-    ],
-    "projects": [
-      "WebAI-Bridge"
-    ],
-    "types": [
-      "新プロジェクト",
-      "方針変更",
-      "機能変更",
-      "機能追加",
-      "研究・検証"
-    ],
-    "tags": [
-      "WebAI-Bridge",
-      "新プロジェクト",
-      "方針変更",
-      "機能変更",
-      "機能追加",
-      "研究・検証"
     ]
   }
 ]

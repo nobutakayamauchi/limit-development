@@ -1,5 +1,107 @@
 [
   {
+    "id": "upd-65e66690dae2",
+    "source_id": "nobutakayamauchi/vector-cannon@79a10ff6a77169850660230c11bb951e261ecb92",
+    "captured_at": "2026-09-18T19:21:01+09:00",
+    "type": "機能追加",
+    "project": "vector-cannon",
+    "title": "vector-cannonに機能を追加",
+    "summary": "vector-cannonで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/79a10ff6a77169850660230c11bb951e261ecb92,https://github.com/nobutakayamauchi/vector-cannon/commit/d71509eb27bfda38ff09ee9cb681157c4d7af30f",
+    "article_score": 0.371,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-fbd6d32f3e21",
+    "source_id": "nobutakayamauchi/vector-cannon@4f5442b9a63677292c4ad39f7e17336a9dc15552",
+    "captured_at": "2026-09-18T19:20:23+09:00",
+    "type": "機能変更",
+    "project": "vector-cannon",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/4f5442b9a63677292c4ad39f7e17336a9dc15552",
+    "article_score": 0.176,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-edef9778f66f",
+    "source_id": "nobutakayamauchi/vector-cannon@2652efd7bd329d8ce526d508960337b563c83059",
+    "captured_at": "2026-09-18T18:10:28+09:00",
+    "type": "機能変更",
+    "project": "vector-cannon",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/e588f9ac0bbadfa1cfd8faabf677b0cee5863ddc,https://github.com/nobutakayamauchi/vector-cannon/commit/f1fae749d1dc3d283d8ed92e6fd5744392d4de92,https://github.com/nobutakayamauchi/vector-cannon/commit/ab528b54d9ed6fe0027bce98767ba5ab481bf9a4,https://github.com/nobutakayamauchi/vector-cannon/commit/93a97a84753cdda5fc7851032737af13345a3a4b,https://github.com/nobutakayamauchi/vector-cannon/commit/d02c2ae00512da503f6035c7cc895da80e3399c8,https://github.com/nobutakayamauchi/vector-cannon/commit/2652efd7bd329d8ce526d508960337b563c83059,https://github.com/nobutakayamauchi/vector-cannon/commit/ddebd8332d8ce8cb2375726697aac4b518c2481b,https://github.com/nobutakayamauchi/vector-cannon/commit/614ce368d757660752aa4dca165c8c7c6e25f670,https://github.com/nobutakayamauchi/vector-cannon/commit/ae68b681002f964237edd4d3659d16f8120a8253",
+    "article_score": 0.341,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-69e2205c3615",
+    "source_id": "nobutakayamauchi/vector-cannon@6416ab15a2a94ed9930a875eec0b899b633b186a",
+    "captured_at": "2026-09-15T10:55:37+09:00",
+    "type": "機能変更",
+    "project": "vector-cannon",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/6416ab15a2a94ed9930a875eec0b899b633b186a,https://github.com/nobutakayamauchi/vector-cannon/commit/d9e5f3c0b74ec02a777a79b63bb8903c845c9879",
+    "article_score": 0.174,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-9135bab8d17e",
+    "source_id": "nobutakayamauchi/vector-cannon@0a569c8b3a89f3886969da0d54039a52247d20f0",
+    "captured_at": "2026-09-15T10:54:20+09:00",
+    "type": "研究・検証",
+    "project": "vector-cannon",
+    "title": "vector-cannonを検証",
+    "summary": "vector-cannonが実際の利用条件で成立するか検証しました。",
+    "tags": [
+      "vector-cannon",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/0a569c8b3a89f3886969da0d54039a52247d20f0",
+    "article_score": 0.228,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-c910bb0a625d",
+    "source_id": "nobutakayamauchi/vector-cannon@12aaebfa95edd8af83fe2cfb3d19b5f749f9fc2a",
+    "captured_at": "2026-09-15T10:54:07+09:00",
+    "type": "機能追加",
+    "project": "vector-cannon",
+    "title": "vector-cannonに機能を追加",
+    "summary": "vector-cannonで新しい機能を使えるようにしました。",
+    "tags": [
+      "vector-cannon",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/12aaebfa95edd8af83fe2cfb3d19b5f749f9fc2a",
+    "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-b420e032961a",
     "source_id": "nobutakayamauchi/Developer-Card@e9dbbe4cf99f1896f38015ea989d7d110c9b397b",
     "captured_at": "2026-09-07T00:10:48+09:00",
@@ -489,6 +591,74 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-dev-protocol/commit/06e6e699f756194c6132717b02580e75a645d605",
     "article_score": 0.273,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-20062e0c45a9",
+    "source_id": "nobutakayamauchi/vector-cannon@014698a4454a5078189a21ea0f37064c5ecfde87",
+    "captured_at": "2026-09-06T20:44:55+09:00",
+    "type": "研究・検証",
+    "project": "vector-cannon",
+    "title": "vector-cannonを検証",
+    "summary": "vector-cannonが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/014698a4454a5078189a21ea0f37064c5ecfde87,https://github.com/nobutakayamauchi/vector-cannon/commit/61c52d2883d45307d7fac18b02577fa396e5ef2a",
+    "article_score": 0.313,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-0fae633ca201",
+    "source_id": "nobutakayamauchi/vector-cannon@fa96a36b5ec7aba146d2bed3aa39a8a2f74bb3a1",
+    "captured_at": "2026-09-06T20:42:57+09:00",
+    "type": "機能追加",
+    "project": "vector-cannon",
+    "title": "vector-cannonに機能を追加",
+    "summary": "vector-cannonで新しい機能を使えるようにしました。 同じ1時間内の関連変更5件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/935609e1a758e646b6ab7c11418f3706a729c847,https://github.com/nobutakayamauchi/vector-cannon/commit/cbe0c5832a41fcc48a430d121b8a2521857affa2,https://github.com/nobutakayamauchi/vector-cannon/commit/e4d576e9e0ff8fd43998cd85a6a732534aa89119,https://github.com/nobutakayamauchi/vector-cannon/commit/fa96a36b5ec7aba146d2bed3aa39a8a2f74bb3a1,https://github.com/nobutakayamauchi/vector-cannon/commit/8f03df3cd3ad85a4fd4be2b28e52713a162c2387,https://github.com/nobutakayamauchi/vector-cannon/commit/ddcd895309fde612619f2b90040f611afab3b545",
+    "article_score": 0.37,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-644620056799",
+    "source_id": "nobutakayamauchi/vector-cannon@bdf5b61d03692794c84dee343850d32beda9de69",
+    "captured_at": "2026-09-06T20:06:16+09:00",
+    "type": "機能変更",
+    "project": "vector-cannon",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/07cc5495a90519cc5d27d4980e59c013fcaa69f2,https://github.com/nobutakayamauchi/vector-cannon/commit/6b70ddf11590eb198998c96ec361bc34490ded5d,https://github.com/nobutakayamauchi/vector-cannon/commit/bdf5b61d03692794c84dee343850d32beda9de69",
+    "article_score": 0.335,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-9b1c3c51c07a",
+    "source_id": "nobutakayamauchi/vector-cannon@edc944c342c8cbb0aa668e73a7f5b876e7f2fe6e",
+    "captured_at": "2026-09-06T20:06:06+09:00",
+    "type": "方針変更",
+    "project": "vector-cannon",
+    "title": "vector-cannonの方針を更新",
+    "summary": "vector-cannonの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/edc944c342c8cbb0aa668e73a7f5b876e7f2fe6e,https://github.com/nobutakayamauchi/vector-cannon/commit/6475742e26b949c42f484564ed54c476a652c534",
+    "article_score": 0.319,
     "article_candidate": false,
     "review_status": "pending"
   },
@@ -3073,108 +3243,6 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/8882a4b5be940d347b0b04853519e5b785b07ed5",
     "article_score": 0.405,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-5d79ae636c2a",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@ae5e993e92f7ce9f89cbb0f6362ba84d7dc73af1",
-    "captured_at": "2026-08-19T18:09:54+09:00",
-    "type": "機能追加",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeに機能を追加",
-    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。",
-    "tags": [
-      "WebAI-Bridge",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/ae5e993e92f7ce9f89cbb0f6362ba84d7dc73af1",
-    "article_score": 0.506,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-f09a21409430",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@b463f002ff687f54c1bed51b4ec7d8a821812fd8",
-    "captured_at": "2026-08-19T17:54:00+09:00",
-    "type": "新プロジェクト",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeを開始",
-    "summary": "WebAI-Bridgeの新しい取り組みを開始しました。 同じ1時間内の関連変更4件も、この更新にまとめています。",
-    "tags": [
-      "WebAI-Bridge",
-      "新プロジェクト"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/47dcc2020554a9936f7b6a92e3930a1b10f9b4a3,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/e632e7ed71c5230d8c40ba6e5de9f9766abd9fc7,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/b463f002ff687f54c1bed51b4ec7d8a821812fd8,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/a10ad9f7828438f2c4c072964a7beadf429e0e9a,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/7dac82e86a21f8b98144eb5ccf1789db8d37f92c",
-    "article_score": 0.451,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-8065bbc64d5d",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@e31ec10fcf25143b6919a5d135e158854309eb9f",
-    "captured_at": "2026-08-19T17:49:25+09:00",
-    "type": "研究・検証",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeを検証",
-    "summary": "WebAI-Bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "WebAI-Bridge",
-      "研究・検証"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/e31ec10fcf25143b6919a5d135e158854309eb9f,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/129303d85904454c28dd4e37e693ff3b4c133595",
-    "article_score": 0.298,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-c41775f20667",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@e64307671a06d2c160006ef06eefa3d3180ff264",
-    "captured_at": "2026-08-19T17:48:47+09:00",
-    "type": "機能追加",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeに機能を追加",
-    "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "tags": [
-      "WebAI-Bridge",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/e64307671a06d2c160006ef06eefa3d3180ff264,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/a55e5c942462d4b63d02331c6b4cb32f3ae35206,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/8754e4b8e08b878254900cdebabd825a4fde95b1",
-    "article_score": 0.354,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-12d038ec5bf1",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@8d75ca8a5d81ffd07249a3ea770fd53e1e5088fa",
-    "captured_at": "2026-08-19T17:42:30+09:00",
-    "type": "方針変更",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeの方針を更新",
-    "summary": "WebAI-Bridgeの説明や運用方針を更新しました。",
-    "tags": [
-      "WebAI-Bridge",
-      "方針変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/8d75ca8a5d81ffd07249a3ea770fd53e1e5088fa",
-    "article_score": 0.248,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-d8bea3e998e7",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@5674052ec2449cfe3acfeaa0b439a99f02a852f0",
-    "captured_at": "2026-08-19T17:41:22+09:00",
-    "type": "機能変更",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "tags": [
-      "WebAI-Bridge",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/5674052ec2449cfe3acfeaa0b439a99f02a852f0,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/e3ee9daf13c8831a960156ee4d19853c333add7f,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/a61bceee6a149838012d967bf9dfbbba4ba05fb3",
-    "article_score": 0.182,
     "article_candidate": false,
     "review_status": "pending"
   }
