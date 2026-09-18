@@ -2632,34 +2632,6 @@
     "href": "../updates/#u-upd-8c9417ef1696"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-f04ed560d4ee",
-    "date": "2026-08-19",
-    "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "WebAI-Bridge",
-    "type": "機能変更",
-    "tags": [
-      "WebAI-Bridge",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-f04ed560d4ee"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-063b5867c668",
-    "date": "2026-08-19",
-    "title": "WebAI-Bridgeを開始",
-    "summary": "WebAI-Bridgeの新しい取り組みを開始しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "WebAI-Bridge",
-    "type": "新プロジェクト",
-    "tags": [
-      "WebAI-Bridge",
-      "新プロジェクト"
-    ],
-    "href": "../updates/#u-upd-063b5867c668"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-07",
     "date": "2026-09-07",
@@ -3004,7 +2976,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "WebAI-Bridgeに機能を追加、ほか8件",
+    "title": "WebAI-Bridgeに機能を追加、ほか6件",
     "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ日の開発記録として、『WebAI-Bridgeを開始』、『WebAI-Bridgeを検証』、『WebAI-Bridgeに機能を追加』もまとめています。",
     "project": "Ultimate-Loop, WebAI-Bridge",
     "type": "開発日誌",

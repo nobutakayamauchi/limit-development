@@ -3194,39 +3194,5 @@
     "article_score": 0.349,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-f04ed560d4ee",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@4bd0172b6401fcac12deb0a70eea2022db6167f9",
-    "captured_at": "2026-08-19T07:23:38+09:00",
-    "type": "機能変更",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "tags": [
-      "WebAI-Bridge",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/4bd0172b6401fcac12deb0a70eea2022db6167f9,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/cc6e7d987707bef952007173944975d11b00b9cb,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/cef27b5c64725ccd0840fbfecff3375c605d5094",
-    "article_score": 0.401,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-063b5867c668",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@5a27e0b6a86bf1284f3f400cdd9556a60249d7aa",
-    "captured_at": "2026-08-19T07:16:12+09:00",
-    "type": "新プロジェクト",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeを開始",
-    "summary": "WebAI-Bridgeの新しい取り組みを開始しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "tags": [
-      "WebAI-Bridge",
-      "新プロジェクト"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/6e5a6117daefafac593dda5d79f64010bfb036d5,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/5a27e0b6a86bf1284f3f400cdd9556a60249d7aa,https://github.com/nobutakayamauchi/WebAI-Bridge/commit/747d2613ade410a921db4322ef0a374dabf9d627",
-    "article_score": 0.384,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
