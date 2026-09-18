@@ -677,7 +677,7 @@
   },
   {
     "date": "2026-08-19",
-    "title": "WebAI-Bridgeに機能を追加、ほか6件",
+    "title": "WebAI-Bridgeに機能を追加、ほか5件",
     "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ日の開発記録として、『WebAI-Bridgeを開始』、『WebAI-Bridgeを検証』、『WebAI-Bridgeに機能を追加』もまとめています。",
     "update_ids": [
       "upd-5d79ae636c2a",
@@ -685,11 +685,9 @@
       "upd-8065bbc64d5d",
       "upd-c41775f20667",
       "upd-12d038ec5bf1",
-      "upd-d8bea3e998e7",
-      "upd-8c9417ef1696"
+      "upd-d8bea3e998e7"
     ],
     "projects": [
-      "Ultimate-Loop",
       "WebAI-Bridge"
     ],
     "types": [
@@ -700,7 +698,6 @@
       "研究・検証"
     ],
     "tags": [
-      "Ultimate-Loop",
       "WebAI-Bridge",
       "新プロジェクト",
       "方針変更",

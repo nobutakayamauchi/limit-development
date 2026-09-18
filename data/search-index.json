@@ -2618,20 +2618,6 @@
     "href": "../updates/#u-upd-d8bea3e998e7"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-8c9417ef1696",
-    "date": "2026-08-19",
-    "title": "Ultimate-Loopに機能を追加",
-    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。",
-    "project": "Ultimate-Loop",
-    "type": "機能追加",
-    "tags": [
-      "Ultimate-Loop",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-8c9417ef1696"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-07",
     "date": "2026-09-07",
@@ -2976,12 +2962,11 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-19",
     "date": "2026-08-19",
-    "title": "WebAI-Bridgeに機能を追加、ほか6件",
+    "title": "WebAI-Bridgeに機能を追加、ほか5件",
     "summary": "WebAI-Bridgeで新しい機能を使えるようにしました。 同じ日の開発記録として、『WebAI-Bridgeを開始』、『WebAI-Bridgeを検証』、『WebAI-Bridgeに機能を追加』もまとめています。",
-    "project": "Ultimate-Loop, WebAI-Bridge",
+    "project": "WebAI-Bridge",
     "type": "開発日誌",
     "tags": [
-      "Ultimate-Loop",
       "WebAI-Bridge",
       "新プロジェクト",
       "方針変更",

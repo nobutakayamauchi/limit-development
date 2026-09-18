@@ -3177,22 +3177,5 @@
     "article_score": 0.182,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-8c9417ef1696",
-    "source_id": "nobutakayamauchi/Ultimate-Loop@eed18f1e5211d1e3ba4385b86fa4593006a94ea4",
-    "captured_at": "2026-08-19T12:42:50+09:00",
-    "type": "機能追加",
-    "project": "Ultimate-Loop",
-    "title": "Ultimate-Loopに機能を追加",
-    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。",
-    "tags": [
-      "Ultimate-Loop",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Ultimate-Loop/commit/eed18f1e5211d1e3ba4385b86fa4593006a94ea4",
-    "article_score": 0.349,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
