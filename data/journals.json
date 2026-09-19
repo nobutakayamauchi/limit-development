@@ -703,26 +703,5 @@
       "WebAI-Bridge",
       "機能変更"
     ]
-  },
-  {
-    "date": "2026-08-20",
-    "title": "RTS-Skills-の方針を更新、ほか1件",
-    "summary": "RTS-Skills-の説明や運用方針を更新しました。 同じ日の開発記録として、『WebAI-Bridgeの方針を更新』もまとめています。",
-    "update_ids": [
-      "upd-4621400f55e4",
-      "upd-22edc740036c"
-    ],
-    "projects": [
-      "RTS-Skills-",
-      "WebAI-Bridge"
-    ],
-    "types": [
-      "方針変更"
-    ],
-    "tags": [
-      "RTS-Skills-",
-      "WebAI-Bridge",
-      "方針変更"
-    ]
   }
 ]
