@@ -3279,56 +3279,5 @@
     "article_score": 0.317,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-87dbf1373e29",
-    "source_id": "nobutakayamauchi/Ultimate-Loop@bba55271144a7a1d3ae0ab0b89927e53455a2aef",
-    "captured_at": "2026-08-20T18:39:43+09:00",
-    "type": "機能追加",
-    "project": "Ultimate-Loop",
-    "title": "Ultimate-Loopに機能を追加",
-    "summary": "Ultimate-Loopで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "Ultimate-Loop",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Ultimate-Loop/commit/bba55271144a7a1d3ae0ab0b89927e53455a2aef,https://github.com/nobutakayamauchi/Ultimate-Loop/commit/c9e6c75d207efe92c1cee83d98b1ece9ba8d9566",
-    "article_score": 0.428,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-ca06f248420b",
-    "source_id": "nobutakayamauchi/Ultimate-Loop@7ae0641a694cba548932a0bde157ebf4ea781ec9",
-    "captured_at": "2026-08-20T18:39:12+09:00",
-    "type": "機能変更",
-    "project": "Ultimate-Loop",
-    "title": "Ultimate-Loopを改善",
-    "summary": "Ultimate-Loopの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "Ultimate-Loop",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Ultimate-Loop/commit/7ae0641a694cba548932a0bde157ebf4ea781ec9,https://github.com/nobutakayamauchi/Ultimate-Loop/commit/4fc40d7496b90c7d0815c7bbde533c407367bec4",
-    "article_score": 0.176,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-dac951b5da77",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@8882a4b5be940d347b0b04853519e5b785b07ed5",
-    "captured_at": "2026-08-20T16:23:22+09:00",
-    "type": "機能変更",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "WebAI-Bridge",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/8882a4b5be940d347b0b04853519e5b785b07ed5",
-    "article_score": 0.405,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
