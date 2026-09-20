@@ -3211,22 +3211,5 @@
     "article_score": 0.465,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-38453b15eb3e",
-    "source_id": "nobutakayamauchi/WebAI-Bridge@5021eed39d9a3d4a2a749ee7b29396a1fdbbde93",
-    "captured_at": "2026-08-21T17:47:12+09:00",
-    "type": "機能変更",
-    "project": "WebAI-Bridge",
-    "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "WebAI-Bridge",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/5021eed39d9a3d4a2a749ee7b29396a1fdbbde93",
-    "article_score": 0.173,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]

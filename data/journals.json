@@ -682,23 +682,5 @@
       "方針変更",
       "機能変更"
     ]
-  },
-  {
-    "date": "2026-08-21",
-    "title": "WebAI-Bridgeを改善",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
-    "update_ids": [
-      "upd-38453b15eb3e"
-    ],
-    "projects": [
-      "WebAI-Bridge"
-    ],
-    "types": [
-      "機能変更"
-    ],
-    "tags": [
-      "WebAI-Bridge",
-      "機能変更"
-    ]
   }
 ]
