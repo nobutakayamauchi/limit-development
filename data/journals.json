@@ -685,21 +685,18 @@
   },
   {
     "date": "2026-08-21",
-    "title": "WebAI-Bridgeを改善、ほか1件",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSを改善』もまとめています。",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
     "update_ids": [
-      "upd-38453b15eb3e",
-      "upd-c3bb8cf75130"
+      "upd-38453b15eb3e"
     ],
     "projects": [
-      "RTS",
       "WebAI-Bridge"
     ],
     "types": [
       "機能変更"
     ],
     "tags": [
-      "RTS",
       "WebAI-Bridge",
       "機能変更"
     ]

@@ -2660,20 +2660,6 @@
     "href": "../updates/#u-upd-38453b15eb3e"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-c3bb8cf75130",
-    "date": "2026-08-21",
-    "title": "RTSを改善",
-    "summary": "RTSの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS",
-    "type": "機能変更",
-    "tags": [
-      "RTS",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-c3bb8cf75130"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-18",
     "date": "2026-09-18",
@@ -3018,12 +3004,11 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-21",
     "date": "2026-08-21",
-    "title": "WebAI-Bridgeを改善、ほか1件",
-    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『RTSを改善』もまとめています。",
-    "project": "RTS, WebAI-Bridge",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "project": "WebAI-Bridge",
     "type": "開発日誌",
     "tags": [
-      "RTS",
       "WebAI-Bridge",
       "機能変更"
     ],
