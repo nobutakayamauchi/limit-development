@@ -658,16 +658,14 @@
   },
   {
     "date": "2026-08-22",
-    "title": "sales-catalogの方針を更新、ほか3件",
-    "summary": "sales-catalogの説明や運用方針を更新しました。 同じ日の開発記録として、『sales-catalogを公開』、『sales-catalogを改善』、『rts01-offerを公開』もまとめています。",
+    "title": "sales-catalogの方針を更新、ほか2件",
+    "summary": "sales-catalogの説明や運用方針を更新しました。 同じ日の開発記録として、『sales-catalogを公開』、『sales-catalogを改善』もまとめています。",
     "update_ids": [
       "upd-ed31e2671a87",
       "upd-89e5d3224f78",
-      "upd-cd4e05614347",
-      "upd-3d3988d8afd3"
+      "upd-cd4e05614347"
     ],
     "projects": [
-      "rts01-offer",
       "sales-catalog"
     ],
     "types": [
@@ -676,7 +674,6 @@
       "機能変更"
     ],
     "tags": [
-      "rts01-offer",
       "sales-catalog",
       "新製品",
       "方針変更",

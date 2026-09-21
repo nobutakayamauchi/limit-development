@@ -2632,20 +2632,6 @@
     "href": "../updates/#u-upd-cd4e05614347"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-3d3988d8afd3",
-    "date": "2026-08-22",
-    "title": "rts01-offerを公開",
-    "summary": "rts01-offerを新しく公開しました。",
-    "project": "rts01-offer",
-    "type": "新製品",
-    "tags": [
-      "rts01-offer",
-      "新製品"
-    ],
-    "href": "../updates/#u-upd-3d3988d8afd3"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-18",
     "date": "2026-09-18",
@@ -2973,12 +2959,11 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-22",
     "date": "2026-08-22",
-    "title": "sales-catalogの方針を更新、ほか3件",
-    "summary": "sales-catalogの説明や運用方針を更新しました。 同じ日の開発記録として、『sales-catalogを公開』、『sales-catalogを改善』、『rts01-offerを公開』もまとめています。",
-    "project": "rts01-offer, sales-catalog",
+    "title": "sales-catalogの方針を更新、ほか2件",
+    "summary": "sales-catalogの説明や運用方針を更新しました。 同じ日の開発記録として、『sales-catalogを公開』、『sales-catalogを改善』もまとめています。",
+    "project": "sales-catalog",
     "type": "開発日誌",
     "tags": [
-      "rts01-offer",
       "sales-catalog",
       "新製品",
       "方針変更",
