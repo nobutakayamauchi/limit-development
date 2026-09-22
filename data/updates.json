@@ -3126,22 +3126,5 @@
     "article_score": 0.263,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-87f4bc43c62c",
-    "source_id": "nobutakayamauchi/Developer-Card@622f5e6e82dc555462a8db3cca978e9e2a2fd876",
-    "captured_at": "2026-08-23T13:11:59+09:00",
-    "type": "新製品",
-    "project": "Developer-Card",
-    "title": "Developer-Cardを公開",
-    "summary": "Developer-Cardを新しく公開しました。",
-    "tags": [
-      "Developer-Card",
-      "新製品"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Developer-Card/commit/622f5e6e82dc555462a8db3cca978e9e2a2fd876",
-    "article_score": 0.401,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
