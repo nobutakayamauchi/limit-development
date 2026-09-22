@@ -586,36 +586,23 @@
   },
   {
     "date": "2026-08-24",
-    "title": "sales-catalogの機能を整理、ほか6件",
-    "summary": "sales-catalogで不要になった機能を削除しました。 同じ日の開発記録として、『sales-catalogを改善』、『LLM-Cost-Routerを改善』、『sales-catalogの方針を更新』もまとめています。",
+    "title": "sales-catalogの機能を整理、ほか1件",
+    "summary": "sales-catalogで不要になった機能を削除しました。 同じ日の開発記録として、『sales-catalogを改善』もまとめています。",
     "update_ids": [
       "upd-fb39eef19d89",
-      "upd-a53fd44e9563",
-      "upd-393f655da4c6",
-      "upd-743c2816327a",
-      "upd-0cafb8bc3e27",
-      "upd-1dd7b8f29c06",
-      "upd-46699a441f7c"
+      "upd-a53fd44e9563"
     ],
     "projects": [
-      "LLM-Cost-Router",
       "sales-catalog"
     ],
     "types": [
-      "新製品",
-      "方針変更",
       "機能削除",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ],
     "tags": [
-      "LLM-Cost-Router",
       "sales-catalog",
-      "新製品",
-      "方針変更",
       "機能削除",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ]
   }
 ]
