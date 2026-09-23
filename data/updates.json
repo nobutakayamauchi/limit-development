@@ -2871,39 +2871,5 @@
     "article_score": 0.255,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-fb39eef19d89",
-    "source_id": "nobutakayamauchi/sales-catalog@0934749246056e8297370ca088816e0b5eeabc64",
-    "captured_at": "2026-08-24T10:50:56+09:00",
-    "type": "機能削除",
-    "project": "sales-catalog",
-    "title": "sales-catalogの機能を整理",
-    "summary": "sales-catalogで不要になった機能を削除しました。",
-    "tags": [
-      "sales-catalog",
-      "機能削除"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/0934749246056e8297370ca088816e0b5eeabc64",
-    "article_score": 0.222,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-a53fd44e9563",
-    "source_id": "nobutakayamauchi/sales-catalog@4c5c6ea19f79a0d1db2766a67be53365f7cb1199",
-    "captured_at": "2026-08-24T10:50:42+09:00",
-    "type": "機能変更",
-    "project": "sales-catalog",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/4c5c6ea19f79a0d1db2766a67be53365f7cb1199",
-    "article_score": 0.16,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]

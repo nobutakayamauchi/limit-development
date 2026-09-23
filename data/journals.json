@@ -583,26 +583,5 @@
       "機能変更",
       "機能追加"
     ]
-  },
-  {
-    "date": "2026-08-24",
-    "title": "sales-catalogの機能を整理、ほか1件",
-    "summary": "sales-catalogで不要になった機能を削除しました。 同じ日の開発記録として、『sales-catalogを改善』もまとめています。",
-    "update_ids": [
-      "upd-fb39eef19d89",
-      "upd-a53fd44e9563"
-    ],
-    "projects": [
-      "sales-catalog"
-    ],
-    "types": [
-      "機能削除",
-      "機能変更"
-    ],
-    "tags": [
-      "sales-catalog",
-      "機能削除",
-      "機能変更"
-    ]
   }
 ]

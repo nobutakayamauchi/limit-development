@@ -2366,34 +2366,6 @@
     "href": "../updates/#u-upd-cc48d9b569cf"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-fb39eef19d89",
-    "date": "2026-08-24",
-    "title": "sales-catalogの機能を整理",
-    "summary": "sales-catalogで不要になった機能を削除しました。",
-    "project": "sales-catalog",
-    "type": "機能削除",
-    "tags": [
-      "sales-catalog",
-      "機能削除"
-    ],
-    "href": "../updates/#u-upd-fb39eef19d89"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-a53fd44e9563",
-    "date": "2026-08-24",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
-    "project": "sales-catalog",
-    "type": "機能変更",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-a53fd44e9563"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-18",
     "date": "2026-09-18",
@@ -2677,20 +2649,5 @@
       "機能追加"
     ],
     "href": "../journal/2026-08-25.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-08-24",
-    "date": "2026-08-24",
-    "title": "sales-catalogの機能を整理、ほか1件",
-    "summary": "sales-catalogで不要になった機能を削除しました。 同じ日の開発記録として、『sales-catalogを改善』もまとめています。",
-    "project": "sales-catalog",
-    "type": "開発日誌",
-    "tags": [
-      "sales-catalog",
-      "機能削除",
-      "機能変更"
-    ],
-    "href": "../journal/2026-08-24.html"
   }
 ]
