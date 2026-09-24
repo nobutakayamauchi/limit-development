@@ -527,7 +527,7 @@
   },
   {
     "date": "2026-08-26",
-    "title": "x-ads-bridgeに機能を追加、ほか11件",
+    "title": "x-ads-bridgeに機能を追加、ほか7件",
     "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。 同じ日の開発記録として、『x-ads-bridgeを改善』、『sales-catalogの方針を更新』、『sales-catalogを公開』もまとめています。",
     "update_ids": [
       "upd-10ca8de132b2",
@@ -537,11 +537,7 @@
       "upd-8cbcfbe48ff7",
       "upd-be1de9a13819",
       "upd-8f2fb7b6f3ac",
-      "upd-645b5abbda18",
-      "upd-de6de80c8a4c",
-      "upd-111368803b2f",
-      "upd-fb6d2ec7e2c8",
-      "upd-0140b4e92c20"
+      "upd-645b5abbda18"
     ],
     "projects": [
       "sales-catalog",

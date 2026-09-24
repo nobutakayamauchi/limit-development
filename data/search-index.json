@@ -2268,62 +2268,6 @@
     "href": "../updates/#u-upd-645b5abbda18"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-de6de80c8a4c",
-    "date": "2026-08-26",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
-    "project": "sales-catalog",
-    "type": "機能変更",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-de6de80c8a4c"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-111368803b2f",
-    "date": "2026-08-26",
-    "title": "sales-catalogに機能を追加",
-    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "sales-catalog",
-    "type": "機能追加",
-    "tags": [
-      "sales-catalog",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-111368803b2f"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-fb6d2ec7e2c8",
-    "date": "2026-08-26",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "sales-catalog",
-    "type": "機能変更",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-fb6d2ec7e2c8"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-0140b4e92c20",
-    "date": "2026-08-26",
-    "title": "sales-catalogに機能を追加",
-    "summary": "sales-catalogで新しい機能を使えるようにしました。",
-    "project": "sales-catalog",
-    "type": "機能追加",
-    "tags": [
-      "sales-catalog",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-0140b4e92c20"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-18",
     "date": "2026-09-18",
@@ -2579,7 +2523,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-26",
     "date": "2026-08-26",
-    "title": "x-ads-bridgeに機能を追加、ほか11件",
+    "title": "x-ads-bridgeに機能を追加、ほか7件",
     "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。 同じ日の開発記録として、『x-ads-bridgeを改善』、『sales-catalogの方針を更新』、『sales-catalogを公開』もまとめています。",
     "project": "sales-catalog, x-ads-bridge",
     "type": "開発日誌",
