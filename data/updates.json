@@ -2820,56 +2820,5 @@
     "article_score": 0.352,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-914bb1ae3393",
-    "source_id": "nobutakayamauchi/sales-catalog@3f6a3c5e1fece44da9d2792654b1246dd144c6f2",
-    "captured_at": "2026-08-25T23:25:20+09:00",
-    "type": "機能変更",
-    "project": "sales-catalog",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/3f6a3c5e1fece44da9d2792654b1246dd144c6f2,https://github.com/nobutakayamauchi/sales-catalog/commit/15d9a0878af1136bc251f894e2e842d7ef6d0e50",
-    "article_score": 0.249,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-0eb7ae22ff16",
-    "source_id": "nobutakayamauchi/sales-catalog@70741d02cb24bbd598882a048a5a5aa64b6880b1",
-    "captured_at": "2026-08-25T23:13:36+09:00",
-    "type": "機能追加",
-    "project": "sales-catalog",
-    "title": "sales-catalogに機能を追加",
-    "summary": "sales-catalogで新しい機能を使えるようにしました。",
-    "tags": [
-      "sales-catalog",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/70741d02cb24bbd598882a048a5a5aa64b6880b1",
-    "article_score": 0.284,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-cc48d9b569cf",
-    "source_id": "nobutakayamauchi/sales-catalog@1468461771b02b64ed2fab2e799cf5b529eaf1fd",
-    "captured_at": "2026-08-25T21:05:22+09:00",
-    "type": "機能変更",
-    "project": "sales-catalog",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/5802b4188b628a2cdf422e06872c1f7dec465647,https://github.com/nobutakayamauchi/sales-catalog/commit/1468461771b02b64ed2fab2e799cf5b529eaf1fd",
-    "article_score": 0.255,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]

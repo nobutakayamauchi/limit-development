@@ -561,27 +561,5 @@
       "機能変更",
       "機能追加"
     ]
-  },
-  {
-    "date": "2026-08-25",
-    "title": "sales-catalogを改善、ほか2件",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『sales-catalogに機能を追加』、『sales-catalogを改善』もまとめています。",
-    "update_ids": [
-      "upd-914bb1ae3393",
-      "upd-0eb7ae22ff16",
-      "upd-cc48d9b569cf"
-    ],
-    "projects": [
-      "sales-catalog"
-    ],
-    "types": [
-      "機能変更",
-      "機能追加"
-    ],
-    "tags": [
-      "sales-catalog",
-      "機能変更",
-      "機能追加"
-    ]
   }
 ]
