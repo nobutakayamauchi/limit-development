@@ -481,7 +481,7 @@
   },
   {
     "date": "2026-08-27",
-    "title": "sales-catalogを改善、ほか17件",
+    "title": "sales-catalogを改善、ほか6件",
     "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『x-ads-bridgeを改善』、『x-ads-bridgeを検証』、『x-ads-bridgeに機能を追加』もまとめています。",
     "update_ids": [
       "upd-f7ea451d08b8",
@@ -490,18 +490,7 @@
       "upd-b93e07ae7ae8",
       "upd-4a71ac9260d4",
       "upd-61466bc9f4ee",
-      "upd-ccc70826fb90",
-      "upd-ec8344254ba6",
-      "upd-c17fd3e861d2",
-      "upd-b0fb60c5c582",
-      "upd-a7f11edbc13e",
-      "upd-dffdbb5e83f9",
-      "upd-3c92333c2b77",
-      "upd-5662979aae62",
-      "upd-1a2815c573b6",
-      "upd-420386c94052",
-      "upd-94325e6b90fc",
-      "upd-093ab3f97984"
+      "upd-ccc70826fb90"
     ],
     "projects": [
       "sales-catalog",
