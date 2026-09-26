@@ -2259,56 +2259,5 @@
     "article_score": 0.382,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-fe6f75c7188d",
-    "source_id": "nobutakayamauchi/sales-catalog@d8984d70a0acdb6561e612772478cb796e7de737",
-    "captured_at": "2026-08-28T07:01:22+09:00",
-    "type": "機能変更",
-    "project": "sales-catalog",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/d8984d70a0acdb6561e612772478cb796e7de737",
-    "article_score": 0.174,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-129706da6f70",
-    "source_id": "nobutakayamauchi/x-ads-bridge@f8c26da28746f5291071ed2a393e42b4a0022a34",
-    "captured_at": "2026-08-28T06:58:58+09:00",
-    "type": "機能追加",
-    "project": "x-ads-bridge",
-    "title": "x-ads-bridgeに機能を追加",
-    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。",
-    "tags": [
-      "x-ads-bridge",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/x-ads-bridge/commit/f8c26da28746f5291071ed2a393e42b4a0022a34",
-    "article_score": 0.345,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-f7ea451d08b8",
-    "source_id": "nobutakayamauchi/sales-catalog@4b766021f90b0cf998cf976819ff98929af6e30c",
-    "captured_at": "2026-08-27T22:01:30Z",
-    "type": "機能変更",
-    "project": "sales-catalog",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/4b766021f90b0cf998cf976819ff98929af6e30c",
-    "article_score": 0.243,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]

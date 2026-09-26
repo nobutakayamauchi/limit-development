@@ -1862,48 +1862,6 @@
     "href": "../updates/#u-upd-a3829b2bed37"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-fe6f75c7188d",
-    "date": "2026-08-28",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
-    "project": "sales-catalog",
-    "type": "機能変更",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-fe6f75c7188d"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-129706da6f70",
-    "date": "2026-08-28",
-    "title": "x-ads-bridgeに機能を追加",
-    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。",
-    "project": "x-ads-bridge",
-    "type": "機能追加",
-    "tags": [
-      "x-ads-bridge",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-129706da6f70"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-f7ea451d08b8",
-    "date": "2026-08-27",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
-    "project": "sales-catalog",
-    "type": "機能変更",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-f7ea451d08b8"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-18",
     "date": "2026-09-18",
@@ -2120,12 +2078,11 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-28",
     "date": "2026-08-28",
-    "title": "x-ads-bridgeを改善、ほか19件",
+    "title": "x-ads-bridgeを改善、ほか17件",
     "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『x-ads-bridgeを改善』、『x-ads-bridgeに機能を追加』、『x-ads-bridgeに機能を追加』もまとめています。",
-    "project": "sales-catalog, x-ads-bridge",
+    "project": "x-ads-bridge",
     "type": "開発日誌",
     "tags": [
-      "sales-catalog",
       "x-ads-bridge",
       "新製品",
       "方針変更",
@@ -2135,19 +2092,5 @@
       "研究・検証"
     ],
     "href": "../journal/2026-08-28.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-08-27",
-    "date": "2026-08-27",
-    "title": "sales-catalogを改善",
-    "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。",
-    "project": "sales-catalog",
-    "type": "開発日誌",
-    "tags": [
-      "sales-catalog",
-      "機能変更"
-    ],
-    "href": "../journal/2026-08-27.html"
   }
 ]
