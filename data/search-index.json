@@ -2090,7 +2090,7 @@
     "id": "upd-1a2815c573b6",
     "date": "2026-08-27",
     "title": "x-ads-bridgeを検証",
-    "summary": "x-ads-bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "summary": "x-ads-bridgeが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "project": "x-ads-bridge",
     "type": "研究・検証",
     "tags": [
@@ -2104,7 +2104,7 @@
     "id": "upd-420386c94052",
     "date": "2026-08-27",
     "title": "x-ads-bridgeに機能を追加",
-    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
     "project": "x-ads-bridge",
     "type": "機能追加",
     "tags": [
@@ -2115,31 +2115,17 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-9e6905dacbe7",
+    "id": "upd-94325e6b90fc",
     "date": "2026-08-27",
     "title": "x-ads-bridgeを改善",
-    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更6件も、この更新にまとめています。",
+    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
     "project": "x-ads-bridge",
     "type": "機能変更",
     "tags": [
       "x-ads-bridge",
       "機能変更"
     ],
-    "href": "../updates/#u-upd-9e6905dacbe7"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-bc63126790b7",
-    "date": "2026-08-27",
-    "title": "x-ads-bridgeの機能を整理",
-    "summary": "x-ads-bridgeで不要になった機能を削除しました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "x-ads-bridge",
-    "type": "機能削除",
-    "tags": [
-      "x-ads-bridge",
-      "機能削除"
-    ],
-    "href": "../updates/#u-upd-bc63126790b7"
+    "href": "../updates/#u-upd-94325e6b90fc"
   },
   {
     "kind": "UPDATE",
@@ -2392,7 +2378,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-27",
     "date": "2026-08-27",
-    "title": "sales-catalogを改善、ほか18件",
+    "title": "sales-catalogを改善、ほか17件",
     "summary": "sales-catalogの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『x-ads-bridgeを改善』、『x-ads-bridgeを検証』、『x-ads-bridgeに機能を追加』もまとめています。",
     "project": "sales-catalog, x-ads-bridge",
     "type": "開発日誌",
@@ -2400,7 +2386,6 @@
       "sales-catalog",
       "x-ads-bridge",
       "方針変更",
-      "機能削除",
       "機能変更",
       "機能追加",
       "研究・検証"
