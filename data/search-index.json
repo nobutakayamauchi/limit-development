@@ -1610,48 +1610,6 @@
     "href": "../updates/#u-upd-37fb054b7ab7"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-2a94e3d680c8",
-    "date": "2026-08-28",
-    "title": "x-ads-bridgeを改善",
-    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。",
-    "project": "x-ads-bridge",
-    "type": "機能変更",
-    "tags": [
-      "x-ads-bridge",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-2a94e3d680c8"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-fc8b64c41ef2",
-    "date": "2026-08-28",
-    "title": "x-ads-bridgeを改善",
-    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。",
-    "project": "x-ads-bridge",
-    "type": "機能変更",
-    "tags": [
-      "x-ads-bridge",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-fc8b64c41ef2"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-1987a0010f5e",
-    "date": "2026-08-28",
-    "title": "x-ads-bridgeに機能を追加",
-    "summary": "x-ads-bridgeで新しい機能を使えるようにしました。",
-    "project": "x-ads-bridge",
-    "type": "機能追加",
-    "tags": [
-      "x-ads-bridge",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-1987a0010f5e"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-18",
     "date": "2026-09-18",
@@ -1863,20 +1821,5 @@
       "機能追加"
     ],
     "href": "../journal/2026-08-29.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-08-28",
-    "date": "2026-08-28",
-    "title": "x-ads-bridgeを改善、ほか2件",
-    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『x-ads-bridgeを改善』、『x-ads-bridgeに機能を追加』もまとめています。",
-    "project": "x-ads-bridge",
-    "type": "開発日誌",
-    "tags": [
-      "x-ads-bridge",
-      "機能変更",
-      "機能追加"
-    ],
-    "href": "../journal/2026-08-28.html"
   }
 ]
