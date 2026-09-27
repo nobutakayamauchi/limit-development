@@ -432,7 +432,7 @@
   },
   {
     "date": "2026-08-28",
-    "title": "x-ads-bridgeを改善、ほか17件",
+    "title": "x-ads-bridgeを改善、ほか10件",
     "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『x-ads-bridgeを改善』、『x-ads-bridgeに機能を追加』、『x-ads-bridgeに機能を追加』もまとめています。",
     "update_ids": [
       "upd-2a94e3d680c8",
@@ -445,14 +445,7 @@
       "upd-bc5c2c6693db",
       "upd-7f2741dd7ae8",
       "upd-5f1fca2c89ad",
-      "upd-de2602cb17aa",
-      "upd-5c4a7a066283",
-      "upd-0598e8a7e16a",
-      "upd-ccd7e5a4a4cb",
-      "upd-1e3973b06471",
-      "upd-6d5a51722493",
-      "upd-9897f82773ad",
-      "upd-a3829b2bed37"
+      "upd-de2602cb17aa"
     ],
     "projects": [
       "x-ads-bridge"
@@ -460,7 +453,6 @@
     "types": [
       "新製品",
       "方針変更",
-      "機能削除",
       "機能変更",
       "機能追加",
       "研究・検証"
@@ -469,7 +461,6 @@
       "x-ads-bridge",
       "新製品",
       "方針変更",
-      "機能削除",
       "機能変更",
       "機能追加",
       "研究・検証"
