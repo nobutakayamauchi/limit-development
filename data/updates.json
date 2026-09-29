@@ -1817,56 +1817,5 @@
     "article_score": 0.176,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-c0f8c674ff33",
-    "source_id": "nobutakayamauchi/render-worker@b3fd6d6e105095ffb4fa03002788aad05b94cdc6",
-    "captured_at": "2026-08-30T18:17:01+09:00",
-    "type": "機能追加",
-    "project": "render-worker",
-    "title": "render-workerに機能を追加",
-    "summary": "render-workerで新しい機能を使えるようにしました。",
-    "tags": [
-      "render-worker",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/b3fd6d6e105095ffb4fa03002788aad05b94cdc6",
-    "article_score": 0.347,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-db6362134c3d",
-    "source_id": "nobutakayamauchi/render-worker@acdc4cf85dbba858d95112c6d92bdb7d6b3c2bf3",
-    "captured_at": "2026-08-30T09:02:39Z",
-    "type": "機能変更",
-    "project": "render-worker",
-    "title": "render-workerを改善",
-    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "render-worker",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/acdc4cf85dbba858d95112c6d92bdb7d6b3c2bf3",
-    "article_score": 0.177,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-81e2cebc85d0",
-    "source_id": "nobutakayamauchi/render-worker@d17e2e6af5cacad6b884bd387b8b1b8916e1563a",
-    "captured_at": "2026-08-30T09:01:19Z",
-    "type": "機能追加",
-    "project": "render-worker",
-    "title": "render-workerに機能を追加",
-    "summary": "render-workerで新しい機能を使えるようにしました。",
-    "tags": [
-      "render-worker",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/d17e2e6af5cacad6b884bd387b8b1b8916e1563a",
-    "article_score": 0.284,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]

@@ -381,27 +381,5 @@
       "機能変更",
       "機能追加"
     ]
-  },
-  {
-    "date": "2026-08-30",
-    "title": "render-workerに機能を追加、ほか2件",
-    "summary": "render-workerで新しい機能を使えるようにしました。 同じ日の開発記録として、『render-workerを改善』、『render-workerに機能を追加』もまとめています。",
-    "update_ids": [
-      "upd-c0f8c674ff33",
-      "upd-db6362134c3d",
-      "upd-81e2cebc85d0"
-    ],
-    "projects": [
-      "render-worker"
-    ],
-    "types": [
-      "機能変更",
-      "機能追加"
-    ],
-    "tags": [
-      "render-worker",
-      "機能変更",
-      "機能追加"
-    ]
   }
 ]
