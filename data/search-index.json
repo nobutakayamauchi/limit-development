@@ -1513,20 +1513,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-304a9d2e4299",
-    "date": "2026-08-30",
-    "title": "render-workerに機能を追加",
-    "summary": "render-workerで新しい機能を使えるようにしました。",
-    "project": "render-worker",
-    "type": "機能追加",
-    "tags": [
-      "render-worker",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-304a9d2e4299"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-db6362134c3d",
     "date": "2026-08-30",
     "title": "render-workerを改善",
@@ -1552,20 +1538,6 @@
       "機能追加"
     ],
     "href": "../updates/#u-upd-81e2cebc85d0"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-3d5dd191b01e",
-    "date": "2026-08-30",
-    "title": "render-workerを改善",
-    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。",
-    "project": "render-worker",
-    "type": "機能変更",
-    "tags": [
-      "render-worker",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-3d5dd191b01e"
   },
   {
     "kind": "JOURNAL",
@@ -1753,8 +1725,8 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-30",
     "date": "2026-08-30",
-    "title": "render-workerに機能を追加、ほか4件",
-    "summary": "render-workerで新しい機能を使えるようにしました。 同じ日の開発記録として、『render-workerに機能を追加』、『render-workerを改善』、『render-workerに機能を追加』もまとめています。",
+    "title": "render-workerに機能を追加、ほか2件",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ日の開発記録として、『render-workerを改善』、『render-workerに機能を追加』もまとめています。",
     "project": "render-worker",
     "type": "開発日誌",
     "tags": [

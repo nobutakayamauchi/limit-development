@@ -384,14 +384,12 @@
   },
   {
     "date": "2026-08-30",
-    "title": "render-workerに機能を追加、ほか4件",
-    "summary": "render-workerで新しい機能を使えるようにしました。 同じ日の開発記録として、『render-workerに機能を追加』、『render-workerを改善』、『render-workerに機能を追加』もまとめています。",
+    "title": "render-workerに機能を追加、ほか2件",
+    "summary": "render-workerで新しい機能を使えるようにしました。 同じ日の開発記録として、『render-workerを改善』、『render-workerに機能を追加』もまとめています。",
     "update_ids": [
       "upd-c0f8c674ff33",
-      "upd-304a9d2e4299",
       "upd-db6362134c3d",
-      "upd-81e2cebc85d0",
-      "upd-3d5dd191b01e"
+      "upd-81e2cebc85d0"
     ],
     "projects": [
       "render-worker"
