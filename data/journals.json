@@ -303,7 +303,7 @@
   },
   {
     "date": "2026-09-01",
-    "title": "render-workerを改善、ほか14件",
+    "title": "render-workerを改善、ほか9件",
     "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerを改善』、『render-workerの方針を更新』、『render-workerに機能を追加』もまとめています。",
     "update_ids": [
       "upd-2478f41cc85c",
@@ -315,12 +315,7 @@
       "upd-fb0f720bce5d",
       "upd-0b1ba46bcb03",
       "upd-7dd926b93833",
-      "upd-9cf790fe33a2",
-      "upd-3b4ee773c491",
-      "upd-38a69bc2c81e",
-      "upd-10369d3a251d",
-      "upd-90ce8c4b9f8d",
-      "upd-296a189a9377"
+      "upd-9cf790fe33a2"
     ],
     "projects": [
       "render-worker"

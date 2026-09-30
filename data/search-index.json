@@ -1232,76 +1232,6 @@
     "href": "../updates/#u-upd-9cf790fe33a2"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-3b4ee773c491",
-    "date": "2026-09-01",
-    "title": "render-workerに機能を追加",
-    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "render-worker",
-    "type": "機能追加",
-    "tags": [
-      "render-worker",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-3b4ee773c491"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-38a69bc2c81e",
-    "date": "2026-09-01",
-    "title": "render-workerに機能を追加",
-    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "render-worker",
-    "type": "機能追加",
-    "tags": [
-      "render-worker",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-38a69bc2c81e"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-10369d3a251d",
-    "date": "2026-09-01",
-    "title": "render-workerを改善",
-    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "render-worker",
-    "type": "機能変更",
-    "tags": [
-      "render-worker",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-10369d3a251d"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-90ce8c4b9f8d",
-    "date": "2026-09-01",
-    "title": "render-workerを改善",
-    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "render-worker",
-    "type": "機能変更",
-    "tags": [
-      "render-worker",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-90ce8c4b9f8d"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-296a189a9377",
-    "date": "2026-09-01",
-    "title": "render-workerに機能を追加",
-    "summary": "render-workerで新しい機能を使えるようにしました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "render-worker",
-    "type": "機能追加",
-    "tags": [
-      "render-worker",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-296a189a9377"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-18",
     "date": "2026-09-18",
@@ -1450,7 +1380,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-09-01",
     "date": "2026-09-01",
-    "title": "render-workerを改善、ほか14件",
+    "title": "render-workerを改善、ほか9件",
     "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerを改善』、『render-workerの方針を更新』、『render-workerに機能を追加』もまとめています。",
     "project": "render-worker",
     "type": "開発日誌",
