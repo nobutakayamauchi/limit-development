@@ -303,7 +303,7 @@
   },
   {
     "date": "2026-09-01",
-    "title": "render-workerを改善、ほか15件",
+    "title": "render-workerを改善、ほか14件",
     "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerを改善』、『render-workerの方針を更新』、『render-workerに機能を追加』もまとめています。",
     "update_ids": [
       "upd-2478f41cc85c",
@@ -320,12 +320,10 @@
       "upd-38a69bc2c81e",
       "upd-10369d3a251d",
       "upd-90ce8c4b9f8d",
-      "upd-296a189a9377",
-      "upd-cfb3fd0a6850"
+      "upd-296a189a9377"
     ],
     "projects": [
-      "render-worker",
-      "x-ads-bridge"
+      "render-worker"
     ],
     "types": [
       "方針変更",
@@ -336,36 +334,11 @@
     ],
     "tags": [
       "render-worker",
-      "x-ads-bridge",
       "方針変更",
       "機能削除",
       "機能変更",
       "機能追加",
       "研究・検証"
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "title": "sales-catalogを公開、ほか2件",
-    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『sales-catalogを公開』、『limit-developmentを改善』もまとめています。",
-    "update_ids": [
-      "upd-466e1b899e9d",
-      "upd-1b6a2adf5a44",
-      "upd-655c23a8d3d0"
-    ],
-    "projects": [
-      "limit-development",
-      "sales-catalog"
-    ],
-    "types": [
-      "新製品",
-      "機能変更"
-    ],
-    "tags": [
-      "limit-development",
-      "sales-catalog",
-      "新製品",
-      "機能変更"
     ]
   }
 ]

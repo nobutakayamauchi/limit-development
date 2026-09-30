@@ -1302,62 +1302,6 @@
     "href": "../updates/#u-upd-296a189a9377"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-cfb3fd0a6850",
-    "date": "2026-09-01",
-    "title": "x-ads-bridgeを改善",
-    "summary": "x-ads-bridgeの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "x-ads-bridge",
-    "type": "機能変更",
-    "tags": [
-      "x-ads-bridge",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-cfb3fd0a6850"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-466e1b899e9d",
-    "date": "2026-08-31",
-    "title": "sales-catalogを公開",
-    "summary": "sales-catalogを新しく公開しました。",
-    "project": "sales-catalog",
-    "type": "新製品",
-    "tags": [
-      "sales-catalog",
-      "新製品"
-    ],
-    "href": "../updates/#u-upd-466e1b899e9d"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-1b6a2adf5a44",
-    "date": "2026-08-31",
-    "title": "sales-catalogを公開",
-    "summary": "sales-catalogを新しく公開しました。",
-    "project": "sales-catalog",
-    "type": "新製品",
-    "tags": [
-      "sales-catalog",
-      "新製品"
-    ],
-    "href": "../updates/#u-upd-1b6a2adf5a44"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-655c23a8d3d0",
-    "date": "2026-08-31",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "limit-development",
-    "type": "機能変更",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-655c23a8d3d0"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-18",
     "date": "2026-09-18",
@@ -1506,13 +1450,12 @@
     "kind": "JOURNAL",
     "id": "journal-2026-09-01",
     "date": "2026-09-01",
-    "title": "render-workerを改善、ほか15件",
+    "title": "render-workerを改善、ほか14件",
     "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『render-workerを改善』、『render-workerの方針を更新』、『render-workerに機能を追加』もまとめています。",
-    "project": "render-worker, x-ads-bridge",
+    "project": "render-worker",
     "type": "開発日誌",
     "tags": [
       "render-worker",
-      "x-ads-bridge",
       "方針変更",
       "機能削除",
       "機能変更",
@@ -1520,21 +1463,5 @@
       "研究・検証"
     ],
     "href": "../journal/2026-09-01.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-08-31",
-    "date": "2026-08-31",
-    "title": "sales-catalogを公開、ほか2件",
-    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『sales-catalogを公開』、『limit-developmentを改善』もまとめています。",
-    "project": "limit-development, sales-catalog",
-    "type": "開発日誌",
-    "tags": [
-      "limit-development",
-      "sales-catalog",
-      "新製品",
-      "機能変更"
-    ],
-    "href": "../journal/2026-08-31.html"
   }
 ]
