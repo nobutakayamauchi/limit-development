@@ -1345,118 +1345,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-b34349ba0245",
-    "date": "2026-08-31",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "limit-development",
-    "type": "機能変更",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-b34349ba0245"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-9683d2932a1e",
-    "date": "2026-08-31",
-    "title": "limit-developmentに機能を追加",
-    "summary": "limit-developmentで新しい機能を使えるようにしました。",
-    "project": "limit-development",
-    "type": "機能追加",
-    "tags": [
-      "limit-development",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-9683d2932a1e"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-9b06eb5511a2",
-    "date": "2026-08-31",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
-    "project": "limit-development",
-    "type": "機能変更",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-9b06eb5511a2"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-e8f2e5e17db6",
-    "date": "2026-08-31",
-    "title": "FOUNDRY GROWTH ENGINEを改善",
-    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
-    "project": "FOUNDRY GROWTH ENGINE",
-    "type": "機能変更",
-    "tags": [
-      "FOUNDRY GROWTH ENGINE",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-e8f2e5e17db6"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-0e420302759c",
-    "date": "2026-08-31",
-    "title": "limit-developmentに機能を追加",
-    "summary": "limit-developmentで新しい機能を使えるようにしました。",
-    "project": "limit-development",
-    "type": "機能追加",
-    "tags": [
-      "limit-development",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-0e420302759c"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-e9c32d3fa0ef",
-    "date": "2026-08-31",
-    "title": "sales-catalogに機能を追加",
-    "summary": "sales-catalogで新しい機能を使えるようにしました。",
-    "project": "sales-catalog",
-    "type": "機能追加",
-    "tags": [
-      "sales-catalog",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-e9c32d3fa0ef"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-a86bb1343613",
-    "date": "2026-08-31",
-    "title": "limit-developmentを公開",
-    "summary": "limit-developmentを新しく公開しました。",
-    "project": "limit-development",
-    "type": "新製品",
-    "tags": [
-      "limit-development",
-      "新製品"
-    ],
-    "href": "../updates/#u-upd-a86bb1343613"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-b9484b7e605d",
-    "date": "2026-08-31",
-    "title": "sales-catalogを公開",
-    "summary": "sales-catalogを新しく公開しました。",
-    "project": "sales-catalog",
-    "type": "新製品",
-    "tags": [
-      "sales-catalog",
-      "新製品"
-    ],
-    "href": "../updates/#u-upd-b9484b7e605d"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-655c23a8d3d0",
     "date": "2026-08-31",
     "title": "limit-developmentを改善",
@@ -1468,34 +1356,6 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-655c23a8d3d0"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-4326c5ab4f7c",
-    "date": "2026-08-31",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "limit-development",
-    "type": "機能変更",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-4326c5ab4f7c"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-48b720a0f254",
-    "date": "2026-08-31",
-    "title": "limit-developmentを改善",
-    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。",
-    "project": "limit-development",
-    "type": "機能変更",
-    "tags": [
-      "limit-development",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-48b720a0f254"
   },
   {
     "kind": "JOURNAL",
@@ -1665,17 +1525,15 @@
     "kind": "JOURNAL",
     "id": "journal-2026-08-31",
     "date": "2026-08-31",
-    "title": "sales-catalogを公開、ほか12件",
-    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『sales-catalogを公開』、『limit-developmentを改善』、『limit-developmentに機能を追加』もまとめています。",
-    "project": "FOUNDRY GROWTH ENGINE, limit-development, sales-catalog",
+    "title": "sales-catalogを公開、ほか2件",
+    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『sales-catalogを公開』、『limit-developmentを改善』もまとめています。",
+    "project": "limit-development, sales-catalog",
     "type": "開発日誌",
     "tags": [
-      "FOUNDRY GROWTH ENGINE",
       "limit-development",
       "sales-catalog",
       "新製品",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ],
     "href": "../journal/2026-08-31.html"
   }

@@ -346,40 +346,26 @@
   },
   {
     "date": "2026-08-31",
-    "title": "sales-catalogを公開、ほか12件",
-    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『sales-catalogを公開』、『limit-developmentを改善』、『limit-developmentに機能を追加』もまとめています。",
+    "title": "sales-catalogを公開、ほか2件",
+    "summary": "sales-catalogを新しく公開しました。 同じ日の開発記録として、『sales-catalogを公開』、『limit-developmentを改善』もまとめています。",
     "update_ids": [
       "upd-466e1b899e9d",
       "upd-1b6a2adf5a44",
-      "upd-b34349ba0245",
-      "upd-9683d2932a1e",
-      "upd-9b06eb5511a2",
-      "upd-e8f2e5e17db6",
-      "upd-0e420302759c",
-      "upd-e9c32d3fa0ef",
-      "upd-a86bb1343613",
-      "upd-b9484b7e605d",
-      "upd-655c23a8d3d0",
-      "upd-4326c5ab4f7c",
-      "upd-48b720a0f254"
+      "upd-655c23a8d3d0"
     ],
     "projects": [
-      "FOUNDRY GROWTH ENGINE",
       "limit-development",
       "sales-catalog"
     ],
     "types": [
       "新製品",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ],
     "tags": [
-      "FOUNDRY GROWTH ENGINE",
       "limit-development",
       "sales-catalog",
       "新製品",
-      "機能変更",
-      "機能追加"
+      "機能変更"
     ]
   }
 ]
