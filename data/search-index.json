@@ -1051,34 +1051,6 @@
   },
   {
     "kind": "UPDATE",
-    "id": "upd-e59f4b6320ab",
-    "date": "2026-09-02",
-    "title": "RTS-Design-Researchに機能を追加",
-    "summary": "RTS-Design-Researchで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
-    "project": "RTS-Design-Research",
-    "type": "機能追加",
-    "tags": [
-      "RTS-Design-Research",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-e59f4b6320ab"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-0a3af255ada3",
-    "date": "2026-09-02",
-    "title": "RTS-Design-Researchを改善",
-    "summary": "RTS-Design-Researchの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "RTS-Design-Research",
-    "type": "機能変更",
-    "tags": [
-      "RTS-Design-Research",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-0a3af255ada3"
-  },
-  {
-    "kind": "UPDATE",
     "id": "upd-e75edc5a6c36",
     "date": "2026-09-02",
     "title": "limit-developmentを改善",
@@ -1222,12 +1194,11 @@
     "kind": "JOURNAL",
     "id": "journal-2026-09-02",
     "date": "2026-09-02",
-    "title": "sales-catalogに機能を追加、ほか5件",
-    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ日の開発記録として、『sales-catalogを改善』、『sales-catalogの方針を更新』、『RTS-Design-Researchに機能を追加』もまとめています。",
-    "project": "RTS-Design-Research, limit-development, sales-catalog",
+    "title": "sales-catalogに機能を追加、ほか3件",
+    "summary": "sales-catalogで新しい機能を使えるようにしました。 同じ日の開発記録として、『sales-catalogを改善』、『sales-catalogの方針を更新』、『limit-developmentを改善』もまとめています。",
+    "project": "limit-development, sales-catalog",
     "type": "開発日誌",
     "tags": [
-      "RTS-Design-Research",
       "limit-development",
       "sales-catalog",
       "方針変更",
