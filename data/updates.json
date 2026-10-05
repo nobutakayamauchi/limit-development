@@ -848,39 +848,5 @@
     "article_score": 0.278,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-ae548f089ad1",
-    "source_id": "nobutakayamauchi/TRACE@de64d193b9ee425b7448183e897f19fc5e2703f1",
-    "captured_at": "2026-09-05T19:20:39+09:00",
-    "type": "機能追加",
-    "project": "TRACE",
-    "title": "TRACEに機能を追加",
-    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。",
-    "tags": [
-      "TRACE",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/TRACE/commit/de64d193b9ee425b7448183e897f19fc5e2703f1",
-    "article_score": 0.283,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-f17287b7e649",
-    "source_id": "nobutakayamauchi/RTS-Evolution@6d07257339ddea61664507b15b84c0aa04c6d7b7",
-    "captured_at": "2026-09-05T17:54:39+09:00",
-    "type": "機能追加",
-    "project": "RTS-Evolution",
-    "title": "RTS-Evolutionに機能を追加",
-    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。",
-    "tags": [
-      "RTS-Evolution",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-Evolution/commit/6d07257339ddea61664507b15b84c0aa04c6d7b7",
-    "article_score": 0.366,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]

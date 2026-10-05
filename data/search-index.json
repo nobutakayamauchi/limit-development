@@ -700,34 +700,6 @@
     "href": "../updates/#u-upd-6b1a6b1abd1d"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-ae548f089ad1",
-    "date": "2026-09-05",
-    "title": "TRACEに機能を追加",
-    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。",
-    "project": "TRACE",
-    "type": "機能追加",
-    "tags": [
-      "TRACE",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-ae548f089ad1"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-f17287b7e649",
-    "date": "2026-09-05",
-    "title": "RTS-Evolutionに機能を追加",
-    "summary": "RTS-Evolutionで新しい機能を使えるようにしました。",
-    "project": "RTS-Evolution",
-    "type": "機能追加",
-    "tags": [
-      "RTS-Evolution",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-f17287b7e649"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-09-18",
     "date": "2026-09-18",
@@ -818,20 +790,5 @@
       "研究・検証"
     ],
     "href": "../journal/2026-09-06.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-09-05",
-    "date": "2026-09-05",
-    "title": "TRACEに機能を追加、ほか1件",
-    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。 同じ日の開発記録として、『RTS-Evolutionに機能を追加』もまとめています。",
-    "project": "RTS-Evolution, TRACE",
-    "type": "開発日誌",
-    "tags": [
-      "RTS-Evolution",
-      "TRACE",
-      "機能追加"
-    ],
-    "href": "../journal/2026-09-05.html"
   }
 ]

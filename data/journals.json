@@ -188,26 +188,5 @@
       "機能追加",
       "研究・検証"
     ]
-  },
-  {
-    "date": "2026-09-05",
-    "title": "TRACEに機能を追加、ほか1件",
-    "summary": "TRACEに機能を追加しました。 壊れた時に推測で直すのではなく、足跡から状況をたどるために使います。 同じ日の開発記録として、『RTS-Evolutionに機能を追加』もまとめています。",
-    "update_ids": [
-      "upd-ae548f089ad1",
-      "upd-f17287b7e649"
-    ],
-    "projects": [
-      "RTS-Evolution",
-      "TRACE"
-    ],
-    "types": [
-      "機能追加"
-    ],
-    "tags": [
-      "RTS-Evolution",
-      "TRACE",
-      "機能追加"
-    ]
   }
 ]
