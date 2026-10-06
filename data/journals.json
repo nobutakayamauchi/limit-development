@@ -156,26 +156,19 @@
   },
   {
     "date": "2026-09-06",
-    "title": "vector-cannonを検証、ほか9件",
+    "title": "vector-cannonを検証、ほか3件",
     "summary": "vector-cannonが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonに機能を追加』、『vector-cannonを改善』、『vector-cannonの方針を更新』もまとめています。",
     "update_ids": [
       "upd-20062e0c45a9",
       "upd-0fae633ca201",
       "upd-644620056799",
-      "upd-9b1c3c51c07a",
-      "upd-fd390a1cf73a",
-      "upd-bc74131d75af",
-      "upd-d4a9a18efbd2",
-      "upd-044e9b3f244b",
-      "upd-2a70c64527df",
-      "upd-6b1a6b1abd1d"
+      "upd-9b1c3c51c07a"
     ],
     "projects": [
       "vector-cannon"
     ],
     "types": [
       "方針変更",
-      "機能削除",
       "機能変更",
       "機能追加",
       "研究・検証"
@@ -183,7 +176,6 @@
     "tags": [
       "vector-cannon",
       "方針変更",
-      "機能削除",
       "機能変更",
       "機能追加",
       "研究・検証"
