@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-10-11",
+    "title": "vector-cannonを改善、ほか3件",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更12件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonの機能を整理』、『vector-cannonの方針を更新』、『vector-cannonに機能を追加』もまとめています。",
+    "update_ids": [
+      "upd-e8f2f54550f8",
+      "upd-870b5196576b",
+      "upd-2b78c6b884ed",
+      "upd-aa99ef76f273"
+    ],
+    "projects": [
+      "vector-cannon"
+    ],
+    "types": [
+      "方針変更",
+      "機能削除",
+      "機能変更",
+      "機能追加"
+    ],
+    "tags": [
+      "vector-cannon",
+      "方針変更",
+      "機能削除",
+      "機能変更",
+      "機能追加"
+    ]
+  },
+  {
     "date": "2026-10-10",
     "title": "vector-cannonを改善、ほか1件",
     "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonに機能を追加』もまとめています。",

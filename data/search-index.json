@@ -1,6 +1,62 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-e8f2f54550f8",
+    "date": "2026-10-11",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更12件も、この更新にまとめています。",
+    "project": "vector-cannon",
+    "type": "機能変更",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-e8f2f54550f8"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-870b5196576b",
+    "date": "2026-10-11",
+    "title": "vector-cannonの機能を整理",
+    "summary": "vector-cannonで不要になった機能を削除しました。",
+    "project": "vector-cannon",
+    "type": "機能削除",
+    "tags": [
+      "vector-cannon",
+      "機能削除"
+    ],
+    "href": "../updates/#u-upd-870b5196576b"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-2b78c6b884ed",
+    "date": "2026-10-11",
+    "title": "vector-cannonの方針を更新",
+    "summary": "vector-cannonの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "vector-cannon",
+    "type": "方針変更",
+    "tags": [
+      "vector-cannon",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-2b78c6b884ed"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-aa99ef76f273",
+    "date": "2026-10-11",
+    "title": "vector-cannonに機能を追加",
+    "summary": "vector-cannonで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "vector-cannon",
+    "type": "機能追加",
+    "tags": [
+      "vector-cannon",
+      "機能追加"
+    ],
+    "href": "../updates/#u-upd-aa99ef76f273"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-dc43250fe1ce",
     "date": "2026-10-10",
     "title": "vector-cannonを改善",
@@ -180,6 +236,23 @@
       "機能追加"
     ],
     "href": "../updates/#u-upd-c910bb0a625d"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-10-11",
+    "date": "2026-10-11",
+    "title": "vector-cannonを改善、ほか3件",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更12件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonの機能を整理』、『vector-cannonの方針を更新』、『vector-cannonに機能を追加』もまとめています。",
+    "project": "vector-cannon",
+    "type": "開発日誌",
+    "tags": [
+      "vector-cannon",
+      "方針変更",
+      "機能削除",
+      "機能変更",
+      "機能追加"
+    ],
+    "href": "../journal/2026-10-11.html"
   },
   {
     "kind": "JOURNAL",

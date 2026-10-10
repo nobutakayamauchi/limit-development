@@ -6,8 +6,8 @@
   "journal_generator": "journal-generator-v0.4-reader",
   "daily_intent_input": "daily-intents.limit-development.jsonl",
   "approved_daily_intents": 1,
-  "expanded_journal_pages": 3,
-  "checked_at": "2026-10-10T22:44+09:00",
+  "expanded_journal_pages": 4,
+  "checked_at": "2026-10-11T03:37+09:00",
   "repositories": [
     ".",
     "/tmp/fge-sources/Audience-Miner",
@@ -41,8 +41,8 @@
     "/tmp/fge-sources/x-ads-bridge"
   ],
   "git_only": true,
-  "evidence_count": 46,
-  "public_update_count": 13,
+  "evidence_count": 66,
+  "public_update_count": 17,
   "article_candidates": 0,
-  "journal_days": 3
+  "journal_days": 4
 }

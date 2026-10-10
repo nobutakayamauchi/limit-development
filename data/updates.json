@@ -1,5 +1,73 @@
 [
   {
+    "id": "upd-e8f2f54550f8",
+    "source_id": "nobutakayamauchi/vector-cannon@29a551b7228959e4d1b0da3e3dba2f78d2e11aa4",
+    "captured_at": "2026-10-11T00:53:32+09:00",
+    "type": "機能変更",
+    "project": "vector-cannon",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更12件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/29a551b7228959e4d1b0da3e3dba2f78d2e11aa4,https://github.com/nobutakayamauchi/vector-cannon/commit/00fc0bbbf04cbaccfe49b898d06d607bbaece0a8,https://github.com/nobutakayamauchi/vector-cannon/commit/b31bad7650e1785291e5a674bab10799a0dd4483,https://github.com/nobutakayamauchi/vector-cannon/commit/32da1282ae9712e072777b33d643220ab6d29bf5,https://github.com/nobutakayamauchi/vector-cannon/commit/7dc238231ede7111c47b2098ed7032c6f8caa34a,https://github.com/nobutakayamauchi/vector-cannon/commit/441067f1bd8c2f191a3bd0b80b2a06940c4cce35,https://github.com/nobutakayamauchi/vector-cannon/commit/7a12a009041065aaa3235bc8723142beb3b7f091,https://github.com/nobutakayamauchi/vector-cannon/commit/46b264038eeb763f094759ce2935da6dbcdac7e8,https://github.com/nobutakayamauchi/vector-cannon/commit/bbde41838eb8ce848b1b06ff50de7f4253eaf953,https://github.com/nobutakayamauchi/vector-cannon/commit/b250f3a2e448e99e4aa49182aa915d7e69667bfa,https://github.com/nobutakayamauchi/vector-cannon/commit/9c813240db208198c47e2097f26d02e301dd322b,https://github.com/nobutakayamauchi/vector-cannon/commit/93172895b8277c26a2cc9315492162644d47d2a1,https://github.com/nobutakayamauchi/vector-cannon/commit/fbed991bb2d8879db99661f1cd84d6dbc30bf00f",
+    "article_score": 0.339,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-870b5196576b",
+    "source_id": "nobutakayamauchi/vector-cannon@1ec78d8eecd4377541864cd0b8a8cad1dbeae8b7",
+    "captured_at": "2026-10-11T00:49:04+09:00",
+    "type": "機能削除",
+    "project": "vector-cannon",
+    "title": "vector-cannonの機能を整理",
+    "summary": "vector-cannonで不要になった機能を削除しました。",
+    "tags": [
+      "vector-cannon",
+      "機能削除"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/1ec78d8eecd4377541864cd0b8a8cad1dbeae8b7",
+    "article_score": 0.229,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-2b78c6b884ed",
+    "source_id": "nobutakayamauchi/vector-cannon@8d9b98788a9ffb0290dd2b24afa8d53e7c889df4",
+    "captured_at": "2026-10-11T00:46:40+09:00",
+    "type": "方針変更",
+    "project": "vector-cannon",
+    "title": "vector-cannonの方針を更新",
+    "summary": "vector-cannonの説明や運用方針を更新しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/8d9b98788a9ffb0290dd2b24afa8d53e7c889df4,https://github.com/nobutakayamauchi/vector-cannon/commit/36a154238c5fd12ca5827c8152b0e04244194d17",
+    "article_score": 0.314,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-aa99ef76f273",
+    "source_id": "nobutakayamauchi/vector-cannon@cba27e8e0b5654b9a353582146e94498085c1cc3",
+    "captured_at": "2026-10-11T00:44:37+09:00",
+    "type": "機能追加",
+    "project": "vector-cannon",
+    "title": "vector-cannonに機能を追加",
+    "summary": "vector-cannonで新しい機能を使えるようにしました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "機能追加"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/9d50a7882c4d6e2b425237b6858d665aa218f00f,https://github.com/nobutakayamauchi/vector-cannon/commit/cba27e8e0b5654b9a353582146e94498085c1cc3,https://github.com/nobutakayamauchi/vector-cannon/commit/db7f777f2f03094c28ad7c4567b1df0071f06d28,https://github.com/nobutakayamauchi/vector-cannon/commit/18c47247be5647a0c8db3a0419e946a300c37625",
+    "article_score": 0.349,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-dc43250fe1ce",
     "source_id": "nobutakayamauchi/vector-cannon@67143e207e2961e88af4f4b87846ef78c86d3e45",
     "captured_at": "2026-10-10T21:54:56+09:00",
