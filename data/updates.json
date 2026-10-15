@@ -236,56 +236,5 @@
     "article_score": 0.341,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-69e2205c3615",
-    "source_id": "nobutakayamauchi/vector-cannon@6416ab15a2a94ed9930a875eec0b899b633b186a",
-    "captured_at": "2026-09-15T10:55:37+09:00",
-    "type": "機能変更",
-    "project": "vector-cannon",
-    "title": "vector-cannonを改善",
-    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "vector-cannon",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/6416ab15a2a94ed9930a875eec0b899b633b186a,https://github.com/nobutakayamauchi/vector-cannon/commit/d9e5f3c0b74ec02a777a79b63bb8903c845c9879",
-    "article_score": 0.174,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-9135bab8d17e",
-    "source_id": "nobutakayamauchi/vector-cannon@0a569c8b3a89f3886969da0d54039a52247d20f0",
-    "captured_at": "2026-09-15T10:54:20+09:00",
-    "type": "研究・検証",
-    "project": "vector-cannon",
-    "title": "vector-cannonを検証",
-    "summary": "vector-cannonが実際の利用条件で成立するか検証しました。",
-    "tags": [
-      "vector-cannon",
-      "研究・検証"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/0a569c8b3a89f3886969da0d54039a52247d20f0",
-    "article_score": 0.228,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-c910bb0a625d",
-    "source_id": "nobutakayamauchi/vector-cannon@12aaebfa95edd8af83fe2cfb3d19b5f749f9fc2a",
-    "captured_at": "2026-09-15T10:54:07+09:00",
-    "type": "機能追加",
-    "project": "vector-cannon",
-    "title": "vector-cannonに機能を追加",
-    "summary": "vector-cannonで新しい機能を使えるようにしました。",
-    "tags": [
-      "vector-cannon",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/12aaebfa95edd8af83fe2cfb3d19b5f749f9fc2a",
-    "article_score": 0.273,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]

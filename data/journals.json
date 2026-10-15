@@ -75,29 +75,5 @@
       "機能追加",
       "研究・検証"
     ]
-  },
-  {
-    "date": "2026-09-15",
-    "title": "vector-cannonを改善、ほか2件",
-    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonを検証』、『vector-cannonに機能を追加』もまとめています。",
-    "update_ids": [
-      "upd-69e2205c3615",
-      "upd-9135bab8d17e",
-      "upd-c910bb0a625d"
-    ],
-    "projects": [
-      "vector-cannon"
-    ],
-    "types": [
-      "機能変更",
-      "機能追加",
-      "研究・検証"
-    ],
-    "tags": [
-      "vector-cannon",
-      "機能変更",
-      "機能追加",
-      "研究・検証"
-    ]
   }
 ]
