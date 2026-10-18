@@ -185,56 +185,5 @@
     "article_score": 0.347,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-65e66690dae2",
-    "source_id": "nobutakayamauchi/vector-cannon@79a10ff6a77169850660230c11bb951e261ecb92",
-    "captured_at": "2026-09-18T19:21:01+09:00",
-    "type": "機能追加",
-    "project": "vector-cannon",
-    "title": "vector-cannonに機能を追加",
-    "summary": "vector-cannonで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "tags": [
-      "vector-cannon",
-      "機能追加"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/79a10ff6a77169850660230c11bb951e261ecb92,https://github.com/nobutakayamauchi/vector-cannon/commit/d71509eb27bfda38ff09ee9cb681157c4d7af30f",
-    "article_score": 0.371,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-fbd6d32f3e21",
-    "source_id": "nobutakayamauchi/vector-cannon@4f5442b9a63677292c4ad39f7e17336a9dc15552",
-    "captured_at": "2026-09-18T19:20:23+09:00",
-    "type": "機能変更",
-    "project": "vector-cannon",
-    "title": "vector-cannonを改善",
-    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "vector-cannon",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/4f5442b9a63677292c4ad39f7e17336a9dc15552",
-    "article_score": 0.176,
-    "article_candidate": false,
-    "review_status": "pending"
-  },
-  {
-    "id": "upd-edef9778f66f",
-    "source_id": "nobutakayamauchi/vector-cannon@2652efd7bd329d8ce526d508960337b563c83059",
-    "captured_at": "2026-09-18T18:10:28+09:00",
-    "type": "機能変更",
-    "project": "vector-cannon",
-    "title": "vector-cannonを改善",
-    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
-    "tags": [
-      "vector-cannon",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/e588f9ac0bbadfa1cfd8faabf677b0cee5863ddc,https://github.com/nobutakayamauchi/vector-cannon/commit/f1fae749d1dc3d283d8ed92e6fd5744392d4de92,https://github.com/nobutakayamauchi/vector-cannon/commit/ab528b54d9ed6fe0027bce98767ba5ab481bf9a4,https://github.com/nobutakayamauchi/vector-cannon/commit/93a97a84753cdda5fc7851032737af13345a3a4b,https://github.com/nobutakayamauchi/vector-cannon/commit/d02c2ae00512da503f6035c7cc895da80e3399c8,https://github.com/nobutakayamauchi/vector-cannon/commit/2652efd7bd329d8ce526d508960337b563c83059,https://github.com/nobutakayamauchi/vector-cannon/commit/ddebd8332d8ce8cb2375726697aac4b518c2481b,https://github.com/nobutakayamauchi/vector-cannon/commit/614ce368d757660752aa4dca165c8c7c6e25f670,https://github.com/nobutakayamauchi/vector-cannon/commit/ae68b681002f964237edd4d3659d16f8120a8253",
-    "article_score": 0.341,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]

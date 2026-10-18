@@ -154,48 +154,6 @@
     "href": "../updates/#u-upd-0eb2d0f62dc5"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-65e66690dae2",
-    "date": "2026-09-18",
-    "title": "vector-cannonに機能を追加",
-    "summary": "vector-cannonで新しい機能を使えるようにしました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
-    "project": "vector-cannon",
-    "type": "機能追加",
-    "tags": [
-      "vector-cannon",
-      "機能追加"
-    ],
-    "href": "../updates/#u-upd-65e66690dae2"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-fbd6d32f3e21",
-    "date": "2026-09-18",
-    "title": "vector-cannonを改善",
-    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。",
-    "project": "vector-cannon",
-    "type": "機能変更",
-    "tags": [
-      "vector-cannon",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-fbd6d32f3e21"
-  },
-  {
-    "kind": "UPDATE",
-    "id": "upd-edef9778f66f",
-    "date": "2026-09-18",
-    "title": "vector-cannonを改善",
-    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更8件も、この更新にまとめています。",
-    "project": "vector-cannon",
-    "type": "機能変更",
-    "tags": [
-      "vector-cannon",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-edef9778f66f"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-10-11",
     "date": "2026-10-11",
@@ -231,7 +189,7 @@
     "kind": "JOURNAL",
     "id": "journal-2026-09-18",
     "date": "2026-09-18",
-    "title": "vector-cannonを改善、ほか7件",
+    "title": "vector-cannonを改善、ほか4件",
     "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更10件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonに機能を追加』、『vector-cannonを改善』、『vector-cannonを検証』もまとめています。",
     "project": "vector-cannon",
     "type": "開発日誌",
