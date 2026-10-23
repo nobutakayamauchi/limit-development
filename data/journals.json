@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-10-23",
+    "title": "RTS-AGEを改善",
+    "summary": "RTS-AGEの使い勝手や安定性に関わる変更を行いました。",
+    "update_ids": [
+      "upd-77c58cdce5a4"
+    ],
+    "projects": [
+      "RTS-AGE"
+    ],
+    "types": [
+      "機能変更"
+    ],
+    "tags": [
+      "RTS-AGE",
+      "機能変更"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "title": "RTS-AGEを改善",
+    "summary": "RTS-AGEの使い勝手や安定性に関わる変更を行いました。",
+    "update_ids": [
+      "upd-ac9ff7370be8"
+    ],
+    "projects": [
+      "RTS-AGE"
+    ],
+    "types": [
+      "機能変更"
+    ],
+    "tags": [
+      "RTS-AGE",
+      "機能変更"
+    ]
+  },
+  {
     "date": "2026-10-11",
     "title": "vector-cannonを改善、ほか3件",
     "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更12件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonの機能を整理』、『vector-cannonの方針を更新』、『vector-cannonに機能を追加』もまとめています。",
