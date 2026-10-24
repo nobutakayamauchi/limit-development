@@ -1,6 +1,34 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-a7251aab93f9",
+    "date": "2026-10-24",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "project": "vector-cannon",
+    "type": "機能変更",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-a7251aab93f9"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-006f3a2c0a13",
+    "date": "2026-10-24",
+    "title": "vector-cannonを検証",
+    "summary": "vector-cannonが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "project": "vector-cannon",
+    "type": "研究・検証",
+    "tags": [
+      "vector-cannon",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-006f3a2c0a13"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-77c58cdce5a4",
     "date": "2026-10-23",
     "title": "RTS-AGEを改善",
@@ -26,6 +54,62 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-ac9ff7370be8"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-cc6ac701fff1",
+    "date": "2026-10-19",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。",
+    "project": "vector-cannon",
+    "type": "機能変更",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-cc6ac701fff1"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-f10bed377cfb",
+    "date": "2026-10-19",
+    "title": "vector-cannonを検証",
+    "summary": "vector-cannonが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "vector-cannon",
+    "type": "研究・検証",
+    "tags": [
+      "vector-cannon",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-f10bed377cfb"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-12b35b044940",
+    "date": "2026-10-19",
+    "title": "vector-cannonを検証",
+    "summary": "vector-cannonが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "vector-cannon",
+    "type": "研究・検証",
+    "tags": [
+      "vector-cannon",
+      "研究・検証"
+    ],
+    "href": "../updates/#u-upd-12b35b044940"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-682bbd05acd3",
+    "date": "2026-10-19",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。",
+    "project": "vector-cannon",
+    "type": "機能変更",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-682bbd05acd3"
   },
   {
     "kind": "UPDATE",
@@ -113,6 +197,21 @@
   },
   {
     "kind": "JOURNAL",
+    "id": "journal-2026-10-24",
+    "date": "2026-10-24",
+    "title": "vector-cannonを改善、ほか1件",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonを検証』もまとめています。",
+    "project": "vector-cannon",
+    "type": "開発日誌",
+    "tags": [
+      "vector-cannon",
+      "機能変更",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-10-24.html"
+  },
+  {
+    "kind": "JOURNAL",
     "id": "journal-2026-10-23",
     "date": "2026-10-23",
     "title": "RTS-AGEを改善",
@@ -138,6 +237,21 @@
       "機能変更"
     ],
     "href": "../journal/2026-10-22.html"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-10-19",
+    "date": "2026-10-19",
+    "title": "vector-cannonを改善、ほか3件",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ日の開発記録として、『vector-cannonを検証』、『vector-cannonを検証』、『vector-cannonを改善』もまとめています。",
+    "project": "vector-cannon",
+    "type": "開発日誌",
+    "tags": [
+      "vector-cannon",
+      "機能変更",
+      "研究・検証"
+    ],
+    "href": "../journal/2026-10-19.html"
   },
   {
     "kind": "JOURNAL",

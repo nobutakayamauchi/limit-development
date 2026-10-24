@@ -1,5 +1,39 @@
 [
   {
+    "id": "upd-a7251aab93f9",
+    "source_id": "nobutakayamauchi/vector-cannon@b01c08162d5fd88775fc9adb718a0b1677dcf7f6",
+    "captured_at": "2026-10-24T11:32:50+09:00",
+    "type": "機能変更",
+    "project": "vector-cannon",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/b01c08162d5fd88775fc9adb718a0b1677dcf7f6,https://github.com/nobutakayamauchi/vector-cannon/commit/45749682e9b89e98b608f3334abdc4565d26c1fa,https://github.com/nobutakayamauchi/vector-cannon/commit/6dd94627b94bb7b2676c1b7d9c4c5e9ba0fdcb28,https://github.com/nobutakayamauchi/vector-cannon/commit/c73e5281fd442313784a6c3333a306089f052404",
+    "article_score": 0.41,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-006f3a2c0a13",
+    "source_id": "nobutakayamauchi/vector-cannon@bc6f849fb2284bf3344bca028ec3798a22cb4088",
+    "captured_at": "2026-10-24T11:26:35+09:00",
+    "type": "研究・検証",
+    "project": "vector-cannon",
+    "title": "vector-cannonを検証",
+    "summary": "vector-cannonが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更2件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/207df8ded39f67c2398f6feef1ff059d699cca14,https://github.com/nobutakayamauchi/vector-cannon/commit/26d3fbeabcdd7ea310f83ce7fcf68449d0f0842e,https://github.com/nobutakayamauchi/vector-cannon/commit/bc6f849fb2284bf3344bca028ec3798a22cb4088",
+    "article_score": 0.305,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-77c58cdce5a4",
     "source_id": "nobutakayamauchi/RTS-AGE@c6ffe689f2f1b45ee1a120b4c3d4b642485fc17d",
     "captured_at": "2026-10-23T19:45:35+09:00",
@@ -30,6 +64,74 @@
     ],
     "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-AGE/commit/33d72b2beece29ba32eea698f7503db7d079e463",
     "article_score": 0.25,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-cc6ac701fff1",
+    "source_id": "nobutakayamauchi/vector-cannon@080c9c543b52999e603843cf386babed68486c45",
+    "captured_at": "2026-10-19T03:15:57+09:00",
+    "type": "機能変更",
+    "project": "vector-cannon",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/080c9c543b52999e603843cf386babed68486c45",
+    "article_score": 0.252,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-f10bed377cfb",
+    "source_id": "nobutakayamauchi/vector-cannon@128030f7313ea8ed3f5c3391a4cbecaddad3cd91",
+    "captured_at": "2026-10-19T03:06:31+09:00",
+    "type": "研究・検証",
+    "project": "vector-cannon",
+    "title": "vector-cannonを検証",
+    "summary": "vector-cannonが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/3e23fbcf20865401d613face99df862e08e7c1c5,https://github.com/nobutakayamauchi/vector-cannon/commit/128030f7313ea8ed3f5c3391a4cbecaddad3cd91",
+    "article_score": 0.301,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-12b35b044940",
+    "source_id": "nobutakayamauchi/vector-cannon@0bac474874228fd8cef945681ed2c4e6ba973f8c",
+    "captured_at": "2026-10-19T01:40:57+09:00",
+    "type": "研究・検証",
+    "project": "vector-cannon",
+    "title": "vector-cannonを検証",
+    "summary": "vector-cannonが実際の利用条件で成立するか検証しました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "vector-cannon",
+      "研究・検証"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/0bac474874228fd8cef945681ed2c4e6ba973f8c,https://github.com/nobutakayamauchi/vector-cannon/commit/71c6f9ff5be8230d856a97a4833817c24a43a39b",
+    "article_score": 0.303,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-682bbd05acd3",
+    "source_id": "nobutakayamauchi/vector-cannon@7774b0de3d844cb16950e524fe33ed0a61298782",
+    "captured_at": "2026-10-19T01:38:05+09:00",
+    "type": "機能変更",
+    "project": "vector-cannon",
+    "title": "vector-cannonを改善",
+    "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "vector-cannon",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/vector-cannon/commit/7774b0de3d844cb16950e524fe33ed0a61298782",
+    "article_score": 0.251,
     "article_candidate": false,
     "review_status": "pending"
   },
