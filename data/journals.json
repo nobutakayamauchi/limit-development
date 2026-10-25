@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-10-25",
+    "title": "render-workerを改善、ほか1件",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『rts-video-flowを改善』もまとめています。",
+    "update_ids": [
+      "upd-b347713f7903",
+      "upd-53aaacf689bc"
+    ],
+    "projects": [
+      "render-worker",
+      "rts-video-flow"
+    ],
+    "types": [
+      "機能変更"
+    ],
+    "tags": [
+      "render-worker",
+      "rts-video-flow",
+      "機能変更"
+    ]
+  },
+  {
     "date": "2026-10-24",
     "title": "vector-cannonを改善、ほか1件",
     "summary": "vector-cannonの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更3件も、この更新にまとめています。 同じ日の開発記録として、『vector-cannonを検証』もまとめています。",

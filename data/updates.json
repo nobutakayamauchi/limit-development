@@ -1,5 +1,39 @@
 [
   {
+    "id": "upd-b347713f7903",
+    "source_id": "nobutakayamauchi/render-worker@8bc68fa4a064b8b93d434244bf0d012673ad2ca0",
+    "captured_at": "2026-10-25T10:53:18+09:00",
+    "type": "機能変更",
+    "project": "render-worker",
+    "title": "render-workerを改善",
+    "summary": "render-workerの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "render-worker",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/render-worker/commit/8bc68fa4a064b8b93d434244bf0d012673ad2ca0,https://github.com/nobutakayamauchi/render-worker/commit/349d2775777e25fbb8521a12f8e565a98a362eb8",
+    "article_score": 0.347,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-53aaacf689bc",
+    "source_id": "nobutakayamauchi/rts-video-flow@eb682654c55759374d4b81dc2e49ef07bbcda3ac",
+    "captured_at": "2026-10-25T10:53:15+09:00",
+    "type": "機能変更",
+    "project": "rts-video-flow",
+    "title": "rts-video-flowを改善",
+    "summary": "rts-video-flowの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "rts-video-flow",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts-video-flow/commit/eb682654c55759374d4b81dc2e49ef07bbcda3ac,https://github.com/nobutakayamauchi/rts-video-flow/commit/3edd4ab3d0349074fb85913440b71961529dd79f",
+    "article_score": 0.347,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-a7251aab93f9",
     "source_id": "nobutakayamauchi/vector-cannon@b01c08162d5fd88775fc9adb718a0b1677dcf7f6",
     "captured_at": "2026-10-24T11:32:50+09:00",
