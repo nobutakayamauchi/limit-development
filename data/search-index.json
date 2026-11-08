@@ -1,6 +1,20 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-b477f76bc5d2",
+    "date": "2026-11-08",
+    "title": "Ultimate-Loopの方針を更新",
+    "summary": "Ultimate-Loopの説明や運用方針を更新しました。",
+    "project": "Ultimate-Loop",
+    "type": "方針変更",
+    "tags": [
+      "Ultimate-Loop",
+      "方針変更"
+    ],
+    "href": "../updates/#u-upd-b477f76bc5d2"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-b347713f7903",
     "date": "2026-10-25",
     "title": "render-workerを改善",
@@ -222,6 +236,20 @@
       "機能追加"
     ],
     "href": "../updates/#u-upd-d8803b8b9ede"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-11-08",
+    "date": "2026-11-08",
+    "title": "Ultimate-Loopの方針を更新",
+    "summary": "Ultimate-Loopの説明や運用方針を更新しました。",
+    "project": "Ultimate-Loop",
+    "type": "開発日誌",
+    "tags": [
+      "Ultimate-Loop",
+      "方針変更"
+    ],
+    "href": "../journal/2026-11-08.html"
   },
   {
     "kind": "JOURNAL",

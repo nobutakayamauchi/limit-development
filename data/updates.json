@@ -1,5 +1,22 @@
 [
   {
+    "id": "upd-b477f76bc5d2",
+    "source_id": "nobutakayamauchi/Ultimate-Loop@7fcd67fda256ad0244d1a60ddfef06ac37f06699",
+    "captured_at": "2026-11-08T09:59:28+09:00",
+    "type": "方針変更",
+    "project": "Ultimate-Loop",
+    "title": "Ultimate-Loopの方針を更新",
+    "summary": "Ultimate-Loopの説明や運用方針を更新しました。",
+    "tags": [
+      "Ultimate-Loop",
+      "方針変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/Ultimate-Loop/commit/7fcd67fda256ad0244d1a60ddfef06ac37f06699",
+    "article_score": 0.317,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-b347713f7903",
     "source_id": "nobutakayamauchi/render-worker@8bc68fa4a064b8b93d434244bf0d012673ad2ca0",
     "captured_at": "2026-10-25T10:53:18+09:00",
