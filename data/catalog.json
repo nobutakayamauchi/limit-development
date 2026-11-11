@@ -8,7 +8,7 @@
       "production",
       "product"
     ],
-    "killer": "請求・入金管理の導入相談。ワークブック・照合CLIの試作は開発PRにあり、提供版と対応サービスは個別確認",
+    "killer": "請求した後まで、終わらせます。",
     "desc": "請求・入金管理の導入相談。ワークブック・照合CLIの試作は開発PRにあり、提供版と対応サービスは個別確認",
     "definition": "請求・入金管理の導入相談。ワークブック・照合CLIの試作は開発PRにあり、提供版と対応サービスは個別確認",
     "url": "https://nobutakayamauchi.github.io/sales-catalog/products/invoice-payment-ops/",
@@ -67,7 +67,7 @@
     ],
     "killer": "困っている一点を、実装仕様書と見積書に。",
     "desc": "困っている一点を整理し、最も効く解決策を実装可能な仕様書と見積書にする設計サービス",
-    "definition": "困っている一点を整理し、最も効く解決策を実装可能な仕様書と見積書にする設計サービス",
+    "definition": "困っている一点を実装可能な仕様書と見積書へ落とす設計サービスです。",
     "url": "https://nobutakayamauchi.github.io/sales-catalog/products/axis/",
     "salesUrl": "https://nobutakayamauchi.github.io/sales-catalog/products/axis/sales.html",
     "repo": "nobutakayamauchi/limit-development",
