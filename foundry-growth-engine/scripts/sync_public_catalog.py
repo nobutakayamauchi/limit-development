@@ -96,7 +96,7 @@ def main():
 
     if args.sales_products:
         for product in read_json(Path(args.sales_products), []):
-            if not isinstance(product, dict) or product.get("status") != "for_sale" or not product.get("id"):
+            if not isinstance(product, dict) or product.get("status") not in {"for_sale", "consultation_required", "consultation_only"} or not product.get("id"):
                 continue
             items_by_id[product["id"]] = sales_item(product, editorial)
 
@@ -119,3 +119,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
