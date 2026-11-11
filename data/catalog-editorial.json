@@ -21,7 +21,7 @@
   "overrides": {
     "invoice-payment-ops": {
       "priority": 10,
-      "killer": "請求した後まで、終わらせます。"
+      "killer": "請求・入金管理の導入相談。"
     },
     "webai-bridge": {"priority": 20},
     "bridgepatch": {"priority": 30},
