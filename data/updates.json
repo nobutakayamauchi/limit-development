@@ -1,5 +1,107 @@
 [
   {
+    "id": "upd-b83fcfafa5ed",
+    "source_id": "nobutakayamauchi/limit-development@9787934316616fe77b29fe5ea71893cb3fff4e4c",
+    "captured_at": "2026-11-11T20:39:10+09:00",
+    "type": "機能変更",
+    "project": "limit-development",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/e02dc502059d2d0d75b63d78439fe9f512a13a8e,https://github.com/nobutakayamauchi/limit-development/commit/9787934316616fe77b29fe5ea71893cb3fff4e4c",
+    "article_score": 0.41,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-25c6ab855b5d",
+    "source_id": "nobutakayamauchi/WebAI-Bridge@0766b80223949ec3bfc2061a719b4de1238bd075",
+    "captured_at": "2026-11-11T20:37:47+09:00",
+    "type": "機能変更",
+    "project": "WebAI-Bridge",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/WebAI-Bridge/commit/0766b80223949ec3bfc2061a719b4de1238bd075",
+    "article_score": 0.335,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-35ea62ca74da",
+    "source_id": "nobutakayamauchi/rts01-offer@58330e842f4da52c2f1e709f09e665ead5a50ddf",
+    "captured_at": "2026-11-11T20:37:26+09:00",
+    "type": "機能変更",
+    "project": "rts01-offer",
+    "title": "rts01-offerを改善",
+    "summary": "rts01-offerの使い勝手や安定性に関わる変更を行いました。",
+    "tags": [
+      "rts01-offer",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/rts01-offer/commit/58330e842f4da52c2f1e709f09e665ead5a50ddf",
+    "article_score": 0.407,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-57d9159aad72",
+    "source_id": "nobutakayamauchi/sales-catalog@baf59c0ed4e951351d051a014091d260e0f4e93b",
+    "captured_at": "2026-11-11T20:37:24+09:00",
+    "type": "新製品",
+    "project": "sales-catalog",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/sales-catalog/commit/baf59c0ed4e951351d051a014091d260e0f4e93b",
+    "article_score": 0.627,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-87e7f6cafe02",
+    "source_id": "nobutakayamauchi/limit-development@4a0dc4d6a222998d88c8015a8fdac27216af936b",
+    "captured_at": "2026-11-11T20:36:32+09:00",
+    "type": "機能変更",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/4a0dc4d6a222998d88c8015a8fdac27216af936b",
+    "article_score": 0.249,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "upd-cea9a6dfb588",
+    "source_id": "nobutakayamauchi/limit-development@1566659e53dd8fc2554f2298f0f82b176d9c3953",
+    "captured_at": "2026-11-11T11:39:30Z",
+    "type": "機能変更",
+    "project": "limit-development",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "raw_evidence_ref": "https://github.com/nobutakayamauchi/limit-development/commit/1566659e53dd8fc2554f2298f0f82b176d9c3953,https://github.com/nobutakayamauchi/limit-development/commit/2972a12699d5426d1e22f92d235e4823a7ba17c1",
+    "article_score": 0.177,
+    "article_candidate": false,
+    "review_status": "pending"
+  },
+  {
     "id": "upd-b477f76bc5d2",
     "source_id": "nobutakayamauchi/Ultimate-Loop@7fcd67fda256ad0244d1a60ddfef06ac37f06699",
     "captured_at": "2026-11-08T09:59:28+09:00",

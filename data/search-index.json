@@ -1,6 +1,90 @@
 [
   {
     "kind": "UPDATE",
+    "id": "upd-b83fcfafa5ed",
+    "date": "2026-11-11",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-b83fcfafa5ed"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-25c6ab855b5d",
+    "date": "2026-11-11",
+    "title": "WebAI-Bridgeを改善",
+    "summary": "WebAI-Bridgeの使い勝手や安定性に関わる変更を行いました。",
+    "project": "WebAI-Bridge",
+    "type": "機能変更",
+    "tags": [
+      "WebAI-Bridge",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-25c6ab855b5d"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-35ea62ca74da",
+    "date": "2026-11-11",
+    "title": "rts01-offerを改善",
+    "summary": "rts01-offerの使い勝手や安定性に関わる変更を行いました。",
+    "project": "rts01-offer",
+    "type": "機能変更",
+    "tags": [
+      "rts01-offer",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-35ea62ca74da"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-57d9159aad72",
+    "date": "2026-11-11",
+    "title": "sales-catalogを公開",
+    "summary": "sales-catalogを新しく公開しました。",
+    "project": "sales-catalog",
+    "type": "新製品",
+    "tags": [
+      "sales-catalog",
+      "新製品"
+    ],
+    "href": "../updates/#u-upd-57d9159aad72"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-87e7f6cafe02",
+    "date": "2026-11-11",
+    "title": "FOUNDRY GROWTH ENGINEを改善",
+    "summary": "FOUNDRY GROWTH ENGINEを改善しました。 仕事の記録から、更新情報・記事・開発日誌・SNS投稿案まで整え、公開前レビューまで準備する投稿支援ツールです。",
+    "project": "FOUNDRY GROWTH ENGINE",
+    "type": "機能変更",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-87e7f6cafe02"
+  },
+  {
+    "kind": "UPDATE",
+    "id": "upd-cea9a6dfb588",
+    "date": "2026-11-11",
+    "title": "limit-developmentを改善",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。",
+    "project": "limit-development",
+    "type": "機能変更",
+    "tags": [
+      "limit-development",
+      "機能変更"
+    ],
+    "href": "../updates/#u-upd-cea9a6dfb588"
+  },
+  {
+    "kind": "UPDATE",
     "id": "upd-b477f76bc5d2",
     "date": "2026-11-08",
     "title": "Ultimate-Loopの方針を更新",
@@ -152,6 +236,25 @@
       "機能変更"
     ],
     "href": "../updates/#u-upd-682bbd05acd3"
+  },
+  {
+    "kind": "JOURNAL",
+    "id": "journal-2026-11-11",
+    "date": "2026-11-11",
+    "title": "limit-developmentを改善、ほか5件",
+    "summary": "limit-developmentの使い勝手や安定性に関わる変更を行いました。 同じ1時間内の関連変更1件も、この更新にまとめています。 同じ日の開発記録として、『WebAI-Bridgeを改善』、『rts01-offerを改善』、『sales-catalogを公開』もまとめています。",
+    "project": "FOUNDRY GROWTH ENGINE, WebAI-Bridge, limit-development, rts01-offer, sales-catalog",
+    "type": "開発日誌",
+    "tags": [
+      "FOUNDRY GROWTH ENGINE",
+      "WebAI-Bridge",
+      "limit-development",
+      "rts01-offer",
+      "sales-catalog",
+      "新製品",
+      "機能変更"
+    ],
+    "href": "../journal/2026-11-11.html"
   },
   {
     "kind": "JOURNAL",
