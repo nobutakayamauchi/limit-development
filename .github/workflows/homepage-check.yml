@@ -12,6 +12,11 @@ on:
       - "journal/**"
       - "foundry-growth-engine/templates/journal-index.html"
       - "scripts/check_homepage.py"
+      - "scripts/prepare_journal_publish.py"
+      - "scripts/tests/**"
+      - "foundry-growth-engine/fge/adapters/pages_output.py"
+      - ".github/workflows/fge-hourly.yml"
+      - ".github/workflows/fge-publish.yml"
       - ".github/workflows/homepage-check.yml"
   workflow_dispatch:
 
@@ -28,6 +33,8 @@ jobs:
           python-version: "3.12"
       - name: Validate homepage and local links
         run: python scripts/check_homepage.py
+      - name: Test journal publication contract
+        run: python -m unittest discover -s scripts/tests -v
       - name: Validate browser JavaScript syntax
         run: |
           node --check assets/home.js

@@ -63,13 +63,14 @@ jobs:
         env:
           RUN_ID: ${{ inputs.review_run_id }}
         run: |
-          rm -rf updates articles journal archive data
+          set -euo pipefail
+          python scripts/prepare_journal_publish.py /tmp/fge-review/site
+          rm -rf updates articles archive data
           cp -R /tmp/fge-review/site/updates ./updates
           cp -R /tmp/fge-review/site/articles ./articles
-          cp -R /tmp/fge-review/site/journal ./journal
-          cp foundry-growth-engine/templates/journal-index.html ./journal/index.html
           cp -R /tmp/fge-review/site/archive ./archive
           cp -R /tmp/fge-review/site/data ./data
+          python scripts/check_homepage.py
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add updates articles journal archive data

@@ -68,10 +68,9 @@ def main() -> None:
     index = (ROOT / "index.html").read_text(encoding="utf-8")
     js = (ROOT / "assets/home.js").read_text(encoding="utf-8")
     for text in [
-        "仕事してください。",
         "一からの新造、やめてください。",
         "ここ直せば、大体直ります。",
-        "たくさんあっても、今やるのはこれだけです。",
+        "困っている一点を、実装仕様書と見積書に。",
         "中断した場所？ここからです。",
         "「何が起きた？」慌てずこれ見てください。",
         "YouTube",
@@ -123,8 +122,10 @@ def main() -> None:
     assert "../data/journals.json" in journal, "journal index must upgrade from reviewed FGE data"
     template = (ROOT / "foundry-growth-engine/templates/journal-index.html").read_text(encoding="utf-8")
     assert template == journal, "published journal template must match the current journal index"
-    publish = (ROOT / ".github/workflows/fge-publish.yml").read_text(encoding="utf-8")
-    assert "cp foundry-growth-engine/templates/journal-index.html ./journal/index.html" in publish, "FGE publish must preserve journal index"
+    for workflow in ("fge-hourly.yml", "fge-publish.yml"):
+        publish = (ROOT / ".github/workflows" / workflow).read_text(encoding="utf-8")
+        assert "python scripts/prepare_journal_publish.py " in publish, f"{workflow} must preserve the journal fallback"
+        assert "python scripts/check_homepage.py" in publish, f"{workflow} must validate before publishing"
 
     # Development is live, not a stale handwritten NOW page. Reviewed FGE text is
     # shown only after publish; raw public GitHub facts can update directly in-browser.
@@ -150,8 +151,11 @@ def main() -> None:
     # The rail's ALL INDEX is a real shelf, not a fake reset button.
     assert "window.location.href='works/'" in js, "ALL INDEX must open works/"
     works = (ROOT / "works/index.html").read_text(encoding="utf-8")
-    for name in ("FOUNDRY GROWTH ENGINE", "Ultimate Loop", "WebAI Bridge", "BridgePatch", "AXIS", "NAGI", "TRACE"):
-        assert name in works, f"works index missing: {name}"
+    # The public shelf now loads the editorial catalog; cards are not all inline.
+    for literal in ('id="cards"', "INVOICE PAYMENT OPS", "fetch('../data/catalog.json'",
+                    "renderCards(items.filter(x=>x&&x.status!=='hidden'))",
+                    "consultation_only", "consultation_required"):
+        assert literal in works, f"works index missing catalog behavior: {literal}"
 
     css = (ROOT / "assets/home.css").read_text(encoding="utf-8")
     for bp in ("max-width:820px", "max-width:520px", "max-width:390px"):

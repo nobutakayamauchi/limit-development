@@ -8,6 +8,9 @@ on:
       - "assets/home.js"
       - ".github/workflows/fge-hourly.yml"
       - ".github/workflows/fge-publish.yml"
+      - "scripts/prepare_journal_publish.py"
+      - "scripts/check_homepage.py"
+      - "scripts/tests/**"
   schedule:
     - cron: "17 * * * *"
 
@@ -36,6 +39,9 @@ jobs:
         run: python -m unittest discover -s foundry-growth-engine/tests -v
         env:
           PYTHONPATH: foundry-growth-engine
+
+      - name: Test journal publication contract
+        run: python -m unittest discover -s scripts/tests -v
 
       - name: Detect new repositories and open intake gate
         if: github.event_name != 'pull_request'
@@ -94,16 +100,17 @@ jobs:
         if: github.event_name != 'pull_request'
         run: |
           set -euo pipefail
-          rm -rf updates journal archive
+          python scripts/prepare_journal_publish.py /tmp/fge-public
+          rm -rf updates archive
           mkdir -p data
           cp -R /tmp/fge-public/updates ./updates
-          cp -R /tmp/fge-public/journal ./journal
           cp -R /tmp/fge-public/archive ./archive
           cp /tmp/fge-public/data/updates.json ./data/updates.json
           cp /tmp/fge-public/data/journals.json ./data/journals.json
           cp /tmp/fge-public/data/status.json ./data/status.json
           cp /tmp/fge-public/data/generation.json ./data/generation.json
           cp /tmp/fge-public/data/search-index.json ./data/search-index.json
+          python scripts/check_homepage.py
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add updates journal archive data/updates.json data/journals.json data/status.json data/generation.json data/search-index.json
