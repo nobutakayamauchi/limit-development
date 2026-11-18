@@ -140,7 +140,9 @@ def paged(url: str, token: str | None = None) -> list[dict[str, Any]]:
     return results
 
 
-def list_source_repositories(owner: str, private_token: str | None) -> list[dict[str, Any]]:
+def list_source_repositories(
+    owner: str, private_token: str | None, *, public_token: str | None = None
+) -> list[dict[str, Any]]:
     if private_token:
         repos = paged(
             "https://api.github.com/user/repos?affiliation=owner&visibility=all&sort=created&direction=desc",
@@ -149,8 +151,10 @@ def list_source_repositories(owner: str, private_token: str | None) -> list[dict
         return [r for r in repos if (r.get("owner") or {}).get("login", "").lower() == owner.lower()]
 
     owner_q = urllib.parse.quote(owner, safe="")
+    # Authenticate public discovery without opting into private repository intake.
     return paged(
-        f"https://api.github.com/users/{owner_q}/repos?type=owner&sort=created&direction=desc"
+        f"https://api.github.com/users/{owner_q}/repos?type=owner&sort=created&direction=desc",
+        token=public_token,
     )
 
 
@@ -182,7 +186,7 @@ def main(argv: list[str] | None = None) -> int:
     private_token = os.getenv("FGE_REPO_INTAKE_TOKEN") or None
     issue_token = os.getenv("GITHUB_TOKEN") or ""
 
-    repos = list_source_repositories(config["owner"], private_token)
+    repos = list_source_repositories(config["owner"], private_token, public_token=issue_token or None)
     candidates = select_new_repositories(repos, config)
 
     if args.dry_run:
