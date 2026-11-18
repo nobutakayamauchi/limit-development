@@ -197,6 +197,12 @@ def main(argv: list[str] | None = None) -> int:
         print("GITHUB_TOKEN is required to create FGE intake issues", file=sys.stderr)
         return 2
 
+    # Private discovery may be enabled even when the intake issue tracker is public.
+    if any(repo.get("private") for repo in candidates):
+        target = request_json(f"https://api.github.com/repos/{config['target_repo']}", token=issue_token)
+        if target.get("private") is not True:
+            candidates = [repo for repo in candidates if not repo.get("private")]
+
     existing = existing_issue_titles(config["target_repo"], issue_token)
     created: list[str] = []
     for repo in candidates:
@@ -204,6 +210,7 @@ def main(argv: list[str] | None = None) -> int:
         if title in existing:
             continue
         create_intake_issue(config["target_repo"], repo, issue_token)
+        existing.add(title)
         created.append(repo["full_name"])
 
     print(json.dumps({"detected": len(candidates), "created_intakes": created}, ensure_ascii=False))

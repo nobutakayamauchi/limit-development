@@ -165,6 +165,20 @@ class RepoIntakeAPITests(unittest.TestCase):
         self.assertIn("回答が終わるまで公開カード / LPは自動生成しません", body["body"])
         self.assertIn("公開は従来どおり人間のレビューゲートを通します", body["body"])
 
+    def test_private_candidate_requires_a_private_issue_tracker(self):
+        os.environ.update(FGE_REPO_INTAKE_TOKEN="fixture", GITHUB_TOKEN="actions-fixture")
+        candidate = {**self.repo, "private": True}
+        for target_private in (False, True):
+            with self.subTest(target_private=target_private):
+                self.urlopen.reset_mock()
+                responses = [[candidate, candidate], {"private": target_private}, []]
+                if target_private:
+                    responses.append({"number": 1})
+                self.urlopen.side_effect = [self.response(payload) for payload in responses]
+                self.assertEqual(self.run_main(dry_run=False), 0)
+                posts = [req for req in self.requests() if req.get_method() == "POST"]
+                self.assertEqual(len(posts), int(target_private))
+
     def test_existing_intake_is_not_created_again(self):
         os.environ["GITHUB_TOKEN"] = "actions-test-token"
         self.urlopen.side_effect = [
