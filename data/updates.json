@@ -219,22 +219,5 @@
     "article_score": 0.344,
     "article_candidate": false,
     "review_status": "pending"
-  },
-  {
-    "id": "upd-ac9ff7370be8",
-    "source_id": "nobutakayamauchi/RTS-AGE@33d72b2beece29ba32eea698f7503db7d079e463",
-    "captured_at": "2026-10-22T04:53:56+09:00",
-    "type": "機能変更",
-    "project": "RTS-AGE",
-    "title": "RTS-AGEを改善",
-    "summary": "RTS-AGEの使い勝手や安定性に関わる変更を行いました。",
-    "tags": [
-      "RTS-AGE",
-      "機能変更"
-    ],
-    "raw_evidence_ref": "https://github.com/nobutakayamauchi/RTS-AGE/commit/33d72b2beece29ba32eea698f7503db7d079e463",
-    "article_score": 0.25,
-    "article_candidate": false,
-    "review_status": "pending"
   }
 ]
