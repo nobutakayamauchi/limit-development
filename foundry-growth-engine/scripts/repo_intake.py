@@ -140,7 +140,9 @@ def paged(url: str, token: str | None = None) -> list[dict[str, Any]]:
     return results
 
 
-def list_source_repositories(owner: str, private_token: str | None) -> list[dict[str, Any]]:
+def list_source_repositories(
+    owner: str, private_token: str | None, *, public_token: str | None = None
+) -> list[dict[str, Any]]:
     if private_token:
         repos = paged(
             "https://api.github.com/user/repos?affiliation=owner&visibility=all&sort=created&direction=desc",
@@ -149,8 +151,10 @@ def list_source_repositories(owner: str, private_token: str | None) -> list[dict
         return [r for r in repos if (r.get("owner") or {}).get("login", "").lower() == owner.lower()]
 
     owner_q = urllib.parse.quote(owner, safe="")
+    # Authenticate public discovery without opting into private repository intake.
     return paged(
-        f"https://api.github.com/users/{owner_q}/repos?type=owner&sort=created&direction=desc"
+        f"https://api.github.com/users/{owner_q}/repos?type=owner&sort=created&direction=desc",
+        token=public_token,
     )
 
 
@@ -182,7 +186,7 @@ def main(argv: list[str] | None = None) -> int:
     private_token = os.getenv("FGE_REPO_INTAKE_TOKEN") or None
     issue_token = os.getenv("GITHUB_TOKEN") or ""
 
-    repos = list_source_repositories(config["owner"], private_token)
+    repos = list_source_repositories(config["owner"], private_token, public_token=issue_token or None)
     candidates = select_new_repositories(repos, config)
 
     if args.dry_run:
@@ -193,6 +197,12 @@ def main(argv: list[str] | None = None) -> int:
         print("GITHUB_TOKEN is required to create FGE intake issues", file=sys.stderr)
         return 2
 
+    # Private discovery may be enabled even when the intake issue tracker is public.
+    if any(repo.get("private") for repo in candidates):
+        target = request_json(f"https://api.github.com/repos/{config['target_repo']}", token=issue_token)
+        if target.get("private") is not True:
+            candidates = [repo for repo in candidates if not repo.get("private")]
+
     existing = existing_issue_titles(config["target_repo"], issue_token)
     created: list[str] = []
     for repo in candidates:
@@ -200,6 +210,7 @@ def main(argv: list[str] | None = None) -> int:
         if title in existing:
             continue
         create_intake_issue(config["target_repo"], repo, issue_token)
+        existing.add(title)
         created.append(repo["full_name"])
 
     print(json.dumps({"detected": len(candidates), "created_intakes": created}, ensure_ascii=False))
