@@ -168,20 +168,6 @@
     "href": "../updates/#u-upd-006f3a2c0a13"
   },
   {
-    "kind": "UPDATE",
-    "id": "upd-77c58cdce5a4",
-    "date": "2026-10-23",
-    "title": "RTS-AGEを改善",
-    "summary": "RTS-AGEの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS-AGE",
-    "type": "機能変更",
-    "tags": [
-      "RTS-AGE",
-      "機能変更"
-    ],
-    "href": "../updates/#u-upd-77c58cdce5a4"
-  },
-  {
     "kind": "JOURNAL",
     "id": "journal-2026-11-13",
     "date": "2026-11-13",
@@ -257,19 +243,5 @@
       "研究・検証"
     ],
     "href": "../journal/2026-10-24.html"
-  },
-  {
-    "kind": "JOURNAL",
-    "id": "journal-2026-10-23",
-    "date": "2026-10-23",
-    "title": "RTS-AGEを改善",
-    "summary": "RTS-AGEの使い勝手や安定性に関わる変更を行いました。",
-    "project": "RTS-AGE",
-    "type": "開発日誌",
-    "tags": [
-      "RTS-AGE",
-      "機能変更"
-    ],
-    "href": "../journal/2026-10-23.html"
   }
 ]

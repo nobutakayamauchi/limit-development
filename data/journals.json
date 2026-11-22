@@ -109,23 +109,5 @@
       "機能変更",
       "研究・検証"
     ]
-  },
-  {
-    "date": "2026-10-23",
-    "title": "RTS-AGEを改善",
-    "summary": "RTS-AGEの使い勝手や安定性に関わる変更を行いました。",
-    "update_ids": [
-      "upd-77c58cdce5a4"
-    ],
-    "projects": [
-      "RTS-AGE"
-    ],
-    "types": [
-      "機能変更"
-    ],
-    "tags": [
-      "RTS-AGE",
-      "機能変更"
-    ]
   }
 ]
