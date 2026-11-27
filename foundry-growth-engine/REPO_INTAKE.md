@@ -47,6 +47,8 @@ python foundry-growth-engine/scripts/repo_intake.py \
 Public repos are detectable without an extra secret.
 Private reposも対象にする場合だけ、repository secret `FGE_REPO_INTAKE_TOKEN` に対象GitHubアカウントのrepo一覧を読めるtokenを設定する。
 
+非公開repoの名前や説明をIssueに記録するのは、対象のIssue管理先も非公開と確認できた場合のみ。公開先では非公開候補を除外する。
+
 Intake issue作成にはActionsの `GITHUB_TOKEN` を使う。
 同じrepo名の intake issue が既にあれば再作成しない。
 

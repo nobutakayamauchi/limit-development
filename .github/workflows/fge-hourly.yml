@@ -22,6 +22,11 @@ permissions:
 env:
   FGE_OWNER: nobutakayamauchi
 
+# Manual and scheduled intake share a check-then-create operation.
+concurrency:
+  group: fge-intake-${{ github.event_name == 'pull_request' && github.run_id || 'writer' }}
+  cancel-in-progress: false
+
 jobs:
   build-review:
     runs-on: ubuntu-latest
